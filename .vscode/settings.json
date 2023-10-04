@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "stylelint.validate": ["scss"],
+  "material-icon-theme.files.associations": {
+    ".prettiercache": "prettier",
+    "extensions.json": "vscode",
+    "settings.json": "vscode"
+  }
+}

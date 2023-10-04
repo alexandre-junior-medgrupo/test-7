@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint:prettier": "prettier . --write --cache --cache-location .prettiercache",
+    "lint:stylelint": "stylelint **/*.scss --fix --cache --formatter verbose",
+    "lint": "npm-run-all lint:prettier --parallel lint:stylelint",
+    "build": "lerna run tp:build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "lerna": "^7.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-sass-guidelines": "^10.0.0",
+    "typescript": "^5.2.2"
+  }
+}
