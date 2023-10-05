@@ -1,0 +1,24 @@
+@use 'sass:math';
+@use '../variables/base.variables';
+
+@mixin generate-color-properties($theme) {
+  --#{base.$namespace}-color-#{$theme}: var(--#{base.$namespace}-color-#{$theme}-hue), var(--#{base.$namespace}-color-saturation), var(--#{base.$namespace}-color-luminosity-3);
+
+  @for $i from 1 through 5 {
+    --#{base.$namespace}-color-#{$theme}-#{$i}: var(--#{base.$namespace}-color-#{$theme}-hue), var(--#{base.$namespace}-color-saturation), var(--#{base.$namespace}-color-luminosity-#{$i});
+  }
+}
+
+// TODO: usar inverter para light mode
+@mixin generate-color-neutral-properties() {
+  @for $i from 1 through 10 {
+    $luminosity-multiplier: if($i == 1, 0, $i - 1);
+    $luminosity-step: $luminosity-multiplier * 10%;
+
+    --#{base.$namespace}-color-neutral-#{$i}: var(--#{base.$namespace}-color-neutral-hue), var(--#{base.$namespace}-color-neutral-saturation), calc(var(--#{base.$namespace}-color-neutral-luminosity) + #{$luminosity-step});
+
+    @if $i != 10 {
+      --#{base.$namespace}-color-neutral-#{$i}5: var(--#{base.$namespace}-color-neutral-hue), var(--#{base.$namespace}-color-neutral-saturation), calc(var(--#{base.$namespace}-color-neutral-alternative-luminosity) + #{$luminosity-step} * var(--#{base.$namespace}-color-neutral-invert, 1));
+    }
+  }
+}

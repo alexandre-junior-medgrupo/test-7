@@ -13,9 +13,5 @@ module.exports = {
         },
       },
     ],
-    'selector-pseudo-element-no-unknown': [
-      true,
-      { ignorePseudoElements: ['ng-deep'] },
-    ],
   },
 };

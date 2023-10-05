@@ -1,0 +1,63 @@
+@use '../variables/base.variables';
+@use '../mixins/color.mixins';
+
+:root {
+  // neutral
+  --#{base.$namespace}-color-neutral-hue: 188;
+  --#{base.$namespace}-color-neutral-luminosity: 8%;
+  --#{base.$namespace}-color-neutral-alternative-luminosity: 13%;
+
+  // color
+  --#{base.$namespace}-color-brand-hue: 188;
+  --#{base.$namespace}-color-saturation: 80%;
+  --#{base.$namespace}-color-luminosity-1: 20%;
+  --#{base.$namespace}-color-luminosity-2: 30%;
+  --#{base.$namespace}-color-luminosity-3: 40%;
+  --#{base.$namespace}-color-luminosity-4: 60%;
+  --#{base.$namespace}-color-luminosity-5: 80%;
+}
+
+.#{base.$namespace}-color-scheme-dark,
+[#{base.$namespace}-color-scheme='dark'] {
+  // neutral
+  --#{base.$namespace}-color-neutral-luminosity: 8%;
+  --#{base.$namespace}-color-neutral-alternative-luminosity: 13%;
+
+  // color
+  --#{base.$namespace}-color-saturation: 80%;
+  --#{base.$namespace}-color-luminosity-1: 20%;
+  --#{base.$namespace}-color-luminosity-2: 30%;
+  --#{base.$namespace}-color-luminosity-3: 40%;
+  --#{base.$namespace}-color-luminosity-4: 60%;
+  --#{base.$namespace}-color-luminosity-5: 80%;
+}
+
+.#{base.$namespace}-color-scheme-light,
+[#{base.$namespace}-color-scheme='light'] {
+  // neutral
+  --#{base.$namespace}-color-neutral-luminosity: 98%;
+  --#{base.$namespace}-color-neutral-alternative-luminosity: 93%;
+  --#{base.$namespace}-color-neutral-invert: -1;
+
+  // color
+  --#{base.$namespace}-color-saturation: 40%;
+  --#{base.$namespace}-color-luminosity-1: 80%;
+  --#{base.$namespace}-color-luminosity-2: 60%;
+  --#{base.$namespace}-color-luminosity-3: 40%;
+  --#{base.$namespace}-color-luminosity-4: 30%;
+  --#{base.$namespace}-color-luminosity-5: 20%;
+}
+
+:root {
+  @include color.generate-color-properties(brand);
+  @include color.generate-color-neutral-properties();
+}
+
+.ion-color-brand {
+  --ion-color-base: hsl(var(--tp-color-brand));
+  --ion-color-base-rgb: var(--ion-color-favorite-rgb);
+  --ion-color-contrast: var(--ion-color-favorite-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-favorite-contrast-rgb);
+  --ion-color-shade: var(--ion-color-favorite-shade);
+  --ion-color-tint: var(--ion-color-favorite-tint);
+}
