@@ -1,0 +1,25 @@
+@use '../variables/base.variables';
+@use '../mixins/color.mixins';
+
+$secondary-colors: 'aula', 'material', 'questoes', 'revalida', 'provas';
+
+:root {
+  // color css custom properties definition
+  --#{base.$namespace}-color-aula-hue: 168;
+  --#{base.$namespace}-color-material-hue: 24;
+  --#{base.$namespace}-color-questoes-hue: 200;
+  --#{base.$namespace}-color-revalida-hue: 342;
+  --#{base.$namespace}-color-provas-hue: 268;
+}
+
+// css custom properties
+:root {
+  @each $color in $secondary-colors {
+    @include color.generate-color-properties($color);
+  }
+}
+
+// ionic css classes
+@each $color in $secondary-colors {
+  @include color.generate-ionic-color-classes($color);
+}

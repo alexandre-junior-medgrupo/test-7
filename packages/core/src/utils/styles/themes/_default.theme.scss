@@ -1,0 +1,72 @@
+@use '../variables/base.variables';
+@use '../mixins/color.mixins';
+
+$feedbacks: 'attention', 'caution', 'warning', 'revalida', 'success';
+
+// default scheme: dark
+:root {
+  // neutral color css custom properties definition
+  --#{base.$namespace}-color-neutral-hue: 188;
+  --#{base.$namespace}-color-neutral-saturation: 10%;
+  --#{base.$namespace}-color-neutral-luminosity: 8%;
+  --#{base.$namespace}-color-neutral-alternative-luminosity: 13%;
+  --#{base.$namespace}-color-neutral-invert: 1;
+
+  // feedback color css custom properties definition
+  --#{base.$namespace}-color-feedback-attention-hue: 44;
+  --#{base.$namespace}-color-feedback-caution-hue: 24;
+  --#{base.$namespace}-color-feedback-warning-hue: 4;
+  --#{base.$namespace}-color-feedback-success-hue: 128;
+  --#{base.$namespace}-color-feedback-saturation: 80%;
+  --#{base.$namespace}-color-feedback-luminosity: 65%;
+
+  // color css custom properties definition
+  --#{base.$namespace}-color-brand-hue: 188;
+  --#{base.$namespace}-color-saturation: 80%;
+  --#{base.$namespace}-color-luminosity-1: 20%;
+  --#{base.$namespace}-color-luminosity-2: 30%;
+  --#{base.$namespace}-color-luminosity-3: 40%;
+  --#{base.$namespace}-color-luminosity-4: 60%;
+  --#{base.$namespace}-color-luminosity-5: 80%;
+}
+
+// light scheme
+.#{base.$namespace}-color-scheme-light,
+[#{base.$namespace}-color-scheme='light'] {
+  // neutral color css custom properties override
+  --#{base.$namespace}-color-neutral-saturation: 10%;
+  --#{base.$namespace}-color-neutral-luminosity: 98%;
+  --#{base.$namespace}-color-neutral-alternative-luminosity: 93%;
+  --#{base.$namespace}-color-neutral-invert: -1;
+
+  // feedback color css custom properties override
+  --#{base.$namespace}-color-feedback-luminosity: 45%;
+  --#{base.$namespace}-color-feedback-success: var(
+      --tp-color-feedback-success-hue
+    ),
+    var(--tp-color-feedback-saturation), 35%;
+
+  // color css custom properties override
+  --#{base.$namespace}-color-saturation: 40%;
+  --#{base.$namespace}-color-luminosity-1: 80%;
+  --#{base.$namespace}-color-luminosity-2: 60%;
+  --#{base.$namespace}-color-luminosity-3: 40%;
+  --#{base.$namespace}-color-luminosity-4: 30%;
+  --#{base.$namespace}-color-luminosity-5: 20%;
+}
+
+// css custom properties
+:root {
+  @include color.generate-color-neutral-properties();
+  @each $feedback in $feedbacks {
+    @include color.generate-color-feedback-properties($feedback);
+  }
+  @include color.generate-color-properties(brand);
+}
+
+// ionic css classes
+@include color.generate-ionic-color-classes(brand);
+@include color.generate-ionic-color-neutral-classes();
+@each $feedback in $feedbacks {
+  @include color.generate-ionic-color-feedback-classes($feedback);
+}
