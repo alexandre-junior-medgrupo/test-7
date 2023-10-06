@@ -1,7 +1,0 @@
-@use './variables/base.variables';
-@use './themes/default.theme';
-
-:root {
-  --ion-background-color: hsl(var(--#{base.$namespace}-color-neutral-1));
-  --ion-default-font: 'fsemeric', 'Open Sans', sans-serif;
-}

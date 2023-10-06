@@ -1,9 +1,9 @@
-@use '../variables/base.variables';
-@use '../mixins/color.mixins';
+@use '../../utils/styles/variables/base.variables';
+@use '../../utils/styles/mixins/color.mixins';
 
 $secondary-colors: 'aula', 'material', 'questoes', 'revalida', 'provas';
 
-:root {
+.#{base.$namespace}-color-theme-medsoft {
   // color css custom properties definition
   --#{base.$namespace}-color-aula-hue: 168;
   --#{base.$namespace}-color-material-hue: 24;
@@ -13,13 +13,15 @@ $secondary-colors: 'aula', 'material', 'questoes', 'revalida', 'provas';
 }
 
 // css custom properties
-:root {
+.#{base.$namespace}-color-theme-medsoft {
   @each $color in $secondary-colors {
     @include color.generate-color-properties($color);
   }
 }
 
 // ionic css classes
-@each $color in $secondary-colors {
-  @include color.generate-ionic-color-classes($color);
+.#{base.$namespace}-color-theme-medsoft {
+  @each $color in $secondary-colors {
+    @include color.generate-ionic-color-classes($color);
+  }
 }

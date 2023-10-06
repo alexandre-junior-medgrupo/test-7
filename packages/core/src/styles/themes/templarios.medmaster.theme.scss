@@ -1,0 +1,6 @@
+@use '../../utils/styles/variables/base.variables';
+
+.#{base.$namespace}-color-theme-medmaster {
+  // color css custom properties override
+  --#{base.$namespace}-color-brand-hue: 56;
+}

@@ -80,3 +80,12 @@ export enum TpColorProvas {
   Provas_04 = 'provas-4',
   Provas_05 = 'provas-5',
 }
+
+export enum TpColorOrange {
+  Orange = 'orange',
+  Orange_01 = 'orange-1',
+  Orange_02 = 'orange-2',
+  Orange_03 = 'orange-3',
+  Orange_04 = 'orange-4',
+  Orange_05 = 'orange-5',
+}

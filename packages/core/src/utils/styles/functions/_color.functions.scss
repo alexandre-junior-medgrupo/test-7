@@ -1,0 +1,9 @@
+@use '../variables/base.variables';
+
+@function tp-get-color($color, $i) {
+  @return if(
+    $i,
+    hsl(var(--#{base.$namespace}-color-#{$color}-#{$i})),
+    hsl(var(--#{base.$namespace}-color-#{$color}))
+  );
+}

@@ -1,0 +1,7 @@
+@use '../utils/styles/functions/color.functions';
+@use '../components/ionic/button/button';
+
+:root {
+  --ion-background-color: #{color.tp-get-color(neutral, 1)};
+  --ion-default-font: 'fsemeric', 'Open Sans', sans-serif;
+}

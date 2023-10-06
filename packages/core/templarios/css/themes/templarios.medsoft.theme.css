@@ -1,4 +1,4 @@
-:root {
+.tp-color-theme-medsoft {
   --tp-color-aula-hue: 168;
   --tp-color-material-hue: 24;
   --tp-color-questoes-hue: 200;
@@ -6,7 +6,7 @@
   --tp-color-provas-hue: 268;
 }
 
-:root {
+.tp-color-theme-medsoft {
   --tp-color-aula: var(--tp-color-aula-hue), var(--tp-color-saturation), var(--tp-color-luminosity-3);
   --tp-color-aula-1: var(--tp-color-aula-hue), var(--tp-color-saturation), var(--tp-color-luminosity-1);
   --tp-color-aula-2: var(--tp-color-aula-hue), var(--tp-color-saturation), var(--tp-color-luminosity-2);
@@ -39,181 +39,152 @@
   --tp-color-provas-5: var(--tp-color-provas-hue), var(--tp-color-saturation), var(--tp-color-luminosity-5);
 }
 
-.ion-color-aula {
+.tp-color-theme-medsoft .ion-color-aula {
   --ion-color-base: hsl(var(--tp-color-aula));
   --ion-color-base-rgb: var(--tp-color-aula);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-aula-1 {
+.tp-color-theme-medsoft .ion-color-aula-1 {
   --ion-color-base: hsl(var(--tp-color-aula-1));
   --ion-color-base-rgb: var(--tp-color-aula-1);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-aula-2 {
+.tp-color-theme-medsoft .ion-color-aula-2 {
   --ion-color-base: hsl(var(--tp-color-aula-2));
   --ion-color-base-rgb: var(--tp-color-aula-2);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-aula-3 {
+.tp-color-theme-medsoft .ion-color-aula-3 {
   --ion-color-base: hsl(var(--tp-color-aula-3));
   --ion-color-base-rgb: var(--tp-color-aula-3);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-aula-4 {
+.tp-color-theme-medsoft .ion-color-aula-4 {
   --ion-color-base: hsl(var(--tp-color-aula-4));
   --ion-color-base-rgb: var(--tp-color-aula-4);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-aula-5 {
+.tp-color-theme-medsoft .ion-color-aula-5 {
   --ion-color-base: hsl(var(--tp-color-aula-5));
   --ion-color-base-rgb: var(--tp-color-aula-5);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-material {
+.tp-color-theme-medsoft .ion-color-material {
   --ion-color-base: hsl(var(--tp-color-material));
   --ion-color-base-rgb: var(--tp-color-material);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-material-1 {
+.tp-color-theme-medsoft .ion-color-material-1 {
   --ion-color-base: hsl(var(--tp-color-material-1));
   --ion-color-base-rgb: var(--tp-color-material-1);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-material-2 {
+.tp-color-theme-medsoft .ion-color-material-2 {
   --ion-color-base: hsl(var(--tp-color-material-2));
   --ion-color-base-rgb: var(--tp-color-material-2);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-material-3 {
+.tp-color-theme-medsoft .ion-color-material-3 {
   --ion-color-base: hsl(var(--tp-color-material-3));
   --ion-color-base-rgb: var(--tp-color-material-3);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-material-4 {
+.tp-color-theme-medsoft .ion-color-material-4 {
   --ion-color-base: hsl(var(--tp-color-material-4));
   --ion-color-base-rgb: var(--tp-color-material-4);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-material-5 {
+.tp-color-theme-medsoft .ion-color-material-5 {
   --ion-color-base: hsl(var(--tp-color-material-5));
   --ion-color-base-rgb: var(--tp-color-material-5);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-questoes {
+.tp-color-theme-medsoft .ion-color-questoes {
   --ion-color-base: hsl(var(--tp-color-questoes));
   --ion-color-base-rgb: var(--tp-color-questoes);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-questoes-1 {
+.tp-color-theme-medsoft .ion-color-questoes-1 {
   --ion-color-base: hsl(var(--tp-color-questoes-1));
   --ion-color-base-rgb: var(--tp-color-questoes-1);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-questoes-2 {
+.tp-color-theme-medsoft .ion-color-questoes-2 {
   --ion-color-base: hsl(var(--tp-color-questoes-2));
   --ion-color-base-rgb: var(--tp-color-questoes-2);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-questoes-3 {
+.tp-color-theme-medsoft .ion-color-questoes-3 {
   --ion-color-base: hsl(var(--tp-color-questoes-3));
   --ion-color-base-rgb: var(--tp-color-questoes-3);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-questoes-4 {
+.tp-color-theme-medsoft .ion-color-questoes-4 {
   --ion-color-base: hsl(var(--tp-color-questoes-4));
   --ion-color-base-rgb: var(--tp-color-questoes-4);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-questoes-5 {
+.tp-color-theme-medsoft .ion-color-questoes-5 {
   --ion-color-base: hsl(var(--tp-color-questoes-5));
   --ion-color-base-rgb: var(--tp-color-questoes-5);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-revalida {
+.tp-color-theme-medsoft .ion-color-revalida {
   --ion-color-base: hsl(var(--tp-color-revalida));
   --ion-color-base-rgb: var(--tp-color-revalida);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-revalida-1 {
+.tp-color-theme-medsoft .ion-color-revalida-1 {
   --ion-color-base: hsl(var(--tp-color-revalida-1));
   --ion-color-base-rgb: var(--tp-color-revalida-1);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-revalida-2 {
+.tp-color-theme-medsoft .ion-color-revalida-2 {
   --ion-color-base: hsl(var(--tp-color-revalida-2));
   --ion-color-base-rgb: var(--tp-color-revalida-2);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-revalida-3 {
+.tp-color-theme-medsoft .ion-color-revalida-3 {
   --ion-color-base: hsl(var(--tp-color-revalida-3));
   --ion-color-base-rgb: var(--tp-color-revalida-3);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-revalida-4 {
+.tp-color-theme-medsoft .ion-color-revalida-4 {
   --ion-color-base: hsl(var(--tp-color-revalida-4));
   --ion-color-base-rgb: var(--tp-color-revalida-4);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-revalida-5 {
+.tp-color-theme-medsoft .ion-color-revalida-5 {
   --ion-color-base: hsl(var(--tp-color-revalida-5));
   --ion-color-base-rgb: var(--tp-color-revalida-5);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-provas {
+.tp-color-theme-medsoft .ion-color-provas {
   --ion-color-base: hsl(var(--tp-color-provas));
   --ion-color-base-rgb: var(--tp-color-provas);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-provas-1 {
+.tp-color-theme-medsoft .ion-color-provas-1 {
   --ion-color-base: hsl(var(--tp-color-provas-1));
   --ion-color-base-rgb: var(--tp-color-provas-1);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-provas-2 {
+.tp-color-theme-medsoft .ion-color-provas-2 {
   --ion-color-base: hsl(var(--tp-color-provas-2));
   --ion-color-base-rgb: var(--tp-color-provas-2);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-provas-3 {
+.tp-color-theme-medsoft .ion-color-provas-3 {
   --ion-color-base: hsl(var(--tp-color-provas-3));
   --ion-color-base-rgb: var(--tp-color-provas-3);
   --ion-color-contrast: hsl(var(--tp-color-neutral-10));
 }
-
-.ion-color-provas-4 {
+.tp-color-theme-medsoft .ion-color-provas-4 {
   --ion-color-base: hsl(var(--tp-color-provas-4));
   --ion-color-base-rgb: var(--tp-color-provas-4);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
 }
-
-.ion-color-provas-5 {
+.tp-color-theme-medsoft .ion-color-provas-5 {
   --ion-color-base: hsl(var(--tp-color-provas-5));
   --ion-color-base-rgb: var(--tp-color-provas-5);
   --ion-color-contrast: hsl(var(--tp-color-neutral-1));
