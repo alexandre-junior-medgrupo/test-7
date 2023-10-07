@@ -13,8 +13,6 @@
     $luminosity-multiplier: if($i == 1, 0, $i - 1);
     $luminosity-step: $luminosity-multiplier * 10%;
 
-    --fuck: #{$luminosity-step};
-
     --tp-color-neutral-#{$i}: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + #{$luminosity-step} * var(--tp-color-neutral-invert));
 
     @if $i != 10 {

@@ -49,6 +49,10 @@ $feedbacks: 'attention', 'caution', 'warning', 'revalida', 'success';
   --tp-color-luminosity-3: 40%;
   --tp-color-luminosity-4: 30%;
   --tp-color-luminosity-5: 20%;
+
+  :not([class*='neutral']):not([class*='feedback'])[class*='3'] {
+    --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
+  }
 }
 
 // css custom properties

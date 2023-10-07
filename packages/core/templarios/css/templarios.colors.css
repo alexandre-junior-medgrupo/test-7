@@ -34,36 +34,30 @@
   --tp-color-luminosity-4: 30%;
   --tp-color-luminosity-5: 20%;
 }
+.tp-color-scheme-light :not([class*=neutral]):not([class*=feedback])[class*="3"],
+[tp-color-scheme=light] :not([class*=neutral]):not([class*=feedback])[class*="3"] {
+  --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
+}
 
 :root {
-  --fuck: 0%;
   --tp-color-neutral-1: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 0% * var(--tp-color-neutral-invert));
   --tp-color-neutral-15: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 0% * var(--tp-color-neutral-invert));
-  --fuck: 10%;
   --tp-color-neutral-2: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 10% * var(--tp-color-neutral-invert));
   --tp-color-neutral-25: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 10% * var(--tp-color-neutral-invert));
-  --fuck: 20%;
   --tp-color-neutral-3: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 20% * var(--tp-color-neutral-invert));
   --tp-color-neutral-35: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 20% * var(--tp-color-neutral-invert));
-  --fuck: 30%;
   --tp-color-neutral-4: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 30% * var(--tp-color-neutral-invert));
   --tp-color-neutral-45: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 30% * var(--tp-color-neutral-invert));
-  --fuck: 40%;
   --tp-color-neutral-5: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 40% * var(--tp-color-neutral-invert));
   --tp-color-neutral-55: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 40% * var(--tp-color-neutral-invert));
-  --fuck: 50%;
   --tp-color-neutral-6: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 50% * var(--tp-color-neutral-invert));
   --tp-color-neutral-65: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 50% * var(--tp-color-neutral-invert));
-  --fuck: 60%;
   --tp-color-neutral-7: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 60% * var(--tp-color-neutral-invert));
   --tp-color-neutral-75: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 60% * var(--tp-color-neutral-invert));
-  --fuck: 70%;
   --tp-color-neutral-8: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 70% * var(--tp-color-neutral-invert));
   --tp-color-neutral-85: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 70% * var(--tp-color-neutral-invert));
-  --fuck: 80%;
   --tp-color-neutral-9: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 80% * var(--tp-color-neutral-invert));
   --tp-color-neutral-95: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 80% * var(--tp-color-neutral-invert));
-  --fuck: 90%;
   --tp-color-neutral-10: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 90% * var(--tp-color-neutral-invert));
   --tp-color-feedback-attention: var(--tp-color-feedback-attention-hue), var(--tp-color-feedback-attention-saturation, var(--tp-color-feedback-saturation)), var(--tp-color-feedback-attention-luminosity, var(--tp-color-feedback-luminosity));
   --tp-color-feedback-caution: var(--tp-color-feedback-caution-hue), var(--tp-color-feedback-caution-saturation, var(--tp-color-feedback-saturation)), var(--tp-color-feedback-caution-luminosity, var(--tp-color-feedback-luminosity));
