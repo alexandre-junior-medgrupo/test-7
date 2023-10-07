@@ -1,0 +1,65 @@
+@use '../utils/styles/mixins/color.mixins';
+
+$medsoft-secondary-colors: 'aula', 'material', 'questoes', 'revalida', 'provas';
+$recursos-secondary-colors: 'orange';
+
+.tp-color-theme {
+  &-medsoft {
+    --tp-color-aula-hue: 168;
+    --tp-color-material-hue: 24;
+    --tp-color-questoes-hue: 200;
+    --tp-color-revalida-hue: 342;
+    --tp-color-provas-hue: 268;
+
+    @each $color in $medsoft-secondary-colors {
+      @include color.generate-color-properties($color);
+      @include color.generate-ionic-color-classes($color);
+    }
+  }
+
+  &-recursos {
+    --tp-color-brand-hue: 195;
+    --tp-color-orange-hue: 25;
+
+    @each $color in $recursos-secondary-colors {
+      @include color.generate-color-properties($color);
+      @include color.generate-ionic-color-classes($color);
+    }
+  }
+
+  &-cpmed {
+    --tp-color-brand-hue: 12;
+  }
+
+  &-cpvent {
+    --tp-color-brand-hue: 72;
+  }
+
+  &-extensivo-rmais {
+    --tp-color-brand-hue: 300;
+  }
+
+  &-extensivo {
+    --tp-color-brand-hue: 128;
+  }
+
+  &-intensivao {
+    --tp-color-brand-hue: 344;
+  }
+
+  &-medeletro {
+    --tp-color-brand-hue: 180;
+  }
+
+  &-medmaster {
+    --tp-color-brand-hue: 56;
+  }
+
+  &-no-papo {
+    --tp-color-brand-hue: 230;
+  }
+
+  &-ventilamed {
+    --tp-color-brand-hue: 29;
+  }
+}

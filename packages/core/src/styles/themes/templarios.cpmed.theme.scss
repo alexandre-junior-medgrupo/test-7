@@ -1,6 +1,0 @@
-@use '../../utils/styles/variables/base.variables';
-
-.#{base.$namespace}-color-theme-cpmed {
-  // color css custom properties override
-  --#{base.$namespace}-color-brand-hue: 12;
-}

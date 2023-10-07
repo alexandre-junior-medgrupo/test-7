@@ -2,6 +2,7 @@
 
 ion-button {
   --background: #{color.tp-get-color(brand, 3)};
+  --color: #{color.tp-get-color(neutral, 1)};
 
   --border-radius: 500px;
   --box-shadow: none;

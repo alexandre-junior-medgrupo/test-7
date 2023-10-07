@@ -1,11 +1,10 @@
 @use 'sass:math';
-@use '../variables/base.variables';
 
 @mixin generate-color-properties($color) {
-  --#{base.$namespace}-color-#{$color}: var(--#{base.$namespace}-color-#{$color}-hue), var(--#{base.$namespace}-color-saturation), var(--#{base.$namespace}-color-luminosity-3);
+  --tp-color-#{$color}: var(--tp-color-#{$color}-hue), var(--tp-color-#{$color}-saturation, var(--tp-color-saturation)), var(--tp-color-#{$color}-luminosity-3, var(--tp-color-luminosity-3));
 
   @for $i from 1 through 5 {
-    --#{base.$namespace}-color-#{$color}-#{$i}: var(--#{base.$namespace}-color-#{$color}-hue), var(--#{base.$namespace}-color-saturation), var(--#{base.$namespace}-color-luminosity-#{$i});
+    --tp-color-#{$color}-#{$i}: var(--tp-color-#{$color}-hue), var(--tp-color-#{$color}-saturation, var(--tp-color-saturation)), var(--tp-color-#{$color}-luminosity-#{$i}, var(--tp-color-luminosity-#{$i}));
   }
 }
 
@@ -14,32 +13,34 @@
     $luminosity-multiplier: if($i == 1, 0, $i - 1);
     $luminosity-step: $luminosity-multiplier * 10%;
 
-    --#{base.$namespace}-color-neutral-#{$i}: var(--#{base.$namespace}-color-neutral-hue), var(--#{base.$namespace}-color-neutral-saturation), calc(var(--#{base.$namespace}-color-neutral-luminosity) + #{$luminosity-step});
+    --fuck: #{$luminosity-step};
+
+    --tp-color-neutral-#{$i}: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + #{$luminosity-step} * var(--tp-color-neutral-invert));
 
     @if $i != 10 {
-      --#{base.$namespace}-color-neutral-#{$i}5: var(--#{base.$namespace}-color-neutral-hue), var(--#{base.$namespace}-color-neutral-saturation), calc(var(--#{base.$namespace}-color-neutral-alternative-luminosity) + #{$luminosity-step} * var(--#{base.$namespace}-color-neutral-invert));
+      --tp-color-neutral-#{$i}5: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + #{$luminosity-step} * var(--tp-color-neutral-invert));
     }
   }
 }
 
 @mixin generate-color-feedback-properties($color) {
-  --#{base.$namespace}-color-feedback-#{$color}: var(--#{base.$namespace}-color-feedback-#{$color}-hue), var(--#{base.$namespace}-color-feedback-saturation), var(--#{base.$namespace}-color-feedback-luminosity);
+  --tp-color-feedback-#{$color}: var(--tp-color-feedback-#{$color}-hue), var(--tp-color-feedback-#{$color}-saturation, var(--tp-color-feedback-saturation)), var(--tp-color-feedback-#{$color}-luminosity, var(--tp-color-feedback-luminosity));
 }
 
 @mixin generate-ionic-color-classes($color) {
   .ion-color-#{$color} {
-    --ion-color-base: hsl(var(--#{base.$namespace}-color-#{$color}));
-    --ion-color-base-rgb: var(--#{base.$namespace}-color-#{$color});
-    --ion-color-contrast: hsl(var(--#{base.$namespace}-color-neutral-10));
+    --ion-color-base: hsl(var(--tp-color-#{$color})) !important;
+    --ion-color-base-rgb: var(--tp-color-#{$color}) !important;
+    --ion-color-contrast: hsl(var(--tp-color-neutral-10)) !important;
     // --ion-color-shade: ;
     // --ion-color-tint: ;
   }
 
   @for $i from 1 through 5 {
     .ion-color-#{$color}-#{$i} {
-      --ion-color-base: hsl(var(--#{base.$namespace}-color-#{$color}-#{$i}));
-      --ion-color-base-rgb: var(--#{base.$namespace}-color-#{$color}-#{$i});
-      --ion-color-contrast: #{if($i <= 3, hsl(var(--#{base.$namespace}-color-neutral-10)), hsl(var(--#{base.$namespace}-color-neutral-1)))};
+      --ion-color-base: hsl(var(--tp-color-#{$color}-#{$i})) !important;
+      --ion-color-base-rgb: var(--tp-color-#{$color}-#{$i}) !important;
+      --ion-color-contrast: #{if($i <= 3, hsl(var(--tp-color-neutral-10)), hsl(var(--tp-color-neutral-1)))} !important;
       // --ion-color-shade: ;
       // --ion-color-tint: ;
     }
@@ -49,18 +50,18 @@
 @mixin generate-ionic-color-neutral-classes() {
   @for $i from 1 through 10 {
     .ion-color-neutral-#{$i} {
-      --ion-color-base: hsl(var(--#{base.$namespace}-color-neutral-#{$i}));
-      --ion-color-base-rgb: var(--#{base.$namespace}-color-neutral-#{$i});
-      --ion-color-contrast: #{if($i <= 5, hsl(var(--#{base.$namespace}-color-neutral-10)), hsl(var(--#{base.$namespace}-color-neutral-1)))};
+      --ion-color-base: hsl(var(--tp-color-neutral-#{$i})) !important;
+      --ion-color-base-rgb: var(--tp-color-neutral-#{$i}) !important;
+      --ion-color-contrast: #{if($i <= 5, hsl(var(--tp-color-neutral-10)), hsl(var(--tp-color-neutral-1)))} !important;
       // --ion-color-shade: ;
       // --ion-color-tint: ;
     }
 
     @if $i != 10 {
       .ion-color-neutral-#{$i}5 {
-        --ion-color-base: hsl(var(--#{base.$namespace}-color-neutral-#{$i}5));
-        --ion-color-base-rgb: var(--#{base.$namespace}-color-neutral-#{$i}5);
-        --ion-color-contrast: #{if($i <= 5, hsl(var(--#{base.$namespace}-color-neutral-10)), hsl(var(--#{base.$namespace}-color-neutral-1)))};
+        --ion-color-base: hsl(var(--tp-color-neutral-#{$i}5)) !important;
+        --ion-color-base-rgb: var(--tp-color-neutral-#{$i}5) !important;
+        --ion-color-contrast: #{if($i <= 5, hsl(var(--tp-color-neutral-10)), hsl(var(--tp-color-neutral-1)))} !important;
         // --ion-color-shade: ;
         // --ion-color-tint: ;
       }
@@ -70,9 +71,9 @@
 
 @mixin generate-ionic-color-feedback-classes($color) {
   .ion-color-#{$color} {
-    --ion-color-base: hsl(var(--#{base.$namespace}-color-feedback-#{$color}));
-    --ion-color-base-rgb: var(--#{base.$namespace}-color-feedback-#{$color});
-    --ion-color-contrast: hsl(var(--#{base.$namespace}-color-neutral-1));
+    --ion-color-base: hsl(var(--tp-color-feedback-#{$color})) !important;
+    --ion-color-base-rgb: var(--tp-color-feedback-#{$color}) !important;
+    --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
     // --ion-color-shade: ;
     // --ion-color-tint: ;
   }

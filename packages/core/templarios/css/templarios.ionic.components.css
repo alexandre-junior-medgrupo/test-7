@@ -1,5 +1,6 @@
 ion-button {
   --background: hsl(var(--tp-color-brand-3));
+  --color: hsl(var(--tp-color-neutral-1));
   --border-radius: 500px;
   --box-shadow: none;
   --padding-top: 16px;
