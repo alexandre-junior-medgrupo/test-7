@@ -10,8 +10,8 @@ ion-button {
 }
 
 :root {
-  --ion-default-font: 'fsemeric', 'Open Sans', sans-serif;
   --ion-background-color: hsl(var(--tp-color-neutral-1));
+  --ion-default-font: "fsemeric", "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=templarios.ionic.components.css.map */

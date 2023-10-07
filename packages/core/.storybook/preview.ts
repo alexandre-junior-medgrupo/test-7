@@ -1,10 +1,14 @@
 import type { Preview } from '@storybook/web-components';
 import { html } from 'lit';
 import {
-  TP_COLORS,
-  TP_COLORS_MEDSOFT,
-  TP_COLORS_RECURSOS
-} from '../src/utils/constants/color.constants';
+  TP_COLOR,
+  TP_COLOR_MEDSOFT,
+  TP_COLOR_RECURSOS
+} from '../src/utils/constants/color.constant';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses
+} from '../src/utils/enums/theme.enum';
 
 // storybook
 import './assets/storybook.css';
@@ -32,6 +36,7 @@ defineCustomElementIonContent();
 // ionic
 
 // templarios
+import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
 import '../templarios/css/templarios.colors.css';
 import '../templarios/css/templarios.ionic.components.css';
 import '../templarios/css/templarios.themes.css';
@@ -54,102 +59,102 @@ const preview: Preview = {
       list: [
         {
           name: 'MedSoft',
-          class: ['tp-color-theme-medsoft'],
+          class: [`${TpThemeCSSClasses.MedSoft}`],
           color: '#14A2B8',
         },
         {
           name: 'MedSoft Light',
-          class: ['tp-color-theme-medsoft', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.MedSoft}`, `${TpSchemeCSSClasses.Light}`],
           color: '#3D848F',
         },
         {
           name: 'Recursos',
-          class: ['tp-color-theme-recursos'],
+          class: [`${TpThemeCSSClasses.Recursos}`],
           color: '#68a6ba',
         },
         {
           name: 'Recursos Light',
-          class: ['tp-color-theme-recursos', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.Recursos}`, `${TpSchemeCSSClasses.Light}`],
           color: '#3d7a8f',
         },
         {
           name: 'CPMed',
-          class: ['tp-color-theme-cpmed'],
+          class: [`${TpThemeCSSClasses.CPMed}`],
           color: '#B83514',
         },
         {
           name: 'CPMed Light',
-          class: ['tp-color-theme-cpmed', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.CPMed}`, `${TpSchemeCSSClasses.Light}`],
           color: '#8F4E3D',
         },
         {
           name: 'CPVent',
-          class: ['tp-color-theme-cpvent'],
+          class: [`${TpThemeCSSClasses.CPVent}`],
           color: '#97B814',
         },
         {
           name: 'CPVent Light',
-          class: ['tp-color-theme-cpvent', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.CPVent}`, `${TpSchemeCSSClasses.Light}`],
           color: '#7E8F3D',
         },
         {
           name: 'Extensivo R+',
-          class: ['tp-color-theme-extensivo-rmais'],
+          class: [`${TpThemeCSSClasses.Extensivo_RMais}`],
           color: '#B814B8',
         },
         {
           name: 'Extensivo R+ Light',
-          class: ['tp-color-theme-extensivo-rmais', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.Extensivo_RMais}`, `${TpSchemeCSSClasses.Light}`],
           color: '#8F3D8F',
         },
         {
           name: 'Intensivão',
-          class: ['tp-color-theme-intensivao'],
+          class: [`${TpThemeCSSClasses.Intensivao}`],
           color: '#B81440',
         },
         {
           name: 'Intensivão Light',
-          class: ['tp-color-theme-intensivao', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.Intensivao}`, `${TpSchemeCSSClasses.Light}`],
           color: '#8F3D53',
         },
         {
           name: 'MedEletro',
-          class: ['tp-color-theme-medeletro'],
+          class: [`${TpThemeCSSClasses.MedEletro}`],
           color: '#14B8B8',
         },
         {
           name: 'MedEletro Light',
-          class: ['tp-color-theme-medeletro', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.MedEletro}`, `${TpSchemeCSSClasses.Light}`],
           color: '#3D8F8F',
         },
         {
           name: 'MedMaster',
-          class: ['tp-color-theme-medmaster'],
+          class: [`${TpThemeCSSClasses.MedMaster}`],
           color: '#B8AD14',
         },
         {
           name: 'MedMaster Light',
-          class: ['tp-color-theme-medmaster', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.MedMaster}`, `${TpSchemeCSSClasses.Light}`],
           color: '#8F893D',
         },
         {
           name: 'NoPapo',
-          class: ['tp-color-theme-no-papo'],
+          class: [`${TpThemeCSSClasses.NoPapo}`],
           color: '#1430b8',
         },
         {
           name: 'NoPapo Light',
-          class: ['tp-color-theme-no-papo', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.NoPapo}`, `${TpSchemeCSSClasses.Light}`],
           color: '#3d4b8f',
         },
         {
           name: 'Ventilamed',
-          class: ['tp-color-theme-ventilamed'],
+          class: [`${TpThemeCSSClasses.Ventilamed}`],
           color: '#B86314',
         },
         {
           name: 'Ventilamed Light',
-          class: ['tp-color-theme-ventilamed', 'tp-color-scheme-light'],
+          class: [`${TpThemeCSSClasses.Ventilamed}`, `${TpSchemeCSSClasses.Light}`],
           color: '#8F653D',
         },
       ],
@@ -158,18 +163,18 @@ const preview: Preview = {
   argTypes: {
     color: {
       control: { type: 'select' },
-      options: [...TP_COLORS, ...TP_COLORS_MEDSOFT, ...TP_COLORS_RECURSOS],
+      options: [...TP_COLOR, ...TP_COLOR_MEDSOFT, ...TP_COLOR_RECURSOS],
       description: `Define a cor do componente.
 
-**OBS**: As cores **'aula'**, **'material'**, **'questoes'**, **'revalida'** e **'provas'** estão disponiveis apenas no theme **MedSoft**
+**OBS**: As cores **'${TpColorAula.Aula}'**, **'${TpColorMaterial.Material}'**, **'${TpColorQuestoes.Questoes}'**, **'${TpColorRevalida.Revalida}'** e **'${TpColorRevalida.Revalida}'** estão disponiveis apenas no theme **MedSoft**
 
-**OBS**: A cor **'orange'** está disponivel apenas no theme **Recursos**`,
+**OBS**: A cor **'${TpColorOrange.Orange}'** está disponivel apenas no theme **Recursos**`,
       table: {
         defaultValue: {
           summary: 'undefined',
         },
         type: {
-          summary: [...TP_COLORS, ...TP_COLORS_MEDSOFT, ...TP_COLORS_RECURSOS].join('|'),
+          summary: [...TP_COLOR, ...TP_COLOR_MEDSOFT, ...TP_COLOR_RECURSOS].join('|'),
         },
       },
     },

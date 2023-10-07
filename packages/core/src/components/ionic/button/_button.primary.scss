@@ -1,4 +1,4 @@
-@use '../../../utils/styles/functions/color.functions';
+@use '../../../utils/styles/functions/color.function';
 
 ion-button {
   --background: #{color.tp-get-color(brand, 3)};

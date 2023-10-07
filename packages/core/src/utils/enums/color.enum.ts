@@ -1,3 +1,19 @@
+export enum TpColorBrand {
+  Brand = 'brand',
+  Brand_01 = 'brand-1',
+  Brand_02 = 'brand-2',
+  Brand_03 = 'brand-3',
+  Brand_04 = 'brand-4',
+  Brand_05 = 'brand-5',
+}
+
+export enum TpColorFeedback {
+  Success = 'success',
+  Caution = 'caution',
+  Warning = 'warning',
+  Attention = 'attention',
+}
+
 export enum TpColorNeutral {
   Neutral_1 = 'neutral-1',
   Neutral_15 = 'neutral-15',
@@ -18,22 +34,6 @@ export enum TpColorNeutral {
   Neutral_9 = 'neutral-9',
   Neutral_95 = 'neutral-95',
   Neutral_10 = 'neutral-10',
-}
-
-export enum TpColorFeedback {
-  Success = 'success',
-  Caution = 'caution',
-  Warning = 'warning',
-  Attention = 'attention',
-}
-
-export enum TpColorBrand {
-  Brand = 'brand',
-  Brand_01 = 'brand-1',
-  Brand_02 = 'brand-2',
-  Brand_03 = 'brand-3',
-  Brand_04 = 'brand-4',
-  Brand_05 = 'brand-5',
 }
 
 export enum TpColorAula {

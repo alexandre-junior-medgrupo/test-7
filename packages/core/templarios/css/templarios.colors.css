@@ -19,8 +19,7 @@
   --tp-color-luminosity-5: 80%;
 }
 
-.tp-color-scheme-light,
-[tp-color-scheme=light] {
+.tp-color-scheme-light {
   --tp-color-neutral-saturation: 10%;
   --tp-color-neutral-luminosity: 98%;
   --tp-color-neutral-alternative-luminosity: 93%;
@@ -34,42 +33,179 @@
   --tp-color-luminosity-4: 30%;
   --tp-color-luminosity-5: 20%;
 }
-.tp-color-scheme-light :not([class*=neutral]):not([class*=feedback])[class*="3"],
-[tp-color-scheme=light] :not([class*=neutral]):not([class*=feedback])[class*="3"] {
+.tp-color-scheme-light
+  :not([class*='neutral']):not([class*='feedback'])[class*='3'] {
   --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
 }
 
 :root {
-  --tp-color-neutral-1: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 0% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-15: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 0% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-2: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 10% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-25: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 10% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-3: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 20% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-35: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 20% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-4: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 30% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-45: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 30% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-5: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 40% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-55: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 40% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-6: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 50% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-65: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 50% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-7: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 60% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-75: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 60% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-8: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 70% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-85: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 70% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-9: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 80% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-95: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-alternative-luminosity) + 80% * var(--tp-color-neutral-invert));
-  --tp-color-neutral-10: var(--tp-color-neutral-hue), var(--tp-color-neutral-saturation), calc(var(--tp-color-neutral-luminosity) + 90% * var(--tp-color-neutral-invert));
-  --tp-color-feedback-attention: var(--tp-color-feedback-attention-hue), var(--tp-color-feedback-attention-saturation, var(--tp-color-feedback-saturation)), var(--tp-color-feedback-attention-luminosity, var(--tp-color-feedback-luminosity));
-  --tp-color-feedback-caution: var(--tp-color-feedback-caution-hue), var(--tp-color-feedback-caution-saturation, var(--tp-color-feedback-saturation)), var(--tp-color-feedback-caution-luminosity, var(--tp-color-feedback-luminosity));
-  --tp-color-feedback-warning: var(--tp-color-feedback-warning-hue), var(--tp-color-feedback-warning-saturation, var(--tp-color-feedback-saturation)), var(--tp-color-feedback-warning-luminosity, var(--tp-color-feedback-luminosity));
-  --tp-color-feedback-revalida: var(--tp-color-feedback-revalida-hue), var(--tp-color-feedback-revalida-saturation, var(--tp-color-feedback-saturation)), var(--tp-color-feedback-revalida-luminosity, var(--tp-color-feedback-luminosity));
-  --tp-color-feedback-success: var(--tp-color-feedback-success-hue), var(--tp-color-feedback-success-saturation, var(--tp-color-feedback-saturation)), var(--tp-color-feedback-success-luminosity, var(--tp-color-feedback-luminosity));
-  --tp-color-brand: var(--tp-color-brand-hue), var(--tp-color-brand-saturation, var(--tp-color-saturation)), var(--tp-color-brand-luminosity-3, var(--tp-color-luminosity-3));
-  --tp-color-brand-1: var(--tp-color-brand-hue), var(--tp-color-brand-saturation, var(--tp-color-saturation)), var(--tp-color-brand-luminosity-1, var(--tp-color-luminosity-1));
-  --tp-color-brand-2: var(--tp-color-brand-hue), var(--tp-color-brand-saturation, var(--tp-color-saturation)), var(--tp-color-brand-luminosity-2, var(--tp-color-luminosity-2));
-  --tp-color-brand-3: var(--tp-color-brand-hue), var(--tp-color-brand-saturation, var(--tp-color-saturation)), var(--tp-color-brand-luminosity-3, var(--tp-color-luminosity-3));
-  --tp-color-brand-4: var(--tp-color-brand-hue), var(--tp-color-brand-saturation, var(--tp-color-saturation)), var(--tp-color-brand-luminosity-4, var(--tp-color-luminosity-4));
-  --tp-color-brand-5: var(--tp-color-brand-hue), var(--tp-color-brand-saturation, var(--tp-color-saturation)), var(--tp-color-brand-luminosity-5, var(--tp-color-luminosity-5));
+  --tp-color-neutral-1: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 0% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-15: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 0% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-2: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 10% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-25: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 10% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-3: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 20% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-35: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 20% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-4: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 30% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-45: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 30% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-5: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 40% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-55: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 40% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-6: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 50% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-65: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 50% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-7: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 60% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-75: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 60% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-8: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 70% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-85: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 70% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-9: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 80% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-95: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) + 80% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-10: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) + 90% * var(--tp-color-neutral-invert)
+    );
+  --tp-color-feedback-attention: var(--tp-color-feedback-attention-hue),
+    var(
+      --tp-color-feedback-attention-saturation,
+      var(--tp-color-feedback-saturation)
+    ),
+    var(
+      --tp-color-feedback-attention-luminosity,
+      var(--tp-color-feedback-luminosity)
+    );
+  --tp-color-feedback-caution: var(--tp-color-feedback-caution-hue),
+    var(
+      --tp-color-feedback-caution-saturation,
+      var(--tp-color-feedback-saturation)
+    ),
+    var(
+      --tp-color-feedback-caution-luminosity,
+      var(--tp-color-feedback-luminosity)
+    );
+  --tp-color-feedback-warning: var(--tp-color-feedback-warning-hue),
+    var(
+      --tp-color-feedback-warning-saturation,
+      var(--tp-color-feedback-saturation)
+    ),
+    var(
+      --tp-color-feedback-warning-luminosity,
+      var(--tp-color-feedback-luminosity)
+    );
+  --tp-color-feedback-revalida: var(--tp-color-feedback-revalida-hue),
+    var(
+      --tp-color-feedback-revalida-saturation,
+      var(--tp-color-feedback-saturation)
+    ),
+    var(
+      --tp-color-feedback-revalida-luminosity,
+      var(--tp-color-feedback-luminosity)
+    );
+  --tp-color-feedback-success: var(--tp-color-feedback-success-hue),
+    var(
+      --tp-color-feedback-success-saturation,
+      var(--tp-color-feedback-saturation)
+    ),
+    var(
+      --tp-color-feedback-success-luminosity,
+      var(--tp-color-feedback-luminosity)
+    );
+  --tp-color-brand: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(--tp-color-brand-luminosity-3, var(--tp-color-luminosity-3));
+  --tp-color-brand-1: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(--tp-color-brand-luminosity-1, var(--tp-color-luminosity-1));
+  --tp-color-brand-2: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(--tp-color-brand-luminosity-2, var(--tp-color-luminosity-2));
+  --tp-color-brand-3: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(--tp-color-brand-luminosity-3, var(--tp-color-luminosity-3));
+  --tp-color-brand-4: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(--tp-color-brand-luminosity-4, var(--tp-color-luminosity-4));
+  --tp-color-brand-5: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(--tp-color-brand-luminosity-5, var(--tp-color-luminosity-5));
 }
 
 .ion-color-brand {

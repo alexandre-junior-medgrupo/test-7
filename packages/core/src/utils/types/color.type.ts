@@ -8,12 +8,12 @@ import {
   TpColorProvas,
   TpColorQuestoes,
   TpColorRevalida,
-} from '../enums/color.enums';
+} from '../enums/color.enum';
 
 export type TpColors =
+  | `${TpColorBrand}`
   | `${TpColorNeutral}`
-  | `${TpColorFeedback}`
-  | `${TpColorBrand}`;
+  | `${TpColorFeedback}`;
 
 export type TpColorsMedgrupo =
   | `${TpColorAula}`
