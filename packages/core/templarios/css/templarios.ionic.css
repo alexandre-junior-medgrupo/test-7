@@ -1,0 +1,31 @@
+/* stylelint-disable max-nesting-depth */
+/* stylelint-enable max-nesting-depth */
+ion-button {
+  --background: hsl(var(--tp-color-brand));
+  --color: hsl(var(--tp-color-neutral-10));
+  --border-radius: 500px;
+  --box-shadow: none;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --padding-start: 32px;
+  --padding-end: 32px;
+}
+
+ion-text,
+ion-text a {
+  color: hsl(var(--tp-color-neutral-10));
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+ion-text.ion-color,
+ion-text.ion-color a {
+  color: var(--ion-color-base);
+}
+
+/* stylelint-enable selector-no-qualifying-type */
+:root {
+  --ion-background-color: hsl(var(--tp-color-neutral-1));
+  --ion-default-font: "fsemeric", "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=templarios.ionic.css.map */

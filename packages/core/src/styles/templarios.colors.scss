@@ -1,6 +1,5 @@
-@use '../utils/styles/mixins/color.mixin';
-
-$feedbacks: 'attention', 'caution', 'warning', 'revalida', 'success';
+@use '../utils/styles/variables/theme.variables';
+@use '../utils/styles/mixins/color.mixins';
 
 // default scheme: dark
 :root {
@@ -41,7 +40,7 @@ $feedbacks: 'attention', 'caution', 'warning', 'revalida', 'success';
 
   // feedback color css custom properties override
   --tp-color-feedback-luminosity: 45%;
-  --tp-color-feedback-success-luminosity: 35%;
+  --tp-color-success-luminosity: 35%;
 
   // neutral color css custom properties override
   --tp-color-neutral-saturation: 10%;
@@ -50,23 +49,21 @@ $feedbacks: 'attention', 'caution', 'warning', 'revalida', 'success';
   --tp-color-neutral-invert: -1;
 
   // color variation 3 contrast css custom property override
-  :not([class*='neutral']):not([class*='feedback'])[class*='3'] {
-    --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
-  }
+  --tp-color-contrast-fixed: hsl(var(--tp-color-neutral-1));
 }
 
 // css custom properties
 :root {
-  @include color.generate-color-properties(brand);
-  @each $feedback in $feedbacks {
-    @include color.generate-color-feedback-properties($feedback);
+  @include color.tp-generate-color-neutral-properties();
+  @include color.tp-generate-color-properties(brand);
+  @each $feedback in theme.$tp-feedback-colors {
+    @include color.tp-generate-color-feedback-properties($feedback);
   }
-  @include color.generate-color-neutral-properties();
 }
 
 // ionic css classes
-@include color.generate-ionic-color-classes(brand);
-@each $feedback in $feedbacks {
-  @include color.generate-ionic-color-feedback-classes($feedback);
+@include color.tp-generate-ionic-color-neutral-classes();
+@include color.tp-generate-ionic-color-classes(brand);
+@each $feedback in theme.$tp-feedback-colors {
+  @include color.tp-generate-ionic-color-feedback-classes($feedback);
 }
-@include color.generate-ionic-color-neutral-classes();

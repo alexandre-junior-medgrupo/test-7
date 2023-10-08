@@ -1,11 +1,3 @@
 {
-  "singleQuote": true,
-  "overrides": [
-    {
-      "files": ["packages/core/src/utils/styles/mixins/_color.mixins.scss"],
-      "options": {
-        "printWidth": 320
-      }
-    }
-  ]
+  "singleQuote": true
 }

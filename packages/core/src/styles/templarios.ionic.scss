@@ -1,5 +1,5 @@
-@use '../utils/styles/functions/color.function';
-@use '../components/ionic/button/button';
+@use '../utils/styles/functions/color.functions';
+@use '../components/ionic/ionic.components';
 
 :root {
   --ion-background-color: #{color.tp-get-color(neutral, 1)};

@@ -1,0 +1,72 @@
+@use 'sass:list';
+@use '../variables/theme.variables';
+
+// $color: string
+// $variation: number
+// $opacity: number
+@function tp-get-color($color, $variation: null, $opacity: null) {
+  @if ($opacity) {
+    @return if(
+      $variation,
+      hsla(var(--tp-color-#{$color}-#{$variation}), $opacity),
+      hsla(var(--tp-color-#{$color}), $opacity)
+    );
+  }
+
+  @return if(
+    $variation,
+    hsl(var(--tp-color-#{$color}-#{$variation})),
+    hsl(var(--tp-color-#{$color}))
+  );
+}
+
+/* stylelint-disable max-nesting-depth */
+// $type: color | neutral | feedback
+// $color: string
+// $variation: number
+@function tp-get-color-contrast($type, $color: null, $variation: null) {
+  @if $type == feedback {
+    @return hsl(var(--tp-color-neutral-1));
+  }
+
+  @if $type == color {
+    @if not $variation == null or $variation == 3 {
+      @return var(--tp-color-contrast-fixed);
+    } @else if $variation <= 2 {
+      @return var(--tp-color-neutral-10);
+    } @else {
+      @return var(--tp-color-neutral-1);
+    }
+  }
+
+  @if $type == neutral {
+    @if not $color {
+      @error "neutral precisa ter uma das seguintes cores 'neutral' | 'alternative'";
+    }
+
+    @if $color == neutral {
+      @if not list.index(theme.$tp-neutral-variation, $variation) {
+        @error "#{$variation} não é uma variação valida de 'neutral'. Use uma das variações: #{$tp-neutral-variation}.";
+      }
+
+      @return if(
+        $variation <= 5,
+        hsl(var(--tp-color-neutral-10)),
+        hsl(var(--tp-color-neutral-1))
+      );
+    }
+
+    @if $color == alternative {
+      @if not list.index(theme.$tp-neutral-alternative-variation, $variation) {
+        @error "#{$variation} não é uma variação valida de 'alternative'. Use uma das variações: #{$tp-neutral-alternative-variation}.";
+      }
+
+      @return if(
+        $variation <= 55,
+        hsl(var(--tp-color-neutral-10)),
+        hsl(var(--tp-color-neutral-1))
+      );
+    }
+  }
+}
+/* stylelint-enable max-nesting-depth */

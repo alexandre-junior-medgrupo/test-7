@@ -1,0 +1,14 @@
+@use '../../../utils/styles/functions/color.functions';
+@use '../../../utils//styles/mixins/type.mixins';
+
+ion-text,
+ion-text a {
+  color: #{color.tp-get-color(neutral, 10)};
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+ion-text.ion-color,
+ion-text.ion-color a {
+  color: var(--ion-color-base);
+}
+/* stylelint-enable selector-no-qualifying-type */

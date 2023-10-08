@@ -1,7 +1,5 @@
-@use '../utils/styles/mixins/color.mixin';
-
-$medsoft-secondary-colors: 'aula', 'material', 'questoes', 'revalida', 'provas';
-$recursos-secondary-colors: 'orange';
+@use '../utils/styles/variables/theme.variables';
+@use '../utils/styles/mixins/color.mixins';
 
 .tp-color-theme {
   &-medsoft {
@@ -11,9 +9,9 @@ $recursos-secondary-colors: 'orange';
     --tp-color-revalida-hue: 342;
     --tp-color-provas-hue: 268;
 
-    @each $color in $medsoft-secondary-colors {
-      @include color.generate-color-properties($color);
-      @include color.generate-ionic-color-classes($color);
+    @each $color in theme.$tp-medsoft-secondary-colors {
+      @include color.tp-generate-color-properties($color);
+      @include color.tp-generate-ionic-color-classes($color);
     }
   }
 
@@ -21,9 +19,9 @@ $recursos-secondary-colors: 'orange';
     --tp-color-brand-hue: 195;
     --tp-color-orange-hue: 25;
 
-    @each $color in $recursos-secondary-colors {
-      @include color.generate-color-properties($color);
-      @include color.generate-ionic-color-classes($color);
+    @each $color in theme.$tp-recursos-secondary-colors {
+      @include color.tp-generate-color-properties($color);
+      @include color.tp-generate-ionic-color-classes($color);
     }
   }
 
