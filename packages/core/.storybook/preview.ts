@@ -52,6 +52,11 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    options: {
+      storySort: {
+        order: ['Templarios', 'Core', 'Utils', 'Components'],
+      },
+    },
     themes: {
       target: 'root',
       default: 'default',
@@ -106,6 +111,16 @@ const preview: Preview = {
           name: 'Extensivo R+ Light',
           class: [`${TpThemeCSSClasses.Extensivo_RMais}`, `${TpSchemeCSSClasses.Light}`],
           color: '#8F3D8F',
+        },
+        {
+          name: 'Extensivo',
+          class: [`${TpThemeCSSClasses.Extensivo}`],
+          color: '#5b14b8',
+        },
+        {
+          name: 'Extensivo Light',
+          class: [`${TpThemeCSSClasses.Extensivo}`, `${TpSchemeCSSClasses.Light}`],
+          color: '#613d8f',
         },
         {
           name: 'Intensivão',

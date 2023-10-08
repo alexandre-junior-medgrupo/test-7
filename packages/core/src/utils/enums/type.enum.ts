@@ -8,6 +8,7 @@ export enum TpType {
   H24X = 'h24x',
   H20 = 'h20',
   H20X = 'h20x',
+  P20 = 'p20',
   P18X = 'p18x',
   P18XB = 'p18xb',
   P16 = 'p16',

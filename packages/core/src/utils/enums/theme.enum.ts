@@ -4,6 +4,7 @@ export enum TpThemeCSSClasses {
   CPMed = 'tp-color-theme-cpmed',
   CPVent = 'tp-color-theme-cpvent',
   Extensivo_RMais = 'tp-color-theme-extensivo-rmais',
+  Extensivo = 'tp-color-theme-extensivo',
   Intensivao = 'tp-color-theme-intensivao',
   MedEletro = 'tp-color-theme-medeletro',
   MedMaster = 'tp-color-theme-medmaster',

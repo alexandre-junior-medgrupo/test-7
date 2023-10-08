@@ -173,12 +173,6 @@
   --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
 }
 
-.ion-color-revalida {
-  --ion-color-base: hsl(var(--tp-color-revalida)) !important;
-  --ion-color-base-rgb: var(--tp-color-revalida) !important;
-  --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
-}
-
 .ion-color-success {
   --ion-color-base: hsl(var(--tp-color-success)) !important;
   --ion-color-base-rgb: var(--tp-color-success) !important;
