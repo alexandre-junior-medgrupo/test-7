@@ -3,7 +3,7 @@
 @use '../utils/styles/mixins/color.mixins' as color-mixin;
 
 :root {
-  --ion-background-color: #{color-function.tp-get-color(neutral, 1)};
+  --ion-background-color: #{color-function.tp-color(neutral, 1)};
   --ion-default-font: 'fsemeric', 'Open Sans', sans-serif;
 }
 

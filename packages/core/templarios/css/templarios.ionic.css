@@ -1,7 +1,5 @@
 /* stylelint-disable max-nesting-depth */
 /* stylelint-enable max-nesting-depth */
-/* stylelint-disable max-nesting-depth */
-/* stylelint-enable max-nesting-depth */
 :root {
   --ion-background-color: hsl(var(--tp-color-neutral-1));
   --ion-default-font: "fsemeric", "Open Sans", sans-serif;
@@ -187,8 +185,6 @@
   --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
 }
 
-/* stylelint-disable max-nesting-depth */
-/* stylelint-enable max-nesting-depth */
 ion-button {
   --background: hsl(var(--tp-color-brand));
   --color: hsl(var(--tp-color-neutral-10));

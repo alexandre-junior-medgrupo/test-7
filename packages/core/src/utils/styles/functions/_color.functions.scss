@@ -1,10 +1,16 @@
 @use 'sass:list';
 @use '../variables/theme.variables';
 
-// $color: string
-// $variation: number
-// $opacity: number
-@function tp-get-color($color, $variation: null, $opacity: null) {
+// @function tp-color($color, $variation: null, $opacity: null);
+// @param $color: string
+// @param $variation: number
+// @param $opacity: number
+//
+// @examples:
+// tp-color(brand) @returns: hsl(var(--tp-color-brand));
+// tp-color(brand, 5) @returns: hsl(var(--tp-color-brand-5));
+// tp-color(brand, 5, 0.5) @returns: hsla(var(--tp-color-brand-5), 0.5);
+@function tp-color($color, $variation: null, $opacity: null) {
   @if ($opacity) {
     @return if(
       $variation,
@@ -20,23 +26,46 @@
   );
 }
 
-/* stylelint-disable max-nesting-depth */
-// $type: color | neutral | feedback
-// $color: string
-// $variation: number
-@function tp-get-color-contrast($type, $color: null, $variation: null) {
-  @if $type == feedback {
-    @return hsl(var(--tp-color-neutral-1));
+// @function tp-color-contrast($type, $variation: null, $color: null);
+// @param $type: color | neutral | feedback
+// @param $color: string
+// @param $variation: number
+//
+// @examples:
+// tp-color-contrast(color); @returns: hsl(var(--tp-color-contrast-fixed));
+// tp-color-contrast(color, 3); @returns: hsl(var(--tp-color-contrast-fixed));
+// tp-color-contrast(color, 2); @returns: hsl(var(--tp-color-neutral-10));
+// tp-color-contrast(color, 4); @returns: hsl(var(--tp-color-neutral-1));
+//
+// tp-color-contrast(feedback); @returns: hsl(var(--tp-color-neutral-1));
+//
+// tp-color-contrast(neutral, 5, neutral); @returns: hsl(var(--tp-color-neutral-10));
+// tp-color-contrast(neutral, 6, neutral); @returns: hsl(var(--tp-color-neutral-1));
+// tp-color-contrast(neutral, 55, alternative); @returns: hsl(returns: var(--tp-color-neutral-10));
+// tp-color-contrast(neutral, 65, alternative); @returns: hsl(returns: var(--tp-color-neutral-1));
+//
+@function tp-color-contrast($type, $variation: null, $color: null) {
+  /* stylelint-disable max-nesting-depth */
+  @if $type == color {
+    @if not $variation or $variation == 3 {
+      @return hsl(var(--tp-color-contrast-fixed));
+    }
+
+    @if $variation {
+      @if not list.index(theme.$tp-color-variation, $variation) {
+        @error "#{$variation} não é uma variação valida de 'color'. Use uma das variações: #{theme.$tp-color-variation}.";
+      }
+
+      @if $variation <= 2 {
+        @return hsl(var(--tp-color-neutral-10));
+      } @else {
+        @return hsl(var(--tp-color-neutral-1));
+      }
+    }
   }
 
-  @if $type == color {
-    @if not $variation == null or $variation == 3 {
-      @return var(--tp-color-contrast-fixed);
-    } @else if $variation <= 2 {
-      @return var(--tp-color-neutral-10);
-    } @else {
-      @return var(--tp-color-neutral-1);
-    }
+  @if $type == feedback {
+    @return hsl(var(--tp-color-neutral-1));
   }
 
   @if $type == neutral {
@@ -46,7 +75,7 @@
 
     @if $color == neutral {
       @if not list.index(theme.$tp-neutral-variation, $variation) {
-        @error "#{$variation} não é uma variação valida de 'neutral'. Use uma das variações: #{$tp-neutral-variation}.";
+        @error "#{$variation} não é uma variação valida de 'neutral'. Use uma das variações: #{theme.$tp-neutral-variation}.";
       }
 
       @return if(
@@ -58,7 +87,7 @@
 
     @if $color == alternative {
       @if not list.index(theme.$tp-neutral-alternative-variation, $variation) {
-        @error "#{$variation} não é uma variação valida de 'alternative'. Use uma das variações: #{$tp-neutral-alternative-variation}.";
+        @error "#{$variation} não é uma variação valida de 'alternative'. Use uma das variações: #{theme.$tp-neutral-alternative-variation}.";
       }
 
       @return if(
@@ -68,5 +97,5 @@
       );
     }
   }
+  /* stylelint-enable max-nesting-depth */
 }
-/* stylelint-enable max-nesting-depth */

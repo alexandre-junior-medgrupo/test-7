@@ -41,169 +41,125 @@
   --tp-color-neutral-1: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        0% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 0% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-15: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        0% *
+      var(--tp-color-neutral-alternative-luminosity) + 0% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-2: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        10% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 10% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-25: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        10% *
+      var(--tp-color-neutral-alternative-luminosity) + 10% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-3: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        20% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 20% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-35: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        20% *
+      var(--tp-color-neutral-alternative-luminosity) + 20% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-4: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        30% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 30% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-45: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        30% *
+      var(--tp-color-neutral-alternative-luminosity) + 30% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-5: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        40% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 40% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-55: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        40% *
+      var(--tp-color-neutral-alternative-luminosity) + 40% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-6: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        50% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 50% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-65: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        50% *
+      var(--tp-color-neutral-alternative-luminosity) + 50% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-7: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        60% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 60% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-75: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        60% *
+      var(--tp-color-neutral-alternative-luminosity) + 60% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-8: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        70% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 70% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-85: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        70% *
+      var(--tp-color-neutral-alternative-luminosity) + 70% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-9: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        80% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 80% * var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-95: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-alternative-luminosity) +
-        80% *
+      var(--tp-color-neutral-alternative-luminosity) + 80% *
         var(--tp-color-neutral-invert)
     );
   --tp-color-neutral-10: var(--tp-color-neutral-hue),
     var(--tp-color-neutral-saturation),
     calc(
-      var(--tp-color-neutral-luminosity) +
-        90% *
-        var(--tp-color-neutral-invert)
+      var(--tp-color-neutral-luminosity) + 90% * var(--tp-color-neutral-invert)
     );
   --tp-color-brand: var(--tp-color-brand-hue),
     var(--tp-color-brand-saturation, var(--tp-color-saturation)),
     var(--tp-color-brand-luminosity-3, var(--tp-color-luminosity-3));
   --tp-color-brand-1: var(--tp-color-brand-hue),
     var(--tp-color-brand-saturation, var(--tp-color-saturation)),
-    var(
-      --tp-color-brand-luminosity-1,
-      var(--tp-color-luminosity-1)
-    );
+    var(--tp-color-brand-luminosity-1, var(--tp-color-luminosity-1));
   --tp-color-brand-2: var(--tp-color-brand-hue),
     var(--tp-color-brand-saturation, var(--tp-color-saturation)),
-    var(
-      --tp-color-brand-luminosity-2,
-      var(--tp-color-luminosity-2)
-    );
+    var(--tp-color-brand-luminosity-2, var(--tp-color-luminosity-2));
   --tp-color-brand-3: var(--tp-color-brand-hue),
     var(--tp-color-brand-saturation, var(--tp-color-saturation)),
-    var(
-      --tp-color-brand-luminosity-3,
-      var(--tp-color-luminosity-3)
-    );
+    var(--tp-color-brand-luminosity-3, var(--tp-color-luminosity-3));
   --tp-color-brand-4: var(--tp-color-brand-hue),
     var(--tp-color-brand-saturation, var(--tp-color-saturation)),
-    var(
-      --tp-color-brand-luminosity-4,
-      var(--tp-color-luminosity-4)
-    );
+    var(--tp-color-brand-luminosity-4, var(--tp-color-luminosity-4));
   --tp-color-brand-5: var(--tp-color-brand-hue),
     var(--tp-color-brand-saturation, var(--tp-color-saturation)),
-    var(
-      --tp-color-brand-luminosity-5,
-      var(--tp-color-luminosity-5)
-    );
+    var(--tp-color-brand-luminosity-5, var(--tp-color-luminosity-5));
   --tp-color-contrast-fixed: var(--tp-color-neutral-10);
   --tp-color-attention: var(--tp-color-feedback-attention-hue),
     var(--tp-color-attention-saturation, var(--tp-color-feedback-saturation)),
@@ -222,200 +178,200 @@
     var(--tp-color-success-luminosity, var(--tp-color-feedback-luminosity));
 }
 
-[type=h64],
-[type=h64] * {
+[type='h64'],
+[type='h64'] * {
   font-size: 64px !important;
   font-weight: 600 !important;
   line-height: 64px !important;
   margin: 0;
 }
 
-[type=h48],
-[type=h48] * {
+[type='h48'],
+[type='h48'] * {
   font-size: 48px !important;
   font-weight: 600 !important;
   line-height: 48px !important;
   margin: 0;
 }
 
-[type=h48x],
-[type=h48x] * {
+[type='h48x'],
+[type='h48x'] * {
   font-size: 48px !important;
   font-weight: 600 !important;
   line-height: 64px !important;
   margin: 0;
 }
 
-[type=h32],
-[type=h32] * {
+[type='h32'],
+[type='h32'] * {
   font-size: 32px !important;
   font-weight: 600 !important;
   line-height: 32px !important;
   margin: 0;
 }
 
-[type=h32x],
-[type=h32x] * {
+[type='h32x'],
+[type='h32x'] * {
   font-size: 32px !important;
   font-weight: 600 !important;
   line-height: 40px !important;
   margin: 0;
 }
 
-[type=h24],
-[type=h24] * {
+[type='h24'],
+[type='h24'] * {
   font-size: 24px !important;
   font-weight: 600 !important;
   line-height: 24px !important;
   margin: 0;
 }
 
-[type=h24x],
-[type=h24x] * {
+[type='h24x'],
+[type='h24x'] * {
   font-size: 24px !important;
   font-weight: 600 !important;
   line-height: 32px !important;
   margin: 0;
 }
 
-[type=h20],
-[type=h20] * {
+[type='h20'],
+[type='h20'] * {
   font-size: 20px !important;
   font-weight: 600 !important;
   line-height: 20px !important;
   margin: 0;
 }
 
-[type=h20x],
-[type=h20x] * {
+[type='h20x'],
+[type='h20x'] * {
   font-size: 20px !important;
   font-weight: 600 !important;
   line-height: 24px !important;
   margin: 0;
 }
 
-[type=p18x],
-[type=p18x] * {
+[type='p18x'],
+[type='p18x'] * {
   font-size: 18px !important;
   font-weight: 400 !important;
   line-height: 32px !important;
   margin: 0;
 }
 
-[type=p18xb],
-[type=p18xb] * {
+[type='p18xb'],
+[type='p18xb'] * {
   font-size: 18px !important;
   font-weight: 600 !important;
   line-height: 32px !important;
   margin: 0;
 }
 
-[type=p16],
-[type=p16] * {
+[type='p16'],
+[type='p16'] * {
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 16px !important;
   margin: 0;
 }
 
-[type=p16b],
-[type=p16b] * {
+[type='p16b'],
+[type='p16b'] * {
   font-size: 16px !important;
   font-weight: 600 !important;
   line-height: 16px !important;
   margin: 0;
 }
 
-[type=p16x],
-[type=p16x] * {
+[type='p16x'],
+[type='p16x'] * {
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 24px !important;
   margin: 0;
 }
 
-[type=p16xb],
-[type=p16xb] * {
+[type='p16xb'],
+[type='p16xb'] * {
   font-size: 16px !important;
   font-weight: 600 !important;
   line-height: 24px !important;
   margin: 0;
 }
 
-[type=p14],
-[type=p14] * {
+[type='p14'],
+[type='p14'] * {
   font-size: 14px !important;
   font-weight: 400 !important;
   line-height: 16px !important;
   margin: 0;
 }
 
-[type=p14b],
-[type=p14b] * {
+[type='p14b'],
+[type='p14b'] * {
   font-size: 14px !important;
   font-weight: 600 !important;
   line-height: 16px !important;
   margin: 0;
 }
 
-[type=p14x],
-[type=p14x] * {
+[type='p14x'],
+[type='p14x'] * {
   font-size: 14px !important;
   font-weight: 400 !important;
   line-height: 20px !important;
   margin: 0;
 }
 
-[type=p14xb],
-[type=p14xb] * {
+[type='p14xb'],
+[type='p14xb'] * {
   font-size: 14px !important;
   font-weight: 600 !important;
   line-height: 20px !important;
   margin: 0;
 }
 
-[type=p12],
-[type=p12] * {
+[type='p12'],
+[type='p12'] * {
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 12px !important;
   margin: 0;
 }
 
-[type=p12b],
-[type=p12b] * {
+[type='p12b'],
+[type='p12b'] * {
   font-size: 12px !important;
   font-weight: 600 !important;
   line-height: 12px !important;
   margin: 0;
 }
 
-[type=p12x],
-[type=p12x] * {
+[type='p12x'],
+[type='p12x'] * {
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 16px !important;
   margin: 0;
 }
 
-[type=p12xb],
-[type=p12xb] * {
+[type='p12xb'],
+[type='p12xb'] * {
   font-size: 12px !important;
   font-weight: 600 !important;
   line-height: 16px !important;
   margin: 0;
 }
 
-[type=p10],
-[type=p10] * {
+[type='p10'],
+[type='p10'] * {
   font-size: 10px !important;
   font-weight: 400 !important;
   line-height: 12px !important;
   margin: 0;
 }
 
-[type=p10b],
-[type=p10b] * {
+[type='p10b'],
+[type='p10b'] * {
   font-size: 10px !important;
   font-weight: 600 !important;
   line-height: 12px !important;
