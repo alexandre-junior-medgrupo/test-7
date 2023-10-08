@@ -1,6 +1,6 @@
 @use '../variables/type.variables';
 
-@mixin tp-generate-token-styling() {
+@mixin tp-generate-type-styling() {
   @each $type-value, $type in type.$tp-types {
     [type='#{$type-value}'],
     [type='#{$type-value}'] * {

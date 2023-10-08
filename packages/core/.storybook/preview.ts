@@ -37,7 +37,6 @@ defineCustomElementIonContent();
 
 // templarios
 import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
-import '../templarios/css/templarios.colors.css';
 import '../templarios/css/templarios.css';
 import '../templarios/css/templarios.ionic.css';
 import '../templarios/css/templarios.themes.css';

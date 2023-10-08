@@ -1,3 +1,227 @@
+/* stylelint-disable max-nesting-depth */
+/* stylelint-enable max-nesting-depth */
+:root {
+  --tp-color-brand-hue: 188;
+  --tp-color-saturation: 80%;
+  --tp-color-luminosity-1: 20%;
+  --tp-color-luminosity-2: 30%;
+  --tp-color-luminosity-3: 40%;
+  --tp-color-luminosity-4: 60%;
+  --tp-color-luminosity-5: 80%;
+  --tp-color-feedback-attention-hue: 44;
+  --tp-color-feedback-caution-hue: 24;
+  --tp-color-feedback-warning-hue: 4;
+  --tp-color-feedback-success-hue: 128;
+  --tp-color-feedback-saturation: 80%;
+  --tp-color-feedback-luminosity: 65%;
+  --tp-color-neutral-hue: 188;
+  --tp-color-neutral-saturation: 10%;
+  --tp-color-neutral-luminosity: 8%;
+  --tp-color-neutral-alternative-luminosity: 13%;
+  --tp-color-neutral-invert: 1;
+}
+
+.tp-color-scheme-light {
+  --tp-color-saturation: 40%;
+  --tp-color-luminosity-1: 80%;
+  --tp-color-luminosity-2: 60%;
+  --tp-color-luminosity-3: 40%;
+  --tp-color-luminosity-4: 30%;
+  --tp-color-luminosity-5: 20%;
+  --tp-color-feedback-luminosity: 45%;
+  --tp-color-success-luminosity: 35%;
+  --tp-color-neutral-saturation: 10%;
+  --tp-color-neutral-luminosity: 98%;
+  --tp-color-neutral-alternative-luminosity: 93%;
+  --tp-color-neutral-invert: -1;
+  --tp-color-contrast-fixed: hsl(var(--tp-color-neutral-1));
+}
+
+:root {
+  --tp-color-neutral-1: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        0% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-15: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        0% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-2: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        10% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-25: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        10% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-3: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        20% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-35: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        20% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-4: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        30% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-45: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        30% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-5: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        40% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-55: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        40% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-6: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        50% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-65: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        50% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-7: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        60% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-75: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        60% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-8: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        70% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-85: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        70% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-9: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        80% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-95: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-alternative-luminosity) +
+        80% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-neutral-10: var(--tp-color-neutral-hue),
+    var(--tp-color-neutral-saturation),
+    calc(
+      var(--tp-color-neutral-luminosity) +
+        90% *
+        var(--tp-color-neutral-invert)
+    );
+  --tp-color-brand: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(--tp-color-brand-luminosity-3, var(--tp-color-luminosity-3));
+  --tp-color-brand-1: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(
+      --tp-color-brand-luminosity-1,
+      var(--tp-color-luminosity-1)
+    );
+  --tp-color-brand-2: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(
+      --tp-color-brand-luminosity-2,
+      var(--tp-color-luminosity-2)
+    );
+  --tp-color-brand-3: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(
+      --tp-color-brand-luminosity-3,
+      var(--tp-color-luminosity-3)
+    );
+  --tp-color-brand-4: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(
+      --tp-color-brand-luminosity-4,
+      var(--tp-color-luminosity-4)
+    );
+  --tp-color-brand-5: var(--tp-color-brand-hue),
+    var(--tp-color-brand-saturation, var(--tp-color-saturation)),
+    var(
+      --tp-color-brand-luminosity-5,
+      var(--tp-color-luminosity-5)
+    );
+  --tp-color-contrast-fixed: var(--tp-color-neutral-10);
+  --tp-color-attention: var(--tp-color-feedback-attention-hue),
+    var(--tp-color-attention-saturation, var(--tp-color-feedback-saturation)),
+    var(--tp-color-attention-luminosity, var(--tp-color-feedback-luminosity));
+  --tp-color-caution: var(--tp-color-feedback-caution-hue),
+    var(--tp-color-caution-saturation, var(--tp-color-feedback-saturation)),
+    var(--tp-color-caution-luminosity, var(--tp-color-feedback-luminosity));
+  --tp-color-warning: var(--tp-color-feedback-warning-hue),
+    var(--tp-color-warning-saturation, var(--tp-color-feedback-saturation)),
+    var(--tp-color-warning-luminosity, var(--tp-color-feedback-luminosity));
+  --tp-color-revalida: var(--tp-color-feedback-revalida-hue),
+    var(--tp-color-revalida-saturation, var(--tp-color-feedback-saturation)),
+    var(--tp-color-revalida-luminosity, var(--tp-color-feedback-luminosity));
+  --tp-color-success: var(--tp-color-feedback-success-hue),
+    var(--tp-color-success-saturation, var(--tp-color-feedback-saturation)),
+    var(--tp-color-success-luminosity, var(--tp-color-feedback-luminosity));
+}
+
 [type=h64],
 [type=h64] * {
   font-size: 64px !important;

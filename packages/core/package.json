@@ -21,7 +21,7 @@
     "generate": "stencil generate",
     "storybook": "storybook dev -p 3669",
     "build-storybook": "storybook build",
-    "tp:watch:sass": "sass src/utils/styles:templarios/css src/styles:templarios/css src/components/ionic:templarios/css  --watch",
+    "tp:watch:sass": "sass src/utils/styles:templarios/css src/styles:templarios/css src/components/ionic:templarios/css --watch",
     "tp:start": "npm-run-all --parallel tp:watch:sass storybook",
     "tp:build": "stencil build --docs"
   },

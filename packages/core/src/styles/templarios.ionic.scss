@@ -1,7 +1,18 @@
-@use '../utils/styles/functions/color.functions';
-@use '../components/ionic/ionic.components';
+@use '../utils/styles/variables/theme.variables';
+@use '../utils/styles/functions/color.functions' as color-function;
+@use '../utils/styles/mixins/color.mixins' as color-mixin;
 
 :root {
-  --ion-background-color: #{color.tp-get-color(neutral, 1)};
+  --ion-background-color: #{color-function.tp-get-color(neutral, 1)};
   --ion-default-font: 'fsemeric', 'Open Sans', sans-serif;
 }
+
+// ionic css classes
+@include color-mixin.tp-generate-ionic-color-neutral-classes();
+@include color-mixin.tp-generate-ionic-color-classes(brand);
+@each $feedback in theme.$tp-feedback-colors {
+  @include color-mixin.tp-generate-ionic-color-feedback-classes($feedback);
+}
+
+// TODO: usar @foward
+@import '../components/ionic/ionic.components';
