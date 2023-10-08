@@ -1,3 +1,11 @@
-@use '../mixins/type.mixins';
+@use '../variables/type.variables';
 
-@include type.tp-generate-type-styling();
+@each $type-value, $type in type.$tp-types {
+  [type='#{$type-value}'],
+  [type='#{$type-value}'] * {
+    @each $property, $value in $type {
+      #{$property}: #{$value} !important;
+    }
+    margin: 0;
+  }
+}
