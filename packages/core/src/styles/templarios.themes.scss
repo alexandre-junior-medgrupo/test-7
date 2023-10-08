@@ -10,8 +10,8 @@
     --tp-color-provas-hue: 268;
 
     @each $color in theme.$tp-medsoft-secondary-colors {
-      @include color.tp-generate-color-properties($color);
-      @include color.tp-generate-ionic-color-classes($color);
+      @include color.generate-color-properties($color);
+      @include color.generate-ionic-color-classes($color);
     }
   }
 
@@ -20,8 +20,8 @@
     --tp-color-orange-hue: 25;
 
     @each $color in theme.$tp-recursos-secondary-colors {
-      @include color.tp-generate-color-properties($color);
-      @include color.tp-generate-ionic-color-classes($color);
+      @include color.generate-color-properties($color);
+      @include color.generate-ionic-color-classes($color);
     }
   }
 

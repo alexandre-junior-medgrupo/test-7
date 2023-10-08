@@ -122,37 +122,37 @@
 .ion-color-brand {
   --ion-color-base: hsl(var(--tp-color-brand)) !important;
   --ion-color-base-rgb: var(--tp-color-brand) !important;
-  --ion-color-contrast: var(--tp-color-contrast-fixed);
+  --ion-color-contrast: hsl(var(--tp-color-contrast-fixed)) !important;
 }
 
 .ion-color-brand-1 {
-  --ion-color-base: hsl(var(--tp-color-brand-1));
-  --ion-color-base-rgb: var(--tp-color-brand-1);
-  --ion-color-contrast: var(--tp-color-neutral-10);
+  --ion-color-base: hsl(var(--tp-color-brand-1)) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1) !important;
+  --ion-color-contrast: hsl(var(--tp-color-neutral-10)) !important;
 }
 
 .ion-color-brand-2 {
-  --ion-color-base: hsl(var(--tp-color-brand-2));
-  --ion-color-base-rgb: var(--tp-color-brand-2);
-  --ion-color-contrast: var(--tp-color-neutral-10);
+  --ion-color-base: hsl(var(--tp-color-brand-2)) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2) !important;
+  --ion-color-contrast: hsl(var(--tp-color-neutral-10)) !important;
 }
 
 .ion-color-brand-3 {
-  --ion-color-base: hsl(var(--tp-color-brand-3));
-  --ion-color-base-rgb: var(--tp-color-brand-3);
-  --ion-color-contrast: var(--tp-color-contrast-fixed);
+  --ion-color-base: hsl(var(--tp-color-brand-3)) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3) !important;
+  --ion-color-contrast: hsl(var(--tp-color-contrast-fixed)) !important;
 }
 
 .ion-color-brand-4 {
-  --ion-color-base: hsl(var(--tp-color-brand-4));
-  --ion-color-base-rgb: var(--tp-color-brand-4);
-  --ion-color-contrast: var(--tp-color-neutral-1);
+  --ion-color-base: hsl(var(--tp-color-brand-4)) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4) !important;
+  --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
 }
 
 .ion-color-brand-5 {
-  --ion-color-base: hsl(var(--tp-color-brand-5));
-  --ion-color-base-rgb: var(--tp-color-brand-5);
-  --ion-color-contrast: var(--tp-color-neutral-1);
+  --ion-color-base: hsl(var(--tp-color-brand-5)) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5) !important;
+  --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
 }
 
 .ion-color-attention {
@@ -187,7 +187,7 @@
 
 ion-button {
   --background: hsl(var(--tp-color-brand));
-  --color: hsl(var(--tp-color-neutral-10));
+  --color: hsl(var(--tp-color-contrast-fixed));
   --border-radius: 500px;
   --box-shadow: none;
   --padding-top: 16px;

@@ -8,10 +8,10 @@
 }
 
 // ionic css classes
-@include color-mixin.tp-generate-ionic-color-neutral-classes();
-@include color-mixin.tp-generate-ionic-color-classes(brand);
+@include color-mixin.generate-ionic-color-neutral-classes();
+@include color-mixin.generate-ionic-color-classes(brand);
 @each $feedback in theme.$tp-feedback-colors {
-  @include color-mixin.tp-generate-ionic-color-feedback-classes($feedback);
+  @include color-mixin.generate-ionic-color-feedback-classes($feedback);
 }
 
 // TODO: usar @foward

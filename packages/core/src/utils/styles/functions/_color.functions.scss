@@ -45,6 +45,10 @@
 // tp-color-contrast(neutral, 65, alternative); @returns: hsl(returns: var(--tp-color-neutral-1));
 //
 @function tp-color-contrast($type, $variation: null, $color: null) {
+  @if not list.index(theme.$tp-color-system-types, $type) {
+    @error "#{$type} não é um tipo valido. Use uma das variações: #{theme.$tp-color-system-types}.";
+  }
+
   /* stylelint-disable max-nesting-depth */
   @if $type == color {
     @if not $variation or $variation == 3 {

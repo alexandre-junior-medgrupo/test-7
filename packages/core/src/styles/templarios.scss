@@ -26,6 +26,9 @@
   --tp-color-neutral-luminosity: 8%;
   --tp-color-neutral-alternative-luminosity: 13%;
   --tp-color-neutral-invert: 1;
+
+  // color variation 3 contrast css custom property
+  --tp-color-contrast-fixed: var(--tp-color-neutral-10);
 }
 
 // light scheme
@@ -49,15 +52,15 @@
   --tp-color-neutral-invert: -1;
 
   // color variation 3 contrast css custom property override
-  --tp-color-contrast-fixed: hsl(var(--tp-color-neutral-1));
+  --tp-color-contrast-fixed: var(--tp-color-neutral-1);
 }
 
 // css custom properties
 :root {
-  @include color.tp-generate-color-neutral-properties();
-  @include color.tp-generate-color-properties(brand);
+  @include color.generate-color-neutral-properties();
+  @include color.generate-color-properties(brand);
   @each $feedback in theme.$tp-feedback-colors {
-    @include color.tp-generate-color-feedback-properties($feedback);
+    @include color.generate-color-feedback-properties($feedback);
   }
 }
 
