@@ -1,3 +1,5 @@
+import type { Channel } from "@storybook/channels";
+import { UPDATE_STORY_ARGS } from '@storybook/core-events';
 import type { Preview } from '@storybook/web-components';
 import { html } from 'lit';
 import {
@@ -42,6 +44,8 @@ import '../templarios/css/templarios.ionic.css';
 import '../templarios/css/templarios.themes.css';
 // templarios
 
+let test = {};
+
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -60,7 +64,14 @@ const preview: Preview = {
     themes: {
       target: 'root',
       default: 'default',
-      onChange: (themeName) => {},
+      onChange: (themeName) => {
+        const channel = (window as any).__STORYBOOK_ADDONS_CHANNEL__ as Channel;
+        console.log(UPDATE_STORY_ARGS);
+
+        channel.emit(UPDATE_STORY_ARGS, {
+          color: { options: 'true' },
+        });
+      },
       list: [
         {
           name: 'MedSoft',
