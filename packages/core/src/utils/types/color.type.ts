@@ -9,6 +9,7 @@ import {
   TpColorQuestoes,
   TpColorRevalida,
 } from '../enums/color.enum';
+import { TpLiteralUnion } from './utils.type';
 
 export type TpColors =
   | `${TpColorBrand}`
@@ -23,3 +24,8 @@ export type TpColorsMedgrupo =
   | `${TpColorProvas}`;
 
 export type TpColorsRecursos = `${TpColorOrange}`;
+
+export type TpColor = TpLiteralUnion<
+  TpColors | TpColorsMedgrupo | TpColorsRecursos,
+  string
+>;

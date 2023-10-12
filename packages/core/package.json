@@ -11,7 +11,9 @@
   "unpkg": "dist/core/core.esm.js",
   "files": [
     "dist/",
-    "loader/"
+    "loader/",
+    "templarios/",
+    "icons"
   ],
   "scripts": {
     "build": "stencil build --docs",
@@ -22,7 +24,9 @@
     "storybook": "storybook dev -p 3669",
     "build-storybook": "storybook build",
     "tp:watch:sass": "sass src/utils/styles:templarios/css src/styles:templarios/css src/components/ionic:templarios/css --watch",
-    "tp:start": "npm-run-all --parallel tp:watch:sass storybook",
+    "tp:watch:stencil": "stencil build --watch",
+    "tp:start:storybook": "storybook dev -p 3669",
+    "tp:start": "npm-run-all build --parallel tp:watch:sass tp:watch:stencil tp:start:storybook",
     "tp:build": "stencil build --docs"
   },
   "dependencies": {
@@ -30,6 +34,7 @@
   },
   "devDependencies": {
     "@ionic/core": "^7.4.3",
+    "@stencil/sass": "^3.0.6",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
@@ -41,6 +46,7 @@
     "@storybook/web-components-vite": "^7.4.6",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.11",
+    "ionicons": "^7.2.1",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
     "lit": "^2.8.0",

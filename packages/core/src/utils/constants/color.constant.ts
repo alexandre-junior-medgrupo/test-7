@@ -22,13 +22,13 @@ export const TP_COLOR_PROVAS = Object.values(TpColorProvas);
 
 export const TP_COLOR_ORANGE = Object.values(TpColorOrange);
 
-export const TP_COLOR = [
+export const TP_COLORS = [
   ...TP_COLOR_BRAND,
   ...TP_COLOR_FEEDBACK,
   ...TP_COLOR_NEUTRAL,
 ];
 
-export const TP_COLOR_MEDSOFT = [
+export const TP_COLORS_MEDSOFT = [
   ...TP_COLOR_AULA,
   ...TP_COLOR_MATERIAL,
   ...TP_COLOR_QUESTOES,
@@ -36,4 +36,4 @@ export const TP_COLOR_MEDSOFT = [
   ...TP_COLOR_PROVAS,
 ];
 
-export const TP_COLOR_RECURSOS = [...TP_COLOR_ORANGE];
+export const TP_COLORS_RECURSOS = [...TP_COLOR_ORANGE];

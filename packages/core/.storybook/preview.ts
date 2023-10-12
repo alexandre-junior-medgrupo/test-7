@@ -1,11 +1,9 @@
-import type { Channel } from "@storybook/channels";
-import { UPDATE_STORY_ARGS } from '@storybook/core-events';
 import type { Preview } from '@storybook/web-components';
 import { html } from 'lit';
 import {
-  TP_COLOR,
-  TP_COLOR_MEDSOFT,
-  TP_COLOR_RECURSOS
+  TP_COLORS,
+  TP_COLORS_MEDSOFT,
+  TP_COLORS_RECURSOS
 } from '../src/utils/constants/color.constant';
 import {
   TpSchemeCSSClasses,
@@ -18,7 +16,10 @@ import './assets/storybook.css';
 
 // ionic
 import { initialize } from '@ionic/core/components';
+import { defineCustomElement } from 'ionicons/components/ion-icon';
+
 initialize();
+defineCustomElement();
 
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/display.css';
@@ -38,18 +39,19 @@ defineCustomElementIonContent();
 // ionic
 
 // templarios
+import { defineCustomElements } from '../loader';
 import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
-import '../templarios/css/templarios.css';
-import '../templarios/css/templarios.ionic.css';
-import '../templarios/css/templarios.themes.css';
-// templarios
 
-let test = {};
+import '../templarios/css/templarios.css';
+
+defineCustomElements();
+// templarios
 
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     backgrounds: { disable: true },
+    staticDirs: ['../dist', '../icons'],
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -64,14 +66,7 @@ const preview: Preview = {
     themes: {
       target: 'root',
       default: 'default',
-      onChange: (themeName) => {
-        const channel = (window as any).__STORYBOOK_ADDONS_CHANNEL__ as Channel;
-        console.log(UPDATE_STORY_ARGS);
-
-        channel.emit(UPDATE_STORY_ARGS, {
-          color: { options: 'true' },
-        });
-      },
+      onChange: (themeName) => {},
       list: [
         {
           name: 'MedSoft',
@@ -189,7 +184,7 @@ const preview: Preview = {
   argTypes: {
     color: {
       control: { type: 'select' },
-      options: [...TP_COLOR, ...TP_COLOR_MEDSOFT, ...TP_COLOR_RECURSOS],
+      options: [...TP_COLORS, ...TP_COLORS_MEDSOFT, ...TP_COLORS_RECURSOS],
       description: `Define a cor do componente.
 
 **OBS**: As cores **'${TpColorAula.Aula}'**, **'${TpColorMaterial.Material}'**, **'${TpColorQuestoes.Questoes}'**, **'${TpColorRevalida.Revalida}'** e **'${TpColorRevalida.Revalida}'** estão disponiveis apenas no theme **MedSoft**
@@ -200,7 +195,7 @@ const preview: Preview = {
           summary: 'undefined',
         },
         type: {
-          summary: [...TP_COLOR, ...TP_COLOR_MEDSOFT, ...TP_COLOR_RECURSOS].join('|'),
+          summary: [...TP_COLORS, ...TP_COLORS_MEDSOFT, ...TP_COLORS_RECURSOS].join('|'),
         },
       },
     },

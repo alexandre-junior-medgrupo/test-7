@@ -116,3 +116,74 @@
     // --ion-color-tint: ;
   }
 }
+
+@mixin generate-templarios-color-neutral-classes() {
+  @for $i from 1 through 10 {
+    .tp-color-neutral-#{$i} {
+      --tp-color-base: hsl(var(--tp-color-neutral-#{$i})) !important;
+      --tp-color-base-rgb: var(--tp-color-neutral-#{$i}) !important;
+      --tp-color-contrast: #{if(
+          $i <= 5,
+          hsl(var(--tp-color-neutral-10)),
+          hsl(var(--tp-color-neutral-1))
+        )} !important;
+      // --tp-color-shade: ;
+      // --tp-color-tint: ;
+    }
+
+    @if $i != 10 {
+      .tp-color-neutral-#{$i}5 {
+        --tp-color-base: hsl(var(--tp-color-neutral-#{$i}5)) !important;
+        --tp-color-base-rgb: var(--tp-color-neutral-#{$i}5) !important;
+        --tp-color-contrast: #{if(
+            $i <= 5,
+            hsl(var(--tp-color-neutral-10)),
+            hsl(var(--tp-color-neutral-1))
+          )} !important;
+        // --tp-color-shade: ;
+        // --tp-color-tint: ;
+      }
+    }
+  }
+}
+
+/* stylelint-disable max-nesting-depth */
+@mixin generate-templarios-color-classes($color) {
+  .tp-color-#{$color} {
+    --tp-color-base: hsl(var(--tp-color-#{$color})) !important;
+    --tp-color-base-rgb: var(--tp-color-#{$color}) !important;
+    --tp-color-contrast: hsl(var(--tp-color-contrast-fixed)) !important;
+
+    // --tp-color-shade: ;
+    // --tp-color-tint: ;
+  }
+
+  @for $i from 1 through 5 {
+    .tp-color-#{$color}-#{$i} {
+      --tp-color-base: hsl(var(--tp-color-#{$color}-#{$i})) !important;
+      --tp-color-base-rgb: var(--tp-color-#{$color}-#{$i}) !important;
+
+      @if $i == 3 {
+        --tp-color-contrast: hsl(var(--tp-color-contrast-fixed)) !important;
+      } @else if $i <= 2 {
+        --tp-color-contrast: hsl(var(--tp-color-neutral-10)) !important;
+      } @else {
+        --tp-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
+      }
+
+      // --tp-color-shade: ;
+      // --tp-color-tint: ;
+    }
+  }
+}
+/* stylelint-enable max-nesting-depth */
+
+@mixin generate-templarios-color-feedback-classes($color) {
+  .tp-color-#{$color} {
+    --tp-color-base: hsl(var(--tp-color-#{$color})) !important;
+    --tp-color-base-rgb: var(--tp-color-#{$color}) !important;
+    --tp-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
+    // --tp-color-shade: ;
+    // --tp-color-tint: ;
+  }
+}
