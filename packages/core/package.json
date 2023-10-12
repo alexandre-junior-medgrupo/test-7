@@ -16,6 +16,7 @@
     "icons"
   ],
   "scripts": {
+    "postinstall": "npm-run-all tp:build tp:build:sass",
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
@@ -24,9 +25,11 @@
     "storybook": "storybook dev -p 3669",
     "build-storybook": "storybook build",
     "tp:watch:sass": "sass src/utils/styles:templarios/css src/styles:templarios/css src/components/ionic:templarios/css --watch",
+    "tp:build:sass": "sass src/utils/styles:templarios/css src/styles:templarios/css src/components/ionic:templarios/css",
     "tp:watch:stencil": "stencil build --watch",
     "tp:start:storybook": "storybook dev -p 3669",
     "tp:start": "npm-run-all build --parallel tp:watch:sass tp:watch:stencil tp:start:storybook",
+    "tp:build:storybook": "stencil build --docs",
     "tp:build": "stencil build --docs"
   },
   "dependencies": {
