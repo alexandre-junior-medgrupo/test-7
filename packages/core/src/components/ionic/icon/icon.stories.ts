@@ -23,7 +23,7 @@ type Story = StoryObj<Components.IonIcon & TpIonIcon>;
 export const Primary: Story = {
   render: ({ ...args }) =>
     html`<ion-icon
-      src="/tp-calendar.svg"
+      src="/icons/tp-calendar.svg"
       .color="${args.color}"
       .tp-size="${args.size}"
     ></ion-icon>`,

@@ -12,8 +12,7 @@
   "files": [
     "dist/",
     "loader/",
-    "templarios/",
-    "icons"
+    "templarios/"
   ],
   "scripts": {
     "postinstall": "npm-run-all tp:build tp:build:sass",
