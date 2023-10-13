@@ -8,7 +8,9 @@
     "lint:prettier": "prettier . --write --cache --cache-location .prettiercache",
     "lint:stylelint": "stylelint **/*.scss --fix --cache --formatter verbose",
     "lint": "npm-run-all lint:prettier --parallel lint:stylelint",
-    "build": "lerna run tp:build"
+    "build": "lerna run tp:build",
+    "move:core": "lerna run tp:build",
+    "dist": "npm-run-all build"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",

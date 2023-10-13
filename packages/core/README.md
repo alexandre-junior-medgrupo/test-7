@@ -1,1 +1,1 @@
-# Templarios
+# @templarios/core

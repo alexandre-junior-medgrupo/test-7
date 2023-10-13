@@ -11,9 +11,7 @@ import { TpColor } from '../../../utils/types/color.type';
 })
 export class TpTest {
   @Prop({ reflect: true }) color?: TpColor;
-  @Prop({ reflect: true }) icon? = getAssetPath(
-    '../../../../icons/tp-calendar.svg',
-  );
+  @Prop({ reflect: true }) icon? = 'tp-calendar.svg';
 
   render() {
     const { color, icon } = this;
@@ -29,7 +27,10 @@ export class TpTest {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
             voluptate.
           </span>
-          <ion-icon class="tp-test__icon" src={icon}></ion-icon>
+          <ion-icon
+            class="tp-test__icon"
+            src={getAssetPath(`../../../../icons/${icon}`)}
+          ></ion-icon>
         </div>
       </Host>
     );

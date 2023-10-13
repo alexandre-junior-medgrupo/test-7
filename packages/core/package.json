@@ -12,10 +12,9 @@
   "files": [
     "dist/",
     "loader/",
-    "templarios/"
+    "public/"
   ],
   "scripts": {
-    "postinstall": "npm-run-all tp:build tp:build:sass",
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
@@ -23,19 +22,21 @@
     "generate": "stencil generate",
     "storybook": "storybook dev -p 3669",
     "build-storybook": "storybook build",
-    "tp:watch:sass": "sass src/utils/styles:templarios/css src/styles:templarios/css src/components/ionic:templarios/css --watch",
-    "tp:build:sass": "sass src/utils/styles:templarios/css src/styles:templarios/css src/components/ionic:templarios/css",
-    "tp:watch:stencil": "stencil build --watch",
+    "tp:watch:sass": "sass src/utils/styles:public/css src/styles:public/css src/components/ionic:public/css --watch",
+    "tp:watch:stencil:build": "stencil build --watch",
     "tp:start:storybook": "storybook dev -p 3669",
-    "tp:start": "npm-run-all build --parallel tp:watch:sass tp:watch:stencil tp:start:storybook",
-    "tp:build:storybook": "stencil build --docs",
-    "tp:build": "stencil build --docs"
+    "tp:start": "npm-run-all --parallel tp:watch:sass tp:watch:stencil:build tp:start:storybook",
+    "tp:build:sass": "sass src/utils/styles:public/css src/styles:public/css src/components/ionic:public/css",
+    "tp:build:stencil": "stencil build --docs",
+    "tp:build:storybook": "storybook build",
+    "tp:build": "npm-run-all tp:build:sass tp:build:stencil"
   },
   "dependencies": {
-    "@stencil/core": "^4.0.0"
+    "@ionic/core": "^7.5.0",
+    "@stencil/core": "^4.0.0",
+    "ionicons": "^7.2.1"
   },
   "devDependencies": {
-    "@ionic/core": "^7.4.3",
     "@stencil/sass": "^3.0.6",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
@@ -48,7 +49,6 @@
     "@storybook/web-components-vite": "^7.4.6",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.11",
-    "ionicons": "^7.2.1",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
     "lit": "^2.8.0",

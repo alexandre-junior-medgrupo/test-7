@@ -28,7 +28,7 @@
               "src/assets",
               {
                 "glob": "**/*.svg",
-                "input": "node_modules/@templarios/core/icons",
+                "input": "node_modules/@templarios/core/public/icons",
                 "output": "./svg"
               }
             ],

@@ -42,7 +42,7 @@ defineCustomElementIonContent();
 import { defineCustomElements } from '../loader';
 import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
 
-import '../templarios/css/templarios.css';
+import '../public/css/templarios.css';
 
 defineCustomElements();
 // templarios

@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-npm i @templarios/core:@github:MEDGRUPOGIT/med-components#0c847bad2456d947cb089f55dd0aea8c4fdabc12
+npm i @templarios/core@github:MEDGRUPOGIT/med-components#a863983e8a97324632016a74759072d4c503fe41
 ```
 
 ## Configuration
@@ -21,7 +21,7 @@ defineCustomElements();
 ```scss
 // src/styles.scss
 
-@import '@templarios/core/css/templarios.css';
+@import '@templarios/core/public/css/templarios.css';
 ```
 
 ```ts
@@ -47,7 +47,7 @@ export class AppModule {}
             "assets": [
               {
                 "glob": "**/*.svg",
-                "input": "node_modules/@templarios/core/icons",
+                "input": "node_modules/@templarios/core/public/icons",
                 "output": "./svg"
               }
             ],
@@ -63,3 +63,17 @@ export class AppModule {}
 ```
 
 </details>
+
+<details>
+<summary><h2 style="display:inline-block; width: calc(100% - 15px)">React</h2></summary>
+</details>
+
+<details>
+<summary><h2 style="display:inline-block; width: calc(100% - 15px)">Vue</h2></summary>
+</details>
+
+# @templarios/angular
+
+# @templarios/react
+
+# @templarios/vue
