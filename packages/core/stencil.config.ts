@@ -3,6 +3,7 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'templarios',
+  globalStyle: './src/styles/templarios.scss',
   plugins: [
     sass({
       injectGlobalPaths: ['./src/utils/styles/functions/_color.functions.scss'],

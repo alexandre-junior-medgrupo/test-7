@@ -15,7 +15,7 @@ import './assets/storybook.css';
 // storybook
 
 // ionic
-import { initialize } from '@ionic/core';
+import { initialize } from '@ionic/core/components';
 import { defineCustomElement } from 'ionicons/components/ion-icon';
 
 initialize();
@@ -39,18 +39,23 @@ defineCustomElementIonContent();
 // ionic
 
 // templarios
-import { defineCustomElements } from '../loader';
+/* import { defineCustomElements } from '../loader';
 import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
-
 import '../public/css/templarios.css';
+defineCustomElements(); */
+// templarios
 
-defineCustomElements();
+// templarios
+import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
+import '../www/build/templarios.css';
+import '../www/build/templarios.esm';
 // templarios
 
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     backgrounds: { disable: true },
+    staticDirs: ['../www'],
     controls: {
       matchers: {
         color: /(background|color)$/i,

@@ -19,8 +19,8 @@ type Story = StoryObj;
 
 export const Primary: Story = {
   render: ({ ...args }) => {
-    const iconUrl = `./icons/${args.icon}`;
-    return html`<tp-test color="${args.color}"></tp-test>`;
+    const iconUrl = args.icon ? `./icons/${args.icon}` : null;
+    return html`<tp-test color="${args.color}" .icon="${iconUrl}"></tp-test>`;
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

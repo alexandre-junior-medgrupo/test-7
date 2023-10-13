@@ -16,20 +16,14 @@
   ],
   "scripts": {
     "build": "stencil build --docs",
-    "start": "stencil build --dev --watch --serve",
+    "start": "stencil build --dev --watch",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "storybook": "storybook dev -p 3669",
     "build-storybook": "storybook build",
-    "tp:watch:sass": "sass src/utils/styles:public/css src/styles:public/css src/components/ionic:public/css --watch",
-    "tp:watch:stencil:build": "stencil build --watch",
-    "tp:start:storybook": "storybook dev -p 3669",
-    "tp:start": "npm-run-all --parallel tp:watch:sass tp:watch:stencil:build tp:start:storybook",
-    "tp:build:sass": "sass src/utils/styles:public/css src/styles:public/css src/components/ionic:public/css",
-    "tp:build:stencil": "stencil build --docs",
-    "tp:build:storybook": "storybook build",
-    "tp:build": "npm-run-all tp:build:sass tp:build:stencil"
+    "tp:start": "npm-run-all --parallel start storybook",
+    "tp:build": "npm-run-all build"
   },
   "dependencies": {
     "@stencil/core": "^4.0.0"
@@ -56,7 +50,6 @@
     "puppeteer": "21.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.68.0",
     "storybook": "^7.4.6",
     "storybook-addon-themes": "^6.1.0"
   },

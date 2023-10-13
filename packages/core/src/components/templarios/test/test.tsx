@@ -1,4 +1,4 @@
-import { Component, Host, Prop, State, h } from '@stencil/core';
+import { Component, Host, Prop, State, getAssetPath, h } from '@stencil/core';
 // TODO: criar alias tsconfig
 import { createColorClasses } from '@utils/functions/color.function';
 import { TpColor } from '@utils/types/color.type';
@@ -6,13 +6,14 @@ import { TpColor } from '@utils/types/color.type';
 @Component({
   tag: 'tp-test',
   styleUrl: 'test.scss',
+  assetsDirs: ['assets'],
   scoped: true,
 })
 export class TpTest {
   @Prop({ reflect: true }) color?: TpColor;
   @Prop({ reflect: true }) icon?: string;
 
-  @State() defaultIcon = './icons/tp-calendar.svg';
+  @State() defaultIcon = getAssetPath('./assets/tp-calendar.svg');
 
   render() {
     const { color, icon, defaultIcon } = this;
