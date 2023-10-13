@@ -25,7 +25,7 @@ type Story = StoryObj<Components.IonText & TpIonText>;
 
 export const Primary: Story = {
   render: ({ ...args }) =>
-    html`<ion-text .color="${args.color}" .tp-type="${args.type}">
+    html`<ion-text color="${args.color}" tp-type="${args.type}">
       <h1>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
         voluptate.

@@ -24,8 +24,8 @@ export const Primary: Story = {
   render: ({ ...args }) =>
     html`<ion-icon
       src="/icons/tp-calendar.svg"
-      .color="${args.color}"
-      .tp-size="${args.size}"
+      color="${args.color}"
+      tp-size="${args.size}"
     ></ion-icon>`,
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

@@ -17,7 +17,7 @@ type Story = StoryObj<Components.IonButton>;
 
 export const Primary: Story = {
   render: ({ ...args }) =>
-    html`<ion-button .color="${args.color}">ion-button</ion-button>`,
+    html`<ion-button color="${args.color}">ion-button</ion-button>`,
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     // expect(canvas.getByText(/ion-text/gi)).toBeTruthy();

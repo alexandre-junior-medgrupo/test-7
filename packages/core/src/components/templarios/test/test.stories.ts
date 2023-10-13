@@ -19,7 +19,7 @@ type Story = StoryObj;
 
 export const Primary: Story = {
   render: ({ ...args }) =>
-    html`<tp-test .color="${args.color}" .icon="${args.icon}"></tp-test>`,
+    html`<tp-test color="${args.color}" .icon="${args.icon}"></tp-test>`,
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     // expect(canvas.getByText(/tp-test/gi)).toBeTruthy();

@@ -1,1 +1,3 @@
 # Templarios
+
+- node >= 18
