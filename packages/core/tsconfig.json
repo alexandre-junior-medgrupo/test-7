@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "declaration": false,
@@ -12,7 +13,10 @@
     "noUnusedParameters": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@utils/*": ["src/utils/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "./**/*.stories.ts"]

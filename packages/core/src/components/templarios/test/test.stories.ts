@@ -18,8 +18,10 @@ export default meta;
 type Story = StoryObj;
 
 export const Primary: Story = {
-  render: ({ ...args }) =>
-    html`<tp-test color="${args.color}" .icon="${args.icon}"></tp-test>`,
+  render: ({ ...args }) => {
+    const iconUrl = `./icons/${args.icon}`;
+    return html`<tp-test color="${args.color}"></tp-test>`;
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     // expect(canvas.getByText(/tp-test/gi)).toBeTruthy();

@@ -11,6 +11,7 @@
 
     @each $color in theme.$tp-medsoft-secondary-colors {
       @include color.generate-color-properties($color);
+      @include color.generate-templarios-color-classes($color);
       @include color.generate-ionic-color-classes($color);
     }
   }
@@ -21,6 +22,7 @@
 
     @each $color in theme.$tp-recursos-secondary-colors {
       @include color.generate-color-properties($color);
+      @include color.generate-templarios-color-classes($color);
       @include color.generate-ionic-color-classes($color);
     }
   }

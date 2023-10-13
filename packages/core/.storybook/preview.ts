@@ -15,7 +15,7 @@ import './assets/storybook.css';
 // storybook
 
 // ionic
-import { initialize } from '@ionic/core/components';
+import { initialize } from '@ionic/core';
 import { defineCustomElement } from 'ionicons/components/ion-icon';
 
 initialize();
@@ -51,7 +51,6 @@ const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     backgrounds: { disable: true },
-    staticDirs: ['../dist', '../public'],
     controls: {
       matchers: {
         color: /(background|color)$/i,
