@@ -1,12 +1,35 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/Recursos" />
+<Meta
+  title="Core/Color System/Themes/Recursos"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'Recursos',
+      list: [
+        {
+          name: 'Recursos',
+          class: [`${TpThemeCSSClasses.Recursos}`],
+          color: '#68a6ba',
+        },
+        {
+          name: 'Recursos Light',
+          class: [
+            `${TpThemeCSSClasses.Recursos}`,
+            `${TpSchemeCSSClasses.Light}`,
+          ],
+          color: '#3d7a8f',
+        },
+      ],
+    },
+  }}
+/>
 
 <Title>Recursos</Title>
-
-> **Disponíveis apenas no tema Recursos.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
 
 ```html
 <html class="tp-color-theme-recursos"></html>

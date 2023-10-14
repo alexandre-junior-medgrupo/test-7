@@ -1,5 +1,4 @@
 import { Component, Host, Prop, State, getAssetPath, h } from '@stencil/core';
-// TODO: criar alias tsconfig
 import { createColorClasses } from '@utils/functions/color.function';
 import { TpColor } from '@utils/types/color.type';
 

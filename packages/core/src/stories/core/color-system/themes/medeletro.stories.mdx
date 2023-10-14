@@ -1,15 +1,38 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/Intensivão" />
+<Meta
+  title="Core/Color System/Themes/MedEletro"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'MedEletro',
+      list: [
+        {
+          name: 'MedEletro',
+          class: [`${TpThemeCSSClasses.MedEletro}`],
+          color: '#14B8B8',
+        },
+        {
+          name: 'MedEletro Light',
+          class: [
+            `${TpThemeCSSClasses.MedEletro}`,
+            `${TpSchemeCSSClasses.Light}`,
+          ],
+          color: '#3D8F8F',
+        },
+      ],
+    },
+  }}
+/>
 
-<Title>Intensivão</Title>
-
-> **Disponíveis apenas no tema Intensivão.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
+<Title>MedEletro</Title>
 
 ```html
-<html class="tp-color-theme-intensivao"></html>
+<html class="tp-color-theme-medeletro"></html>
 ```
 
 <Title>Colors</Title>

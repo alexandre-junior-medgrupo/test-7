@@ -1,15 +1,38 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/Extensivo RMais" />
+<Meta
+  title="Core/Color System/Themes/VentilaMed"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'Ventilamed',
+      list: [
+        {
+          name: 'Ventilamed',
+          class: [`${TpThemeCSSClasses.Ventilamed}`],
+          color: '#B86314',
+        },
+        {
+          name: 'Ventilamed Light',
+          class: [
+            `${TpThemeCSSClasses.Ventilamed}`,
+            `${TpSchemeCSSClasses.Light}`,
+          ],
+          color: '#8F653D',
+        },
+      ],
+    },
+  }}
+/>
 
-<Title>Extensivo RMais</Title>
-
-> **Disponíveis apenas no tema Extensivo RMais.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
+<Title>VentilaMed</Title>
 
 ```html
-<html class="tp-color-theme-extensivo-rmais"></html>
+<html class="tp-color-theme-ventilamed"></html>
 ```
 
 <Title>Colors</Title>

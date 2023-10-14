@@ -1,15 +1,38 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/Extensivo" />
+<Meta
+  title="Core/Color System/Themes/Intensivão"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'Intensivão',
+      list: [
+        {
+          name: 'Intensivão',
+          class: [`${TpThemeCSSClasses.Intensivao}`],
+          color: '#B81440',
+        },
+        {
+          name: 'Intensivão Light',
+          class: [
+            `${TpThemeCSSClasses.Intensivao}`,
+            `${TpSchemeCSSClasses.Light}`,
+          ],
+          color: '#8F3D53',
+        },
+      ],
+    },
+  }}
+/>
 
-<Title>Extensivo</Title>
-
-> **Disponíveis apenas no tema Extensivo.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
+<Title>Intensivão</Title>
 
 ```html
-<html class="tp-color-theme-extensivo"></html>
+<html class="tp-color-theme-intensivao"></html>
 ```
 
 <Title>Colors</Title>

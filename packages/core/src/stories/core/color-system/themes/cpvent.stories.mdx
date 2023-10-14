@@ -1,15 +1,35 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/MedEletro" />
+<Meta
+  title="Core/Color System/Themes/CPVent"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'CPVent',
+      list: [
+        {
+          name: 'CPVent',
+          class: [`${TpThemeCSSClasses.CPVent}`],
+          color: '#97B814',
+        },
+        {
+          name: 'CPVent Light',
+          class: [`${TpThemeCSSClasses.CPVent}`, `${TpSchemeCSSClasses.Light}`],
+          color: '#7E8F3D',
+        },
+      ],
+    },
+  }}
+/>
 
-<Title>MedEletro</Title>
-
-> **Disponíveis apenas no tema MedEletro.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
+<Title>CPVent</Title>
 
 ```html
-<html class="tp-color-theme-medeletro"></html>
+<html class="tp-color-theme-cpvent"></html>
 ```
 
 <Title>Colors</Title>

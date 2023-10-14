@@ -1,6 +1,5 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-label';
-import { within } from '@storybook/testing-library';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TP_TYPES } from '../../../utils/constants/type.constant';
@@ -25,12 +24,12 @@ type Story = StoryObj<Components.IonLabel & TpIonLabel>;
 
 export const Primary: Story = {
   render: ({ ...args }) =>
-    html`<ion-label color="${args.color}" tp-type="${args.type}">
+    html`<ion-label .color="${args.color}" tp-type="${args.type}">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
       voluptate.
     </ion-label>`,
-  play: async ({ canvasElement }) => {
+  /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    // expect(canvas.getByText(/ion-label/gi)).toBeTruthy();
-  },
+    expect(canvas.getByText(/ion-label/gi)).toBeTruthy();
+  }, */
 };

@@ -1,12 +1,35 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/Medsoft" />
+<Meta
+  title="Core/Color System/Themes/Medsoft"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'MedSoft',
+      list: [
+        {
+          name: 'MedSoft',
+          class: [`${TpThemeCSSClasses.MedSoft}`],
+          color: '#14A2B8',
+        },
+        {
+          name: 'MedSoft Light',
+          class: [
+            `${TpThemeCSSClasses.MedSoft}`,
+            `${TpSchemeCSSClasses.Light}`,
+          ],
+          color: '#3D848F',
+        },
+      ],
+    },
+  }}
+/>
 
 <Title>MedSoft</Title>
-
-> **Disponíveis apenas no tema MedSoft.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
 
 ```html
 <html class="tp-color-theme-medsoft"></html>

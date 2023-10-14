@@ -1,15 +1,38 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/CPMed" />
+<Meta
+  title="Core/Color System/Themes/Extensivo"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'Extensivo',
+      list: [
+        {
+          name: 'Extensivo',
+          class: [`${TpThemeCSSClasses.Extensivo}`],
+          color: '#5b14b8',
+        },
+        {
+          name: 'Extensivo Light',
+          class: [
+            `${TpThemeCSSClasses.Extensivo}`,
+            `${TpSchemeCSSClasses.Light}`,
+          ],
+          color: '#613d8f',
+        },
+      ],
+    },
+  }}
+/>
 
-<Title>CPMed</Title>
-
-> **Disponíveis apenas no tema CPMed.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
+<Title>Extensivo</Title>
 
 ```html
-<html class="tp-color-theme-cpmed"></html>
+<html class="tp-color-theme-extensivo"></html>
 ```
 
 <Title>Colors</Title>

@@ -1,15 +1,35 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/CPVent" />
+<Meta
+  title="Core/Color System/Themes/CPMed"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'CPMed',
+      list: [
+        {
+          name: 'CPMed',
+          class: [`${TpThemeCSSClasses.CPMed}`],
+          color: '#B83514',
+        },
+        {
+          name: 'CPMed Light',
+          class: [`${TpThemeCSSClasses.CPMed}`, `${TpSchemeCSSClasses.Light}`],
+          color: '#8F4E3D',
+        },
+      ],
+    },
+  }}
+/>
 
-<Title>CPVent</Title>
-
-> **Disponíveis apenas no tema CPVent.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
+<Title>CPMed</Title>
 
 ```html
-<html class="tp-color-theme-cpvent"></html>
+<html class="tp-color-theme-cpmed"></html>
 ```
 
 <Title>Colors</Title>

@@ -1,15 +1,35 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/VentilaMed" />
+<Meta
+  title="Core/Color System/Themes/NoPapo"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'NoPapo',
+      list: [
+        {
+          name: 'NoPapo',
+          class: [`${TpThemeCSSClasses.NoPapo}`],
+          color: '#1430b8',
+        },
+        {
+          name: 'NoPapo Light',
+          class: [`${TpThemeCSSClasses.NoPapo}`, `${TpSchemeCSSClasses.Light}`],
+          color: '#3d4b8f',
+        },
+      ],
+    },
+  }}
+/>
 
-<Title>VentilaMed</Title>
-
-> **Disponíveis apenas no tema VentilaMed.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
+<Title>NoPapo</Title>
 
 ```html
-<html class="tp-color-theme-ventilamed"></html>
+<html class="tp-color-theme-nopapo"></html>
 ```
 
 <Title>Colors</Title>

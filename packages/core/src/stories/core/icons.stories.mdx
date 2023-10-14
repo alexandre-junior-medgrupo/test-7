@@ -1,0 +1,17 @@
+import { Meta, Title, Typeset, IconGallery, IconItem } from '@storybook/blocks';
+import { TP_ICONS } from '../../utils/constants/icon.constant';
+
+<Meta title="Core/Icons" />
+
+<Title>Icons</Title>
+
+<IconGallery>
+  {TP_ICONS.map((icon) => (
+    <IconItem name={`${icon}.svg`}>
+      <ion-icon
+        src={`./icons/${icon}.svg`}
+        style={{ '--stroke': 'hsl(var(--tp-color-neutral-1))' }}
+      ></ion-icon>
+    </IconItem>
+  ))}
+</IconGallery>

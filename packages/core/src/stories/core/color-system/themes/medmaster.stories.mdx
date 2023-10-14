@@ -1,12 +1,35 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../../../utils/enums/theme.enum';
 
-<Meta title="Core/Color System/Themes/MedMaster" />
+<Meta
+  title="Core/Color System/Themes/MedMaster"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'MedMaster',
+      list: [
+        {
+          name: 'MedMaster',
+          class: [`${TpThemeCSSClasses.MedMaster}`],
+          color: '#B8AD14',
+        },
+        {
+          name: 'MedMaster Light',
+          class: [
+            `${TpThemeCSSClasses.MedMaster}`,
+            `${TpSchemeCSSClasses.Light}`,
+          ],
+          color: '#8F893D',
+        },
+      ],
+    },
+  }}
+/>
 
 <Title>MedMaster</Title>
-
-> **Disponíveis apenas no tema MedMaster.**
-
-> **OBS: Para visualizar, troque o tema na barra superior.**
 
 ```html
 <html class="tp-color-theme-medmaster"></html>

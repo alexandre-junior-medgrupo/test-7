@@ -1,6 +1,6 @@
-import { within } from '@storybook/testing-library';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
+import { TP_ICONS_STORYBOOK } from '../../../utils/constants/icon.constant';
 
 const meta: Meta = {
   component: 'tp-test',
@@ -8,7 +8,7 @@ const meta: Meta = {
   argTypes: {
     icon: {
       control: { type: 'select' },
-      options: ['tp-anotar.svg'],
+      options: [...TP_ICONS_STORYBOOK],
     },
   },
 };
@@ -20,10 +20,10 @@ type Story = StoryObj;
 export const Primary: Story = {
   render: ({ ...args }) => {
     const iconUrl = args.icon ? `./icons/${args.icon}` : null;
-    return html`<tp-test color="${args.color}" .icon="${iconUrl}"></tp-test>`;
+    return html`<tp-test .color="${args.color}" .icon="${iconUrl}"></tp-test>`;
   },
-  play: async ({ canvasElement }) => {
+  /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    // expect(canvas.getByText(/tp-test/gi)).toBeTruthy();
-  },
+    expect(canvas.getByText(/tp-test/gi)).toBeTruthy();
+  }, */
 };
