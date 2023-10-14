@@ -2,6 +2,10 @@
   --background: #{tp-color(neutral, 2)};
   --color: #{tp-color-contrast(neutral, 2, neutral)};
   --icon-stroke: #{tp-color-contrast(neutral, 2, neutral)};
+
+  // TODO: colocar na função
+  --background-hover: #{tp-color(neutral, 2, null, shade)};
+  --background-focus: #{tp-color(neutral, 2, null, tint)};
 }
 
 :host {
@@ -9,6 +13,7 @@
   padding: 1rem 2rem;
   color: var(--color);
   background: var(--background);
+  transition: background-color 250ms;
 }
 
 .tp-test {
@@ -23,8 +28,19 @@
   }
 }
 
+:host(:hover) {
+  background: var(--background-hover);
+}
+
+:host(:focus) {
+  background: var(--background-focus);
+}
+
 :host(.tp-color) {
-  --background: var(--tp-color-base);
-  --color: var(--tp-color-contrast);
-  --icon-stroke: var(--tp-color-contrast);
+  --background: #{tp-color-current(base)};
+  --color: #{tp-color-current(contrast)};
+  --icon-stroke: #{tp-color-current(contrast)};
+
+  --background-hover: #{tp-color-current(shade)};
+  --background-focus: #{tp-color-current(tint)};
 }

@@ -12,12 +12,44 @@
           #{$luminosity-step} *
           var(--tp-color-neutral-invert)
       );
+    --tp-color-neutral-#{$i}-shade: var(--tp-color-neutral-hue),
+      var(--tp-color-neutral-saturation),
+      calc(
+        var(--tp-color-neutral-luminosity) -
+          5% +
+          #{$luminosity-step} *
+          var(--tp-color-neutral-invert)
+      );
+    --tp-color-neutral-#{$i}-tint: var(--tp-color-neutral-hue),
+      var(--tp-color-neutral-saturation),
+      calc(
+        var(--tp-color-neutral-luminosity) +
+          5% +
+          #{$luminosity-step} *
+          var(--tp-color-neutral-invert)
+      );
 
     @if $i != 10 {
       --tp-color-neutral-#{$i}5: var(--tp-color-neutral-hue),
         var(--tp-color-neutral-saturation),
         calc(
           var(--tp-color-neutral-alternative-luminosity) +
+            #{$luminosity-step} *
+            var(--tp-color-neutral-invert)
+        );
+      --tp-color-neutral-#{$i}5-shade: var(--tp-color-neutral-hue),
+        var(--tp-color-neutral-saturation),
+        calc(
+          var(--tp-color-neutral-alternative-luminosity) -
+            5% +
+            #{$luminosity-step} *
+            var(--tp-color-neutral-invert)
+        );
+      --tp-color-neutral-#{$i}5-tint: var(--tp-color-neutral-hue),
+        var(--tp-color-neutral-saturation),
+        calc(
+          var(--tp-color-neutral-alternative-luminosity) +
+            5% +
             #{$luminosity-step} *
             var(--tp-color-neutral-invert)
         );
@@ -30,12 +62,42 @@
     var(--tp-color-#{$color}-saturation, var(--tp-color-saturation)),
     var(--tp-color-#{$color}-luminosity-3, var(--tp-color-luminosity-3));
 
+  --tp-color-#{$color}-shade: var(--tp-color-#{$color}-hue),
+    var(--tp-color-#{$color}-saturation, var(--tp-color-saturation)),
+    calc(
+      var(--tp-color-#{$color}-luminosity-3, var(--tp-color-luminosity-3)) - 5%
+    );
+  --tp-color-#{$color}-tint: var(--tp-color-#{$color}-hue),
+    var(--tp-color-#{$color}-saturation, var(--tp-color-saturation)),
+    calc(
+      var(--tp-color-#{$color}-luminosity-3, var(--tp-color-luminosity-3)) + 5%
+    );
+
   @for $i from 1 through 5 {
     --tp-color-#{$color}-#{$i}: var(--tp-color-#{$color}-hue),
       var(--tp-color-#{$color}-saturation, var(--tp-color-saturation)),
       var(
         --tp-color-#{$color}-luminosity-#{$i},
         var(--tp-color-luminosity-#{$i})
+      );
+
+    --tp-color-#{$color}-#{$i}-shade: var(--tp-color-#{$color}-hue),
+      var(--tp-color-#{$color}-saturation, var(--tp-color-saturation)),
+      calc(
+        var(
+            --tp-color-#{$color}-luminosity-#{$i},
+            var(--tp-color-luminosity-#{$i})
+          ) -
+          5%
+      );
+    --tp-color-#{$color}-#{$i}-tint: var(--tp-color-#{$color}-hue),
+      var(--tp-color-#{$color}-saturation, var(--tp-color-saturation)),
+      calc(
+        var(
+            --tp-color-#{$color}-luminosity-#{$i},
+            var(--tp-color-luminosity-#{$i})
+          ) +
+          5%
       );
   }
 }
@@ -44,31 +106,49 @@
   --tp-color-#{$color}: var(--tp-color-feedback-#{$color}-hue),
     var(--tp-color-#{$color}-saturation, var(--tp-color-feedback-saturation)),
     var(--tp-color-#{$color}-luminosity, var(--tp-color-feedback-luminosity));
+  --tp-color-#{$color}-shade: var(--tp-color-feedback-#{$color}-hue),
+    var(--tp-color-#{$color}-saturation, var(--tp-color-feedback-saturation)),
+    calc(
+      var(--tp-color-#{$color}-luminosity, var(--tp-color-feedback-luminosity)) -
+        5%
+    );
+  --tp-color-#{$color}-tint: var(--tp-color-feedback-#{$color}-hue),
+    var(--tp-color-#{$color}-saturation, var(--tp-color-feedback-saturation)),
+    calc(
+      var(--tp-color-#{$color}-luminosity, var(--tp-color-feedback-luminosity)) +
+        5%
+    );
 }
 
 @mixin generate-ionic-color-neutral-classes() {
   @for $i from 1 through 10 {
     .ion-color-neutral-#{$i} {
       --ion-color-base: hsl(var(--tp-color-neutral-#{$i})) !important;
-      --ion-color-base-rgb: var(--tp-color-neutral-#{$i}) !important;
       --ion-color-contrast: #{if(
           $i <= 5,
           hsl(var(--tp-color-neutral-10)),
           hsl(var(--tp-color-neutral-1))
         )} !important;
-      // --ion-color-shade: ;
-      // --ion-color-tint: ;
+
+      // --ion-color-base-rgb: ;
+      // --ion-color-contrast-rgb: ;
+
+      --ion-color-shade: hsl(var(--tp-color-neutral-#{$i}-shade)) !important;
+      --ion-color-tint: hsl(var(--tp-color-neutral-#{$i}-tint)) !important;
     }
 
     @if $i != 10 {
       .ion-color-neutral-#{$i}5 {
         --ion-color-base: hsl(var(--tp-color-neutral-#{$i}5)) !important;
-        --ion-color-base-rgb: var(--tp-color-neutral-#{$i}5) !important;
         --ion-color-contrast: #{if(
             $i <= 5,
             hsl(var(--tp-color-neutral-10)),
             hsl(var(--tp-color-neutral-1))
           )} !important;
+
+        --ion-color-shade: hsl(var(--tp-color-neutral-#{$i}5-shade)) !important;
+        --ion-color-tint: hsl(var(--tp-color-neutral-#{$i}5-tint)) !important;
+
         // --ion-color-shade: ;
         // --ion-color-tint: ;
       }
@@ -80,17 +160,18 @@
 @mixin generate-ionic-color-classes($color) {
   .ion-color-#{$color} {
     --ion-color-base: hsl(var(--tp-color-#{$color})) !important;
-    --ion-color-base-rgb: var(--tp-color-#{$color}) !important;
     --ion-color-contrast: hsl(var(--tp-color-contrast-fixed)) !important;
 
-    // --ion-color-shade: ;
-    // --ion-color-tint: ;
+    // --ion-color-base-rgb: ;
+    // --ion-color-contrast-rgb: ;
+
+    --ion-color-shade: hsl(var(--tp-color-#{$color}-shade)) !important;
+    --ion-color-tint: hsl(var(--tp-color-#{$color}-tint)) !important;
   }
 
   @for $i from 1 through 5 {
     .ion-color-#{$color}-#{$i} {
       --ion-color-base: hsl(var(--tp-color-#{$color}-#{$i})) !important;
-      --ion-color-base-rgb: var(--tp-color-#{$color}-#{$i}) !important;
 
       @if $i == 3 {
         --ion-color-contrast: hsl(var(--tp-color-contrast-fixed)) !important;
@@ -100,8 +181,11 @@
         --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
       }
 
-      // --ion-color-shade: ;
-      // --ion-color-tint: ;
+      // --ion-color-base-rgb: ;
+      // --ion-color-contrast-rgb: ;
+
+      --ion-color-shade: hsl(var(--tp-color-#{$color}-#{$i}-shade)) !important;
+      --ion-color-tint: hsl(var(--tp-color-#{$color}-#{$i}-tint)) !important;
     }
   }
 }
@@ -110,10 +194,13 @@
 @mixin generate-ionic-color-feedback-classes($color) {
   .ion-color-#{$color} {
     --ion-color-base: hsl(var(--tp-color-#{$color})) !important;
-    --ion-color-base-rgb: var(--tp-color-#{$color}) !important;
     --ion-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
-    // --ion-color-shade: ;
-    // --ion-color-tint: ;
+
+    // --ion-color-base-rgb: ;
+    // --ion-color-contrast-rgb: ;
+
+    --ion-color-shade: hsl(var(--tp-color-#{$color}-shade)) !important;
+    --ion-color-tint: hsl(var(--tp-color-#{$color}-tint)) !important;
   }
 }
 
@@ -121,27 +208,33 @@
   @for $i from 1 through 10 {
     .tp-color-neutral-#{$i} {
       --tp-color-base: hsl(var(--tp-color-neutral-#{$i})) !important;
-      --tp-color-base-rgb: var(--tp-color-neutral-#{$i}) !important;
       --tp-color-contrast: #{if(
           $i <= 5,
           hsl(var(--tp-color-neutral-10)),
           hsl(var(--tp-color-neutral-1))
         )} !important;
-      // --tp-color-shade: ;
-      // --tp-color-tint: ;
+
+      // --tp-color-base-rgb: ;
+      // --tp-color-contrast-rgb: ;
+
+      --tp-color-shade: hsl(var(--tp-color-neutral-#{$i}-shade)) !important;
+      --tp-color-tint: hsl(var(--tp-color-neutral-#{$i}-tint)) !important;
     }
 
     @if $i != 10 {
       .tp-color-neutral-#{$i}5 {
         --tp-color-base: hsl(var(--tp-color-neutral-#{$i}5)) !important;
-        --tp-color-base-rgb: var(--tp-color-neutral-#{$i}5) !important;
         --tp-color-contrast: #{if(
             $i <= 5,
             hsl(var(--tp-color-neutral-10)),
             hsl(var(--tp-color-neutral-1))
           )} !important;
-        // --tp-color-shade: ;
-        // --tp-color-tint: ;
+
+        // --tp-color-base-rgb: ;
+        // --tp-color-contrast-rgb: ;
+
+        --tp-color-shade: hsl(var(--tp-color-neutral-#{$i}5-shade)) !important;
+        --tp-color-tint: hsl(var(--tp-color-neutral-#{$i}5-tint)) !important;
       }
     }
   }
@@ -151,17 +244,18 @@
 @mixin generate-templarios-color-classes($color) {
   .tp-color-#{$color} {
     --tp-color-base: hsl(var(--tp-color-#{$color})) !important;
-    --tp-color-base-rgb: var(--tp-color-#{$color}) !important;
     --tp-color-contrast: hsl(var(--tp-color-contrast-fixed)) !important;
 
-    // --tp-color-shade: ;
-    // --tp-color-tint: ;
+    // --tp-color-base-rgb: ;
+    // --tp-color-contrast-rgb: ;
+
+    --tp-color-shade: hsl(var(--tp-color-#{$color}-shade)) !important;
+    --tp-color-tint: hsl(var(--tp-color-#{$color}-tint)) !important;
   }
 
   @for $i from 1 through 5 {
     .tp-color-#{$color}-#{$i} {
       --tp-color-base: hsl(var(--tp-color-#{$color}-#{$i})) !important;
-      --tp-color-base-rgb: var(--tp-color-#{$color}-#{$i}) !important;
 
       @if $i == 3 {
         --tp-color-contrast: hsl(var(--tp-color-contrast-fixed)) !important;
@@ -171,8 +265,11 @@
         --tp-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
       }
 
-      // --tp-color-shade: ;
-      // --tp-color-tint: ;
+      // --tp-color-base-rgb: ;
+      // --tp-color-contrast-rgb: ;
+
+      --tp-color-shade: hsl(var(--tp-color-#{$color}-#{$i}-shade)) !important;
+      --tp-color-tint: hsl(var(--tp-color-#{$color}-#{$i}-tint)) !important;
     }
   }
 }
@@ -181,9 +278,12 @@
 @mixin generate-templarios-color-feedback-classes($color) {
   .tp-color-#{$color} {
     --tp-color-base: hsl(var(--tp-color-#{$color})) !important;
-    --tp-color-base-rgb: var(--tp-color-#{$color}) !important;
     --tp-color-contrast: hsl(var(--tp-color-neutral-1)) !important;
-    // --tp-color-shade: ;
-    // --tp-color-tint: ;
+
+    // --tp-color-base-rgb: ;
+    // --tp-color-contrast-rgb: ;
+
+    --tp-color-shade: hsl(var(--tp-color-#{$color}-shade)) !important;
+    --tp-color-tint: hsl(var(--tp-color-#{$color}-tint)) !important;
   }
 }

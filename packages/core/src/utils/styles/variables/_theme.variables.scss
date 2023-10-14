@@ -1,11 +1,25 @@
+// variables utilizadas na geração de temas
+$tp-feedback-colors: attention, caution, warning, success;
+$tp-medsoft-secondary-colors: aula, material, questoes, revalida, provas;
+$tp-recursos-secondary-colors: orange;
+
+// variables utilizadas nas funções
 $tp-color-system-types: color, feedback, neutral;
+$tp-color-variation-types: shade, tint;
+$tp-color-current-types: base, contrast, shade, tint;
 
 $tp-color-variation: 1, 2, 3, 4, 5;
 $tp-neutral-variation: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 $tp-neutral-alternative-variation: 15, 25, 35, 45, 55, 65, 75, 85, 95;
 
-$tp-feedback-colors: 'attention', 'caution', 'warning', 'success';
+$tp-color-system-names: brand, neutral, $tp-feedback-colors,
+  $tp-medsoft-secondary-colors, $tp-recursos-secondary-colors;
 
-$tp-medsoft-secondary-colors: 'aula', 'material', 'questoes', 'revalida',
-  'provas';
-$tp-recursos-secondary-colors: 'orange';
+$tp-color-names: brand, $tp-medsoft-secondary-colors,
+  $tp-recursos-secondary-colors;
+$tp-color-feedback-names: $tp-feedback-colors;
+
+$tp-color-variations: null, $tp-color-variation;
+$tp-neutral-variations: $tp-neutral-variation, $tp-neutral-alternative-variation;
+
+// variables utilizadas em rgb / rgba

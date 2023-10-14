@@ -12,7 +12,7 @@
   "files": [
     "dist/",
     "loader/",
-    "public/"
+    "icons/"
   ],
   "scripts": {
     "build": "stencil build --docs",

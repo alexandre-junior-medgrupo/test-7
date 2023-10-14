@@ -19,6 +19,7 @@ export class TpTest {
 
     return (
       <Host
+        tabindex="0"
         class={createColorClasses(color, {
           'tp-test': true,
         })}
