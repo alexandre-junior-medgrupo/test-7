@@ -1,17 +1,51 @@
 import { Meta, Title, Typeset, IconGallery, IconItem } from '@storybook/blocks';
-import { TP_ICONS } from '../../utils/constants/icon.constant';
+import { TP_ICONS_A } from '../../utils/constants/icon.constant';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses,
+} from '../../utils/enums/theme.enum';
 
-<Meta title="Core/Icons" />
+<Meta
+  title="Core/Icons"
+  parameters={{
+    themes: {
+      target: 'root',
+      default: 'Default',
+      list: [
+        {
+          name: 'Default',
+          class: [`${TpThemeCSSClasses.MedSoft}`],
+          color: '#121616',
+        },
+        {
+          name: 'Light',
+          class: [
+            `${TpThemeCSSClasses.MedSoft}`,
+            `${TpSchemeCSSClasses.Light}`,
+          ],
+          color: '#F9FAFA',
+        },
+      ],
+    },
+  }}
+/>
 
 <Title>Icons</Title>
 
+<Title>A</Title>
+
 <IconGallery>
-  {TP_ICONS.map((icon) => (
+  {TP_ICONS_A.map((icon) => (
     <IconItem name={`${icon}.svg`}>
       <ion-icon
         src={`./icons/${icon}.svg`}
-        style={{ '--stroke': 'var(--tp-color-neutral-1)' }}
+        style={{
+          '--stroke': 'var(--tp-color-neutral-1)',
+          '--fill': 'var(--tp-color-neutral-10)',
+        }}
       ></ion-icon>
     </IconItem>
   ))}
 </IconGallery>
+
+<Title>B</Title>

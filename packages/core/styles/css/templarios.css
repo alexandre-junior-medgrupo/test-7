@@ -1,4 +1,5 @@
 /* stylelint-disable max-nesting-depth */
+/* stylelint-disable max-nesting-depth */
 /* stylelint-disable  at-rule-disallowed-list */
 :root {
   --tp-color-neutral-1: #121616;
@@ -1954,6 +1955,11 @@
   --tp-color-brand-5-tint: #593f26;
 }
 
+:root {
+  --ion-background-color: var(--tp-color-neutral-1);
+  --ion-default-font: "fsemeric", "Open Sans", sans-serif;
+}
+
 [tp-type=h64],
 [tp-type=h64] * {
   font-size: 64px !important;
@@ -2162,9 +2168,10 @@
   margin: 0;
 }
 
+/* stylelint-disable max-nesting-depth */
 ion-button {
-  --background: hsl(var(--tp-color-brand));
-  --color: hsl(var(--tp-color-contrast-fixed));
+  --background: var(--tp-color-brand);
+  --color: var(--tp-color-contrast-fixed);
   --border-radius: 500px;
   --box-shadow: none;
   --padding-top: 16px;
@@ -2182,7 +2189,7 @@ ion-text * {
 
 ion-text,
 ion-text a {
-  color: hsl(var(--tp-color-neutral-10));
+  color: var(--tp-color-neutral-10);
 }
 
 /* stylelint-disable selector-no-qualifying-type */

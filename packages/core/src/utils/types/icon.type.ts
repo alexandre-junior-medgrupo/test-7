@@ -1,3 +1,3 @@
-import { TpIcon } from '../enums/icon.enum';
+import { TpIconA } from '../enums/icon.enum';
 
-export type TpIcons = `${TpIcon}`;
+export type TpIcons = `${TpIconA}`;

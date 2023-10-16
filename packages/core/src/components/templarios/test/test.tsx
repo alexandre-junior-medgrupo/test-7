@@ -12,7 +12,7 @@ export class TpTest {
   @Prop({ reflect: true }) color?: TpColor;
   @Prop({ reflect: true }) icon?: string;
 
-  @State() defaultIcon = getAssetPath('./assets/tp-calendar.svg');
+  @State() defaultIcon = getAssetPath('./assets/tp-activity.svg');
 
   render() {
     const { color, icon, defaultIcon } = this;
