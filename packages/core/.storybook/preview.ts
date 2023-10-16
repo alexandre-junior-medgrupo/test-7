@@ -39,15 +39,8 @@ defineCustomElementIonContent();
 // ionic
 
 // templarios
-/* import { defineCustomElements } from '../loader';
+import '../css/templarios-rgb.css';
 import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
-import '../public/css/templarios.css';
-defineCustomElements(); */
-// templarios
-
-// templarios
-import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
-import '../www/build/templarios.css';
 import '../www/build/templarios.esm';
 // templarios
 
