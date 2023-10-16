@@ -12,7 +12,8 @@
   "files": [
     "dist/",
     "loader/",
-    "icons/"
+    "icons/",
+    "styles/"
   ],
   "scripts": {
     "build": "stencil build --docs",
@@ -22,7 +23,7 @@
     "generate": "stencil generate",
     "storybook": "storybook dev -p 3669",
     "build-storybook": "storybook build",
-    "tp:watch:sass": "sass src/styles:css src/components/ionic:css --watch",
+    "tp:watch:sass": "sass src/styles:styles/css src/components/ionic:styles/css --watch",
     "tp:start": "npm-run-all --parallel tp:watch:sass start storybook",
     "tp:build": "npm-run-all build"
   },

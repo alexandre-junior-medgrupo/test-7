@@ -39,8 +39,8 @@ defineCustomElementIonContent();
 // ionic
 
 // templarios
-import '../css/templarios-rgb.css';
 import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
+import '../styles/css/templarios.css';
 import '../www/build/templarios.esm';
 // templarios
 
