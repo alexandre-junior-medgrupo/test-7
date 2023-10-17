@@ -3,6 +3,7 @@
   <style>
     :host {
       --stroke: var(--tp-color-neutral-10);
+      --fill: var(--tp-color-neutral-1);
       --stroke-width: 2;
     }
 
@@ -19,7 +20,15 @@
       stroke-linejoin: round;
     }
 
+    :host circle {
+      fill: var(--fill);
+    }
+
     :host(.ion-color) path {
+      --stroke: var(--ion-color-base) !important;
+    }
+
+    :host(.ion-color) circle {
       --stroke: var(--ion-color-base) !important;
     }
 

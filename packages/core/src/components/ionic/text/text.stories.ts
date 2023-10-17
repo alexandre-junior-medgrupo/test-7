@@ -9,7 +9,6 @@ defineCustomElement();
 
 const meta: Meta<Components.IonText & TpIonText> = {
   component: 'ion-text',
-  tags: ['autodocs'],
   argTypes: {
     type: {
       control: { type: 'select' },

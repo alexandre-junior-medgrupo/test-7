@@ -9,7 +9,6 @@ defineCustomElement();
 
 const meta: Meta<Components.IonLabel & TpIonLabel> = {
   component: 'ion-label',
-  tags: ['autodocs'],
   argTypes: {
     type: {
       control: { type: 'select' },
@@ -22,7 +21,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonLabel & TpIonLabel>;
 
-export const Primary: Story = {
+export const Default: Story = {
   render: ({ ...args }) =>
     html`<ion-label .color="${args.color}" tp-type="${args.type}">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,

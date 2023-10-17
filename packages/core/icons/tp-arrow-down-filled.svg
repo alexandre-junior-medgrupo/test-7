@@ -28,6 +28,10 @@
       --stroke: var(--ion-color-base) !important;
     }
 
+    :host(.ion-color) circle {
+      --stroke: var(--ion-color-base) !important;
+    }
+
     :host([tp-size='sm']) {
       /* --stroke-width: 1.5; */
       font-size: 16px;

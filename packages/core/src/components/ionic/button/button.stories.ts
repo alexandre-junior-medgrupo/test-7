@@ -7,7 +7,6 @@ defineCustomElement();
 
 const meta: Meta<Components.IonButton> = {
   component: 'ion-button',
-  tags: ['autodocs'],
 };
 
 export default meta;

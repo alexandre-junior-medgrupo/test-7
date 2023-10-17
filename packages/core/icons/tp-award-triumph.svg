@@ -12,11 +12,7 @@
     }
 
     :host path {
-      stroke: var(--stroke);
-      stroke-width: var(--stroke-width);
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+      fill: var(--stroke);
     }
 
     :host(.ion-color) path {

@@ -7,7 +7,6 @@ import { TpIonIcon } from './icon.type';
 
 const meta: Meta<Components.IonIcon & TpIonIcon> = {
   component: 'ion-icon',
-  tags: ['autodocs'],
   argTypes: {
     src: {
       control: { type: 'select' },
@@ -27,7 +26,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonIcon & TpIonIcon>;
 
-export const Primary: Story = {
+export const Default: Story = {
   render: ({ ...args }) => {
     console.log(args.src);
 

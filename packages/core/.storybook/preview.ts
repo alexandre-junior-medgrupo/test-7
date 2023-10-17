@@ -48,7 +48,7 @@ const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     backgrounds: { disable: true },
-    staticDirs: ['../www'],
+    staticDirs: ['../www', '../icons'],
     controls: {
       matchers: {
         color: /(background|color)$/i,
