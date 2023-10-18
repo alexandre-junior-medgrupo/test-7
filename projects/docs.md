@@ -21,7 +21,7 @@ defineCustomElements();
 ```scss
 // src/global.scss
 
-@import '@templarios/core/public/css/templarios.css';
+@import '@templarios/core/styles/css/templarios.css';
 ```
 
 ```ts
@@ -47,7 +47,7 @@ export class AppModule {}
             "assets": [
               {
                 "glob": "**/*.svg",
-                "input": "node_modules/@templarios/core/public/icons",
+                "input": "node_modules/@templarios/core/icons",
                 "output": "./templarios"
               }
             ],
@@ -61,7 +61,7 @@ export class AppModule {}
             "assets": [
               {
                 "glob": "**/*.svg",
-                "input": "node_modules/@templarios/core/public/icons",
+                "input": "node_modules/@templarios/core/icons",
                 "output": "./templarios"
               }
             ]
@@ -109,7 +109,7 @@ defineCustomElements();
 @import '@ionic/angular/css/flex-utils.css';
 
 /* templarios */
-@import '@templarios/core/public/css/templarios.css';
+@import '@templarios/core/styles/css/templarios.css';
 ```
 
 ```ts
@@ -139,7 +139,7 @@ export class AppModule {}
             "assets": [
               {
                 "glob": "**/*.svg",
-                "input": "node_modules/@templarios/core/public/icons",
+                "input": "node_modules/@templarios/core/icons",
                 "output": "./templarios"
               }
             ],
@@ -153,7 +153,7 @@ export class AppModule {}
             "assets": [
               {
                 "glob": "**/*.svg",
-                "input": "node_modules/@templarios/core/public/icons",
+                "input": "node_modules/@templarios/core/icons",
                 "output": "./templarios"
               }
             ]

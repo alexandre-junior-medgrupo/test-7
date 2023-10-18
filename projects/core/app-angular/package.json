@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@ionic/angular": "^7.5.0",
-    "@templarios/core": "github:MEDGRUPOGIT/med-components#308956e4143252f69ab19e21c2ba91e632330f0f",
+    "@templarios/core": "github:MEDGRUPOGIT/med-components#c6c7615cf44b5fda9af622b1bd72c81fcf329da1",
     "ionicons": "^7.2.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

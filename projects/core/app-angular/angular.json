@@ -28,7 +28,7 @@
               "src/assets",
               {
                 "glob": "**/*.svg",
-                "input": "node_modules/@templarios/core/public/icons",
+                "input": "node_modules/@templarios/core/icons",
                 "output": "./templarios"
               }
             ],
@@ -94,7 +94,7 @@
               "src/assets",
               {
                 "glob": "**/*.svg",
-                "input": "node_modules/@templarios/core/public/icons",
+                "input": "node_modules/@templarios/core/icons",
                 "output": "./templarios"
               }
             ],
