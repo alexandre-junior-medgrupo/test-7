@@ -12,12 +12,19 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
+      copy: [
+        {
+          src: 'src/**/*.{svg}',
+          dest: 'dist/components/assets',
+          warn: true,
+        },
+      ],
     },
     {
       type: 'dist-custom-elements',
       copy: [
         {
-          src: '**/*.{svg}',
+          src: 'src/**/*.{svg}',
           dest: 'dist/components/assets',
           warn: true,
         },

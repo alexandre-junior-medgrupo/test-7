@@ -2,8 +2,6 @@
   --background: #{tp-color(neutral, 2)};
   --color: #{tp-color-contrast(neutral, 2, neutral)};
   --icon-stroke: #{tp-color-contrast(neutral, 2, neutral)};
-
-  // TODO: colocar na função
   --background-hover: #{tp-color(neutral, 2, null, shade)};
   --background-focus: #{tp-color(neutral, 2, null, tint)};
 }
