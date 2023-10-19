@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "tp:build": "npx -p @angular/cli ng build component-library"
   },
   "private": true,
   "dependencies": {

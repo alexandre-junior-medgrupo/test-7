@@ -8,7 +8,11 @@
     "lint:prettier": "prettier . --write --cache --cache-location .prettiercache",
     "lint:stylelint": "stylelint **/*.scss --fix --cache --formatter verbose",
     "lint": "npm-run-all lint:prettier --parallel lint:stylelint",
-    "build": "lerna run tp:build"
+    "build": "lerna run tp:build",
+    "move:core": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles dist/core",
+    "move:angular": "shx cp -r packages/angular-workspace/dist/component-library/* dist/angular",
+    "move": "npm-run-all --parallel move:core move:angular",
+    "prod": "npm-run-all build move"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",
@@ -20,5 +24,8 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-sass-guidelines": "^10.0.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "shx": "^0.3.4"
   }
 }

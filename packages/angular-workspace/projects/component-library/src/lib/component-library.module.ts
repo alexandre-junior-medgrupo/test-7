@@ -14,4 +14,4 @@ import { DIRECTIVES } from './stencil-generated';
     },
   ],
 })
-export class ComponentLibraryModule {}
+export class TemplariosModule {}
