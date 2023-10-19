@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "templarios",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -9,10 +9,10 @@
     "lint:stylelint": "stylelint **/*.scss --fix --cache --formatter verbose",
     "lint": "npm-run-all lint:prettier --parallel lint:stylelint",
     "build:lerna": "lerna run tp:build",
-    "move:core": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles dist/core",
-    "clean:core": "shx rm -rf dist/core/*",
-    "move:angular": "shx cp -r packages/angular-lib/dist/templarios/* dist/angular",
-    "clean:angular": "shx rm -rf dist/angular/*",
+    "move:core": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles core",
+    "clean:core": "shx rm -rf core/*",
+    "move:angular": "shx cp -r packages/angular-lib/dist/templarios/* angular",
+    "clean:angular": "shx rm -rf angular/*",
     "clean": "npm-run-all --parallel clean:core clean:angular",
     "move": "npm-run-all --parallel move:core move:angular",
     "start": "cd packages/core && npm run tp:start",
@@ -24,12 +24,10 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
+    "shx": "^0.3.4",
     "stylelint": "^15.10.3",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-sass-guidelines": "^10.0.0",
     "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "shx": "^0.3.4"
   }
 }

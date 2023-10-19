@@ -19,9 +19,9 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@ionic/angular": "^7.5.0",
-    "@templarios/core": "github:MEDGRUPOGIT/med-components#c6c7615cf44b5fda9af622b1bd72c81fcf329da1",
     "ionicons": "^7.2.1",
     "rxjs": "~7.8.0",
+    "templarios": "github:MEDGRUPOGIT/med-components#7e2c09680937710c5693a94913e7398659c26b53",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },
@@ -36,6 +36,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "shx": "^0.3.4",
     "typescript": "~5.1.3"
   }
 }

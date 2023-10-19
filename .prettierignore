@@ -1,3 +1,7 @@
+# root
+core/
+angular/
+
 # packages
 # core
 packages/core/.stencil
