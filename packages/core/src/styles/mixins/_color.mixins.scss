@@ -5,7 +5,6 @@
 @use 'sass:map';
 @use 'sass:list';
 @use 'sass:math';
-@use '../functions/color.functions' as color-function;
 
 @function rgb-list($color) {
   @return #{red($color)}, #{green($color)}, #{blue($color)};
@@ -448,7 +447,7 @@ $color-system-frameworks: ionic, templarios;
   .#{$namespace}-color-#{$name} {
     --#{$namespace}-color-base: var(--tp-color-#{$name}) !important;
     --#{$namespace}-color-base-rgb: var(--tp-color-#{$name}-rgb) !important;
-    --#{$namespace}-color-contrast: var(--tp-color-neutral-10) !important;
+    --#{$namespace}-color-contrast: var(--tp-color-neutral-1) !important;
     --#{$namespace}-color-contrast-rgb: var(
       --tp-color-neutral-10-rgb
     ) !important;
@@ -500,6 +499,6 @@ $color-system-frameworks: ionic, templarios;
 }
 
 :root {
-  --ion-background-color: #{color-function.tp-color(neutral, 1)};
+  --ion-background-color: var(--tp-color-neutral-10);
   --ion-default-font: 'fsemeric', 'Open Sans', sans-serif;
 }

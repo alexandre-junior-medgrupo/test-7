@@ -4,11 +4,7 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'templarios',
-  plugins: [
-    sass({
-      injectGlobalPaths: ['./src/styles/functions/_color.functions.scss'],
-    }),
-  ],
+  plugins: [sass()],
   outputTargets: [
     {
       type: 'dist',
@@ -42,9 +38,9 @@ export const config: Config = {
       componentCorePackage: '@templarios/core',
       outputType: 'component',
       directivesProxyFile:
-        '../angular/projects/templarios/src/lib/stencil-generated/components.ts',
+        '../angular-lib/projects/templarios/src/lib/stencil-generated/components.ts',
       directivesArrayFile:
-        '../angular/projects/templarios/src/lib/stencil-generated/index.ts',
+        '../angular-lib/projects/templarios/src/lib/stencil-generated/index.ts',
     }),
   ],
   testing: {

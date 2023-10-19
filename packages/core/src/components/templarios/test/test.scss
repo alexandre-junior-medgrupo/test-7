@@ -1,9 +1,9 @@
 :host {
-  --background: #{tp-color(neutral, 2)};
-  --color: #{tp-color-contrast(neutral, 2, neutral)};
-  --icon-stroke: #{tp-color-contrast(neutral, 2, neutral)};
-  --background-hover: #{tp-color(neutral, 2, null, shade)};
-  --background-focus: #{tp-color(neutral, 2, null, tint)};
+  --background: var(--tp-color-neutral-2);
+  --color: var(--tp-color-neutral-10);
+  --icon-stroke: var(--tp-color-neutral-10);
+  --background-hover: var(--tp-color-neutral-2-shade);
+  --background-focus: var(--tp-color-neutral-2-tint);
 }
 
 :host {
@@ -35,10 +35,10 @@
 }
 
 :host(.tp-color) {
-  --background: #{tp-color-current(base)};
-  --color: #{tp-color-current(contrast)};
-  --icon-stroke: #{tp-color-current(contrast)};
+  --background: var(--tp-color-base);
+  --color: var(--tp-color-contrast);
+  --icon-stroke: var(--tp-color-contrast);
 
-  --background-hover: #{tp-color-current(shade)};
-  --background-focus: #{tp-color-current(tint)};
+  --background-hover: var(--tp-color-shade);
+  --background-focus: var(--tp-color-tint);
 }

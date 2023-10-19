@@ -1,5 +1,5 @@
 {
-  "name": "angular-lib",
+  "name": "@templarios/angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "tp:build": "npx -p @angular/cli ng build component-library"
+    "tp:build": "npx -p @angular/cli ng build templarios"
   },
   "private": true,
   "dependencies": {

@@ -6,7 +6,7 @@
 ## # Installation
 
 ```bash
-npm i @templarios/core@github:MEDGRUPOGIT/med-components#308956e4143252f69ab19e21c2ba91e632330f0f
+npm i templarios@github:MEDGRUPOGIT/med-components#308956e4143252f69ab19e21c2ba91e632330f0f
 ```
 
 ## # Configuration
@@ -81,7 +81,7 @@ export class AppModule {}
 ## # Installation
 
 ```bash
-npm i @ionic/angular@latest ionicons@latest @templarios/core@github:MEDGRUPOGIT/med-components#308956e4143252f69ab19e21c2ba91e632330f0f
+npm i @ionic/angular@latest ionicons@latest templarios@github:MEDGRUPOGIT/med-components#308956e4143252f69ab19e21c2ba91e632330f0f
 ```
 
 ## # Configuration

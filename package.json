@@ -8,11 +8,15 @@
     "lint:prettier": "prettier . --write --cache --cache-location .prettiercache",
     "lint:stylelint": "stylelint **/*.scss --fix --cache --formatter verbose",
     "lint": "npm-run-all lint:prettier --parallel lint:stylelint",
-    "build": "lerna run tp:build",
+    "build:lerna": "lerna run tp:build",
     "move:core": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles dist/core",
-    "move:angular": "shx cp -r packages/angular-workspace/dist/component-library/* dist/angular",
+    "clean:core": "shx rm -rf dist/core/*",
+    "move:angular": "shx cp -r packages/angular-lib/dist/templarios/* dist/angular",
+    "clean:angular": "shx rm -rf dist/angular/*",
+    "clean": "npm-run-all --parallel clean:core clean:angular",
     "move": "npm-run-all --parallel move:core move:angular",
-    "prod": "npm-run-all build move"
+    "start": "cd packages/core && npm run tp:start",
+    "build": "npm-run-all lint build:lerna clean move"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",

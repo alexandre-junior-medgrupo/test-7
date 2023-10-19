@@ -5,6 +5,7 @@ packages/core/dist
 packages/core/loader
 packages/core/www
 packages/core/.storybook/preview.ts
+packages/core/storybook-static
 
 # angular
 packages/angular/.angular

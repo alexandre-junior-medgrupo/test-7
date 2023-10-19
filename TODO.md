@@ -1,5 +1,3 @@
 BUILD
 
-- testar interfaces
-- testar icone local
-- buildar @templarios/angular
+- colocar templarios.css na lib angular

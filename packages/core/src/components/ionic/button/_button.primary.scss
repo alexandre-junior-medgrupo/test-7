@@ -1,8 +1,6 @@
-@use '../../../styles/functions/color.functions';
-
 ion-button {
-  --background: #{color.tp-color(brand)};
-  --color: #{color.tp-color-contrast(color)};
+  --background: var(--tp-color-brand);
+  --color: var(--tp-color-contrast-fixed);
 
   --border-radius: 500px;
   --box-shadow: none;

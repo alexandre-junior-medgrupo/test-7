@@ -1,5 +1,4 @@
 /* stylelint-disable max-nesting-depth */
-/* stylelint-disable max-nesting-depth */
 /* stylelint-disable  at-rule-disallowed-list */
 :root {
   --tp-color-neutral-1: #121616;
@@ -696,7 +695,7 @@
 .ion-color-attention {
   --ion-color-base: var(--tp-color-attention) !important;
   --ion-color-base-rgb: var(--tp-color-attention-rgb) !important;
-  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
   --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
   --ion-color-shade: var(--tp-color-attention-shade) !important;
   --ion-color-tint: var(--tp-color-attention-tint) !important;
@@ -705,7 +704,7 @@
 .tp-color-attention {
   --tp-color-base: var(--tp-color-attention) !important;
   --tp-color-base-rgb: var(--tp-color-attention-rgb) !important;
-  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
   --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
   --tp-color-shade: var(--tp-color-attention-shade) !important;
   --tp-color-tint: var(--tp-color-attention-tint) !important;
@@ -714,7 +713,7 @@
 .ion-color-caution {
   --ion-color-base: var(--tp-color-caution) !important;
   --ion-color-base-rgb: var(--tp-color-caution-rgb) !important;
-  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
   --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
   --ion-color-shade: var(--tp-color-caution-shade) !important;
   --ion-color-tint: var(--tp-color-caution-tint) !important;
@@ -723,7 +722,7 @@
 .tp-color-caution {
   --tp-color-base: var(--tp-color-caution) !important;
   --tp-color-base-rgb: var(--tp-color-caution-rgb) !important;
-  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
   --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
   --tp-color-shade: var(--tp-color-caution-shade) !important;
   --tp-color-tint: var(--tp-color-caution-tint) !important;
@@ -732,7 +731,7 @@
 .ion-color-warning {
   --ion-color-base: var(--tp-color-warning) !important;
   --ion-color-base-rgb: var(--tp-color-warning-rgb) !important;
-  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
   --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
   --ion-color-shade: var(--tp-color-warning-shade) !important;
   --ion-color-tint: var(--tp-color-warning-tint) !important;
@@ -741,7 +740,7 @@
 .tp-color-warning {
   --tp-color-base: var(--tp-color-warning) !important;
   --tp-color-base-rgb: var(--tp-color-warning-rgb) !important;
-  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
   --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
   --tp-color-shade: var(--tp-color-warning-shade) !important;
   --tp-color-tint: var(--tp-color-warning-tint) !important;
@@ -750,7 +749,7 @@
 .ion-color-success {
   --ion-color-base: var(--tp-color-success) !important;
   --ion-color-base-rgb: var(--tp-color-success-rgb) !important;
-  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
   --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
   --ion-color-shade: var(--tp-color-success-shade) !important;
   --ion-color-tint: var(--tp-color-success-tint) !important;
@@ -759,7 +758,7 @@
 .tp-color-success {
   --tp-color-base: var(--tp-color-success) !important;
   --tp-color-base-rgb: var(--tp-color-success-rgb) !important;
-  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
   --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
   --tp-color-shade: var(--tp-color-success-shade) !important;
   --tp-color-tint: var(--tp-color-success-tint) !important;
@@ -1664,7 +1663,7 @@
 }
 
 :root {
-  --ion-background-color: var(--tp-color-neutral-1);
+  --ion-background-color: var(--tp-color-neutral-10);
   --ion-default-font: 'fsemeric', 'Open Sans', sans-serif;
 }
 
@@ -1876,7 +1875,6 @@
   margin: 0;
 }
 
-/* stylelint-disable max-nesting-depth */
 ion-button {
   --background: var(--tp-color-brand);
   --color: var(--tp-color-contrast-fixed);
