@@ -24,18 +24,21 @@
   @if list.index(theme.$tp-color-names, $name) and
     list.index(theme.$tp-color-variation, $variation)
   {
+    //
   }
 
   // TODO: testar se name é neutral e variação diferente de 10 => 95
   @if list.index(theme.$tp-color-names, $name) and
     list.index(theme.$tp-color-variation, $variation)
   {
+    //
   }
 
   // TODO: testar se name é $tp-feedback-colors
   @if list.index(theme.$tp-color-names, $name) and
     list.index(theme.$tp-color-variation, $variation)
   {
+    //
   }
 
   @if ($type) {

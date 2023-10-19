@@ -1,6 +1,3 @@
-
 import * as d from './components';
 
-export const DIRECTIVES = [
-  d.TpTest
-];
+export const DIRECTIVES = [d.TpTest];

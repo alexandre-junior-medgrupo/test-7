@@ -5,8 +5,8 @@ const config: CapacitorConfig = {
   appName: 'ionic-angular',
   webDir: 'www',
   server: {
-    androidScheme: 'https'
-  }
+    androidScheme: 'https',
+  },
 };
 
 export default config;
