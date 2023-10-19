@@ -42,9 +42,9 @@ export const config: Config = {
       componentCorePackage: '@templarios/core',
       outputType: 'component',
       directivesProxyFile:
-        '../angular-workspace/projects/component-library/src/lib/stencil-generated/components.ts',
+        '../angular/projects/templarios/src/lib/stencil-generated/components.ts',
       directivesArrayFile:
-        '../angular-workspace/projects/component-library/src/lib/stencil-generated/index.ts',
+        '../angular/projects/templarios/src/lib/stencil-generated/index.ts',
     }),
   ],
   testing: {
