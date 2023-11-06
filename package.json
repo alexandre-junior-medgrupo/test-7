@@ -1,22 +1,25 @@
 {
   "name": "templarios",
-  "private": true,
   "workspaces": [
     "packages/*"
+  ],
+  "files": [
+    "tp-core",
+    "tp-angular"
   ],
   "scripts": {
     "lint:prettier": "prettier . --write --cache --cache-location .prettiercache",
     "lint:stylelint": "stylelint **/*.scss --fix --cache --formatter verbose",
     "lint": "npm-run-all lint:prettier --parallel lint:stylelint",
     "build:lerna": "lerna run tp:build",
-    "move:core": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles core",
-    "clean:core": "shx rm -rf core/*",
-    "move:angular": "shx cp -r packages/angular-lib/dist/templarios/* angular",
-    "clean:angular": "shx rm -rf angular/*",
+    "move:core": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles tp-core",
+    "clean:core": "shx rm -rf tp-core/*",
+    "move:angular": "shx cp -r packages/angular-lib/dist/templarios/* tp-core/styles tp-angular",
+    "clean:angular": "shx rm -rf tp-angular/*",
     "clean": "npm-run-all --parallel clean:core clean:angular",
-    "move": "npm-run-all --parallel move:core move:angular",
+    "move": "npm-run-all move:core move:angular",
     "start": "cd packages/core && npm run tp:start",
-    "build": "npm-run-all lint build:lerna clean move"
+    "build": "npm-run-all build:lerna lint clean move"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",

@@ -1,4 +1,4 @@
-# @templarios/core
+# tp-core
 
 - sass 1.49.9
 

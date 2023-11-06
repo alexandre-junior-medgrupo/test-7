@@ -18,6 +18,6 @@ export const Primary: Story = {
     html`<ion-button .color="${args.color}">ion-button</ion-button>`,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/ion-text/gi)).toBeTruthy();
+    expect(canvas.getByText(/ion-badge/gi)).toBeTruthy();
   }, */
 };

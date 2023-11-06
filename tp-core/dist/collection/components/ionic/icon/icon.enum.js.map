@@ -1,0 +1,1 @@
+{"version":3,"file":"icon.enum.js","sourceRoot":"","sources":["../../../../src/components/ionic/icon/icon.enum.ts"],"names":[],"mappings":"AAAA,MAAM,CAAN,IAAY,aAIX;AAJD,WAAY,aAAa;EACvB,0BAAS,CAAA;EACT,0BAAS,CAAA;EACT,0BAAS,CAAA;AACX,CAAC,EAJW,aAAa,KAAb,aAAa,QAIxB","sourcesContent":["export enum TpIonIconSize {\r\n  SM = 'sm',\r\n  MD = 'md',\r\n  LG = 'lg',\r\n}\r\n"]}

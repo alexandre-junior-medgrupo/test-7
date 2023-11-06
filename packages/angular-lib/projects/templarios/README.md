@@ -1,1 +1,1 @@
-# @templarios/angular
+# tp-angular

@@ -35,7 +35,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     angularOutputTarget({
-      componentCorePackage: '@templarios/core',
+      componentCorePackage: 'tp-core',
       outputType: 'component',
       directivesProxyFile:
         '../angular-lib/projects/templarios/src/lib/stencil-generated/components.ts',

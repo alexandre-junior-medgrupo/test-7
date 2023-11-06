@@ -1,6 +1,6 @@
 # root
-core/
-angular/
+tp-core/
+tp-angular/
 
 # packages
 # core
@@ -14,21 +14,3 @@ packages/core/storybook-static
 # angular
 packages/angular/.angular
 packages/angular/dist
-
-# projects/core
-# app-angular
-projects/core/app-angular/.angular
-projects/core/app-angular/dist
-
-# ionic-angular
-projects/core/ionic-angular/.angular
-projects/core/ionic-angular/dist
-
-# projects/angular
-# app-angular
-projects/angular/app-angular/.angular
-projects/angular/app-angular/dist
-
-# ionic-angular
-projects/angular/ionic-angular/.angular
-projects/angular/ionic-angular/dist

@@ -1,0 +1,1 @@
+{"version":3,"file":"label.type.js","sourceRoot":"","sources":["../../../../src/components/ionic/label/label.type.ts"],"names":[],"mappings":"","sourcesContent":["import { TpColor } from 'src/components';\r\nimport { TpType } from '../../../utils/enums/type.enum';\r\n\r\nexport type TpIonLabel = {\r\n  color: TpColor;\r\n  type: `${TpType}`;\r\n};\r\n"]}

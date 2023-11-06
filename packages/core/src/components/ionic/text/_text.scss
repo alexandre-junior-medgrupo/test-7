@@ -1,3 +1,5 @@
+/* stylelint-disable selector-no-qualifying-type */
+
 ion-text * {
   margin: 0;
   font-weight: 400;
@@ -10,9 +12,7 @@ ion-text a {
   color: var(--tp-color-neutral-10);
 }
 
-/* stylelint-disable selector-no-qualifying-type */
 ion-text.ion-color,
 ion-text.ion-color a {
   color: var(--ion-color-base);
 }
-/* stylelint-enable selector-no-qualifying-type */
