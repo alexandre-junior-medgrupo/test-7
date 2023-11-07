@@ -1,5 +1,5 @@
-import { TpColor } from '../types/color.type';
-import { TpCssClassMap } from '../types/utils.type';
+import type { TpColor } from '../types/color.type';
+import type { TpCssClassMap } from '../types/utils.type';
 
 export const createColorClasses = (
   color: TpColor | undefined | null,

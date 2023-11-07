@@ -1,5 +1,6 @@
-import { TpColor } from 'src/components';
-import { TpIonIconSize } from './icon.enum';
+import type { TpColor } from 'src/components';
+
+import type { TpIonIconSize } from './icon.enum';
 
 export type TpIonIcon = {
   color: `${TpColor}`;

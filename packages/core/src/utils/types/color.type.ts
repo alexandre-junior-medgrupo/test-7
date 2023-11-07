@@ -1,4 +1,4 @@
-import {
+import type {
   TpColorAula,
   TpColorBrand,
   TpColorFeedback,
@@ -9,7 +9,8 @@ import {
   TpColorQuestoes,
   TpColorRevalida,
 } from '../enums/color.enum';
-import { TpLiteralUnion } from './utils.type';
+
+import type { TpLiteralUnion } from './utils.type';
 
 export type TpColors =
   | `${TpColorBrand}`

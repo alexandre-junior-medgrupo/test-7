@@ -1,0 +1,16 @@
+tp-angular/
+tp-core/
+
+packages/core/**/*.mdx
+packages/core/**/*.stories.ts
+packages/core/**/*.spec.ts
+packages/core/**/*.spec.tsx
+packages/core/**/*.e2e.ts
+
+packages/core/storybook-static/
+packages/core/dist
+packages/core/loader
+packages/core/www
+packages/core/**/*.d.ts
+
+packages/angular-lib/
