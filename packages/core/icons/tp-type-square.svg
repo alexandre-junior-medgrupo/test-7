@@ -1,0 +1,42 @@
+<svg viewBox="0 0 24 24">
+  <title>type-square</title>
+  <style>
+    :host {
+      --stroke: var(--tp-color-neutral-10);
+      --stroke-width: 2;
+    }
+
+    :host {
+      font-size: 24px;
+      stroke: inherit;
+    }
+
+    :host path {
+      stroke: var(--stroke);
+      stroke-width: var(--stroke-width);
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    :host(.ion-color) path {
+      --stroke: var(--ion-color-base) !important;
+    }
+
+    :host([tp-size='sm']) {
+      /* --stroke-width: 1.5; */
+      font-size: 16px;
+    }
+
+    :host([tp-size='md']) {
+      /* --stroke-width: 3; */
+      font-size: 32px;
+    }
+
+    :host([tp-size='lg']) {
+      /* --stroke-width: 4; */
+      font-size: 48px;
+    }
+  </style>
+  <path d="M6 10C6 10.5523 6.44772 11 7 11C7.55228 11 8 10.5523 8 10H6ZM7 7V6C6.44772 6 6 6.44772 6 7H7ZM17 7H18C18 6.44772 17.5523 6 17 6V7ZM16 10C16 10.5523 16.4477 11 17 11C17.5523 11 18 10.5523 18 10H16ZM9 16C8.44772 16 8 16.4477 8 17C8 17.5523 8.44772 18 9 18V16ZM15 18C15.5523 18 16 17.5523 16 17C16 16.4477 15.5523 16 15 16V18ZM13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7H13ZM11 17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17H11ZM8 10V7H6V10H8ZM7 8H17V6H7V8ZM16 7V10H18V7H16ZM9 18H15V16H9V18ZM11 7V17H13V7H11ZM5 4H19V2H5V4ZM20 5V19H22V5H20ZM19 20H5V22H19V20ZM4 19V5H2V19H4ZM5 20C4.44772 20 4 19.5523 4 19H2C2 20.6569 3.34315 22 5 22V20ZM20 19C20 19.5523 19.5523 20 19 20V22C20.6569 22 22 20.6569 22 19H20ZM19 4C19.5523 4 20 4.44772 20 5H22C22 3.34315 20.6569 2 19 2V4ZM5 2C3.34315 2 2 3.34315 2 5H4C4 4.44772 4.44772 4 5 4V2Z"/>
+</svg>
