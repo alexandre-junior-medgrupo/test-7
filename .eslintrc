@@ -1,0 +1,9 @@
+{
+  "parserOptions": {
+    "project": "./packages/core/tsconfig.json"
+  },
+  "extends": ["plugin:@stencil-community/recommended"],
+  "rules": {
+    "@stencil-community/ban-exported-const-enums": 0
+  }
+}

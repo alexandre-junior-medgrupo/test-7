@@ -12,5 +12,6 @@ packages/core/dist
 packages/core/loader
 packages/core/www
 packages/core/**/*.d.ts
+packages/core/stencil.config.ts
 
 packages/angular-lib/
