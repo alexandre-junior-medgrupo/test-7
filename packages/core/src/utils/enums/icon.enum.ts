@@ -184,7 +184,7 @@ export enum TpIconT {
 export enum TpIconU {
   User = 'tp-user',
   UserCheck = 'tp-user-check',
-  UserX = 'tp-user-check-x',
+  UserX = 'tp-user-x',
   Users = 'tp-users',
   Upload = 'tp-upload',
 }

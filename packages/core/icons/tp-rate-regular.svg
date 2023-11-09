@@ -12,9 +12,9 @@
     }
 
     :host path {
-      stroke: var(--stroke);
+      stroke: none;
       stroke-width: var(--stroke-width);
-      fill: none;
+      fill: var(--stroke);
       stroke-linecap: round;
       stroke-linejoin: round;
     }
