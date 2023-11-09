@@ -29,7 +29,6 @@ export enum TpIconC {
   ChartPie = 'tp-chart-pie',
   Chat = 'tp-chat',
   Chat2 = 'tp-chat-2',
-  ChatQuestion = 'tp-chat-question',
   Check = 'tp-check',
   CheckCircle = 'tp-check-circle',
   CheckSquare = 'tp-check-square',
