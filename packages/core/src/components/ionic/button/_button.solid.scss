@@ -1,0 +1,30 @@
+/* stylelint-disable selector-no-qualifying-type */
+
+ion-button {
+  --background: var(--tp-color-brand);
+  --color: var(--tp-color-contrast-fixed);
+  --border-radius: 500px;
+  --box-shadow: none;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --padding-start: 32px;
+  --padding-end: 32px;
+}
+
+//
+// Size
+//
+
+ion-button {
+  &[size="sm"] {
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+  }
+
+  &[size="xs"] {
+    --padding-top: 8px;
+    --padding-bottom: 8px;
+    --padding-start: 24px;
+    --padding-end: 24px;
+  }
+}
