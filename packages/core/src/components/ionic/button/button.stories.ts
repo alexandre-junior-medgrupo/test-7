@@ -7,7 +7,7 @@ import { TpIonButton } from './button.type';
 
 defineCustomElement();
 
-const meta: Meta<Components.IonButton & TpIonButton> = {
+const meta: Meta<Components.IonBadge & TpIonButton> = {
   component: 'ion-button',
   argTypes: {
     size: {
@@ -27,46 +27,35 @@ const meta: Meta<Components.IonButton & TpIonButton> = {
 
 export default meta;
 
-type Story = StoryObj<Components.IonButton & TpIonButton>;
+type Story = StoryObj<Components.IonBadge & TpIonButton>;
 
-export const Primary: Story = {
-  render: ({ ...args }) =>
-    html`<ion-button
-        .color="${args.color}"
-        size="${args.size}"
-        fill="${args.fill}"
-      >
-        ion-button
-      </ion-button>
+export const Default: Story = {
+  render: ({ ...args }) => html`
+    <ion-button .color="${args.color}" size="${args.size}" fill="${args.fill}">
+      ion-button
+    </ion-button>
 
-      <ion-button
-        .color="${args.color}"
-        size="${args.size}"
-        fill="${args.fill}"
-      >
-        <ion-icon slot="start"></ion-icon>
-        ion-button
-      </ion-button>
+    <ion-button .color="${args.color}" size="${args.size}" fill="${args.fill}">
+      <ion-icon slot="start"></ion-icon>
+      ion-button
+    </ion-button>
 
-      <ion-button
-        .color="${args.color}"
-        size="${args.size}"
-        fill="${args.fill}"
-      >
-        <ion-icon slot="end" src="tp-chevron-up.svg"></ion-icon>
-        ion-button
-      </ion-button>
+    <ion-button .color="${args.color}" size="${args.size}" fill="${args.fill}">
+      <ion-icon slot="end" src="tp-chevron-up.svg"></ion-icon>
+      ion-button
+    </ion-button>
 
-      <ion-button
-        .color="${args.color}"
-        size="${args.size}"
-        fill="${args.fill}"
-        icon-only
-      >
-        <ion-icon slot="icon-only" src="tp-chevron-up.svg"></ion-icon>
-      </ion-button>`,
+    <ion-button
+      .color="${args.color}"
+      size="${args.size}"
+      fill="${args.fill}"
+      icon-only
+    >
+      <ion-icon slot="icon-only" src="tp-chevron-up.svg"></ion-icon>
+    </ion-button>
+  `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/ion-button/gi)).toBeTruthy();
+    expect(canvas.getByText(/ion-badge/gi)).toBeTruthy();
   }, */
 };
