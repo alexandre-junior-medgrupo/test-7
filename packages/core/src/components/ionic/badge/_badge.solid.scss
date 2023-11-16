@@ -15,11 +15,13 @@ ion-badge {
   font-weight: 600;
   font-size: 10px;
   line-height: 12px;
+  border: 1px solid transparent;
 }
 
 //
 // size
 //
+
 ion-badge {
   &[tp-size='md'] {
     --padding-top: 8px;
@@ -29,6 +31,14 @@ ion-badge {
 
     font-size: 14px;
     line-height: 16px;
-    border: 1px solid transparent;
   }
+}
+
+//
+// color
+//
+
+ion-badge.ion-color {
+  --background: var(--ion-color-base);
+  --color: var(--ion-color--contrast);
 }

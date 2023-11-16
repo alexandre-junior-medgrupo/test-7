@@ -23,8 +23,12 @@ type Story = StoryObj<Components.IonButton & TpIonButton>;
 
 export const IconOnly: Story = {
   render: ({ ...args }) => html`
-    <ion-button .color="${args.color}" size="${args.size}">
-      <ion-icon slot="icon-only" src="./icons/tp-alert-triangle.svg"></ion-icon>
+    <ion-button fill="clear" size="${args.size}">
+      <ion-icon
+        .color="${args.color}"
+        slot="icon-only"
+        src="./icons/tp-alert-triangle.svg"
+      ></ion-icon>
     </ion-button>
   `,
   /* play: async ({ canvasElement }) => {

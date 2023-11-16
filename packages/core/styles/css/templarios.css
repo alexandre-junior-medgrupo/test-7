@@ -2183,6 +2183,7 @@ ion-badge {
   font-weight: 600;
   font-size: 10px;
   line-height: 12px;
+  border: 1px solid transparent;
 }
 
 ion-badge[tp-size=md] {
@@ -2192,7 +2193,11 @@ ion-badge[tp-size=md] {
   --padding-end: 12px;
   font-size: 14px;
   line-height: 16px;
-  border: 1px solid transparent;
+}
+
+ion-badge.ion-color {
+  --background: var(--ion-color-base);
+  --color: var(--ion-color--contrast);
 }
 
 /* stylelint-disable selector-no-qualifying-type */
@@ -2208,6 +2213,7 @@ ion-badge.ion-color[tp-fill=outline] {
   border: 1px solid var(--ion-color-base);
 }
 
+/* stylelint-disable max-nesting-depth */
 /* stylelint-disable selector-no-qualifying-type */
 ion-button {
   --background: var(--tp-color-brand);
@@ -2227,6 +2233,9 @@ ion-button.ion-color {
   --background-focused: var(--ion-color-tint);
   --background-activated: var(--ion-color-shade);
 }
+ion-button.ion-color ion-icon {
+  --stroke: var(--color);
+}
 
 ion-button.button-sm {
   --padding-top: 12px;
@@ -2239,6 +2248,7 @@ ion-button.button-xs {
   --padding-end: 24px;
 }
 
+/* stylelint-disable max-nesting-depth */
 /* stylelint-disable selector-no-qualifying-type */
 ion-button.button-outline {
   --border-width: 1px;
@@ -2246,6 +2256,10 @@ ion-button.button-outline {
   --border-color: var(--tp-color-neutral-3);
   --color: var(--tp-color-neutral-95);
   --background-hover-opacity: 0;
+}
+
+ion-button.button-outline.ion-color ion-icon {
+  --stroke: var(--ion-color-base);
 }
 
 /* stylelint-disable max-nesting-depth */
@@ -2298,17 +2312,19 @@ ion-button.button-xxs {
 /* stylelint-disable selector-pseudo-element-no-unknown */
 /* stylelint-disable max-nesting-depth */
 /* stylelint-disable selector-no-qualifying-type */
-ion-button.button-has-icon-only {
+ion-button.button-clear.button-has-icon-only {
   --padding-top: 8px;
   --padding-bottom: 8px;
   --padding-start: 8px;
   --padding-end: 8px;
   --background-hover-opacity: 0.08;
   --background-hover: var(--tp-color-neutral-10);
+  --background-activated-opacity: 0.16;
   --background: transparent;
+  --color-hover: var(--tp-color-neutral-10);
   min-height: initial;
 }
-ion-button.button-has-icon-only ion-icon {
+ion-button.button-clear.button-has-icon-only ion-icon {
   font-size: 32px;
   --stroke: var(--tp-color-neutral-10);
 }
