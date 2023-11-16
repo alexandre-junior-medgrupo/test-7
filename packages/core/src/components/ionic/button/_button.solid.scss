@@ -1,3 +1,4 @@
+/* stylelint-disable max-nesting-depth */
 /* stylelint-disable selector-no-qualifying-type */
 
 ion-button {
@@ -22,6 +23,10 @@ ion-button {
     --background-hover: var(--ion-color-shade);
     --background-focused: var(--ion-color-tint);
     --background-activated: var(--ion-color-shade);
+
+    ion-icon {
+      --stroke: var(--color);
+    }
   }
 }
 

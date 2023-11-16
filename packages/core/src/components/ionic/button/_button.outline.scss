@@ -1,3 +1,4 @@
+/* stylelint-disable max-nesting-depth */
 /* stylelint-disable selector-no-qualifying-type */
 
 ion-button {
@@ -7,5 +8,17 @@ ion-button {
     --border-color: var(--tp-color-neutral-3);
     --color: var(--tp-color-neutral-95);
     --background-hover-opacity: 0;
+  }
+}
+
+//
+// color
+//
+
+ion-button {
+  &.button-outline.ion-color {
+    ion-icon {
+      --stroke: var(--ion-color-base);
+    }
   }
 }
