@@ -1,34 +1,66 @@
+/* stylelint-disable max-nesting-depth */
 /* stylelint-disable selector-no-qualifying-type */
 /* stylelint-disable-next-line block-no-empty */
 
 ion-button {
-  &[fill="clear"] {
+  &.button-clear {
+    --background: transparent;
+    --background-hover-opacity: 0;
+    --color: var(--tp-color-neutral-10);
+    --color-hover: var(--tp-color-brand-3);
+    --background-hover: transparent;
     --padding-top: 16px;
     --padding-bottom: 16px;
     --padding-start: 16px;
     --padding-end: 16px;
+
+    ion-icon {
+      --stroke: var(--color-hover);
+    }
+
+    &:not(:hover) {
+      ion-icon {
+        --stroke: var(--color);
+        ;
+      }
+    }
+  }
+}
+
+
+//
+// color
+//
+
+ion-button {
+  &.button-clear.ion-color:not(:hover) {
+    --ion-color-base: var(--tp-color-neutral-10) !important;
+
+    ion-icon {
+      --stroke: var(--ion-color-base);
+    }
   }
 }
 
 //
-//Sizes
+// sizes
 //
-ion-button[fill="clear"] {
-  &[size="sm"] {
+ion-button {
+  &.button-sm {
     --padding-top: 12px;
     --padding-bottom: 12px;
     --padding-start: 16px;
     --padding-end: 16px;
   }
 
-  &[size="xs"] {
+  &.button-xs {
     --padding-top: 8px;
     --padding-bottom: 8px;
     --padding-start: 12px;
     --padding-end: 12px;
   }
 
-  &[size="xxs"] {
+  &.button-xxs {
     --padding-top: 4px;
     --padding-bottom: 4px;
     --padding-start: 12px;

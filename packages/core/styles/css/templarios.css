@@ -2220,11 +2220,19 @@ ion-button {
   --padding-end: 32px;
 }
 
-ion-button[size=sm] {
+ion-button.ion-color {
+  --background: var(--ion-color-base);
+  --color: var(--ion-color-contrast);
+  --background-hover: var(--ion-color-shade);
+  --background-focused: var(--ion-color-tint);
+  --background-activated: var(--ion-color-shade);
+}
+
+ion-button.button-sm {
   --padding-top: 12px;
   --padding-bottom: 12px;
 }
-ion-button[size=xs] {
+ion-button.button-xs {
   --padding-top: 8px;
   --padding-bottom: 8px;
   --padding-start: 24px;
@@ -2232,75 +2240,111 @@ ion-button[size=xs] {
 }
 
 /* stylelint-disable selector-no-qualifying-type */
+ion-button.button-outline {
+  --border-width: 1px;
+  --background: transparent;
+  --border-color: var(--tp-color-neutral-3);
+  --color: var(--tp-color-neutral-95);
+  --background-hover-opacity: 0;
+}
+
+/* stylelint-disable max-nesting-depth */
 /* stylelint-disable selector-no-qualifying-type */
 /* stylelint-disable-next-line block-no-empty */
-ion-button[fill=clear] {
+ion-button.button-clear {
+  --background: transparent;
+  --background-hover-opacity: 0;
+  --color: var(--tp-color-neutral-10);
+  --color-hover: var(--tp-color-brand-3);
+  --background-hover: transparent;
   --padding-top: 16px;
   --padding-bottom: 16px;
   --padding-start: 16px;
   --padding-end: 16px;
 }
+ion-button.button-clear ion-icon {
+  --stroke: var(--color-hover);
+}
+ion-button.button-clear:not(:hover) ion-icon {
+  --stroke: var(--color);
+}
 
-ion-button[fill=clear][size=sm] {
+ion-button.button-clear.ion-color:not(:hover) {
+  --ion-color-base: var(--tp-color-neutral-10) !important;
+}
+ion-button.button-clear.ion-color:not(:hover) ion-icon {
+  --stroke: var(--ion-color-base);
+}
+
+ion-button.button-sm {
   --padding-top: 12px;
   --padding-bottom: 12px;
   --padding-start: 16px;
   --padding-end: 16px;
 }
-ion-button[fill=clear][size=xs] {
+ion-button.button-xs {
   --padding-top: 8px;
   --padding-bottom: 8px;
   --padding-start: 12px;
   --padding-end: 12px;
 }
-ion-button[fill=clear][size=xxs] {
+ion-button.button-xxs {
   --padding-top: 4px;
   --padding-bottom: 4px;
   --padding-start: 12px;
   --padding-end: 12px;
 }
 
+/* stylelint-disable selector-pseudo-element-no-unknown */
+/* stylelint-disable max-nesting-depth */
 /* stylelint-disable selector-no-qualifying-type */
-ion-button[icon-only] {
-  --width: 32px;
-  --height: 32px;
+ion-button.button-has-icon-only {
   --padding-top: 8px;
   --padding-bottom: 8px;
   --padding-start: 8px;
   --padding-end: 8px;
+  --background-hover-opacity: 0.08;
+  --background-hover: var(--tp-color-neutral-10);
+  --background: transparent;
+  min-height: initial;
+}
+ion-button.button-has-icon-only ion-icon {
+  font-size: 32px;
+  --stroke: var(--tp-color-neutral-10);
 }
 
-ion-button[size=lg] {
-  --width: 48px;
-  --height: 48px;
+ion-button.button-lg ion-icon {
+  font-size: 48px;
 }
-ion-button[size=sm] {
-  --width: 24px;
-  --height: 24px;
+ion-button.button-sm ion-icon {
+  font-size: 24px;
 }
-ion-button[size=s] {
-  --width: 24px;
-  --height: 24px;
+ion-button.button-s {
   --padding-top: 4px;
   --padding-bottom: 4px;
   --padding-start: 4px;
   --padding-end: 4px;
 }
-ion-button[size=xs] {
-  --width: 16px;
-  --height: 16px;
+ion-button.button-s ion-icon {
+  font-size: 24px;
+}
+ion-button.button-xs {
   --padding-top: 4px;
   --padding-bottom: 4px;
   --padding-start: 4px;
   --padding-end: 4px;
 }
-ion-button[size=xxs] {
-  --width: 16px;
-  --height: 16px;
+ion-button.button-xs ion-icon {
+  font-size: 16px;
+}
+ion-button.button-xxs {
   --padding-top: 0;
   --padding-bottom: 0;
   --padding-start: 0;
   --padding-end: 0;
+}
+ion-button.button-xxs ion-icon {
+  font-size: 16px;
 }
 
 ion-item {

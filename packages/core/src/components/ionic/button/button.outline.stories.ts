@@ -21,18 +21,18 @@ export default meta;
 
 type Story = StoryObj<Components.IonButton & TpIonButton>;
 
-export const Default: Story = {
+export const Outline: Story = {
   render: ({ ...args }) => html`
-    <ion-button .color="${args.color}" size="${args.size}">
+    <ion-button .color="${args.color}" size="${args.size}" fill="outline">
       ion-button
     </ion-button>
 
-    <ion-button .color="${args.color}" size="${args.size}">
+    <ion-button .color="${args.color}" size="${args.size}" fill="outline">
       <ion-icon slot="start" src="./icons/tp-chevron-left.svg"></ion-icon>
       ion-button
     </ion-button>
 
-    <ion-button .color="${args.color}" size="${args.size}">
+    <ion-button .color="${args.color}" size="${args.size}" fill="outline">
       <ion-icon slot="end" src="./icons/tp-chevron-left.svg"></ion-icon>
       ion-button
     </ion-button>

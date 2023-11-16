@@ -1,13 +1,17 @@
 import type { TpColor } from '@utils/types/color.type';
 import type {
-  TpIonButtonFill,
-  TpIonButtonIconOnly,
-  TpIonButtonSize,
+  TpIonButtonClearSize,
+  // TpIonButtonFill,
+  // TpIonButtonIconOnly,
+  TpIonButtonIconSize,
+  TpIonButtonSolidSize,
 } from './button.enum';
 
 export type TpIonButton = {
   color: `${TpColor}`;
-  size: `${TpIonButtonSize}`;
-  fill: `${TpIonButtonFill}`;
-  iconOnly: `${TpIonButtonIconOnly}`;
+  sizeSolid: `${TpIonButtonSolidSize}`;
+  sizeClear: `${TpIonButtonClearSize}`;
+  sizeIcon: `${TpIonButtonIconSize}`;
+  // fill: `${TpIonButtonFill}`;
+  // iconOnly: `${TpIonButtonIconOnly}`;
 };

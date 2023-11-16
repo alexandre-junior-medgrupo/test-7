@@ -1,18 +1,18 @@
-export enum TpIonButtonSize {
+export enum TpIonButtonSolidSize {
+  SM = 'sm',
+  XS = 'xs',
+}
+
+export enum TpIonButtonClearSize {
   XXS = 'xxs',
   XS = 'xs',
   SM = 'sm',
+}
+
+export enum TpIonButtonIconSize {
+  XXS = 'xxs',
+  XS = 'xs',
   S = 's',
-  MD = 'md',
+  SM = 'sm',
   LG = 'lg',
-}
-
-export enum TpIonButtonFill {
-  Default = 'default',
-  Outline = 'outline',
-  Clear = 'clear',
-}
-
-export enum TpIonButtonIconOnly {
-  IconOnly = 'icon-only',
 }

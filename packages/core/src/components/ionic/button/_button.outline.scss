@@ -1,1 +1,11 @@
 /* stylelint-disable selector-no-qualifying-type */
+
+ion-button {
+  &.button-outline {
+    --border-width: 1px;
+    --background: transparent;
+    --border-color: var(--tp-color-neutral-3);
+    --color: var(--tp-color-neutral-95);
+    --background-hover-opacity: 0;
+  }
+}

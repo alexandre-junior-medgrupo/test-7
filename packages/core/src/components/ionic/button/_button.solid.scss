@@ -12,16 +12,30 @@ ion-button {
 }
 
 //
-// Size
+// color
 //
 
 ion-button {
-  &[size="sm"] {
+  &.ion-color {
+    --background: var(--ion-color-base);
+    --color: var(--ion-color-contrast);
+    --background-hover: var(--ion-color-shade);
+    --background-focused: var(--ion-color-tint);
+    --background-activated: var(--ion-color-shade);
+  }
+}
+
+//
+// size
+//
+
+ion-button {
+  &.button-sm {
     --padding-top: 12px;
     --padding-bottom: 12px;
   }
 
-  &[size="xs"] {
+  &.button-xs {
     --padding-top: 8px;
     --padding-bottom: 8px;
     --padding-start: 24px;
