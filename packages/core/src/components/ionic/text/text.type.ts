@@ -3,5 +3,5 @@ import type { TpColor } from '@utils/types/color.type';
 
 export type TpIonText = {
   color: `${TpColor}`;
-  type: `${TpType}`;
+  'tp-type': `${TpType}`;
 };

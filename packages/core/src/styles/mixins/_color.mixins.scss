@@ -1,142 +1,7 @@
-/* stylelint-disable max-nesting-depth */
-/* stylelint-disable  at-rule-disallowed-list */
-
 @use 'sass:color';
 @use 'sass:map';
 @use 'sass:list';
 @use 'sass:math';
-
-@function rgb-list($color) {
-  @return #{red($color)}, #{green($color)}, #{blue($color)};
-}
-
-$brand-1: hsl(188, 80%, 20%);
-$brand-1-light: hsl(188, 40%, 80%);
-
-$neutral-1: hsl(188, 10%, 8%);
-$neutral-10: hsl(188, 10%, 98%);
-$neutral-15: hsl(188, 10%, 13%);
-$neutral-95: hsl(188, 10%, 93%);
-
-$feedback-default: (
-  attention: hsl(44, 80%, 65%),
-  caution: hsl(24, 80%, 65%),
-  warning: hsl(4, 80%, 65%),
-  success: hsl(128, 80%, 65%),
-);
-$feedback-light: (
-  attention: hsl(44, 80%, 45%),
-  caution: hsl(24, 80%, 45%),
-  warning: hsl(4, 80%, 45%),
-  success: hsl(128, 80%, 35%),
-);
-
-//
-// themes
-//
-
-$themes: (
-  medsoft: (
-    medsoft-1: (
-      aula: hsl(168, 80%, 20%),
-      material: hsl(24, 80%, 20%),
-      questoes: hsl(200, 80%, 20%),
-      revalida: hsl(342, 80%, 20%),
-      provas: hsl(268, 80%, 20%),
-    ),
-    medsoft-1-light: (
-      aula: hsl(168, 40%, 80%),
-      material: hsl(24, 40%, 80%),
-      questoes: hsl(200, 40%, 80%),
-      revalida: hsl(342, 40%, 80%),
-      provas: hsl(268, 40%, 80%),
-    ),
-  ),
-  recursos: (
-    recursos-1: (
-      brand: hsl(195, 80%, 20%),
-      'orange': hsl(25, 80%, 20%),
-    ),
-    recursos-1-light: (
-      brand: hsl(195, 40%, 80%),
-      'orange': hsl(25, 40%, 80%),
-    ),
-  ),
-  cpmed: (
-    cpmed-1: (
-      brand: hsl(12, 80%, 20%),
-    ),
-    cpmed-1-light: (
-      brand: hsl(12, 40%, 80%),
-    ),
-  ),
-  cpvent: (
-    cpvent-1: (
-      brand: hsl(72, 80%, 20%),
-    ),
-    cpvent-1-light: (
-      brand: hsl(72, 40%, 80%),
-    ),
-  ),
-  extensivo-rmais: (
-    extensivo-rmais-1: (
-      brand: hsl(300, 80%, 20%),
-    ),
-    extensivo-rmais-1-light: (
-      brand: hsl(300, 40%, 80%),
-    ),
-  ),
-  extensivo: (
-    extensivo-1: (
-      brand: hsl(128, 80%, 20%),
-    ),
-    extensivo-1-light: (
-      brand: hsl(128, 40%, 80%),
-    ),
-  ),
-  intensivao: (
-    intensivao-1: (
-      brand: hsl(344, 80%, 20%),
-    ),
-    intensivao-1-light: (
-      brand: hsl(344, 40%, 80%),
-    ),
-  ),
-  medeletro: (
-    medeletro-1: (
-      brand: hsl(180, 80%, 20%),
-    ),
-    medeletro-1-light: (
-      brand: hsl(180, 40%, 80%),
-    ),
-  ),
-  medmaster: (
-    medmaster-1: (
-      brand: hsl(56, 80%, 20%),
-    ),
-    medmaster-1-light: (
-      brand: hsl(56, 40%, 80%),
-    ),
-  ),
-  no-papo: (
-    no-papo-1: (
-      brand: hsl(230, 80%, 20%),
-    ),
-    no-papo-1-light: (
-      brand: hsl(230, 40%, 80%),
-    ),
-  ),
-  ventilamed: (
-    ventilamed-1: (
-      brand: hsl(29, 80%, 20%),
-    ),
-    ventilamed-1-light: (
-      brand: hsl(29, 40%, 80%),
-    ),
-  ),
-);
-
-$color-system-frameworks: ionic, templarios;
 
 // @mixin generate-neutral-properties($hsl, $invert: null);
 // @param $hsl: hsl color
@@ -237,7 +102,7 @@ $color-system-frameworks: ionic, templarios;
   --tp-color-#{$name}-tint: #{$tint};
 
   @for $i from 1 through 5 {
-    @if $i <= 3 {
+    @if $i <=3 {
       $lightness-multiplier: if($i == 1, 0, $i - 1);
       $lightness-multiplier-value: $lightness-multiplier * 10%;
       $lightness-step: if(
@@ -301,24 +166,6 @@ $color-system-frameworks: ionic, templarios;
   --tp-color-#{$name}-tint: #{$tint};
 }
 
-:root {
-  @include generate-neutral-properties($neutral-1);
-  @include generate-neutral-alternative-properties($neutral-15);
-  @include generate-color-properties(brand, $brand-1);
-  @each $name, $value in $feedback-default {
-    @include generate-feedback-properties($name, $value);
-  }
-}
-
-.tp-color-scheme-light {
-  @include generate-neutral-properties($neutral-10, true);
-  @include generate-neutral-alternative-properties($neutral-95, true);
-  @include generate-color-properties(brand, $brand-1-light, true);
-  @each $name, $value in $feedback-light {
-    @include generate-feedback-properties($name, $value, true);
-  }
-}
-
 // @include generate-neutral-classes($framework);
 // @param $framework: ionic | templarios
 @mixin generate-neutral-classes($framework) {
@@ -329,7 +176,8 @@ $color-system-frameworks: ionic, templarios;
   $namespace: if($framework == ionic, ion, tp);
 
   @for $i from 1 through 10 {
-    .#{$namespace}-color-neutral-#{$i} {
+    .#{$namespace}-color-neutral-#{$i},
+    [tp-color='neutral-#{$i}'] {
       --#{$namespace}-color-base: var(--tp-color-neutral-#{$i}) !important;
       --#{$namespace}-color-base-rgb: var(
         --tp-color-neutral-#{$i}-rgb
@@ -350,19 +198,20 @@ $color-system-frameworks: ionic, templarios;
       --#{$namespace}-color-tint: var(--tp-color-neutral-#{$i}-tint) !important;
     }
 
-    @if $i != 10 {
-      .#{$namespace}-color-neutral-#{$i}5 {
+    @if $i !=10 {
+      .#{$namespace}-color-neutral-#{$i}5,
+      [tp-color='neutral-#{$i}5'] {
         --#{$namespace}-color-base: var(--tp-color-neutral-#{$i}5) !important;
         --#{$namespace}-color-base-rgb: var(
           --tp-color-neutral-#{$i}5-rgb
         ) !important;
         --#{$namespace}-color-contrast: #{if(
-            $i <= 5,
+            $i <=5,
             var(--tp-color-neutral-10),
             var(--tp-color-neutral-1)
           )} !important;
         --#{$namespace}-color-contrast-rgb: #{if(
-            $i <= 5,
+            $i <=5,
             var(--tp-color-neutral-10-rgb),
             var(--tp-color-neutral-1-rgb)
           )} !important;
@@ -387,7 +236,8 @@ $color-system-frameworks: ionic, templarios;
 
   $namespace: if($framework == ionic, ion, tp);
 
-  .#{$namespace}-color-#{$name} {
+  .#{$namespace}-color-#{$name},
+  [tp-color='#{$name}'] {
     --#{$namespace}-color-base: var(--tp-color-#{$name}) !important;
     --#{$namespace}-color-base-rgb: var(--tp-color-base-rgb) !important;
     --#{$namespace}-color-contrast: var(--tp-color-contrast-fixed) !important;
@@ -399,7 +249,8 @@ $color-system-frameworks: ionic, templarios;
   }
 
   @for $i from 1 through 5 {
-    .#{$namespace}-color-#{$name}-#{$i} {
+    .#{$namespace}-color-#{$name}-#{$i},
+    [tp-color='#{$name}-#{$i}'] {
       --#{$namespace}-color-base: var(--tp-color-#{$name}-#{$i}) !important;
       --#{$namespace}-color-base-rgb: var(
         --tp-color-#{$name}-#{$i}-rgb
@@ -444,7 +295,8 @@ $color-system-frameworks: ionic, templarios;
 
   $namespace: if($framework == ionic, ion, tp);
 
-  .#{$namespace}-color-#{$name} {
+  .#{$namespace}-color-#{$name},
+  [tp-color='#{$name}'] {
     --#{$namespace}-color-base: var(--tp-color-#{$name}) !important;
     --#{$namespace}-color-base-rgb: var(--tp-color-#{$name}-rgb) !important;
     --#{$namespace}-color-contrast: var(--tp-color-neutral-1) !important;
@@ -454,51 +306,4 @@ $color-system-frameworks: ionic, templarios;
     --#{$namespace}-color-shade: var(--tp-color-#{$name}-shade) !important;
     --#{$namespace}-color-tint: var(--tp-color-#{$name}-tint) !important;
   }
-}
-
-@include generate-neutral-classes(ionic);
-@include generate-neutral-classes(templarios);
-@include generate-color-classes(brand, ionic);
-@include generate-color-classes(brand, templarios);
-@each $name, $value in $feedback-default {
-  @include generate-feedback-classes($name, ionic);
-  @include generate-feedback-classes($name, templarios);
-}
-
-//
-// themes
-//
-.tp-color-theme {
-  @each $theme-name, $theme-value in $themes {
-    &-#{$theme-name} {
-      $variation-map: map.get($theme-value, #{$theme-name}-1);
-
-      @each $variation-name, $variation-value in $variation-map {
-        @include generate-color-properties($variation-name, $variation-value);
-      }
-    }
-  }
-}
-
-.tp-color-scheme-light {
-  &.tp-color-theme {
-    @each $theme-name, $theme-value in $themes {
-      &-#{$theme-name} {
-        $variation-map: map.get($theme-value, #{$theme-name}-1-light);
-
-        @each $variation-name, $variation-value in $variation-map {
-          @include generate-color-properties(
-            $variation-name,
-            $variation-value,
-            true
-          );
-        }
-      }
-    }
-  }
-}
-
-:root {
-  --ion-background-color: var(--tp-color-neutral-1);
-  --ion-default-font: 'fsemeric', 'Open Sans', sans-serif;
 }

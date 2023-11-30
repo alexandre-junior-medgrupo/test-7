@@ -25,10 +25,7 @@ export class TpTest {
         })}
       >
         <div class="tp-test__container">
-          <span>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
-            voluptate.
-          </span>
+          <span>Lorem ipsum, dolor sit amet consectetur.</span>
           <ion-button>ion button</ion-button>
           <ion-icon
             class="tp-test__icon"

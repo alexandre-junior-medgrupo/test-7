@@ -8,15 +8,33 @@ import { TpIonBadge } from './badge.type';
 defineCustomElement();
 
 const meta: Meta<Components.IonBadge & TpIonBadge> = {
-  component: 'ion-badge',
+  title: 'components/Ionic/Badge',
   argTypes: {
-    size: {
+    'tp-size': {
       control: { type: 'select' },
-      options: [...TP_ION_BADGE.size],
+      options: [...TP_ION_BADGE['tp-size']],
+      description: 'Define o tamanho do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: TP_ION_BADGE['tp-size'].join('|'),
+        },
+      },
     },
-    fill: {
+    'tp-fill': {
       control: { type: 'select' },
-      options: [...TP_ION_BADGE.fill],
+      options: [...TP_ION_BADGE['tp-fill']],
+      description: 'Define o preenchimento do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: TP_ION_BADGE['tp-fill'].join('|'),
+        },
+      },
     },
   },
 };
@@ -27,10 +45,10 @@ type Story = StoryObj<Components.IonBadge & TpIonBadge>;
 
 export const Default: Story = {
   render: ({ ...args }) =>
-    html`<ion-badge
-      .color="${args.color}"
-      tp-size="${args.size}"
-      tp-fill="${args.fill}"
+    html` <ion-badge
+      color="${args.color}"
+      tp-size="${args['tp-size']}"
+      tp-fill="${args['tp-fill']}"
     >
       ion-badge
     </ion-badge>`,

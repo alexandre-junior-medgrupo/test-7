@@ -12,14 +12,14 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 import { defineCustomElement } from "@ionic/core/components/ion-label";
 import { html } from "lit";
-import { TP_TYPES } from "../../../utils/constants/type.constant";
+import { TP_TYPE } from "../../../utils/constants/type.constant";
 defineCustomElement();
 const meta = {
   component: 'ion-label',
   argTypes: {
     type: {
       control: { type: 'select' },
-      options: [...TP_TYPES],
+      options: [...TP_TYPE],
     },
   },
 };

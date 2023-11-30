@@ -3,7 +3,7 @@ import { html } from 'lit';
 import { TP_ICONS_STORYBOOK } from '../../../utils/constants/icon.constant';
 
 const meta: Meta = {
-  component: 'tp-test',
+  title: 'components/Templarios/Test',
   tags: ['autodocs'],
   argTypes: {
     icon: {

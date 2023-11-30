@@ -1,6 +1,50 @@
-/* stylelint-disable selector-pseudo-element-no-unknown */
-/* stylelint-disable max-nesting-depth */
-/* stylelint-disable selector-no-qualifying-type */
+@use 'sass:map';
+
+$tp-button-sizes: (
+  xxs: (
+    properties: (
+      padding-top: 0,
+      padding-bottom: 0,
+      padding-start: 0,
+      padding-end: 0,
+    ),
+    rules: (
+      font-size: 16px,
+    ),
+  ),
+  xs: (
+    properties: (
+      padding-top: 4px,
+      padding-bottom: 4px,
+      padding-start: 4px,
+      padding-end: 4px,
+    ),
+    rules: (
+      font-size: 16px,
+    ),
+  ),
+  sm: (
+    rules: (
+      font-size: 24px,
+    ),
+  ),
+  s: (
+    properties: (
+      padding-top: 4px,
+      padding-bottom: 4px,
+      padding-start: 4px,
+      padding-end: 4px,
+    ),
+    rules: (
+      font-size: 24px,
+    ),
+  ),
+  lg: (
+    rules: (
+      font-size: 48px,
+    ),
+  ),
+);
 
 ion-button {
   &.button-clear.button-has-icon-only {
@@ -13,11 +57,13 @@ ion-button {
     --background-activated-opacity: 0.16;
     --background: transparent;
     --color-hover: var(--tp-color-neutral-10);
+
     min-height: initial;
 
     ion-icon {
-      font-size: 32px;
       --stroke: var(--tp-color-neutral-10);
+
+      font-size: 32px;
     }
   }
 }
@@ -25,46 +71,25 @@ ion-button {
 //
 // sizes
 //
-
 ion-button {
-  &.button-lg ion-icon {
-    font-size: 48px;
-  }
+  @each $size-name, $size-value in $tp-button-sizes {
+    &.button-#{$size-name} {
+      $properties-map: map.get($size-value, properties);
+      $rules-map: map.get($size-value, rules);
 
-  &.button-sm ion-icon {
-    font-size: 24px;
-  }
+      @if ($properties-map) {
+        @each $properties-name, $properties-value in $properties-map {
+          --#{$properties-name}: #{$properties-value};
+        }
+      }
 
-  &.button-s {
-    --padding-top: 4px;
-    --padding-bottom: 4px;
-    --padding-start: 4px;
-    --padding-end: 4px;
-
-    ion-icon {
-      font-size: 24px;
-    }
-  }
-
-  &.button-xs {
-    --padding-top: 4px;
-    --padding-bottom: 4px;
-    --padding-start: 4px;
-    --padding-end: 4px;
-
-    ion-icon {
-      font-size: 16px;
-    }
-  }
-
-  &.button-xxs {
-    --padding-top: 0;
-    --padding-bottom: 0;
-    --padding-start: 0;
-    --padding-end: 0;
-
-    ion-icon {
-      font-size: 16px;
+      @if ($rules-map) {
+        ion-icon {
+          @each $rules-name, $rules-value in $rules-map {
+            #{$rules-name}: #{$rules-value};
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,20 @@
+ion-progress-bar {
+  --background: var(--tp-color-brand-1);
+  --progress-background: var(--tp-color-brand-4);
+}
+
+.tp-progress-bar-blank:not(.ion-color) {
+  --background: var(--tp-color-neutral-8);
+}
+
+//
+// color
+//
+ion-progress-bar.ion-color {
+  --background: var(--ion-color-contrast);
+  --progress-background: var(--ion-color-base);
+
+  &::part(track) {
+    background: var(--ion-color-contrast);
+  }
+}

@@ -3,6 +3,6 @@ import type { TpIonBadgeFill, TpIonBadgeSize } from './badge.enum';
 
 export type TpIonBadge = {
   color: `${TpColor}`;
-  size: `${TpIonBadgeSize}`;
-  fill: `${TpIonBadgeFill}`;
+  'tp-size': `${TpIonBadgeSize}`;
+  'tp-fill': `${TpIonBadgeFill}`;
 };

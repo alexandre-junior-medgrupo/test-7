@@ -1,6 +1,31 @@
-/* stylelint-disable max-nesting-depth */
-/* stylelint-disable selector-no-qualifying-type */
-/* stylelint-disable-next-line block-no-empty */
+@use 'sass:map';
+
+$tp-button-sizes: (
+  xxs: (
+    properties: (
+      padding-top: 4px,
+      padding-bottom: 4px,
+      padding-start: 12px,
+      padding-end: 12px,
+    ),
+  ),
+  xs: (
+    properties: (
+      padding-top: 8px,
+      padding-bottom: 8px,
+      padding-start: 12px,
+      padding-end: 12px,
+    ),
+  ),
+  sm: (
+    properties: (
+      padding-top: 12px,
+      padding-bottom: 12px,
+      padding-start: 16px,
+      padding-end: 16px,
+    ),
+  ),
+);
 
 ion-button {
   &.button-clear {
@@ -21,17 +46,14 @@ ion-button {
     &:not(:hover) {
       ion-icon {
         --stroke: var(--color);
-        ;
       }
     }
   }
 }
 
-
 //
 // color
 //
-
 ion-button {
   &.button-clear.ion-color:not(:hover) {
     --ion-color-base: var(--tp-color-neutral-10) !important;
@@ -46,24 +68,13 @@ ion-button {
 // sizes
 //
 ion-button {
-  &.button-sm {
-    --padding-top: 12px;
-    --padding-bottom: 12px;
-    --padding-start: 16px;
-    --padding-end: 16px;
-  }
+  @each $size-name, $size-value in $tp-button-sizes {
+    &.button-#{$size-name}.button-clear {
+      $properties-map: map.get($size-value, properties);
 
-  &.button-xs {
-    --padding-top: 8px;
-    --padding-bottom: 8px;
-    --padding-start: 12px;
-    --padding-end: 12px;
-  }
-
-  &.button-xxs {
-    --padding-top: 4px;
-    --padding-bottom: 4px;
-    --padding-start: 12px;
-    --padding-end: 12px;
+      @each $properties-name, $properties-value in $properties-map {
+        --#{$properties-name}: #{$properties-value};
+      }
+    }
   }
 }

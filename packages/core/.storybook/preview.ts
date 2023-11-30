@@ -1,26 +1,10 @@
 import type { Preview } from '@storybook/web-components';
 import { html } from 'lit';
-import {
-  TP_COLORS,
-  TP_COLORS_MEDSOFT,
-  TP_COLORS_RECURSOS
-} from '../src/utils/constants/color.constant';
-import {
-  TpSchemeCSSClasses,
-  TpThemeCSSClasses
-} from '../src/utils/enums/theme.enum';
-
-// storybook
-import './assets/storybook.css';
-// storybook
 
 // ionic
 import { initialize } from '@ionic/core/components';
-import { defineCustomElement } from 'ionicons/components/ion-icon';
-
-initialize();
-defineCustomElement();
-
+import { defineCustomElement as defineCustomElementIonApp } from '@ionic/core/components/ion-app';
+import { defineCustomElement as defineCustomElementIonContent } from '@ionic/core/components/ion-content';
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/display.css';
 import '@ionic/core/css/flex-utils.css';
@@ -31,18 +15,33 @@ import '@ionic/core/css/structure.css';
 import '@ionic/core/css/text-alignment.css';
 import '@ionic/core/css/text-transformation.css';
 import '@ionic/core/css/typography.css';
+import { defineCustomElement as defineCustomElementIonIcon } from 'ionicons/components/ion-icon';
 
-import { defineCustomElement as defineCustomElementIonApp } from '@ionic/core/components/ion-app';
-import { defineCustomElement as defineCustomElementIonContent } from '@ionic/core/components/ion-content';
-defineCustomElementIonApp();
-defineCustomElementIonContent();
-// ionic
+import {
+  TP_COLORS,
+  TP_COLORS_MEDSOFT,
+  TP_COLORS_RECURSOS
+} from '../src/utils/constants/color.constant';
+// !ionic
 
 // templarios
-import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
+import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorProvas, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
+import {
+  TpSchemeCSSClasses,
+  TpThemeCSSClasses
+} from '../src/utils/enums/theme.enum';
 import '../styles/css/templarios.css';
 import '../www/build/templarios.esm';
-// templarios
+
+initialize();
+defineCustomElementIonContent();
+defineCustomElementIonApp();
+defineCustomElementIonIcon();
+// !templarios
+
+// storybook
+import './assets/storybook.css';
+// !storybook
 
 const preview: Preview = {
   parameters: {
@@ -54,16 +53,17 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/,
       },
+      expanded: true
     },
     options: {
       storySort: {
-        order: ['Templarios', 'Core', 'Utils', 'Components'],
+        order: ['Templarios', 'Core', 'Components'],
       },
     },
     themes: {
       target: 'root',
       default: 'default',
-      onChange: (themeName) => {},
+      onChange: () => {},
       list: [
         {
           name: 'MedSoft',
@@ -184,9 +184,9 @@ const preview: Preview = {
       options: [...TP_COLORS, ...TP_COLORS_MEDSOFT, ...TP_COLORS_RECURSOS],
       description: `Define a cor do componente.
 
-**OBS**: As cores **'${TpColorAula.Aula}'**, **'${TpColorMaterial.Material}'**, **'${TpColorQuestoes.Questoes}'**, **'${TpColorRevalida.Revalida}'** e **'${TpColorRevalida.Revalida}'** estão disponiveis apenas no theme **MedSoft**
+**OBS**: As cores **'${TpColorAula.Aula}'**, **'${TpColorMaterial.Material}'**, **'${TpColorQuestoes.Questoes}'**, **'${TpColorRevalida.Revalida}'** e **'${TpColorProvas.Provas}'** estão disponiveis apenas no theme **MedSoft**.
 
-**OBS**: A cor **'${TpColorOrange.Orange}'** está disponivel apenas no theme **Recursos**`,
+**OBS**: A cor **'${TpColorOrange.Orange}'** está disponivel apenas no theme **Recursos**.`,
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -201,10 +201,13 @@ const preview: Preview = {
     (story) =>
       html`
 <ion-app>
-  <ion-content>
+  <ion-content class="story">
+    <!-- story markdown -->
     ${story()}
+    <!-- story markdown -->
   </ion-content>
-</ion-app>`,
+</ion-app>
+ `,
   ],
 };
 

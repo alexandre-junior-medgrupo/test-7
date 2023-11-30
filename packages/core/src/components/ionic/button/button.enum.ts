@@ -1,6 +1,11 @@
 export enum TpIonButtonSolidSize {
-  SM = 'sm',
   XS = 'xs',
+  SM = 'sm',
+}
+
+export enum TpIonButtonOutlineSize {
+  XS = 'xs',
+  SM = 'sm',
 }
 
 export enum TpIonButtonClearSize {

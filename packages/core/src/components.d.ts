@@ -8,12 +8,22 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
 export { TpColor } from "./utils/types/color.type";
 export namespace Components {
+    interface TpProgressBarContainer {
+        "color"?: TpColor;
+        "value"?: string;
+    }
     interface TpTest {
         "color"?: TpColor;
         "icon"?: string;
     }
 }
 declare global {
+    interface HTMLTpProgressBarContainerElement extends Components.TpProgressBarContainer, HTMLStencilElement {
+    }
+    var HTMLTpProgressBarContainerElement: {
+        prototype: HTMLTpProgressBarContainerElement;
+        new (): HTMLTpProgressBarContainerElement;
+    };
     interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
     }
     var HTMLTpTestElement: {
@@ -21,15 +31,21 @@ declare global {
         new (): HTMLTpTestElement;
     };
     interface HTMLElementTagNameMap {
+        "tp-progress-bar-container": HTMLTpProgressBarContainerElement;
         "tp-test": HTMLTpTestElement;
     }
 }
 declare namespace LocalJSX {
+    interface TpProgressBarContainer {
+        "color"?: TpColor;
+        "value"?: string;
+    }
     interface TpTest {
         "color"?: TpColor;
         "icon"?: string;
     }
     interface IntrinsicElements {
+        "tp-progress-bar-container": TpProgressBarContainer;
         "tp-test": TpTest;
     }
 }
@@ -37,6 +53,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "tp-progress-bar-container": LocalJSX.TpProgressBarContainer & JSXBase.HTMLAttributes<HTMLTpProgressBarContainerElement>;
             "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
     }

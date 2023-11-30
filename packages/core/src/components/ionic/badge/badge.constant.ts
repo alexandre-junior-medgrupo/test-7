@@ -1,6 +1,6 @@
 import { TpIonBadgeFill, TpIonBadgeSize } from './badge.enum';
 
 export const TP_ION_BADGE = {
-  size: Object.values(TpIonBadgeSize),
-  fill: Object.values(TpIonBadgeFill),
+  'tp-size': Object.values(TpIonBadgeSize),
+  'tp-fill': Object.values(TpIonBadgeFill),
 };

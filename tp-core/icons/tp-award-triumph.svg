@@ -20,17 +20,14 @@
     }
 
     :host([tp-size='sm']) {
-      /* --stroke-width: 1.5; */
       font-size: 16px;
     }
 
     :host([tp-size='md']) {
-      /* --stroke-width: 3; */
       font-size: 32px;
     }
 
     :host([tp-size='lg']) {
-      /* --stroke-width: 4; */
       font-size: 48px;
     }
   </style>

@@ -32,19 +32,13 @@
       --stroke: var(--ion-color-base) !important;
     }
 
-    :host([tp-size='sm']) {
-      /* --stroke-width: 1.5; */
-      font-size: 16px;
+    :host([tp-size='sm']) {      font-size: 16px;
     }
 
-    :host([tp-size='md']) {
-      /* --stroke-width: 3; */
-      font-size: 32px;
+    :host([tp-size='md']) {      font-size: 32px;
     }
 
-    :host([tp-size='lg']) {
-      /* --stroke-width: 4; */
-      font-size: 48px;
+    :host([tp-size='lg']) {      font-size: 48px;
     }
   </style>
   <g clip-path="url(#clip0_8233_53650)">

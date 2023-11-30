@@ -1,0 +1,31 @@
+import { Canvas, Controls, Meta } from '@storybook/blocks';
+import * as radioTextStories from './compositions/text.stories';
+import * as radioStories from './radio.stories';
+
+<Meta of={radioStories} />
+
+# ion-radio
+
+**Documentação Adicional:**
+
+- **[`Ionic v7`](https://ionicframework.com/docs/api/radio)**
+- **[`Ionic v6`](https://ionicframework.com/docs/v6/api/radio)**
+- **[`Ionic v5`](https://ionicframework.com/docs/v5/api/radio)**
+
+## Types
+
+```ts
+import { TpIonRadio } from '..';
+```
+
+## Atributos
+
+<Canvas of={radioStories.Default} />
+
+<Controls of={radioStories.Default} />
+
+## Compositions
+
+<Canvas of={radioTextStories.Text} />
+
+<Controls of={radioTextStories.Text} />

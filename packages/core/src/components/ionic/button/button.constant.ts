@@ -1,18 +1,21 @@
 import {
   TpIonButtonClearSize,
-  // TpIonButtonFill,
   TpIonButtonIconSize,
+  TpIonButtonOutlineSize,
   TpIonButtonSolidSize,
 } from './button.enum';
 
 export const TP_ION_BUTTON = {
-  size: Object.values(TpIonButtonSolidSize),
-};
-
-export const TP_ION_BUTTON_CLEAR = {
-  size: Object.values(TpIonButtonClearSize),
-};
-
-export const TP_ION_BUTTON_ICON = {
-  size: Object.values(TpIonButtonIconSize),
+  solid: {
+    size: Object.values(TpIonButtonSolidSize),
+  },
+  outline: {
+    size: Object.values(TpIonButtonOutlineSize),
+  },
+  clear: {
+    size: Object.values(TpIonButtonClearSize),
+  },
+  icon: {
+    size: Object.values(TpIonButtonIconSize),
+  },
 };

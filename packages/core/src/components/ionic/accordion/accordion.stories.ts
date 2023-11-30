@@ -13,7 +13,7 @@ defineCustomElementItem();
 defineCustomElementLabel();
 
 const meta: Meta<Components.IonAccordion & TpIonAccordion> = {
-  component: 'ion-accordion',
+  title: 'components/Ionic/Accordion',
 };
 
 export default meta;

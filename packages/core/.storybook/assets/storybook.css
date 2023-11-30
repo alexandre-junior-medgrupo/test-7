@@ -18,6 +18,19 @@ html {
   height: 20vh !important;
 }
 
+/* Icon defs */
+
+.css-1pae8pd {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.css-1pae8pd > img,
+.css-1pae8pd > svg {
+  width: 60px !important;
+  height: 60px !important;
+}
+
 /* tp-type override */
 /* h64 */
 .css-lfk5jr:nth-of-type(1) .css-1d0tddh {
@@ -147,4 +160,21 @@ html {
 /* p10b */
 .css-lfk5jr:nth-of-type(27) .css-1d0tddh {
   line-height: 12px !important;
+}
+
+/* stories */
+.story {
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  min-height: 300px;
+}
+
+.story__ion-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 768px;
+  margin: 0 auto;
 }

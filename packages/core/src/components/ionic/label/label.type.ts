@@ -3,5 +3,5 @@ import type { TpColor } from 'src/components';
 
 export type TpIonLabel = {
   color: `${TpColor}`;
-  type: `${TpType}`;
+  'tp-type': `${TpType}`;
 };

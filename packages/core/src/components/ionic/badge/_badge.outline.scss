@@ -1,5 +1,3 @@
-/* stylelint-disable selector-no-qualifying-type */
-
 ion-badge {
   &[tp-fill='outline'] {
     --background: transparent;
@@ -12,12 +10,10 @@ ion-badge {
 //
 // color
 //
-
 ion-badge.ion-color {
   &[tp-fill='outline'] {
     color: var(--ion-color-base);
     background: transparent;
-
     border: 1px solid var(--ion-color-base);
   }
 }

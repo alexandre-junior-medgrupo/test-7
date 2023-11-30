@@ -1,0 +1,45 @@
+// TODO --ion-default-font
+
+ion-chip {
+  // TODO usar outline??
+
+  // --background: transparent;
+  --color: var(--tp-color-brand-3);
+
+  // TODO remover margin??
+  margin: 0;
+
+  // usar ion-label???
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  // border: 1px solid var(--tp-color-neutral-25);
+  border-color: var(--tp-color-neutral-25);
+}
+
+//
+// hover & activated
+//
+ion-chip.ion-activated,
+ion-chip:hover:not([disabled]) {
+  --color: var(--tp-color-neutral-10);
+  background: var(--tp-color-brand-3);
+  // border: 1px solid var(--tp-color-brand-3);
+  border-color: var(--tp-color-brand-3);
+}
+
+//
+// color
+//
+ion-chip.ion-color {
+  // TODO com custom property --color não funciona
+  color: var(--ion-color-base);
+
+  &.ion-activated,
+  &:hover:not([disabled]) {
+    // TODO com custom property --color não funciona
+    color: var(--ion-color-contrast);
+    background: var(--ion-color-base);
+    border-color: var(--ion-color-base);
+  }
+}

@@ -1,6 +1,3 @@
-/* stylelint-disable max-nesting-depth */
-/* stylelint-disable selector-no-qualifying-type */
-
 ion-button {
   --background: var(--tp-color-brand);
   --color: var(--tp-color-contrast-fixed);
@@ -15,7 +12,6 @@ ion-button {
 //
 // color
 //
-
 ion-button {
   &.ion-color {
     --background: var(--ion-color-base);
@@ -33,7 +29,6 @@ ion-button {
 //
 // size
 //
-
 ion-button {
   &.button-sm {
     --padding-top: 12px;

@@ -8,11 +8,20 @@ import { TpIonButton } from './button.type';
 defineCustomElement();
 
 const meta: Meta<Components.IonButton & TpIonButton> = {
-  component: 'ion-button',
+  title: 'components/Ionic/Button',
   argTypes: {
     size: {
       control: { type: 'select' },
-      options: [...TP_ION_BUTTON.size],
+      options: [...TP_ION_BUTTON.solid.size],
+      description: 'Define o tamanho do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: TP_ION_BUTTON.outline.size.join('|'),
+        },
+      },
     },
   },
 };
@@ -23,17 +32,17 @@ type Story = StoryObj<Components.IonButton & TpIonButton>;
 
 export const Outline: Story = {
   render: ({ ...args }) => html`
-    <ion-button .color="${args.color}" size="${args.size}" fill="outline">
+    <ion-button fill="outline" color="${args.color}" size="${args.size}">
       ion-button
     </ion-button>
 
-    <ion-button .color="${args.color}" size="${args.size}" fill="outline">
+    <ion-button fill="outline" color="${args.color}" size="${args.size}">
       <ion-icon slot="start" src="./icons/tp-chevron-left.svg"></ion-icon>
       ion-button
     </ion-button>
 
-    <ion-button .color="${args.color}" size="${args.size}" fill="outline">
-      <ion-icon slot="end" src="./icons/tp-chevron-left.svg"></ion-icon>
+    <ion-button fill="outline" color="${args.color}" size="${args.size}">
+      <ion-icon slot="end" src="./icons/tp-chevron-right.svg"></ion-icon>
       ion-button
     </ion-button>
   `,
