@@ -111,7 +111,7 @@
 .ion-color-orange,
 [tp-color=orange] {
   --ion-color-base: var(--tp-color-orange) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(
     --tp-color-contrast-fixed-rgb
@@ -215,7 +215,7 @@
 .tp-color-orange,
 [tp-color=orange] {
   --tp-color-base: var(--tp-color-orange) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(
     --tp-color-contrast-fixed-rgb
@@ -319,7 +319,7 @@
 .ion-color-orange,
 [tp-color=orange] {
   --ion-color-base: var(--tp-color-orange) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(
     --tp-color-contrast-fixed-rgb
@@ -423,7 +423,7 @@
 .tp-color-orange,
 [tp-color=orange] {
   --tp-color-base: var(--tp-color-orange) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(
     --tp-color-contrast-fixed-rgb
