@@ -31,6 +31,7 @@ import {
   TpThemeCSSClasses
 } from '../src/utils/enums/theme.enum';
 import '../styles/css/templarios.css';
+import '../styles/css/templarios.themes.css';
 import '../www/build/templarios.esm';
 
 initialize();

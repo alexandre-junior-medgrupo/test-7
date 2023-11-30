@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-=======
 /* stylelint-disable selector-no-qualifying-type */
-/* stylelint-disable selector-no-qualifying-type */
-/* stylelint-disable max-nesting-depth */
-/* stylelint-disable  at-rule-disallowed-list */
->>>>>>> 03ba2248354ae064f2b9f496dde8e050a5445843
 :root {
   --tp-color-neutral-1: #121616;
   --tp-color-neutral-1-rgb: 18, 22, 22;
@@ -1414,6 +1408,89 @@ ion-avatar[tp-color] {
 }
 ion-avatar[tp-color] ion-label {
   color: var(--ion-color-contrast);
+}
+
+/* stylelint-disable max-nesting-depth */
+/* stylelint-disable selector-no-qualifying-type */
+ion-back-button {
+  --background-focused: var(--tp-color-neutral-10);
+  --background-focused-opacity: 0.16;
+  --background-hover: var(--tp-color-neutral-10);
+  --background-hover-opacity: 0.08;
+  --border-radius: 50%;
+  --color: var(--tp-color-neutral-1);
+  --min-width: 16px;
+  --min-height: 16px;
+  --padding-top: 4px;
+  --padding-bottom: 4px;
+  --padding-start: 4px;
+  --padding-end: 4px;
+  --icon-font-size: 24px;
+  --icon-margin-end: auto;
+  --icon-margin-start: auto;
+}
+
+ion-back-button {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+ion-back-button.ion-color {
+  --background: var(--ion-color-base);
+  --color: var(--ion-color-contrast);
+  --background-hover: var(--ion-color-shade);
+  --background-focused: var(--ion-color-tint);
+  --background-activated: var(--ion-color-shade);
+}
+ion-back-button.ion-color::part(icon) {
+  --stroke: var(--color);
+}
+ion-back-button.ion-color:hover::part(icon) {
+  --stroke: var(--color);
+}
+
+ion-back-button[size=xxs] {
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  --icon-font-size: 16px;
+}
+ion-back-button[size=xs] {
+  --padding-top: 4px;
+  --padding-bottom: 4px;
+  --padding-start: 4px;
+  --padding-end: 4px;
+  --icon-font-size: 16px;
+}
+ion-back-button[size=s] {
+  --padding-top: 4px;
+  --padding-bottom: 4px;
+  --padding-start: 4px;
+  --padding-end: 4px;
+  --icon-font-size: 24px;
+}
+ion-back-button[size=sm] {
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --icon-font-size: 24px;
+}
+ion-back-button[size=md] {
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --icon-font-size: 32px;
+}
+ion-back-button[size=lg] {
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --icon-font-size: 48px;
 }
 
 ion-badge {
