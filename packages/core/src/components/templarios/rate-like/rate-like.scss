@@ -1,0 +1,39 @@
+/* stylelint-disable selector-class-pattern */
+:host {
+  display: flex;
+  align-items: center;
+}
+
+.tp-rate-like {
+  &__button {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: 0;
+
+    &:first-child {
+      margin-right: 16px;
+    }
+
+    &--disabled {
+      pointer-events: none;
+
+      .tp-rate-like__icon {
+        --stroke: var(--tp-color-neutral-4);
+      }
+    }
+
+    &--like .tp-rate-like__icon {
+      --stroke: var(--tp-color-success);
+    }
+
+    &--dislike .tp-rate-like__icon {
+      --stroke: var(--tp-color-warning);
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -6,16 +6,25 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
+import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
+export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export namespace Components {
     interface TpProgressBarContainer {
         "color"?: TpColor;
         "value"?: string;
     }
+    interface TpRateLike {
+        "status"?: TpRateLikeType['status'];
+    }
     interface TpTest {
         "color"?: TpColor;
         "icon"?: string;
     }
+}
+export interface TpRateLikeCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLTpRateLikeElement;
 }
 declare global {
     interface HTMLTpProgressBarContainerElement extends Components.TpProgressBarContainer, HTMLStencilElement {
@@ -23,6 +32,23 @@ declare global {
     var HTMLTpProgressBarContainerElement: {
         prototype: HTMLTpProgressBarContainerElement;
         new (): HTMLTpProgressBarContainerElement;
+    };
+    interface HTMLTpRateLikeElementEventMap {
+        "tpChange": TpRateLikeType['status'];
+    }
+    interface HTMLTpRateLikeElement extends Components.TpRateLike, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLTpRateLikeElementEventMap>(type: K, listener: (this: HTMLTpRateLikeElement, ev: TpRateLikeCustomEvent<HTMLTpRateLikeElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLTpRateLikeElementEventMap>(type: K, listener: (this: HTMLTpRateLikeElement, ev: TpRateLikeCustomEvent<HTMLTpRateLikeElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLTpRateLikeElement: {
+        prototype: HTMLTpRateLikeElement;
+        new (): HTMLTpRateLikeElement;
     };
     interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
     }
@@ -32,6 +58,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "tp-progress-bar-container": HTMLTpProgressBarContainerElement;
+        "tp-rate-like": HTMLTpRateLikeElement;
         "tp-test": HTMLTpTestElement;
     }
 }
@@ -40,12 +67,17 @@ declare namespace LocalJSX {
         "color"?: TpColor;
         "value"?: string;
     }
+    interface TpRateLike {
+        "onTpChange"?: (event: TpRateLikeCustomEvent<TpRateLikeType['status']>) => void;
+        "status"?: TpRateLikeType['status'];
+    }
     interface TpTest {
         "color"?: TpColor;
         "icon"?: string;
     }
     interface IntrinsicElements {
         "tp-progress-bar-container": TpProgressBarContainer;
+        "tp-rate-like": TpRateLike;
         "tp-test": TpTest;
     }
 }
@@ -54,6 +86,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "tp-progress-bar-container": LocalJSX.TpProgressBarContainer & JSXBase.HTMLAttributes<HTMLTpProgressBarContainerElement>;
+            "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
             "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
     }
