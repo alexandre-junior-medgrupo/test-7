@@ -61,6 +61,7 @@ ion-button {
 ion-button.button-clear.button-has-icon-only.button-disabled {
   ion-icon {
     --stroke: var(--tp-color-neutral-5);
+    opacity: 0.5;
 
     &.ion-color {
       --ion-color-base: var(--tp-color-neutral-5) !important;
