@@ -56,6 +56,19 @@ ion-button {
 }
 
 //
+// disabled
+//
+ion-button.button-clear.button-has-icon-only.button-disabled {
+  ion-icon {
+    --stroke: var(--tp-color-neutral-5);
+
+    &.ion-color {
+      --ion-color-base: var(--tp-color-neutral-5) !important;
+    }
+  }
+}
+
+//
 // sizes
 //
 ion-button.button-has-icon-only {
