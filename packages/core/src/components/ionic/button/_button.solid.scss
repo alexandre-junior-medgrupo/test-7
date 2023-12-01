@@ -7,7 +7,27 @@ ion-button {
   --padding-bottom: 16px;
   --padding-start: 32px;
   --padding-end: 32px;
+  font-weight: 600;
+
+  ion-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
+
+//
+// color
+//
+ion-button.button-disabled {
+  --background: var(--tp-color-neutral-3);
+  --color: var(--tp-color-neutral-5);
+  opacity: initial;
+
+  ion-icon {
+    --stroke: var(--tp-color-neutral-5);
+  }
+}
+
 
 //
 // color
