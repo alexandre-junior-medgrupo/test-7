@@ -9,12 +9,27 @@ ion-button {
 }
 
 //
+// disabled
+//
+ion-button {
+  &.button-outline.button-disabled {
+    --border-color: var(--tp-color-neutral-3);
+    --color: var(--tp-color-neutral-5);
+  }
+}
+
+
+//
 // color
 //
 ion-button {
   &.button-outline.ion-color {
     ion-icon {
       --stroke: var(--ion-color-base);
+    }
+
+    &.button-disabled {
+      --ion-color-base: var(--tp-color-neutral-5) !important;
     }
   }
 }

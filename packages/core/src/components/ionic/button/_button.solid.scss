@@ -7,7 +7,10 @@ ion-button {
   --padding-bottom: 16px;
   --padding-start: 32px;
   --padding-end: 32px;
+  --font-size: 16px;
   font-weight: 600;
+  font-size: var(--font-size);
+  line-height: 16px;
 
   ion-icon {
     width: 16px;
@@ -16,7 +19,7 @@ ion-button {
 }
 
 //
-// color
+// disabled
 //
 ion-button.button-disabled {
   --background: var(--tp-color-neutral-3);
@@ -43,6 +46,15 @@ ion-button {
     ion-icon {
       --stroke: var(--color);
     }
+
+    &.button-disabled {
+      --ion-color-base: var(--tp-color-neutral-3) !important;
+      --ion-color-contrast: var(--tp-color-neutral-5) !important;
+
+      ion-icon {
+        --stroke: var(--tp-color-neutral-5);
+      }
+    }
   }
 }
 
@@ -60,5 +72,6 @@ ion-button {
     --padding-bottom: 8px;
     --padding-start: 24px;
     --padding-end: 24px;
+    --font-size: 14px;
   }
 }
