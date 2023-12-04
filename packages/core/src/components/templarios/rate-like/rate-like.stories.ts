@@ -22,7 +22,7 @@ const meta: Meta = {
           summary: 'undefined',
         },
         type: {
-          summary: ['undefined', ...TP_RATE_LIKE.status].join('|'),
+          summary: [...TP_RATE_LIKE.status].join('|'),
         },
       },
     },

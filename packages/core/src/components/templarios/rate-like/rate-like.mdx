@@ -11,6 +11,12 @@ import * as rateLikeStories from './rate-like.stories';
 import { TpRateLikeType } from '..';
 ```
 
+## Enums
+
+```ts
+import { TpRateLikeStatus } from '..';
+```
+
 ## Atributos
 
 <Canvas of={rateLikeStories.Default} />
@@ -19,10 +25,6 @@ import { TpRateLikeType } from '..';
 
 ## Eventos
 
-### tpChange
+### `TpRateLike.tpChange: EventEmitter<"like" | "dislike">`
 
 - O evento **tpChange** é emitido quando o usuário clica em um dos botões.
-
-- Se o usuário clica no botão de like, o evento emitido possui a propriedade `detail="like"`.
-
-- Se o usuário clica no botão de dislike, o evento emitido possui a propriedade `detail="dislike"`.
