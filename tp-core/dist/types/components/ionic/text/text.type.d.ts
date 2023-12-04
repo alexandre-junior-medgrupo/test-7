@@ -1,6 +1,6 @@
-import { TpColor } from "../../../utils/types/color.type";
-import { TpType } from '../../../utils/enums/type.enum';
+import type { TpType } from "../../../utils/enums/type.enum";
+import type { TpColor } from "../../../utils/types/color.type";
 export type TpIonText = {
-  color: TpColor;
-  type: `${TpType}`;
+  color: `${TpColor}`;
+  'tp-type': `${TpType}`;
 };

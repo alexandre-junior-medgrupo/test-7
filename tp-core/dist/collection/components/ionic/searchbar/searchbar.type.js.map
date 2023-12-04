@@ -1,0 +1,1 @@
+{"version":3,"file":"searchbar.type.js","sourceRoot":"","sources":["../../../../src/components/ionic/searchbar/searchbar.type.ts"],"names":[],"mappings":"","sourcesContent":["import type { TpColor } from '@utils/types/color.type';\n\nexport type TpIonSearchbar = {\n  color: `${TpColor}`;\n};\n"]}
