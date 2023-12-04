@@ -8,6 +8,28 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
 export { TpColor } from "./utils/types/color.type";
 export namespace Components {
+    interface TpChartBar {
+        /**
+          * todo
+         */
+        "color"?: TpColor;
+        /**
+          * todo
+         */
+        "height": number;
+        /**
+          * todo
+         */
+        "noLabel": boolean;
+        /**
+          * todo
+         */
+        "value": number;
+        /**
+          * todo
+         */
+        "width": number;
+    }
     interface TpProgressBarContainer {
         "color"?: TpColor;
         "value"?: string;
@@ -18,6 +40,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLTpChartBarElement extends Components.TpChartBar, HTMLStencilElement {
+    }
+    var HTMLTpChartBarElement: {
+        prototype: HTMLTpChartBarElement;
+        new (): HTMLTpChartBarElement;
+    };
     interface HTMLTpProgressBarContainerElement extends Components.TpProgressBarContainer, HTMLStencilElement {
     }
     var HTMLTpProgressBarContainerElement: {
@@ -31,11 +59,34 @@ declare global {
         new (): HTMLTpTestElement;
     };
     interface HTMLElementTagNameMap {
+        "tp-chart-bar": HTMLTpChartBarElement;
         "tp-progress-bar-container": HTMLTpProgressBarContainerElement;
         "tp-test": HTMLTpTestElement;
     }
 }
 declare namespace LocalJSX {
+    interface TpChartBar {
+        /**
+          * todo
+         */
+        "color"?: TpColor;
+        /**
+          * todo
+         */
+        "height"?: number;
+        /**
+          * todo
+         */
+        "noLabel"?: boolean;
+        /**
+          * todo
+         */
+        "value"?: number;
+        /**
+          * todo
+         */
+        "width"?: number;
+    }
     interface TpProgressBarContainer {
         "color"?: TpColor;
         "value"?: string;
@@ -45,6 +96,7 @@ declare namespace LocalJSX {
         "icon"?: string;
     }
     interface IntrinsicElements {
+        "tp-chart-bar": TpChartBar;
         "tp-progress-bar-container": TpProgressBarContainer;
         "tp-test": TpTest;
     }
@@ -53,6 +105,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
             "tp-progress-bar-container": LocalJSX.TpProgressBarContainer & JSXBase.HTMLAttributes<HTMLTpProgressBarContainerElement>;
             "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
