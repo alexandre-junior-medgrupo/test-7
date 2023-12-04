@@ -1,5 +1,5 @@
-/* eslint-disable */
-
+/* eslint-disable @stencil-community/strict-boolean-conditions */
+/* eslint-disable react/jsx-no-bind */
 import {
   Component,
   Event,
@@ -19,15 +19,21 @@ import { TpRateLikeType } from './rate-like.type';
   scoped: true,
 })
 export class TpRateLike {
-  thumbsUpIcon = getAssetPath('./assets/tp-thumbs-up.svg');
-  thumbsDownIcon = getAssetPath('./assets/tp-thumbs-down.svg');
+  private thumbsUpIcon = getAssetPath('./assets/tp-thumbs-up.svg');
+  private thumbsDownIcon = getAssetPath('./assets/tp-thumbs-down.svg');
 
+  /**
+   * Define o status do componente.
+   */
   @Prop({ reflect: true, mutable: true }) status?: TpRateLikeType['status'];
 
+  /**
+   * Emitido quando a propriedade status foi alterada.
+   */
   @Event() tpChange!: EventEmitter<TpRateLikeType['status']>;
 
   private onClick = (status: TpRateLikeType['status']) => {
-    if (this.status) {
+    if (this.status === undefined) {
       return;
     }
 

@@ -15,6 +15,9 @@ export namespace Components {
         "value"?: string;
     }
     interface TpRateLike {
+        /**
+          * Define o status do componente.
+         */
         "status"?: TpRateLikeType['status'];
     }
     interface TpTest {
@@ -68,7 +71,13 @@ declare namespace LocalJSX {
         "value"?: string;
     }
     interface TpRateLike {
+        /**
+          * Emitido quando a propriedade status foi alterada.
+         */
         "onTpChange"?: (event: TpRateLikeCustomEvent<TpRateLikeType['status']>) => void;
+        /**
+          * Define o status do componente.
+         */
         "status"?: TpRateLikeType['status'];
     }
     interface TpTest {

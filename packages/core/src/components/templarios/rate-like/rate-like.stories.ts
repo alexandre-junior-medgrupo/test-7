@@ -12,11 +12,10 @@ const meta: Meta = {
   },
   decorators: [withActions],
   title: 'components/Templarios/Rate like',
-  tags: ['autodocs'],
   argTypes: {
     status: {
       control: 'radio',
-      options: [undefined, ...TP_RATE_LIKE.status],
+      options: [...TP_RATE_LIKE.status],
       description: 'Define o status do componente.',
       table: {
         defaultValue: {
