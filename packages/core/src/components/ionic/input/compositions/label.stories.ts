@@ -1,13 +1,16 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement } from '@ionic/core/components/ion-input';
+import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
+import { defineCustomElement as defineCustomElementText } from '@ionic/core/components/ion-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonInput } from './input.type';
+import { TpIonText } from '../../text/text.type';
+import { TpIonInput } from '../input.type';
 
-defineCustomElement();
+defineCustomElementInput();
+defineCustomElementText();
 
-const meta: Meta<Components.IonInput & TpIonInput> = {
-  title: 'components/Ionic/Input',
+const meta: Meta<Components.IonInput & TpIonInput & TpIonText> = {
+  title: 'components/Ionic/Input/Compositions',
   argTypes: {
     clearInput: {
       control: 'boolean',
@@ -39,11 +42,24 @@ const meta: Meta<Components.IonInput & TpIonInput> = {
 
 export default meta;
 
-type Story = StoryObj<Components.IonInput & TpIonInput>;
+type Story = StoryObj<Components.IonInput & TpIonInput & TpIonText>;
 
-export const Default: Story = {
+// const validateLabel = () => {
+//   const text = document.getElementsByTagName('ion-text')
+
+//   if(text) {
+//     document.getElementsByTagName('ion-input')
+//   }
+// }
+
+export const Label: Story = {
   render: ({ ...args }) => {
+    // setTimeout(() => {
+    //   validateLabel();
+    // }, 1000);
+
     return html`
+      <ion-text tp-type="p14">Description</ion-text>
       <ion-input
         mode="md"
         placeholder="Digite aqui"

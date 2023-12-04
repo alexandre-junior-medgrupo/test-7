@@ -24,6 +24,17 @@ ion-input.sc-ion-input-md-h {
   .input-highlight {
     background: transparent;
   }
+
+  //clear-icon
+  .input-clear-icon {
+    align-items: initial;
+
+    ion-icon.sc-ion-input-md {
+      width: 24px;
+      height: 24px;
+      fill: var(--tp-color-neutral-6);
+    }
+  }
 }
 
 //
@@ -39,6 +50,7 @@ ion-input:hover:not([disabled]) {
 ion-input.has-focus .input-wrapper {
   border: 1px solid var(--tp-color-neutral-3);
 }
+
 
 //
 // disabled
@@ -68,5 +80,39 @@ ion-input.ion-color {
   //
   &.has-focus .input-wrapper {
     border: 1px solid var(--ion-color-tint);
+  }
+}
+
+//
+// states
+//
+
+//Invalid
+ion-input.ion-invalid {
+  .input-wrapper {
+    border: 1px solid var(--tp-color-warning);
+  }
+
+  .input-bottom {
+    --border-width: initial;
+    --border-color: transparent;
+    --border-style: initial;
+
+    .error-text {
+      --highlight-color-invalid: var(--tp-color-warning);
+    }
+  }
+}
+
+//Valid
+ion-input.ion-valid {
+  .input-wrapper {
+    border: 1px solid var(--tp-color-success);
+  }
+
+  .input-bottom {
+    --border-width: initial;
+    --border-color: transparent;
+    --border-style: initial;
   }
 }
