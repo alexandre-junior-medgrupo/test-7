@@ -2,4 +2,15 @@ ion-range {
   --bar-background: var(--tp-color-neutral-15);
   --bar-background-active: var(--tp-color-brand-4);
   --knob-background: var(--bar-background-active);
+  --bar-height: 2px;
+  --knob-size: 12px;
+}
+
+//
+// secondary
+//
+ion-range[secondary] {
+  --bar-height: 6px;
+  --bar-border-radius: 8px;
+  --knob-size: 16px;
 }

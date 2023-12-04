@@ -2,8 +2,8 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-range';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_RANGE } from './range.constants';
-import { TpIonRange } from './range.type';
+import { TP_ION_RANGE } from '../range.constants';
+import { TpIonRange } from '../range.type';
 
 defineCustomElement();
 
@@ -30,12 +30,16 @@ export default meta;
 
 type Story = StoryObj<Components.IonRange & TpIonRange>;
 
-export const Default: Story = {
+export const Ticks: Story = {
   render: ({ ...args }) => html`
     <ion-range
       color="${args.color}"
       ?secondary="${args.secondary}"
       aria-label="volume"
+      ticks="true"
+      snaps="true"
+      min="0"
+      max="10"
     ></ion-range>
   `,
   /* play: async ({ canvasElement }) => {
