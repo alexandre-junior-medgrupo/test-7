@@ -44,20 +44,8 @@ export default meta;
 
 type Story = StoryObj<Components.IonInput & TpIonInput & TpIonText>;
 
-// const validateLabel = () => {
-//   const text = document.getElementsByTagName('ion-text')
-
-//   if(text) {
-//     document.getElementsByTagName('ion-input')
-//   }
-// }
-
 export const Label: Story = {
   render: ({ ...args }) => {
-    // setTimeout(() => {
-    //   validateLabel();
-    // }, 1000);
-
     return html`
       <ion-text tp-type="p14">Description</ion-text>
       <ion-input
