@@ -267,7 +267,7 @@
 .ion-color-aula,
 [tp-color='aula'] {
   --ion-color-base: var(--tp-color-aula) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-aula-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --ion-color-shade: var(--tp-color-aula-shade) !important;
@@ -327,7 +327,7 @@
 .tp-color-aula,
 [tp-color='aula'] {
   --tp-color-base: var(--tp-color-aula) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-aula-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --tp-color-shade: var(--tp-color-aula-shade) !important;
@@ -387,7 +387,7 @@
 .ion-color-material,
 [tp-color='material'] {
   --ion-color-base: var(--tp-color-material) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-material-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --ion-color-shade: var(--tp-color-material-shade) !important;
@@ -447,7 +447,7 @@
 .tp-color-material,
 [tp-color='material'] {
   --tp-color-base: var(--tp-color-material) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-material-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --tp-color-shade: var(--tp-color-material-shade) !important;
@@ -507,7 +507,7 @@
 .ion-color-questoes,
 [tp-color='questoes'] {
   --ion-color-base: var(--tp-color-questoes) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-questoes-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --ion-color-shade: var(--tp-color-questoes-shade) !important;
@@ -567,7 +567,7 @@
 .tp-color-questoes,
 [tp-color='questoes'] {
   --tp-color-base: var(--tp-color-questoes) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-questoes-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --tp-color-shade: var(--tp-color-questoes-shade) !important;
@@ -627,7 +627,7 @@
 .ion-color-revalida,
 [tp-color='revalida'] {
   --ion-color-base: var(--tp-color-revalida) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-revalida-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --ion-color-shade: var(--tp-color-revalida-shade) !important;
@@ -687,7 +687,7 @@
 .tp-color-revalida,
 [tp-color='revalida'] {
   --tp-color-base: var(--tp-color-revalida) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-revalida-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --tp-color-shade: var(--tp-color-revalida-shade) !important;
@@ -747,7 +747,7 @@
 .ion-color-provas,
 [tp-color='provas'] {
   --ion-color-base: var(--tp-color-provas) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-provas-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --ion-color-shade: var(--tp-color-provas-shade) !important;
@@ -807,7 +807,7 @@
 .tp-color-provas,
 [tp-color='provas'] {
   --tp-color-base: var(--tp-color-provas) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-provas-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --tp-color-shade: var(--tp-color-provas-shade) !important;
