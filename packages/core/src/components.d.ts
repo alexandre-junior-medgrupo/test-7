@@ -8,37 +8,6 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 import { TpColor } from './utils/types/color.type';
 export { TpColor } from './utils/types/color.type';
 export namespace Components {
-    interface TpTest {
-        "color"?: TpColor;
-        "icon"?: string;
-    }
-}
-declare global {
-    interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
-    }
-    var HTMLTpTestElement: {
-        prototype: HTMLTpTestElement;
-        new (): HTMLTpTestElement;
-    };
-    interface HTMLElementTagNameMap {
-        "tp-test": HTMLTpTestElement;
-    }
-}
-declare namespace LocalJSX {
-    interface TpTest {
-        "color"?: TpColor;
-        "icon"?: string;
-    }
-    interface IntrinsicElements {
-        "tp-test": TpTest;
-    }
-}
-export { LocalJSX as JSX };
-declare module "@stencil/core" {
-    export namespace JSX {
-        interface IntrinsicElements {
-            "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
-        }
   interface TpTest {
     color?: TpColor;
     icon?: string;

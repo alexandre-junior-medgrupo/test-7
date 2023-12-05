@@ -59,7 +59,7 @@
 .ion-color-brand,
 [tp-color='brand'] {
   --ion-color-base: var(--tp-color-brand) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --ion-color-shade: var(--tp-color-brand-shade) !important;
@@ -119,7 +119,7 @@
 .tp-color-brand,
 [tp-color='brand'] {
   --tp-color-base: var(--tp-color-brand) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --tp-color-shade: var(--tp-color-brand-shade) !important;

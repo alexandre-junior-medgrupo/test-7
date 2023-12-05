@@ -1734,10 +1734,10 @@ ion-progress-bar {
   --progress-background: var(--tp-color-brand-4);
 }
 
-ion-progress-bar[value="0"] {
+ion-progress-bar[value='0'] {
   --background: var(--tp-color-neutral-8) !important;
 }
-ion-progress-bar[value="0"]::part(track) {
+ion-progress-bar[value='0']::part(track) {
   background: var(--background) !important;
 }
 
