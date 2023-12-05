@@ -22,6 +22,9 @@ const meta: Meta<Components.IonProgressBar & TpIonProgressBar> = {
       },
     },
   },
+  args: {
+    value: 50,
+  },
 };
 
 export default meta;
