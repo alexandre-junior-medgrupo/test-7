@@ -1,0 +1,82 @@
+ion-tab-bar {
+  padding: 8px 0;
+}
+
+ion-tab-button {
+  --color-selected: transparent;
+
+  ion-label {
+    color: var(--tp-color-neutral-5);
+  }
+
+  ion-icon {
+    --stroke: var(--tp-color-neutral-5);
+    font-size: 24px;
+  }
+}
+
+//
+// hover
+//
+ion-tab-button:hover {
+  ion-label {
+    color: var(--tp-color-neutral-6);
+  }
+
+  ion-icon {
+    --stroke: var(--tp-color-neutral-6);
+  }
+}
+
+//
+// activated
+//
+ion-tab-button[selected] {
+  ion-label {
+    color: var(--tp-color-brand-4);
+  }
+
+  ion-icon {
+    --stroke: var(--tp-color-brand-4);
+  }
+}
+
+
+//
+// color
+//
+ion-tab-bar.ion-color {
+  background: transparent;
+
+  ion-tab-button {
+    background: transparent;
+
+    ion-label {
+      color: var(--ion-color-base);
+    }
+
+    ion-icon {
+      --stroke: var(--ion-color-base);
+    }
+
+    &:hover {
+      ion-label {
+        color: var(--ion-color-tint);
+      }
+
+      ion-icon {
+        --stroke: var(--ion-color-tint);
+      }
+    }
+
+    &[selected] {
+      ion-label {
+        color: var(--ion-color-shade);
+      }
+
+      ion-icon {
+        --stroke: var(--ion-color-shade);
+      }
+    }
+  }
+}

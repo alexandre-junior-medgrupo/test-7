@@ -19,7 +19,20 @@ defineCustomElementTabButton();
 const meta: Meta<Components.IonTabs & IonTabBar & IonTabButton & TpIonTabBar> =
   {
     title: 'components/Ionic/Tab-bar',
-    argTypes: {},
+    argTypes: {
+      disabled: {
+        control: 'boolean',
+        description: 'Define a estilização do estado disabled do componente.',
+        table: {
+          defaultValue: {
+            summary: false,
+          },
+          type: {
+            summary: 'boolean',
+          },
+        },
+      },
+    },
   };
 
 export default meta;
@@ -31,18 +44,31 @@ type Story = StoryObj<
 export const Default: Story = {
   render: ({ ...args }) => html`
     <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="account">
+      <ion-tab-bar color="${args.color}" slot="bottom">
+        <ion-tab-button
+          tab="account"
+          ?disabled="${args.disabled}"
+          layout="icon-start"
+          selected
+        >
           <ion-icon src="./icons/tp-star.svg"></ion-icon>
           <ion-label>About</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="contact">
+        <ion-tab-button
+          tab="contact"
+          ?disabled="${args.disabled}"
+          layout="icon-start"
+        >
           <ion-icon src="./icons/tp-star.svg"></ion-icon>
           <ion-label>About</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="settings">
+        <ion-tab-button
+          tab="settings"
+          ?disabled="${args.disabled}"
+          layout="icon-start"
+        >
           <ion-icon src="./icons/tp-star.svg"></ion-icon>
           <ion-label>About</ion-label>
         </ion-tab-button>
