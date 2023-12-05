@@ -4,4 +4,4 @@ import { TpIonText } from './text.type';
 declare const meta: Meta<Components.IonText & TpIonText>;
 export default meta;
 type Story = StoryObj<Components.IonText & TpIonText>;
-export declare const Primary: Story;
+export declare const Default: Story;

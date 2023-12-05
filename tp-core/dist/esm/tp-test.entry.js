@@ -18,7 +18,7 @@ const TpTest = class {
     const { color, icon, defaultIcon } = this;
     return (h(Host, { tabindex: "0", class: createColorClasses(color, {
         'tp-test': true,
-      }) }, h("div", { class: "tp-test__container" }, h("span", null, "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, voluptate."), h("ion-button", null, "ion button"), h("ion-icon", { class: "tp-test__icon", src: icon !== null && icon !== void 0 ? icon : defaultIcon, "aria-hidden": "true" }))));
+      }) }, h("div", { class: "tp-test__container" }, h("span", null, "Lorem ipsum, dolor sit amet consectetur."), h("ion-button", null, "ion button"), h("ion-icon", { class: "tp-test__icon", src: icon !== null && icon !== void 0 ? icon : defaultIcon, "aria-hidden": "true" }))));
   }
   static get assetsDirs() { return ["assets"]; }
 };

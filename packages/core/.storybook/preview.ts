@@ -17,27 +17,28 @@ import '@ionic/core/css/text-transformation.css';
 import '@ionic/core/css/typography.css';
 import { defineCustomElement as defineCustomElementIonIcon } from 'ionicons/components/ion-icon';
 
-import {
-  TP_COLORS,
-  TP_COLORS_MEDSOFT,
-  TP_COLORS_RECURSOS
-} from '../src/utils/constants/color.constant';
+initialize();
+defineCustomElementIonContent();
+defineCustomElementIonApp();
+defineCustomElementIonIcon();
 // !ionic
 
 // templarios
 import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorProvas, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
 import {
+  TP_COLORS,
+  TP_COLORS_MEDSOFT,
+  TP_COLORS_RECURSOS
+} from '../src/utils/constants/color.constant';
+import {
   TpSchemeCSSClasses,
   TpThemeCSSClasses
 } from '../src/utils/enums/theme.enum';
+
 import '../styles/css/templarios.css';
 import '../styles/css/templarios.themes.css';
-import '../www/build/templarios.esm';
 
-initialize();
-defineCustomElementIonContent();
-defineCustomElementIonApp();
-defineCustomElementIonIcon();
+import '../www/build/templarios.esm';
 // !templarios
 
 // storybook
