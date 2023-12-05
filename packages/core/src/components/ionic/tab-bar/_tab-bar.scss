@@ -4,9 +4,13 @@ ion-tab-bar {
 
 ion-tab-button {
   --color-selected: transparent;
+  max-width: initial;
 
   ion-label {
     color: var(--tp-color-neutral-5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
   }
 
   ion-icon {
