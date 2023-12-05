@@ -35,18 +35,30 @@ export const Default: Story = {
     <ion-segment
       color="${args.color}"
       ?disabled="${args.disabled}"
-      value="default"
+      value="Tabs1"
     >
-      <ion-segment-button value="default">
-        <ion-label>Default</ion-label>
+      <ion-segment-button value="Tabs1">
+        <ion-label>Tabs 1</ion-label>
       </ion-segment-button>
 
-      <ion-segment-button value="segment">
-        <ion-label>Segment</ion-label>
+      <ion-segment-button value="Tabs2">
+        <ion-label>Tabs 2</ion-label>
       </ion-segment-button>
 
-      <ion-segment-button value="segment2">
-        <ion-label>Segment</ion-label>
+      <ion-segment-button value="Tabs3">
+        <ion-label>Tabs 3</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="Tabs4">
+        <ion-label>Tabs 4</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="Tabs5">
+        <ion-label>Tabs 5</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="Tabs6">
+        <ion-label>Tabs 6</ion-label>
       </ion-segment-button>
     </ion-segment>
   `,
