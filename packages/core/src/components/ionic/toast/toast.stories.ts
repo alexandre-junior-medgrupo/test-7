@@ -24,6 +24,30 @@ const meta: Meta<Components.IonToast & TpIonToast & IonButton> = {
         },
       },
     },
+    message: {
+      control: 'text',
+      description: 'Define o texto a ser exibição no componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'text',
+        },
+      },
+    },
+    duration: {
+      control: 'number',
+      description: 'Define o tempo (milisegundos) de exibição do componente.',
+      table: {
+        defaultValue: {
+          summary: '3000',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+    },
   },
 };
 
@@ -35,12 +59,12 @@ export const Default: Story = {
   render: ({ ...args }) => html`
     <ion-button id="open-toast">Toast</ion-button>
     <ion-toast
-      ?warning="${args.warning}"
-      color="${args.color}"
       trigger="open-toast"
       icon="./icons/tp-star.svg"
-      message="Este Toast desaparecerá em 5 segundos"
-      duration="100000"
+      message="Lorem ipsum, dolor sit amet"
+      color="${args.color}"
+      duration="${args.duration}"
+      ?warning="${args.warning}"
     ></ion-toast>
   `,
   /* play: async ({ canvasElement }) => {
