@@ -2,8 +2,6 @@ dist/
 www/
 loader/
 
-styles/
-
 *~
 *.sw[mnpcod]
 *.log

@@ -69,7 +69,9 @@ ion-item.item-lines-full {
 // gap
 //
 ion-item {
-  @each $spacing-name, $spacing-value in $tp-item-spacing {
+
+  @each $spacing-name,
+  $spacing-value in $tp-item-spacing {
     &[gap='#{$spacing-name}'] *[slot='start'] {
       margin-right: $spacing-value;
     }
@@ -84,7 +86,9 @@ ion-item {
 // spacing-X
 //
 ion-item {
-  @each $spacing-name, $spacing-value in $tp-item-spacing {
+
+  @each $spacing-name,
+  $spacing-value in $tp-item-spacing {
     &[spacingx='#{$spacing-name}'] {
       --padding-start: #{$spacing-value};
       --padding-end: #{$spacing-value};
@@ -96,7 +100,9 @@ ion-item {
 // spacing-Y
 //
 ion-item {
-  @each $spacing-name, $spacing-value in $tp-item-spacing {
+
+  @each $spacing-name,
+  $spacing-value in $tp-item-spacing {
     &[spacingy='#{$spacing-name}'] {
       --padding-top: #{$spacing-value};
       --padding-bottom: #{$spacing-value};
@@ -163,5 +169,18 @@ ion-item.ion-color {
     --handle-background-checked: var(--ion-color-base);
     --track-background: var(--tp-color-neutral-4);
     --track-background-checked: var(--ion-color-contrast);
+  }
+}
+
+//
+// inputs
+//
+ion-item {
+  ion-input {
+    --padding-start: 8px !important;
+  }
+
+  .tp-input-container {
+    width: 100%;
   }
 }

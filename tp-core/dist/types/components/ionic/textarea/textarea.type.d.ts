@@ -1,4 +1,4 @@
-import type { TpColor } from "../../../components";
+import type { TpColor } from 'src/components';
 export type TpIonTextarea = {
   color: `${TpColor}`;
 };

@@ -624,7 +624,7 @@
 .ion-color-brand,
 [tp-color='brand'] {
   --ion-color-base: var(--tp-color-brand) !important;
-  --ion-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
   --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
   --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --ion-color-shade: var(--tp-color-brand-shade) !important;
@@ -684,7 +684,7 @@
 .tp-color-brand,
 [tp-color='brand'] {
   --tp-color-base: var(--tp-color-brand) !important;
-  --tp-color-base-rgb: var(--tp-color-base-rgb) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
   --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
   --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
   --tp-color-shade: var(--tp-color-brand-shade) !important;
@@ -1734,16 +1734,19 @@ ion-progress-bar {
   --progress-background: var(--tp-color-brand-4);
 }
 
-.tp-progress-bar-blank:not(.ion-color) {
-  --background: var(--tp-color-neutral-8);
+ion-progress-bar[value='0'] {
+  --background: var(--tp-color-neutral-8) !important;
+}
+ion-progress-bar[value='0']::part(track) {
+  background: var(--background) !important;
 }
 
 ion-progress-bar.ion-color {
-  --background: var(--ion-color-contrast);
+  --background: rgba(var(--ion-color-base-rgb), 0.4);
   --progress-background: var(--ion-color-base);
 }
 ion-progress-bar.ion-color::part(track) {
-  background: var(--ion-color-contrast);
+  background: var(--background);
 }
 
 ion-radio {

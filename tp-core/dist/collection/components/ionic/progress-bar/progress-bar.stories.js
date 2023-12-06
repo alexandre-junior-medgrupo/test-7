@@ -29,6 +29,9 @@ const meta = {
       },
     },
   },
+  args: {
+    value: 50,
+  },
 };
 export default meta;
 export const Default = {
