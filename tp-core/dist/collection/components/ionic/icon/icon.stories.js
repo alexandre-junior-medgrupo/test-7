@@ -14,15 +14,25 @@ import { html } from "lit";
 import { TP_ICONS_STORYBOOK } from "../../../utils/constants/icon.constant";
 import { TP_ION_ICON } from "./icon.constant";
 const meta = {
-  component: 'ion-icon',
+  title: 'components/Icons/ion-icon',
   argTypes: {
     src: {
       control: { type: 'select' },
       options: [...TP_ICONS_STORYBOOK],
+      description: 'Define o path e nome do icone.',
     },
-    size: {
+    'tp-size': {
       control: { type: 'select' },
-      options: [...TP_ION_ICON.size],
+      options: [...TP_ION_ICON['tp-size']],
+      description: 'Define o tamanho do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: TP_ION_ICON['tp-size'].join('|'),
+        },
+      },
     },
   },
   args: {
@@ -33,12 +43,11 @@ export default meta;
 export const Default = {
   render: (_a) => {
     var args = __rest(_a, []);
-    console.log(args.src);
     const iconUrl = `./icons/${args.src}`;
     return html `<ion-icon
-      .src="${iconUrl}"
-      .color="${args.color}"
-      tp-size="${args.size}"
+      color="${args.color}"
+      tp-size="${args['tp-size']}"
+      src="${iconUrl}"
     ></ion-icon>`;
   },
   /* play: async ({ canvasElement }) => {

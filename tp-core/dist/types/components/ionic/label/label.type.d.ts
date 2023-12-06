@@ -1,6 +1,6 @@
-import { TpColor } from "../../../components";
-import { TpType } from '../../../utils/enums/type.enum';
+import type { TpType } from "../../../utils/enums/type.enum";
+import type { TpColor } from 'src/components';
 export type TpIonLabel = {
-  color: TpColor;
-  type: `${TpType}`;
+  color: `${TpColor}`;
+  'tp-type': `${TpType}`;
 };

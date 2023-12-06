@@ -21,6 +21,14 @@ const proxyInputs = (Cmp, inputs) => {
       set(val) {
         this.z.runOutsideAngular(() => (this.el[item] = val));
       },
+      /**
+       * In the event that proxyInputs is called
+       * multiple times re-defining these inputs
+       * will cause an error to be thrown. As a result
+       * we set configurable: true to indicate these
+       * properties can be changed.
+       */
+      configurable: true,
     });
   });
 };
@@ -76,7 +84,7 @@ let TpTest = class TpTest {
   static {
     this.ɵfac = i0.ɵɵngDeclareFactory({
       minVersion: '12.0.0',
-      version: '16.2.10',
+      version: '16.2.12',
       ngImport: i0,
       type: TpTest,
       deps: [
@@ -90,7 +98,7 @@ let TpTest = class TpTest {
   static {
     this.ɵcmp = i0.ɵɵngDeclareComponent({
       minVersion: '14.0.0',
-      version: '16.2.10',
+      version: '16.2.12',
       type: TpTest,
       selector: 'tp-test',
       inputs: { color: 'color', icon: 'icon' },
@@ -111,7 +119,7 @@ TpTest = __decorate(
 );
 i0.ɵɵngDeclareClassMetadata({
   minVersion: '12.0.0',
-  version: '16.2.10',
+  version: '16.2.12',
   ngImport: i0,
   type: TpTest,
   decorators: [
@@ -143,7 +151,7 @@ class TemplariosModule {
   static {
     this.ɵfac = i0.ɵɵngDeclareFactory({
       minVersion: '12.0.0',
-      version: '16.2.10',
+      version: '16.2.12',
       ngImport: i0,
       type: TemplariosModule,
       deps: [],
@@ -153,7 +161,7 @@ class TemplariosModule {
   static {
     this.ɵmod = i0.ɵɵngDeclareNgModule({
       minVersion: '14.0.0',
-      version: '16.2.10',
+      version: '16.2.12',
       ngImport: i0,
       type: TemplariosModule,
       declarations: [TpTest],
@@ -163,7 +171,7 @@ class TemplariosModule {
   static {
     this.ɵinj = i0.ɵɵngDeclareInjector({
       minVersion: '12.0.0',
-      version: '16.2.10',
+      version: '16.2.12',
       ngImport: i0,
       type: TemplariosModule,
       providers: [
@@ -178,7 +186,7 @@ class TemplariosModule {
 }
 i0.ɵɵngDeclareClassMetadata({
   minVersion: '12.0.0',
-  version: '16.2.10',
+  version: '16.2.12',
   ngImport: i0,
   type: TemplariosModule,
   decorators: [
