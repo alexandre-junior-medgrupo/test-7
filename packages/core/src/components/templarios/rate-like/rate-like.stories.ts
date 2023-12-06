@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
-import { withActions } from '@storybook/addon-actions/decorator';
+// import { withActions } from '@storybook/addon-actions/decorator';
 import { html } from 'lit';
 import { TP_RATE_LIKE } from './rate-like.constant';
 
@@ -10,7 +10,8 @@ const meta: Meta = {
       handles: ['tpChange'],
     },
   },
-  decorators: [withActions],
+  // TODO está dando erro!!!!!
+  // decorators: [withActions],
   title: 'components/Templarios/Rate like',
   argTypes: {
     status: {
