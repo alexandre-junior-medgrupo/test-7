@@ -40,6 +40,18 @@ ion-searchbar {
     width: 24px;
     height: 24px;
   }
+
+  &.ion-invalid {
+    .searchbar-input {
+      border: 1px solid var(--tp-color-warning);
+    }
+  }
+
+  &.ion-valid {
+    .searchbar-input {
+      border: 1px solid var(--tp-color-success);
+    }
+  }
 }
 
 //
