@@ -39,6 +39,6 @@ export const Default: Story = {
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/ion-badge/gi)).toBeTruthy();
+    expect(canvas.getByText(/ion-textarea/gi)).toBeTruthy();
   }, */
 };

@@ -23,6 +23,18 @@ const meta: Meta<Components.IonButton & TpIonButton> = {
         },
       },
     },
+    disabled: {
+      control: 'boolean',
+      description: 'Define a estilização do estado disabled do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
 };
 
@@ -32,16 +44,31 @@ type Story = StoryObj<Components.IonButton & TpIonButton>;
 
 export const Clear: Story = {
   render: ({ ...args }) => html`
-    <ion-button fill="clear" color="${args.color}" size="${args.size}">
+    <ion-button
+      fill="clear"
+      color="${args.color}"
+      size="${args.size}"
+      ?disabled="${args.disabled}"
+    >
       ion-button
     </ion-button>
 
-    <ion-button fill="clear" color="${args.color}" size="${args.size}">
+    <ion-button
+      fill="clear"
+      color="${args.color}"
+      size="${args.size}"
+      ?disabled="${args.disabled}"
+    >
       <ion-icon slot="start" src="./icons/tp-chevron-left.svg"></ion-icon>
       ion-button
     </ion-button>
 
-    <ion-button fill="clear" color="${args.color}" size="${args.size}">
+    <ion-button
+      fill="clear"
+      color="${args.color}"
+      size="${args.size}"
+      ?disabled="${args.disabled}"
+    >
       <ion-icon slot="end" src="./icons/tp-chevron-right.svg"></ion-icon>
       ion-button
     </ion-button>
