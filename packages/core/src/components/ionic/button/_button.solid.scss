@@ -9,13 +9,15 @@ ion-button {
   --padding-end: 32px;
   --font-size: 16px;
   --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
-
+  height: 48px;
+  margin: 0;
   font-weight: 600;
   font-size: var(--font-size);
   line-height: 16px;
 
   ion-icon {
-    font-size: 16px;
+    min-width: 16px;
+    min-height: 16px;
   }
 }
 
@@ -66,6 +68,7 @@ ion-button {
   &.button-sm {
     --padding-top: 12px;
     --padding-bottom: 12px;
+    height: 40px;
   }
 
   &.button-xs {
@@ -74,5 +77,6 @@ ion-button {
     --padding-start: 24px;
     --padding-end: 24px;
     --font-size: 14px;
+    height: 32px;
   }
 }
