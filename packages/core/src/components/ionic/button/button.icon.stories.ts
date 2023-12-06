@@ -23,6 +23,18 @@ const meta: Meta<Components.IonButton & TpIonButton> = {
         },
       },
     },
+    disabled: {
+      control: 'boolean',
+      description: 'Define a estilização do estado disabled do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
 };
 
@@ -32,7 +44,7 @@ type Story = StoryObj<Components.IonButton & TpIonButton>;
 
 export const IconOnly: Story = {
   render: ({ ...args }) => html`
-    <ion-button fill="clear" size="${args.size}">
+    <ion-button fill="clear" size="${args.size}" ?disabled="${args.disabled}">
       <ion-icon
         slot="icon-only"
         color="${args.color}"

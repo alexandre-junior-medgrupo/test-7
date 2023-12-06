@@ -1,5 +1,5 @@
-import { TpType } from "../../../utils/enums/type.enum";
+import { TpType } from "../../../../../src/utils/enums/type.enum";
 export const TP_ION_LABEL = {
-  type: Object.values(TpType),
+  'tp-type': Object.values(TpType),
 };
 //# sourceMappingURL=label.constant.js.map
