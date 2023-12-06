@@ -25,7 +25,7 @@ ion-input.sc-ion-input-md-h {
     background: transparent;
   }
 
-  //clear-icon
+  // clear-icon
   .input-clear-icon {
     align-items: initial;
 
@@ -50,7 +50,6 @@ ion-input:hover:not([disabled]) {
 ion-input.has-focus .input-wrapper {
   border: 1px solid var(--tp-color-neutral-3);
 }
-
 
 //
 // disabled
@@ -87,7 +86,7 @@ ion-input.ion-color {
 // states
 //
 
-//Invalid
+// invalid
 ion-input.ion-invalid {
   .input-wrapper {
     border: 1px solid var(--tp-color-warning);
@@ -104,7 +103,7 @@ ion-input.ion-invalid {
   }
 }
 
-//Valid
+// valid
 ion-input.ion-valid {
   .input-wrapper {
     border: 1px solid var(--tp-color-success);

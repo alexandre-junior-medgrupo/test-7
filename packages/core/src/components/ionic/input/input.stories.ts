@@ -12,7 +12,7 @@ const meta: Meta<Components.IonInput & TpIonInput> = {
     clearInput: {
       control: 'boolean',
       description:
-        'Define se o componente conatará com um button para limpar o input.',
+        'Define se o componente renderiza um botão para limpar o input.',
       table: {
         defaultValue: {
           summary: 'undefined',
