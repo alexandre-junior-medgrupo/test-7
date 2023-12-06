@@ -41,6 +41,7 @@
   &__skeleton {
     --tp-height: calc(var(--height) * 1px);
     --tp-width: calc(var(--width) * 1px);
+    --border-radius: 2px;
     display: none;
   }
 }
