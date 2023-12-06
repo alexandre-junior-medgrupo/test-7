@@ -36,10 +36,19 @@ import {
 <Title>Icon Defs</Title>
 
 <Title>Icons</Title>
+
+## Usage
+
+```html
+<svg>
+  <use xlink:href="./icons-defs/products-icons-defs.svg#tp-rac-icon"></use>
+</svg>
+```
+
 <IconGallery>
   {TP_SYMBOL_DEFS_ICONS.map((defs) => (
     <IconItem name={`#${defs}`}>
-      <svg>
+      <svg style={{ fill: 'var(--tp-color-neutral-1)' }}>
         <use xlinkHref={`./icons-defs/products-icons-defs.svg#${defs}`}></use>
       </svg>
     </IconItem>
@@ -47,10 +56,19 @@ import {
 </IconGallery>
 
 <Title>Logos</Title>
+
+## Usage
+
+```html
+<svg>
+  <use xlink:href="./icons-defs/products-logos-defs.svg#tp-bymed"></use>
+</svg>
+```
+
 <IconGallery>
   {TP_SYMBOL_DEFS_LOGOS.map((defs) => (
     <IconItem name={`#${defs}`}>
-      <svg>
+      <svg style={{ fill: 'var(--tp-color-neutral-1)' }}>
         <use xlinkHref={`./icons-defs/products-logos-defs.svg#${defs}`}></use>
       </svg>
     </IconItem>

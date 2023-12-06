@@ -13,10 +13,7 @@
     "noUnusedParameters": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "skipLibCheck": true,
-    "paths": {
-      "@utils/*": ["src/utils/*"]
-    }
+    "skipLibCheck": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
