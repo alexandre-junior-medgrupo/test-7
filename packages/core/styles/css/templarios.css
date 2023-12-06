@@ -1792,6 +1792,30 @@ ion-chip.ion-color.ion-activated, ion-chip.ion-color:hover:not([disabled]) {
   border-color: var(--ion-color-base);
 }
 
+ion-fab-button {
+  --background: var(--tp-color-brand);
+  width: 48px;
+  height: 48px;
+}
+
+ion-fab-list ion-fab-button {
+  --background: var(--tp-color-neutral-10);
+  width: 40px;
+  height: 40px;
+  margin: 6px 0;
+}
+ion-fab-list ion-fab-button:first-child {
+  margin: 6px 0 2px;
+}
+ion-fab-list ion-fab-button:last-child {
+  margin: 0 0 6px;
+}
+ion-fab-list ion-icon {
+  --stroke: var(--tp-color-neutral-1);
+  width: 24px;
+  height: 24px;
+}
+
 ion-input.sc-ion-input-md-h {
   --background: var(--tp-color-neutral-2);
   --border-radius: 8px;
