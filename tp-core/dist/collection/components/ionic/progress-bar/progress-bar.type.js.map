@@ -1,1 +1,0 @@
-{"version":3,"file":"progress-bar.type.js","sourceRoot":"","sources":["../../../../src/components/ionic/progress-bar/progress-bar.type.ts"],"names":[],"mappings":"","sourcesContent":["import type { TpColor } from '@utils/types/color.type';\n\nexport type TpIonProgressBar = {\n  color: `${TpColor}`;\n};\n"]}
