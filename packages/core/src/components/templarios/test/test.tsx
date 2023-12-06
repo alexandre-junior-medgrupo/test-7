@@ -9,7 +9,14 @@ import type { TpColor } from '@utils/types/color.type';
   scoped: true,
 })
 export class TpTest {
+  /**
+   *
+   */
   @Prop({ reflect: true }) color?: TpColor;
+
+  /**
+   *
+   */
   @Prop({ reflect: true }) icon?: string;
 
   @State() defaultIcon = getAssetPath('./assets/tp-activity.svg');

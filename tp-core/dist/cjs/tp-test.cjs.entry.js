@@ -22,7 +22,7 @@ const TpTest = class {
     const { color, icon, defaultIcon } = this;
     return (index.h(index.Host, { tabindex: "0", class: createColorClasses(color, {
         'tp-test': true,
-      }) }, index.h("div", { class: "tp-test__container" }, index.h("span", null, "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, voluptate."), index.h("ion-button", null, "ion button"), index.h("ion-icon", { class: "tp-test__icon", src: icon !== null && icon !== void 0 ? icon : defaultIcon, "aria-hidden": "true" }))));
+      }) }, index.h("div", { class: "tp-test__container" }, index.h("span", null, "Lorem ipsum, dolor sit amet consectetur."), index.h("ion-button", null, "ion button"), index.h("ion-icon", { class: "tp-test__icon", src: icon !== null && icon !== void 0 ? icon : defaultIcon, "aria-hidden": "true" }))));
   }
   static get assetsDirs() { return ["assets"]; }
 };

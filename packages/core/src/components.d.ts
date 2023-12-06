@@ -10,29 +10,25 @@ export { TpColor } from "./utils/types/color.type";
 export namespace Components {
     interface TpChartBar {
         /**
-          * todo
+          * Define a variação de cor do componente.
          */
         "color"?: TpColor;
         /**
-          * todo
+          * Define a altura do componente.
          */
         "height": number;
         /**
-          * todo
+          * Define se o componente irá apresentar rótulo ou não.
          */
         "noLabel": boolean;
         /**
-          * todo
+          * Define o valor do preenchimento do componente.
          */
         "value": number;
         /**
-          * todo
+          * Define a largura do componente.
          */
         "width": number;
-    }
-    interface TpProgressBarContainer {
-        "color"?: TpColor;
-        "value"?: string;
     }
     interface TpTest {
         "color"?: TpColor;
@@ -46,12 +42,6 @@ declare global {
         prototype: HTMLTpChartBarElement;
         new (): HTMLTpChartBarElement;
     };
-    interface HTMLTpProgressBarContainerElement extends Components.TpProgressBarContainer, HTMLStencilElement {
-    }
-    var HTMLTpProgressBarContainerElement: {
-        prototype: HTMLTpProgressBarContainerElement;
-        new (): HTMLTpProgressBarContainerElement;
-    };
     interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
     }
     var HTMLTpTestElement: {
@@ -60,36 +50,31 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "tp-chart-bar": HTMLTpChartBarElement;
-        "tp-progress-bar-container": HTMLTpProgressBarContainerElement;
         "tp-test": HTMLTpTestElement;
     }
 }
 declare namespace LocalJSX {
     interface TpChartBar {
         /**
-          * todo
+          * Define a variação de cor do componente.
          */
         "color"?: TpColor;
         /**
-          * todo
+          * Define a altura do componente.
          */
         "height"?: number;
         /**
-          * todo
+          * Define se o componente irá apresentar rótulo ou não.
          */
         "noLabel"?: boolean;
         /**
-          * todo
+          * Define o valor do preenchimento do componente.
          */
         "value"?: number;
         /**
-          * todo
+          * Define a largura do componente.
          */
         "width"?: number;
-    }
-    interface TpProgressBarContainer {
-        "color"?: TpColor;
-        "value"?: string;
     }
     interface TpTest {
         "color"?: TpColor;
@@ -97,7 +82,6 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "tp-chart-bar": TpChartBar;
-        "tp-progress-bar-container": TpProgressBarContainer;
         "tp-test": TpTest;
     }
 }
@@ -106,7 +90,6 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
-            "tp-progress-bar-container": LocalJSX.TpProgressBarContainer & JSXBase.HTMLAttributes<HTMLTpProgressBarContainerElement>;
             "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
     }
