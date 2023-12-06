@@ -63,11 +63,19 @@ ion-chip.chip-outline {
 }
 
 //
-// hover & activated
+// hover
 //
+ion-chip:not(.chip-outline):hover {
+  --background: var(--tp-color-brand-2);
+  border: 1px solid var(--tp-color-brand-2);
+}
+
 ion-chip.chip-outline:hover {
   background: transparent;
 }
+
+// --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+// --background-hover: var(--ion-color-shade);
 
 // ion-chip:hover,
 // ion-chip.ion-activated {
@@ -123,6 +131,11 @@ ion-chip.ion-color:not(.chip-outline) {
 
   ion-icon {
     --stroke: var(--ion-color-contrast);
+  }
+
+  &:hover {
+    background: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
+    border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
   }
 
   // &:hover,
