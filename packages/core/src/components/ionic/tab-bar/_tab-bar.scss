@@ -55,31 +55,13 @@ ion-tab-bar.ion-color {
   ion-tab-button {
     background: transparent;
 
-    ion-label {
-      color: var(--ion-color-base);
-    }
-
-    ion-icon {
-      --stroke: var(--ion-color-base);
-    }
-
-    &:hover {
-      ion-label {
-        color: var(--ion-color-tint);
-      }
-
-      ion-icon {
-        --stroke: var(--ion-color-tint);
-      }
-    }
-
     &[selected] {
       ion-label {
-        color: var(--ion-color-shade);
+        color: var(--ion-color-base);
       }
 
       ion-icon {
-        --stroke: var(--ion-color-shade);
+        --stroke: var(--ion-color-base);
       }
     }
   }
