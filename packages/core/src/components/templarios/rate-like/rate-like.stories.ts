@@ -26,6 +26,18 @@ const meta: Meta = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado disabled do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
 };
 
@@ -35,7 +47,10 @@ type Story = StoryObj;
 
 export const Default: Story = {
   render: ({ ...args }) => {
-    return html`<tp-rate-like status=${args.status}></tp-rate-like>`;
+    return html`<tp-rate-like
+      status=${args.status}
+      ?loading="${args.loading}"
+    ></tp-rate-like>`;
   },
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

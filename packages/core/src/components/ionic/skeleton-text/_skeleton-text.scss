@@ -1,0 +1,13 @@
+ion-skeleton-text {
+  --background-rgb: var(--tp-color-neutral-10-rgb);
+  --border-radius: 4px;
+
+  --tp-height: 20px;
+  --tp-width: 100%;
+}
+
+ion-skeleton-text {
+  width: var(--tp-width);
+  height: var(--tp-height);
+  margin: 0;
+}

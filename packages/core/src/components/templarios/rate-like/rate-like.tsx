@@ -26,6 +26,11 @@ export class TpRateLike {
   @Prop({ reflect: true, mutable: true }) status?: TpRateLikeType['status'];
 
   /**
+   * Define o estado de carregamento do componente.
+   */
+  @Prop({ reflect: true, mutable: true }) loading?: boolean;
+
+  /**
    * Emitido quando a propriedade status é alterada.
    */
   @Event() tpChange!: EventEmitter<TpRateLikeType['status']>;
@@ -40,19 +45,17 @@ export class TpRateLike {
   };
 
   render() {
-    const { status, thumbsUpIcon, thumbsDownIcon } = this;
+    const { loading, status, thumbsUpIcon, thumbsDownIcon } = this;
 
     return (
-      <Host class="tp-rate-like">
+      <Host class={`tp-rate-like ${loading ? 'tp-rate-like--loading' : ''} `}>
         <button
           class={`tp-rate-like__button
-            ${
-              status === TpRateLikeStatus.LIKE
-                ? 'tp-rate-like__button--like'
-                : ''
-            }
-            ${status ? 'tp-rate-like__button--disabled' : ''}
-          `}
+          ${
+            status === TpRateLikeStatus.LIKE ? 'tp-rate-like__button--like' : ''
+          }
+          ${status ? 'tp-rate-like__button--disabled' : ''}
+        `}
           onClick={() => this.onClick(TpRateLikeStatus.LIKE)}
         >
           <ion-icon
@@ -63,13 +66,13 @@ export class TpRateLike {
         </button>
         <button
           class={`tp-rate-like__button
-            ${
-              status === TpRateLikeStatus.DISLIKE
-                ? 'tp-rate-like__button--dislike'
-                : ''
-            }
-            ${status ? 'tp-rate-like__button--disabled' : ''}
-          `}
+          ${
+            status === TpRateLikeStatus.DISLIKE
+              ? 'tp-rate-like__button--dislike'
+              : ''
+          }
+          ${status ? 'tp-rate-like__button--disabled' : ''}
+        `}
           onClick={() => this.onClick(TpRateLikeStatus.DISLIKE)}
         >
           <ion-icon
@@ -78,6 +81,15 @@ export class TpRateLike {
             aria-hidden="true"
           ></ion-icon>
         </button>
+
+        <ion-skeleton-text
+          class="tp-rate-like__skeleton"
+          animated
+        ></ion-skeleton-text>
+        <ion-skeleton-text
+          class="tp-rate-like__skeleton"
+          animated
+        ></ion-skeleton-text>
       </Host>
     );
   }

@@ -36,4 +36,30 @@
     width: 24px;
     height: 24px;
   }
+
+  &__skeleton {
+    --tp-height: 24px;
+    --tp-width: 24px;
+    --border-radius: 0;
+    display: none;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+
+//
+// loading
+//
+:host(.tp-rate-like--loading) {
+  .tp-rate-like {
+    &__button {
+      display: none;
+    }
+
+    &__skeleton {
+      display: block;
+    }
+  }
 }
