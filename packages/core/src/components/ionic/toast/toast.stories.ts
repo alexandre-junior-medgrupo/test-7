@@ -24,9 +24,21 @@ const meta: Meta<Components.IonToast & TpIonToast & IonButton> = {
         },
       },
     },
+    icon: {
+      control: 'text',
+      description: 'Define o icon a ser exibido no componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'text',
+        },
+      },
+    },
     message: {
       control: 'text',
-      description: 'Define o texto a ser exibição no componente.',
+      description: 'Define o texto a ser exibido no componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -49,6 +61,11 @@ const meta: Meta<Components.IonToast & TpIonToast & IonButton> = {
       },
     },
   },
+  args: {
+    duration: 3000,
+    message: 'Lorem ipsum, dolor sit amet',
+    icon: './icons/tp-star.svg',
+  },
 };
 
 export default meta;
@@ -60,8 +77,8 @@ export const Default: Story = {
     <ion-button id="open-toast">Toast</ion-button>
     <ion-toast
       trigger="open-toast"
-      icon="./icons/tp-star.svg"
-      message="Lorem ipsum, dolor sit amet"
+      icon="${args.icon}"
+      message="${args.message}"
       color="${args.color}"
       duration="${args.duration}"
       ?warning="${args.warning}"
