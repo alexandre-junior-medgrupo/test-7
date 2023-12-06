@@ -14,7 +14,10 @@ const meta: Meta<Components.IonToast & TpIonToast & IonButton> = {
   argTypes: {
     warning: {
       control: 'boolean',
-      description: 'Define o estado warning do componente.',
+      description: `Define o estado warning do componente.
+
+      **OBS**: Atributo criado para atender a necessidade do DS**.
+      `,
       table: {
         defaultValue: {
           summary: 'undefined',
