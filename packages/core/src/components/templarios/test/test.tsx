@@ -1,6 +1,6 @@
 import { Component, Host, Prop, State, getAssetPath, h } from '@stencil/core';
-import { createColorClasses } from '@utils/functions/color.function';
-import type { TpColor } from '@utils/types/color.type';
+import { createColorClasses } from '../../../utils/functions/color.function';
+import type { TpColor } from '../../../utils/types/color.type';
 
 @Component({
   tag: 'tp-test',

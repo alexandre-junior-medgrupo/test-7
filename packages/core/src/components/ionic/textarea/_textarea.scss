@@ -26,6 +26,34 @@ ion-textarea {
   .textarea-highlight.sc-ion-textarea-md {
     background: transparent;
   }
+
+  &.ion-invalid {
+    .textarea-wrapper {
+      border: 1px solid var(--tp-color-warning);
+    }
+
+    .textarea-bottom {
+      --border-width: initial;
+      --border-color: transparent;
+      --border-style: initial;
+
+      .error-text {
+        --highlight-color-invalid: var(--tp-color-warning);
+      }
+    }
+  }
+
+  &.ion-valid {
+    .textarea-wrapper {
+      border: 1px solid var(--tp-color-success);
+    }
+
+    .textarea-bottom {
+      --border-width: initial;
+      --border-color: transparent;
+      --border-style: initial;
+    }
+  }
 }
 
 //
