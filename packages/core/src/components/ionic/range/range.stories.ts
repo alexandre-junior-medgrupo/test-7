@@ -13,7 +13,7 @@ const meta: Meta<Components.IonRange & TpIonRange> = {
     secondary: {
       control: { type: 'select' },
       options: [...TP_ION_RANGE.secondary],
-      description: 'Define o tamanho do componente.',
+      description: 'Define a variação do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',

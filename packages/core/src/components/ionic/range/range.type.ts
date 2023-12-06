@@ -1,7 +1,7 @@
 import type { TpColor } from 'src/components';
-import type { TpIonRangeSecondary } from './range.enum';
+import type { TpIonRangeVariant } from './range.enum';
 
 export type TpIonRange = {
   color: `${TpColor}`;
-  secondary: `${TpIonRangeSecondary}`;
+  secondary: `${TpIonRangeVariant}`;
 };

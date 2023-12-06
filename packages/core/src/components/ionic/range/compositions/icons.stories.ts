@@ -13,7 +13,7 @@ const meta: Meta<Components.IonRange & TpIonRange> = {
     secondary: {
       control: { type: 'select' },
       options: [...TP_ION_RANGE.secondary],
-      description: 'Define o tamanho do componente.',
+      description: 'Define a variação do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -32,11 +32,7 @@ type Story = StoryObj<Components.IonRange & TpIonRange>;
 
 export const Icons: Story = {
   render: ({ ...args }) => html`
-    <ion-range
-      color="${args.color}"
-      ?secondary="${args.secondary}"
-      aria-label="volume"
-    >
+    <ion-range color="${args.color}" ?secondary="${args.secondary}">
       <ion-icon slot="start" src="./icons/tp-type-minus.svg"></ion-icon>
       <ion-icon slot="end" src="./icons/tp-type-plus.svg"></ion-icon>
     </ion-range>

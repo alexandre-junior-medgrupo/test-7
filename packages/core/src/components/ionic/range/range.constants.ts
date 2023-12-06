@@ -1,5 +1,5 @@
-import { TpIonRangeSecondary } from './range.enum';
+import { TpIonRangeVariant } from './range.enum';
 
 export const TP_ION_RANGE = {
-  secondary: Object.values(TpIonRangeSecondary),
+  secondary: Object.values(TpIonRangeVariant),
 };

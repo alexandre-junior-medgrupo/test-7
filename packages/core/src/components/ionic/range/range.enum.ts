@@ -1,3 +1,3 @@
-export enum TpIonRangeSecondary {
+export enum TpIonRangeVariant {
   Secondary = 'true',
 }
