@@ -8,12 +8,48 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
 export { TpColor } from "./utils/types/color.type";
 export namespace Components {
+    interface TpComparisonChartBar {
+        /**
+          * Define o preenchimento da coluna em porcentagem.
+         */
+        "barValue": number;
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define a altura máxima da coluna.
+         */
+        "containerHeight": number;
+        /**
+          * Define a estilização do estado disabled do componente.
+         */
+        "disabled": boolean;
+        /**
+          * Define se o componente terá um marcador.
+         */
+        "hasMarker": boolean;
+        /**
+          * Define a posição, em porcentagem, do marcador na coluna.
+         */
+        "markerValue": number;
+        /**
+          * Define se o componente não terá rótulo.
+         */
+        "noLabel": boolean;
+    }
     interface TpTest {
         "color"?: TpColor;
         "icon"?: string;
     }
 }
 declare global {
+    interface HTMLTpComparisonChartBarElement extends Components.TpComparisonChartBar, HTMLStencilElement {
+    }
+    var HTMLTpComparisonChartBarElement: {
+        prototype: HTMLTpComparisonChartBarElement;
+        new (): HTMLTpComparisonChartBarElement;
+    };
     interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
     }
     var HTMLTpTestElement: {
@@ -21,15 +57,47 @@ declare global {
         new (): HTMLTpTestElement;
     };
     interface HTMLElementTagNameMap {
+        "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
         "tp-test": HTMLTpTestElement;
     }
 }
 declare namespace LocalJSX {
+    interface TpComparisonChartBar {
+        /**
+          * Define o preenchimento da coluna em porcentagem.
+         */
+        "barValue"?: number;
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define a altura máxima da coluna.
+         */
+        "containerHeight"?: number;
+        /**
+          * Define a estilização do estado disabled do componente.
+         */
+        "disabled"?: boolean;
+        /**
+          * Define se o componente terá um marcador.
+         */
+        "hasMarker"?: boolean;
+        /**
+          * Define a posição, em porcentagem, do marcador na coluna.
+         */
+        "markerValue"?: number;
+        /**
+          * Define se o componente não terá rótulo.
+         */
+        "noLabel"?: boolean;
+    }
     interface TpTest {
         "color"?: TpColor;
         "icon"?: string;
     }
     interface IntrinsicElements {
+        "tp-comparison-chart-bar": TpComparisonChartBar;
         "tp-test": TpTest;
     }
 }
@@ -37,6 +105,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
             "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
     }
