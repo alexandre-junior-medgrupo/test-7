@@ -6,8 +6,32 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
+import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
+export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export namespace Components {
+    interface TpChartBar {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define a altura do componente.
+         */
+        "height": number;
+        /**
+          * Define se o componente irá apresentar rótulo ou não.
+         */
+        "noLabel": boolean;
+        /**
+          * Define o valor do preenchimento do componente.
+         */
+        "value": number;
+        /**
+          * Define a largura do componente.
+         */
+        "width": number;
+    }
     interface TpComparisonChartBar {
         /**
           * Define o preenchimento da coluna em porcentagem.
@@ -38,17 +62,50 @@ export namespace Components {
          */
         "noLabel": boolean;
     }
+    interface TpRateLike {
+        /**
+          * Define o status do componente.
+         */
+        "status"?: TpRateLikeType['status'];
+    }
     interface TpTest {
         "color"?: TpColor;
         "icon"?: string;
     }
 }
+export interface TpRateLikeCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLTpRateLikeElement;
+}
 declare global {
+    interface HTMLTpChartBarElement extends Components.TpChartBar, HTMLStencilElement {
+    }
+    var HTMLTpChartBarElement: {
+        prototype: HTMLTpChartBarElement;
+        new (): HTMLTpChartBarElement;
+    };
     interface HTMLTpComparisonChartBarElement extends Components.TpComparisonChartBar, HTMLStencilElement {
     }
     var HTMLTpComparisonChartBarElement: {
         prototype: HTMLTpComparisonChartBarElement;
         new (): HTMLTpComparisonChartBarElement;
+    };
+    interface HTMLTpRateLikeElementEventMap {
+        "tpChange": TpRateLikeType['status'];
+    }
+    interface HTMLTpRateLikeElement extends Components.TpRateLike, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLTpRateLikeElementEventMap>(type: K, listener: (this: HTMLTpRateLikeElement, ev: TpRateLikeCustomEvent<HTMLTpRateLikeElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLTpRateLikeElementEventMap>(type: K, listener: (this: HTMLTpRateLikeElement, ev: TpRateLikeCustomEvent<HTMLTpRateLikeElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLTpRateLikeElement: {
+        prototype: HTMLTpRateLikeElement;
+        new (): HTMLTpRateLikeElement;
     };
     interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
     }
@@ -57,11 +114,35 @@ declare global {
         new (): HTMLTpTestElement;
     };
     interface HTMLElementTagNameMap {
+        "tp-chart-bar": HTMLTpChartBarElement;
         "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
+        "tp-rate-like": HTMLTpRateLikeElement;
         "tp-test": HTMLTpTestElement;
     }
 }
 declare namespace LocalJSX {
+    interface TpChartBar {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define a altura do componente.
+         */
+        "height"?: number;
+        /**
+          * Define se o componente irá apresentar rótulo ou não.
+         */
+        "noLabel"?: boolean;
+        /**
+          * Define o valor do preenchimento do componente.
+         */
+        "value"?: number;
+        /**
+          * Define a largura do componente.
+         */
+        "width"?: number;
+    }
     interface TpComparisonChartBar {
         /**
           * Define o preenchimento da coluna em porcentagem.
@@ -92,12 +173,24 @@ declare namespace LocalJSX {
          */
         "noLabel"?: boolean;
     }
+    interface TpRateLike {
+        /**
+          * Emitido quando a propriedade status é alterada.
+         */
+        "onTpChange"?: (event: TpRateLikeCustomEvent<TpRateLikeType['status']>) => void;
+        /**
+          * Define o status do componente.
+         */
+        "status"?: TpRateLikeType['status'];
+    }
     interface TpTest {
         "color"?: TpColor;
         "icon"?: string;
     }
     interface IntrinsicElements {
+        "tp-chart-bar": TpChartBar;
         "tp-comparison-chart-bar": TpComparisonChartBar;
+        "tp-rate-like": TpRateLike;
         "tp-test": TpTest;
     }
 }
@@ -105,7 +198,9 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
             "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
+            "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
             "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
     }
