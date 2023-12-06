@@ -1,23 +1,32 @@
 @use 'sass:map';
 
 $tp-button-sizes: (
-  xxs: (properties: (padding-top: 4px,
+  xxs: (
+    properties: (
+      padding-top: 4px,
       padding-bottom: 4px,
       padding-start: 12px,
       padding-end: 12px,
-      font-size: 14px),
+      font-size: 14px,
+    ),
   ),
-  xs: (properties: (padding-top: 8px,
+  xs: (
+    properties: (
+      padding-top: 8px,
       padding-bottom: 8px,
       padding-start: 12px,
       padding-end: 12px,
-      font-size: 14px),
+      font-size: 14px,
+    ),
   ),
-  sm: (properties: (padding-top: 12px,
+  sm: (
+    properties: (
+      padding-top: 12px,
       padding-bottom: 12px,
       padding-start: 16px,
       padding-end: 16px,
-      font-size: 14px),
+      font-size: 14px,
+    ),
   ),
 );
 
@@ -80,14 +89,11 @@ ion-button.button-clear.ion-color:hover {
 // sizes
 //
 ion-button {
-
-  @each $size-name,
-  $size-value in $tp-button-sizes {
+  @each $size-name, $size-value in $tp-button-sizes {
     &.button-#{$size-name}.button-clear {
       $properties-map: map.get($size-value, properties);
 
-      @each $properties-name,
-      $properties-value in $properties-map {
+      @each $properties-name, $properties-value in $properties-map {
         --#{$properties-name}: #{$properties-value};
       }
     }
