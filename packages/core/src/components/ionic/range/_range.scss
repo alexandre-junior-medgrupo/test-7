@@ -4,6 +4,9 @@ ion-range {
   --knob-background: var(--bar-background-active);
   --bar-height: 2px;
   --knob-size: 12px;
+  --tp-ticks-background-active: var(--bar-background-active);
+  --tp-ticks-background: var(--bar-background-active);
+  --tp-bar-background-ticks: var(--tp-color-neutral-15);
 
   &::part(knob) {
     transform: initial;
@@ -27,15 +30,13 @@ ion-range[secondary] {
 // ticks = true
 //
 ion-range[ticks] {
-  --bar-background: var(--tp-color-neutral-7);
-
   &::part(tick-active) {
-    background-color: var(--tp-color-neutral-10);
+    background-color: var(--tp-ticks-background-active);
     border-radius: 50%;
   }
 
   &::part(tick) {
-    background-color: var(--tp-color-neutral-10);
+    background-color: var(--tp-ticks-background);
     border-radius: 50%;
   }
 }
