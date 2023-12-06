@@ -9,6 +9,7 @@ ion-button {
   --padding-end: 32px;
   --font-size: 16px;
   --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+
   font-weight: 600;
   font-size: var(--font-size);
   line-height: 16px;
@@ -30,7 +31,6 @@ ion-button.button-disabled {
     --stroke: var(--tp-color-neutral-5);
   }
 }
-
 
 //
 // color
