@@ -51,13 +51,17 @@ const meta: Meta<Components.IonChip & TpIonChip> = {
       control: { type: 'text' },
       table: {
         defaultValue: {
-          summary: 'Chip',
+          summary: 'undefined',
         },
         type: {
           summary: 'string',
         },
       },
     },
+  },
+  args: {
+    active: true,
+    slot: 'Chip',
   },
 };
 
@@ -68,46 +72,42 @@ type Story = StoryObj<Components.IonChip & TpIonChip>;
 export const Default: Story = {
   render: ({ ...args }) => html`
     <ion-chip
-      outline
+      ?outline="${args.active}"
       size="${args.size}"
       color="${args.color}"
       ?disabled="${args.disabled}"
-      ?active="${args.active}"
     >
-      <ion-label>${args.slot ? args.slot : 'Chip'}</ion-label>
+      <ion-label>${args.slot}</ion-label>
     </ion-chip>
 
     <ion-chip
-      outline
+      ?outline="${args.active}"
       size="${args.size}"
       color="${args.color}"
       ?disabled="${args.disabled}"
-      ?active="${args.active}"
     >
       <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
-      <ion-label>${args.slot ? args.slot : 'Chip'}</ion-label>
+      <ion-label>${args.slot}</ion-label>
     </ion-chip>
 
     <ion-chip
-      outline
+      ?outline="${args.active}"
       size="${args.size}"
       color="${args.color}"
       ?disabled="${args.disabled}"
-      ?active="${args.active}"
     >
-      <ion-label>${args.slot ? args.slot : 'Chip'}</ion-label>
+      <ion-label>${args.slot}</ion-label>
       <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
     </ion-chip>
 
     <ion-chip
-      outline
+      ?outline="${args.active}"
       size="${args.size}"
       color="${args.color}"
       ?disabled="${args.disabled}"
-      ?active="${args.active}"
     >
       <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
-      <ion-label>${args.slot ? args.slot : 'Chip'}</ion-label>
+      <ion-label>${args.slot}</ion-label>
       <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
     </ion-chip>
   `,

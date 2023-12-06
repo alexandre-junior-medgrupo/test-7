@@ -24,31 +24,23 @@ $tp-chip-sizes: (
 );
 
 ion-chip {
-  // TODO usar outline??
-
-  // --background: transparent;
-  // --color: var(--tp-color-brand-3);
-
-  // TODO remover margin??
+  --background: var(--tp-color-brand-3);
   margin: 0;
   padding-top: 4px;
   padding-bottom: 4px;
-
-  // border: 1px solid var(--tp-color-neutral-25);
-  border-color: var(--tp-color-neutral-25);
+  border: 1px solid var(--tp-color-brand-3);
   border-radius: 50px;
 
   ion-label {
     padding: 4px 2px;
-    color: var(--tp-color-brand-4);
+    color: var(--tp-color-neutral-10);
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
   }
 
   ion-icon {
-    --stroke: var(--tp-color-brand-4);
-    // TODO  o ionic colocar margins no icon dentro do chip
+    --stroke: var(--tp-color-neutral-10);
     margin-top: 0;
     margin-bottom: 0;
     margin-inline: 0;
@@ -56,23 +48,40 @@ ion-chip {
 }
 
 //
-// hover & activated & active
+// versão default é o outline
 //
-ion-chip:hover,
-ion-chip.ion-activated,
-ion-chip[active] {
-  background: var(--tp-color-brand-3);
-  // border: 1px solid var(--tp-color-brand-3);
-  border-color: var(--tp-color-brand-3);
+ion-chip.chip-outline {
+  border-color: var(--tp-color-neutral-25);
 
   ion-label {
-    color: var(--tp-color-neutral-10);
+    color: var(--tp-color-brand-4);
   }
 
   ion-icon {
-    --stroke: var(--tp-color-neutral-10);
+    --stroke: var(--tp-color-brand-4);
   }
 }
+
+//
+// hover & activated
+//
+ion-chip.chip-outline:hover {
+  background: transparent;
+}
+
+// ion-chip:hover,
+// ion-chip.ion-activated {
+//   background: var(--tp-color-brand-3);
+//   border-color: var(--tp-color-brand-3);
+
+//   ion-label {
+//     color: var(--tp-color-neutral-10);
+//   }
+
+//   ion-icon {
+//     --stroke: var(--tp-color-neutral-10);
+//   }
+// }
 
 //
 // size
@@ -103,27 +112,42 @@ ion-chip {
 //
 // color
 //
-ion-chip.ion-color {
+ion-chip.ion-color:not(.chip-outline) {
+  // --background: var(--ion-color-base);
+  background: var(--ion-color-base);
+  border: 1px solid var(--ion-color-base);
+
+  ion-label {
+    color: var(--ion-color-contrast);
+  }
+
+  ion-icon {
+    --stroke: var(--ion-color-contrast);
+  }
+
+  // &:hover,
+  // &.ion-activated {
+  //   background: var(--ion-color-base);
+  //   border-color: var(--ion-color-base);
+
+  //   ion-label {
+  //     color: var(--ion-color-contrast);
+  //   }
+
+  //   ion-icon {
+  //     --stroke: var(--ion-color-contrast);
+  //   }
+  // }
+}
+
+ion-chip.ion-color.chip-outline {
+  border-color: var(--tp-color-neutral-25);
+
   ion-label {
     color: var(--ion-color-base);
   }
 
   ion-icon {
     --stroke: var(--ion-color-base);
-  }
-
-  &:hover,
-  &.ion-activated,
-  &[active] {
-    background: var(--ion-color-base);
-    border-color: var(--ion-color-base);
-
-    ion-label {
-      color: var(--ion-color-contrast);
-    }
-
-    ion-icon {
-      --stroke: var(--ion-color-contrast);
-    }
   }
 }
