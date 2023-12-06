@@ -13,7 +13,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 import { html } from "lit";
 import { TP_ICONS_STORYBOOK } from "../../../utils/constants/icon.constant";
 const meta = {
-  component: 'tp-test',
+  title: 'components/Templarios/Test',
   tags: ['autodocs'],
   argTypes: {
     icon: {

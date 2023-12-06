@@ -239,7 +239,7 @@
   .#{$namespace}-color-#{$name},
   [tp-color='#{$name}'] {
     --#{$namespace}-color-base: var(--tp-color-#{$name}) !important;
-    --#{$namespace}-color-base-rgb: var(--tp-color-base-rgb) !important;
+    --#{$namespace}-color-base-rgb: var(--tp-color-#{$name}-rgb) !important;
     --#{$namespace}-color-contrast: var(--tp-color-contrast-fixed) !important;
     --#{$namespace}-color-contrast-rgb: var(
       --tp-color-contrast-fixed-rgb
