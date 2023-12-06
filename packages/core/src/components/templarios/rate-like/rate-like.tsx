@@ -1,5 +1,3 @@
-/* eslint-disable @stencil-community/strict-boolean-conditions */
-/* eslint-disable react/jsx-no-bind */
 import {
   Component,
   Event,
@@ -10,7 +8,7 @@ import {
   getAssetPath,
 } from '@stencil/core';
 import { TpRateLikeStatus } from './rate-like.enum';
-import { TpRateLikeType } from './rate-like.type';
+import { TpRateLike as TpRateLikeType } from './rate-like.type';
 
 @Component({
   tag: 'tp-rate-like',
@@ -28,7 +26,7 @@ export class TpRateLike {
   @Prop({ reflect: true, mutable: true }) status?: TpRateLikeType['status'];
 
   /**
-   * Emitido quando a propriedade status foi alterada.
+   * Emitido quando a propriedade status é alterada.
    */
   @Event() tpChange!: EventEmitter<TpRateLikeType['status']>;
 
@@ -56,7 +54,6 @@ export class TpRateLike {
             ${status ? 'tp-rate-like__button--disabled' : ''}
           `}
           onClick={() => this.onClick(TpRateLikeStatus.LIKE)}
-          id="button-like"
         >
           <ion-icon
             class="tp-rate-like__icon"

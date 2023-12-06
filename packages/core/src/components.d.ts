@@ -57,7 +57,7 @@ declare global {
 declare namespace LocalJSX {
     interface TpRateLike {
         /**
-          * Emitido quando a propriedade status foi alterada.
+          * Emitido quando a propriedade status é alterada.
          */
         "onTpChange"?: (event: TpRateLikeCustomEvent<TpRateLikeType['status']>) => void;
         /**

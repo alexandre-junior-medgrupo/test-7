@@ -1,18 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
-// import { withActions } from '@storybook/addon-actions/decorator';
+import { withActions } from '@storybook/addon-actions/decorator';
 import { html } from 'lit';
 import { TP_RATE_LIKE } from './rate-like.constant';
 
 const meta: Meta = {
   component: 'TpRateLike',
+  title: 'components/Templarios/Rate like',
+  decorators: [withActions as any],
   parameters: {
     actions: {
       handles: ['tpChange'],
     },
   },
-  // TODO está dando erro!!!!!
-  // decorators: [withActions],
-  title: 'components/Templarios/Rate like',
   argTypes: {
     status: {
       control: 'radio',
