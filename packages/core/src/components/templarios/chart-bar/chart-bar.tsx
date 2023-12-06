@@ -43,6 +43,7 @@ export class TpChartBar {
       <Host
         class={createColorClasses(color, {
           'tp-chart-bar': true,
+          'tp-chart-bar--no-label': noLabel,
         })}
         style={{
           '--value': `${percentage}`,

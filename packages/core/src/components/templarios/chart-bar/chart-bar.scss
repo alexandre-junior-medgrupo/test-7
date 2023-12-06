@@ -36,23 +36,13 @@
     background: var(--tp-color-brand-4);
     border-radius: 2px;
     animation: load-chart-bar forwards 400ms ease-in-out;
-
-    @keyframes load-chart-bar {
-      0% {
-        transform: translateY(calc(var(--height) * 1px));
-      }
-
-      100% {
-        transform: translateY(calc(var(--height) * 1px - var(--value) * 1px));
-      }
-    }
   }
 }
 
 //
 // no-label
 //
-:host(.tp-chart-bar[no-label]) {
+:host(.tp-chart-bar--no-label) {
   background: var(--tp-color-neutral-2);
 }
 
@@ -61,4 +51,17 @@
 //
 :host(.tp-color) .tp-chart-bar__progress {
   background: var(--tp-color-base);
+}
+
+//
+// animations
+//
+@keyframes load-chart-bar {
+  0% {
+    transform: translateY(calc(var(--height) * 1px));
+  }
+
+  100% {
+    transform: translateY(calc(var(--height) * 1px - var(--value) * 1px));
+  }
 }
