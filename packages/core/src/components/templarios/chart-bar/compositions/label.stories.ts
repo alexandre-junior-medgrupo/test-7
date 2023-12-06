@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpChartBar } from './chart-bar';
+import { TpChartBar } from '../chart-bar';
 
 // antigo med-chart-bar
 
 const meta: Meta<TpChartBar> = {
-  title: 'components/Templarios/Chart-bar',
+  title: 'components/Templarios/Chart-bar/Compositions',
   argTypes: {
     value: {
       control: { type: 'range', min: 0, max: 100, step: 1 },
@@ -55,15 +55,15 @@ export default meta;
 
 type Story = StoryObj<TpChartBar>;
 
-export const Default: Story = {
+export const Label: Story = {
   render: ({ ...args }) => html`
     <tp-chart-bar
       color="${args.color}"
       value="${args.value}"
       width="${args.width}"
       height="${args.height}"
-      no-label
     >
+      <ion-label tp-type="p12b"> ${args.value}% </ion-label>
     </tp-chart-bar>
   `,
   /* play: async ({ canvasElement }) => {
