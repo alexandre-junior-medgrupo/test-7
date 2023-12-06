@@ -1792,6 +1792,86 @@ ion-chip.ion-color.ion-activated, ion-chip.ion-color:hover:not([disabled]) {
   border-color: var(--ion-color-base);
 }
 
+ion-input.sc-ion-input-md-h {
+  --background: var(--tp-color-neutral-2);
+  --border-radius: 8px;
+  --color: var(--tp-color-neutral-10);
+  --highlight-color-focused: var(--tp-color-neutral-10);
+  --padding-bottom: 8px;
+  --padding-end: 8px;
+  --padding-start: 16px;
+  --padding-top: 8px;
+  --placeholder-color: var(--tp-color-neutral-4);
+}
+
+ion-input.sc-ion-input-md-h {
+  height: 40px;
+  min-height: unset !important;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+ion-input.sc-ion-input-md-h .input-wrapper {
+  border: 1px solid transparent;
+}
+ion-input.sc-ion-input-md-h .input-highlight {
+  background: transparent;
+}
+ion-input.sc-ion-input-md-h .input-clear-icon {
+  align-items: initial;
+}
+ion-input.sc-ion-input-md-h .input-clear-icon ion-icon.sc-ion-input-md {
+  width: 24px;
+  height: 24px;
+  fill: var(--tp-color-neutral-6);
+}
+
+ion-input:hover:not([disabled]) {
+  --background: var(--tp-color-neutral-3);
+}
+
+ion-input.has-focus .input-wrapper {
+  border: 1px solid var(--tp-color-neutral-3);
+}
+
+ion-input.sc-ion-input-md-h.input-disabled {
+  opacity: 0.5;
+}
+
+ion-input.ion-color {
+  --background: var(--ion-color-base);
+  --color: var(--ion-color-contrast);
+  --highlight-color-focused: var(--ion-color-contrast) !important;
+  --placeholder-color: var(--ion-color-contrast);
+}
+ion-input.ion-color:hover:not([disabled]) {
+  --background: var(--ion-color-tint);
+}
+ion-input.ion-color.has-focus .input-wrapper {
+  border: 1px solid var(--ion-color-tint);
+}
+
+ion-input.ion-invalid .input-wrapper {
+  border: 1px solid var(--tp-color-warning);
+}
+ion-input.ion-invalid .input-bottom {
+  --border-width: initial;
+  --border-color: transparent;
+  --border-style: initial;
+}
+ion-input.ion-invalid .input-bottom .error-text {
+  --highlight-color-invalid: var(--tp-color-warning);
+}
+
+ion-input.ion-valid .input-wrapper {
+  border: 1px solid var(--tp-color-success);
+}
+ion-input.ion-valid .input-bottom {
+  --border-width: initial;
+  --border-color: transparent;
+  --border-style: initial;
+}
+
 ion-item {
   --color: var(--tp-color-neutral-10);
   --border-color: transparent;
@@ -2068,6 +2148,13 @@ ion-item.ion-color ion-toggle {
   --track-background-checked: var(--ion-color-contrast);
 }
 
+ion-item ion-input {
+  --padding-start: 8px !important;
+}
+ion-item .tp-input-container {
+  width: 100%;
+}
+
 ion-label {
   margin: 0;
   padding: 0;
@@ -2173,6 +2260,12 @@ ion-searchbar .searchbar-search-icon.sc-ion-searchbar-md {
   width: 24px;
   height: 24px;
 }
+ion-searchbar.ion-invalid .searchbar-input {
+  border: 1px solid var(--tp-color-warning);
+}
+ion-searchbar.ion-valid .searchbar-input {
+  border: 1px solid var(--tp-color-success);
+}
 
 ion-searchbar.ion-color {
   --background: var(--ion-color-base);
@@ -2225,6 +2318,25 @@ ion-textarea .native-textarea::-webkit-scrollbar {
 }
 ion-textarea .textarea-highlight.sc-ion-textarea-md {
   background: transparent;
+}
+ion-textarea.ion-invalid .textarea-wrapper {
+  border: 1px solid var(--tp-color-warning);
+}
+ion-textarea.ion-invalid .textarea-bottom {
+  --border-width: initial;
+  --border-color: transparent;
+  --border-style: initial;
+}
+ion-textarea.ion-invalid .textarea-bottom .error-text {
+  --highlight-color-invalid: var(--tp-color-warning);
+}
+ion-textarea.ion-valid .textarea-wrapper {
+  border: 1px solid var(--tp-color-success);
+}
+ion-textarea.ion-valid .textarea-bottom {
+  --border-width: initial;
+  --border-color: transparent;
+  --border-style: initial;
 }
 
 ion-textarea:hover:not([disabled]) {
