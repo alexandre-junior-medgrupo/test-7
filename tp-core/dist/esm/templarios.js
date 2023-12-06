@@ -2,7 +2,7 @@ import { p as promiseResolve, b as bootstrapLazy } from './index-5c8b9bd4.js';
 export { s as setNonce } from './index-5c8b9bd4.js';
 
 /*
- Stencil Client Patch Browser v4.4.1 | MIT Licensed | https://stenciljs.com
+ Stencil Client Patch Browser v4.7.1 | MIT Licensed | https://stenciljs.com
  */
 const patchBrowser = () => {
     const importMeta = import.meta.url;
