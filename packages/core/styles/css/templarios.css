@@ -1546,6 +1546,23 @@ ion-button {
   --padding-bottom: 16px;
   --padding-start: 32px;
   --padding-end: 32px;
+  --font-size: 16px;
+  --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+  font-weight: 600;
+  font-size: var(--font-size);
+  line-height: 16px;
+}
+ion-button ion-icon {
+  font-size: 16px;
+}
+
+ion-button.button-disabled {
+  --background: var(--tp-color-neutral-3);
+  --color: var(--tp-color-neutral-5);
+  opacity: initial;
+}
+ion-button.button-disabled ion-icon {
+  --stroke: var(--tp-color-neutral-5);
 }
 
 ion-button.ion-color {
@@ -1554,9 +1571,17 @@ ion-button.ion-color {
   --background-hover: var(--ion-color-shade);
   --background-focused: var(--ion-color-tint);
   --background-activated: var(--ion-color-shade);
+  --ripple-color: rgba(var(--ion-color-contrast-rgb), 0.5);
 }
 ion-button.ion-color ion-icon {
   --stroke: var(--color);
+}
+ion-button.ion-color.button-disabled {
+  --ion-color-base: var(--tp-color-neutral-3) !important;
+  --ion-color-contrast: var(--tp-color-neutral-5) !important;
+}
+ion-button.ion-color.button-disabled ion-icon {
+  --stroke: var(--tp-color-neutral-5);
 }
 
 ion-button.button-sm {
@@ -1568,6 +1593,7 @@ ion-button.button-xs {
   --padding-bottom: 8px;
   --padding-start: 24px;
   --padding-end: 24px;
+  --font-size: 14px;
 }
 
 ion-button.button-outline {
@@ -1578,8 +1604,16 @@ ion-button.button-outline {
   --background-hover-opacity: 0;
 }
 
+ion-button.button-outline.button-disabled {
+  --border-color: var(--tp-color-neutral-3);
+  --color: var(--tp-color-neutral-5);
+}
+
 ion-button.button-outline.ion-color ion-icon {
   --stroke: var(--ion-color-base);
+}
+ion-button.button-outline.ion-color.button-disabled {
+  --ion-color-base: var(--tp-color-neutral-5) !important;
 }
 
 ion-button.button-clear {
@@ -1587,6 +1621,7 @@ ion-button.button-clear {
   --background-hover-opacity: 0;
   --color: var(--tp-color-neutral-10);
   --color-hover: var(--tp-color-brand-3);
+  --color-activated: var(--tp-color-brand-3);
   --background-hover: transparent;
   --padding-top: 16px;
   --padding-bottom: 16px;
@@ -1594,17 +1629,28 @@ ion-button.button-clear {
   --padding-end: 16px;
 }
 ion-button.button-clear ion-icon {
-  --stroke: var(--color-hover);
+  --stroke: var(--tp-color-neutral-10);
 }
-ion-button.button-clear:not(:hover) ion-icon {
-  --stroke: var(--color);
+ion-button.button-clear:hover ion-icon {
+  --stroke: var(--tp-color-brand-3);
+}
+
+ion-button.button-clear.button-disabled {
+  --color: var(--tp-color-neutral-5);
+}
+ion-button.button-clear.button-disabled ion-icon {
+  --stroke: var(--tp-color-neutral-5);
 }
 
 ion-button.button-clear.ion-color:not(:hover) {
   --ion-color-base: var(--tp-color-neutral-10) !important;
 }
-ion-button.button-clear.ion-color:not(:hover) ion-icon {
-  --stroke: var(--ion-color-base);
+ion-button.button-clear.ion-color:not(:hover).button-disabled {
+  --ion-color-base: var(--tp-color-neutral-5) !important;
+}
+
+ion-button.button-clear.ion-color:hover ion-icon {
+  --stroke: var(--ion-color-base) !important;
 }
 
 ion-button.button-xxs.button-clear {
@@ -1612,18 +1658,21 @@ ion-button.button-xxs.button-clear {
   --padding-bottom: 4px;
   --padding-start: 12px;
   --padding-end: 12px;
+  --font-size: 14px;
 }
 ion-button.button-xs.button-clear {
   --padding-top: 8px;
   --padding-bottom: 8px;
   --padding-start: 12px;
   --padding-end: 12px;
+  --font-size: 14px;
 }
 ion-button.button-sm.button-clear {
   --padding-top: 12px;
   --padding-bottom: 12px;
   --padding-start: 16px;
   --padding-end: 16px;
+  --font-size: 14px;
 }
 
 ion-button.button-clear.button-has-icon-only {
@@ -1643,37 +1692,45 @@ ion-button.button-clear.button-has-icon-only ion-icon {
   font-size: 32px;
 }
 
-ion-button.button-xxs {
+ion-button.button-clear.button-has-icon-only.button-disabled ion-icon {
+  --stroke: var(--tp-color-neutral-5);
+  opacity: 0.5;
+}
+ion-button.button-clear.button-has-icon-only.button-disabled ion-icon.ion-color {
+  --ion-color-base: var(--tp-color-neutral-5) !important;
+}
+
+ion-button.button-has-icon-only.button-xxs {
   --padding-top: 0;
   --padding-bottom: 0;
   --padding-start: 0;
   --padding-end: 0;
 }
-ion-button.button-xxs ion-icon {
+ion-button.button-has-icon-only.button-xxs ion-icon {
   font-size: 16px;
 }
-ion-button.button-xs {
+ion-button.button-has-icon-only.button-xs {
   --padding-top: 4px;
   --padding-bottom: 4px;
   --padding-start: 4px;
   --padding-end: 4px;
 }
-ion-button.button-xs ion-icon {
+ion-button.button-has-icon-only.button-xs ion-icon {
   font-size: 16px;
 }
-ion-button.button-sm ion-icon {
+ion-button.button-has-icon-only.button-sm ion-icon {
   font-size: 24px;
 }
-ion-button.button-s {
+ion-button.button-has-icon-only.button-s {
   --padding-top: 4px;
   --padding-bottom: 4px;
   --padding-start: 4px;
   --padding-end: 4px;
 }
-ion-button.button-s ion-icon {
+ion-button.button-has-icon-only.button-s ion-icon {
   font-size: 24px;
 }
-ion-button.button-lg ion-icon {
+ion-button.button-has-icon-only.button-lg ion-icon {
   font-size: 48px;
 }
 

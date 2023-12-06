@@ -7,6 +7,7 @@ $tp-button-sizes: (
       padding-bottom: 4px,
       padding-start: 12px,
       padding-end: 12px,
+      font-size: 14px,
     ),
   ),
   xs: (
@@ -15,6 +16,7 @@ $tp-button-sizes: (
       padding-bottom: 8px,
       padding-start: 12px,
       padding-end: 12px,
+      font-size: 14px,
     ),
   ),
   sm: (
@@ -23,6 +25,7 @@ $tp-button-sizes: (
       padding-bottom: 12px,
       padding-start: 16px,
       padding-end: 16px,
+      font-size: 14px,
     ),
   ),
 );
@@ -33,6 +36,7 @@ ion-button {
     --background-hover-opacity: 0;
     --color: var(--tp-color-neutral-10);
     --color-hover: var(--tp-color-brand-3);
+    --color-activated: var(--tp-color-brand-3);
     --background-hover: transparent;
     --padding-top: 16px;
     --padding-bottom: 16px;
@@ -40,14 +44,25 @@ ion-button {
     --padding-end: 16px;
 
     ion-icon {
-      --stroke: var(--color-hover);
+      --stroke: var(--tp-color-neutral-10);
     }
 
-    &:not(:hover) {
+    &:hover {
       ion-icon {
-        --stroke: var(--color);
+        --stroke: var(--tp-color-brand-3);
       }
     }
+  }
+}
+
+//
+// disabled
+//
+ion-button.button-clear.button-disabled {
+  --color: var(--tp-color-neutral-5);
+
+  ion-icon {
+    --stroke: var(--tp-color-neutral-5);
   }
 }
 
@@ -58,9 +73,15 @@ ion-button {
   &.button-clear.ion-color:not(:hover) {
     --ion-color-base: var(--tp-color-neutral-10) !important;
 
-    ion-icon {
-      --stroke: var(--ion-color-base);
+    &.button-disabled {
+      --ion-color-base: var(--tp-color-neutral-5) !important;
     }
+  }
+}
+
+ion-button.button-clear.ion-color:hover {
+  ion-icon {
+    --stroke: var(--ion-color-base) !important;
   }
 }
 
