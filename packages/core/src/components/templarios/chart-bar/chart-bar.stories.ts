@@ -43,6 +43,18 @@ const meta: Meta<TpChartBar> = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado loading do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
   args: {
     value: 0,
@@ -63,6 +75,7 @@ export const Default: Story = {
       width="${args.width}"
       height="${args.height}"
       no-label
+      ?loading="${args.loading}"
     >
     </tp-chart-bar>
   `,

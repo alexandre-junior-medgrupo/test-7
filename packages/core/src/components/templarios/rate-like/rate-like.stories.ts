@@ -28,7 +28,7 @@ const meta: Meta = {
     },
     loading: {
       control: 'boolean',
-      description: 'Define a estilização do estado disabled do componente.',
+      description: 'Define a estilização do estado loading do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',

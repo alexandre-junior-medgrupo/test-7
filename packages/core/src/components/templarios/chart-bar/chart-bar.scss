@@ -37,6 +37,12 @@
     border-radius: 2px;
     animation: load-chart-bar forwards 400ms ease-in-out;
   }
+
+  &__skeleton {
+    --tp-height: calc(var(--height) * 1px);
+    --tp-width: calc(var(--width) * 1px);
+    display: none;
+  }
 }
 
 //
@@ -44,6 +50,21 @@
 //
 :host(.tp-chart-bar--no-label) {
   background: var(--tp-color-neutral-2);
+}
+
+//
+// loading
+//
+:host(.tp-chart-bar--loading) {
+  .tp-chart-bar {
+    &__container {
+      display: none;
+    }
+
+    &__skeleton {
+      display: block;
+    }
+  }
 }
 
 //
