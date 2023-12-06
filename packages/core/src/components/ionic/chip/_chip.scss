@@ -25,6 +25,8 @@ $tp-chip-sizes: (
 
 ion-chip {
   --background: var(--tp-color-brand-3);
+  // color do ripple effect
+  --color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   margin: 0;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -74,23 +76,6 @@ ion-chip.chip-outline:hover {
   background: transparent;
 }
 
-// --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
-// --background-hover: var(--ion-color-shade);
-
-// ion-chip:hover,
-// ion-chip.ion-activated {
-//   background: var(--tp-color-brand-3);
-//   border-color: var(--tp-color-brand-3);
-
-//   ion-label {
-//     color: var(--tp-color-neutral-10);
-//   }
-
-//   ion-icon {
-//     --stroke: var(--tp-color-neutral-10);
-//   }
-// }
-
 //
 // size
 //
@@ -121,7 +106,8 @@ ion-chip {
 // color
 //
 ion-chip.ion-color:not(.chip-outline) {
-  // --background: var(--ion-color-base);
+  // color do ripple effect
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   background: var(--ion-color-base);
   border: 1px solid var(--ion-color-base);
 
@@ -137,23 +123,11 @@ ion-chip.ion-color:not(.chip-outline) {
     background: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
     border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
   }
-
-  // &:hover,
-  // &.ion-activated {
-  //   background: var(--ion-color-base);
-  //   border-color: var(--ion-color-base);
-
-  //   ion-label {
-  //     color: var(--ion-color-contrast);
-  //   }
-
-  //   ion-icon {
-  //     --stroke: var(--ion-color-contrast);
-  //   }
-  // }
 }
 
 ion-chip.ion-color.chip-outline {
+  // color do ripple effect
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   border-color: var(--tp-color-neutral-25);
 
   ion-label {

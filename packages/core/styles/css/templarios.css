@@ -1769,6 +1769,7 @@ ion-checkbox.ion-color:hover {
 
 ion-chip {
   --background: var(--tp-color-brand-3);
+  --color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   margin: 0;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1826,6 +1827,7 @@ ion-chip[size=lg] ion-label {
 }
 
 ion-chip.ion-color:not(.chip-outline) {
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   background: var(--ion-color-base);
   border: 1px solid var(--ion-color-base);
 }
@@ -1841,6 +1843,7 @@ ion-chip.ion-color:not(.chip-outline):hover {
 }
 
 ion-chip.ion-color.chip-outline {
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   border-color: var(--tp-color-neutral-25);
 }
 ion-chip.ion-color.chip-outline ion-label {
