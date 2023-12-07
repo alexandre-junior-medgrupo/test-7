@@ -43,6 +43,18 @@ const meta: Meta<TpChartBar> = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado loading do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
   args: {
     value: 0,
@@ -62,6 +74,7 @@ export const Label: Story = {
       value="${args.value}"
       width="${args.width}"
       height="${args.height}"
+      ?loading="${args.loading}"
     >
       <ion-label tp-type="p12b"> ${args.value}% </ion-label>
     </tp-chart-bar>
