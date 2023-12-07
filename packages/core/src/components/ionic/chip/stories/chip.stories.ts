@@ -3,8 +3,8 @@ import { defineCustomElement as defineCustomElementChip } from '@ionic/core/comp
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonChip } from '../utils/chip.type';
 import { TP_ION_CHIP } from '../utils/chip.constants';
+import { TpIonChip } from '../utils/chip.type';
 
 defineCustomElementChip();
 defineCustomElementLabel();
