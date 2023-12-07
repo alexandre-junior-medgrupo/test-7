@@ -9,7 +9,8 @@ $tp-button-sizes: (
       padding-end: 0,
     ),
     rules: (
-      font-size: 16px,
+      width: 16px,
+      height: 16px,
     ),
   ),
   xs: (
@@ -20,12 +21,14 @@ $tp-button-sizes: (
       padding-end: 4px,
     ),
     rules: (
-      font-size: 16px,
+      width: 16px,
+      height: 16px,
     ),
   ),
   sm: (
     rules: (
-      font-size: 24px,
+      width: 24px,
+      height: 24px,
     ),
   ),
   s: (
@@ -36,12 +39,14 @@ $tp-button-sizes: (
       padding-end: 4px,
     ),
     rules: (
-      font-size: 24px,
+      width: 24px,
+      height: 24px,
     ),
   ),
   lg: (
     rules: (
-      font-size: 48px,
+      width: 48px,
+      height: 48px,
     ),
   ),
 );
@@ -57,13 +62,13 @@ ion-button {
     --background-activated-opacity: 0.16;
     --background: transparent;
     --color-hover: var(--tp-color-neutral-10);
-
+    height: initial;
     min-height: initial;
 
     ion-icon {
       --stroke: var(--tp-color-neutral-10);
-
-      font-size: 32px;
+      width: 32px;
+      height: 32px;
     }
   }
 }

@@ -1,244 +1,244 @@
 /* stylelint-disable selector-no-qualifying-type */
 :root {
-  --tp-color-neutral-1: #121616;
+  --tp-color-neutral-1: hsl(188, 10%, 8%);
   --tp-color-neutral-1-rgb: 18, 22, 22;
-  --tp-color-neutral-1-shade: #070808;
-  --tp-color-neutral-1-tint: #1e2424;
-  --tp-color-neutral-2: #293132;
+  --tp-color-neutral-1-shade: hsl(188, 10%, 3%);
+  --tp-color-neutral-1-tint: hsl(188, 10%, 13%);
+  --tp-color-neutral-2: hsl(188, 10%, 18%);
   --tp-color-neutral-2-rgb: 41, 49, 50;
-  --tp-color-neutral-2-shade: #1e2424;
-  --tp-color-neutral-2-tint: #353f41;
-  --tp-color-neutral-3: #404d4f;
+  --tp-color-neutral-2-shade: hsl(188, 10%, 13%);
+  --tp-color-neutral-2-tint: hsl(188, 10%, 23%);
+  --tp-color-neutral-3: hsl(188, 10%, 28%);
   --tp-color-neutral-3-rgb: 64, 77, 79;
-  --tp-color-neutral-3-shade: #353f41;
-  --tp-color-neutral-3-tint: #4c5a5d;
-  --tp-color-neutral-4: #57686b;
+  --tp-color-neutral-3-shade: hsl(188, 10%, 23%);
+  --tp-color-neutral-3-tint: hsl(188, 10%, 33%);
+  --tp-color-neutral-4: hsl(188, 10%, 38%);
   --tp-color-neutral-4-rgb: 87, 104, 107;
-  --tp-color-neutral-4-shade: #4c5a5d;
-  --tp-color-neutral-4-tint: #637679;
-  --tp-color-neutral-5: #6e8387;
+  --tp-color-neutral-4-shade: hsl(188, 10%, 33%);
+  --tp-color-neutral-4-tint: hsl(188, 10%, 43%);
+  --tp-color-neutral-5: hsl(188, 10%, 48%);
   --tp-color-neutral-5-rgb: 110, 131, 135;
-  --tp-color-neutral-5-shade: #637679;
-  --tp-color-neutral-5-tint: #7b9093;
-  --tp-color-neutral-6: #899c9f;
+  --tp-color-neutral-5-shade: hsl(188, 10%, 43%);
+  --tp-color-neutral-5-tint: hsl(188, 10%, 53%);
+  --tp-color-neutral-6: hsl(188, 10%, 58%);
   --tp-color-neutral-6-rgb: 137, 156, 159;
-  --tp-color-neutral-6-shade: #7b9093;
-  --tp-color-neutral-6-tint: #97a8aa;
-  --tp-color-neutral-7: #a5b3b6;
+  --tp-color-neutral-6-shade: hsl(188, 10%, 53%);
+  --tp-color-neutral-6-tint: hsl(188, 10%, 63%);
+  --tp-color-neutral-7: hsl(188, 10%, 68%);
   --tp-color-neutral-7-rgb: 165, 179, 182;
-  --tp-color-neutral-7-shade: #97a8aa;
-  --tp-color-neutral-7-tint: #b3bfc1;
-  --tp-color-neutral-8: #c1cbcd;
+  --tp-color-neutral-7-shade: hsl(188, 10%, 63%);
+  --tp-color-neutral-7-tint: hsl(188, 10%, 73%);
+  --tp-color-neutral-8: hsl(188, 10%, 78%);
   --tp-color-neutral-8-rgb: 193, 203, 205;
-  --tp-color-neutral-8-shade: #b3bfc1;
-  --tp-color-neutral-8-tint: #cfd7d8;
-  --tp-color-neutral-9: #dde3e3;
+  --tp-color-neutral-8-shade: hsl(188, 10%, 73%);
+  --tp-color-neutral-8-tint: hsl(188, 10%, 83%);
+  --tp-color-neutral-9: hsl(188, 10%, 88%);
   --tp-color-neutral-9-rgb: 221, 227, 227;
-  --tp-color-neutral-9-shade: #cfd7d8;
-  --tp-color-neutral-9-tint: #ebeeef;
-  --tp-color-neutral-10: #f9fafa;
+  --tp-color-neutral-9-shade: hsl(188, 10%, 83%);
+  --tp-color-neutral-9-tint: hsl(188, 10%, 93%);
+  --tp-color-neutral-10: hsl(188, 10%, 98%);
   --tp-color-neutral-10-rgb: 249, 250, 250;
-  --tp-color-neutral-10-shade: #ebeeef;
-  --tp-color-neutral-10-tint: white;
-  --tp-color-neutral-15: #1e2424;
+  --tp-color-neutral-10-shade: hsl(188, 10%, 93%);
+  --tp-color-neutral-10-tint: hsl(188, 10%, 100%);
+  --tp-color-neutral-15: hsl(188, 10%, 13%);
   --tp-color-neutral-15-rgb: 30, 36, 36;
-  --tp-color-neutral-15-shade: #121616;
-  --tp-color-neutral-15-tint: #293132;
-  --tp-color-neutral-25: #353f41;
+  --tp-color-neutral-15-shade: hsl(188, 10%, 8%);
+  --tp-color-neutral-15-tint: hsl(188, 10%, 18%);
+  --tp-color-neutral-25: hsl(188, 10%, 23%);
   --tp-color-neutral-25-rgb: 53, 63, 65;
-  --tp-color-neutral-25-shade: #293132;
-  --tp-color-neutral-25-tint: #404d4f;
-  --tp-color-neutral-35: #4c5a5d;
+  --tp-color-neutral-25-shade: hsl(188, 10%, 18%);
+  --tp-color-neutral-25-tint: hsl(188, 10%, 28%);
+  --tp-color-neutral-35: hsl(188, 10%, 33%);
   --tp-color-neutral-35-rgb: 76, 90, 93;
-  --tp-color-neutral-35-shade: #404d4f;
-  --tp-color-neutral-35-tint: #57686b;
-  --tp-color-neutral-45: #637679;
+  --tp-color-neutral-35-shade: hsl(188, 10%, 28%);
+  --tp-color-neutral-35-tint: hsl(188, 10%, 38%);
+  --tp-color-neutral-45: hsl(188, 10%, 43%);
   --tp-color-neutral-45-rgb: 99, 118, 121;
-  --tp-color-neutral-45-shade: #57686b;
-  --tp-color-neutral-45-tint: #6e8387;
-  --tp-color-neutral-55: #7b9093;
+  --tp-color-neutral-45-shade: hsl(188, 10%, 38%);
+  --tp-color-neutral-45-tint: hsl(188, 10%, 48%);
+  --tp-color-neutral-55: hsl(188, 10%, 53%);
   --tp-color-neutral-55-rgb: 123, 144, 147;
-  --tp-color-neutral-55-shade: #6e8387;
-  --tp-color-neutral-55-tint: #899c9f;
-  --tp-color-neutral-65: #97a8aa;
+  --tp-color-neutral-55-shade: hsl(188, 10%, 48%);
+  --tp-color-neutral-55-tint: hsl(188, 10%, 58%);
+  --tp-color-neutral-65: hsl(188, 10%, 63%);
   --tp-color-neutral-65-rgb: 151, 168, 170;
-  --tp-color-neutral-65-shade: #899c9f;
-  --tp-color-neutral-65-tint: #a5b3b6;
-  --tp-color-neutral-75: #b3bfc1;
+  --tp-color-neutral-65-shade: hsl(188, 10%, 58%);
+  --tp-color-neutral-65-tint: hsl(188, 10%, 68%);
+  --tp-color-neutral-75: hsl(188, 10%, 73%);
   --tp-color-neutral-75-rgb: 179, 191, 193;
-  --tp-color-neutral-75-shade: #a5b3b6;
-  --tp-color-neutral-75-tint: #c1cbcd;
-  --tp-color-neutral-85: #cfd7d8;
+  --tp-color-neutral-75-shade: hsl(188, 10%, 68%);
+  --tp-color-neutral-75-tint: hsl(188, 10%, 78%);
+  --tp-color-neutral-85: hsl(188, 10%, 83%);
   --tp-color-neutral-85-rgb: 207, 215, 216;
-  --tp-color-neutral-85-shade: #c1cbcd;
-  --tp-color-neutral-85-tint: #dde3e3;
-  --tp-color-neutral-95: #ebeeef;
+  --tp-color-neutral-85-shade: hsl(188, 10%, 78%);
+  --tp-color-neutral-85-tint: hsl(188, 10%, 88%);
+  --tp-color-neutral-95: hsl(188, 10%, 93%);
   --tp-color-neutral-95-rgb: 235, 238, 239;
-  --tp-color-neutral-95-shade: #dde3e3;
-  --tp-color-neutral-95-tint: #f9fafa;
-  --tp-color-contrast-fixed: #f9fafa;
+  --tp-color-neutral-95-shade: hsl(188, 10%, 88%);
+  --tp-color-neutral-95-tint: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
   --tp-color-contrast-fixed-rgb: 249, 250, 250;
-  --tp-color-brand: #14a2b8;
+  --tp-color-brand: hsl(188, 80%, 40%);
   --tp-color-brand-rgb: 20, 162, 184;
-  --tp-color-brand-shade: #128ea1;
-  --tp-color-brand-tint: #17b6cf;
-  --tp-color-brand-1: #0a515c;
+  --tp-color-brand-shade: hsl(188, 80%, 35%);
+  --tp-color-brand-tint: hsl(188, 80%, 45%);
+  --tp-color-brand-1: hsl(188, 80%, 20%);
   --tp-color-brand-1-rgb: 10, 81, 92;
-  --tp-color-brand-1-shade: #083d45;
-  --tp-color-brand-1-tint: #0d6573;
-  --tp-color-brand-2: #0f798a;
+  --tp-color-brand-1-shade: hsl(188, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(188, 80%, 25%);
+  --tp-color-brand-2: hsl(188, 80%, 30%);
   --tp-color-brand-2-rgb: 15, 121, 138;
-  --tp-color-brand-2-shade: #0d6573;
-  --tp-color-brand-2-tint: #128ea1;
-  --tp-color-brand-3: #14a2b8;
+  --tp-color-brand-2-shade: hsl(188, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(188, 80%, 35%);
+  --tp-color-brand-3: hsl(188, 80%, 40%);
   --tp-color-brand-3-rgb: 20, 162, 184;
-  --tp-color-brand-3-shade: #128ea1;
-  --tp-color-brand-3-tint: #17b6cf;
-  --tp-color-brand-4: #47d5eb;
+  --tp-color-brand-3-shade: hsl(188, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(188, 80%, 45%);
+  --tp-color-brand-4: hsl(188, 80%, 60%);
   --tp-color-brand-4-rgb: 71, 213, 235;
-  --tp-color-brand-4-shade: #30d0e8;
-  --tp-color-brand-4-tint: #5edaed;
-  --tp-color-brand-5: #a3eaf5;
+  --tp-color-brand-4-shade: hsl(188, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(188, 80%, 65%);
+  --tp-color-brand-5: hsl(188, 80%, 80%);
   --tp-color-brand-5-rgb: 163, 234, 245;
-  --tp-color-brand-5-shade: #8ce5f2;
-  --tp-color-brand-5-tint: #baeff7;
-  --tp-color-attention: #edc75e;
+  --tp-color-brand-5-shade: hsl(188, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(188, 80%, 85%);
+  --tp-color-attention: hsl(44, 80%, 65%);
   --tp-color-attention-rgb: 237, 199, 94;
-  --tp-color-attention-shade: #ebbf47;
-  --tp-color-attention-tint: #f0cf75;
-  --tp-color-caution: #ed975e;
+  --tp-color-attention-shade: hsl(44, 80%, 60%);
+  --tp-color-attention-tint: hsl(44, 80%, 70%);
+  --tp-color-caution: hsl(24, 80%, 65%);
   --tp-color-caution-rgb: 237, 151, 94;
-  --tp-color-caution-shade: #eb8947;
-  --tp-color-caution-tint: #f0a675;
-  --tp-color-warning: #ed685e;
+  --tp-color-caution-shade: hsl(24, 80%, 60%);
+  --tp-color-caution-tint: hsl(24, 80%, 70%);
+  --tp-color-warning: hsl(4, 80%, 65%);
   --tp-color-warning-rgb: 237, 104, 94;
-  --tp-color-warning-shade: #eb5247;
-  --tp-color-warning-tint: #f07d75;
-  --tp-color-success: #5eed71;
+  --tp-color-warning-shade: hsl(4, 80%, 60%);
+  --tp-color-warning-tint: hsl(4, 80%, 70%);
+  --tp-color-success: hsl(128, 80%, 65%);
   --tp-color-success-rgb: 94, 237, 113;
-  --tp-color-success-shade: #47eb5d;
-  --tp-color-success-tint: #75f086;
+  --tp-color-success-shade: hsl(128, 80%, 60%);
+  --tp-color-success-tint: hsl(128, 80%, 70%);
 }
 
 .tp-color-scheme-light {
-  --tp-color-neutral-1: #f9fafa;
+  --tp-color-neutral-1: hsl(188, 10%, 98%);
   --tp-color-neutral-1-rgb: 249, 250, 250;
-  --tp-color-neutral-1-shade: #ebeeef;
-  --tp-color-neutral-1-tint: white;
-  --tp-color-neutral-2: #dde3e3;
+  --tp-color-neutral-1-shade: hsl(188, 10%, 93%);
+  --tp-color-neutral-1-tint: hsl(188, 10%, 100%);
+  --tp-color-neutral-2: hsl(188, 10%, 88%);
   --tp-color-neutral-2-rgb: 221, 227, 227;
-  --tp-color-neutral-2-shade: #cfd7d8;
-  --tp-color-neutral-2-tint: #ebeeef;
-  --tp-color-neutral-3: #c1cbcd;
+  --tp-color-neutral-2-shade: hsl(188, 10%, 83%);
+  --tp-color-neutral-2-tint: hsl(188, 10%, 93%);
+  --tp-color-neutral-3: hsl(188, 10%, 78%);
   --tp-color-neutral-3-rgb: 193, 203, 205;
-  --tp-color-neutral-3-shade: #b3bfc1;
-  --tp-color-neutral-3-tint: #cfd7d8;
-  --tp-color-neutral-4: #a5b3b6;
+  --tp-color-neutral-3-shade: hsl(188, 10%, 73%);
+  --tp-color-neutral-3-tint: hsl(188, 10%, 83%);
+  --tp-color-neutral-4: hsl(188, 10%, 68%);
   --tp-color-neutral-4-rgb: 165, 179, 182;
-  --tp-color-neutral-4-shade: #97a8aa;
-  --tp-color-neutral-4-tint: #b3bfc1;
-  --tp-color-neutral-5: #899c9f;
+  --tp-color-neutral-4-shade: hsl(188, 10%, 63%);
+  --tp-color-neutral-4-tint: hsl(188, 10%, 73%);
+  --tp-color-neutral-5: hsl(188, 10%, 58%);
   --tp-color-neutral-5-rgb: 137, 156, 159;
-  --tp-color-neutral-5-shade: #7b9093;
-  --tp-color-neutral-5-tint: #97a8aa;
-  --tp-color-neutral-6: #6e8387;
+  --tp-color-neutral-5-shade: hsl(188, 10%, 53%);
+  --tp-color-neutral-5-tint: hsl(188, 10%, 63%);
+  --tp-color-neutral-6: hsl(188, 10%, 48%);
   --tp-color-neutral-6-rgb: 110, 131, 135;
-  --tp-color-neutral-6-shade: #637679;
-  --tp-color-neutral-6-tint: #7b9093;
-  --tp-color-neutral-7: #57686b;
+  --tp-color-neutral-6-shade: hsl(188, 10%, 43%);
+  --tp-color-neutral-6-tint: hsl(188, 10%, 53%);
+  --tp-color-neutral-7: hsl(188, 10%, 38%);
   --tp-color-neutral-7-rgb: 87, 104, 107;
-  --tp-color-neutral-7-shade: #4c5a5d;
-  --tp-color-neutral-7-tint: #637679;
-  --tp-color-neutral-8: #404d4f;
+  --tp-color-neutral-7-shade: hsl(188, 10%, 33%);
+  --tp-color-neutral-7-tint: hsl(188, 10%, 43%);
+  --tp-color-neutral-8: hsl(188, 10%, 28%);
   --tp-color-neutral-8-rgb: 64, 77, 79;
-  --tp-color-neutral-8-shade: #353f41;
-  --tp-color-neutral-8-tint: #4c5a5d;
-  --tp-color-neutral-9: #293132;
+  --tp-color-neutral-8-shade: hsl(188, 10%, 23%);
+  --tp-color-neutral-8-tint: hsl(188, 10%, 33%);
+  --tp-color-neutral-9: hsl(188, 10%, 18%);
   --tp-color-neutral-9-rgb: 41, 49, 50;
-  --tp-color-neutral-9-shade: #1e2424;
-  --tp-color-neutral-9-tint: #353f41;
-  --tp-color-neutral-10: #121616;
+  --tp-color-neutral-9-shade: hsl(188, 10%, 13%);
+  --tp-color-neutral-9-tint: hsl(188, 10%, 23%);
+  --tp-color-neutral-10: hsl(188, 10%, 8%);
   --tp-color-neutral-10-rgb: 18, 22, 22;
-  --tp-color-neutral-10-shade: #070808;
-  --tp-color-neutral-10-tint: #1e2424;
-  --tp-color-neutral-15: #ebeeef;
+  --tp-color-neutral-10-shade: hsl(188, 10%, 3%);
+  --tp-color-neutral-10-tint: hsl(188, 10%, 13%);
+  --tp-color-neutral-15: hsl(188, 10%, 93%);
   --tp-color-neutral-15-rgb: 235, 238, 239;
-  --tp-color-neutral-15-shade: #dde3e3;
-  --tp-color-neutral-15-tint: #f9fafa;
-  --tp-color-neutral-25: #cfd7d8;
+  --tp-color-neutral-15-shade: hsl(188, 10%, 88%);
+  --tp-color-neutral-15-tint: hsl(188, 10%, 98%);
+  --tp-color-neutral-25: hsl(188, 10%, 83%);
   --tp-color-neutral-25-rgb: 207, 215, 216;
-  --tp-color-neutral-25-shade: #c1cbcd;
-  --tp-color-neutral-25-tint: #dde3e3;
-  --tp-color-neutral-35: #b3bfc1;
+  --tp-color-neutral-25-shade: hsl(188, 10%, 78%);
+  --tp-color-neutral-25-tint: hsl(188, 10%, 88%);
+  --tp-color-neutral-35: hsl(188, 10%, 73%);
   --tp-color-neutral-35-rgb: 179, 191, 193;
-  --tp-color-neutral-35-shade: #a5b3b6;
-  --tp-color-neutral-35-tint: #c1cbcd;
-  --tp-color-neutral-45: #97a8aa;
+  --tp-color-neutral-35-shade: hsl(188, 10%, 68%);
+  --tp-color-neutral-35-tint: hsl(188, 10%, 78%);
+  --tp-color-neutral-45: hsl(188, 10%, 63%);
   --tp-color-neutral-45-rgb: 151, 168, 170;
-  --tp-color-neutral-45-shade: #899c9f;
-  --tp-color-neutral-45-tint: #a5b3b6;
-  --tp-color-neutral-55: #7b9093;
+  --tp-color-neutral-45-shade: hsl(188, 10%, 58%);
+  --tp-color-neutral-45-tint: hsl(188, 10%, 68%);
+  --tp-color-neutral-55: hsl(188, 10%, 53%);
   --tp-color-neutral-55-rgb: 123, 144, 147;
-  --tp-color-neutral-55-shade: #6e8387;
-  --tp-color-neutral-55-tint: #899c9f;
-  --tp-color-neutral-65: #637679;
+  --tp-color-neutral-55-shade: hsl(188, 10%, 48%);
+  --tp-color-neutral-55-tint: hsl(188, 10%, 58%);
+  --tp-color-neutral-65: hsl(188, 10%, 43%);
   --tp-color-neutral-65-rgb: 99, 118, 121;
-  --tp-color-neutral-65-shade: #57686b;
-  --tp-color-neutral-65-tint: #6e8387;
-  --tp-color-neutral-75: #4c5a5d;
+  --tp-color-neutral-65-shade: hsl(188, 10%, 38%);
+  --tp-color-neutral-65-tint: hsl(188, 10%, 48%);
+  --tp-color-neutral-75: hsl(188, 10%, 33%);
   --tp-color-neutral-75-rgb: 76, 90, 93;
-  --tp-color-neutral-75-shade: #404d4f;
-  --tp-color-neutral-75-tint: #57686b;
-  --tp-color-neutral-85: #353f41;
+  --tp-color-neutral-75-shade: hsl(188, 10%, 28%);
+  --tp-color-neutral-75-tint: hsl(188, 10%, 38%);
+  --tp-color-neutral-85: hsl(188, 10%, 23%);
   --tp-color-neutral-85-rgb: 53, 63, 65;
-  --tp-color-neutral-85-shade: #293132;
-  --tp-color-neutral-85-tint: #404d4f;
-  --tp-color-neutral-95: #1e2424;
+  --tp-color-neutral-85-shade: hsl(188, 10%, 18%);
+  --tp-color-neutral-85-tint: hsl(188, 10%, 28%);
+  --tp-color-neutral-95: hsl(188, 10%, 13%);
   --tp-color-neutral-95-rgb: 30, 36, 36;
-  --tp-color-neutral-95-shade: #121616;
-  --tp-color-neutral-95-tint: #293132;
-  --tp-color-contrast-fixed: #f9fafa;
+  --tp-color-neutral-95-shade: hsl(188, 10%, 8%);
+  --tp-color-neutral-95-tint: hsl(188, 10%, 18%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
   --tp-color-contrast-fixed-rgb: 249, 250, 250;
-  --tp-color-brand: #3d848f;
+  --tp-color-brand: hsl(188, 40%, 40%);
   --tp-color-brand-rgb: 61, 132, 143;
-  --tp-color-brand-shade: #36737d;
-  --tp-color-brand-tint: #4594a1;
-  --tp-color-brand-1: #b8dbe0;
+  --tp-color-brand-shade: hsl(188, 40%, 35%);
+  --tp-color-brand-tint: hsl(188, 40%, 45%);
+  --tp-color-brand-1: hsl(188, 40%, 80%);
   --tp-color-brand-1-rgb: 184, 219, 224;
-  --tp-color-brand-1-shade: #a6d2d9;
-  --tp-color-brand-1-tint: #c9e4e8;
-  --tp-color-brand-2: #94c9d1;
+  --tp-color-brand-1-shade: hsl(188, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(188, 40%, 85%);
+  --tp-color-brand-2: hsl(188, 40%, 70%);
   --tp-color-brand-2-rgb: 148, 201, 209;
-  --tp-color-brand-2-shade: #82c0c9;
-  --tp-color-brand-2-tint: #a6d2d9;
-  --tp-color-brand-3: #70b7c2;
+  --tp-color-brand-2-shade: hsl(188, 40%, 65%);
+  --tp-color-brand-2-tint: hsl(188, 40%, 75%);
+  --tp-color-brand-3: hsl(188, 40%, 60%);
   --tp-color-brand-3-rgb: 112, 183, 194;
-  --tp-color-brand-3-shade: #5eaeba;
-  --tp-color-brand-3-tint: #82c0c9;
-  --tp-color-brand-4: #3d848f;
+  --tp-color-brand-3-shade: hsl(188, 40%, 55%);
+  --tp-color-brand-3-tint: hsl(188, 40%, 65%);
+  --tp-color-brand-4: hsl(188, 40%, 40%);
   --tp-color-brand-4-rgb: 61, 132, 143;
-  --tp-color-brand-4-shade: #36737d;
-  --tp-color-brand-4-tint: #4594a1;
-  --tp-color-brand-5: #1f4247;
+  --tp-color-brand-4-shade: hsl(188, 40%, 35%);
+  --tp-color-brand-4-tint: hsl(188, 40%, 45%);
+  --tp-color-brand-5: hsl(188, 40%, 20%);
   --tp-color-brand-5-rgb: 31, 66, 71;
-  --tp-color-brand-5-shade: #173136;
-  --tp-color-brand-5-tint: #265259;
-  --tp-color-attention: #cf9e17;
+  --tp-color-brand-5-shade: hsl(188, 40%, 15%);
+  --tp-color-brand-5-tint: hsl(188, 40%, 25%);
+  --tp-color-attention: hsl(44, 80%, 45%);
   --tp-color-attention-rgb: 207, 158, 23;
-  --tp-color-attention-shade: #b88c14;
-  --tp-color-attention-tint: #e6af1a;
-  --tp-color-caution: #cf6017;
+  --tp-color-attention-shade: hsl(44, 80%, 40%);
+  --tp-color-attention-tint: hsl(44, 80%, 50%);
+  --tp-color-caution: hsl(24, 80%, 45%);
   --tp-color-caution-rgb: 207, 96, 23;
-  --tp-color-caution-shade: #b85614;
-  --tp-color-caution-tint: #e66b1a;
-  --tp-color-warning: #cf2317;
+  --tp-color-caution-shade: hsl(24, 80%, 40%);
+  --tp-color-caution-tint: hsl(24, 80%, 50%);
+  --tp-color-warning: hsl(4, 80%, 45%);
   --tp-color-warning-rgb: 207, 35, 23;
-  --tp-color-warning-shade: #b81f14;
-  --tp-color-warning-tint: #e6271a;
-  --tp-color-success: #12a125;
+  --tp-color-warning-shade: hsl(4, 80%, 40%);
+  --tp-color-warning-tint: hsl(4, 80%, 50%);
+  --tp-color-success: hsl(128, 80%, 35%);
   --tp-color-success-rgb: 18, 161, 37;
-  --tp-color-success-shade: #0f8a20;
-  --tp-color-success-tint: #14b82a;
+  --tp-color-success-shade: hsl(128, 80%, 30%);
+  --tp-color-success-tint: hsl(128, 80%, 40%);
 }
 
 .ion-color-neutral-1,
@@ -1340,6 +1340,7 @@ ion-avatar {
   font-size: 24px;
   line-height: 24px;
 }
+
 ion-avatar ion-label {
   color: var(--ion-color-contrast);
   font-size: 24px;
@@ -1350,54 +1351,67 @@ ion-avatar[tp-size=xxs] {
   width: 24px;
   height: 24px;
 }
+
 ion-avatar[tp-size=xxs] ion-label {
   font-size: 12px;
   line-height: 12px;
 }
+
 ion-avatar[tp-size=xs] {
   width: 32px;
   height: 32px;
 }
+
 ion-avatar[tp-size=xs] ion-label {
   font-size: 16px;
   line-height: 16px;
 }
+
 ion-avatar[tp-size=sm] {
   width: 40px;
   height: 40px;
 }
+
 ion-avatar[tp-size=sm] ion-label {
   font-size: 20px;
   line-height: 20px;
 }
+
 ion-avatar[tp-size=md] {
   width: 56px;
   height: 56px;
 }
+
 ion-avatar[tp-size=md] ion-label {
   font-size: 24px;
   line-height: 24px;
 }
+
 ion-avatar[tp-size=lg] {
   width: 64px;
   height: 64px;
 }
+
 ion-avatar[tp-size=lg] ion-label {
   font-size: 32px;
   line-height: 32px;
 }
+
 ion-avatar[tp-size=xl] {
   width: 72px;
   height: 72px;
 }
+
 ion-avatar[tp-size=xl] ion-label {
   font-size: 32px;
   line-height: 32px;
 }
+
 ion-avatar[tp-size=xxl] {
   width: 80px;
   height: 80px;
 }
+
 ion-avatar[tp-size=xxl] ion-label {
   font-size: 32px;
   line-height: 32px;
@@ -1406,6 +1420,7 @@ ion-avatar[tp-size=xxl] ion-label {
 ion-avatar[tp-color] {
   background: var(--ion-color-base);
 }
+
 ion-avatar[tp-color] ion-label {
   color: var(--ion-color-contrast);
 }
@@ -1443,9 +1458,11 @@ ion-back-button.ion-color {
   --background-focused: var(--ion-color-tint);
   --background-activated: var(--ion-color-shade);
 }
+
 ion-back-button.ion-color::part(icon) {
   --stroke: var(--color);
 }
+
 ion-back-button.ion-color:hover::part(icon) {
   --stroke: var(--color);
 }
@@ -1457,6 +1474,7 @@ ion-back-button[size=xxs] {
   --padding-end: 0;
   --icon-font-size: 16px;
 }
+
 ion-back-button[size=xs] {
   --padding-top: 4px;
   --padding-bottom: 4px;
@@ -1464,6 +1482,7 @@ ion-back-button[size=xs] {
   --padding-end: 4px;
   --icon-font-size: 16px;
 }
+
 ion-back-button[size=s] {
   --padding-top: 4px;
   --padding-bottom: 4px;
@@ -1471,6 +1490,7 @@ ion-back-button[size=s] {
   --padding-end: 4px;
   --icon-font-size: 24px;
 }
+
 ion-back-button[size=sm] {
   --padding-top: 8px;
   --padding-bottom: 8px;
@@ -1478,6 +1498,7 @@ ion-back-button[size=sm] {
   --padding-end: 8px;
   --icon-font-size: 24px;
 }
+
 ion-back-button[size=md] {
   --padding-top: 8px;
   --padding-bottom: 8px;
@@ -1485,6 +1506,7 @@ ion-back-button[size=md] {
   --padding-end: 8px;
   --icon-font-size: 32px;
 }
+
 ion-back-button[size=lg] {
   --padding-top: 8px;
   --padding-bottom: 8px;
@@ -1552,6 +1574,7 @@ ion-button {
   font-size: var(--font-size);
   line-height: 16px;
 }
+
 ion-button ion-icon {
   font-size: 16px;
 }
@@ -1561,6 +1584,7 @@ ion-button.button-disabled {
   --color: var(--tp-color-neutral-5);
   opacity: initial;
 }
+
 ion-button.button-disabled ion-icon {
   --stroke: var(--tp-color-neutral-5);
 }
@@ -1573,13 +1597,16 @@ ion-button.ion-color {
   --background-activated: var(--ion-color-shade);
   --ripple-color: rgba(var(--ion-color-contrast-rgb), 0.5);
 }
+
 ion-button.ion-color ion-icon {
   --stroke: var(--color);
 }
+
 ion-button.ion-color.button-disabled {
   --ion-color-base: var(--tp-color-neutral-3) !important;
   --ion-color-contrast: var(--tp-color-neutral-5) !important;
 }
+
 ion-button.ion-color.button-disabled ion-icon {
   --stroke: var(--tp-color-neutral-5);
 }
@@ -1588,6 +1615,7 @@ ion-button.button-sm {
   --padding-top: 12px;
   --padding-bottom: 12px;
 }
+
 ion-button.button-xs {
   --padding-top: 8px;
   --padding-bottom: 8px;
@@ -1612,6 +1640,7 @@ ion-button.button-outline.button-disabled {
 ion-button.button-outline.ion-color ion-icon {
   --stroke: var(--ion-color-base);
 }
+
 ion-button.button-outline.ion-color.button-disabled {
   --ion-color-base: var(--tp-color-neutral-5) !important;
 }
@@ -1628,9 +1657,11 @@ ion-button.button-clear {
   --padding-start: 16px;
   --padding-end: 16px;
 }
+
 ion-button.button-clear ion-icon {
   --stroke: var(--tp-color-neutral-10);
 }
+
 ion-button.button-clear:hover ion-icon {
   --stroke: var(--tp-color-brand-3);
 }
@@ -1638,6 +1669,7 @@ ion-button.button-clear:hover ion-icon {
 ion-button.button-clear.button-disabled {
   --color: var(--tp-color-neutral-5);
 }
+
 ion-button.button-clear.button-disabled ion-icon {
   --stroke: var(--tp-color-neutral-5);
 }
@@ -1645,6 +1677,7 @@ ion-button.button-clear.button-disabled ion-icon {
 ion-button.button-clear.ion-color:not(:hover) {
   --ion-color-base: var(--tp-color-neutral-10) !important;
 }
+
 ion-button.button-clear.ion-color:not(:hover).button-disabled {
   --ion-color-base: var(--tp-color-neutral-5) !important;
 }
@@ -1660,6 +1693,7 @@ ion-button.button-xxs.button-clear {
   --padding-end: 12px;
   --font-size: 14px;
 }
+
 ion-button.button-xs.button-clear {
   --padding-top: 8px;
   --padding-bottom: 8px;
@@ -1667,6 +1701,7 @@ ion-button.button-xs.button-clear {
   --padding-end: 12px;
   --font-size: 14px;
 }
+
 ion-button.button-sm.button-clear {
   --padding-top: 12px;
   --padding-bottom: 12px;
@@ -1687,6 +1722,7 @@ ion-button.button-clear.button-has-icon-only {
   --color-hover: var(--tp-color-neutral-10);
   min-height: initial;
 }
+
 ion-button.button-clear.button-has-icon-only ion-icon {
   --stroke: var(--tp-color-neutral-10);
   font-size: 32px;
@@ -1696,6 +1732,7 @@ ion-button.button-clear.button-has-icon-only.button-disabled ion-icon {
   --stroke: var(--tp-color-neutral-5);
   opacity: 0.5;
 }
+
 ion-button.button-clear.button-has-icon-only.button-disabled ion-icon.ion-color {
   --ion-color-base: var(--tp-color-neutral-5) !important;
 }
@@ -1706,30 +1743,37 @@ ion-button.button-has-icon-only.button-xxs {
   --padding-start: 0;
   --padding-end: 0;
 }
+
 ion-button.button-has-icon-only.button-xxs ion-icon {
   font-size: 16px;
 }
+
 ion-button.button-has-icon-only.button-xs {
   --padding-top: 4px;
   --padding-bottom: 4px;
   --padding-start: 4px;
   --padding-end: 4px;
 }
+
 ion-button.button-has-icon-only.button-xs ion-icon {
   font-size: 16px;
 }
+
 ion-button.button-has-icon-only.button-sm ion-icon {
   font-size: 24px;
 }
+
 ion-button.button-has-icon-only.button-s {
   --padding-top: 4px;
   --padding-bottom: 4px;
   --padding-start: 4px;
   --padding-end: 4px;
 }
+
 ion-button.button-has-icon-only.button-s ion-icon {
   font-size: 24px;
 }
+
 ion-button.button-has-icon-only.button-lg ion-icon {
   font-size: 48px;
 }
@@ -1744,13 +1788,16 @@ ion-checkbox {
   --size: 20px;
   color: var(--tp-color-neutral-10);
 }
+
 ion-checkbox:hover {
   --border-color-checked: var(--tp-color-brand-5);
   --checkbox-background-checked: var(--tp-color-brand-5);
 }
+
 ion-checkbox ion-text {
   margin-right: 16px;
 }
+
 ion-checkbox.checkbox-label-placement-end ion-text {
   margin-right: 0;
 }
@@ -1762,6 +1809,7 @@ ion-checkbox.ion-color {
   --checkmark-color: var(--ion-color-contrast);
   color: var(--ion-color-base);
 }
+
 ion-checkbox.ion-color:hover {
   --border-color-checked: var(--ion-color-tint);
   --checkbox-background-checked: var(--ion-color-tint);
@@ -1809,28 +1857,6 @@ ion-chip.chip-outline:hover {
   background: transparent;
 }
 
-ion-chip[size=md] {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-inline: 12px;
-}
-ion-chip[size=md] ion-label {
-  font-size: 14px;
-}
-ion-chip[size=lg] {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-inline: 16px;
-}
-ion-chip[size=lg] ion-label {
-  font-size: 16px;
-}
-
-ion-chip.ion-color:not(.chip-outline) {
-  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
-  background: var(--ion-color-base);
-  border: 1px solid var(--ion-color-base);
-}
 ion-chip.ion-color:not(.chip-outline) ion-label {
   color: var(--ion-color-contrast);
 }
@@ -1872,15 +1898,19 @@ ion-input.sc-ion-input-md-h {
   font-size: 14px;
   line-height: 16px;
 }
+
 ion-input.sc-ion-input-md-h .input-wrapper {
   border: 1px solid transparent;
 }
+
 ion-input.sc-ion-input-md-h .input-highlight {
   background: transparent;
 }
+
 ion-input.sc-ion-input-md-h .input-clear-icon {
   align-items: initial;
 }
+
 ion-input.sc-ion-input-md-h .input-clear-icon ion-icon.sc-ion-input-md {
   width: 24px;
   height: 24px;
@@ -1905,9 +1935,11 @@ ion-input.ion-color {
   --highlight-color-focused: var(--ion-color-contrast) !important;
   --placeholder-color: var(--ion-color-contrast);
 }
+
 ion-input.ion-color:hover:not([disabled]) {
   --background: var(--ion-color-tint);
 }
+
 ion-input.ion-color.has-focus .input-wrapper {
   border: 1px solid var(--ion-color-tint);
 }
@@ -1915,11 +1947,13 @@ ion-input.ion-color.has-focus .input-wrapper {
 ion-input.ion-invalid .input-wrapper {
   border: 1px solid var(--tp-color-warning);
 }
+
 ion-input.ion-invalid .input-bottom {
   --border-width: initial;
   --border-color: transparent;
   --border-style: initial;
 }
+
 ion-input.ion-invalid .input-bottom .error-text {
   --highlight-color-invalid: var(--tp-color-warning);
 }
@@ -1927,6 +1961,7 @@ ion-input.ion-invalid .input-bottom .error-text {
 ion-input.ion-valid .input-wrapper {
   border: 1px solid var(--tp-color-success);
 }
+
 ion-input.ion-valid .input-bottom {
   --border-width: initial;
   --border-color: transparent;
@@ -1946,19 +1981,24 @@ ion-item {
   --inner-padding-end: 0;
   --min-height: initial;
 }
+
 ion-item ion-icon {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 ion-item ion-icon[slot=start] {
   margin-right: 16px;
 }
+
 ion-item ion-icon[slot=end] {
   margin-left: 16px;
 }
+
 ion-item ion-toggle[slot=start] {
   margin-inline-end: 32px;
 }
+
 ion-item ion-toggle[slot=end] {
   margin-inline-start: 32px;
 }
@@ -1966,6 +2006,7 @@ ion-item ion-toggle[slot=end] {
 ion-item.item-lines-full {
   --border-color: var(--tp-color-neutral-2);
 }
+
 ion-item.item-lines-full.ion-activatable:hover {
   --border-color: var(--tp-color-neutral-3);
 }
@@ -1973,84 +2014,111 @@ ion-item.item-lines-full.ion-activatable:hover {
 ion-item[gap=s00] *[slot=start] {
   margin-right: 0;
 }
+
 ion-item[gap=s00] *[slot=end] {
   margin-left: 0;
 }
+
 ion-item[gap=s02] *[slot=start] {
   margin-right: 2px;
 }
+
 ion-item[gap=s02] *[slot=end] {
   margin-left: 2px;
 }
+
 ion-item[gap=s04] *[slot=start] {
   margin-right: 4px;
 }
+
 ion-item[gap=s04] *[slot=end] {
   margin-left: 4px;
 }
+
 ion-item[gap=s08] *[slot=start] {
   margin-right: 8px;
 }
+
 ion-item[gap=s08] *[slot=end] {
   margin-left: 8px;
 }
+
 ion-item[gap=s12] *[slot=start] {
   margin-right: 12px;
 }
+
 ion-item[gap=s12] *[slot=end] {
   margin-left: 12px;
 }
+
 ion-item[gap=s16] *[slot=start] {
   margin-right: 16px;
 }
+
 ion-item[gap=s16] *[slot=end] {
   margin-left: 16px;
 }
+
 ion-item[gap=s20] *[slot=start] {
   margin-right: 20px;
 }
+
 ion-item[gap=s20] *[slot=end] {
   margin-left: 20px;
 }
+
 ion-item[gap=s24] *[slot=start] {
   margin-right: 24px;
 }
+
 ion-item[gap=s24] *[slot=end] {
   margin-left: 24px;
 }
+
 ion-item[gap=s32] *[slot=start] {
   margin-right: 32px;
 }
+
 ion-item[gap=s32] *[slot=end] {
   margin-left: 32px;
 }
+
 ion-item[gap=s40] *[slot=start] {
   margin-right: 40px;
 }
+
 ion-item[gap=s40] *[slot=end] {
   margin-left: 40px;
 }
+
 ion-item[gap=s48] *[slot=start] {
   margin-right: 48px;
 }
+
 ion-item[gap=s48] *[slot=end] {
   margin-left: 48px;
 }
+
 ion-item[gap=s64] *[slot=start] {
   margin-right: 64px;
 }
+
 ion-item[gap=s64] *[slot=end] {
   margin-left: 64px;
 }
+
 ion-item[gap=s80] *[slot=start] {
   margin-right: 80px;
 }
+
 ion-item[gap=s80] *[slot=end] {
   margin-left: 80px;
 }
+
 ion-item[gap=s96] *[slot=start] {
   margin-right: 96px;
 }
+
 ion-item[gap=s96] *[slot=end] {
   margin-left: 96px;
 }
@@ -2059,54 +2127,67 @@ ion-item[spacingx=s00] {
   --padding-start: 0;
   --padding-end: 0;
 }
+
 ion-item[spacingx=s02] {
   --padding-start: 2px;
   --padding-end: 2px;
 }
+
 ion-item[spacingx=s04] {
   --padding-start: 4px;
   --padding-end: 4px;
 }
+
 ion-item[spacingx=s08] {
   --padding-start: 8px;
   --padding-end: 8px;
 }
+
 ion-item[spacingx=s12] {
   --padding-start: 12px;
   --padding-end: 12px;
 }
+
 ion-item[spacingx=s16] {
   --padding-start: 16px;
   --padding-end: 16px;
 }
+
 ion-item[spacingx=s20] {
   --padding-start: 20px;
   --padding-end: 20px;
 }
+
 ion-item[spacingx=s24] {
   --padding-start: 24px;
   --padding-end: 24px;
 }
+
 ion-item[spacingx=s32] {
   --padding-start: 32px;
   --padding-end: 32px;
 }
+
 ion-item[spacingx=s40] {
   --padding-start: 40px;
   --padding-end: 40px;
 }
+
 ion-item[spacingx=s48] {
   --padding-start: 48px;
   --padding-end: 48px;
 }
+
 ion-item[spacingx=s64] {
   --padding-start: 64px;
   --padding-end: 64px;
 }
+
 ion-item[spacingx=s80] {
   --padding-start: 80px;
   --padding-end: 80px;
 }
+
 ion-item[spacingx=s96] {
   --padding-start: 96px;
   --padding-end: 96px;
@@ -2116,54 +2197,67 @@ ion-item[spacingy=s00] {
   --padding-top: 0;
   --padding-bottom: 0;
 }
+
 ion-item[spacingy=s02] {
   --padding-top: 2px;
   --padding-bottom: 2px;
 }
+
 ion-item[spacingy=s04] {
   --padding-top: 4px;
   --padding-bottom: 4px;
 }
+
 ion-item[spacingy=s08] {
   --padding-top: 8px;
   --padding-bottom: 8px;
 }
+
 ion-item[spacingy=s12] {
   --padding-top: 12px;
   --padding-bottom: 12px;
 }
+
 ion-item[spacingy=s16] {
   --padding-top: 16px;
   --padding-bottom: 16px;
 }
+
 ion-item[spacingy=s20] {
   --padding-top: 20px;
   --padding-bottom: 20px;
 }
+
 ion-item[spacingy=s24] {
   --padding-top: 24px;
   --padding-bottom: 24px;
 }
+
 ion-item[spacingy=s32] {
   --padding-top: 32px;
   --padding-bottom: 32px;
 }
+
 ion-item[spacingy=s40] {
   --padding-top: 40px;
   --padding-bottom: 40px;
 }
+
 ion-item[spacingy=s48] {
   --padding-top: 48px;
   --padding-bottom: 48px;
 }
+
 ion-item[spacingy=s64] {
   --padding-top: 64px;
   --padding-bottom: 64px;
 }
+
 ion-item[spacingy=s80] {
   --padding-top: 80px;
   --padding-bottom: 80px;
 }
+
 ion-item[spacingy=s96] {
   --padding-top: 96px;
   --padding-bottom: 96px;
@@ -2172,6 +2266,7 @@ ion-item[spacingy=s96] {
 ion-item.ion-color {
   --background-hover-opacity: 0.16;
 }
+
 ion-item.ion-color ion-icon {
   --stroke: var(--ion-color-contrast);
 }
@@ -2186,6 +2281,7 @@ ion-item.ion-color ion-checkbox {
   --checkbox-background-checked: var(--ion-color-contrast);
   --checkmark-color: var(--ion-color-base);
 }
+
 ion-item.ion-color ion-checkbox:hover {
   --border-color-checked: var(--ion-color-contrast);
   --checkbox-background-checked: var(--ion-color-contrast);
@@ -2195,9 +2291,11 @@ ion-item.ion-color ion-radio {
   --color: var(--ion-color-contrast);
   --color-checked: var(--ion-color-contrast);
 }
+
 ion-item.ion-color ion-radio:hover {
   --color: var(--ion-color-contrast);
 }
+
 ion-item.ion-color ion-radio.radio-checked {
   --color: var(--ion-color-contrast);
 }
@@ -2212,6 +2310,7 @@ ion-item.ion-color ion-toggle {
 ion-item ion-input {
   --padding-start: 8px !important;
 }
+
 ion-item .tp-input-container {
   width: 100%;
 }
@@ -2233,6 +2332,7 @@ ion-progress-bar {
 ion-progress-bar[value="0"] {
   --background: var(--tp-color-neutral-8) !important;
 }
+
 ion-progress-bar[value="0"]::part(track) {
   background: var(--background) !important;
 }
@@ -2241,6 +2341,7 @@ ion-progress-bar.ion-color {
   --background: rgba(var(--ion-color-base-rgb), 0.4);
   --progress-background: var(--ion-color-base);
 }
+
 ion-progress-bar.ion-color::part(track) {
   background: var(--background);
 }
@@ -2249,15 +2350,19 @@ ion-radio {
   --color: var(--tp-color-neutral-35);
   --color-checked: var(--tp-color-brand-4);
 }
+
 ion-radio:hover {
   --color: var(--tp-color-neutral-95);
 }
+
 ion-radio.radio-checked {
   --color: var(--tp-color-neutral-4);
 }
+
 ion-radio ion-text {
   margin-right: 16px;
 }
+
 ion-radio.radio-label-placement-end ion-text {
   margin-right: 0;
 }
@@ -2266,9 +2371,11 @@ ion-radio.ion-color {
   --color: var(--ion-color-base);
   --color-checked: var(--ion-color-base);
 }
+
 ion-radio.ion-color:hover {
   --color: var(--ion-color-tint);
 }
+
 ion-radio.ion-color.radio-checked {
   --color: var(--ion-color-base);
 }
@@ -2295,6 +2402,7 @@ ion-searchbar.sc-ion-searchbar-md-h {
   --placeholder-color: var(--tp-color-neutral-4);
   --placeholder-opacity: 1;
 }
+
 ion-searchbar ion-icon {
   --stroke: var(--tp-color-neutral-6);
 }
@@ -2305,6 +2413,7 @@ ion-searchbar.sc-ion-searchbar-md-h {
   padding-inline-start: 0;
   padding-inline-end: 0;
 }
+
 ion-searchbar .searchbar-input.sc-ion-searchbar-md {
   height: 40px;
   padding-top: 6px;
@@ -2315,15 +2424,18 @@ ion-searchbar .searchbar-input.sc-ion-searchbar-md {
   padding-inline-start: 40px;
   padding-inline-end: 40px;
 }
+
 ion-searchbar .searchbar-search-icon.sc-ion-searchbar-md {
   top: 8px;
   left: 8px;
   width: 24px;
   height: 24px;
 }
+
 ion-searchbar.ion-invalid .searchbar-input {
   border: 1px solid var(--tp-color-warning);
 }
+
 ion-searchbar.ion-valid .searchbar-input {
   border: 1px solid var(--tp-color-success);
 }
@@ -2333,6 +2445,7 @@ ion-searchbar.ion-color {
   --placeholder-color: var(--ion-color-contrast);
   --placeholder-opacity: 0.6;
 }
+
 ion-searchbar.ion-color ion-icon {
   --stroke: var(--ion-color-contrast);
 }
@@ -2371,29 +2484,37 @@ ion-textarea.sc-ion-textarea-md-h {
 ion-textarea {
   height: 80px;
 }
+
 ion-textarea .textarea-wrapper {
   border: 1px solid transparent;
 }
+
 ion-textarea .native-textarea::-webkit-scrollbar {
   display: none;
 }
+
 ion-textarea .textarea-highlight.sc-ion-textarea-md {
   background: transparent;
 }
+
 ion-textarea.ion-invalid .textarea-wrapper {
   border: 1px solid var(--tp-color-warning);
 }
+
 ion-textarea.ion-invalid .textarea-bottom {
   --border-width: initial;
   --border-color: transparent;
   --border-style: initial;
 }
+
 ion-textarea.ion-invalid .textarea-bottom .error-text {
   --highlight-color-invalid: var(--tp-color-warning);
 }
+
 ion-textarea.ion-valid .textarea-wrapper {
   border: 1px solid var(--tp-color-success);
 }
+
 ion-textarea.ion-valid .textarea-bottom {
   --border-width: initial;
   --border-color: transparent;
@@ -2415,9 +2536,11 @@ ion-textarea.ion-color {
   --placeholder-color: var(--ion-color-contrast);
   --placeholder-opacity: 0.6;
 }
+
 ion-textarea.ion-color:hover:not([disabled]) {
   --background: var(--ion-color-tint);
 }
+
 ion-textarea.ion-color.has-focus .textarea-wrapper {
   border: 1px solid var(--ion-color-tint);
 }
@@ -2432,9 +2555,12 @@ ion-toggle {
   --track-background: var(--tp-color-neutral-4);
   --track-background-checked: var(--tp-color-brand-3);
 }
+
 ion-toggle::part(track) {
   width: 32px;
   height: 20px;
 }
+
+/*# sourceMappingURL=templarios.css.map */
 
 /*# sourceMappingURL=templarios.css.map */

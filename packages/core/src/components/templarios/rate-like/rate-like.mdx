@@ -1,0 +1,30 @@
+import { Canvas, Controls, Meta } from '@storybook/blocks';
+import * as rateLikeStories from './rate-like.stories';
+
+<Meta of={rateLikeStories} />
+
+# tp-rate-like
+
+## Types
+
+```ts
+import { TpRateLikeType } from '..';
+```
+
+## Enums
+
+```ts
+import { TpRateLikeStatus } from '..';
+```
+
+## Atributos
+
+<Canvas of={rateLikeStories.Default} />
+
+<Controls />
+
+## Eventos
+
+### `TpRateLike.tpChange: EventEmitter<"like" | "dislike">`
+
+- O evento **tpChange** é emitido quando o usuário clica em um dos botões.

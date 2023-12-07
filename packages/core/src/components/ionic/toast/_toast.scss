@@ -1,0 +1,44 @@
+ion-toast {
+  --background: var(--tp-color-neutral-2);
+  --color: var(--tp-color-neutral-10);
+  --width: 400px;
+  --border-radius: 8px;
+  --start: initial;
+  --end: 20px;
+
+  &::part(container) {
+    padding-inline: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &::part(icon) {
+    --stroke: var(--tp-color-neutral-10);
+    font-size: 24px;
+  }
+
+  &::part(message) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+//
+// color
+//
+ion-toast.ion-color {
+  --color: var(--ion-color-contrast);
+
+  &::part(icon) {
+    --stroke: var(--ion-color-contrast);
+    font-size: 24px;
+  }
+}
+
+//
+// warning
+//
+ion-toast[warning] {
+  --background: var(--tp-color-warning);
+}

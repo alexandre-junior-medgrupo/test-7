@@ -9,14 +9,22 @@ $tp-button-sizes: (
       padding-end: 12px,
       font-size: 14px,
     ),
+    rules: (
+      height: 24px,
+      min-height: 24px,
+    ),
   ),
   xs: (
     properties: (
-      padding-top: 8px,
-      padding-bottom: 8px,
+      padding-top: 6px,
+      padding-bottom: 6px,
       padding-start: 12px,
       padding-end: 12px,
       font-size: 14px,
+    ),
+    rules: (
+      height: 32px,
+      min-height: 32px,
     ),
   ),
   sm: (
@@ -26,6 +34,10 @@ $tp-button-sizes: (
       padding-start: 16px,
       padding-end: 16px,
       font-size: 14px,
+    ),
+    rules: (
+      height: 40px,
+      min-height: 40px,
     ),
   ),
 );
@@ -42,6 +54,7 @@ ion-button {
     --padding-bottom: 16px;
     --padding-start: 16px;
     --padding-end: 16px;
+    height: 48px;
 
     ion-icon {
       --stroke: var(--tp-color-neutral-10);
@@ -92,9 +105,14 @@ ion-button {
   @each $size-name, $size-value in $tp-button-sizes {
     &.button-#{$size-name}.button-clear {
       $properties-map: map.get($size-value, properties);
+      $rules-map: map.get($size-value, rules);
 
       @each $properties-name, $properties-value in $properties-map {
         --#{$properties-name}: #{$properties-value};
+      }
+
+      @each $rules-name, $rules-value in $rules-map {
+        #{$rules-name}: #{$rules-value};
       }
     }
   }

@@ -1,0 +1,24 @@
+@mixin generate-scroll-style($remove: null) {
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--tp-color-neutral-3);
+    border-radius: 5px;
+
+    &:hover {
+      height: 8px;
+    }
+  }
+
+  @if ($remove != null) {
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+}

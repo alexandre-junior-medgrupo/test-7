@@ -4,6 +4,17 @@ ion-range {
   --knob-background: var(--bar-background-active);
   --bar-height: 2px;
   --knob-size: 12px;
+  --tp-ticks-background-active: var(--bar-background-active);
+  --tp-ticks-background: var(--bar-background-active);
+  --tp-bar-background-ticks: var(--tp-color-neutral-15);
+
+  &::part(knob) {
+    transform: initial;
+  }
+
+  &::part(tick) {
+    border-radius: 50%;
+  }
 }
 
 //
@@ -13,4 +24,19 @@ ion-range[secondary] {
   --bar-height: 6px;
   --bar-border-radius: 8px;
   --knob-size: 16px;
+}
+
+//
+// ticks = true
+//
+ion-range[ticks] {
+  &::part(tick-active) {
+    background-color: var(--tp-ticks-background-active);
+    border-radius: 50%;
+  }
+
+  &::part(tick) {
+    background-color: var(--tp-ticks-background);
+    border-radius: 50%;
+  }
 }
