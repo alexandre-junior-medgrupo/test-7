@@ -180,14 +180,18 @@ ion-item {
       margin: 8px 8px 0 0 !important;
     }
 
-    ion-textarea.sc-ion-textarea-md-h {
-      --padding-top: 12px;
-      --padding-bottom: 12px;
-      --padding-start: 16px;
-      --padding-end: 16px;
+    ion-textarea {
       height: 80px;
-      margin-top: 0;
+      border: 1px solid transparent;
       border-radius: 8px;
+
+      &.sc-ion-textarea-md-h {
+        --padding-top: 12px;
+        --padding-bottom: 12px;
+        --padding-start: 16px;
+        --padding-end: 16px;
+        margin-top: 0;
+      }
 
       .textarea-legacy-wrapper {
         height: 100%;
@@ -201,7 +205,10 @@ ion-item {
     border-radius: 8px;
   }
 
-  &.item-has-focus ion-input {
-    border: 1px solid var(--tp-color-neutral-3);
+  &.item-has-focus {
+    ion-input,
+    ion-textarea {
+      border: 1px solid var(--tp-color-neutral-3);
+    }
   }
 }
