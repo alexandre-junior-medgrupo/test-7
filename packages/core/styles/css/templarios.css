@@ -1816,29 +1816,67 @@ ion-checkbox.ion-color:hover {
 }
 
 ion-chip {
-  --color: var(--tp-color-brand-3);
+  --background: var(--tp-color-brand-3);
+  --color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   margin: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 1px solid var(--tp-color-brand-3);
+  border-radius: 50px;
+}
+ion-chip ion-label {
+  padding: 4px 2px;
+  color: var(--tp-color-neutral-10);
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
+}
+ion-chip ion-icon {
+  --stroke: var(--tp-color-neutral-10);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-inline: 0;
+}
+
+ion-chip.chip-outline {
   border-color: var(--tp-color-neutral-25);
 }
-
-ion-chip.ion-activated,
-ion-chip:hover:not([disabled]) {
-  --color: var(--tp-color-neutral-10);
-  background: var(--tp-color-brand-3);
-  border-color: var(--tp-color-brand-3);
+ion-chip.chip-outline ion-label {
+  color: var(--tp-color-brand-4);
+}
+ion-chip.chip-outline ion-icon {
+  --stroke: var(--tp-color-brand-4);
 }
 
-ion-chip.ion-color {
+ion-chip:not(.chip-outline):hover {
+  --background: var(--tp-color-brand-2);
+  border: 1px solid var(--tp-color-brand-2);
+}
+
+ion-chip.chip-outline:hover {
+  background: transparent;
+}
+
+ion-chip.ion-color:not(.chip-outline) ion-label {
+  color: var(--ion-color-contrast);
+}
+ion-chip.ion-color:not(.chip-outline) ion-icon {
+  --stroke: var(--ion-color-contrast);
+}
+ion-chip.ion-color:not(.chip-outline):hover {
+  background: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
+  border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
+}
+
+ion-chip.ion-color.chip-outline {
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+  border-color: var(--tp-color-neutral-25);
+}
+ion-chip.ion-color.chip-outline ion-label {
   color: var(--ion-color-base);
 }
-
-ion-chip.ion-color.ion-activated, ion-chip.ion-color:hover:not([disabled]) {
-  color: var(--ion-color-contrast);
-  background: var(--ion-color-base);
-  border-color: var(--ion-color-base);
+ion-chip.ion-color.chip-outline ion-icon {
+  --stroke: var(--ion-color-base);
 }
 
 ion-input.sc-ion-input-md-h {
