@@ -6,7 +6,7 @@ import type { TpColor } from '../../../utils/types/color.type';
   tag: 'tp-chart-bar',
   styleUrl: 'chart-bar.scss',
   assetsDirs: ['assets'],
-  scoped: true,
+  shadow: true,
 })
 export class TpChartBar {
   /**
@@ -48,10 +48,18 @@ export class TpChartBar {
 
     if (loading) {
       content = (
-        <ion-skeleton-text
-          class="tp-chart-bar__skeleton"
-          animated
-        ></ion-skeleton-text>
+        <div class="tp-chart-bar__container">
+          {!noLabel && (
+            <ion-skeleton-text
+              class="tp-chart-bar__label-skeleton"
+              animated
+            ></ion-skeleton-text>
+          )}
+          <ion-skeleton-text
+            class="tp-chart-bar__skeleton"
+            animated
+          ></ion-skeleton-text>
+        </div>
       );
     } else {
       content = (

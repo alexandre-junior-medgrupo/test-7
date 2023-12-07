@@ -2,9 +2,16 @@
   * @prop --value: Propriedade definida dinamicamente. Define o valor do preenchimento do componente.
   * @prop --width: Propriedade definida dinamicamente. Define a largura do componente.
   * @prop --height: Propriedade definida dinamicamente. Define a altura do componente.
+  * @prop --tp-skeleton-height: Define a altura do skeleton do componente.
+  * @prop --tp-skeleton-width: Define a largura do skeleton do componente.
+  * @prop --tp-skeleton-background-rgb: Define o background rgb do skeleton do componente.
 */
 
 :host {
+  --tp-skeleton-height: calc(var(--height) * 1px);
+  --tp-skeleton-width: calc(var(--width) * 1px);
+  --tp-skeleton-background-rgb: var(--tp-color-neutral-10-rgb);
+
   display: block;
   width: calc(var(--width) * 1px);
   height: max-content;
@@ -38,10 +45,20 @@
     animation: load-chart-bar forwards 400ms ease-in-out;
   }
 
-  &__skeleton {
-    --tp-height: calc(var(--height) * 1px);
-    --tp-width: calc(var(--width) * 1px);
+  &__label-skeleton {
+    --background-rgb: var(--tp-skeleton-background-rgb);
     --border-radius: 2px;
+    width: var(--tp-skeleton-width);
+    height: 12px;
+    margin: 0 0 6px;
+  }
+
+  &__skeleton {
+    --background-rgb: var(--tp-skeleton-background-rgb);
+    --border-radius: 2px;
+    width: var(--tp-skeleton-width);
+    height: var(--tp-skeleton-height);
+    margin: 0;
   }
 }
 
@@ -57,6 +74,10 @@
 //
 :host(.tp-chart-bar--loading) {
   background: transparent;
+
+  .tp-chart-bar__label {
+    display: none;
+  }
 }
 
 //
