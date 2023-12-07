@@ -71,7 +71,7 @@ const validateInput = () => {
   };
 };
 
-export const State: Story = {
+export const States: Story = {
   render: ({ ...args }) => {
     setTimeout(() => {
       validateInput();
