@@ -1,5 +1,0 @@
-import { TpType } from "../../../../../src/utils/enums/type.enum";
-export const TP_ION_TEXT = {
-  type: Object.values(TpType),
-};
-//# sourceMappingURL=text.constant.js.map
