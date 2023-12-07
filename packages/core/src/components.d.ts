@@ -22,6 +22,10 @@ export namespace Components {
          */
         "height": number;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define se o componente irá apresentar rótulo ou não.
          */
         "noLabel": boolean;
@@ -56,6 +60,10 @@ export namespace Components {
          */
         "hasMarker": boolean;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define a posição, em porcentagem, do marcador na coluna.
          */
         "markerValue": number;
@@ -75,6 +83,10 @@ export namespace Components {
         "state"?: 'error' | 'success';
     }
     interface TpRateLike {
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
         /**
           * Define o status do componente.
          */
@@ -139,6 +151,10 @@ declare namespace LocalJSX {
          */
         "height"?: number;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define se o componente irá apresentar rótulo ou não.
          */
         "noLabel"?: boolean;
@@ -173,6 +189,10 @@ declare namespace LocalJSX {
          */
         "hasMarker"?: boolean;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define a posição, em porcentagem, do marcador na coluna.
          */
         "markerValue"?: number;
@@ -192,6 +212,10 @@ declare namespace LocalJSX {
         "state"?: 'error' | 'success';
     }
     interface TpRateLike {
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
         /**
           * Emitido quando a propriedade status é alterada.
          */
