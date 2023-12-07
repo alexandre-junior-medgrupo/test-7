@@ -2,8 +2,8 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_TYPE } from '../../../utils/constants/type.constant';
-import { TpIonLabel } from './label.type';
+import { TP_TYPE } from '../../../../utils/constants/type.constant';
+import { TpIonLabel } from '../utils/label.type';
 
 defineCustomElement();
 

@@ -1,5 +1,5 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
-import * as itemStories from './item.stories';
+import * as itemStories from '../stories/item.stories';
 import * as checkboxStories from './compositions/checkbox.stories';
 import * as inputStories from './compositions/input.stories';
 import * as radioStories from './compositions/radio.stories';
@@ -37,12 +37,6 @@ import { TpIonItem } from '..';
 
 <Controls of={checkboxStories.Checkbox} />
 
-### Input
-
-<Canvas of={inputStories.Input} />
-
-<Controls of={inputStories.Input} />
-
 ### Radio
 
 <Canvas of={radioStories.Radio} />
@@ -54,3 +48,9 @@ import { TpIonItem } from '..';
 <Canvas of={toggleStories.Toggle} />
 
 <Controls of={toggleStories.Toggle} />
+
+### Input
+
+<Canvas of={inputStories.Input} />
+
+<Controls of={inputStories.Input} />

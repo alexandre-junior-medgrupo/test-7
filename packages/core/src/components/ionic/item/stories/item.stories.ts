@@ -1,23 +1,21 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
-import { defineCustomElement as defineCustomElementToggle } from '@ionic/core/components/ion-toggle';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_ITEM } from '../item.constant';
-import { TpIonItem } from '../item.type';
+import { TP_ION_ITEM } from '../utils/item.constant';
+import { TpIonItem } from '../utils/item.type';
 
 defineCustomElementItem();
 defineCustomElementLabel();
-defineCustomElementToggle();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
-  title: 'components/Ionic/Item/Compositions',
+  title: 'components/Ionic/Item',
   argTypes: {
     lines: {
-      control: { type: 'select' },
+      control: { type: 'check' },
       options: [...TP_ION_ITEM.lines],
-      description: 'Define se o componente terá um border bottom.',
+      description: 'Define uma borda no bottom do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -30,8 +28,7 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
     gap: {
       control: { type: 'select' },
       options: [...TP_ION_ITEM.gap],
-      description:
-        'Define qual o espaçamento entre o icone e o texto do componente.',
+      description: 'Define o espaçamento entre os slots do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -44,8 +41,7 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
     spacingX: {
       control: { type: 'select' },
       options: [...TP_ION_ITEM.spacingX],
-      description:
-        'Define qual o espaçamento das bordas horizontais para o conteudo do componente.',
+      description: 'Define o padding horizontal do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -58,8 +54,7 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
     spacingY: {
       control: { type: 'select' },
       options: [...TP_ION_ITEM.spacingY],
-      description:
-        'Define qual o espaçamento das bordas verticais para o conteudo do componente.',
+      description: 'Define o padding vertical do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -71,7 +66,8 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
     },
     button: {
       control: 'boolean',
-      description: 'Define a estilização do estado button do componente.',
+      description:
+        'Se **true**, uma tag **button** será renderizada e o item terá a ação de **touch** ou **click**.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -100,10 +96,10 @@ export default meta;
 
 type Story = StoryObj<Components.IonItem & TpIonItem>;
 
-export const Toggle: Story = {
+export const Default: Story = {
   render: ({ ...args }) => html`
     <ion-item
-      .color="${args.color}"
+      color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -111,12 +107,11 @@ export const Toggle: Story = {
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
-      <ion-toggle mode="ios" slot="start" aria-label></ion-toggle>
-      <ion-label>Basic Item</ion-label>
+      <ion-label>Ion Item</ion-label>
     </ion-item>
 
     <ion-item
-      .color="${args.color}"
+      color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -124,8 +119,35 @@ export const Toggle: Story = {
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
-      <ion-label>Basic Item</ion-label>
-      <ion-toggle slot="end" aria-label></ion-toggle>
+      <ion-icon slot="start" src="./icons/tp-star.svg"></ion-icon>
+      <ion-label>Ion Item</ion-label>
+    </ion-item>
+
+    <ion-item
+      color="${args.color}"
+      lines="${args.lines}"
+      gap="${args.gap}"
+      spacingX="${args.spacingX}"
+      spacingY="${args.spacingY}"
+      ?button="${args.button}"
+      ?disabled="${args.disabled}"
+    >
+      <ion-label>Ion Item</ion-label>
+      <ion-icon slot="end" src="./icons/tp-star.svg"></ion-icon>
+    </ion-item>
+
+    <ion-item
+      color="${args.color}"
+      lines="${args.lines}"
+      gap="${args.gap}"
+      spacingX="${args.spacingX}"
+      spacingY="${args.spacingY}"
+      ?button="${args.button}"
+      ?disabled="${args.disabled}"
+    >
+      <ion-icon slot="start" src="./icons/tp-star.svg"></ion-icon>
+      <ion-label>Ion Item</ion-label>
+      <ion-icon slot="end" src="./icons/tp-star.svg"></ion-icon>
     </ion-item>
   `,
   /* play: async ({ canvasElement }) => {

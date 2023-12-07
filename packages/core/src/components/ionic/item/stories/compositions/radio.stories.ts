@@ -1,15 +1,17 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement as defineCustomElementCheckbox } from '@ionic/core/components/ion-checkbox';
 import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
+import { defineCustomElement as defineCustomElementRadio } from '@ionic/core/components/ion-radio';
+import { defineCustomElement as defineCustomElementRadioGroup } from '@ionic/core/components/ion-radio-group';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_ITEM } from '../item.constant';
-import { TpIonItem } from '../item.type';
+import { TP_ION_ITEM } from '../../utils/item.constant';
+import { TpIonItem } from '../../utils/item.type';
 
 defineCustomElementItem();
 defineCustomElementLabel();
-defineCustomElementCheckbox();
+defineCustomElementRadio();
+defineCustomElementRadioGroup();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
   title: 'components/Ionic/Item/Compositions',
@@ -100,33 +102,35 @@ export default meta;
 
 type Story = StoryObj<Components.IonItem & TpIonItem>;
 
-export const Checkbox: Story = {
+export const Radio: Story = {
   render: ({ ...args }) => html`
-    <ion-item
-      .color="${args.color}"
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-checkbox slot="start" aria-label></ion-checkbox>
-      <ion-label>Basic Item</ion-label>
-    </ion-item>
+    <ion-radio-group>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        gap="${args.gap}"
+        spacingX="${args.spacingX}"
+        spacingY="${args.spacingY}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-radio slot="start" aria-label></ion-radio>
+        <ion-label>Basic Item</ion-label>
+      </ion-item>
 
-    <ion-item
-      .color="${args.color}"
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-label>Basic Item</ion-label>
-      <ion-checkbox slot="end" aria-label></ion-checkbox>
-    </ion-item>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        gap="${args.gap}"
+        spacingX="${args.spacingX}"
+        spacingY="${args.spacingY}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-label>Basic Item</ion-label>
+        <ion-radio slot="end" aria-label></ion-radio>
+      </ion-item>
+    </ion-radio-group>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

@@ -11,7 +11,8 @@ const meta: Meta<Components.IonInput & TpIonInput> = {
   argTypes: {
     clearInput: {
       control: 'boolean',
-      description: 'Renderiza um botão para limpar o input.',
+      description:
+        'Se **true**, uma tag **button** será renderizada e o input terá a ação de **limpeza** do texto.',
       table: {
         defaultValue: {
           summary: 'undefined',
