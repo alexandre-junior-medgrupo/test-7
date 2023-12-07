@@ -12,6 +12,7 @@ ion-skeleton-text {
 }
 
 ion-skeleton-text {
+  display: block;
   width: var(--tp-width);
   height: var(--tp-height);
   margin: 0;

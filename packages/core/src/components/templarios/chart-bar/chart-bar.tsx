@@ -6,7 +6,7 @@ import type { TpColor } from '../../../utils/types/color.type';
   tag: 'tp-chart-bar',
   styleUrl: 'chart-bar.scss',
   assetsDirs: ['assets'],
-  shadow: true,
+  scoped: true,
 })
 export class TpChartBar {
   /**
@@ -44,6 +44,29 @@ export class TpChartBar {
 
     const percentage = (height * Math.min(Math.max(0, value), 100)) / 100;
 
+    let content;
+
+    if (loading) {
+      content = (
+        <ion-skeleton-text
+          class="tp-chart-bar__skeleton"
+          animated
+        ></ion-skeleton-text>
+      );
+    } else {
+      content = (
+        <div class="tp-chart-bar__container">
+          {!noLabel && (
+            <div class="tp-chart-bar__label">
+              <slot></slot>
+            </div>
+          )}
+
+          <div class="tp-chart-bar__progress"></div>
+        </div>
+      );
+    }
+
     return (
       <Host
         class={createColorClasses(color, {
@@ -57,20 +80,7 @@ export class TpChartBar {
           '--width': `${width}`,
         }}
       >
-        <div class="tp-chart-bar__container">
-          {!noLabel && (
-            <div class="tp-chart-bar__label">
-              <slot></slot>
-            </div>
-          )}
-
-          <div class="tp-chart-bar__progress"></div>
-        </div>
-
-        <ion-skeleton-text
-          class="tp-chart-bar__skeleton"
-          animated
-        ></ion-skeleton-text>
+        {content}
       </Host>
     );
   }
