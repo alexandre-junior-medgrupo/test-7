@@ -25,8 +25,8 @@ $tp-chip-sizes: (
 
 ion-chip {
   --background: var(--tp-color-brand-3);
-  // color do ripple effect
-  --color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+  --color: rgba(var(--tp-color-neutral-10-rgb), 0.5); // ripple effect
+
   margin: 0;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -49,9 +49,7 @@ ion-chip {
   }
 }
 
-//
-// versão default é o outline
-//
+// default state
 ion-chip.chip-outline {
   border-color: var(--tp-color-neutral-25);
 
@@ -67,13 +65,15 @@ ion-chip.chip-outline {
 //
 // hover
 //
+// default state
+ion-chip.chip-outline:hover {
+  background: transparent;
+}
+
+// active state
 ion-chip:not(.chip-outline):hover {
   --background: var(--tp-color-brand-2);
   border: 1px solid var(--tp-color-brand-2);
-}
-
-ion-chip.chip-outline:hover {
-  background: transparent;
 }
 
 //
@@ -105,9 +105,23 @@ ion-chip {
 //
 // color
 //
+// default state
+ion-chip.ion-color.chip-outline {
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5); // ripple effect
+  border-color: var(--tp-color-neutral-25);
+
+  ion-label {
+    color: var(--ion-color-base);
+  }
+
+  ion-icon {
+    --stroke: var(--ion-color-base);
+  }
+}
+
+// active state
 ion-chip.ion-color:not(.chip-outline) {
-  // color do ripple effect
-  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5); // ripple effect
   background: var(--ion-color-base);
   border: 1px solid var(--ion-color-base);
 
@@ -122,19 +136,5 @@ ion-chip.ion-color:not(.chip-outline) {
   &:hover {
     background: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
     border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
-  }
-}
-
-ion-chip.ion-color.chip-outline {
-  // color do ripple effect
-  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
-  border-color: var(--tp-color-neutral-25);
-
-  ion-label {
-    color: var(--ion-color-base);
-  }
-
-  ion-icon {
-    --stroke: var(--ion-color-base);
   }
 }

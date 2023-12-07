@@ -2,8 +2,8 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-chip';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonChip } from './chip.type';
-import { TP_ION_CHIP } from './chip.constants';
+import { TpIonChip } from '../utils/chip.type';
+import { TP_ION_CHIP } from '../utils/chip.constants';
 
 defineCustomElement();
 
@@ -47,21 +47,6 @@ const meta: Meta<Components.IonChip & TpIonChip> = {
         },
       },
     },
-    slot: {
-      control: { type: 'text' },
-      table: {
-        defaultValue: {
-          summary: 'undefined',
-        },
-        type: {
-          summary: 'string',
-        },
-      },
-    },
-  },
-  args: {
-    active: true,
-    slot: 'Chip',
   },
 };
 
@@ -77,7 +62,7 @@ export const Default: Story = {
       color="${args.color}"
       ?disabled="${args.disabled}"
     >
-      <ion-label>${args.slot}</ion-label>
+      <ion-label>ion-chip</ion-label>
     </ion-chip>
 
     <ion-chip
@@ -87,7 +72,7 @@ export const Default: Story = {
       ?disabled="${args.disabled}"
     >
       <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
-      <ion-label>${args.slot}</ion-label>
+      <ion-label>ion-chip</ion-label>
     </ion-chip>
 
     <ion-chip
@@ -96,7 +81,7 @@ export const Default: Story = {
       color="${args.color}"
       ?disabled="${args.disabled}"
     >
-      <ion-label>${args.slot}</ion-label>
+      <ion-label>ion-chip</ion-label>
       <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
     </ion-chip>
 
@@ -107,7 +92,7 @@ export const Default: Story = {
       ?disabled="${args.disabled}"
     >
       <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
-      <ion-label>${args.slot}</ion-label>
+      <ion-label>ion-chip</ion-label>
       <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
     </ion-chip>
   `,

@@ -2,7 +2,7 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-input';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonInput } from './input.type';
+import { TpIonInput } from '../utils/input.type';
 
 defineCustomElement();
 
@@ -22,8 +22,7 @@ const meta: Meta<Components.IonInput & TpIonInput> = {
     },
     clearInput: {
       control: 'boolean',
-      description:
-        'Define se o componente conatará com um button para limpar o input.',
+      description: 'Renderiza um botão para limpar o input.',
       table: {
         defaultValue: {
           summary: 'undefined',
