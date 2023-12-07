@@ -1,19 +1,11 @@
-/**
-* @prop --tp-width: Define a largura do componente.
-* @prop --tp-height: Define a altura do componente.
-*/
-
 ion-skeleton-text {
   --background-rgb: var(--tp-color-neutral-10-rgb);
   --border-radius: 4px;
-
-  --tp-height: 20px;
-  --tp-width: 100%;
 }
 
 ion-skeleton-text {
   display: block;
-  width: var(--tp-width);
-  height: var(--tp-height);
+  width: 100%;
+  height: 20px;
   margin: 0;
 }

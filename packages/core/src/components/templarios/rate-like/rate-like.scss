@@ -1,10 +1,16 @@
 /* stylelint-disable selector-class-pattern */
 :host {
-  display: flex;
-  align-items: center;
+  --tp-skeleton-height: 24px;
+  --tp-skeleton-width: 24px;
+  --tp-skeleton-background-rgb: var(--tp-color-neutral-10-rgb);
 }
 
 .tp-rate-like {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
   &__button {
     width: 24px;
     height: 24px;
@@ -38,9 +44,11 @@
   }
 
   &__skeleton {
-    --tp-height: 24px;
-    --tp-width: 24px;
+    --background-rgb: var(--tp-skeleton-background-rgb);
     --border-radius: 0;
+    width: var(--tp-skeleton-width);
+    height: var(--tp-skeleton-height);
+    margin: 0;
 
     &:not(:last-child) {
       margin-right: 16px;

@@ -14,7 +14,7 @@ import { TpRateLikeType } from './rate-like.type';
   tag: 'tp-rate-like',
   styleUrl: 'rate-like.scss',
   assetsDirs: ['assets'],
-  scoped: true,
+  shadow: true,
 })
 export class TpRateLike {
   private thumbsUpIcon = getAssetPath('./assets/tp-thumbs-up.svg');
@@ -50,35 +50,38 @@ export class TpRateLike {
     let content;
 
     if (loading) {
-      content = [
-        <ion-skeleton-text
-          class="tp-rate-like__skeleton"
-          animated
-        ></ion-skeleton-text>,
-        <ion-skeleton-text
-          class="tp-rate-like__skeleton"
-          animated
-        ></ion-skeleton-text>,
-      ];
+      content = (
+        <div class="tp-rate-like__container">
+          <ion-skeleton-text
+            class="tp-rate-like__skeleton"
+            animated
+          ></ion-skeleton-text>
+          <ion-skeleton-text
+            class="tp-rate-like__skeleton"
+            animated
+          ></ion-skeleton-text>
+        </div>
+      );
     } else {
-      content = [
-        <button
-          class={`tp-rate-like__button
+      content = (
+        <div class="tp-rate-like__container">
+          <button
+            class={`tp-rate-like__button
           ${
             status === TpRateLikeStatus.LIKE ? 'tp-rate-like__button--like' : ''
           }
           ${status ? 'tp-rate-like__button--disabled' : ''}
         `}
-          onClick={() => this.onClick(TpRateLikeStatus.LIKE)}
-        >
-          <ion-icon
-            class="tp-rate-like__icon"
-            src={thumbsUpIcon}
-            aria-hidden="true"
-          ></ion-icon>
-        </button>,
-        <button
-          class={`tp-rate-like__button
+            onClick={() => this.onClick(TpRateLikeStatus.LIKE)}
+          >
+            <ion-icon
+              class="tp-rate-like__icon"
+              src={thumbsUpIcon}
+              aria-hidden="true"
+            ></ion-icon>
+          </button>
+          <button
+            class={`tp-rate-like__button
           ${
             status === TpRateLikeStatus.DISLIKE
               ? 'tp-rate-like__button--dislike'
@@ -86,15 +89,16 @@ export class TpRateLike {
           }
           ${status ? 'tp-rate-like__button--disabled' : ''}
         `}
-          onClick={() => this.onClick(TpRateLikeStatus.DISLIKE)}
-        >
-          <ion-icon
-            class="tp-rate-like__icon"
-            src={thumbsDownIcon}
-            aria-hidden="true"
-          ></ion-icon>
-        </button>,
-      ];
+            onClick={() => this.onClick(TpRateLikeStatus.DISLIKE)}
+          >
+            <ion-icon
+              class="tp-rate-like__icon"
+              src={thumbsDownIcon}
+              aria-hidden="true"
+            ></ion-icon>
+          </button>
+        </div>
+      );
     }
 
     return <Host class="tp-rate-like">{content}</Host>;
