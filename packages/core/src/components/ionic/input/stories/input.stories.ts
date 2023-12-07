@@ -1,21 +1,17 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
-import { defineCustomElement as defineCustomElementText } from '@ionic/core/components/ion-text';
+import { defineCustomElement } from '@ionic/core/components/ion-input';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonText } from '../../text/text.type';
-import { TpIonInput } from '../input.type';
+import { TpIonInput } from '../utils/input.type';
 
-defineCustomElementInput();
-defineCustomElementText();
+defineCustomElement();
 
-const meta: Meta<Components.IonInput & TpIonInput & TpIonText> = {
-  title: 'components/Ionic/Input/Compositions',
+const meta: Meta<Components.IonInput & TpIonInput> = {
+  title: 'components/Ionic/Input',
   argTypes: {
     clearInput: {
       control: 'boolean',
-      description:
-        'Define se o componente conatará com um button para limpar o input.',
+      description: 'Renderiza um botão para limpar o input.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -42,12 +38,11 @@ const meta: Meta<Components.IonInput & TpIonInput & TpIonText> = {
 
 export default meta;
 
-type Story = StoryObj<Components.IonInput & TpIonInput & TpIonText>;
+type Story = StoryObj<Components.IonInput & TpIonInput>;
 
-export const Label: Story = {
+export const Default: Story = {
   render: ({ ...args }) => {
     return html`
-      <ion-text tp-type="p14">Description</ion-text>
       <ion-input
         mode="md"
         placeholder="Digite aqui"
