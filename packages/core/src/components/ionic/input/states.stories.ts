@@ -9,6 +9,17 @@ defineCustomElement();
 const meta: Meta<Components.IonInput & TpIonInput> = {
   title: 'components/Ionic/Input',
   argTypes: {
+    errorText: {
+      control: { type: 'text' },
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'string',
+        },
+      },
+    },
     clearInput: {
       control: 'boolean',
       description:
@@ -34,6 +45,9 @@ const meta: Meta<Components.IonInput & TpIonInput> = {
         },
       },
     },
+  },
+  args: {
+    errorText: '*Caracteres invalidos',
   },
 };
 
@@ -80,7 +94,7 @@ export const States: Story = {
     return html`
       <ion-input
         type="email"
-        error-text="*Caracteres invalidos"
+        error-text="${args.errorText}"
         mode="md"
         clear-input="true"
         placeholder="Digite um e-mail valido"

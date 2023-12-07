@@ -66,7 +66,7 @@ const meta: Meta<Components.IonToast & TpIonToast & IonButton> = {
   },
   args: {
     duration: 3000,
-    message: 'Lorem ipsum, dolor sit amet',
+    message: 'Este toast desaparecerá em 3 segundos',
     icon: './icons/tp-star.svg',
   },
 };
