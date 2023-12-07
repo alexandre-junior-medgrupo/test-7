@@ -1,11 +1,13 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement } from '@ionic/core/components/ion-item';
+import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TP_ION_ITEM } from './item.constant';
 import { TpIonItem } from './item.type';
 
-defineCustomElement();
+defineCustomElementItem();
+defineCustomElementLabel();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
   title: 'components/Ionic/Item',
