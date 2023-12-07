@@ -1,4 +1,10 @@
-tp-angular/
-tp-core/
+# root
+core/
+angular/
+
+# packages
+# core
 packages/core/storybook-static/
+
+# angular-lib
 packages/angular-lib/

@@ -1,6 +1,7 @@
 # root
-tp-core/
-tp-angular/
+core/
+angular/
+.stylelintcache
 
 # packages
 # core
@@ -14,8 +15,3 @@ packages/core/storybook-static
 # angular-lib
 packages/angular/.angular
 packages/angular/dist
-
-# institucional
-packages/institucional/.angular
-packages/institucional/dist
-packages/institucional/storybook-static

@@ -14,14 +14,14 @@ import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 import { Components } from 'tp-core';
 
 @ProxyCmp({
-  inputs: ['color', 'height', 'noLabel', 'value', 'width'],
+  inputs: ['color', 'height', 'loading', 'noLabel', 'value', 'width'],
 })
 @Component({
   selector: 'tp-chart-bar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['color', 'height', 'noLabel', 'value', 'width'],
+  inputs: ['color', 'height', 'loading', 'noLabel', 'value', 'width'],
 })
 export class TpChartBar {
   protected el: HTMLElement;
@@ -44,6 +44,7 @@ export declare interface TpChartBar extends Components.TpChartBar {}
     'containerHeight',
     'disabled',
     'hasMarker',
+    'loading',
     'markerValue',
     'noLabel',
   ],
@@ -59,6 +60,7 @@ export declare interface TpChartBar extends Components.TpChartBar {}
     'containerHeight',
     'disabled',
     'hasMarker',
+    'loading',
     'markerValue',
     'noLabel',
   ],
@@ -79,14 +81,38 @@ export declare interface TpComparisonChartBar
   extends Components.TpComparisonChartBar {}
 
 @ProxyCmp({
-  inputs: ['status'],
+  inputs: ['state'],
+})
+@Component({
+  selector: 'tp-input-container',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['state'],
+})
+export class TpInputContainer {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpInputContainer extends Components.TpInputContainer {}
+
+@ProxyCmp({
+  inputs: ['loading', 'status'],
 })
 @Component({
   selector: 'tp-rate-like',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['status'],
+  inputs: ['loading', 'status'],
 })
 export class TpRateLike {
   protected el: HTMLElement;
@@ -109,27 +135,3 @@ export declare interface TpRateLike extends Components.TpRateLike {
    */
   tpChange: EventEmitter<CustomEvent<ITpRateLikeTpRateLikeType['status']>>;
 }
-
-@ProxyCmp({
-  inputs: ['color', 'icon'],
-})
-@Component({
-  selector: 'tp-test',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: '<ng-content></ng-content>',
-  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['color', 'icon'],
-})
-export class TpTest {
-  protected el: HTMLElement;
-  constructor(
-    c: ChangeDetectorRef,
-    r: ElementRef,
-    protected z: NgZone,
-  ) {
-    c.detach();
-    this.el = r.nativeElement;
-  }
-}
-
-export declare interface TpTest extends Components.TpTest {}
