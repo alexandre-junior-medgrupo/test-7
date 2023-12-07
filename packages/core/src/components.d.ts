@@ -69,6 +69,10 @@ export namespace Components {
           * Define a variação de cor do componente.
          */
         "color"?: TpColor;
+        /**
+          * Define a variação de cor do componente.
+         */
+        "state"?: 'error' | 'success';
     }
     interface TpRateLike {
         /**
@@ -182,6 +186,10 @@ declare namespace LocalJSX {
           * Define a variação de cor do componente.
          */
         "color"?: TpColor;
+        /**
+          * Define a variação de cor do componente.
+         */
+        "state"?: 'error' | 'success';
     }
     interface TpRateLike {
         /**
