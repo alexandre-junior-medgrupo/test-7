@@ -47,8 +47,21 @@ export class TpRateLike {
   render() {
     const { loading, status, thumbsUpIcon, thumbsDownIcon } = this;
 
-    return (
-      <Host class={`tp-rate-like ${loading ? 'tp-rate-like--loading' : ''} `}>
+    let content;
+
+    if (loading) {
+      content = [
+        <ion-skeleton-text
+          class="tp-rate-like__skeleton"
+          animated
+        ></ion-skeleton-text>,
+        <ion-skeleton-text
+          class="tp-rate-like__skeleton"
+          animated
+        ></ion-skeleton-text>,
+      ];
+    } else {
+      content = [
         <button
           class={`tp-rate-like__button
           ${
@@ -63,7 +76,7 @@ export class TpRateLike {
             src={thumbsUpIcon}
             aria-hidden="true"
           ></ion-icon>
-        </button>
+        </button>,
         <button
           class={`tp-rate-like__button
           ${
@@ -80,17 +93,10 @@ export class TpRateLike {
             src={thumbsDownIcon}
             aria-hidden="true"
           ></ion-icon>
-        </button>
+        </button>,
+      ];
+    }
 
-        <ion-skeleton-text
-          class="tp-rate-like__skeleton"
-          animated
-        ></ion-skeleton-text>
-        <ion-skeleton-text
-          class="tp-rate-like__skeleton"
-          animated
-        ></ion-skeleton-text>
-      </Host>
-    );
+    return <Host class="tp-rate-like">{content}</Host>;
   }
 }
