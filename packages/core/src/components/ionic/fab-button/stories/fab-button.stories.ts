@@ -10,7 +10,7 @@ import {
 } from '@ionic/core/components/ion-fab-list';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonFab } from './fab-button.type';
+import { TpIonFab } from '../utils/fab-button.type';
 
 defineCustomElementFab();
 defineCustomElementFabList();

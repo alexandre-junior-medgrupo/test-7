@@ -14,7 +14,7 @@ export * from './components/ionic/checkbox/utils/checkbox.type';
 export * from './components/ionic/chip/utils/chip.type';
 export * from './components/ionic/icon/utils/icon.type';
 export * from './components/ionic/input/utils/input.type';
-export * from './components/ionic/item/item.type';
+export * from './components/ionic/item/utils/item.type';
 export * from './components/ionic/label/label.type';
 export * from './components/ionic/progress-bar/progress-bar.type';
 export * from './components/ionic/radio/radio.type';

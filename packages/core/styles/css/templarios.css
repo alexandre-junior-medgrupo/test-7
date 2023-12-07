@@ -1873,6 +1873,38 @@ ion-chip.ion-color:not(.chip-outline):hover {
   border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
 }
 
+ion-fab-button {
+  --background: var(--tp-color-brand);
+  width: 48px;
+  height: 48px;
+}
+
+ion-fab-list {
+  min-width: 48px;
+}
+ion-fab-list ion-icon {
+  --stroke: var(--tp-color-neutral-1);
+  width: 24px;
+  height: 24px;
+}
+
+ion-fab-button {
+  --background: var(--tp-color-neutral-10);
+  width: 40px;
+  height: 40px;
+  margin: 6px 0;
+}
+ion-fab-button:first-child {
+  margin: 6px 0 2px;
+}
+ion-fab-button:last-child {
+  margin: 0 0 6px;
+}
+
+ion-fab-button.ion-color ion-icon {
+  --stroke: var(--ion-color-contrast);
+}
+
 ion-input.sc-ion-input-md-h {
   --background: var(--tp-color-neutral-2);
   --border-radius: 8px;
@@ -2377,6 +2409,18 @@ ion-searchbar.ion-color {
 }
 ion-searchbar.ion-color ion-icon {
   --stroke: var(--ion-color-contrast);
+}
+
+ion-skeleton-text {
+  --background-rgb: var(--tp-color-neutral-10-rgb);
+  --border-radius: 4px;
+}
+
+ion-skeleton-text {
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin: 0;
 }
 
 .teste {

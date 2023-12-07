@@ -1,15 +1,17 @@
 import { Components } from '@ionic/core';
+import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
+import { defineCustomElement as defineCustomElementSearchbar } from '@ionic/core/components/ion-searchbar';
+import { defineCustomElement as defineCustomElementTextarea } from '@ionic/core/components/ion-textarea';
 import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
-import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
-import { defineCustomElement as defineCustomElementToggle } from '@ionic/core/components/ion-toggle';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_ITEM } from '../item.constant';
-import { TpIonItem } from '../item.type';
+import { TP_ION_ITEM } from '../../utils/item.constant';
+import { TpIonItem } from '../../utils/item.type';
 
 defineCustomElementItem();
-defineCustomElementLabel();
-defineCustomElementToggle();
+defineCustomElementInput();
+defineCustomElementSearchbar();
+defineCustomElementTextarea();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
   title: 'components/Ionic/Item/Compositions',
@@ -100,7 +102,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonItem & TpIonItem>;
 
-export const Toggle: Story = {
+export const Input: Story = {
   render: ({ ...args }) => html`
     <ion-item
       .color="${args.color}"
@@ -111,8 +113,11 @@ export const Toggle: Story = {
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
-      <ion-toggle mode="ios" slot="start" aria-label></ion-toggle>
-      <ion-label>Basic Item</ion-label>
+      <ion-input
+        mode="md"
+        placeholder="Digite aqui"
+        clear-input="true"
+      ></ion-input>
     </ion-item>
 
     <ion-item
@@ -124,8 +129,52 @@ export const Toggle: Story = {
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
-      <ion-label>Basic Item</ion-label>
-      <ion-toggle slot="end" aria-label></ion-toggle>
+      <div class="tp-input-container">
+        <ion-text tp-type="p14">Input</ion-text>
+        <ion-input
+          mode="md"
+          placeholder="Digite aqui"
+          clear-input="true"
+        ></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item
+      .color="${args.color}"
+      lines="${args.lines}"
+      gap="${args.gap}"
+      spacingX="${args.spacingX}"
+      spacingY="${args.spacingY}"
+      ?button="${args.button}"
+      ?disabled="${args.disabled}"
+    >
+      <div class="tp-input-container">
+        <ion-text tp-type="p14">Searchbar</ion-text>
+        <ion-searchbar
+          mode="md"
+          search-icon="./../../../../icons/tp-search.svg"
+          clear-icon="./../../../../icons/tp-x.svg"
+          placeholder="Lorem ipsum dolor"
+        ></ion-searchbar>
+      </div>
+    </ion-item>
+
+    <ion-item
+      .color="${args.color}"
+      lines="${args.lines}"
+      gap="${args.gap}"
+      spacingX="${args.spacingX}"
+      spacingY="${args.spacingY}"
+      ?button="${args.button}"
+      ?disabled="${args.disabled}"
+    >
+      <div class="tp-input-container">
+        <ion-text tp-type="p14">Textarea</ion-text>
+        <ion-textarea
+          placeholder="Lorem ipsum, dolor sit amet consectetur."
+          mode="md"
+        ></ion-textarea>
+      </div>
     </ion-item>
   `,
   /* play: async ({ canvasElement }) => {
