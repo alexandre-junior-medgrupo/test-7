@@ -1,19 +1,24 @@
 ion-accordion {
-  ion-item {
+  // item
+  [slot='header'] {
     --border-radius: 8px;
     --ripple-color: transparent;
+    --background: transparent;
+    --color: var(--tp-color-neutral-10);
 
     // hover
     &:hover {
       --background-hover: transparent;
     }
+  }
 
-    .ion-accordion-toggle-icon {
-      --stroke: var(--tp-color-neutral-9);
-    }
+  // icon
+  .ion-accordion-toggle-icon {
+    --stroke: var(--tp-color-neutral-9);
   }
 
   [slot='content'].ion-padding {
+    background: transparent;
     color: var(--tp-color-neutral-7);
     font-size: 14px;
     font-weight: 400;
@@ -28,14 +33,13 @@ ion-accordion {
 ion-accordion {
   &.accordion-expanding,
   &.accordion-expanded {
-    ion-item {
+    [slot='header'] {
       --padding-bottom: 0;
       --border-radius: 8px 8px 0 0;
     }
 
-    [slot='content'].ion-padding {
+    [slot='content'] {
       border-radius: 0 0 8px 8px;
-      background: red;
     }
   }
 }
@@ -45,21 +49,19 @@ ion-accordion {
 //
 ion-accordion {
   &.accordion-collapsing {
-    ion-item {
+    [slot='header'] {
       --padding-bottom: 0;
       --border-radius: 8px 8px 0 0;
     }
 
-    [slot='content'].ion-padding {
+    [slot='content'] {
       border-radius: 0 0 8px 8px;
-      background: red;
     }
   }
 
   &.accordion-collapsed {
-    [slot='content'].ion-padding {
+    [slot='content'] {
       border-radius: 0 0 8px 8px;
-      background: red;
     }
   }
 }
@@ -67,3 +69,18 @@ ion-accordion {
 //
 // color
 //
+ion-accordion[tp-color] {
+  [slot='header'] {
+    --background: var(--tp-color-base);
+    --color: var(--tp-color-contrast);
+  }
+
+  .ion-accordion-toggle-icon {
+    --stroke: var(--tp-color-contrast);
+  }
+
+  [slot='content'] {
+    background: var(--tp-color-base);
+    color: var(--tp-color-contrast);
+  }
+}
