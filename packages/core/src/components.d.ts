@@ -6,10 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
-import { TpColor as TpColor1 } from "./components.d";
 import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
-export { TpColor as TpColor1 } from "./components.d";
 export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export namespace Components {
     interface TpChartBar {
@@ -21,6 +19,10 @@ export namespace Components {
           * Define a altura do componente.
          */
         "height": number;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
         /**
           * Define se o componente irá apresentar rótulo ou não.
          */
@@ -56,6 +58,10 @@ export namespace Components {
          */
         "hasMarker": boolean;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define a posição, em porcentagem, do marcador na coluna.
          */
         "markerValue": number;
@@ -66,11 +72,15 @@ export namespace Components {
     }
     interface TpInputContainer {
         /**
-          * Define a variação de cor do componente.
+          * Define a variação de estado do componente.
          */
-        "color"?: TpColor;
+        "state"?: 'error' | 'success';
     }
     interface TpRateLike {
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
         /**
           * Define o status do componente.
          */
@@ -135,6 +145,10 @@ declare namespace LocalJSX {
          */
         "height"?: number;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define se o componente irá apresentar rótulo ou não.
          */
         "noLabel"?: boolean;
@@ -169,6 +183,10 @@ declare namespace LocalJSX {
          */
         "hasMarker"?: boolean;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define a posição, em porcentagem, do marcador na coluna.
          */
         "markerValue"?: number;
@@ -179,11 +197,15 @@ declare namespace LocalJSX {
     }
     interface TpInputContainer {
         /**
-          * Define a variação de cor do componente.
+          * Define a variação de estado do componente.
          */
-        "color"?: TpColor;
+        "state"?: 'error' | 'success';
     }
     interface TpRateLike {
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
         /**
           * Emitido quando a propriedade status é alterada.
          */

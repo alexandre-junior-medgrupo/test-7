@@ -1,1 +1,0 @@
-{"version":3,"file":"range.enum.js","sourceRoot":"","sources":["../../../../src/components/ionic/range/range.enum.ts"],"names":[],"mappings":"AAAA,MAAM,CAAN,IAAY,iBAEX;AAFD,WAAY,iBAAiB;IAC3B,uCAAkB,CAAA;AACpB,CAAC,EAFW,iBAAiB,KAAjB,iBAAiB,QAE5B","sourcesContent":["export enum TpIonRangeVariant {\r\n  Secondary = 'true',\r\n}\r\n"]}

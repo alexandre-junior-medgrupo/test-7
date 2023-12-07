@@ -9,6 +9,17 @@ defineCustomElement();
 const meta: Meta<Components.IonTextarea & TpIonTextarea> = {
   title: 'components/Ionic/Textarea',
   argTypes: {
+    errorText: {
+      control: { type: 'text' },
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'string',
+        },
+      },
+    },
     disabled: {
       control: 'boolean',
       description: 'Define a estilização do estado disabled do componente.',
@@ -21,6 +32,9 @@ const meta: Meta<Components.IonTextarea & TpIonTextarea> = {
         },
       },
     },
+  },
+  args: {
+    errorText: '*Caracteres invalidos',
   },
 };
 
@@ -66,7 +80,7 @@ export const State: Story = {
 
     return html`
       <ion-textarea
-        error-text="*Caracteres invalidos"
+        error-text="${args.errorText}"
         color="${args.color}"
         ?disabled="${args.disabled}"
         placeholder="Digite um e-mail valido"

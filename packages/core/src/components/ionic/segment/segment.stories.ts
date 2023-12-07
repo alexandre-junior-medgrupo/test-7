@@ -1,4 +1,5 @@
 import { Components } from '@ionic/core';
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import { defineCustomElement as defineCustomElementSegment } from '@ionic/core/components/ion-segment';
 import { defineCustomElement as defineCustomElementSegmentButton } from '@ionic/core/components/ion-segment-button';
 import type { Meta, StoryObj } from '@storybook/web-components';
@@ -7,6 +8,7 @@ import { TpIonSegment } from './segment.type';
 
 defineCustomElementSegment();
 defineCustomElementSegmentButton();
+defineCustomElementLabel();
 
 const meta: Meta<Components.IonSegment & TpIonSegment> = {
   title: 'components/Ionic/Segment',

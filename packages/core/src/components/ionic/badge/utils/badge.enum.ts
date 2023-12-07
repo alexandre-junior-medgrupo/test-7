@@ -1,5 +1,4 @@
 export enum TpIonBadgeSize {
-  SM = 'sm',
   MD = 'md',
 }
 

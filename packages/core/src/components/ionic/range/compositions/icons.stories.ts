@@ -2,7 +2,6 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-range';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_RANGE } from '../range.constants';
 import { TpIonRange } from '../range.type';
 
 defineCustomElement();
@@ -11,15 +10,14 @@ const meta: Meta<Components.IonRange & TpIonRange> = {
   title: 'components/Ionic/Range/Compositions',
   argTypes: {
     secondary: {
-      control: { type: 'select' },
-      options: [...TP_ION_RANGE.secondary],
+      control: { type: 'boolean' },
       description: 'Define a variação do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_RANGE.secondary.join('|'),
+          summary: 'Secondary',
         },
       },
     },
