@@ -1,0 +1,15 @@
+{
+  "entries": [
+    "components/templarios/chart-bar/chart-bar.js",
+    "components/templarios/comparison-chart-bar/comparison-chart-bar.js",
+    "components/templarios/rate-like/rate-like.js",
+    "components/templarios/test/test.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.8.1",
+    "typescriptVersion": "5.2.2"
+  },
+  "collections": [],
+  "bundles": []
+}

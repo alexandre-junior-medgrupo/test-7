@@ -1,4 +1,4 @@
-import type { TpColor } from 'src/components';
+import type { TpColor } from '../../../utils/types/color.type';
 
 export type TpIonInput = {
   color: `${TpColor}`;
