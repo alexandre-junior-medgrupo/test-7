@@ -1,7 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/web-components';
+import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import { withActions } from '@storybook/addon-actions/decorator';
+import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TP_RATE_LIKE } from './rate-like.constant';
+
+defineCustomElementSkeletonText();
 
 const meta: Meta = {
   component: 'TpRateLike',

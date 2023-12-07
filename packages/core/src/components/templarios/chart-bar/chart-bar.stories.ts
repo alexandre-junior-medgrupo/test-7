@@ -1,8 +1,12 @@
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
+import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpChartBar } from './chart-bar';
 
 // antigo med-chart-bar
+defineCustomElementLabel();
+defineCustomElementSkeletonText();
 
 const meta: Meta<TpChartBar> = {
   title: 'components/Templarios/Chart-bar',
