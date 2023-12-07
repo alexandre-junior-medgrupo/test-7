@@ -1,6 +1,7 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
 import * as inputStories from './input.stories';
 import * as inputStatesStories from './states.stories';
+import * as inputLabelStories from './compositions/label.stories';
 
 <Meta of={inputStories} />
 
@@ -31,6 +32,12 @@ import { TpIonInput } from '..';
 <Canvas of={inputStatesStories.States} />
 
 <Controls of={inputStatesStories.States} />
+
+## Compositions
+
+<Canvas of={inputLabelStories.Label} />
+
+<Controls of={inputLabelStories.Label} />
 
 ## Validação
 

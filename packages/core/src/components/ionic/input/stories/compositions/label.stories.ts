@@ -1,15 +1,14 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
-import { defineCustomElement as defineCustomElementText } from '@ionic/core/components/ion-text';
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonText } from '../../../text/text.type';
 import { TpIonInput } from '../../utils/input.type';
 
 defineCustomElementInput();
-defineCustomElementText();
+defineCustomElementLabel();
 
-const meta: Meta<Components.IonInput & TpIonInput & TpIonText> = {
+const meta: Meta<Components.IonInput & TpIonInput> = {
   title: 'components/Ionic/Input/Compositions',
   argTypes: {
     clearInput: {
@@ -41,7 +40,7 @@ const meta: Meta<Components.IonInput & TpIonInput & TpIonText> = {
 
 export default meta;
 
-type Story = StoryObj<Components.IonInput & TpIonInput & TpIonText>;
+type Story = StoryObj<Components.IonInput & TpIonInput>;
 
 export const Label: Story = {
   render: ({ ...args }) => {
