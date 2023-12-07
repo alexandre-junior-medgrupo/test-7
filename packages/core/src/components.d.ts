@@ -6,8 +6,10 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
+import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
 import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
+export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
 export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export namespace Components {
     interface TpChartBar {
@@ -62,6 +64,32 @@ export namespace Components {
          */
         "noLabel": boolean;
     }
+    interface TpHorizontalChartBar {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define se o valor representado será ou não renderizado.
+         */
+        "hideValue": boolean;
+        /**
+          * Define se o componente representa uma contagem.
+         */
+        "isCount": boolean;
+        /**
+          * Define a contagem máxima, se o componente representa uma contagem.
+         */
+        "maxCount"?: number;
+        /**
+          * Define a variação de tamanho do componente.
+         */
+        "size"?: TpHorizontalChartBarSize;
+        /**
+          * Define o valor representado pelo componente. Representa uma porcentagem por padrão. Representa uma contagem se isCount tem valor true e maxCount recebe um valor.
+         */
+        "value": number;
+    }
     interface TpRateLike {
         /**
           * Define o status do componente.
@@ -90,6 +118,12 @@ declare global {
         prototype: HTMLTpComparisonChartBarElement;
         new (): HTMLTpComparisonChartBarElement;
     };
+    interface HTMLTpHorizontalChartBarElement extends Components.TpHorizontalChartBar, HTMLStencilElement {
+    }
+    var HTMLTpHorizontalChartBarElement: {
+        prototype: HTMLTpHorizontalChartBarElement;
+        new (): HTMLTpHorizontalChartBarElement;
+    };
     interface HTMLTpRateLikeElementEventMap {
         "tpChange": TpRateLikeType['status'];
     }
@@ -116,6 +150,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "tp-chart-bar": HTMLTpChartBarElement;
         "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
+        "tp-horizontal-chart-bar": HTMLTpHorizontalChartBarElement;
         "tp-rate-like": HTMLTpRateLikeElement;
         "tp-test": HTMLTpTestElement;
     }
@@ -173,6 +208,32 @@ declare namespace LocalJSX {
          */
         "noLabel"?: boolean;
     }
+    interface TpHorizontalChartBar {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define se o valor representado será ou não renderizado.
+         */
+        "hideValue"?: boolean;
+        /**
+          * Define se o componente representa uma contagem.
+         */
+        "isCount"?: boolean;
+        /**
+          * Define a contagem máxima, se o componente representa uma contagem.
+         */
+        "maxCount"?: number;
+        /**
+          * Define a variação de tamanho do componente.
+         */
+        "size"?: TpHorizontalChartBarSize;
+        /**
+          * Define o valor representado pelo componente. Representa uma porcentagem por padrão. Representa uma contagem se isCount tem valor true e maxCount recebe um valor.
+         */
+        "value"?: number;
+    }
     interface TpRateLike {
         /**
           * Emitido quando a propriedade status é alterada.
@@ -190,6 +251,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "tp-chart-bar": TpChartBar;
         "tp-comparison-chart-bar": TpComparisonChartBar;
+        "tp-horizontal-chart-bar": TpHorizontalChartBar;
         "tp-rate-like": TpRateLike;
         "tp-test": TpTest;
     }
@@ -200,6 +262,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
             "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
+            "tp-horizontal-chart-bar": LocalJSX.TpHorizontalChartBar & JSXBase.HTMLAttributes<HTMLTpHorizontalChartBarElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
             "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
