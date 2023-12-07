@@ -1,6 +1,5 @@
 import { createColorClasses } from '../../../utils/functions/color.function';
 import { Component, Host, Prop, getAssetPath, h } from '@stencil/core';
-import { TpColor } from 'src/components';
 
 @Component({
   tag: 'tp-input-container',
@@ -13,17 +12,12 @@ export class TpInputContainer {
   private CheckIcon = getAssetPath('./assets/tp-check.svg');
 
   /**
-   * Define a variação de cor do componente.
-   */
-  @Prop({ reflect: true }) color?: TpColor;
-
-  /**
-   * Define a variação de cor do componente.
+   * Define a variação de estado do componente.
    */
   @Prop({ reflect: true }) state?: 'error' | 'success';
 
   render() {
-    const { color, state, alertTriangleIcon, CheckIcon } = this;
+    const { state, alertTriangleIcon, CheckIcon } = this;
     let content;
 
     const icon = state === 'error' ? alertTriangleIcon : CheckIcon;
@@ -42,7 +36,7 @@ export class TpInputContainer {
 
     return (
       <Host
-        class={createColorClasses(color, {
+        class={createColorClasses(null, {
           'tp-input-container': true,
           'tp-comparison-chart-bar--error': state === 'error',
           'tp-comparison-chart-bar--success': state === 'success',
@@ -53,6 +47,8 @@ export class TpInputContainer {
           <slot></slot>
           {content}
         </div>
+        <slot name="feedback-success"></slot>
+        <slot name="feedback-error"></slot>
       </Host>
     );
   }

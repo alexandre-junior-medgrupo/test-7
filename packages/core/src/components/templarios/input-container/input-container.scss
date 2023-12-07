@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+
+.tp-input-container {
+  &__wrapper {
+    display: flex;
+  }
+}
