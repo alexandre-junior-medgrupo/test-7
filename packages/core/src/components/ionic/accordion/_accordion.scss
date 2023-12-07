@@ -5,19 +5,16 @@ ion-accordion {
     margin-bottom: 8px;
   }
 
-  // item
   [slot='header'] {
     --ripple-color: transparent;
     --background: transparent;
     --color: var(--tp-color-neutral-10);
 
-    // hover
     &:hover {
       --background-hover: transparent;
     }
   }
 
-  // icon
   .ion-accordion-toggle-icon {
     --stroke: var(--tp-color-neutral-9);
   }
