@@ -10,8 +10,8 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
+import { defineCustomElement as defineCustomElementButton, } from "@ionic/core/components/ion-button";
 import { defineCustomElement as defineCustomElementToast } from "@ionic/core/components/ion-toast";
-import { defineCustomElement as defineCustomElementButton } from "@ionic/core/components/ion-button";
 import { html } from "lit";
 defineCustomElementToast();
 defineCustomElementButton();

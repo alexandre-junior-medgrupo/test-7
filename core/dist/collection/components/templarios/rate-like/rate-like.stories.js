@@ -10,9 +10,11 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
+import { defineCustomElement as defineCustomElementSkeletonText } from "@ionic/core/components/ion-skeleton-text";
 import { withActions } from "@storybook/addon-actions/decorator";
 import { html } from "lit";
 import { TP_RATE_LIKE } from "./rate-like.constant";
+defineCustomElementSkeletonText();
 const meta = {
     component: 'TpRateLike',
     title: 'components/Templarios/Rate like',

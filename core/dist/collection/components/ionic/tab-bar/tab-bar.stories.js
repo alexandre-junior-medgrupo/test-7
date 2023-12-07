@@ -10,13 +10,15 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-import { defineCustomElement as defineCustomElementTabs } from "@ionic/core/components/ion-tabs";
+import { defineCustomElement as defineCustomElementLabel } from "@ionic/core/components/ion-label";
 import { defineCustomElement as defineCustomElementTabBar, } from "@ionic/core/components/ion-tab-bar";
 import { defineCustomElement as defineCustomElementTabButton, } from "@ionic/core/components/ion-tab-button";
+import { defineCustomElement as defineCustomElementTabs } from "@ionic/core/components/ion-tabs";
 import { html } from "lit";
 defineCustomElementTabs();
 defineCustomElementTabBar();
 defineCustomElementTabButton();
+defineCustomElementLabel();
 const meta = {
     title: 'components/Ionic/Tab-bar',
     argTypes: {

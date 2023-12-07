@@ -10,8 +10,12 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
+import { defineCustomElement as defineCustomElementLabel } from "@ionic/core/components/ion-label";
+import { defineCustomElement as defineCustomElementSkeletonText } from "@ionic/core/components/ion-skeleton-text";
 import { html } from "lit";
 // antigo med-chart-bar
+defineCustomElementLabel();
+defineCustomElementSkeletonText();
 const meta = {
     title: 'components/Templarios/Chart-bar',
     argTypes: {

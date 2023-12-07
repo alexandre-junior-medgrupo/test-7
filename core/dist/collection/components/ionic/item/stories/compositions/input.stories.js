@@ -11,12 +11,14 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 import { defineCustomElement as defineCustomElementInput } from "@ionic/core/components/ion-input";
+import { defineCustomElement as defineCustomElementLabel } from "@ionic/core/components/ion-label";
 import { defineCustomElement as defineCustomElementSearchbar } from "@ionic/core/components/ion-searchbar";
 import { defineCustomElement as defineCustomElementTextarea } from "@ionic/core/components/ion-textarea";
 import { defineCustomElement as defineCustomElementItem } from "@ionic/core/components/ion-item";
 import { html } from "lit";
 import { TP_ION_ITEM } from "../../utils/item.constant";
 defineCustomElementItem();
+defineCustomElementLabel();
 defineCustomElementInput();
 defineCustomElementSearchbar();
 defineCustomElementTextarea();
@@ -107,7 +109,6 @@ export const Input = {
         var args = __rest(_a, []);
         return html `
     <ion-item
-      .color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -123,7 +124,6 @@ export const Input = {
     </ion-item>
 
     <ion-item
-      .color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -131,18 +131,17 @@ export const Input = {
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
-      <div class="tp-input-container">
-        <ion-text tp-type="p14">Input</ion-text>
+      <tp-input-container>
+        <ion-label slot="label" tp-type="p14">Input</ion-label>
         <ion-input
           mode="md"
           placeholder="Digite aqui"
           clear-input="true"
         ></ion-input>
-      </div>
+      </tp-input-container>
     </ion-item>
 
     <ion-item
-      .color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -150,19 +149,18 @@ export const Input = {
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
-      <div class="tp-input-container">
-        <ion-text tp-type="p14">Searchbar</ion-text>
+      <tp-input-container>
+        <ion-label slot="label" tp-type="p14">Searchbar</ion-label>
         <ion-searchbar
           mode="md"
           search-icon="./../../../../icons/tp-search.svg"
           clear-icon="./../../../../icons/tp-x.svg"
           placeholder="Lorem ipsum dolor"
         ></ion-searchbar>
-      </div>
+      </tp-input-container>
     </ion-item>
 
     <ion-item
-      .color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -170,13 +168,13 @@ export const Input = {
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
-      <div class="tp-input-container">
-        <ion-text tp-type="p14">Textarea</ion-text>
+      <tp-input-container>
+        <ion-label slot="label" tp-type="p14">Textarea</ion-label>
         <ion-textarea
           placeholder="Lorem ipsum, dolor sit amet consectetur."
           mode="md"
         ></ion-textarea>
-      </div>
+      </tp-input-container>
     </ion-item>
   `;
     },
@@ -184,5 +182,8 @@ export const Input = {
       const canvas = within(canvasElement);
       expect(canvas.getByText(/ion-item/gi)).toBeTruthy();
     }, */
+};
+Input.argTypes = {
+    color: { table: { disable: true } },
 };
 //# sourceMappingURL=input.stories.js.map

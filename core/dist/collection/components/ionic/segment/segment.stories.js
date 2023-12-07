@@ -10,11 +10,13 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
+import { defineCustomElement as defineCustomElementLabel } from "@ionic/core/components/ion-label";
 import { defineCustomElement as defineCustomElementSegment } from "@ionic/core/components/ion-segment";
 import { defineCustomElement as defineCustomElementSegmentButton } from "@ionic/core/components/ion-segment-button";
 import { html } from "lit";
 defineCustomElementSegment();
 defineCustomElementSegmentButton();
+defineCustomElementLabel();
 const meta = {
     title: 'components/Ionic/Segment',
     argTypes: {
