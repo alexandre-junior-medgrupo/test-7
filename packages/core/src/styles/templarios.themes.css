@@ -1,0 +1,2817 @@
+.tp-color-theme-medsoft {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-aula: hsl(168, 80%, 40%);
+  --tp-color-aula-rgb: 20, 184, 151;
+  --tp-color-aula-shade: hsl(168, 80%, 35%);
+  --tp-color-aula-tint: hsl(168, 80%, 45%);
+  --tp-color-aula-1: hsl(168, 80%, 20%);
+  --tp-color-aula-1-rgb: 10, 92, 75;
+  --tp-color-aula-1-shade: hsl(168, 80%, 15%);
+  --tp-color-aula-1-tint: hsl(168, 80%, 25%);
+  --tp-color-aula-2: hsl(168, 80%, 30%);
+  --tp-color-aula-2-rgb: 15, 138, 113;
+  --tp-color-aula-2-shade: hsl(168, 80%, 25%);
+  --tp-color-aula-2-tint: hsl(168, 80%, 35%);
+  --tp-color-aula-3: hsl(168, 80%, 40%);
+  --tp-color-aula-3-rgb: 20, 184, 151;
+  --tp-color-aula-3-shade: hsl(168, 80%, 35%);
+  --tp-color-aula-3-tint: hsl(168, 80%, 45%);
+  --tp-color-aula-4: hsl(168, 80%, 60%);
+  --tp-color-aula-4-rgb: 71, 235, 202;
+  --tp-color-aula-4-shade: hsl(168, 80%, 55%);
+  --tp-color-aula-4-tint: hsl(168, 80%, 65%);
+  --tp-color-aula-5: hsl(168, 80%, 80%);
+  --tp-color-aula-5-rgb: 163, 245, 228;
+  --tp-color-aula-5-shade: hsl(168, 80%, 75%);
+  --tp-color-aula-5-tint: hsl(168, 80%, 85%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-material: hsl(24, 80%, 40%);
+  --tp-color-material-rgb: 184, 86, 20;
+  --tp-color-material-shade: hsl(24, 80%, 35%);
+  --tp-color-material-tint: hsl(24, 80%, 45%);
+  --tp-color-material-1: hsl(24, 80%, 20%);
+  --tp-color-material-1-rgb: 92, 43, 10;
+  --tp-color-material-1-shade: hsl(24, 80%, 15%);
+  --tp-color-material-1-tint: hsl(24, 80%, 25%);
+  --tp-color-material-2: hsl(24, 80%, 30%);
+  --tp-color-material-2-rgb: 138, 64, 15;
+  --tp-color-material-2-shade: hsl(24, 80%, 25%);
+  --tp-color-material-2-tint: hsl(24, 80%, 35%);
+  --tp-color-material-3: hsl(24, 80%, 40%);
+  --tp-color-material-3-rgb: 184, 86, 20;
+  --tp-color-material-3-shade: hsl(24, 80%, 35%);
+  --tp-color-material-3-tint: hsl(24, 80%, 45%);
+  --tp-color-material-4: hsl(24, 80%, 60%);
+  --tp-color-material-4-rgb: 235, 137, 71;
+  --tp-color-material-4-shade: hsl(24, 80%, 55%);
+  --tp-color-material-4-tint: hsl(24, 80%, 65%);
+  --tp-color-material-5: hsl(24, 80%, 80%);
+  --tp-color-material-5-rgb: 245, 196, 163;
+  --tp-color-material-5-shade: hsl(24, 80%, 75%);
+  --tp-color-material-5-tint: hsl(24, 80%, 85%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-questoes: hsl(200, 80%, 40%);
+  --tp-color-questoes-rgb: 20, 129, 184;
+  --tp-color-questoes-shade: hsl(200, 80%, 35%);
+  --tp-color-questoes-tint: hsl(200, 80%, 45%);
+  --tp-color-questoes-1: hsl(200, 80%, 20%);
+  --tp-color-questoes-1-rgb: 10, 65, 92;
+  --tp-color-questoes-1-shade: hsl(200, 80%, 15%);
+  --tp-color-questoes-1-tint: hsl(200, 80%, 25%);
+  --tp-color-questoes-2: hsl(200, 80%, 30%);
+  --tp-color-questoes-2-rgb: 15, 97, 138;
+  --tp-color-questoes-2-shade: hsl(200, 80%, 25%);
+  --tp-color-questoes-2-tint: hsl(200, 80%, 35%);
+  --tp-color-questoes-3: hsl(200, 80%, 40%);
+  --tp-color-questoes-3-rgb: 20, 129, 184;
+  --tp-color-questoes-3-shade: hsl(200, 80%, 35%);
+  --tp-color-questoes-3-tint: hsl(200, 80%, 45%);
+  --tp-color-questoes-4: hsl(200, 80%, 60%);
+  --tp-color-questoes-4-rgb: 71, 180, 235;
+  --tp-color-questoes-4-shade: hsl(200, 80%, 55%);
+  --tp-color-questoes-4-tint: hsl(200, 80%, 65%);
+  --tp-color-questoes-5: hsl(200, 80%, 80%);
+  --tp-color-questoes-5-rgb: 163, 218, 245;
+  --tp-color-questoes-5-shade: hsl(200, 80%, 75%);
+  --tp-color-questoes-5-tint: hsl(200, 80%, 85%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-revalida: hsl(342, 80%, 40%);
+  --tp-color-revalida-rgb: 184, 20, 69;
+  --tp-color-revalida-shade: hsl(342, 80%, 35%);
+  --tp-color-revalida-tint: hsl(342, 80%, 45%);
+  --tp-color-revalida-1: hsl(342, 80%, 20%);
+  --tp-color-revalida-1-rgb: 92, 10, 35;
+  --tp-color-revalida-1-shade: hsl(342, 80%, 15%);
+  --tp-color-revalida-1-tint: hsl(342, 80%, 25%);
+  --tp-color-revalida-2: hsl(342, 80%, 30%);
+  --tp-color-revalida-2-rgb: 138, 15, 52;
+  --tp-color-revalida-2-shade: hsl(342, 80%, 25%);
+  --tp-color-revalida-2-tint: hsl(342, 80%, 35%);
+  --tp-color-revalida-3: hsl(342, 80%, 40%);
+  --tp-color-revalida-3-rgb: 184, 20, 69;
+  --tp-color-revalida-3-shade: hsl(342, 80%, 35%);
+  --tp-color-revalida-3-tint: hsl(342, 80%, 45%);
+  --tp-color-revalida-4: hsl(342, 80%, 60%);
+  --tp-color-revalida-4-rgb: 235, 71, 120;
+  --tp-color-revalida-4-shade: hsl(342, 80%, 55%);
+  --tp-color-revalida-4-tint: hsl(342, 80%, 65%);
+  --tp-color-revalida-5: hsl(342, 80%, 80%);
+  --tp-color-revalida-5-rgb: 245, 163, 188;
+  --tp-color-revalida-5-shade: hsl(342, 80%, 75%);
+  --tp-color-revalida-5-tint: hsl(342, 80%, 85%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-provas: hsl(268, 80%, 40%);
+  --tp-color-provas-rgb: 97, 20, 184;
+  --tp-color-provas-shade: hsl(268, 80%, 35%);
+  --tp-color-provas-tint: hsl(268, 80%, 45%);
+  --tp-color-provas-1: hsl(268, 80%, 20%);
+  --tp-color-provas-1-rgb: 48, 10, 92;
+  --tp-color-provas-1-shade: hsl(268, 80%, 15%);
+  --tp-color-provas-1-tint: hsl(268, 80%, 25%);
+  --tp-color-provas-2: hsl(268, 80%, 30%);
+  --tp-color-provas-2-rgb: 72, 15, 138;
+  --tp-color-provas-2-shade: hsl(268, 80%, 25%);
+  --tp-color-provas-2-tint: hsl(268, 80%, 35%);
+  --tp-color-provas-3: hsl(268, 80%, 40%);
+  --tp-color-provas-3-rgb: 97, 20, 184;
+  --tp-color-provas-3-shade: hsl(268, 80%, 35%);
+  --tp-color-provas-3-tint: hsl(268, 80%, 45%);
+  --tp-color-provas-4: hsl(268, 80%, 60%);
+  --tp-color-provas-4-rgb: 148, 71, 235;
+  --tp-color-provas-4-shade: hsl(268, 80%, 55%);
+  --tp-color-provas-4-tint: hsl(268, 80%, 65%);
+  --tp-color-provas-5: hsl(268, 80%, 80%);
+  --tp-color-provas-5-rgb: 201, 163, 245;
+  --tp-color-provas-5-shade: hsl(268, 80%, 75%);
+  --tp-color-provas-5-tint: hsl(268, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-medsoft {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-aula: hsl(168, 40%, 40%);
+  --tp-color-aula-rgb: 61, 143, 126;
+  --tp-color-aula-shade: hsl(168, 40%, 35%);
+  --tp-color-aula-tint: hsl(168, 40%, 45%);
+  --tp-color-aula-1: hsl(168, 40%, 80%);
+  --tp-color-aula-1-rgb: 184, 224, 216;
+  --tp-color-aula-1-shade: hsl(168, 40%, 75%);
+  --tp-color-aula-1-tint: hsl(168, 40%, 85%);
+  --tp-color-aula-2: hsl(168, 40%, 90%);
+  --tp-color-aula-2-rgb: 219, 240, 236;
+  --tp-color-aula-2-shade: hsl(168, 40%, 85%);
+  --tp-color-aula-2-tint: hsl(168, 40%, 95%);
+  --tp-color-aula-3: hsl(168, 40%, 100%);
+  --tp-color-aula-3-rgb: 255, 255, 255;
+  --tp-color-aula-3-shade: hsl(168, 40%, 95%);
+  --tp-color-aula-3-tint: hsl(168, 40%, 100%);
+  --tp-color-aula-4: hsl(168, 40%, 100%);
+  --tp-color-aula-4-rgb: 255, 255, 255;
+  --tp-color-aula-4-shade: hsl(168, 40%, 100%);
+  --tp-color-aula-4-tint: hsl(168, 40%, 100%);
+  --tp-color-aula-5: hsl(168, 40%, 100%);
+  --tp-color-aula-5-rgb: 255, 255, 255;
+  --tp-color-aula-5-shade: hsl(168, 40%, 100%);
+  --tp-color-aula-5-tint: hsl(168, 40%, 100%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-material: hsl(24, 40%, 40%);
+  --tp-color-material-rgb: 143, 94, 61;
+  --tp-color-material-shade: hsl(24, 40%, 35%);
+  --tp-color-material-tint: hsl(24, 40%, 45%);
+  --tp-color-material-1: hsl(24, 40%, 80%);
+  --tp-color-material-1-rgb: 224, 200, 184;
+  --tp-color-material-1-shade: hsl(24, 40%, 75%);
+  --tp-color-material-1-tint: hsl(24, 40%, 85%);
+  --tp-color-material-2: hsl(24, 40%, 90%);
+  --tp-color-material-2-rgb: 240, 227, 219;
+  --tp-color-material-2-shade: hsl(24, 40%, 85%);
+  --tp-color-material-2-tint: hsl(24, 40%, 95%);
+  --tp-color-material-3: hsl(24, 40%, 100%);
+  --tp-color-material-3-rgb: 255, 255, 255;
+  --tp-color-material-3-shade: hsl(24, 40%, 95%);
+  --tp-color-material-3-tint: hsl(24, 40%, 100%);
+  --tp-color-material-4: hsl(24, 40%, 100%);
+  --tp-color-material-4-rgb: 255, 255, 255;
+  --tp-color-material-4-shade: hsl(24, 40%, 100%);
+  --tp-color-material-4-tint: hsl(24, 40%, 100%);
+  --tp-color-material-5: hsl(24, 40%, 100%);
+  --tp-color-material-5-rgb: 255, 255, 255;
+  --tp-color-material-5-shade: hsl(24, 40%, 100%);
+  --tp-color-material-5-tint: hsl(24, 40%, 100%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-questoes: hsl(200, 40%, 40%);
+  --tp-color-questoes-rgb: 61, 116, 143;
+  --tp-color-questoes-shade: hsl(200, 40%, 35%);
+  --tp-color-questoes-tint: hsl(200, 40%, 45%);
+  --tp-color-questoes-1: hsl(200, 40%, 80%);
+  --tp-color-questoes-1-rgb: 184, 211, 224;
+  --tp-color-questoes-1-shade: hsl(200, 40%, 75%);
+  --tp-color-questoes-1-tint: hsl(200, 40%, 85%);
+  --tp-color-questoes-2: hsl(200, 40%, 90%);
+  --tp-color-questoes-2-rgb: 219, 233, 240;
+  --tp-color-questoes-2-shade: hsl(200, 40%, 85%);
+  --tp-color-questoes-2-tint: hsl(200, 40%, 95%);
+  --tp-color-questoes-3: hsl(200, 40%, 100%);
+  --tp-color-questoes-3-rgb: 255, 255, 255;
+  --tp-color-questoes-3-shade: hsl(200, 40%, 95%);
+  --tp-color-questoes-3-tint: hsl(200, 40%, 100%);
+  --tp-color-questoes-4: hsl(200, 40%, 100%);
+  --tp-color-questoes-4-rgb: 255, 255, 255;
+  --tp-color-questoes-4-shade: hsl(200, 40%, 100%);
+  --tp-color-questoes-4-tint: hsl(200, 40%, 100%);
+  --tp-color-questoes-5: hsl(200, 40%, 100%);
+  --tp-color-questoes-5-rgb: 255, 255, 255;
+  --tp-color-questoes-5-shade: hsl(200, 40%, 100%);
+  --tp-color-questoes-5-tint: hsl(200, 40%, 100%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-revalida: hsl(342, 40%, 40%);
+  --tp-color-revalida-rgb: 143, 61, 86;
+  --tp-color-revalida-shade: hsl(342, 40%, 35%);
+  --tp-color-revalida-tint: hsl(342, 40%, 45%);
+  --tp-color-revalida-1: hsl(342, 40%, 80%);
+  --tp-color-revalida-1-rgb: 224, 184, 196;
+  --tp-color-revalida-1-shade: hsl(342, 40%, 75%);
+  --tp-color-revalida-1-tint: hsl(342, 40%, 85%);
+  --tp-color-revalida-2: hsl(342, 40%, 90%);
+  --tp-color-revalida-2-rgb: 240, 219, 225;
+  --tp-color-revalida-2-shade: hsl(342, 40%, 85%);
+  --tp-color-revalida-2-tint: hsl(342, 40%, 95%);
+  --tp-color-revalida-3: hsl(342, 40%, 100%);
+  --tp-color-revalida-3-rgb: 255, 255, 255;
+  --tp-color-revalida-3-shade: hsl(342, 40%, 95%);
+  --tp-color-revalida-3-tint: hsl(342, 40%, 100%);
+  --tp-color-revalida-4: hsl(342, 40%, 100%);
+  --tp-color-revalida-4-rgb: 255, 255, 255;
+  --tp-color-revalida-4-shade: hsl(342, 40%, 100%);
+  --tp-color-revalida-4-tint: hsl(342, 40%, 100%);
+  --tp-color-revalida-5: hsl(342, 40%, 100%);
+  --tp-color-revalida-5-rgb: 255, 255, 255;
+  --tp-color-revalida-5-shade: hsl(342, 40%, 100%);
+  --tp-color-revalida-5-tint: hsl(342, 40%, 100%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-provas: hsl(268, 40%, 40%);
+  --tp-color-provas-rgb: 99, 61, 143;
+  --tp-color-provas-shade: hsl(268, 40%, 35%);
+  --tp-color-provas-tint: hsl(268, 40%, 45%);
+  --tp-color-provas-1: hsl(268, 40%, 80%);
+  --tp-color-provas-1-rgb: 203, 184, 224;
+  --tp-color-provas-1-shade: hsl(268, 40%, 75%);
+  --tp-color-provas-1-tint: hsl(268, 40%, 85%);
+  --tp-color-provas-2: hsl(268, 40%, 90%);
+  --tp-color-provas-2-rgb: 229, 219, 240;
+  --tp-color-provas-2-shade: hsl(268, 40%, 85%);
+  --tp-color-provas-2-tint: hsl(268, 40%, 95%);
+  --tp-color-provas-3: hsl(268, 40%, 100%);
+  --tp-color-provas-3-rgb: 255, 255, 255;
+  --tp-color-provas-3-shade: hsl(268, 40%, 95%);
+  --tp-color-provas-3-tint: hsl(268, 40%, 100%);
+  --tp-color-provas-4: hsl(268, 40%, 100%);
+  --tp-color-provas-4-rgb: 255, 255, 255;
+  --tp-color-provas-4-shade: hsl(268, 40%, 100%);
+  --tp-color-provas-4-tint: hsl(268, 40%, 100%);
+  --tp-color-provas-5: hsl(268, 40%, 100%);
+  --tp-color-provas-5-rgb: 255, 255, 255;
+  --tp-color-provas-5-shade: hsl(268, 40%, 100%);
+  --tp-color-provas-5-tint: hsl(268, 40%, 100%);
+}
+
+.ion-color-aula,
+[tp-color='aula'] {
+  --ion-color-base: var(--tp-color-aula) !important;
+  --ion-color-base-rgb: var(--tp-color-aula-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-aula-shade) !important;
+  --ion-color-tint: var(--tp-color-aula-tint) !important;
+}
+
+.ion-color-aula-1,
+[tp-color='aula-1'] {
+  --ion-color-base: var(--tp-color-aula-1) !important;
+  --ion-color-base-rgb: var(--tp-color-aula-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-aula-1-shade) !important;
+  --ion-color-tint: var(--tp-color-aula-1-tint) !important;
+}
+
+.ion-color-aula-2,
+[tp-color='aula-2'] {
+  --ion-color-base: var(--tp-color-aula-2) !important;
+  --ion-color-base-rgb: var(--tp-color-aula-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-aula-2-shade) !important;
+  --ion-color-tint: var(--tp-color-aula-2-tint) !important;
+}
+
+.ion-color-aula-3,
+[tp-color='aula-3'] {
+  --ion-color-base: var(--tp-color-aula-3) !important;
+  --ion-color-base-rgb: var(--tp-color-aula-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-aula-3-shade) !important;
+  --ion-color-tint: var(--tp-color-aula-3-tint) !important;
+}
+
+.ion-color-aula-4,
+[tp-color='aula-4'] {
+  --ion-color-base: var(--tp-color-aula-4) !important;
+  --ion-color-base-rgb: var(--tp-color-aula-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-aula-4-shade) !important;
+  --ion-color-tint: var(--tp-color-aula-4-tint) !important;
+}
+
+.ion-color-aula-5,
+[tp-color='aula-5'] {
+  --ion-color-base: var(--tp-color-aula-5) !important;
+  --ion-color-base-rgb: var(--tp-color-aula-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-aula-5-shade) !important;
+  --ion-color-tint: var(--tp-color-aula-5-tint) !important;
+}
+
+.tp-color-aula,
+[tp-color='aula'] {
+  --tp-color-base: var(--tp-color-aula) !important;
+  --tp-color-base-rgb: var(--tp-color-aula-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-aula-shade) !important;
+  --tp-color-tint: var(--tp-color-aula-tint) !important;
+}
+
+.tp-color-aula-1,
+[tp-color='aula-1'] {
+  --tp-color-base: var(--tp-color-aula-1) !important;
+  --tp-color-base-rgb: var(--tp-color-aula-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-aula-1-shade) !important;
+  --tp-color-tint: var(--tp-color-aula-1-tint) !important;
+}
+
+.tp-color-aula-2,
+[tp-color='aula-2'] {
+  --tp-color-base: var(--tp-color-aula-2) !important;
+  --tp-color-base-rgb: var(--tp-color-aula-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-aula-2-shade) !important;
+  --tp-color-tint: var(--tp-color-aula-2-tint) !important;
+}
+
+.tp-color-aula-3,
+[tp-color='aula-3'] {
+  --tp-color-base: var(--tp-color-aula-3) !important;
+  --tp-color-base-rgb: var(--tp-color-aula-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-aula-3-shade) !important;
+  --tp-color-tint: var(--tp-color-aula-3-tint) !important;
+}
+
+.tp-color-aula-4,
+[tp-color='aula-4'] {
+  --tp-color-base: var(--tp-color-aula-4) !important;
+  --tp-color-base-rgb: var(--tp-color-aula-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-aula-4-shade) !important;
+  --tp-color-tint: var(--tp-color-aula-4-tint) !important;
+}
+
+.tp-color-aula-5,
+[tp-color='aula-5'] {
+  --tp-color-base: var(--tp-color-aula-5) !important;
+  --tp-color-base-rgb: var(--tp-color-aula-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-aula-5-shade) !important;
+  --tp-color-tint: var(--tp-color-aula-5-tint) !important;
+}
+
+.ion-color-material,
+[tp-color='material'] {
+  --ion-color-base: var(--tp-color-material) !important;
+  --ion-color-base-rgb: var(--tp-color-material-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-material-shade) !important;
+  --ion-color-tint: var(--tp-color-material-tint) !important;
+}
+
+.ion-color-material-1,
+[tp-color='material-1'] {
+  --ion-color-base: var(--tp-color-material-1) !important;
+  --ion-color-base-rgb: var(--tp-color-material-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-material-1-shade) !important;
+  --ion-color-tint: var(--tp-color-material-1-tint) !important;
+}
+
+.ion-color-material-2,
+[tp-color='material-2'] {
+  --ion-color-base: var(--tp-color-material-2) !important;
+  --ion-color-base-rgb: var(--tp-color-material-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-material-2-shade) !important;
+  --ion-color-tint: var(--tp-color-material-2-tint) !important;
+}
+
+.ion-color-material-3,
+[tp-color='material-3'] {
+  --ion-color-base: var(--tp-color-material-3) !important;
+  --ion-color-base-rgb: var(--tp-color-material-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-material-3-shade) !important;
+  --ion-color-tint: var(--tp-color-material-3-tint) !important;
+}
+
+.ion-color-material-4,
+[tp-color='material-4'] {
+  --ion-color-base: var(--tp-color-material-4) !important;
+  --ion-color-base-rgb: var(--tp-color-material-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-material-4-shade) !important;
+  --ion-color-tint: var(--tp-color-material-4-tint) !important;
+}
+
+.ion-color-material-5,
+[tp-color='material-5'] {
+  --ion-color-base: var(--tp-color-material-5) !important;
+  --ion-color-base-rgb: var(--tp-color-material-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-material-5-shade) !important;
+  --ion-color-tint: var(--tp-color-material-5-tint) !important;
+}
+
+.tp-color-material,
+[tp-color='material'] {
+  --tp-color-base: var(--tp-color-material) !important;
+  --tp-color-base-rgb: var(--tp-color-material-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-material-shade) !important;
+  --tp-color-tint: var(--tp-color-material-tint) !important;
+}
+
+.tp-color-material-1,
+[tp-color='material-1'] {
+  --tp-color-base: var(--tp-color-material-1) !important;
+  --tp-color-base-rgb: var(--tp-color-material-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-material-1-shade) !important;
+  --tp-color-tint: var(--tp-color-material-1-tint) !important;
+}
+
+.tp-color-material-2,
+[tp-color='material-2'] {
+  --tp-color-base: var(--tp-color-material-2) !important;
+  --tp-color-base-rgb: var(--tp-color-material-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-material-2-shade) !important;
+  --tp-color-tint: var(--tp-color-material-2-tint) !important;
+}
+
+.tp-color-material-3,
+[tp-color='material-3'] {
+  --tp-color-base: var(--tp-color-material-3) !important;
+  --tp-color-base-rgb: var(--tp-color-material-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-material-3-shade) !important;
+  --tp-color-tint: var(--tp-color-material-3-tint) !important;
+}
+
+.tp-color-material-4,
+[tp-color='material-4'] {
+  --tp-color-base: var(--tp-color-material-4) !important;
+  --tp-color-base-rgb: var(--tp-color-material-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-material-4-shade) !important;
+  --tp-color-tint: var(--tp-color-material-4-tint) !important;
+}
+
+.tp-color-material-5,
+[tp-color='material-5'] {
+  --tp-color-base: var(--tp-color-material-5) !important;
+  --tp-color-base-rgb: var(--tp-color-material-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-material-5-shade) !important;
+  --tp-color-tint: var(--tp-color-material-5-tint) !important;
+}
+
+.ion-color-questoes,
+[tp-color='questoes'] {
+  --ion-color-base: var(--tp-color-questoes) !important;
+  --ion-color-base-rgb: var(--tp-color-questoes-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-questoes-shade) !important;
+  --ion-color-tint: var(--tp-color-questoes-tint) !important;
+}
+
+.ion-color-questoes-1,
+[tp-color='questoes-1'] {
+  --ion-color-base: var(--tp-color-questoes-1) !important;
+  --ion-color-base-rgb: var(--tp-color-questoes-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-questoes-1-shade) !important;
+  --ion-color-tint: var(--tp-color-questoes-1-tint) !important;
+}
+
+.ion-color-questoes-2,
+[tp-color='questoes-2'] {
+  --ion-color-base: var(--tp-color-questoes-2) !important;
+  --ion-color-base-rgb: var(--tp-color-questoes-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-questoes-2-shade) !important;
+  --ion-color-tint: var(--tp-color-questoes-2-tint) !important;
+}
+
+.ion-color-questoes-3,
+[tp-color='questoes-3'] {
+  --ion-color-base: var(--tp-color-questoes-3) !important;
+  --ion-color-base-rgb: var(--tp-color-questoes-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-questoes-3-shade) !important;
+  --ion-color-tint: var(--tp-color-questoes-3-tint) !important;
+}
+
+.ion-color-questoes-4,
+[tp-color='questoes-4'] {
+  --ion-color-base: var(--tp-color-questoes-4) !important;
+  --ion-color-base-rgb: var(--tp-color-questoes-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-questoes-4-shade) !important;
+  --ion-color-tint: var(--tp-color-questoes-4-tint) !important;
+}
+
+.ion-color-questoes-5,
+[tp-color='questoes-5'] {
+  --ion-color-base: var(--tp-color-questoes-5) !important;
+  --ion-color-base-rgb: var(--tp-color-questoes-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-questoes-5-shade) !important;
+  --ion-color-tint: var(--tp-color-questoes-5-tint) !important;
+}
+
+.tp-color-questoes,
+[tp-color='questoes'] {
+  --tp-color-base: var(--tp-color-questoes) !important;
+  --tp-color-base-rgb: var(--tp-color-questoes-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-questoes-shade) !important;
+  --tp-color-tint: var(--tp-color-questoes-tint) !important;
+}
+
+.tp-color-questoes-1,
+[tp-color='questoes-1'] {
+  --tp-color-base: var(--tp-color-questoes-1) !important;
+  --tp-color-base-rgb: var(--tp-color-questoes-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-questoes-1-shade) !important;
+  --tp-color-tint: var(--tp-color-questoes-1-tint) !important;
+}
+
+.tp-color-questoes-2,
+[tp-color='questoes-2'] {
+  --tp-color-base: var(--tp-color-questoes-2) !important;
+  --tp-color-base-rgb: var(--tp-color-questoes-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-questoes-2-shade) !important;
+  --tp-color-tint: var(--tp-color-questoes-2-tint) !important;
+}
+
+.tp-color-questoes-3,
+[tp-color='questoes-3'] {
+  --tp-color-base: var(--tp-color-questoes-3) !important;
+  --tp-color-base-rgb: var(--tp-color-questoes-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-questoes-3-shade) !important;
+  --tp-color-tint: var(--tp-color-questoes-3-tint) !important;
+}
+
+.tp-color-questoes-4,
+[tp-color='questoes-4'] {
+  --tp-color-base: var(--tp-color-questoes-4) !important;
+  --tp-color-base-rgb: var(--tp-color-questoes-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-questoes-4-shade) !important;
+  --tp-color-tint: var(--tp-color-questoes-4-tint) !important;
+}
+
+.tp-color-questoes-5,
+[tp-color='questoes-5'] {
+  --tp-color-base: var(--tp-color-questoes-5) !important;
+  --tp-color-base-rgb: var(--tp-color-questoes-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-questoes-5-shade) !important;
+  --tp-color-tint: var(--tp-color-questoes-5-tint) !important;
+}
+
+.ion-color-revalida,
+[tp-color='revalida'] {
+  --ion-color-base: var(--tp-color-revalida) !important;
+  --ion-color-base-rgb: var(--tp-color-revalida-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-revalida-shade) !important;
+  --ion-color-tint: var(--tp-color-revalida-tint) !important;
+}
+
+.ion-color-revalida-1,
+[tp-color='revalida-1'] {
+  --ion-color-base: var(--tp-color-revalida-1) !important;
+  --ion-color-base-rgb: var(--tp-color-revalida-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-revalida-1-shade) !important;
+  --ion-color-tint: var(--tp-color-revalida-1-tint) !important;
+}
+
+.ion-color-revalida-2,
+[tp-color='revalida-2'] {
+  --ion-color-base: var(--tp-color-revalida-2) !important;
+  --ion-color-base-rgb: var(--tp-color-revalida-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-revalida-2-shade) !important;
+  --ion-color-tint: var(--tp-color-revalida-2-tint) !important;
+}
+
+.ion-color-revalida-3,
+[tp-color='revalida-3'] {
+  --ion-color-base: var(--tp-color-revalida-3) !important;
+  --ion-color-base-rgb: var(--tp-color-revalida-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-revalida-3-shade) !important;
+  --ion-color-tint: var(--tp-color-revalida-3-tint) !important;
+}
+
+.ion-color-revalida-4,
+[tp-color='revalida-4'] {
+  --ion-color-base: var(--tp-color-revalida-4) !important;
+  --ion-color-base-rgb: var(--tp-color-revalida-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-revalida-4-shade) !important;
+  --ion-color-tint: var(--tp-color-revalida-4-tint) !important;
+}
+
+.ion-color-revalida-5,
+[tp-color='revalida-5'] {
+  --ion-color-base: var(--tp-color-revalida-5) !important;
+  --ion-color-base-rgb: var(--tp-color-revalida-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-revalida-5-shade) !important;
+  --ion-color-tint: var(--tp-color-revalida-5-tint) !important;
+}
+
+.tp-color-revalida,
+[tp-color='revalida'] {
+  --tp-color-base: var(--tp-color-revalida) !important;
+  --tp-color-base-rgb: var(--tp-color-revalida-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-revalida-shade) !important;
+  --tp-color-tint: var(--tp-color-revalida-tint) !important;
+}
+
+.tp-color-revalida-1,
+[tp-color='revalida-1'] {
+  --tp-color-base: var(--tp-color-revalida-1) !important;
+  --tp-color-base-rgb: var(--tp-color-revalida-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-revalida-1-shade) !important;
+  --tp-color-tint: var(--tp-color-revalida-1-tint) !important;
+}
+
+.tp-color-revalida-2,
+[tp-color='revalida-2'] {
+  --tp-color-base: var(--tp-color-revalida-2) !important;
+  --tp-color-base-rgb: var(--tp-color-revalida-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-revalida-2-shade) !important;
+  --tp-color-tint: var(--tp-color-revalida-2-tint) !important;
+}
+
+.tp-color-revalida-3,
+[tp-color='revalida-3'] {
+  --tp-color-base: var(--tp-color-revalida-3) !important;
+  --tp-color-base-rgb: var(--tp-color-revalida-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-revalida-3-shade) !important;
+  --tp-color-tint: var(--tp-color-revalida-3-tint) !important;
+}
+
+.tp-color-revalida-4,
+[tp-color='revalida-4'] {
+  --tp-color-base: var(--tp-color-revalida-4) !important;
+  --tp-color-base-rgb: var(--tp-color-revalida-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-revalida-4-shade) !important;
+  --tp-color-tint: var(--tp-color-revalida-4-tint) !important;
+}
+
+.tp-color-revalida-5,
+[tp-color='revalida-5'] {
+  --tp-color-base: var(--tp-color-revalida-5) !important;
+  --tp-color-base-rgb: var(--tp-color-revalida-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-revalida-5-shade) !important;
+  --tp-color-tint: var(--tp-color-revalida-5-tint) !important;
+}
+
+.ion-color-provas,
+[tp-color='provas'] {
+  --ion-color-base: var(--tp-color-provas) !important;
+  --ion-color-base-rgb: var(--tp-color-provas-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-provas-shade) !important;
+  --ion-color-tint: var(--tp-color-provas-tint) !important;
+}
+
+.ion-color-provas-1,
+[tp-color='provas-1'] {
+  --ion-color-base: var(--tp-color-provas-1) !important;
+  --ion-color-base-rgb: var(--tp-color-provas-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-provas-1-shade) !important;
+  --ion-color-tint: var(--tp-color-provas-1-tint) !important;
+}
+
+.ion-color-provas-2,
+[tp-color='provas-2'] {
+  --ion-color-base: var(--tp-color-provas-2) !important;
+  --ion-color-base-rgb: var(--tp-color-provas-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-provas-2-shade) !important;
+  --ion-color-tint: var(--tp-color-provas-2-tint) !important;
+}
+
+.ion-color-provas-3,
+[tp-color='provas-3'] {
+  --ion-color-base: var(--tp-color-provas-3) !important;
+  --ion-color-base-rgb: var(--tp-color-provas-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-provas-3-shade) !important;
+  --ion-color-tint: var(--tp-color-provas-3-tint) !important;
+}
+
+.ion-color-provas-4,
+[tp-color='provas-4'] {
+  --ion-color-base: var(--tp-color-provas-4) !important;
+  --ion-color-base-rgb: var(--tp-color-provas-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-provas-4-shade) !important;
+  --ion-color-tint: var(--tp-color-provas-4-tint) !important;
+}
+
+.ion-color-provas-5,
+[tp-color='provas-5'] {
+  --ion-color-base: var(--tp-color-provas-5) !important;
+  --ion-color-base-rgb: var(--tp-color-provas-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-provas-5-shade) !important;
+  --ion-color-tint: var(--tp-color-provas-5-tint) !important;
+}
+
+.tp-color-provas,
+[tp-color='provas'] {
+  --tp-color-base: var(--tp-color-provas) !important;
+  --tp-color-base-rgb: var(--tp-color-provas-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-provas-shade) !important;
+  --tp-color-tint: var(--tp-color-provas-tint) !important;
+}
+
+.tp-color-provas-1,
+[tp-color='provas-1'] {
+  --tp-color-base: var(--tp-color-provas-1) !important;
+  --tp-color-base-rgb: var(--tp-color-provas-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-provas-1-shade) !important;
+  --tp-color-tint: var(--tp-color-provas-1-tint) !important;
+}
+
+.tp-color-provas-2,
+[tp-color='provas-2'] {
+  --tp-color-base: var(--tp-color-provas-2) !important;
+  --tp-color-base-rgb: var(--tp-color-provas-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-provas-2-shade) !important;
+  --tp-color-tint: var(--tp-color-provas-2-tint) !important;
+}
+
+.tp-color-provas-3,
+[tp-color='provas-3'] {
+  --tp-color-base: var(--tp-color-provas-3) !important;
+  --tp-color-base-rgb: var(--tp-color-provas-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-provas-3-shade) !important;
+  --tp-color-tint: var(--tp-color-provas-3-tint) !important;
+}
+
+.tp-color-provas-4,
+[tp-color='provas-4'] {
+  --tp-color-base: var(--tp-color-provas-4) !important;
+  --tp-color-base-rgb: var(--tp-color-provas-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-provas-4-shade) !important;
+  --tp-color-tint: var(--tp-color-provas-4-tint) !important;
+}
+
+.tp-color-provas-5,
+[tp-color='provas-5'] {
+  --tp-color-base: var(--tp-color-provas-5) !important;
+  --tp-color-base-rgb: var(--tp-color-provas-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-provas-5-shade) !important;
+  --tp-color-tint: var(--tp-color-provas-5-tint) !important;
+}
+
+.tp-color-theme-recursos {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(195, 80%, 40%);
+  --tp-color-brand-rgb: 20, 143, 184;
+  --tp-color-brand-shade: hsl(195, 80%, 35%);
+  --tp-color-brand-tint: hsl(195, 80%, 45%);
+  --tp-color-brand-1: hsl(195, 80%, 20%);
+  --tp-color-brand-1-rgb: 10, 71, 92;
+  --tp-color-brand-1-shade: hsl(195, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(195, 80%, 25%);
+  --tp-color-brand-2: hsl(195, 80%, 30%);
+  --tp-color-brand-2-rgb: 15, 107, 138;
+  --tp-color-brand-2-shade: hsl(195, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(195, 80%, 35%);
+  --tp-color-brand-3: hsl(195, 80%, 40%);
+  --tp-color-brand-3-rgb: 20, 143, 184;
+  --tp-color-brand-3-shade: hsl(195, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(195, 80%, 45%);
+  --tp-color-brand-4: hsl(195, 80%, 60%);
+  --tp-color-brand-4-rgb: 71, 194, 235;
+  --tp-color-brand-4-shade: hsl(195, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(195, 80%, 65%);
+  --tp-color-brand-5: hsl(195, 80%, 80%);
+  --tp-color-brand-5-rgb: 163, 224, 245;
+  --tp-color-brand-5-shade: hsl(195, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(195, 80%, 85%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-orange: hsl(25, 80%, 40%);
+  --tp-color-orange-rgb: 184, 88, 20;
+  --tp-color-orange-shade: hsl(25, 80%, 35%);
+  --tp-color-orange-tint: hsl(25, 80%, 45%);
+  --tp-color-orange-1: hsl(25, 80%, 20%);
+  --tp-color-orange-1-rgb: 92, 44, 10;
+  --tp-color-orange-1-shade: hsl(25, 80%, 15%);
+  --tp-color-orange-1-tint: hsl(25, 80%, 25%);
+  --tp-color-orange-2: hsl(25, 80%, 30%);
+  --tp-color-orange-2-rgb: 138, 66, 15;
+  --tp-color-orange-2-shade: hsl(25, 80%, 25%);
+  --tp-color-orange-2-tint: hsl(25, 80%, 35%);
+  --tp-color-orange-3: hsl(25, 80%, 40%);
+  --tp-color-orange-3-rgb: 184, 88, 20;
+  --tp-color-orange-3-shade: hsl(25, 80%, 35%);
+  --tp-color-orange-3-tint: hsl(25, 80%, 45%);
+  --tp-color-orange-4: hsl(25, 80%, 60%);
+  --tp-color-orange-4-rgb: 235, 139, 71;
+  --tp-color-orange-4-shade: hsl(25, 80%, 55%);
+  --tp-color-orange-4-tint: hsl(25, 80%, 65%);
+  --tp-color-orange-5: hsl(25, 80%, 80%);
+  --tp-color-orange-5-rgb: 245, 197, 163;
+  --tp-color-orange-5-shade: hsl(25, 80%, 75%);
+  --tp-color-orange-5-tint: hsl(25, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-recursos {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(195, 40%, 40%);
+  --tp-color-brand-rgb: 61, 122, 143;
+  --tp-color-brand-shade: hsl(195, 40%, 35%);
+  --tp-color-brand-tint: hsl(195, 40%, 45%);
+  --tp-color-brand-1: hsl(195, 40%, 80%);
+  --tp-color-brand-1-rgb: 184, 214, 224;
+  --tp-color-brand-1-shade: hsl(195, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(195, 40%, 85%);
+  --tp-color-brand-2: hsl(195, 40%, 90%);
+  --tp-color-brand-2-rgb: 219, 235, 240;
+  --tp-color-brand-2-shade: hsl(195, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(195, 40%, 95%);
+  --tp-color-brand-3: hsl(195, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(195, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(195, 40%, 100%);
+  --tp-color-brand-4: hsl(195, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(195, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(195, 40%, 100%);
+  --tp-color-brand-5: hsl(195, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(195, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(195, 40%, 100%);
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-orange: hsl(25, 40%, 40%);
+  --tp-color-orange-rgb: 143, 95, 61;
+  --tp-color-orange-shade: hsl(25, 40%, 35%);
+  --tp-color-orange-tint: hsl(25, 40%, 45%);
+  --tp-color-orange-1: hsl(25, 40%, 80%);
+  --tp-color-orange-1-rgb: 224, 201, 184;
+  --tp-color-orange-1-shade: hsl(25, 40%, 75%);
+  --tp-color-orange-1-tint: hsl(25, 40%, 85%);
+  --tp-color-orange-2: hsl(25, 40%, 90%);
+  --tp-color-orange-2-rgb: 240, 228, 219;
+  --tp-color-orange-2-shade: hsl(25, 40%, 85%);
+  --tp-color-orange-2-tint: hsl(25, 40%, 95%);
+  --tp-color-orange-3: hsl(25, 40%, 100%);
+  --tp-color-orange-3-rgb: 255, 255, 255;
+  --tp-color-orange-3-shade: hsl(25, 40%, 95%);
+  --tp-color-orange-3-tint: hsl(25, 40%, 100%);
+  --tp-color-orange-4: hsl(25, 40%, 100%);
+  --tp-color-orange-4-rgb: 255, 255, 255;
+  --tp-color-orange-4-shade: hsl(25, 40%, 100%);
+  --tp-color-orange-4-tint: hsl(25, 40%, 100%);
+  --tp-color-orange-5: hsl(25, 40%, 100%);
+  --tp-color-orange-5-rgb: 255, 255, 255;
+  --tp-color-orange-5-shade: hsl(25, 40%, 100%);
+  --tp-color-orange-5-tint: hsl(25, 40%, 100%);
+}
+
+.ion-color-orange,
+[tp-color='orange'] {
+  --ion-color-base: var(--tp-color-orange) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-tint) !important;
+}
+
+.ion-color-orange-1,
+[tp-color='orange-1'] {
+  --ion-color-base: var(--tp-color-orange-1) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-1-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-1-tint) !important;
+}
+
+.ion-color-orange-2,
+[tp-color='orange-2'] {
+  --ion-color-base: var(--tp-color-orange-2) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-2-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-2-tint) !important;
+}
+
+.ion-color-orange-3,
+[tp-color='orange-3'] {
+  --ion-color-base: var(--tp-color-orange-3) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-3-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-3-tint) !important;
+}
+
+.ion-color-orange-4,
+[tp-color='orange-4'] {
+  --ion-color-base: var(--tp-color-orange-4) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-4-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-4-tint) !important;
+}
+
+.ion-color-orange-5,
+[tp-color='orange-5'] {
+  --ion-color-base: var(--tp-color-orange-5) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-5-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-5-tint) !important;
+}
+
+.tp-color-orange,
+[tp-color='orange'] {
+  --tp-color-base: var(--tp-color-orange) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-tint) !important;
+}
+
+.tp-color-orange-1,
+[tp-color='orange-1'] {
+  --tp-color-base: var(--tp-color-orange-1) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-1-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-1-tint) !important;
+}
+
+.tp-color-orange-2,
+[tp-color='orange-2'] {
+  --tp-color-base: var(--tp-color-orange-2) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-2-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-2-tint) !important;
+}
+
+.tp-color-orange-3,
+[tp-color='orange-3'] {
+  --tp-color-base: var(--tp-color-orange-3) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-3-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-3-tint) !important;
+}
+
+.tp-color-orange-4,
+[tp-color='orange-4'] {
+  --tp-color-base: var(--tp-color-orange-4) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-4-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-4-tint) !important;
+}
+
+.tp-color-orange-5,
+[tp-color='orange-5'] {
+  --tp-color-base: var(--tp-color-orange-5) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-5-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-5-tint) !important;
+}
+
+.ion-color-orange,
+[tp-color='orange'] {
+  --ion-color-base: var(--tp-color-orange) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-tint) !important;
+}
+
+.ion-color-orange-1,
+[tp-color='orange-1'] {
+  --ion-color-base: var(--tp-color-orange-1) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-1-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-1-tint) !important;
+}
+
+.ion-color-orange-2,
+[tp-color='orange-2'] {
+  --ion-color-base: var(--tp-color-orange-2) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-2-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-2-tint) !important;
+}
+
+.ion-color-orange-3,
+[tp-color='orange-3'] {
+  --ion-color-base: var(--tp-color-orange-3) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-3-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-3-tint) !important;
+}
+
+.ion-color-orange-4,
+[tp-color='orange-4'] {
+  --ion-color-base: var(--tp-color-orange-4) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-4-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-4-tint) !important;
+}
+
+.ion-color-orange-5,
+[tp-color='orange-5'] {
+  --ion-color-base: var(--tp-color-orange-5) !important;
+  --ion-color-base-rgb: var(--tp-color-orange-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-orange-5-shade) !important;
+  --ion-color-tint: var(--tp-color-orange-5-tint) !important;
+}
+
+.tp-color-orange,
+[tp-color='orange'] {
+  --tp-color-base: var(--tp-color-orange) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-tint) !important;
+}
+
+.tp-color-orange-1,
+[tp-color='orange-1'] {
+  --tp-color-base: var(--tp-color-orange-1) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-1-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-1-tint) !important;
+}
+
+.tp-color-orange-2,
+[tp-color='orange-2'] {
+  --tp-color-base: var(--tp-color-orange-2) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-2-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-2-tint) !important;
+}
+
+.tp-color-orange-3,
+[tp-color='orange-3'] {
+  --tp-color-base: var(--tp-color-orange-3) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-3-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-3-tint) !important;
+}
+
+.tp-color-orange-4,
+[tp-color='orange-4'] {
+  --tp-color-base: var(--tp-color-orange-4) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-4-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-4-tint) !important;
+}
+
+.tp-color-orange-5,
+[tp-color='orange-5'] {
+  --tp-color-base: var(--tp-color-orange-5) !important;
+  --tp-color-base-rgb: var(--tp-color-orange-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-orange-5-shade) !important;
+  --tp-color-tint: var(--tp-color-orange-5-tint) !important;
+}
+
+.tp-color-theme-cpmed {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(12, 80%, 40%);
+  --tp-color-brand-rgb: 184, 53, 20;
+  --tp-color-brand-shade: hsl(12, 80%, 35%);
+  --tp-color-brand-tint: hsl(12, 80%, 45%);
+  --tp-color-brand-1: hsl(12, 80%, 20%);
+  --tp-color-brand-1-rgb: 92, 27, 10;
+  --tp-color-brand-1-shade: hsl(12, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(12, 80%, 25%);
+  --tp-color-brand-2: hsl(12, 80%, 30%);
+  --tp-color-brand-2-rgb: 138, 40, 15;
+  --tp-color-brand-2-shade: hsl(12, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(12, 80%, 35%);
+  --tp-color-brand-3: hsl(12, 80%, 40%);
+  --tp-color-brand-3-rgb: 184, 53, 20;
+  --tp-color-brand-3-shade: hsl(12, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(12, 80%, 45%);
+  --tp-color-brand-4: hsl(12, 80%, 60%);
+  --tp-color-brand-4-rgb: 235, 104, 71;
+  --tp-color-brand-4-shade: hsl(12, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(12, 80%, 65%);
+  --tp-color-brand-5: hsl(12, 80%, 80%);
+  --tp-color-brand-5-rgb: 245, 180, 163;
+  --tp-color-brand-5-shade: hsl(12, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(12, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-cpmed {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(12, 40%, 40%);
+  --tp-color-brand-rgb: 143, 78, 61;
+  --tp-color-brand-shade: hsl(12, 40%, 35%);
+  --tp-color-brand-tint: hsl(12, 40%, 45%);
+  --tp-color-brand-1: hsl(12, 40%, 80%);
+  --tp-color-brand-1-rgb: 224, 192, 184;
+  --tp-color-brand-1-shade: hsl(12, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(12, 40%, 85%);
+  --tp-color-brand-2: hsl(12, 40%, 90%);
+  --tp-color-brand-2-rgb: 240, 223, 219;
+  --tp-color-brand-2-shade: hsl(12, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(12, 40%, 95%);
+  --tp-color-brand-3: hsl(12, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(12, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(12, 40%, 100%);
+  --tp-color-brand-4: hsl(12, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(12, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(12, 40%, 100%);
+  --tp-color-brand-5: hsl(12, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(12, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(12, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-theme-cpvent {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(72, 80%, 40%);
+  --tp-color-brand-rgb: 151, 184, 20;
+  --tp-color-brand-shade: hsl(72, 80%, 35%);
+  --tp-color-brand-tint: hsl(72, 80%, 45%);
+  --tp-color-brand-1: hsl(72, 80%, 20%);
+  --tp-color-brand-1-rgb: 75, 92, 10;
+  --tp-color-brand-1-shade: hsl(72, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(72, 80%, 25%);
+  --tp-color-brand-2: hsl(72, 80%, 30%);
+  --tp-color-brand-2-rgb: 113, 138, 15;
+  --tp-color-brand-2-shade: hsl(72, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(72, 80%, 35%);
+  --tp-color-brand-3: hsl(72, 80%, 40%);
+  --tp-color-brand-3-rgb: 151, 184, 20;
+  --tp-color-brand-3-shade: hsl(72, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(72, 80%, 45%);
+  --tp-color-brand-4: hsl(72, 80%, 60%);
+  --tp-color-brand-4-rgb: 202, 235, 71;
+  --tp-color-brand-4-shade: hsl(72, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(72, 80%, 65%);
+  --tp-color-brand-5: hsl(72, 80%, 80%);
+  --tp-color-brand-5-rgb: 228, 245, 163;
+  --tp-color-brand-5-shade: hsl(72, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(72, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-cpvent {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(72, 40%, 40%);
+  --tp-color-brand-rgb: 126, 143, 61;
+  --tp-color-brand-shade: hsl(72, 40%, 35%);
+  --tp-color-brand-tint: hsl(72, 40%, 45%);
+  --tp-color-brand-1: hsl(72, 40%, 80%);
+  --tp-color-brand-1-rgb: 216, 224, 184;
+  --tp-color-brand-1-shade: hsl(72, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(72, 40%, 85%);
+  --tp-color-brand-2: hsl(72, 40%, 90%);
+  --tp-color-brand-2-rgb: 236, 240, 219;
+  --tp-color-brand-2-shade: hsl(72, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(72, 40%, 95%);
+  --tp-color-brand-3: hsl(72, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(72, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(72, 40%, 100%);
+  --tp-color-brand-4: hsl(72, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(72, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(72, 40%, 100%);
+  --tp-color-brand-5: hsl(72, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(72, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(72, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-theme-extensivo-rmais {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(300, 80%, 40%);
+  --tp-color-brand-rgb: 184, 20, 184;
+  --tp-color-brand-shade: hsl(300, 80%, 35%);
+  --tp-color-brand-tint: hsl(300, 80%, 45%);
+  --tp-color-brand-1: hsl(300, 80%, 20%);
+  --tp-color-brand-1-rgb: 92, 10, 92;
+  --tp-color-brand-1-shade: hsl(300, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(300, 80%, 25%);
+  --tp-color-brand-2: hsl(300, 80%, 30%);
+  --tp-color-brand-2-rgb: 138, 15, 138;
+  --tp-color-brand-2-shade: hsl(300, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(300, 80%, 35%);
+  --tp-color-brand-3: hsl(300, 80%, 40%);
+  --tp-color-brand-3-rgb: 184, 20, 184;
+  --tp-color-brand-3-shade: hsl(300, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(300, 80%, 45%);
+  --tp-color-brand-4: hsl(300, 80%, 60%);
+  --tp-color-brand-4-rgb: 235, 71, 235;
+  --tp-color-brand-4-shade: hsl(300, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(300, 80%, 65%);
+  --tp-color-brand-5: hsl(300, 80%, 80%);
+  --tp-color-brand-5-rgb: 245, 163, 245;
+  --tp-color-brand-5-shade: hsl(300, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(300, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-extensivo-rmais {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(300, 40%, 40%);
+  --tp-color-brand-rgb: 143, 61, 143;
+  --tp-color-brand-shade: hsl(300, 40%, 35%);
+  --tp-color-brand-tint: hsl(300, 40%, 45%);
+  --tp-color-brand-1: hsl(300, 40%, 80%);
+  --tp-color-brand-1-rgb: 224, 184, 224;
+  --tp-color-brand-1-shade: hsl(300, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(300, 40%, 85%);
+  --tp-color-brand-2: hsl(300, 40%, 90%);
+  --tp-color-brand-2-rgb: 240, 219, 240;
+  --tp-color-brand-2-shade: hsl(300, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(300, 40%, 95%);
+  --tp-color-brand-3: hsl(300, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(300, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(300, 40%, 100%);
+  --tp-color-brand-4: hsl(300, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(300, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(300, 40%, 100%);
+  --tp-color-brand-5: hsl(300, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(300, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(300, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-theme-extensivo {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(128, 80%, 40%);
+  --tp-color-brand-rgb: 20, 184, 42;
+  --tp-color-brand-shade: hsl(128, 80%, 35%);
+  --tp-color-brand-tint: hsl(128, 80%, 45%);
+  --tp-color-brand-1: hsl(128, 80%, 20%);
+  --tp-color-brand-1-rgb: 10, 92, 21;
+  --tp-color-brand-1-shade: hsl(128, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(128, 80%, 25%);
+  --tp-color-brand-2: hsl(128, 80%, 30%);
+  --tp-color-brand-2-rgb: 15, 138, 32;
+  --tp-color-brand-2-shade: hsl(128, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(128, 80%, 35%);
+  --tp-color-brand-3: hsl(128, 80%, 40%);
+  --tp-color-brand-3-rgb: 20, 184, 42;
+  --tp-color-brand-3-shade: hsl(128, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(128, 80%, 45%);
+  --tp-color-brand-4: hsl(128, 80%, 60%);
+  --tp-color-brand-4-rgb: 71, 235, 93;
+  --tp-color-brand-4-shade: hsl(128, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(128, 80%, 65%);
+  --tp-color-brand-5: hsl(128, 80%, 80%);
+  --tp-color-brand-5-rgb: 163, 245, 174;
+  --tp-color-brand-5-shade: hsl(128, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(128, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-extensivo {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(128, 40%, 40%);
+  --tp-color-brand-rgb: 61, 143, 72;
+  --tp-color-brand-shade: hsl(128, 40%, 35%);
+  --tp-color-brand-tint: hsl(128, 40%, 45%);
+  --tp-color-brand-1: hsl(128, 40%, 80%);
+  --tp-color-brand-1-rgb: 184, 224, 189;
+  --tp-color-brand-1-shade: hsl(128, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(128, 40%, 85%);
+  --tp-color-brand-2: hsl(128, 40%, 90%);
+  --tp-color-brand-2-rgb: 219, 240, 222;
+  --tp-color-brand-2-shade: hsl(128, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(128, 40%, 95%);
+  --tp-color-brand-3: hsl(128, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(128, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(128, 40%, 100%);
+  --tp-color-brand-4: hsl(128, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(128, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(128, 40%, 100%);
+  --tp-color-brand-5: hsl(128, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(128, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(128, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-theme-intensivao {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(344, 80%, 40%);
+  --tp-color-brand-rgb: 184, 20, 64;
+  --tp-color-brand-shade: hsl(344, 80%, 35%);
+  --tp-color-brand-tint: hsl(344, 80%, 45%);
+  --tp-color-brand-1: hsl(344, 80%, 20%);
+  --tp-color-brand-1-rgb: 92, 10, 32;
+  --tp-color-brand-1-shade: hsl(344, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(344, 80%, 25%);
+  --tp-color-brand-2: hsl(344, 80%, 30%);
+  --tp-color-brand-2-rgb: 138, 15, 48;
+  --tp-color-brand-2-shade: hsl(344, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(344, 80%, 35%);
+  --tp-color-brand-3: hsl(344, 80%, 40%);
+  --tp-color-brand-3-rgb: 184, 20, 64;
+  --tp-color-brand-3-shade: hsl(344, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(344, 80%, 45%);
+  --tp-color-brand-4: hsl(344, 80%, 60%);
+  --tp-color-brand-4-rgb: 235, 71, 115;
+  --tp-color-brand-4-shade: hsl(344, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(344, 80%, 65%);
+  --tp-color-brand-5: hsl(344, 80%, 80%);
+  --tp-color-brand-5-rgb: 245, 163, 185;
+  --tp-color-brand-5-shade: hsl(344, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(344, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-intensivao {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(344, 40%, 40%);
+  --tp-color-brand-rgb: 143, 61, 83;
+  --tp-color-brand-shade: hsl(344, 40%, 35%);
+  --tp-color-brand-tint: hsl(344, 40%, 45%);
+  --tp-color-brand-1: hsl(344, 40%, 80%);
+  --tp-color-brand-1-rgb: 224, 184, 194;
+  --tp-color-brand-1-shade: hsl(344, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(344, 40%, 85%);
+  --tp-color-brand-2: hsl(344, 40%, 90%);
+  --tp-color-brand-2-rgb: 240, 219, 225;
+  --tp-color-brand-2-shade: hsl(344, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(344, 40%, 95%);
+  --tp-color-brand-3: hsl(344, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(344, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(344, 40%, 100%);
+  --tp-color-brand-4: hsl(344, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(344, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(344, 40%, 100%);
+  --tp-color-brand-5: hsl(344, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(344, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(344, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-theme-medeletro {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(180, 80%, 40%);
+  --tp-color-brand-rgb: 20, 184, 184;
+  --tp-color-brand-shade: hsl(180, 80%, 35%);
+  --tp-color-brand-tint: hsl(180, 80%, 45%);
+  --tp-color-brand-1: hsl(180, 80%, 20%);
+  --tp-color-brand-1-rgb: 10, 92, 92;
+  --tp-color-brand-1-shade: hsl(180, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(180, 80%, 25%);
+  --tp-color-brand-2: hsl(180, 80%, 30%);
+  --tp-color-brand-2-rgb: 15, 138, 138;
+  --tp-color-brand-2-shade: hsl(180, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(180, 80%, 35%);
+  --tp-color-brand-3: hsl(180, 80%, 40%);
+  --tp-color-brand-3-rgb: 20, 184, 184;
+  --tp-color-brand-3-shade: hsl(180, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(180, 80%, 45%);
+  --tp-color-brand-4: hsl(180, 80%, 60%);
+  --tp-color-brand-4-rgb: 71, 235, 235;
+  --tp-color-brand-4-shade: hsl(180, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(180, 80%, 65%);
+  --tp-color-brand-5: hsl(180, 80%, 80%);
+  --tp-color-brand-5-rgb: 163, 245, 245;
+  --tp-color-brand-5-shade: hsl(180, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(180, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-medeletro {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(180, 40%, 40%);
+  --tp-color-brand-rgb: 61, 143, 143;
+  --tp-color-brand-shade: hsl(180, 40%, 35%);
+  --tp-color-brand-tint: hsl(180, 40%, 45%);
+  --tp-color-brand-1: hsl(180, 40%, 80%);
+  --tp-color-brand-1-rgb: 184, 224, 224;
+  --tp-color-brand-1-shade: hsl(180, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(180, 40%, 85%);
+  --tp-color-brand-2: hsl(180, 40%, 90%);
+  --tp-color-brand-2-rgb: 219, 240, 240;
+  --tp-color-brand-2-shade: hsl(180, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(180, 40%, 95%);
+  --tp-color-brand-3: hsl(180, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(180, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(180, 40%, 100%);
+  --tp-color-brand-4: hsl(180, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(180, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(180, 40%, 100%);
+  --tp-color-brand-5: hsl(180, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(180, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(180, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-theme-medmaster {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(56, 80%, 40%);
+  --tp-color-brand-rgb: 184, 173, 20;
+  --tp-color-brand-shade: hsl(56, 80%, 35%);
+  --tp-color-brand-tint: hsl(56, 80%, 45%);
+  --tp-color-brand-1: hsl(56, 80%, 20%);
+  --tp-color-brand-1-rgb: 92, 86, 10;
+  --tp-color-brand-1-shade: hsl(56, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(56, 80%, 25%);
+  --tp-color-brand-2: hsl(56, 80%, 30%);
+  --tp-color-brand-2-rgb: 138, 130, 15;
+  --tp-color-brand-2-shade: hsl(56, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(56, 80%, 35%);
+  --tp-color-brand-3: hsl(56, 80%, 40%);
+  --tp-color-brand-3-rgb: 184, 173, 20;
+  --tp-color-brand-3-shade: hsl(56, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(56, 80%, 45%);
+  --tp-color-brand-4: hsl(56, 80%, 60%);
+  --tp-color-brand-4-rgb: 235, 224, 71;
+  --tp-color-brand-4-shade: hsl(56, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(56, 80%, 65%);
+  --tp-color-brand-5: hsl(56, 80%, 80%);
+  --tp-color-brand-5-rgb: 245, 239, 163;
+  --tp-color-brand-5-shade: hsl(56, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(56, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-medmaster {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(56, 40%, 40%);
+  --tp-color-brand-rgb: 143, 137, 61;
+  --tp-color-brand-shade: hsl(56, 40%, 35%);
+  --tp-color-brand-tint: hsl(56, 40%, 45%);
+  --tp-color-brand-1: hsl(56, 40%, 80%);
+  --tp-color-brand-1-rgb: 224, 222, 184;
+  --tp-color-brand-1-shade: hsl(56, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(56, 40%, 85%);
+  --tp-color-brand-2: hsl(56, 40%, 90%);
+  --tp-color-brand-2-rgb: 240, 238, 219;
+  --tp-color-brand-2-shade: hsl(56, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(56, 40%, 95%);
+  --tp-color-brand-3: hsl(56, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(56, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(56, 40%, 100%);
+  --tp-color-brand-4: hsl(56, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(56, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(56, 40%, 100%);
+  --tp-color-brand-5: hsl(56, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(56, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(56, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-theme-no-papo {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(230, 80%, 40%);
+  --tp-color-brand-rgb: 20, 48, 184;
+  --tp-color-brand-shade: hsl(230, 80%, 35%);
+  --tp-color-brand-tint: hsl(230, 80%, 45%);
+  --tp-color-brand-1: hsl(230, 80%, 20%);
+  --tp-color-brand-1-rgb: 10, 24, 92;
+  --tp-color-brand-1-shade: hsl(230, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(230, 80%, 25%);
+  --tp-color-brand-2: hsl(230, 80%, 30%);
+  --tp-color-brand-2-rgb: 15, 36, 138;
+  --tp-color-brand-2-shade: hsl(230, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(230, 80%, 35%);
+  --tp-color-brand-3: hsl(230, 80%, 40%);
+  --tp-color-brand-3-rgb: 20, 48, 184;
+  --tp-color-brand-3-shade: hsl(230, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(230, 80%, 45%);
+  --tp-color-brand-4: hsl(230, 80%, 60%);
+  --tp-color-brand-4-rgb: 71, 99, 235;
+  --tp-color-brand-4-shade: hsl(230, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(230, 80%, 65%);
+  --tp-color-brand-5: hsl(230, 80%, 80%);
+  --tp-color-brand-5-rgb: 163, 177, 245;
+  --tp-color-brand-5-shade: hsl(230, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(230, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-no-papo {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(230, 40%, 40%);
+  --tp-color-brand-rgb: 61, 75, 143;
+  --tp-color-brand-shade: hsl(230, 40%, 35%);
+  --tp-color-brand-tint: hsl(230, 40%, 45%);
+  --tp-color-brand-1: hsl(230, 40%, 80%);
+  --tp-color-brand-1-rgb: 184, 190, 224;
+  --tp-color-brand-1-shade: hsl(230, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(230, 40%, 85%);
+  --tp-color-brand-2: hsl(230, 40%, 90%);
+  --tp-color-brand-2-rgb: 219, 223, 240;
+  --tp-color-brand-2-shade: hsl(230, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(230, 40%, 95%);
+  --tp-color-brand-3: hsl(230, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(230, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(230, 40%, 100%);
+  --tp-color-brand-4: hsl(230, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(230, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(230, 40%, 100%);
+  --tp-color-brand-5: hsl(230, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(230, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(230, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-theme-ventilamed {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(29, 80%, 40%);
+  --tp-color-brand-rgb: 184, 99, 20;
+  --tp-color-brand-shade: hsl(29, 80%, 35%);
+  --tp-color-brand-tint: hsl(29, 80%, 45%);
+  --tp-color-brand-1: hsl(29, 80%, 20%);
+  --tp-color-brand-1-rgb: 92, 50, 10;
+  --tp-color-brand-1-shade: hsl(29, 80%, 15%);
+  --tp-color-brand-1-tint: hsl(29, 80%, 25%);
+  --tp-color-brand-2: hsl(29, 80%, 30%);
+  --tp-color-brand-2-rgb: 138, 74, 15;
+  --tp-color-brand-2-shade: hsl(29, 80%, 25%);
+  --tp-color-brand-2-tint: hsl(29, 80%, 35%);
+  --tp-color-brand-3: hsl(29, 80%, 40%);
+  --tp-color-brand-3-rgb: 184, 99, 20;
+  --tp-color-brand-3-shade: hsl(29, 80%, 35%);
+  --tp-color-brand-3-tint: hsl(29, 80%, 45%);
+  --tp-color-brand-4: hsl(29, 80%, 60%);
+  --tp-color-brand-4-rgb: 235, 150, 71;
+  --tp-color-brand-4-shade: hsl(29, 80%, 55%);
+  --tp-color-brand-4-tint: hsl(29, 80%, 65%);
+  --tp-color-brand-5: hsl(29, 80%, 80%);
+  --tp-color-brand-5-rgb: 245, 203, 163;
+  --tp-color-brand-5-shade: hsl(29, 80%, 75%);
+  --tp-color-brand-5-tint: hsl(29, 80%, 85%);
+}
+
+.tp-color-scheme-light.tp-color-theme-ventilamed {
+  --tp-color-contrast-fixed: hsl(188, 10%, 98%);
+  --tp-color-contrast-fixed-rgb: 249, 250, 250;
+  --tp-color-brand: hsl(29, 40%, 40%);
+  --tp-color-brand-rgb: 143, 101, 61;
+  --tp-color-brand-shade: hsl(29, 40%, 35%);
+  --tp-color-brand-tint: hsl(29, 40%, 45%);
+  --tp-color-brand-1: hsl(29, 40%, 80%);
+  --tp-color-brand-1-rgb: 224, 203, 184;
+  --tp-color-brand-1-shade: hsl(29, 40%, 75%);
+  --tp-color-brand-1-tint: hsl(29, 40%, 85%);
+  --tp-color-brand-2: hsl(29, 40%, 90%);
+  --tp-color-brand-2-rgb: 240, 229, 219;
+  --tp-color-brand-2-shade: hsl(29, 40%, 85%);
+  --tp-color-brand-2-tint: hsl(29, 40%, 95%);
+  --tp-color-brand-3: hsl(29, 40%, 100%);
+  --tp-color-brand-3-rgb: 255, 255, 255;
+  --tp-color-brand-3-shade: hsl(29, 40%, 95%);
+  --tp-color-brand-3-tint: hsl(29, 40%, 100%);
+  --tp-color-brand-4: hsl(29, 40%, 100%);
+  --tp-color-brand-4-rgb: 255, 255, 255;
+  --tp-color-brand-4-shade: hsl(29, 40%, 100%);
+  --tp-color-brand-4-tint: hsl(29, 40%, 100%);
+  --tp-color-brand-5: hsl(29, 40%, 100%);
+  --tp-color-brand-5-rgb: 255, 255, 255;
+  --tp-color-brand-5-shade: hsl(29, 40%, 100%);
+  --tp-color-brand-5-tint: hsl(29, 40%, 100%);
+}
+
+.ion-color-brand,
+[tp-color='brand'] {
+  --ion-color-base: var(--tp-color-brand) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.ion-color-brand-1,
+[tp-color='brand-1'] {
+  --ion-color-base: var(--tp-color-brand-1) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-1-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.ion-color-brand-2,
+[tp-color='brand-2'] {
+  --ion-color-base: var(--tp-color-brand-2) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-10) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-2-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.ion-color-brand-3,
+[tp-color='brand-3'] {
+  --ion-color-base: var(--tp-color-brand-3) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --ion-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --ion-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-3-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.ion-color-brand-4,
+[tp-color='brand-4'] {
+  --ion-color-base: var(--tp-color-brand-4) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-4-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.ion-color-brand-5,
+[tp-color='brand-5'] {
+  --ion-color-base: var(--tp-color-brand-5) !important;
+  --ion-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --ion-color-contrast: var(--tp-color-neutral-1) !important;
+  --ion-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --ion-color-shade: var(--tp-color-brand-5-shade) !important;
+  --ion-color-tint: var(--tp-color-brand-5-tint) !important;
+}
+
+.tp-color-brand,
+[tp-color='brand'] {
+  --tp-color-base: var(--tp-color-brand) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-tint) !important;
+}
+
+.tp-color-brand-1,
+[tp-color='brand-1'] {
+  --tp-color-base: var(--tp-color-brand-1) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-1-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-1-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-1-tint) !important;
+}
+
+.tp-color-brand-2,
+[tp-color='brand-2'] {
+  --tp-color-base: var(--tp-color-brand-2) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-2-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-10) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-10-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-2-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-2-tint) !important;
+}
+
+.tp-color-brand-3,
+[tp-color='brand-3'] {
+  --tp-color-base: var(--tp-color-brand-3) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-3-rgb) !important;
+  --tp-color-contrast: var(--tp-color-contrast-fixed) !important;
+  --tp-color-contrast-rgb: var(--tp-color-contrast-fixed-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-3-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-3-tint) !important;
+}
+
+.tp-color-brand-4,
+[tp-color='brand-4'] {
+  --tp-color-base: var(--tp-color-brand-4) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-4-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-4-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-4-tint) !important;
+}
+
+.tp-color-brand-5,
+[tp-color='brand-5'] {
+  --tp-color-base: var(--tp-color-brand-5) !important;
+  --tp-color-base-rgb: var(--tp-color-brand-5-rgb) !important;
+  --tp-color-contrast: var(--tp-color-neutral-1) !important;
+  --tp-color-contrast-rgb: var(--tp-color-neutral-1-rgb) !important;
+  --tp-color-shade: var(--tp-color-brand-5-shade) !important;
+  --tp-color-tint: var(--tp-color-brand-5-tint) !important;
+} /*# sourceMappingURL=templarios.themes.css.map */

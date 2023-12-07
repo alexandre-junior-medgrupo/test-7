@@ -2,7 +2,6 @@
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
 | Property  | Attribute  | Description                                          | Type                                                                                                                                                | Default     |
@@ -13,7 +12,6 @@
 | `value`   | `value`    | Define o valor do preenchimento do componente.       | `number`                                                                                                                                            | `0`         |
 | `width`   | `width`    | Define a largura do componente.                      | `number`                                                                                                                                            | `32`        |
 
-
 ## CSS Custom Properties
 
 | Name       | Description                                                                        |
@@ -22,7 +20,6 @@
 | `--value`  | Propriedade definida dinamicamente. Define o valor do preenchimento do componente. |
 | `--width`  | Propriedade definida dinamicamente. Define a largura do componente.                |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

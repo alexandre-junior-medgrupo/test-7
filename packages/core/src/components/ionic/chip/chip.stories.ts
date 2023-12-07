@@ -3,20 +3,23 @@ import { defineCustomElement } from '@ionic/core/components/ion-chip';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpIonChip } from './chip.type';
+import { TP_ION_CHIP } from './chip.constants';
 
 defineCustomElement();
 
 const meta: Meta<Components.IonChip & TpIonChip> = {
   title: 'components/Ionic/Chip',
   argTypes: {
-    slot: {
-      control: { type: 'text' },
+    size: {
+      control: { type: 'select' },
+      options: [...TP_ION_CHIP.size],
+      description: 'Define o tamanho do componente.',
       table: {
         defaultValue: {
-          summary: 'Chip',
+          summary: 'undefined',
         },
         type: {
-          summary: 'string',
+          summary: TP_ION_CHIP.size.join('|'),
         },
       },
     },
@@ -32,6 +35,33 @@ const meta: Meta<Components.IonChip & TpIonChip> = {
         },
       },
     },
+    active: {
+      control: 'boolean',
+      description: 'Define a estilização do estado ativo do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
+    slot: {
+      control: { type: 'text' },
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'string',
+        },
+      },
+    },
+  },
+  args: {
+    active: true,
+    slot: 'Chip',
   },
 };
 
@@ -41,8 +71,44 @@ type Story = StoryObj<Components.IonChip & TpIonChip>;
 
 export const Default: Story = {
   render: ({ ...args }) => html`
-    <ion-chip outline color="${args.color}" ?disabled="${args.disabled}">
-      ${args.slot ? args.slot : 'Chip'}
+    <ion-chip
+      ?outline="${args.active}"
+      size="${args.size}"
+      color="${args.color}"
+      ?disabled="${args.disabled}"
+    >
+      <ion-label>${args.slot}</ion-label>
+    </ion-chip>
+
+    <ion-chip
+      ?outline="${args.active}"
+      size="${args.size}"
+      color="${args.color}"
+      ?disabled="${args.disabled}"
+    >
+      <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
+      <ion-label>${args.slot}</ion-label>
+    </ion-chip>
+
+    <ion-chip
+      ?outline="${args.active}"
+      size="${args.size}"
+      color="${args.color}"
+      ?disabled="${args.disabled}"
+    >
+      <ion-label>${args.slot}</ion-label>
+      <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
+    </ion-chip>
+
+    <ion-chip
+      ?outline="${args.active}"
+      size="${args.size}"
+      color="${args.color}"
+      ?disabled="${args.disabled}"
+    >
+      <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
+      <ion-label>${args.slot}</ion-label>
+      <ion-icon tp-size="md" src="./icons/tp-star.svg"></ion-icon>
     </ion-chip>
   `,
   /* play: async ({ canvasElement }) => {

@@ -8,7 +8,7 @@ import {
   getAssetPath,
 } from '@stencil/core';
 import { TpRateLikeStatus } from './rate-like.enum';
-import { TpRateLike as TpRateLikeType } from './rate-like.type';
+import { TpRateLikeType } from './rate-like.type';
 
 @Component({
   tag: 'tp-rate-like',

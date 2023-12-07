@@ -1,0 +1,1 @@
+{"version":3,"file":"input.type.js","sourceRoot":"","sources":["../../../../src/components/ionic/input/input.type.ts"],"names":[],"mappings":"","sourcesContent":["import type { TpColor } from '../../../utils/types/color.type';\n\nexport type TpIonInput = {\n  color: `${TpColor}`;\n};\n"]}

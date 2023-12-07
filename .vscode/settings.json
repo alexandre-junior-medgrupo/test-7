@@ -5,12 +5,12 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "stylelint.validate": ["scss"],
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "material-icon-theme.files.associations": {
     ".prettiercache": "prettier",
     "extensions.json": "vscode",
     "settings.json": "vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

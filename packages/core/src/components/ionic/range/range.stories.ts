@@ -23,6 +23,61 @@ const meta: Meta<Components.IonRange & TpIonRange> = {
         },
       },
     },
+    ticks: {
+      control: 'boolean',
+      description: 'Define se o componente terá ticks em sua extensão.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
+    snaps: {
+      control: 'boolean',
+      description:
+        'Se ticks for ativado este atributo deve ser juntamente ativado.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
+    min: {
+      control: 'number',
+      description: 'Define o valor inteiro mínimo do intervalo de ticks.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+    },
+    max: {
+      control: 'number',
+      description: 'Define o valor inteiro máximo do intervalo de ticks.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+    },
+  },
+  args: {
+    ticks: true,
+    snaps: true,
+    min: 0,
+    max: 10,
   },
 };
 
@@ -42,4 +97,28 @@ export const Default: Story = {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/ion-range/gi)).toBeTruthy();
   }, */
+};
+
+export const Ticks: Story = {
+  render: ({ ...args }) => html`
+    <ion-range
+      color="${args.color}"
+      ?secondary="${args.secondary}"
+      aria-label="volume"
+      ?ticks="${args.ticks}"
+      ?snaps="${args.snaps}"
+      min="${args.min}"
+      max="${args.max}"
+    ></ion-range>
+  `,
+  /* play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    expect(canvas.getByText(/ion-range/gi)).toBeTruthy();
+  }, */
+};
+Default.argTypes = {
+  ticks: { table: { disable: true } },
+  snaps: { table: { disable: true } },
+  min: { table: { disable: true } },
+  max: { table: { disable: true } },
 };

@@ -32,6 +32,36 @@ export namespace Components {
          */
         "width": number;
     }
+    interface TpComparisonChartBar {
+        /**
+          * Define o preenchimento da coluna em porcentagem.
+         */
+        "barValue": number;
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define a altura máxima da coluna.
+         */
+        "containerHeight": number;
+        /**
+          * Define a estilização do estado disabled do componente.
+         */
+        "disabled": boolean;
+        /**
+          * Define se o componente terá um marcador.
+         */
+        "hasMarker": boolean;
+        /**
+          * Define a posição, em porcentagem, do marcador na coluna.
+         */
+        "markerValue": number;
+        /**
+          * Define se o componente não terá rótulo.
+         */
+        "noLabel": boolean;
+    }
     interface TpRateLike {
         /**
           * Define o status do componente.
@@ -53,6 +83,12 @@ declare global {
     var HTMLTpChartBarElement: {
         prototype: HTMLTpChartBarElement;
         new (): HTMLTpChartBarElement;
+    };
+    interface HTMLTpComparisonChartBarElement extends Components.TpComparisonChartBar, HTMLStencilElement {
+    }
+    var HTMLTpComparisonChartBarElement: {
+        prototype: HTMLTpComparisonChartBarElement;
+        new (): HTMLTpComparisonChartBarElement;
     };
     interface HTMLTpRateLikeElementEventMap {
         "tpChange": TpRateLikeType['status'];
@@ -79,6 +115,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "tp-chart-bar": HTMLTpChartBarElement;
+        "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
         "tp-rate-like": HTMLTpRateLikeElement;
         "tp-test": HTMLTpTestElement;
     }
@@ -106,6 +143,36 @@ declare namespace LocalJSX {
          */
         "width"?: number;
     }
+    interface TpComparisonChartBar {
+        /**
+          * Define o preenchimento da coluna em porcentagem.
+         */
+        "barValue"?: number;
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define a altura máxima da coluna.
+         */
+        "containerHeight"?: number;
+        /**
+          * Define a estilização do estado disabled do componente.
+         */
+        "disabled"?: boolean;
+        /**
+          * Define se o componente terá um marcador.
+         */
+        "hasMarker"?: boolean;
+        /**
+          * Define a posição, em porcentagem, do marcador na coluna.
+         */
+        "markerValue"?: number;
+        /**
+          * Define se o componente não terá rótulo.
+         */
+        "noLabel"?: boolean;
+    }
     interface TpRateLike {
         /**
           * Emitido quando a propriedade status é alterada.
@@ -122,6 +189,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "tp-chart-bar": TpChartBar;
+        "tp-comparison-chart-bar": TpComparisonChartBar;
         "tp-rate-like": TpRateLike;
         "tp-test": TpTest;
     }
@@ -131,6 +199,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
+            "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
             "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
