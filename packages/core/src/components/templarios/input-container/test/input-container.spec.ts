@@ -1,30 +1,30 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { TpTest } from './test';
+import { TpInputContainer } from '../input-container';
 
-describe('tp-test', () => {
+describe('tp-input-container', () => {
   it('renders', async () => {
     const { root } = await newSpecPage({
-      components: [TpTest],
-      html: '<tp-test></tp-test>',
+      components: [TpInputContainer],
+      html: '<tp-input-container></tp-input-container>',
     });
     expect(root).toEqualHtml(`
-      <tp-test>
+      <tp-input-container>
         <mock:shadow-root>
         </mock:shadow-root>
-      </tp-test>
+      </tp-input-container>
     `);
   });
 
   it('renders with values', async () => {
     const { root } = await newSpecPage({
-      components: [TpTest],
-      html: `<tp-test></tp-test>`,
+      components: [TpInputContainer],
+      html: `<tp-input-container></tp-input-container>`,
     });
     expect(root).toEqualHtml(`
-      <tp-test>
+      <tp-input-container>
         <mock:shadow-root>
         </mock:shadow-root>
-      </tp-test>
+      </tp-input-container>
     `);
   });
 });

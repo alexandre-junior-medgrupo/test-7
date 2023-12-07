@@ -1,6 +1,6 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementCheckbox } from '@ionic/core/components/ion-checkbox';
-import { defineCustomElement as defineCustomElementText } from '@ionic/core/components/ion-text';
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TP_TYPE } from '../../../../../utils/constants/type.constant';
@@ -8,7 +8,7 @@ import { TpIonText } from '../../../text/text.type';
 import { TpIonCheckbox } from '../../utils/checkbox.type';
 
 defineCustomElementCheckbox();
-defineCustomElementText();
+defineCustomElementLabel();
 
 const meta: Meta<Components.IonCheckbox & TpIonCheckbox & TpIonText> = {
   title: 'components/Ionic/Checkbox/Compositions',
@@ -53,9 +53,9 @@ const meta: Meta<Components.IonCheckbox & TpIonCheckbox & TpIonText> = {
     ['tp-type']: {
       control: { type: 'select' },
       options: [...TP_TYPE],
-      description: `Define a estilização do texto do componente **'ion-text'**.
+      description: `Define a estilização do texto do componente **'ion-label'**.
 
-**OBS**: Atributo referente ao componente **'ion-text'**.
+**OBS**: Atributo referente ao componente **'ion-label'**.
 `,
       table: {
         defaultValue: {
@@ -73,7 +73,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonCheckbox & TpIonCheckbox & TpIonText>;
 
-export const Text: Story = {
+export const Label: Story = {
   render: ({ ...args }) => html`
     <ion-checkbox
       color="${args.color}"
@@ -81,9 +81,9 @@ export const Text: Story = {
       ?indeterminate="${args.indeterminate}"
       ?disabled="${args.disabled}"
     >
-      <ion-text tp-type="${args['tp-type']}">
+      <ion-label tp-type="${args['tp-type']}">
         Lorem ipsum, dolor sit amet consectetur.
-      </ion-text>
+      </ion-label>
     </ion-checkbox>
   `,
   /* play: async ({ canvasElement }) => {
