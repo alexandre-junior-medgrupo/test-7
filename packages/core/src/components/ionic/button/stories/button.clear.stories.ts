@@ -2,8 +2,8 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-button';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_BUTTON } from './button.constant';
-import { TpIonButton } from './button.type';
+import { TP_ION_BUTTON } from '../utils/button.constant';
+import { TpIonButton } from '../utils/button.type';
 
 defineCustomElement();
 

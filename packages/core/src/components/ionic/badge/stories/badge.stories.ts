@@ -2,8 +2,8 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-badge';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_BADGE } from './badge.constant';
-import { TpIonBadge } from './badge.type';
+import { TP_ION_BADGE } from '../utils/badge.constant';
+import { TpIonBadge } from '../utils/badge.type';
 
 defineCustomElement();
 
@@ -49,9 +49,8 @@ export const Default: Story = {
       color="${args.color}"
       tp-size="${args['tp-size']}"
       tp-fill="${args['tp-fill']}"
-    >
-      ion-badge
-    </ion-badge>`,
+      >ion-badge</ion-badge
+    >`,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/ion-badge/gi)).toBeTruthy();

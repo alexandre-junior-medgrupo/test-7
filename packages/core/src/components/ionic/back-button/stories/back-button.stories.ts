@@ -49,7 +49,7 @@ export const Default: Story = {
       size="${args.size}"
       color="${args.color}"
       ?disabled="${args.disabled}"
-      icon="./../../../../icons/tp-chevron-left.svg"
+      icon="./icons/tp-chevron-left.svg"
       mode="ios"
       text=""
     ></ion-back-button>

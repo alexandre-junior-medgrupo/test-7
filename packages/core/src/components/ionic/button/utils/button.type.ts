@@ -1,9 +1,9 @@
-import type { TpColor } from '../../../utils/types/color.type';
+import type { TpColor } from '../../../../utils/types/color.type';
 import type {
   TpIonButtonClearSize,
   TpIonButtonIconSize,
   TpIonButtonSolidSize,
-} from './button.enum';
+} from '../utils/button.enum';
 
 export type TpIonButton = {
   color: `${TpColor}`;
