@@ -1,4 +1,8 @@
 ion-accordion {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
   // item
   [slot='header'] {
     --border-radius: 8px;
@@ -17,13 +21,16 @@ ion-accordion {
     --stroke: var(--tp-color-neutral-9);
   }
 
-  [slot='content'].ion-padding {
+  [slot='content'] {
     background: transparent;
-    color: var(--tp-color-neutral-7);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    padding-top: 0;
+
+    * {
+      color: var(--tp-color-neutral-7);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      padding-top: 0;
+    }
   }
 }
 
@@ -81,6 +88,9 @@ ion-accordion[tp-color] {
 
   [slot='content'] {
     background: var(--tp-color-base);
-    color: var(--tp-color-contrast);
+
+    * {
+      color: var(--tp-color-contrast);
+    }
   }
 }

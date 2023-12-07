@@ -1328,17 +1328,25 @@ html.ios {
   margin: 0;
 }
 
-ion-accordion ion-item {
+ion-accordion:not(:last-child) {
+  margin-bottom: 8px;
+}
+ion-accordion [slot=header] {
   --border-radius: 8px;
   --ripple-color: transparent;
+  --background: transparent;
+  --color: var(--tp-color-neutral-10);
 }
-ion-accordion ion-item:hover {
+ion-accordion [slot=header]:hover {
   --background-hover: transparent;
 }
-ion-accordion ion-item .ion-accordion-toggle-icon {
+ion-accordion .ion-accordion-toggle-icon {
   --stroke: var(--tp-color-neutral-9);
 }
-ion-accordion [slot=content].ion-padding {
+ion-accordion [slot=content] {
+  background: transparent;
+}
+ion-accordion [slot=content] * {
   color: var(--tp-color-neutral-7);
   font-size: 14px;
   font-weight: 400;
@@ -1346,26 +1354,37 @@ ion-accordion [slot=content].ion-padding {
   padding-top: 0;
 }
 
-ion-accordion.accordion-expanding ion-item, ion-accordion.accordion-expanded ion-item {
+ion-accordion.accordion-expanding [slot=header], ion-accordion.accordion-expanded [slot=header] {
   --padding-bottom: 0;
   --border-radius: 8px 8px 0 0;
 }
-ion-accordion.accordion-expanding [slot=content].ion-padding, ion-accordion.accordion-expanded [slot=content].ion-padding {
+ion-accordion.accordion-expanding [slot=content], ion-accordion.accordion-expanded [slot=content] {
   border-radius: 0 0 8px 8px;
-  background: red;
 }
 
-ion-accordion.accordion-collapsing ion-item {
+ion-accordion.accordion-collapsing [slot=header] {
   --padding-bottom: 0;
   --border-radius: 8px 8px 0 0;
 }
-ion-accordion.accordion-collapsing [slot=content].ion-padding {
+ion-accordion.accordion-collapsing [slot=content] {
   border-radius: 0 0 8px 8px;
-  background: red;
 }
-ion-accordion.accordion-collapsed [slot=content].ion-padding {
+ion-accordion.accordion-collapsed [slot=content] {
   border-radius: 0 0 8px 8px;
-  background: red;
+}
+
+ion-accordion[tp-color] [slot=header] {
+  --background: var(--tp-color-base);
+  --color: var(--tp-color-contrast);
+}
+ion-accordion[tp-color] .ion-accordion-toggle-icon {
+  --stroke: var(--tp-color-contrast);
+}
+ion-accordion[tp-color] [slot=content] {
+  background: var(--tp-color-base);
+}
+ion-accordion[tp-color] [slot=content] * {
+  color: var(--tp-color-contrast);
 }
 
 ion-avatar {
