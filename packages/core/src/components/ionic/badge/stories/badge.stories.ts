@@ -11,7 +11,7 @@ const meta: Meta<Components.IonBadge & TpIonBadge> = {
   title: 'components/Ionic/Badge',
   argTypes: {
     'tp-size': {
-      control: { type: 'select' },
+      control: { type: 'check' },
       options: [...TP_ION_BADGE['tp-size']],
       description: 'Define o tamanho do componente.',
       table: {
@@ -24,7 +24,7 @@ const meta: Meta<Components.IonBadge & TpIonBadge> = {
       },
     },
     'tp-fill': {
-      control: { type: 'select' },
+      control: { type: 'check' },
       options: [...TP_ION_BADGE['tp-fill']],
       description: 'Define o preenchimento do componente.',
       table: {

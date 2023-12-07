@@ -3,9 +3,15 @@
   * @prop --tp-bar-value: Propriedade definida dinamicamente no tsx. Define o preenchimento da coluna em porcentagem.
   * @prop --tp-marker-value: Propriedade definida dinamicamente no tsx. Define a posição, em porcentagem, do marcador na coluna.
   * @prop --tp-marker-color: Define a cor do marcador.
+  * @prop --tp-skeleton-height: Define a altura do skeleton do componente.
+  * @prop --tp-skeleton-width: Define a largura do skeleton do componente.
+  * @prop --tp-skeleton-background-rgb: Define o background rgb do skeleton do componente.
 */
 
 :host {
+  --tp-skeleton-height: var(--tp-container-height);
+  --tp-skeleton-background-rgb: var(--tp-color-neutral-10-rgb);
+
   display: inline-block;
 }
 
@@ -46,6 +52,34 @@
     display: flex;
     margin-top: 10px;
   }
+
+  &__skeleton {
+    --background-rgb: var(--tp-skeleton-background-rgb);
+    --border-radius: 4px;
+    width: 8px;
+    height: var(--tp-skeleton-height);
+    margin: 0 auto;
+  }
+
+  &__marker-skeleton {
+    --background-rgb: var(--tp-skeleton-background-rgb);
+    --border-radius: 3px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 24px;
+    height: 6px;
+    margin: 0;
+    transform: translate(-8px, 50%);
+  }
+
+  &__label-skeleton {
+    --background-rgb: var(--tp-skeleton-background-rgb);
+    --border-radius: 2px;
+    width: 26px;
+    height: 12px;
+    margin: 10px 0 0;
+  }
 }
 
 //
@@ -83,6 +117,13 @@
 //
 :host(.tp-comparison-chart-bar--has-marker) .tp-comparison-chart-bar__marker {
   display: initial;
+}
+
+//
+// loading
+//
+:host(.tp-comparison-chart-bar--loading) .tp-comparison-chart-bar__container {
+  background: transparent;
 }
 
 //

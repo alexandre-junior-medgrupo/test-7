@@ -34,23 +34,35 @@ export class TpChartBar {
    */
   @Prop({ reflect: true }) noLabel = false;
 
+  /**
+   * Define o estado de carregamento do componente.
+   */
+  @Prop({ reflect: true, mutable: true }) loading?: boolean;
+
   render() {
-    const { color, value, height, width, noLabel } = this;
+    const { color, value, height, width, noLabel, loading } = this;
 
     const percentage = (height * Math.min(Math.max(0, value), 100)) / 100;
 
-    return (
-      <Host
-        class={createColorClasses(color, {
-          'tp-chart-bar': true,
-          'tp-chart-bar--no-label': noLabel,
-        })}
-        style={{
-          '--value': `${percentage}`,
-          '--height': `${height}`,
-          '--width': `${width}`,
-        }}
-      >
+    let content;
+
+    if (loading) {
+      content = (
+        <div class="tp-chart-bar__container">
+          {!noLabel && (
+            <ion-skeleton-text
+              class="tp-chart-bar__label-skeleton"
+              animated
+            ></ion-skeleton-text>
+          )}
+          <ion-skeleton-text
+            class="tp-chart-bar__skeleton"
+            animated
+          ></ion-skeleton-text>
+        </div>
+      );
+    } else {
+      content = (
         <div class="tp-chart-bar__container">
           {!noLabel && (
             <div class="tp-chart-bar__label">
@@ -60,6 +72,23 @@ export class TpChartBar {
 
           <div class="tp-chart-bar__progress"></div>
         </div>
+      );
+    }
+
+    return (
+      <Host
+        class={createColorClasses(color, {
+          'tp-chart-bar': true,
+          'tp-chart-bar--no-label': noLabel,
+          'tp-chart-bar--loading': loading,
+        })}
+        style={{
+          '--value': `${percentage}`,
+          '--height': `${height}`,
+          '--width': `${width}`,
+        }}
+      >
+        {content}
       </Host>
     );
   }

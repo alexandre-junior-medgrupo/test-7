@@ -1435,11 +1435,7 @@ ion-back-button {
 }
 
 ion-back-button.ion-color {
-  --background: var(--ion-color-base);
-  --color: var(--ion-color-contrast);
-  --background-hover: var(--ion-color-shade);
-  --background-focused: var(--ion-color-tint);
-  --background-activated: var(--ion-color-shade);
+  --color: var(--ion-color-base);
 }
 ion-back-button.ion-color::part(icon) {
   --stroke: var(--color);
@@ -1824,13 +1820,13 @@ ion-chip.chip-outline ion-icon {
   --stroke: var(--tp-color-brand-4);
 }
 
+ion-chip.chip-outline:hover {
+  background: transparent;
+}
+
 ion-chip:not(.chip-outline):hover {
   --background: var(--tp-color-brand-2);
   border: 1px solid var(--tp-color-brand-2);
-}
-
-ion-chip.chip-outline:hover {
-  background: transparent;
 }
 
 ion-chip[size=md] {
@@ -1850,6 +1846,17 @@ ion-chip[size=lg] ion-label {
   font-size: 16px;
 }
 
+ion-chip.ion-color.chip-outline {
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+  border-color: var(--tp-color-neutral-25);
+}
+ion-chip.ion-color.chip-outline ion-label {
+  color: var(--ion-color-base);
+}
+ion-chip.ion-color.chip-outline ion-icon {
+  --stroke: var(--ion-color-base);
+}
+
 ion-chip.ion-color:not(.chip-outline) {
   color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   background: var(--ion-color-base);
@@ -1864,48 +1871,6 @@ ion-chip.ion-color:not(.chip-outline) ion-icon {
 ion-chip.ion-color:not(.chip-outline):hover {
   background: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
   border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
-}
-
-ion-chip.ion-color.chip-outline {
-  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
-  border-color: var(--tp-color-neutral-25);
-}
-ion-chip.ion-color.chip-outline ion-label {
-  color: var(--ion-color-base);
-}
-ion-chip.ion-color.chip-outline ion-icon {
-  --stroke: var(--ion-color-base);
-}
-
-ion-fab-button {
-  --background: var(--tp-color-brand);
-  width: 48px;
-  height: 48px;
-}
-
-ion-fab-list {
-  min-width: 48px;
-}
-ion-fab-list ion-fab-button {
-  --background: var(--tp-color-neutral-10);
-  width: 40px;
-  height: 40px;
-  margin: 6px 0;
-}
-ion-fab-list ion-fab-button:first-child {
-  margin: 6px 0 2px;
-}
-ion-fab-list ion-fab-button:last-child {
-  margin: 0 0 6px;
-}
-ion-fab-list ion-icon {
-  --stroke: var(--tp-color-neutral-1);
-  width: 24px;
-  height: 24px;
-}
-
-ion-fab-button.ion-color ion-icon {
-  --stroke: var(--ion-color-contrast);
 }
 
 ion-input.sc-ion-input-md-h {

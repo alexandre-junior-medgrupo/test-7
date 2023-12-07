@@ -67,6 +67,18 @@ const meta: Meta<TpComparisonChartBar> = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado loading do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
   args: {
     containerHeight: 200,
@@ -90,6 +102,7 @@ export const Label: Story = {
       ?has-marker="${args.hasMarker}"
       marker-value="${args.markerValue}"
       ?disabled="${args.disabled}"
+      ?loading="${args.loading}"
     >
       <ion-label tp-type="p10" color="neutral-95">Label</ion-label>
     </tp-comparison-chart-bar>

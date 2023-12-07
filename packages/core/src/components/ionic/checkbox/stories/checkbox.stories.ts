@@ -60,8 +60,7 @@ export const Default: Story = {
       ?checked="${args.checked}"
       ?indeterminate="${args.indeterminate}"
       ?disabled="${args.disabled}"
-    >
-    </ion-checkbox>
+    ></ion-checkbox>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

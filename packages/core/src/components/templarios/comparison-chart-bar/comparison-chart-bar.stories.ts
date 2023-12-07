@@ -67,6 +67,18 @@ const meta: Meta<TpComparisonChartBar> = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado loading do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
   args: {
     containerHeight: 200,
@@ -91,6 +103,7 @@ export const Default: Story = {
       marker-value="${args.markerValue}"
       ?disabled="${args.disabled}"
       no-label
+      ?loading="${args.loading}"
     >
     </tp-comparison-chart-bar>
   `,
