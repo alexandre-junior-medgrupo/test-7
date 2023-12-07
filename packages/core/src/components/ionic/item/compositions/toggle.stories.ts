@@ -1,5 +1,6 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import { defineCustomElement as defineCustomElementToggle } from '@ionic/core/components/ion-toggle';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
@@ -7,6 +8,7 @@ import { TP_ION_ITEM } from '../item.constant';
 import { TpIonItem } from '../item.type';
 
 defineCustomElementItem();
+defineCustomElementLabel();
 defineCustomElementToggle();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {

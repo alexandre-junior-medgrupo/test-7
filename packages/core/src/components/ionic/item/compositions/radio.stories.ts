@@ -1,5 +1,6 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import { defineCustomElement as defineCustomElementRadio } from '@ionic/core/components/ion-radio';
 import { defineCustomElement as defineCustomElementRadioGroup } from '@ionic/core/components/ion-radio-group';
 import type { Meta, StoryObj } from '@storybook/web-components';
@@ -8,6 +9,7 @@ import { TP_ION_ITEM } from '../item.constant';
 import { TpIonItem } from '../item.type';
 
 defineCustomElementItem();
+defineCustomElementLabel();
 defineCustomElementRadio();
 defineCustomElementRadioGroup();
 
