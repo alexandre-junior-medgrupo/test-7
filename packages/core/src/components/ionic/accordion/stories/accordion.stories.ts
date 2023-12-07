@@ -6,10 +6,8 @@ import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/com
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpIonAccordion } from '../utils/accordion.type';
-import { TP_ION_ITEM } from '../../item/item.constant';
-import { TpIonItem } from '../../item/item.type';
 import { TP_TYPE } from '../../../../utils/constants/type.constant';
-import { TpIonLabel } from '../../label/label.type';
+
 import {
   TP_COLORS,
   TP_COLORS_MEDSOFT,
@@ -23,6 +21,9 @@ import {
   TpColorQuestoes,
   TpColorRevalida,
 } from '../../../../utils/enums/color.enum';
+import { TpIonLabel } from '../../label/utils/label.type';
+import { TpIonItem } from '../../item/utils/item.type';
+import { TP_ION_ITEM } from '../../item/utils/item.constant';
 
 defineCustomElementAccordionGroup();
 defineCustomElementAccordion();
