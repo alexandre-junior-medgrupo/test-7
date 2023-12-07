@@ -6,8 +6,10 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
+import { TpColor as TpColor1 } from "./components.d";
 import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
+export { TpColor as TpColor1 } from "./components.d";
 export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export namespace Components {
     interface TpChartBar {
@@ -63,6 +65,10 @@ export namespace Components {
         "noLabel": boolean;
     }
     interface TpInputContainer {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
     }
     interface TpRateLike {
         /**
@@ -172,6 +178,10 @@ declare namespace LocalJSX {
         "noLabel"?: boolean;
     }
     interface TpInputContainer {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
     }
     interface TpRateLike {
         /**
