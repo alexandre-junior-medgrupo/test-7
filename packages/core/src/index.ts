@@ -5,7 +5,7 @@ export * from './utils/types/theme.type';
 export * from './utils/types/type.type';
 export * from './utils/types/utils.type';
 
-export * from './components/ionic/accordion/accordion.type';
+export * from './components/ionic/accordion/utils/accordion.type';
 export * from './components/ionic/avatar/utils/avatar.type';
 export * from './components/ionic/back-button/utils/back-button.type';
 export * from './components/ionic/badge/utils/badge.type';

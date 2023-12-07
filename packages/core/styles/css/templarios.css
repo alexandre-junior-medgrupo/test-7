@@ -1328,6 +1328,46 @@ html.ios {
   margin: 0;
 }
 
+ion-accordion ion-item {
+  --border-radius: 8px;
+  --ripple-color: transparent;
+}
+ion-accordion ion-item:hover {
+  --background-hover: transparent;
+}
+ion-accordion ion-item .ion-accordion-toggle-icon {
+  --stroke: var(--tp-color-neutral-9);
+}
+ion-accordion [slot=content].ion-padding {
+  color: var(--tp-color-neutral-7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 0;
+}
+
+ion-accordion.accordion-expanding ion-item, ion-accordion.accordion-expanded ion-item {
+  --padding-bottom: 0;
+  --border-radius: 8px 8px 0 0;
+}
+ion-accordion.accordion-expanding [slot=content].ion-padding, ion-accordion.accordion-expanded [slot=content].ion-padding {
+  border-radius: 0 0 8px 8px;
+  background: red;
+}
+
+ion-accordion.accordion-collapsing ion-item {
+  --padding-bottom: 0;
+  --border-radius: 8px 8px 0 0;
+}
+ion-accordion.accordion-collapsing [slot=content].ion-padding {
+  border-radius: 0 0 8px 8px;
+  background: red;
+}
+ion-accordion.accordion-collapsed [slot=content].ion-padding {
+  border-radius: 0 0 8px 8px;
+  background: red;
+}
+
 ion-avatar {
   --ion-color-base: var(--tp-color-brand);
   --ion-color-contrast: var(--tp-color-neutral-10);
