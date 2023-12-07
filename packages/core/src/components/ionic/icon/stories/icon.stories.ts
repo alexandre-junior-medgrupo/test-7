@@ -1,12 +1,12 @@
 import { Components } from '@ionic/core';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ICONS_STORYBOOK } from '../../../utils/constants/icon.constant';
-import { TP_ION_ICON } from './icon.constant';
-import { TpIonIcon } from './icon.type';
+import { TP_ICONS_STORYBOOK } from '../../../../utils/constants/icon.constant';
+import { TP_ION_ICON } from '../utils/icon.constant';
+import { TpIonIcon } from '../utils/icon.type';
 
 const meta: Meta<Components.IonIcon & TpIonIcon> = {
-  title: 'components/Icons/ion-icon',
+  title: 'components/Icons',
   argTypes: {
     src: {
       control: { type: 'select' },
@@ -36,7 +36,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonIcon & TpIonIcon>;
 
-export const Default: Story = {
+export const Icons: Story = {
   render: ({ ...args }) => {
     const iconUrl = `./icons/${args.src}`;
 
