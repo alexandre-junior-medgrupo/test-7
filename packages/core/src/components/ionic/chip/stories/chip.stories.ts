@@ -2,8 +2,8 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-chip';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonChip } from './chip.type';
-import { TP_ION_CHIP } from './chip.constants';
+import { TpIonChip } from '../utils/chip.type';
+import { TP_ION_CHIP } from '../utils/chip.constants';
 
 defineCustomElement();
 
