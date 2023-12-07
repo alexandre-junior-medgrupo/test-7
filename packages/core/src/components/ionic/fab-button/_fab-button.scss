@@ -5,6 +5,8 @@ ion-fab-button {
 }
 
 ion-fab-list {
+  min-width: 48px;
+
   ion-fab-button {
     --background: var(--tp-color-neutral-10);
     width: 40px;
@@ -24,5 +26,14 @@ ion-fab-list {
     --stroke: var(--tp-color-neutral-1);
     width: 24px;
     height: 24px;
+  }
+}
+
+//
+// color
+//
+ion-fab-button.ion-color {
+  ion-icon {
+    --stroke: var(--ion-color-contrast);
   }
 }

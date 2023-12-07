@@ -1798,6 +1798,9 @@ ion-fab-button {
   height: 48px;
 }
 
+ion-fab-list {
+  min-width: 48px;
+}
 ion-fab-list ion-fab-button {
   --background: var(--tp-color-neutral-10);
   width: 40px;
@@ -1814,6 +1817,10 @@ ion-fab-list ion-icon {
   --stroke: var(--tp-color-neutral-1);
   width: 24px;
   height: 24px;
+}
+
+ion-fab-button.ion-color ion-icon {
+  --stroke: var(--ion-color-contrast);
 }
 
 ion-input.sc-ion-input-md-h {

@@ -26,9 +26,9 @@ export default meta;
 type Story = StoryObj<Components.IonFab & IonFabButton & IonFabList & TpIonFab>;
 
 export const Default: Story = {
-  render: () => html`
+  render: ({ ...args }) => html`
     <ion-fab slot="fixed" horizontal="center" vertical="center">
-      <ion-fab-button>
+      <ion-fab-button color="${args.color}">
         <ion-icon src="./icons/tp-plus.svg"></ion-icon>
       </ion-fab-button>
 
