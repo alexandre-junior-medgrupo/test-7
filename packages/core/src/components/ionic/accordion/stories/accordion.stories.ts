@@ -5,16 +5,16 @@ import { defineCustomElement as defineCustomElementItem } from '@ionic/core/comp
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonAccordion } from './utils/accordion.type';
-import { TP_ION_ITEM } from '../item/item.constant';
-import { TpIonItem } from '../item/item.type';
-import { TP_TYPE } from '../../../utils/constants/type.constant';
-import { TpIonLabel } from '../label/label.type';
+import { TpIonAccordion } from '../utils/accordion.type';
+import { TP_ION_ITEM } from '../../item/item.constant';
+import { TpIonItem } from '../../item/item.type';
+import { TP_TYPE } from '../../../../utils/constants/type.constant';
+import { TpIonLabel } from '../../label/label.type';
 import {
   TP_COLORS,
   TP_COLORS_MEDSOFT,
   TP_COLORS_RECURSOS,
-} from '../../../utils/constants/color.constant';
+} from '../../../../utils/constants/color.constant';
 import {
   TpColorAula,
   TpColorMaterial,
@@ -22,7 +22,7 @@ import {
   TpColorProvas,
   TpColorQuestoes,
   TpColorRevalida,
-} from '../../../utils/enums/color.enum';
+} from '../../../../utils/enums/color.enum';
 
 defineCustomElementAccordionGroup();
 defineCustomElementAccordion();
