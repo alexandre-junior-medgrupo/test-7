@@ -1,3 +1,4 @@
+/* stylelint-disable selector-max-compound-selectors */
 @use 'sass:map';
 
 $tp-item-spacing: (
@@ -184,8 +185,13 @@ ion-item {
       --padding-bottom: 12px;
       --padding-start: 16px;
       --padding-end: 16px;
+      height: 80px;
       margin-top: 0;
       border-radius: 8px;
+
+      .textarea-legacy-wrapper {
+        height: 100%;
+      }
     }
   }
 

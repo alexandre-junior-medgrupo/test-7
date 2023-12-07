@@ -107,7 +107,6 @@ type Story = StoryObj<Components.IonItem & TpIonItem>;
 export const Input: Story = {
   render: ({ ...args }) => html`
     <ion-item
-      .color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -123,7 +122,6 @@ export const Input: Story = {
     </ion-item>
 
     <ion-item
-      .color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -142,7 +140,6 @@ export const Input: Story = {
     </ion-item>
 
     <ion-item
-      .color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -162,7 +159,6 @@ export const Input: Story = {
     </ion-item>
 
     <ion-item
-      .color="${args.color}"
       lines="${args.lines}"
       gap="${args.gap}"
       spacingX="${args.spacingX}"
@@ -183,4 +179,7 @@ export const Input: Story = {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/ion-item/gi)).toBeTruthy();
   }, */
+};
+Input.argTypes = {
+  color: { table: { disable: true } },
 };
