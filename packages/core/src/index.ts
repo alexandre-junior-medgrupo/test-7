@@ -5,8 +5,8 @@ export * from './utils/types/type.type';
 export * from './utils/types/utils.type';
 
 export * from './components/ionic/accordion/accordion.type';
-export * from './components/ionic/avatar/avatar.type';
-export * from './components/ionic/back-button/back-button.type';
+export * from './components/ionic/avatar/utils/avatar.type';
+export * from './components/ionic/back-button/utils/back-button.type';
 export * from './components/ionic/badge/badge.type';
 export * from './components/ionic/button/button.type';
 export * from './components/ionic/checkbox/checkbox.type';

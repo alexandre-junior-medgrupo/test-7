@@ -2,8 +2,8 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-back-button';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_BACK_BUTTON } from './back-button.constant';
-import { TpIonBackButton } from './back-button.type';
+import { TP_ION_BACK_BUTTON } from '../utils/back-button.constant';
+import { TpIonBackButton } from '../utils/back-button.type';
 
 defineCustomElement();
 

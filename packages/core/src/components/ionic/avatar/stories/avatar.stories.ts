@@ -6,7 +6,7 @@ import {
   TP_COLORS,
   TP_COLORS_MEDSOFT,
   TP_COLORS_RECURSOS,
-} from '../../../utils/constants/color.constant';
+} from '../../../../utils/constants/color.constant';
 import {
   TpColorAula,
   TpColorMaterial,
@@ -14,9 +14,9 @@ import {
   TpColorProvas,
   TpColorQuestoes,
   TpColorRevalida,
-} from '../../../utils/enums/color.enum';
-import { TP_ION_AVATAR } from './avatar.constant';
-import { TpIonAvatar } from './avatar.type';
+} from '../../../../utils/enums/color.enum';
+import { TP_ION_AVATAR } from '../utils/avatar.constant';
+import { TpIonAvatar } from '../utils/avatar.type';
 
 defineCustomElement();
 
