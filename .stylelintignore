@@ -1,6 +1,6 @@
 # root
-core/
-angular/
+core/*
+angular/*
 
 # packages
 # core
