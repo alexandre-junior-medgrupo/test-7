@@ -17,7 +17,7 @@ defineCustomElementFabList();
 defineCustomElementFabButton();
 
 const meta: Meta<Components.IonFab & IonFabButton & IonFabList & TpIonFab> = {
-  title: 'components/Ionic/Fab-button',
+  title: 'components/Ionic/Fab button',
   argTypes: {},
 };
 

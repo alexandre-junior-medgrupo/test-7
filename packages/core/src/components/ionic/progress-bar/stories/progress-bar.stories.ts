@@ -2,7 +2,7 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-progress-bar';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonProgressBar } from './progress-bar.type';
+import { TpIonProgressBar } from '../utils/progress-bar.type';
 
 defineCustomElement();
 

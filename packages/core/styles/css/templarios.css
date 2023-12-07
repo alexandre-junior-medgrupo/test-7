@@ -1882,23 +1882,22 @@ ion-fab-button {
 ion-fab-list {
   min-width: 48px;
 }
-ion-fab-list ion-icon {
-  --stroke: var(--tp-color-neutral-1);
-  width: 24px;
-  height: 24px;
-}
-
-ion-fab-button {
+ion-fab-list ion-fab-button {
   --background: var(--tp-color-neutral-10);
   width: 40px;
   height: 40px;
   margin: 6px 0;
 }
-ion-fab-button:first-child {
+ion-fab-list ion-fab-button:first-child {
   margin: 6px 0 2px;
 }
-ion-fab-button:last-child {
+ion-fab-list ion-fab-button:last-child {
   margin: 0 0 6px;
+}
+ion-fab-list ion-icon {
+  --stroke: var(--tp-color-neutral-1);
+  width: 24px;
+  height: 24px;
 }
 
 ion-fab-button.ion-color ion-icon {
