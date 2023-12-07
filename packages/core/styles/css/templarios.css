@@ -1824,13 +1824,13 @@ ion-chip.chip-outline ion-icon {
   --stroke: var(--tp-color-brand-4);
 }
 
+ion-chip.chip-outline:hover {
+  background: transparent;
+}
+
 ion-chip:not(.chip-outline):hover {
   --background: var(--tp-color-brand-2);
   border: 1px solid var(--tp-color-brand-2);
-}
-
-ion-chip.chip-outline:hover {
-  background: transparent;
 }
 
 ion-chip[size=md] {
@@ -1850,6 +1850,17 @@ ion-chip[size=lg] ion-label {
   font-size: 16px;
 }
 
+ion-chip.ion-color.chip-outline {
+  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+  border-color: var(--tp-color-neutral-25);
+}
+ion-chip.ion-color.chip-outline ion-label {
+  color: var(--ion-color-base);
+}
+ion-chip.ion-color.chip-outline ion-icon {
+  --stroke: var(--ion-color-base);
+}
+
 ion-chip.ion-color:not(.chip-outline) {
   color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
   background: var(--ion-color-base);
@@ -1864,17 +1875,6 @@ ion-chip.ion-color:not(.chip-outline) ion-icon {
 ion-chip.ion-color:not(.chip-outline):hover {
   background: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
   border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
-}
-
-ion-chip.ion-color.chip-outline {
-  color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
-  border-color: var(--tp-color-neutral-25);
-}
-ion-chip.ion-color.chip-outline ion-label {
-  color: var(--ion-color-base);
-}
-ion-chip.ion-color.chip-outline ion-icon {
-  --stroke: var(--ion-color-base);
 }
 
 ion-input.sc-ion-input-md-h {
