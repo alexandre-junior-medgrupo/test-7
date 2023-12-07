@@ -11,7 +11,7 @@ const meta: Meta<Components.IonChip & TpIonChip> = {
   title: 'components/Ionic/Chip',
   argTypes: {
     size: {
-      control: { type: 'select' },
+      control: { type: 'check' },
       options: [...TP_ION_CHIP.size],
       description: 'Define o tamanho do componente.',
       table: {

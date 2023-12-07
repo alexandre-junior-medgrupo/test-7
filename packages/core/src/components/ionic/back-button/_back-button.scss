@@ -98,11 +98,7 @@ ion-back-button {
 //
 ion-back-button {
   &.ion-color {
-    --background: var(--ion-color-base);
-    --color: var(--ion-color-contrast);
-    --background-hover: var(--ion-color-shade);
-    --background-focused: var(--ion-color-tint);
-    --background-activated: var(--ion-color-shade);
+    --color: var(--ion-color-base);
 
     &::part(icon) {
       --stroke: var(--color);
