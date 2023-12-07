@@ -62,15 +62,13 @@ export namespace Components {
          */
         "noLabel": boolean;
     }
+    interface TpInputContainer {
+    }
     interface TpRateLike {
         /**
           * Define o status do componente.
          */
         "status"?: TpRateLikeType['status'];
-    }
-    interface TpTest {
-        "color"?: TpColor;
-        "icon"?: string;
     }
 }
 export interface TpRateLikeCustomEvent<T> extends CustomEvent<T> {
@@ -90,6 +88,12 @@ declare global {
         prototype: HTMLTpComparisonChartBarElement;
         new (): HTMLTpComparisonChartBarElement;
     };
+    interface HTMLTpInputContainerElement extends Components.TpInputContainer, HTMLStencilElement {
+    }
+    var HTMLTpInputContainerElement: {
+        prototype: HTMLTpInputContainerElement;
+        new (): HTMLTpInputContainerElement;
+    };
     interface HTMLTpRateLikeElementEventMap {
         "tpChange": TpRateLikeType['status'];
     }
@@ -107,17 +111,11 @@ declare global {
         prototype: HTMLTpRateLikeElement;
         new (): HTMLTpRateLikeElement;
     };
-    interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
-    }
-    var HTMLTpTestElement: {
-        prototype: HTMLTpTestElement;
-        new (): HTMLTpTestElement;
-    };
     interface HTMLElementTagNameMap {
         "tp-chart-bar": HTMLTpChartBarElement;
         "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
+        "tp-input-container": HTMLTpInputContainerElement;
         "tp-rate-like": HTMLTpRateLikeElement;
-        "tp-test": HTMLTpTestElement;
     }
 }
 declare namespace LocalJSX {
@@ -173,6 +171,8 @@ declare namespace LocalJSX {
          */
         "noLabel"?: boolean;
     }
+    interface TpInputContainer {
+    }
     interface TpRateLike {
         /**
           * Emitido quando a propriedade status é alterada.
@@ -183,15 +183,11 @@ declare namespace LocalJSX {
          */
         "status"?: TpRateLikeType['status'];
     }
-    interface TpTest {
-        "color"?: TpColor;
-        "icon"?: string;
-    }
     interface IntrinsicElements {
         "tp-chart-bar": TpChartBar;
         "tp-comparison-chart-bar": TpComparisonChartBar;
+        "tp-input-container": TpInputContainer;
         "tp-rate-like": TpRateLike;
-        "tp-test": TpTest;
     }
 }
 export { LocalJSX as JSX };
@@ -200,8 +196,8 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
             "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
+            "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
-            "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
     }
 }
