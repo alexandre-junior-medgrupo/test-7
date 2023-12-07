@@ -69,9 +69,7 @@ ion-item.item-lines-full {
 // gap
 //
 ion-item {
-
-  @each $spacing-name,
-  $spacing-value in $tp-item-spacing {
+  @each $spacing-name, $spacing-value in $tp-item-spacing {
     &[gap='#{$spacing-name}'] *[slot='start'] {
       margin-right: $spacing-value;
     }
@@ -86,9 +84,7 @@ ion-item {
 // spacing-X
 //
 ion-item {
-
-  @each $spacing-name,
-  $spacing-value in $tp-item-spacing {
+  @each $spacing-name, $spacing-value in $tp-item-spacing {
     &[spacingx='#{$spacing-name}'] {
       --padding-start: #{$spacing-value};
       --padding-end: #{$spacing-value};
@@ -100,9 +96,7 @@ ion-item {
 // spacing-Y
 //
 ion-item {
-
-  @each $spacing-name,
-  $spacing-value in $tp-item-spacing {
+  @each $spacing-name, $spacing-value in $tp-item-spacing {
     &[spacingy='#{$spacing-name}'] {
       --padding-top: #{$spacing-value};
       --padding-bottom: #{$spacing-value};

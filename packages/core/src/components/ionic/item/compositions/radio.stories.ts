@@ -17,24 +17,81 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
     lines: {
       control: { type: 'select' },
       options: [...TP_ION_ITEM.lines],
+      description: 'Define se o componente terá um border bottom.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: TP_ION_ITEM.lines.join('|'),
+        },
+      },
     },
     gap: {
       control: { type: 'select' },
       options: [...TP_ION_ITEM.gap],
+      description:
+        'Define qual o espaçamento entre o icone e o texto do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: TP_ION_ITEM.gap.join('|'),
+        },
+      },
     },
     spacingX: {
       control: { type: 'select' },
       options: [...TP_ION_ITEM.spacingX],
+      description:
+        'Define qual o espaçamento das bordas horizontais para o conteudo do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: TP_ION_ITEM.spacingX.join('|'),
+        },
+      },
     },
     spacingY: {
       control: { type: 'select' },
       options: [...TP_ION_ITEM.spacingY],
+      description:
+        'Define qual o espaçamento das bordas verticais para o conteudo do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: TP_ION_ITEM.spacingY.join('|'),
+        },
+      },
     },
     button: {
       control: 'boolean',
+      description: 'Define a estilização do estado button do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
     },
     disabled: {
       control: 'boolean',
+      description: 'Define a estilização do estado disabled do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
     },
   },
 };

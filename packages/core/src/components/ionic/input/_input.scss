@@ -8,6 +8,7 @@ ion-input.sc-ion-input-md-h {
   --padding-start: 16px;
   --padding-top: 8px;
   --placeholder-color: var(--tp-color-neutral-4);
+  --placeholder-opacity: initial;
 }
 
 ion-input.sc-ion-input-md-h {
@@ -66,6 +67,13 @@ ion-input.ion-color {
   --color: var(--ion-color-contrast);
   --highlight-color-focused: var(--ion-color-contrast) !important;
   --placeholder-color: var(--ion-color-contrast);
+
+  // clear-icon
+  .input-clear-icon {
+    ion-icon.sc-ion-input-md {
+      fill: var(--ion-color-contrast);
+    }
+  }
 
   //
   // hover

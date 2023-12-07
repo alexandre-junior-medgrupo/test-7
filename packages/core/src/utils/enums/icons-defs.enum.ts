@@ -21,7 +21,7 @@ export enum TpSymbolDefsIcons {
 
 export enum TpSymbolDefsLogos {
   TpBymed = 'tp-bymed',
-  TpCpmedExpresso = 'products-logos-defs.svg#tp-cpmed-expresso',
+  TpCpmedExpresso = 'tp-cpmed-expresso',
   TpCpmedExtensivo = 'tp-cpmed-extensivo',
   TpCpmedPremium = 'tp-cpmed-premium',
   TpCpmedRevalida = 'tp-cpmed-revalida',
