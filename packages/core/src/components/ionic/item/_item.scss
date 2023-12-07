@@ -170,11 +170,32 @@ ion-item.ion-color {
 // inputs
 //
 ion-item {
-  ion-input {
-    --padding-start: 8px !important;
-  }
+  --highlight-color-focused: transparent;
 
   .tp-input-container {
     width: 100%;
+
+    .input-clear-icon {
+      margin: 8px 8px 0 0 !important;
+    }
+
+    ion-textarea.sc-ion-textarea-md-h {
+      --padding-top: 12px;
+      --padding-bottom: 12px;
+      --padding-start: 16px;
+      --padding-end: 16px;
+      margin-top: 0;
+      border-radius: 8px;
+    }
+  }
+
+  ion-input {
+    --padding-start: 8px !important;
+    border: 1px solid transparent;
+    border-radius: 8px;
+  }
+
+  &.item-has-focus ion-input {
+    border: 1px solid var(--tp-color-neutral-3);
   }
 }
