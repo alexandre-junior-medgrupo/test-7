@@ -1,5 +1,5 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
-import * as checkboxLabelStories from './compositions/label.stories';
+import * as checkboxTextStories from './compositions/text.stories';
 import * as checkboxStories from './checkbox.stories';
 
 <Meta of={checkboxStories} />
@@ -21,11 +21,9 @@ import { TpIonCheckbox } from '..';
 ## Atributos
 
 <Canvas of={checkboxStories.Default} />
-
 <Controls of={checkboxStories.Default} />
 
 ## Compositions
 
-<Canvas of={checkboxLabelStories.Label} />
-
-<Controls of={checkboxLabelStories.Label} />
+<Canvas of={checkboxTextStories.Label} />
+<Controls of={checkboxTextStories.Label} />

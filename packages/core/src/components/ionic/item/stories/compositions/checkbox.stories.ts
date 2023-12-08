@@ -102,31 +102,39 @@ type Story = StoryObj<Components.IonItem & TpIonItem>;
 
 export const Checkbox: Story = {
   render: ({ ...args }) => html`
-    <ion-item
-      .color="${args.color}"
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-checkbox slot="start" aria-label></ion-checkbox>
-      <ion-label>Basic Item</ion-label>
-    </ion-item>
+    <ion-list>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        gap="${args.gap}"
+        spacingX="${args.spacingX}"
+        spacingY="${args.spacingY}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-checkbox slot="start">
+          <ion-text>
+            Lorem ipsum, dolor sit amet consectetur.
+          </ion-text>
+        </ion-checkbox>
+      </ion-item>
 
-    <ion-item
-      .color="${args.color}"
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-label>Basic Item</ion-label>
-      <ion-checkbox slot="end" aria-label></ion-checkbox>
-    </ion-item>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        gap="${args.gap}"
+        spacingX="${args.spacingX}"
+        spacingY="${args.spacingY}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-checkbox slot="end">
+          <ion-text>
+            Lorem ipsum, dolor sit amet consectetur.
+          </ion-text>
+        </ion-checkbox>
+      </ion-item>
+    </ion-list>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

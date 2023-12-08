@@ -1346,7 +1346,7 @@ ion-accordion .ion-accordion-toggle-icon {
   --stroke: var(--tp-color-neutral-9);
 }
 ion-accordion [slot=content] {
-  padding-top: 0 16px 16px;
+  padding: 0 16px 16px;
   background: transparent;
 }
 ion-accordion [slot=content] * {
@@ -1925,6 +1925,10 @@ ion-fab-button {
   height: 48px;
 }
 
+ion-fab-button.ion-color ion-icon {
+  --stroke: var(--ion-color-contrast);
+}
+
 ion-fab-list {
   min-width: 48px;
 }
@@ -1944,10 +1948,6 @@ ion-fab-list ion-icon {
   --stroke: var(--tp-color-neutral-1);
   width: 24px;
   height: 24px;
-}
-
-ion-fab-button.ion-color ion-icon {
-  --stroke: var(--ion-color-contrast);
 }
 
 ion-input.sc-ion-input-md-h {
