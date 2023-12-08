@@ -7,7 +7,7 @@ ion-progress-bar[value='0'] {
   --background: var(--tp-color-neutral-8) !important;
 
   &::part(track) {
-    background: var(--background) !important;
+    background-color: var(--background) !important;
   }
 }
 
@@ -19,6 +19,6 @@ ion-progress-bar.ion-color {
   --progress-background: var(--ion-color-base);
 
   &::part(track) {
-    background: var(--background);
+    background-color: var(--background);
   }
 }

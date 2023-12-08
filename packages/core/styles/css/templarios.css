@@ -2046,6 +2046,11 @@ ion-item {
   --inner-padding-end: 0;
   --min-height: initial;
 }
+ion-item ion-label.sc-ion-label-md-h.sc-ion-label-md-s {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
 ion-item ion-icon {
   margin-top: 0;
   margin-bottom: 0;
@@ -2361,7 +2366,7 @@ ion-progress-bar[value="0"] {
   --background: var(--tp-color-neutral-8) !important;
 }
 ion-progress-bar[value="0"]::part(track) {
-  background: var(--background) !important;
+  background-color: var(--background) !important;
 }
 
 ion-progress-bar.ion-color {
@@ -2369,7 +2374,7 @@ ion-progress-bar.ion-color {
   --progress-background: var(--ion-color-base);
 }
 ion-progress-bar.ion-color::part(track) {
-  background: var(--background);
+  background-color: var(--background);
 }
 
 ion-radio {
