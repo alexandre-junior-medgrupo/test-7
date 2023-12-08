@@ -4,17 +4,13 @@ import { defineCustomElement as defineCustomElementSegment } from '@ionic/core/c
 import { defineCustomElement as defineCustomElementSegmentButton } from '@ionic/core/components/ion-segment-button';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-<<<<<<<< HEAD:packages/core/src/components/ionic/segment-button/stories/segment-button.stories.ts
-import { TpIonSegmentButton } from '../utils/segment-button.type';
-========
 import { TpIonSegment } from '../utils/segment.type';
->>>>>>>> main:packages/core/src/components/ionic/segment/stories/segment.stories.ts
 
 defineCustomElementSegment();
 defineCustomElementSegmentButton();
 defineCustomElementLabel();
 
-const meta: Meta<Components.IonSegment & TpIonSegmentButton> = {
+const meta: Meta<Components.IonSegment & TpIonSegment> = {
   title: 'components/Ionic/Segment',
   argTypes: {
     scrollable: {
@@ -46,7 +42,7 @@ const meta: Meta<Components.IonSegment & TpIonSegmentButton> = {
 
 export default meta;
 
-type Story = StoryObj<Components.IonSegment & TpIonSegmentButton>;
+type Story = StoryObj<Components.IonSegment & TpIonSegment>;
 
 export const Default: Story = {
   render: ({ ...args }) => html`

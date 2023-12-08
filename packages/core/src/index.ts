@@ -22,7 +22,6 @@ export * from './components/ionic/list/utils/list.type';
 export * from './components/ionic/progress-bar/utils/progress-bar.type';
 export * from './components/ionic/radio/utils/radio.type';
 export * from './components/ionic/range/utils/range.type';
-export * from './components/ionic/segment-button/utils/segment-button.type';
 export * from './components/ionic/searchbar/utils/searchbar.type';
 export * from './components/ionic/segment/utils/segment.type';
 export * from './components/ionic/text/text.type';
