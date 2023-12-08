@@ -5,13 +5,14 @@ export * from './utils/types/theme.type';
 export * from './utils/types/type.type';
 export * from './utils/types/utils.type';
 
-export * from './components/ionic/accordion/accordion.type';
+export * from './components/ionic/accordion/utils/accordion.type';
 export * from './components/ionic/avatar/utils/avatar.type';
 export * from './components/ionic/back-button/utils/back-button.type';
 export * from './components/ionic/badge/utils/badge.type';
 export * from './components/ionic/button/utils/button.type';
 export * from './components/ionic/checkbox/utils/checkbox.type';
 export * from './components/ionic/chip/utils/chip.type';
+export * from './components/ionic/fab-button/utils/fab-button.type';
 export * from './components/ionic/icon/utils/icon.type';
 export * from './components/ionic/input/utils/input.type';
 export * from './components/ionic/item/utils/item.type';
