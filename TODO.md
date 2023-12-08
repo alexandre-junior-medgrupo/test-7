@@ -2,7 +2,8 @@
 
 ## Bleggi
 
-- criar wrapper para o componente segment para o gradient
+- verificar problema do lit nos atributo.
+- criar wrapper para o componente `segment` para o gradient
 
 ## Junior
 
