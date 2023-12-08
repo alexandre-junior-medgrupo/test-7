@@ -3,5 +3,5 @@ import type { TpIonBackButtonSize } from './back-button.enum';
 
 export type TpIonBackButton = {
   color: `${TpColor}`;
-  size: `${TpIonBackButtonSize}`;
+  'tp-size': `${TpIonBackButtonSize}`;
 };
