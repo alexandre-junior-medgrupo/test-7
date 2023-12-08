@@ -11,7 +11,7 @@ import {
 import { defineCustomElement as defineCustomElementTabs } from '@ionic/core/components/ion-tabs';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonTabBar } from './tab-bar.type';
+import { TpIonTabBar } from '../utils/tab-bar.type';
 
 defineCustomElementTabs();
 defineCustomElementTabBar();

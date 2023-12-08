@@ -2,12 +2,12 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-range';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonRange } from '../range.type';
+import { TpIonRange } from '../utils/range.type';
 
 defineCustomElement();
 
 const meta: Meta<Components.IonRange & TpIonRange> = {
-  title: 'components/Ionic/Range/Compositions',
+  title: 'components/Ionic/Range',
   argTypes: {
     secondary: {
       control: { type: 'boolean' },
@@ -83,22 +83,40 @@ export default meta;
 
 type Story = StoryObj<Components.IonRange & TpIonRange>;
 
-export const Icons: Story = {
+export const Default: Story = {
   render: ({ ...args }) => html`
     <ion-range
       color="${args.color}"
       ?secondary="${args.secondary}"
-      ?ticks="${args.ticks}"
-      ?snaps="${args.snaps}"
-      min="${args.min}"
-      max="${args.max}"
-    >
-      <ion-icon slot="start" src="./icons/tp-type-minus.svg"></ion-icon>
-      <ion-icon slot="end" src="./icons/tp-type-plus.svg"></ion-icon>
-    </ion-range>
+      aria-label="volume"
+    ></ion-range>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/ion-range/gi)).toBeTruthy();
   }, */
+};
+
+export const Ticks: Story = {
+  render: ({ ...args }) => html`
+    <ion-range
+      color="${args.color}"
+      ?secondary="${args.secondary}"
+      aria-label="volume"
+      ?ticks="${args.ticks}"
+      ?snaps="${args.snaps}"
+      min="${args.min}"
+      max="${args.max}"
+    ></ion-range>
+  `,
+  /* play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    expect(canvas.getByText(/ion-range/gi)).toBeTruthy();
+  }, */
+};
+Default.argTypes = {
+  ticks: { table: { disable: true } },
+  snaps: { table: { disable: true } },
+  min: { table: { disable: true } },
+  max: { table: { disable: true } },
 };

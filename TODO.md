@@ -2,11 +2,9 @@
 
 ## Bleggi
 
-- organizar arquivos em pastas
-- tp-input-container
-- Tab-button
+- criar wrapper para o componente segment para o gradient
 
 ## Junior
 
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
-- Verificar hover do scroll
+- verificar hover do scroll (mixin)

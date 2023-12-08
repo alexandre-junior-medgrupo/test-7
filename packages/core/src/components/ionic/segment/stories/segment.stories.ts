@@ -4,7 +4,7 @@ import { defineCustomElement as defineCustomElementSegment } from '@ionic/core/c
 import { defineCustomElement as defineCustomElementSegmentButton } from '@ionic/core/components/ion-segment-button';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonSegment } from './segment.type';
+import { TpIonSegment } from '../utils/segment.type';
 
 defineCustomElementSegment();
 defineCustomElementSegmentButton();

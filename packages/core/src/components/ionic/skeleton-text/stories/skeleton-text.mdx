@@ -1,5 +1,5 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
-import * as skeletonTextStories from './skeleton-text.stories';
+import * as skeletonTextStories from '../stories/skeleton-text.stories';
 
 <Meta of={skeletonTextStories} />
 
@@ -14,5 +14,4 @@ import * as skeletonTextStories from './skeleton-text.stories';
 ## Atributos
 
 <Canvas of={skeletonTextStories.Default} />
-
-<Controls />
+<Controls of={skeletonTextStories.Default} />

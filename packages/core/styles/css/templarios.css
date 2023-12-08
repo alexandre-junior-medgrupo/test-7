@@ -1386,11 +1386,6 @@ ion-avatar {
   font-size: 24px;
   line-height: 24px;
 }
-ion-avatar ion-label {
-  color: var(--ion-color-contrast);
-  font-size: 24px;
-  line-height: 24px;
-}
 
 ion-avatar[tp-size=xxs] {
   width: 24px;
@@ -1452,6 +1447,13 @@ ion-avatar[tp-size=xxl] ion-label {
 ion-avatar[tp-color] {
   background: var(--ion-color-base);
 }
+
+ion-avatar ion-label {
+  color: var(--ion-color-contrast);
+  font-size: 24px;
+  line-height: 24px;
+}
+
 ion-avatar[tp-color] ion-label {
   color: var(--ion-color-contrast);
 }
@@ -1478,16 +1480,6 @@ ion-back-button {
   display: inline-block;
   overflow: hidden;
   border-radius: var(--border-radius);
-}
-
-ion-back-button.ion-color {
-  --color: var(--ion-color-base);
-}
-ion-back-button.ion-color::part(icon) {
-  --stroke: var(--color);
-}
-ion-back-button.ion-color:hover::part(icon) {
-  --stroke: var(--color);
 }
 
 ion-back-button[size=xxs] {
@@ -1533,6 +1525,16 @@ ion-back-button[size=lg] {
   --icon-font-size: 48px;
 }
 
+ion-back-button.ion-color {
+  --color: var(--ion-color-base);
+}
+ion-back-button.ion-color::part(icon) {
+  --stroke: var(--color);
+}
+ion-back-button.ion-color:hover::part(icon) {
+  --stroke: var(--color);
+}
+
 ion-badge {
   --background: var(--tp-color-brand-3);
   --color: var(--tp-color-contrast-fixed);
@@ -1565,13 +1567,13 @@ ion-badge.ion-color {
   --color: var(--ion-color-contrast);
 }
 
-ion-badge[tp-fill=outline] {
+ion-badge [tp-fill=outline] {
   --background: transparent;
   --color: var(--tp-color-brand-2);
   border: 1px solid var(--tp-color-brand-2);
 }
 
-ion-badge.ion-color[tp-fill=outline] {
+ion-badge.ion-color [tp-fill=outline] {
   color: var(--ion-color-base);
   background: transparent;
   border: 1px solid var(--ion-color-base);
@@ -2531,20 +2533,23 @@ ion-segment-button {
 ion-segment-button.in-segment-color {
   color: var(--tp-color-neutral-3);
 }
+ion-segment-button::part(indicator) {
+  background-color: var(--tp-color-brand-3);
+}
+
+ion-segment-button:hover {
+  background: var(--tp-color-neutral-15);
+}
+
 ion-segment-button.segment-button-checked ion-label {
   color: var(--tp-color-neutral-10);
 }
+
 ion-segment-button ion-label {
   color: var(--tp-color-neutral-5);
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-}
-ion-segment-button::part(indicator) {
-  background-color: var(--tp-color-brand-3);
-}
-ion-segment-button:hover {
-  background: var(--tp-color-neutral-15);
 }
 
 ion-tab-bar {
