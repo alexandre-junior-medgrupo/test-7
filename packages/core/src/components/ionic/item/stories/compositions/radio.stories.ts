@@ -29,9 +29,9 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
         },
       },
     },
-    tpGap: {
+    ['tp-gap']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.tpGap],
+      options: [...TP_ION_ITEM['tp-gap']],
       description:
         'Define qual o espaçamento entre o icone e o texto do componente.',
       table: {
@@ -39,13 +39,13 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.tpGap.join('|'),
+          summary: TP_ION_ITEM['tp-gap'].join('|'),
         },
       },
     },
-    tpSpacingX: {
+    ['tp-spacingx']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.tpSpacingX],
+      options: [...TP_ION_ITEM['tp-spacingx']],
       description:
         'Define qual o espaçamento das bordas horizontais para o conteudo do componente.',
       table: {
@@ -53,13 +53,13 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.tpSpacingX.join('|'),
+          summary: TP_ION_ITEM['tp-spacingx'].join('|'),
         },
       },
     },
-    tpSpacingY: {
+    ['tp-spacingy']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.tpSpacingY],
+      options: [...TP_ION_ITEM['tp-spacingy']],
       description:
         'Define qual o espaçamento das bordas verticais para o conteudo do componente.',
       table: {
@@ -67,7 +67,7 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.tpSpacingY.join('|'),
+          summary: TP_ION_ITEM['tp-spacingy'].join('|'),
         },
       },
     },
@@ -108,9 +108,9 @@ export const Radio: Story = {
       <ion-item
         .color="${args.color}"
         lines="${args.lines}"
-        tp-gap="${args.tpGap}"
-        tp-spacingX="${args.tpSpacingX}"
-        tp-spacingY="${args.tpSpacingY}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
         ?button="${args.button}"
         ?disabled="${args.disabled}"
       >
@@ -121,9 +121,9 @@ export const Radio: Story = {
       <ion-item
         .color="${args.color}"
         lines="${args.lines}"
-        tp-gap="${args.tpGap}"
-        tp-spacingX="${args.tpSpacingX}"
-        tp-spacingY="${args.tpSpacingY}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
         ?button="${args.button}"
         ?disabled="${args.disabled}"
       >

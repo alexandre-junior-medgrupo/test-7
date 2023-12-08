@@ -55,9 +55,9 @@ const meta: Meta<
         },
       },
     },
-    tpSpacingX: {
+    ['tp-spacingx']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.tpSpacingX],
+      options: [...TP_ION_ITEM['tp-spacingx']],
       description: `Define o padding horizontal do componente **'ion-item'**.
 
 **OBS**: Atributo referente ao componente **'ion-item'**.
@@ -67,13 +67,13 @@ const meta: Meta<
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.tpSpacingX.join('|'),
+          summary: TP_ION_ITEM['tp-spacingx'].join('|'),
         },
       },
     },
-    tpSpacingY: {
+    ['tp-spacingy']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.tpSpacingY],
+      options: [...TP_ION_ITEM['tp-spacingy']],
       description: `Define o padding vertical do componente **'ion-item'**.
 
 **OBS**: Atributo referente ao componente **'ion-item'**.
@@ -83,7 +83,7 @@ const meta: Meta<
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.tpSpacingY.join('|'),
+          summary: TP_ION_ITEM['tp-spacingy'].join('|'),
         },
       },
     },
@@ -106,8 +106,8 @@ const meta: Meta<
   },
   args: {
     ['tp-type']: 'p16xb',
-    spacingX: 's16',
-    spacingY: 's16',
+    ['tp-spacingx']: 's16',
+    ['tp-spacingy']: 's16',
   },
 };
 
@@ -131,8 +131,8 @@ export const Default: Story = {
         >
           <ion-item
             slot="header"
-            tp-spacingx="${args.tpSpacingX}"
-            tp-spacingy="${args.tpSpacingY}"
+            tp-spacingx="${args['tp-spacingx']}"
+            tp-spacingy="${args['tp-spacingy']}"
             lines="none"
           >
             <ion-label tp-type="${args['tp-type']}">First Accordion</ion-label>
@@ -194,8 +194,8 @@ export const Default: Story = {
         >
           <ion-item
             slot="header"
-            tp-spacingx="${args.tpSpacingX}"
-            tp-spacingy="${args.tpSpacingY}"
+            tp-spacingx="${args['tp-spacingx']}"
+            tp-spacingy="${args['tp-spacingy']}"
             lines="none"
           >
             <ion-label tp-type="${args['tp-type']}">Second Accordion</ion-label>
@@ -257,8 +257,8 @@ export const Default: Story = {
         >
           <ion-item
             slot="header"
-            tp-spacingx="${args.tpSpacingX}"
-            tp-spacingy="${args.tpSpacingY}"
+            tp-spacingx="${args['tp-spacingx']}"
+            tp-spacingy="${args['tp-spacingy']}"
             lines="none"
           >
             <ion-label tp-type="${args['tp-type']}">Third Accordion</ion-label>
@@ -321,8 +321,8 @@ export const Default: Story = {
         >
           <ion-item
             slot="header"
-            tp-spacingx="${args.tpSpacingX}"
-            tp-spacingy="${args.tpSpacingY}"
+            tp-spacingx="${args['tp-spacingx']}"
+            tp-spacingy="${args['tp-spacingy']}"
             lines="none"
           >
             <ion-label tp-type="${args['tp-type']}">First Accordion</ion-label>
@@ -377,8 +377,8 @@ export const Default: Story = {
         >
           <ion-item
             slot="header"
-            tp-spacingx="${args.tpSpacingX}"
-            tp-spacingy="${args.tpSpacingY}"
+            tp-spacingx="${args['tp-spacingx']}"
+            tp-spacingy="${args['tp-spacingy']}"
             lines="none"
           >
             <ion-label tp-type="${args['tp-type']}">Second Accordion</ion-label>
@@ -433,8 +433,8 @@ export const Default: Story = {
         >
           <ion-item
             slot="header"
-            tp-spacingx="${args.tpSpacingX}"
-            tp-spacingy="${args.tpSpacingY}"
+            tp-spacingx="${args['tp-spacingx']}"
+            tp-spacingy="${args['tp-spacingy']}"
             lines="none"
           >
             <ion-label tp-type="${args['tp-type']}">Third Accordion</ion-label>
