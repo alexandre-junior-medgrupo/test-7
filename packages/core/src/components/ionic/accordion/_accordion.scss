@@ -6,9 +6,9 @@ ion-accordion {
   }
 
   [slot='header'] {
-    --ripple-color: transparent;
     --background: transparent;
     --color: var(--tp-color-neutral-10);
+    --ripple-color: transparent;
 
     &:hover {
       --background-hover: transparent;
@@ -20,13 +20,13 @@ ion-accordion {
   }
 
   [slot='content'] {
+    padding: 0 16px 16px;
     background: transparent;
-    padding-top: 0;
 
     * {
       color: var(--tp-color-neutral-7);
-      font-size: 14px;
       font-weight: 400;
+      font-size: 14px;
       line-height: 20px;
     }
   }
