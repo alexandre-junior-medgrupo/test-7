@@ -2430,6 +2430,11 @@ ion-range[ticks]::part(tick) {
   border-radius: 50%;
 }
 
+ion-range ion-icon[slot=start] {
+  width: 16px;
+  height: 16px;
+}
+
 ion-searchbar.sc-ion-searchbar-md-h {
   --background: var(--tp-color-neutral-2);
   --border-radius: 8px;

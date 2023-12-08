@@ -40,3 +40,13 @@ ion-range[ticks] {
     border-radius: 50%;
   }
 }
+
+//
+// compositions
+//
+ion-range {
+  ion-icon[slot='start'] {
+    width: 16px;
+    height: 16px;
+  }
+}
