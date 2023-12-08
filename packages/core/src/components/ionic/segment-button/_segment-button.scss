@@ -1,0 +1,28 @@
+ion-segment-button {
+  --background-hover-opacity: 0;
+
+  &.in-segment-color {
+    color: var(--tp-color-neutral-3);
+  }
+
+  &.segment-button-checked {
+    ion-label {
+      color: var(--tp-color-neutral-10);
+    }
+  }
+
+  ion-label {
+    color: var(--tp-color-neutral-5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &::part(indicator) {
+    background-color: var(--tp-color-brand-3);
+  }
+
+  &:hover {
+    background: var(--tp-color-neutral-15);
+  }
+}
