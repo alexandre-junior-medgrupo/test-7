@@ -2,10 +2,10 @@ import type { TpColor } from '../../../utils/types/color.type';
 import { TpHorizontalChartBarSize } from './horizontal-chart-bar.enum';
 
 export type TpHorizontalChartBar = {
-  color: `${TpColor}`;
+  color?: `${TpColor}`;
+  size?: `${TpHorizontalChartBarSize}`;
   value: number;
-  isCount: boolean;
   maxCount: number;
-  hideValue: boolean;
-  size: `${TpHorizontalChartBarSize}`;
+  noLabel: boolean;
+  loading?: boolean;
 };

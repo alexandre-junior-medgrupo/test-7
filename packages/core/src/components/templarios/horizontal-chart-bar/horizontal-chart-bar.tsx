@@ -35,9 +35,42 @@ export class TpHorizontalChartBar {
    */
   @Prop({ reflect: true }) noLabel = false;
 
+  /**
+   * Define o estado de carregamento do componente.
+   */
+  @Prop({ reflect: true, mutable: true }) loading?: boolean;
+
   render() {
-    const { color, size, value, maxCount, noLabel } = this;
+    const { color, size, value, maxCount, noLabel, loading } = this;
     const percentage = Math.min(Math.max(0, (value / maxCount) * 100), 100);
+
+    const content = loading ? (
+      <div class="tp-horizontal-chart-bar__container">
+        <ion-skeleton-text
+          class="tp-horizontal-chart-bar__track tp-horizontal-chart-bar__track--skeleton"
+          animated
+        ></ion-skeleton-text>
+
+        {!noLabel && (
+          <ion-skeleton-text
+            class="tp-horizontal-chart-bar__label-container tp-horizontal-chart-bar__label-container--skeleton"
+            animated
+          ></ion-skeleton-text>
+        )}
+      </div>
+    ) : (
+      <div class="tp-horizontal-chart-bar__container">
+        <div class="tp-horizontal-chart-bar__track">
+          <div class="tp-horizontal-chart-bar__progress"></div>
+        </div>
+
+        {!noLabel && (
+          <div class="tp-horizontal-chart-bar__label-container">
+            <slot></slot>
+          </div>
+        )}
+      </div>
+    );
 
     return (
       <Host
@@ -48,17 +81,7 @@ export class TpHorizontalChartBar {
         })}
         style={{ '--tp-fill-percentage': `${percentage}%` }}
       >
-        <div class="tp-horizontal-chart-bar__container">
-          <div class="tp-horizontal-chart-bar__track">
-            <div class="tp-horizontal-chart-bar__progress"></div>
-          </div>
-
-          {!noLabel && (
-            <div class="tp-horizontal-chart-bar__label-container">
-              <slot></slot>
-            </div>
-          )}
-        </div>
+        {content}
       </Host>
     );
   }

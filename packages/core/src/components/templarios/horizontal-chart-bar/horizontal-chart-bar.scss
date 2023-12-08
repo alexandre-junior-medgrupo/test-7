@@ -1,6 +1,8 @@
 /**
 * @prop --tp-fill-percentage: Propriedade definida dinamicamente no tsx. Define o progresso do componente.
 * @prop --tp-track-color: Define a cor do trilho.
+* @prop --tp-skeleton-background-rgb: Define o background rgb do skeleton do componente.
+* @prop --tp-skeleton-label-width: Define a largura do skeleton do label.
 */
 
 @import './horizontal-chart-bar.util';
@@ -30,6 +32,14 @@
     height: 8px;
     background-color: var(--tp-track-color, var(--tp-color-neutral-15));
     border-radius: 4px;
+
+    &--skeleton {
+      margin: 0;
+      --background-rgb: var(
+        --tp-skeleton-background-rgb,
+        var(--tp-color-neutral-10-rgb)
+      );
+    }
   }
 
   &__progress {
@@ -44,6 +54,17 @@
   &__label-container {
     display: flex;
     margin-left: 12px;
+
+    &--skeleton {
+      width: var(--tp-skeleton-label-width, 36px);
+      height: 12px;
+      margin: 0 0 0 12px;
+      --border-radius: 2px;
+      --background-rgb: var(
+        --tp-skeleton-background-rgb,
+        var(--tp-color-neutral-10-rgb)
+      );
+    }
   }
 }
 

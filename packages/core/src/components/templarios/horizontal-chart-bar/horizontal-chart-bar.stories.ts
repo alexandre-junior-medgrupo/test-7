@@ -46,6 +46,18 @@ const meta: Meta<TpHorizontalChartBar> = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado loading do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
   args: {
     value: 0,
@@ -65,6 +77,7 @@ export const Default: Story = {
       .color="${args.color}"
       max-count="${args.maxCount}"
       no-label
+      ?loading="${args.loading}"
     >
     </tp-horizontal-chart-bar>
   `,

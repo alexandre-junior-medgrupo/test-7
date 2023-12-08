@@ -102,6 +102,10 @@ export namespace Components {
          */
         "color"?: TpColor;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define o valor que value deve atingir para apresentar 100% de progresso.
          */
         "maxCount": number;
@@ -284,6 +288,10 @@ declare namespace LocalJSX {
           * Define a variação de cor do componente.
          */
         "color"?: TpColor;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
         /**
           * Define o valor que value deve atingir para apresentar 100% de progresso.
          */
