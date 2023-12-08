@@ -1,32 +1,35 @@
 import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
-import { withActions } from '@storybook/addon-actions/decorator';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpRateLike } from './rate-like';
-import { TP_RATE_LIKE } from './rate-like.constant';
+import { TpAlert } from '../../alert';
 
+// antigo med-alert-fixed
 defineCustomElementSkeletonText();
 
-const meta: Meta<TpRateLike> = {
-  component: 'TpRateLike',
-  title: 'components/Templarios/Rate like',
-  decorators: [withActions as any],
-  parameters: {
-    actions: {
-      handles: ['tpChange'],
-    },
-  },
+const meta: Meta<TpAlert> = {
+  title: 'components/Templarios/Alert/Compositions',
   argTypes: {
-    status: {
-      control: 'radio',
-      options: [...TP_RATE_LIKE.status],
-      description: 'Define o status do componente.',
+    icon: {
+      control: 'text',
+      description: 'Define o icon a ser exibido no componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
         },
         type: {
-          summary: [...TP_RATE_LIKE.status].join('|'),
+          summary: 'text',
+        },
+      },
+    },
+    message: {
+      control: 'text',
+      description: 'Define a string a ser exibida no componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'text',
         },
       },
     },
@@ -43,24 +46,27 @@ const meta: Meta<TpRateLike> = {
       },
     },
   },
+  args: {
+    icon: 'tp-activity',
+    message: 'Essa é uma mensagem a ser apresentada.',
+  },
 };
 
 export default meta;
 
 type Story = StoryObj;
 
-export const Default: Story = {
+export const Custom: Story = {
   render: ({ ...args }) => {
-    return html`<tp-rate-like
-      status=${args.status}
+    return html`<tp-alert
+      color="${args.color}"
+      icon="${args.icon}"
+      message="${args.message}"
       ?loading="${args.loading}"
-    ></tp-rate-like>`;
+    ></tp-alert>`;
   },
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/tp-rate-like/gi)).toBeTruthy();
+    expect(canvas.getByText(/tp-alert/gi)).toBeTruthy();
   }, */
-};
-Default.argTypes = {
-  color: { table: { disable: true } },
 };
