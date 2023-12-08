@@ -9,6 +9,10 @@ ion-accordion {
     --background: transparent;
     --color: var(--tp-color-neutral-10);
     --ripple-color: transparent;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --padding-top: 16px;
+    --padding-bottom: 16px;
 
     &:hover {
       --background-hover: transparent;
@@ -20,7 +24,10 @@ ion-accordion {
   }
 
   [slot='content'] {
-    padding: 0 16px 16px;
+    padding-top: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
     background: transparent;
 
     * {
@@ -31,6 +38,35 @@ ion-accordion {
     }
   }
 }
+
+//
+// spacing
+//
+ion-accordion {
+  &[tp-spacingx] {
+    [slot='header'] {
+      --padding-start: var(--spacing);
+      --padding-end: var(--spacing);
+    }
+
+    [slot='content'] {
+      padding-left: var(--spacing);
+      padding-right: var(--spacing);
+    }
+  }
+
+  &[tp-spacingy] {
+    [slot='header'] {
+      --padding-top: var(--spacing);
+      --padding-bottom: var(--spacing);
+    }
+
+    [slot='content'] {
+      padding-bottom: var(--spacing);
+    }
+  }
+}
+
 
 //
 // expanded
