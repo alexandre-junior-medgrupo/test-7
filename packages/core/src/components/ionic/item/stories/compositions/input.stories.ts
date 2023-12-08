@@ -31,9 +31,9 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
         },
       },
     },
-    gap: {
+    ['tp-gap']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.gap],
+      options: [...TP_ION_ITEM['tp-gap']],
       description:
         'Define qual o espaçamento entre o icone e o texto do componente.',
       table: {
@@ -41,13 +41,13 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.gap.join('|'),
+          summary: TP_ION_ITEM['tp-gap'].join('|'),
         },
       },
     },
-    spacingX: {
+    ['tp-spacingx']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.spacingX],
+      options: [...TP_ION_ITEM['tp-spacingx']],
       description:
         'Define qual o espaçamento das bordas horizontais para o conteudo do componente.',
       table: {
@@ -55,13 +55,13 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.spacingX.join('|'),
+          summary: TP_ION_ITEM['tp-spacingx'].join('|'),
         },
       },
     },
-    spacingY: {
+    ['tp-spacingy']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.spacingY],
+      options: [...TP_ION_ITEM['tp-spacingy']],
       description:
         'Define qual o espaçamento das bordas verticais para o conteudo do componente.',
       table: {
@@ -69,7 +69,7 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.spacingY.join('|'),
+          summary: TP_ION_ITEM['tp-spacingy'].join('|'),
         },
       },
     },
@@ -108,9 +108,9 @@ export const Input: Story = {
   render: ({ ...args }) => html`
     <ion-item
       lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
+      tp-gap="${args['tp-gap']}"
+      tp-spacingX="${args['tp-spacingx']}"
+      tp-spacingY="${args['tp-spacingy']}"
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
@@ -123,9 +123,9 @@ export const Input: Story = {
 
     <ion-item
       lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
+      tp-gap="${args['tp-gap']}"
+      tp-spacingX="${args['tp-spacingx']}"
+      tp-spacingY="${args['tp-spacingy']}"
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
@@ -141,9 +141,9 @@ export const Input: Story = {
 
     <ion-item
       lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
+      tp-gap="${args['tp-gap']}"
+      tp-spacingX="${args['tp-spacingx']}"
+      tp-spacingY="${args['tp-spacingy']}"
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
@@ -160,9 +160,9 @@ export const Input: Story = {
 
     <ion-item
       lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
+      tp-gap="${args['tp-gap']}"
+      tp-spacingX="${args['tp-spacingx']}"
+      tp-spacingY="${args['tp-spacingy']}"
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
