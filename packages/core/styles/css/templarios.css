@@ -1816,11 +1816,9 @@ ion-checkbox:hover {
   --border-color-checked: var(--tp-color-brand-5);
   --checkbox-background-checked: var(--tp-color-brand-5);
 }
-ion-checkbox ion-text {
-  margin-right: 16px;
-}
-ion-checkbox.checkbox-label-placement-end ion-text {
-  margin-right: 0;
+ion-checkbox::part(label) {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ion-checkbox.ion-color {
@@ -2074,201 +2072,201 @@ ion-item.item-lines-full.ion-activatable:hover {
   --border-color: var(--tp-color-neutral-3);
 }
 
-ion-item[gap=s00] *[slot=start] {
+ion-item[tp-gap=s00] *[slot=start] {
   margin-right: 0;
 }
-ion-item[gap=s00] *[slot=end] {
+ion-item[tp-gap=s00] *[slot=end] {
   margin-left: 0;
 }
-ion-item[gap=s02] *[slot=start] {
+ion-item[tp-gap=s02] *[slot=start] {
   margin-right: 2px;
 }
-ion-item[gap=s02] *[slot=end] {
+ion-item[tp-gap=s02] *[slot=end] {
   margin-left: 2px;
 }
-ion-item[gap=s04] *[slot=start] {
+ion-item[tp-gap=s04] *[slot=start] {
   margin-right: 4px;
 }
-ion-item[gap=s04] *[slot=end] {
+ion-item[tp-gap=s04] *[slot=end] {
   margin-left: 4px;
 }
-ion-item[gap=s08] *[slot=start] {
+ion-item[tp-gap=s08] *[slot=start] {
   margin-right: 8px;
 }
-ion-item[gap=s08] *[slot=end] {
+ion-item[tp-gap=s08] *[slot=end] {
   margin-left: 8px;
 }
-ion-item[gap=s12] *[slot=start] {
+ion-item[tp-gap=s12] *[slot=start] {
   margin-right: 12px;
 }
-ion-item[gap=s12] *[slot=end] {
+ion-item[tp-gap=s12] *[slot=end] {
   margin-left: 12px;
 }
-ion-item[gap=s16] *[slot=start] {
+ion-item[tp-gap=s16] *[slot=start] {
   margin-right: 16px;
 }
-ion-item[gap=s16] *[slot=end] {
+ion-item[tp-gap=s16] *[slot=end] {
   margin-left: 16px;
 }
-ion-item[gap=s20] *[slot=start] {
+ion-item[tp-gap=s20] *[slot=start] {
   margin-right: 20px;
 }
-ion-item[gap=s20] *[slot=end] {
+ion-item[tp-gap=s20] *[slot=end] {
   margin-left: 20px;
 }
-ion-item[gap=s24] *[slot=start] {
+ion-item[tp-gap=s24] *[slot=start] {
   margin-right: 24px;
 }
-ion-item[gap=s24] *[slot=end] {
+ion-item[tp-gap=s24] *[slot=end] {
   margin-left: 24px;
 }
-ion-item[gap=s32] *[slot=start] {
+ion-item[tp-gap=s32] *[slot=start] {
   margin-right: 32px;
 }
-ion-item[gap=s32] *[slot=end] {
+ion-item[tp-gap=s32] *[slot=end] {
   margin-left: 32px;
 }
-ion-item[gap=s40] *[slot=start] {
+ion-item[tp-gap=s40] *[slot=start] {
   margin-right: 40px;
 }
-ion-item[gap=s40] *[slot=end] {
+ion-item[tp-gap=s40] *[slot=end] {
   margin-left: 40px;
 }
-ion-item[gap=s48] *[slot=start] {
+ion-item[tp-gap=s48] *[slot=start] {
   margin-right: 48px;
 }
-ion-item[gap=s48] *[slot=end] {
+ion-item[tp-gap=s48] *[slot=end] {
   margin-left: 48px;
 }
-ion-item[gap=s64] *[slot=start] {
+ion-item[tp-gap=s64] *[slot=start] {
   margin-right: 64px;
 }
-ion-item[gap=s64] *[slot=end] {
+ion-item[tp-gap=s64] *[slot=end] {
   margin-left: 64px;
 }
-ion-item[gap=s80] *[slot=start] {
+ion-item[tp-gap=s80] *[slot=start] {
   margin-right: 80px;
 }
-ion-item[gap=s80] *[slot=end] {
+ion-item[tp-gap=s80] *[slot=end] {
   margin-left: 80px;
 }
-ion-item[gap=s96] *[slot=start] {
+ion-item[tp-gap=s96] *[slot=start] {
   margin-right: 96px;
 }
-ion-item[gap=s96] *[slot=end] {
+ion-item[tp-gap=s96] *[slot=end] {
   margin-left: 96px;
 }
 
-ion-item[spacingx=s00] {
+ion-item[tp-spacingx=s00] {
   --padding-start: 0;
   --padding-end: 0;
 }
-ion-item[spacingx=s02] {
+ion-item[tp-spacingx=s02] {
   --padding-start: 2px;
   --padding-end: 2px;
 }
-ion-item[spacingx=s04] {
+ion-item[tp-spacingx=s04] {
   --padding-start: 4px;
   --padding-end: 4px;
 }
-ion-item[spacingx=s08] {
+ion-item[tp-spacingx=s08] {
   --padding-start: 8px;
   --padding-end: 8px;
 }
-ion-item[spacingx=s12] {
+ion-item[tp-spacingx=s12] {
   --padding-start: 12px;
   --padding-end: 12px;
 }
-ion-item[spacingx=s16] {
+ion-item[tp-spacingx=s16] {
   --padding-start: 16px;
   --padding-end: 16px;
 }
-ion-item[spacingx=s20] {
+ion-item[tp-spacingx=s20] {
   --padding-start: 20px;
   --padding-end: 20px;
 }
-ion-item[spacingx=s24] {
+ion-item[tp-spacingx=s24] {
   --padding-start: 24px;
   --padding-end: 24px;
 }
-ion-item[spacingx=s32] {
+ion-item[tp-spacingx=s32] {
   --padding-start: 32px;
   --padding-end: 32px;
 }
-ion-item[spacingx=s40] {
+ion-item[tp-spacingx=s40] {
   --padding-start: 40px;
   --padding-end: 40px;
 }
-ion-item[spacingx=s48] {
+ion-item[tp-spacingx=s48] {
   --padding-start: 48px;
   --padding-end: 48px;
 }
-ion-item[spacingx=s64] {
+ion-item[tp-spacingx=s64] {
   --padding-start: 64px;
   --padding-end: 64px;
 }
-ion-item[spacingx=s80] {
+ion-item[tp-spacingx=s80] {
   --padding-start: 80px;
   --padding-end: 80px;
 }
-ion-item[spacingx=s96] {
+ion-item[tp-spacingx=s96] {
   --padding-start: 96px;
   --padding-end: 96px;
 }
 
-ion-item[spacingy=s00] {
+ion-item[tp-spacingy=s00] {
   --padding-top: 0;
   --padding-bottom: 0;
 }
-ion-item[spacingy=s02] {
+ion-item[tp-spacingy=s02] {
   --padding-top: 2px;
   --padding-bottom: 2px;
 }
-ion-item[spacingy=s04] {
+ion-item[tp-spacingy=s04] {
   --padding-top: 4px;
   --padding-bottom: 4px;
 }
-ion-item[spacingy=s08] {
+ion-item[tp-spacingy=s08] {
   --padding-top: 8px;
   --padding-bottom: 8px;
 }
-ion-item[spacingy=s12] {
+ion-item[tp-spacingy=s12] {
   --padding-top: 12px;
   --padding-bottom: 12px;
 }
-ion-item[spacingy=s16] {
+ion-item[tp-spacingy=s16] {
   --padding-top: 16px;
   --padding-bottom: 16px;
 }
-ion-item[spacingy=s20] {
+ion-item[tp-spacingy=s20] {
   --padding-top: 20px;
   --padding-bottom: 20px;
 }
-ion-item[spacingy=s24] {
+ion-item[tp-spacingy=s24] {
   --padding-top: 24px;
   --padding-bottom: 24px;
 }
-ion-item[spacingy=s32] {
+ion-item[tp-spacingy=s32] {
   --padding-top: 32px;
   --padding-bottom: 32px;
 }
-ion-item[spacingy=s40] {
+ion-item[tp-spacingy=s40] {
   --padding-top: 40px;
   --padding-bottom: 40px;
 }
-ion-item[spacingy=s48] {
+ion-item[tp-spacingy=s48] {
   --padding-top: 48px;
   --padding-bottom: 48px;
 }
-ion-item[spacingy=s64] {
+ion-item[tp-spacingy=s64] {
   --padding-top: 64px;
   --padding-bottom: 64px;
 }
-ion-item[spacingy=s80] {
+ion-item[tp-spacingy=s80] {
   --padding-top: 80px;
   --padding-bottom: 80px;
 }
-ion-item[spacingy=s96] {
+ion-item[tp-spacingy=s96] {
   --padding-top: 96px;
   --padding-bottom: 96px;
 }
@@ -2386,11 +2384,9 @@ ion-radio:hover {
 ion-radio.radio-checked {
   --color: var(--tp-color-neutral-4);
 }
-ion-radio ion-text {
-  margin-right: 16px;
-}
-ion-radio.radio-label-placement-end ion-text {
-  margin-right: 0;
+ion-radio::part(label) {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ion-radio.ion-color {
@@ -2731,6 +2727,10 @@ ion-toggle {
 ion-toggle::part(track) {
   width: 32px;
   height: 20px;
+}
+ion-toggle::part(label) {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=templarios.css.map */

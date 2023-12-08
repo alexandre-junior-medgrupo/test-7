@@ -12,4 +12,9 @@ ion-toggle {
     width: 32px;
     height: 20px;
   }
+
+  &::part(label) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
