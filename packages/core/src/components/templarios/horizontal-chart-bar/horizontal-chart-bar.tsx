@@ -22,57 +22,22 @@ export class TpHorizontalChartBar {
 
   /**
    * Define o valor representado pelo componente.
-   * Representa uma porcentagem por padrão.
-   * Representa uma contagem se isCount tem valor true e maxCount recebe um valor.
    */
-  @Prop({ reflect: true }) value = 50;
+  @Prop({ reflect: true }) value = 0;
 
   /**
-   * Define se o componente representa uma contagem.
+   * Define o valor que value deve atingir para apresentar 100% de progresso.
    */
-  @Prop({ reflect: true }) isCount = false;
+  @Prop({ reflect: true }) maxCount = 100;
 
   /**
-   * Define a contagem máxima, se o componente representa uma contagem.
+   * Define se um slot será disponibilizado para receber um rótulo.
    */
-  @Prop({ reflect: true }) maxCount?: number;
-
-  /**
-   * Define se o valor representado será ou não renderizado.
-   */
-  @Prop({ reflect: true }) hideValue = false;
-
-  private getPercentage() {
-    const { value, isCount, maxCount } = this;
-
-    if (isCount) {
-      return Math.min(Math.max(0, (value / maxCount) * 100), 100);
-    }
-
-    return Math.min(Math.max(0, value), 100);
-  }
-
-  private getValueLabel() {
-    const { value, isCount, maxCount } = this;
-
-    return isCount ? (
-      <ion-label class="tp-horizontal-chart-bar__value-label">
-        <span class="tp-horizontal-chart-bar__current-value">{value}</span>
-        <span>/{maxCount ?? 0}</span>
-      </ion-label>
-    ) : (
-      <ion-label class="tp-horizontal-chart-bar__value-label">
-        <span class="tp-horizontal-chart-bar__current-value">
-          {Math.max(0, value)}%
-        </span>
-      </ion-label>
-    );
-  }
+  @Prop({ reflect: true }) noLabel = false;
 
   render() {
-    const { color, size, hideValue } = this;
-    const percentage = this.getPercentage();
-    const valueLabel = hideValue ? null : this.getValueLabel();
+    const { color, size, value, maxCount, noLabel } = this;
+    const percentage = Math.min(Math.max(0, (value / maxCount) * 100), 100);
 
     return (
       <Host
@@ -81,14 +46,18 @@ export class TpHorizontalChartBar {
           'tp-horizontal-chart-bar--spill': percentage >= 100,
           [`tp-horizontal-chart-bar--${size}`]: Boolean(size),
         })}
-        style={{ '--tp-fill-percentage': `${this.getPercentage()}%` }}
+        style={{ '--tp-fill-percentage': `${percentage}%` }}
       >
         <div class="tp-horizontal-chart-bar__container">
           <div class="tp-horizontal-chart-bar__track">
             <div class="tp-horizontal-chart-bar__progress"></div>
           </div>
 
-          {valueLabel}
+          {!noLabel && (
+            <div class="tp-horizontal-chart-bar__label-container">
+              <slot></slot>
+            </div>
+          )}
         </div>
       </Host>
     );

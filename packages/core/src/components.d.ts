@@ -70,23 +70,19 @@ export namespace Components {
          */
         "color"?: TpColor;
         /**
-          * Define se o valor representado será ou não renderizado.
+          * Define o valor que value deve atingir para apresentar 100% de progresso.
          */
-        "hideValue": boolean;
+        "maxCount": number;
         /**
-          * Define se o componente representa uma contagem.
+          * Define se um slot será disponibilizado para receber um rótulo.
          */
-        "isCount": boolean;
-        /**
-          * Define a contagem máxima, se o componente representa uma contagem.
-         */
-        "maxCount"?: number;
+        "noLabel": boolean;
         /**
           * Define a variação de tamanho do componente.
          */
         "size"?: TpHorizontalChartBarSize;
         /**
-          * Define o valor representado pelo componente. Representa uma porcentagem por padrão. Representa uma contagem se isCount tem valor true e maxCount recebe um valor.
+          * Define o valor representado pelo componente.
          */
         "value": number;
     }
@@ -214,23 +210,19 @@ declare namespace LocalJSX {
          */
         "color"?: TpColor;
         /**
-          * Define se o valor representado será ou não renderizado.
-         */
-        "hideValue"?: boolean;
-        /**
-          * Define se o componente representa uma contagem.
-         */
-        "isCount"?: boolean;
-        /**
-          * Define a contagem máxima, se o componente representa uma contagem.
+          * Define o valor que value deve atingir para apresentar 100% de progresso.
          */
         "maxCount"?: number;
+        /**
+          * Define se um slot será disponibilizado para receber um rótulo.
+         */
+        "noLabel"?: boolean;
         /**
           * Define a variação de tamanho do componente.
          */
         "size"?: TpHorizontalChartBarSize;
         /**
-          * Define o valor representado pelo componente. Representa uma porcentagem por padrão. Representa uma contagem se isCount tem valor true e maxCount recebe um valor.
+          * Define o valor representado pelo componente.
          */
         "value"?: number;
     }
