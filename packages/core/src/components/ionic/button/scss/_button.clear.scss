@@ -92,11 +92,10 @@ ion-button {
   }
 }
 
-ion-button.button-clear.ion-color:hover {
-  ion-icon {
-    --stroke: var(--ion-color-base) !important;
-  }
+ion-button.button-clear.ion-color:hover ion-icon {
+  --stroke: var(--ion-color-base) !important;
 }
+
 
 //
 // sizes

@@ -1587,7 +1587,7 @@ ion-button {
   --padding-start: 32px;
   --padding-end: 32px;
   --font-size: 16px;
-  --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+  --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.1);
   height: 48px;
   min-height: 48px;
   margin: 0;
@@ -1619,7 +1619,7 @@ ion-button.ion-color {
   --background-hover: var(--ion-color-shade);
   --background-focused: var(--ion-color-tint);
   --background-activated: var(--ion-color-shade);
-  --ripple-color: rgba(var(--ion-color-contrast-rgb), 0.5);
+  --ripple-color: rgba(var(--ion-color-contrast-rgb), 0.1);
 }
 ion-button.ion-color ion-icon {
   --stroke: var(--color);

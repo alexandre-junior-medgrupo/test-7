@@ -51,25 +51,23 @@ $tp-button-sizes: (
   ),
 );
 
-ion-button {
-  &.button-clear.button-has-icon-only {
-    --padding-top: 8px;
-    --padding-bottom: 8px;
-    --padding-start: 8px;
-    --padding-end: 8px;
-    --background-hover-opacity: 0.08;
-    --background-hover: var(--tp-color-neutral-10);
-    --background-activated-opacity: 0.16;
-    --background: transparent;
-    --color-hover: var(--tp-color-neutral-10);
-    height: initial;
-    min-height: initial;
+ion-button.button-clear.button-has-icon-only {
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --background-hover-opacity: 0.08;
+  --background-hover: var(--tp-color-neutral-10);
+  --background-activated-opacity: 0.16;
+  --background: transparent;
+  --color-hover: var(--tp-color-neutral-10);
+  height: initial;
+  min-height: initial;
 
-    ion-icon {
-      --stroke: var(--tp-color-neutral-10);
-      width: 32px;
-      height: 32px;
-    }
+  ion-icon {
+    --stroke: var(--tp-color-neutral-10);
+    width: 32px;
+    height: 32px;
   }
 }
 
