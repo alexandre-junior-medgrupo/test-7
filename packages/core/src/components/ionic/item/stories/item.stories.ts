@@ -25,42 +25,42 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
         },
       },
     },
-    gap: {
+    tpGap: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.gap],
+      options: [...TP_ION_ITEM.tpGap],
       description: 'Define o espaçamento entre os slots do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.gap.join('|'),
+          summary: TP_ION_ITEM.tpGap.join('|'),
         },
       },
     },
-    spacingX: {
+    tpSpacingX: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.spacingX],
+      options: [...TP_ION_ITEM.tpSpacingX],
       description: 'Define o padding horizontal do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.spacingX.join('|'),
+          summary: TP_ION_ITEM.tpSpacingX.join('|'),
         },
       },
     },
-    spacingY: {
+    tpSpacingY: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.spacingY],
+      options: [...TP_ION_ITEM.tpSpacingY],
       description: 'Define o padding vertical do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.spacingY.join('|'),
+          summary: TP_ION_ITEM.tpSpacingY.join('|'),
         },
       },
     },
@@ -101,9 +101,9 @@ export const Default: Story = {
     <ion-item
       color="${args.color}"
       lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
+      tp-gap="${args.tpGap}"
+      tp-spacingX="${args.tpSpacingX}"
+      tp-spacingY="${args.tpSpacingY}"
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
@@ -113,9 +113,9 @@ export const Default: Story = {
     <ion-item
       color="${args.color}"
       lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
+      tp-gap="${args.tpGap}"
+      tp-spacingX="${args.tpSpacingX}"
+      tp-spacingY="${args.tpSpacingY}"
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
@@ -126,9 +126,9 @@ export const Default: Story = {
     <ion-item
       color="${args.color}"
       lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
+      tp-gap="${args.tpGap}"
+      tp-spacingX="${args.tpSpacingX}"
+      tp-spacingY="${args.tpSpacingY}"
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
@@ -139,9 +139,9 @@ export const Default: Story = {
     <ion-item
       color="${args.color}"
       lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
+      tp-gap="${args.tpGap}"
+      tp-spacingX="${args.tpSpacingX}"
+      tp-spacingY="${args.tpSpacingY}"
       ?button="${args.button}"
       ?disabled="${args.disabled}"
     >
