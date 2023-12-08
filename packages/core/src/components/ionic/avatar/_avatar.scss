@@ -85,12 +85,6 @@ ion-avatar {
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
-
-  ion-label {
-    color: var(--ion-color-contrast);
-    font-size: 24px;
-    line-height: 24px;
-  }
 }
 
 //
@@ -120,8 +114,18 @@ ion-avatar {
 //
 ion-avatar[tp-color] {
   background: var(--ion-color-base);
+}
 
-  ion-label {
-    color: var(--ion-color-contrast);
-  }
+//
+// compositions
+//
+ion-avatar ion-label {
+  color: var(--ion-color-contrast);
+  font-size: 24px;
+  line-height: 24px;
+}
+
+// color
+ion-avatar[tp-color] ion-label {
+  color: var(--ion-color-contrast);
 }

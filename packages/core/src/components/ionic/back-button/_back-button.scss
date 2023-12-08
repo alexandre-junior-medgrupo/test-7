@@ -94,23 +94,6 @@ ion-back-button {
 }
 
 //
-// color
-//
-ion-back-button {
-  &.ion-color {
-    --color: var(--ion-color-base);
-
-    &::part(icon) {
-      --stroke: var(--color);
-    }
-
-    &:hover::part(icon) {
-      --stroke: var(--color);
-    }
-  }
-}
-
-//
 // size
 //
 ion-back-button {
@@ -130,6 +113,23 @@ ion-back-button {
           --icon-#{$rules-name}: #{$rules-value};
         }
       }
+    }
+  }
+}
+
+//
+// color
+//
+ion-back-button {
+  &.ion-color {
+    --color: var(--ion-color-base);
+
+    &::part(icon) {
+      --stroke: var(--color);
+    }
+
+    &:hover::part(icon) {
+      --stroke: var(--color);
     }
   }
 }

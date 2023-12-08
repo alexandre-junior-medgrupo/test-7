@@ -1,3 +1,4 @@
+// componente wrapper
 .teste {
   position: relative;
 
@@ -15,6 +16,7 @@
   }
 }
 
+// componente ion-segment
 ion-segment[scrollable] {
   @include generate-scroll-style(remove);
 }

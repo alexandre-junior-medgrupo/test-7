@@ -2,7 +2,7 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonSkeletonText } from './skeleton-text.type';
+import { TpIonSkeletonText } from '../utils/skeleton-text.type';
 
 defineCustomElement();
 

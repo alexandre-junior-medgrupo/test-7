@@ -2,7 +2,7 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-searchbar';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonSearchbar } from './searchbar.type';
+import { TpIonSearchbar } from '../utils/searchbar.type';
 
 defineCustomElement();
 
