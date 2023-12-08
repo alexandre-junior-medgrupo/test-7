@@ -102,31 +102,39 @@ type Story = StoryObj<Components.IonItem & TpIonItem>;
 
 export const Toggle: Story = {
   render: ({ ...args }) => html`
-    <ion-item
-      .color="${args.color}"
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-toggle mode="ios" slot="start" aria-label></ion-toggle>
-      <ion-label>Basic Item</ion-label>
-    </ion-item>
+    <ion-list>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-toggle label-placement="start" justify="space-between">
+          <ion-text>
+            Lorem ipsum, dolor sit amet consectetur.
+          </ion-text
+        </ion-toggle>
+      </ion-item>
 
-    <ion-item
-      .color="${args.color}"
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-label>Basic Item</ion-label>
-      <ion-toggle slot="end" aria-label></ion-toggle>
-    </ion-item>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-toggle label-placement="end" justify="space-between">
+          <ion-text>
+            Lorem ipsum, dolor sit amet consectetur.
+          </ion-text
+        </ion-toggle>
+      </ion-item>
+    </ion-list>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

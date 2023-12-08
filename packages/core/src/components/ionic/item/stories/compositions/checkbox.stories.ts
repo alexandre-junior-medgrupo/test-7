@@ -15,7 +15,7 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
   title: 'components/Ionic/Item/Compositions',
   argTypes: {
     lines: {
-      control: { type: 'select' },
+      control: { type: 'check' },
       options: [...TP_ION_ITEM.lines],
       description: 'Define se o componente terá um border bottom.',
       table: {
@@ -112,7 +112,7 @@ export const Checkbox: Story = {
         ?button="${args.button}"
         ?disabled="${args.disabled}"
       >
-        <ion-checkbox slot="start">
+        <ion-checkbox label-placement="start" justify="space-between">
           <ion-text>
             Lorem ipsum, dolor sit amet consectetur.
           </ion-text>
@@ -128,7 +128,7 @@ export const Checkbox: Story = {
         ?button="${args.button}"
         ?disabled="${args.disabled}"
       >
-        <ion-checkbox slot="end">
+        <ion-checkbox label-placement="end" justify="space-between">
           <ion-text>
             Lorem ipsum, dolor sit amet consectetur.
           </ion-text>

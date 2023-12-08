@@ -14,14 +14,9 @@ ion-checkbox {
     --checkbox-background-checked: var(--tp-color-brand-5);
   }
 
-  ion-text {
-    margin-right: 16px;
-  }
-
-  &.checkbox-label-placement-end {
-    ion-text {
-      margin-right: 0;
-    }
+  &::part(label) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 

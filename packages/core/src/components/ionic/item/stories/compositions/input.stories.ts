@@ -106,74 +106,76 @@ type Story = StoryObj<Components.IonItem & TpIonItem>;
 
 export const Input: Story = {
   render: ({ ...args }) => html`
-    <ion-item
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-input
-        mode="md"
-        placeholder="Digite aqui"
-        clear-input="true"
-      ></ion-input>
-    </ion-item>
-
-    <ion-item
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <tp-input-container>
-        <ion-label slot="label" tp-type="p14">Input</ion-label>
+    <ion-list>
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
         <ion-input
           mode="md"
           placeholder="Digite aqui"
           clear-input="true"
         ></ion-input>
-      </tp-input-container>
-    </ion-item>
+      </ion-item>
 
-    <ion-item
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <tp-input-container>
-        <ion-label slot="label" tp-type="p14">Searchbar</ion-label>
-        <ion-searchbar
-          mode="md"
-          search-icon="./../../../../icons/tp-search.svg"
-          clear-icon="./../../../../icons/tp-x.svg"
-          placeholder="Lorem ipsum dolor"
-        ></ion-searchbar>
-      </tp-input-container>
-    </ion-item>
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Input</ion-label>
+          <ion-input
+            mode="md"
+            placeholder="Digite aqui"
+            clear-input="true"
+          ></ion-input>
+        </tp-input-container>
+      </ion-item>
 
-    <ion-item
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <tp-input-container>
-        <ion-label slot="label" tp-type="p14">Textarea</ion-label>
-        <ion-textarea
-          placeholder="Lorem ipsum, dolor sit amet consectetur."
-          mode="md"
-        ></ion-textarea>
-      </tp-input-container>
-    </ion-item>
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Searchbar</ion-label>
+          <ion-searchbar
+            mode="md"
+            search-icon="./../../../../icons/tp-search.svg"
+            clear-icon="./../../../../icons/tp-x.svg"
+            placeholder="Lorem ipsum dolor"
+          ></ion-searchbar>
+        </tp-input-container>
+      </ion-item>
+
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Textarea</ion-label>
+          <ion-textarea
+            placeholder="Lorem ipsum, dolor sit amet consectetur."
+            mode="md"
+          ></ion-textarea>
+        </tp-input-container>
+      </ion-item>
+    </ion-list>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

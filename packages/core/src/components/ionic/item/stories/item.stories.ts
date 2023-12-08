@@ -98,57 +98,59 @@ type Story = StoryObj<Components.IonItem & TpIonItem>;
 
 export const Default: Story = {
   render: ({ ...args }) => html`
-    <ion-item
-      color="${args.color}"
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-label>Ion Item</ion-label>
-    </ion-item>
+    <ion-list>
+      <ion-item
+        color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-label>Ion Item</ion-label>
+      </ion-item>
 
-    <ion-item
-      color="${args.color}"
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-icon slot="start" src="./icons/tp-star.svg"></ion-icon>
-      <ion-label>Ion Item</ion-label>
-    </ion-item>
+      <ion-item
+        color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-icon slot="start" src="./icons/tp-star.svg"></ion-icon>
+        <ion-label>Ion Item</ion-label>
+      </ion-item>
 
-    <ion-item
-      color="${args.color}"
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-label>Ion Item</ion-label>
-      <ion-icon slot="end" src="./icons/tp-star.svg"></ion-icon>
-    </ion-item>
+      <ion-item
+        color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-label>Ion Item</ion-label>
+        <ion-icon slot="end" src="./icons/tp-star.svg"></ion-icon>
+      </ion-item>
 
-    <ion-item
-      color="${args.color}"
-      lines="${args.lines}"
-      tp-gap="${args['tp-gap']}"
-      tp-spacingX="${args['tp-spacingx']}"
-      tp-spacingY="${args['tp-spacingy']}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-icon slot="start" src="./icons/tp-star.svg"></ion-icon>
-      <ion-label>Ion Item</ion-label>
-      <ion-icon slot="end" src="./icons/tp-star.svg"></ion-icon>
-    </ion-item>
+      <ion-item
+        color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-icon slot="start" src="./icons/tp-star.svg"></ion-icon>
+        <ion-label>Ion Item</ion-label>
+        <ion-icon slot="end" src="./icons/tp-star.svg"></ion-icon>
+      </ion-item>
+    </ion-list>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

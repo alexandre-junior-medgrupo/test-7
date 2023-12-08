@@ -104,33 +104,41 @@ type Story = StoryObj<Components.IonItem & TpIonItem>;
 
 export const Radio: Story = {
   render: ({ ...args }) => html`
-    <ion-radio-group>
-      <ion-item
-        .color="${args.color}"
-        lines="${args.lines}"
-        tp-gap="${args['tp-gap']}"
-        tp-spacingX="${args['tp-spacingx']}"
-        tp-spacingY="${args['tp-spacingy']}"
-        ?button="${args.button}"
-        ?disabled="${args.disabled}"
-      >
-        <ion-radio slot="start" aria-label></ion-radio>
-        <ion-label>Basic Item</ion-label>
-      </ion-item>
+    <ion-list>
+      <ion-radio-group>
+        <ion-item
+          .color="${args.color}"
+          lines="${args.lines}"
+          tp-gap="${args['tp-gap']}"
+          tp-spacingX="${args['tp-spacingx']}"
+          tp-spacingY="${args['tp-spacingy']}"
+          ?button="${args.button}"
+          ?disabled="${args.disabled}"
+        >
+        <ion-radio label-placement="start" justify="space-between">
+        <ion-text>
+          Lorem ipsum, dolor sit amet consectetur.
+        </ion-text>
+      </ion-radio>
+        </ion-item>
 
-      <ion-item
-        .color="${args.color}"
-        lines="${args.lines}"
-        tp-gap="${args['tp-gap']}"
-        tp-spacingX="${args['tp-spacingx']}"
-        tp-spacingY="${args['tp-spacingy']}"
-        ?button="${args.button}"
-        ?disabled="${args.disabled}"
-      >
-        <ion-label>Basic Item</ion-label>
-        <ion-radio slot="end" aria-label></ion-radio>
-      </ion-item>
-    </ion-radio-group>
+        <ion-item
+          .color="${args.color}"
+          lines="${args.lines}"
+          tp-gap="${args['tp-gap']}"
+          tp-spacingX="${args['tp-spacingx']}"
+          tp-spacingY="${args['tp-spacingy']}"
+          ?button="${args.button}"
+          ?disabled="${args.disabled}"
+        >
+          <ion-radio label-placement="end" justify="space-between">
+            <ion-text>
+              Lorem ipsum, dolor sit amet consectetur.
+            </ion-text>
+          </ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
