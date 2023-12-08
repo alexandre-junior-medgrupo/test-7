@@ -1,5 +1,5 @@
-import type { TpIonItemLines } from './list.enum';
+import type { TpIonListLines } from './list.enum';
 
-export type TpIonItem = {
-  lines: `${TpIonItemLines}`;
+export type TpIonList = {
+  lines: `${TpIonListLines}`;
 };
