@@ -12,7 +12,7 @@ export * from './components/ionic/badge/utils/badge.type';
 export * from './components/ionic/button/utils/button.type';
 export * from './components/ionic/checkbox/utils/checkbox.type';
 export * from './components/ionic/chip/utils/chip.type';
-export * from './components/ionic/fab-button/utils/fab-button.type';
+export * from './components/ionic/fab/utils/fab.type';
 export * from './components/ionic/icon/utils/icon.type';
 export * from './components/ionic/input/utils/input.type';
 export * from './components/ionic/item/utils/item.type';

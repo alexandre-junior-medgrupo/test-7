@@ -10,14 +10,14 @@ import {
 } from '@ionic/core/components/ion-fab-list';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonFab } from '../utils/fab-button.type';
+import { TpIonFab } from '../utils/fab.type';
 
 defineCustomElementFab();
 defineCustomElementFabList();
 defineCustomElementFabButton();
 
 const meta: Meta<Components.IonFab & IonFabButton & IonFabList & TpIonFab> = {
-  title: 'components/Ionic/Fab button',
+  title: 'components/Ionic/Fab',
   argTypes: {},
 };
 
@@ -53,6 +53,6 @@ export const Default: Story = {
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/ion-text/gi)).toBeTruthy();
+    expect(canvas.getByText(/ion-fab/gi)).toBeTruthy();
   }, */
 };
