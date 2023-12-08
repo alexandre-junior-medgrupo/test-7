@@ -73,7 +73,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonCheckbox & TpIonCheckbox & TpIonText>;
 
-export const Text: Story = {
+export const Label: Story = {
   render: ({ ...args }) => html`
     <ion-checkbox
       color="${args.color}"

@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property          | Attribute          | Description                                              | Type                                                                                                                                                | Default     |
@@ -11,18 +12,24 @@
 | `containerHeight` | `container-height` | Define a altura máxima da coluna.                        | `number`                                                                                                                                            | `200`       |
 | `disabled`        | `disabled`         | Define a estilização do estado disabled do componente.   | `boolean`                                                                                                                                           | `false`     |
 | `hasMarker`       | `has-marker`       | Define se o componente terá um marcador.                 | `boolean`                                                                                                                                           | `false`     |
+| `loading`         | `loading`          | Define o estado de carregamento do componente.           | `boolean`                                                                                                                                           | `undefined` |
 | `markerValue`     | `marker-value`     | Define a posição, em porcentagem, do marcador na coluna. | `number`                                                                                                                                            | `0`         |
 | `noLabel`         | `no-label`         | Define se o componente não terá rótulo.                  | `boolean`                                                                                                                                           | `false`     |
 
+
 ## CSS Custom Properties
 
-| Name                    | Description                                                                                         |
-| ----------------------- | --------------------------------------------------------------------------------------------------- |
-| `--tp-bar-value`        | Propriedade definida dinamicamente no tsx. Define o preenchimento da coluna em porcentagem.         |
-| `--tp-container-height` | Propriedade definida dinamicamente no tsx. Define a altura máxima da coluna.                        |
-| `--tp-marker-color`     | Define a cor do marcador.                                                                           |
-| `--tp-marker-value`     | Propriedade definida dinamicamente no tsx. Define a posição, em porcentagem, do marcador na coluna. |
+| Name                           | Description                                                                                         |
+| ------------------------------ | --------------------------------------------------------------------------------------------------- |
+| `--tp-bar-value`               | Propriedade definida dinamicamente no tsx. Define o preenchimento da coluna em porcentagem.         |
+| `--tp-container-height`        | Propriedade definida dinamicamente no tsx. Define a altura máxima da coluna.                        |
+| `--tp-marker-color`            | Define a cor do marcador.                                                                           |
+| `--tp-marker-value`            | Propriedade definida dinamicamente no tsx. Define a posição, em porcentagem, do marcador na coluna. |
+| `--tp-skeleton-background-rgb` | Define o background rgb do skeleton do componente.                                                  |
+| `--tp-skeleton-height`         | Define a altura do skeleton do componente.                                                          |
+| `--tp-skeleton-width`          | Define a largura do skeleton do componente.                                                         |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

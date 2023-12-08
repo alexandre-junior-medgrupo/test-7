@@ -1,7 +1,9 @@
 import { Components } from '@ionic/core';
-import { IonButton } from '@ionic/core/components/ion-button';
+import {
+  IonButton,
+  defineCustomElement as defineCustomElementButton,
+} from '@ionic/core/components/ion-button';
 import { defineCustomElement as defineCustomElementToast } from '@ionic/core/components/ion-toast';
-import { defineCustomElement as defineCustomElementButton } from '@ionic/core/components/ion-button';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpIonToast } from './toast.type';
@@ -66,7 +68,7 @@ const meta: Meta<Components.IonToast & TpIonToast & IonButton> = {
   },
   args: {
     duration: 3000,
-    message: 'Lorem ipsum, dolor sit amet',
+    message: 'Este toast desaparecerá em 3 segundos',
     icon: './icons/tp-star.svg',
   },
 };

@@ -1,9 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/web-components';
+import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import { withActions } from '@storybook/addon-actions/decorator';
+import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
+import { TpRateLike } from './rate-like';
 import { TP_RATE_LIKE } from './rate-like.constant';
 
-const meta: Meta = {
+defineCustomElementSkeletonText();
+
+const meta: Meta<TpRateLike> = {
   component: 'TpRateLike',
   title: 'components/Templarios/Rate like',
   decorators: [withActions as any],
@@ -26,6 +30,18 @@ const meta: Meta = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado loading do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
 };
 
@@ -35,7 +51,10 @@ type Story = StoryObj;
 
 export const Default: Story = {
   render: ({ ...args }) => {
-    return html`<tp-rate-like status=${args.status}></tp-rate-like>`;
+    return html`<tp-rate-like
+      status=${args.status}
+      ?loading="${args.loading}"
+    ></tp-rate-like>`;
   },
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

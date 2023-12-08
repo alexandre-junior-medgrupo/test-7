@@ -46,6 +46,10 @@ export namespace Components {
          */
         "height": number;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define se o componente irá apresentar rótulo ou não.
          */
         "noLabel": boolean;
@@ -79,6 +83,10 @@ export namespace Components {
           * Define se o componente terá um marcador.
          */
         "hasMarker": boolean;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
         /**
           * Define a posição, em porcentagem, do marcador na coluna.
          */
@@ -118,13 +126,13 @@ export namespace Components {
     }
     interface TpRateLike {
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define o status do componente.
          */
         "status"?: TpRateLikeType['status'];
-    }
-    interface TpTest {
-        "color"?: TpColor;
-        "icon"?: string;
     }
 }
 export interface TpRateLikeCustomEvent<T> extends CustomEvent<T> {
@@ -179,12 +187,6 @@ declare global {
         prototype: HTMLTpRateLikeElement;
         new (): HTMLTpRateLikeElement;
     };
-    interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
-    }
-    var HTMLTpTestElement: {
-        prototype: HTMLTpTestElement;
-        new (): HTMLTpTestElement;
-    };
     interface HTMLElementTagNameMap {
         "tp-alert": HTMLTpAlertElement;
         "tp-chart-bar": HTMLTpChartBarElement;
@@ -192,7 +194,6 @@ declare global {
         "tp-horizontal-chart-bar": HTMLTpHorizontalChartBarElement;
         "tp-input-container": HTMLTpInputContainerElement;
         "tp-rate-like": HTMLTpRateLikeElement;
-        "tp-test": HTMLTpTestElement;
     }
 }
 declare namespace LocalJSX {
@@ -228,6 +229,10 @@ declare namespace LocalJSX {
          */
         "height"?: number;
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Define se o componente irá apresentar rótulo ou não.
          */
         "noLabel"?: boolean;
@@ -261,6 +266,10 @@ declare namespace LocalJSX {
           * Define se o componente terá um marcador.
          */
         "hasMarker"?: boolean;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
         /**
           * Define a posição, em porcentagem, do marcador na coluna.
          */
@@ -300,6 +309,10 @@ declare namespace LocalJSX {
     }
     interface TpRateLike {
         /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
           * Emitido quando a propriedade status é alterada.
          */
         "onTpChange"?: (event: TpRateLikeCustomEvent<TpRateLikeType['status']>) => void;
@@ -308,10 +321,6 @@ declare namespace LocalJSX {
          */
         "status"?: TpRateLikeType['status'];
     }
-    interface TpTest {
-        "color"?: TpColor;
-        "icon"?: string;
-    }
     interface IntrinsicElements {
         "tp-alert": TpAlert;
         "tp-chart-bar": TpChartBar;
@@ -319,7 +328,6 @@ declare namespace LocalJSX {
         "tp-horizontal-chart-bar": TpHorizontalChartBar;
         "tp-input-container": TpInputContainer;
         "tp-rate-like": TpRateLike;
-        "tp-test": TpTest;
     }
 }
 export { LocalJSX as JSX };
@@ -332,7 +340,6 @@ declare module "@stencil/core" {
             "tp-horizontal-chart-bar": LocalJSX.TpHorizontalChartBar & JSXBase.HTMLAttributes<HTMLTpHorizontalChartBarElement>;
             "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
-            "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
     }
 }

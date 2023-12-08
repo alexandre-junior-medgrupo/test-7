@@ -44,6 +44,11 @@ export class TpComparisonChartBar {
    */
   @Prop({ reflect: true }) noLabel = false;
 
+  /**
+   * Define o estado de carregamento do componente.
+   */
+  @Prop({ reflect: true, mutable: true }) loading?: boolean;
+
   render() {
     const {
       color,
@@ -53,7 +58,50 @@ export class TpComparisonChartBar {
       markerValue,
       noLabel,
       disabled,
+      loading,
     } = this;
+
+    let content;
+
+    if (loading) {
+      content = (
+        <div>
+          <div class="tp-comparison-chart-bar__container">
+            <ion-skeleton-text
+              class="tp-comparison-chart-bar__skeleton"
+              animated
+            ></ion-skeleton-text>
+            {hasMarker && (
+              <ion-skeleton-text
+                class="tp-comparison-chart-bar__marker-skeleton"
+                animated
+              ></ion-skeleton-text>
+            )}
+          </div>
+          {!noLabel && (
+            <ion-skeleton-text
+              class="tp-comparison-chart-bar__label-skeleton"
+              animated
+            ></ion-skeleton-text>
+          )}
+        </div>
+      );
+    } else {
+      content = (
+        <div>
+          <div class="tp-comparison-chart-bar__container">
+            <div class="tp-comparison-chart-bar__bar"></div>
+            {hasMarker && <div class="tp-comparison-chart-bar__marker"></div>}
+          </div>
+
+          {!noLabel && (
+            <div class="tp-comparison-chart-bar__label">
+              <slot></slot>
+            </div>
+          )}
+        </div>
+      );
+    }
 
     return (
       <Host
@@ -61,6 +109,7 @@ export class TpComparisonChartBar {
           'tp-comparison-chart-bar': true,
           'tp-comparison-chart-bar--disabled': disabled,
           'tp-comparison-chart-bar--has-marker': hasMarker,
+          'tp-comparison-chart-bar--loading': loading,
         })}
         style={{
           '--tp-container-height': `${containerHeight}px`,
@@ -68,16 +117,7 @@ export class TpComparisonChartBar {
           '--tp-marker-value': `${markerValue}%`,
         }}
       >
-        <div class="tp-comparison-chart-bar__container">
-          <div class="tp-comparison-chart-bar__bar"></div>
-          {hasMarker && <div class="tp-comparison-chart-bar__marker"></div>}
-        </div>
-
-        {!noLabel && (
-          <div class="tp-comparison-chart-bar__label">
-            <slot></slot>
-          </div>
-        )}
+        {content}
       </Host>
     );
   }

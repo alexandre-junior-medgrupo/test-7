@@ -1,8 +1,12 @@
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
+import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpComparisonChartBar } from '../comparison-chart-bar';
 
 // antigo tp-chart-bar
+defineCustomElementLabel();
+defineCustomElementSkeletonText();
 
 const meta: Meta<TpComparisonChartBar> = {
   title: 'components/Templarios/Comparison-Chart-bar/Compositions',
@@ -67,6 +71,18 @@ const meta: Meta<TpComparisonChartBar> = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado loading do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
   args: {
     containerHeight: 200,
@@ -90,6 +106,7 @@ export const Label: Story = {
       ?has-marker="${args.hasMarker}"
       marker-value="${args.markerValue}"
       ?disabled="${args.disabled}"
+      ?loading="${args.loading}"
     >
       <ion-label tp-type="p10" color="neutral-95">Label</ion-label>
     </tp-comparison-chart-bar>

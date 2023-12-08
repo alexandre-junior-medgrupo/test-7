@@ -1,0 +1,31 @@
+import { Canvas, Controls, Meta } from '@storybook/blocks';
+import * as alertStories from './alert.stories';
+import * as alertCustomStories from './compositions/custom.stories';
+
+<Meta of={alertStories} />
+
+# tp-alert
+
+## Types
+
+```ts
+import { TpAlertType } from '..';
+```
+
+## Enums
+
+```ts
+import { TpAlertState } from '..';
+```
+
+## Atributos
+
+<Canvas of={alertStories.Default} />
+
+<Controls of={alertStories.Default} />
+
+## Compositions
+
+<Canvas of={alertCustomStories.Custom} />
+
+<Controls of={alertCustomStories.Custom} />

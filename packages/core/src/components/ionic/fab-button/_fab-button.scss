@@ -1,0 +1,14 @@
+ion-fab-button {
+  --background: var(--tp-color-brand);
+  width: 48px;
+  height: 48px;
+}
+
+//
+// color
+//
+ion-fab-button.ion-color {
+  ion-icon {
+    --stroke: var(--ion-color-contrast);
+  }
+}

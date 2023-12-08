@@ -1,8 +1,12 @@
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
+import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpChartBar } from '../chart-bar';
 
 // antigo med-chart-bar
+defineCustomElementLabel();
+defineCustomElementSkeletonText();
 
 const meta: Meta<TpChartBar> = {
   title: 'components/Templarios/Chart-bar/Compositions',
@@ -43,6 +47,18 @@ const meta: Meta<TpChartBar> = {
         },
       },
     },
+    loading: {
+      control: 'boolean',
+      description: 'Define a estilização do estado loading do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
   },
   args: {
     value: 0,
@@ -62,6 +78,7 @@ export const Label: Story = {
       value="${args.value}"
       width="${args.width}"
       height="${args.height}"
+      ?loading="${args.loading}"
     >
       <ion-label tp-type="p12b"> ${args.value}% </ion-label>
     </tp-chart-bar>

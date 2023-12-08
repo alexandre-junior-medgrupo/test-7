@@ -1,5 +1,5 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement as defineCustomElementTabs } from '@ionic/core/components/ion-tabs';
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import {
   defineCustomElement as defineCustomElementTabBar,
   IonTabBar,
@@ -8,6 +8,7 @@ import {
   defineCustomElement as defineCustomElementTabButton,
   IonTabButton,
 } from '@ionic/core/components/ion-tab-button';
+import { defineCustomElement as defineCustomElementTabs } from '@ionic/core/components/ion-tabs';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpIonTabBar } from './tab-bar.type';
@@ -15,6 +16,7 @@ import { TpIonTabBar } from './tab-bar.type';
 defineCustomElementTabs();
 defineCustomElementTabBar();
 defineCustomElementTabButton();
+defineCustomElementLabel();
 
 const meta: Meta<Components.IonTabs & IonTabBar & IonTabButton & TpIonTabBar> =
   {
