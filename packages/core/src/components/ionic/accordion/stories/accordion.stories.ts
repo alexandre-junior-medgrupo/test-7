@@ -120,8 +120,8 @@ export const Default: Story = {
           value="first"
           toggle-icon="./icons/tp-chevron-down.svg"
           tp-color=${args['tp-color']}
-          tp-spacingx="${args['tp-spacingx']}"
-          tp-spacingy="${args['tp-spacingy']}"
+          tp-spacingx=${args['tp-spacingx']}
+          tp-spacingy=${args['tp-spacingy']}
         >
           <ion-item
             slot="header"
@@ -184,8 +184,6 @@ export const Default: Story = {
           mode="md"
           value="first"
           toggle-icon="./icons/tp-chevron-down.svg"
-          tp-spacingx="${args['tp-spacingx']}"
-          tp-spacingy="${args['tp-spacingy']}"
         >
           <ion-item
             slot="header"
