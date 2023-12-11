@@ -14,7 +14,7 @@
   - toast
   - tabs
 
-- Verificar
+- Verificar sobre spacings no accordion
 
 ## Alan
 
