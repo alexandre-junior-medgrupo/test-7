@@ -72,7 +72,7 @@ export namespace Components {
          */
         "color"?: TpColor;
         /**
-          * Define a altura máxima do componente.
+          * Define a altura do componente.
          */
         "containerHeight": number;
         /**
@@ -259,7 +259,7 @@ declare namespace LocalJSX {
          */
         "color"?: TpColor;
         /**
-          * Define a altura máxima do componente.
+          * Define a altura do componente.
          */
         "containerHeight"?: number;
         /**

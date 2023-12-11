@@ -16,7 +16,7 @@ const meta: Meta<TpComparisonChartBar> = {
   argTypes: {
     containerHeight: {
       control: { type: 'number', min: 1 },
-      description: 'Define a altura máxima da coluna.',
+      description: 'Define a altura do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',

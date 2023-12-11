@@ -15,7 +15,7 @@ export class TpComparisonChartBar {
   @Prop({ reflect: true }) color?: TpColor;
 
   /**
-   * Define a altura máxima do componente.
+   * Define a altura do componente.
    */
   @Prop({ reflect: true }) containerHeight = 200;
 
