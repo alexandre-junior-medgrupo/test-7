@@ -7,11 +7,11 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
 import { TpAlertType } from "./components/templarios/alert/alert.type";
-import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
+import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
 import { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
 export { TpAlertType } from "./components/templarios/alert/alert.type";
-export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
+export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
 export { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export namespace Components {
     interface TpAlert {
@@ -106,11 +106,11 @@ export namespace Components {
          */
         "loading"?: boolean;
         /**
-          * Define o valor que value deve atingir para apresentar 100% de progresso.
+          * Define o valor máximo da barra de progresso.
          */
         "maxCount": number;
         /**
-          * Define se um slot será disponibilizado para receber um rótulo.
+          * Define se um slot será disponibilizado para receber o label do chart.
          */
         "noLabel": boolean;
         /**
@@ -118,7 +118,7 @@ export namespace Components {
          */
         "size"?: TpHorizontalChartBarSize;
         /**
-          * Define o valor representado pelo componente.
+          * Define o valor da barra de progresso.
          */
         "value": number;
     }
@@ -293,11 +293,11 @@ declare namespace LocalJSX {
          */
         "loading"?: boolean;
         /**
-          * Define o valor que value deve atingir para apresentar 100% de progresso.
+          * Define o valor máximo da barra de progresso.
          */
         "maxCount"?: number;
         /**
-          * Define se um slot será disponibilizado para receber um rótulo.
+          * Define se um slot será disponibilizado para receber o label do chart.
          */
         "noLabel"?: boolean;
         /**
@@ -305,7 +305,7 @@ declare namespace LocalJSX {
          */
         "size"?: TpHorizontalChartBarSize;
         /**
-          * Define o valor representado pelo componente.
+          * Define o valor da barra de progresso.
          */
         "value"?: number;
     }
