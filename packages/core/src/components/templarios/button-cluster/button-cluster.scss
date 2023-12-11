@@ -1,0 +1,43 @@
+:host {
+  cursor: pointer;
+}
+
+.tp-button-cluster {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4px;
+  }
+
+  &__icon {
+    --stroke: var(--tp-color-brand-4);
+    width: 16px;
+    height: 16px;
+  }
+}
+
+::slotted([slot="expand-text"]) {
+  margin-bottom: 4px !important;
+  color: var(--tp-color-brand-4);
+}
+
+::slotted([slot="collapse-text"]) {
+  margin-top: 4px !important;
+  color: var(--tp-color-brand-4);
+}
+
+//
+// color
+//
+:host(.tp-color) {
+  .tp-button-cluster__icon {
+    --stroke: var(--tp-color-base);
+  }
+
+  ::slotted([slot="expand-text"]) ,
+  ::slotted([slot="collapse-text"]) {
+    color: var(--tp-color-base);
+  }
+}
