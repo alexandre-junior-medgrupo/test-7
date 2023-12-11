@@ -96,6 +96,10 @@ export namespace Components {
     }
     interface TpInputContainer {
         /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
           * Define a variação de estado do componente.
          */
         "state"?: 'error' | 'success';
@@ -249,6 +253,10 @@ declare namespace LocalJSX {
         "noLabel"?: boolean;
     }
     interface TpInputContainer {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
         /**
           * Define a variação de estado do componente.
          */

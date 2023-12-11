@@ -2058,7 +2058,7 @@ ion-fab-list ion-icon {
 }
 
 ion-input.sc-ion-input-md-h {
-  --background: var(--tp-color-neutral-2);
+  --background: transparent;
   --border-radius: 8px;
   --color: var(--tp-color-neutral-10);
   --highlight-color-focused: var(--tp-color-neutral-10);
@@ -2092,53 +2092,8 @@ ion-input.sc-ion-input-md-h .input-clear-icon ion-icon.sc-ion-input-md {
   fill: var(--tp-color-neutral-6);
 }
 
-ion-input:hover:not([disabled]) {
-  --background: var(--tp-color-neutral-3);
-}
-
-ion-input.has-focus .input-wrapper {
-  border: 1px solid var(--tp-color-neutral-3);
-}
-
 ion-input.sc-ion-input-md-h.input-disabled {
   opacity: 0.5;
-}
-
-ion-input.ion-color {
-  --background: var(--ion-color-base);
-  --color: var(--ion-color-contrast);
-  --highlight-color-focused: var(--ion-color-contrast) !important;
-  --placeholder-color: var(--ion-color-contrast);
-}
-ion-input.ion-color .input-clear-icon ion-icon.sc-ion-input-md {
-  fill: var(--ion-color-contrast);
-}
-ion-input.ion-color:hover:not([disabled]) {
-  --background: var(--ion-color-tint);
-}
-ion-input.ion-color.has-focus .input-wrapper {
-  border: 1px solid var(--ion-color-tint);
-}
-
-ion-input.ion-invalid .input-wrapper {
-  border: 1px solid var(--tp-color-warning);
-}
-ion-input.ion-invalid .input-bottom {
-  --border-width: initial;
-  --border-color: transparent;
-  --border-style: initial;
-}
-ion-input.ion-invalid .input-bottom .error-text {
-  --highlight-color-invalid: var(--tp-color-warning);
-}
-
-ion-input.ion-valid .input-wrapper {
-  border: 1px solid var(--tp-color-success);
-}
-ion-input.ion-valid .input-bottom {
-  --border-width: initial;
-  --border-color: transparent;
-  --border-style: initial;
 }
 
 /* stylelint-disable selector-max-compound-selectors */

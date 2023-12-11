@@ -6,7 +6,7 @@ import { TpIonInput } from '../utils/input.type';
 
 defineCustomElement();
 
-const meta: Meta<Components.IonInput & TpIonInput> = {
+const meta: Meta<Components.IonInput & TpIonInput & any> = {
   title: 'components/Ionic/Input',
   argTypes: {
     clearInput: {
@@ -34,24 +34,43 @@ const meta: Meta<Components.IonInput & TpIonInput> = {
         },
       },
     },
+    state: {
+      control: { type: 'select' },
+      options: ['error', 'success'],
+      description: 'Define o espaçamento entre os slots do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: ['error', '|', 'success'],
+        },
+      },
+    },
   },
 };
 
 export default meta;
 
-type Story = StoryObj<Components.IonInput & TpIonInput>;
+type Story = StoryObj<Components.IonInput & TpIonInput & any>;
 
-export const Default: Story = {
+export const States: Story = {
   render: ({ ...args }) => {
     return html`
-    <tp-input-container color="${args.color}">
-      <ion-label slot="label" tp-type="p14">Descrição Input</ion-label>
+    <tp-input-container state="${args.state}">
       <ion-input
         mode="md"
         placeholder="Digite aqui"
+        color="${args.color}"
         ?disabled="${args.disabled}"
         ?clear-input="${args.clearInput}"
       ></ion-input>
+      <ion-label slot="feedback-error" tp-type="p14"
+      >*Caracteres invalidos</ion-label
+    >
+    <ion-label slot="feedback-success" tp-type="p14"
+      >*Caracteres validos</ion-label
+    >
     </tp-input-container>
     `;
   },
