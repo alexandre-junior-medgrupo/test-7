@@ -8,8 +8,6 @@ import {
 } from '@stencil/core';
 import { createColorClasses } from '../../../utils/functions/color.function';
 import type { TpColor } from '../../../utils/types/color.type';
-import { TpButtonClusterType } from './utils/button-cluster.type';
-import { TpButtonClusterState } from './utils/button-cluster.enum';
 
 @Component({
   tag: 'tp-button-cluster',
@@ -28,7 +26,7 @@ export class TpButtonCluster {
   /**
    * Define a variação de estado do componente.
    */
-  @Prop({ reflect: true, mutable: true }) state?: TpButtonClusterType['state'];
+  @Prop({ reflect: true, mutable: true }) collapsed = true;
 
   /**
    * Define o estado de carregamento do componente.
@@ -38,17 +36,25 @@ export class TpButtonCluster {
   @Method()
   async toggle(event?: Event) {
     event?.stopPropagation();
-    // this.collapsed = !this.collapsed;
-    this.state = this.state === TpButtonClusterState.EXPANDED ? TpButtonClusterState.COLLAPSED : TpButtonClusterState.EXPANDED;
+    this.collapsed = !this.collapsed;
   }
 
   render() {
-    const { arrowIcon, color, loading, state } = this;
+    const { arrowIcon, collapsed, color, loading } = this;
 
     let content;
 
     if (loading) {
-      content = <h1>loading</h1>;
+      content = <div class="tp-button-cluster__container">
+        <ion-skeleton-text
+          class="tp-button-cluster__skeleton-text"
+          animated
+        ></ion-skeleton-text>
+        <ion-skeleton-text
+          class="tp-button-cluster__skeleton-icon"
+          animated
+        ></ion-skeleton-text>
+      </div>;
     } else {
       content = <div class="tp-button-cluster__container"
         onClick={(event: any) => { this.toggle(event) }}>
@@ -64,8 +70,7 @@ export class TpButtonCluster {
 
     return <Host class={createColorClasses(color, {
       'tp-button-cluster': true,
-      'tp-comparison-chart-bar--expanded': state === TpButtonClusterState.EXPANDED,
-      'tp-comparison-chart-bar--collapsed': state === TpButtonClusterState.COLLAPSED,
+      'tp-button-cluster--collapsed': collapsed,
     })}>
       {content}
     </Host>;
