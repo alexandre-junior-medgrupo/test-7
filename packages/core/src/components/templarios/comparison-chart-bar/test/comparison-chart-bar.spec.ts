@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { TpComparisonChartBar } from './comparison-chart-bar';
+import { TpComparisonChartBar } from '../comparison-chart-bar';
 
 describe('tp-comparison-chart-bar', () => {
   it('renders', async () => {

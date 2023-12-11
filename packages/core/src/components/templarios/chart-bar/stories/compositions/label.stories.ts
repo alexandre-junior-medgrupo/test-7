@@ -2,18 +2,21 @@ import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/com
 import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpChartBar } from '../chart-bar';
+import { TpChartBar } from '../../chart-bar';
 
-// antigo med-chart-bar
 defineCustomElementLabel();
 defineCustomElementSkeletonText();
 
+//
+// !IMPORTANT! Antigo med-chart-bar
+//
+
 const meta: Meta<TpChartBar> = {
-  title: 'components/Templarios/Chart-bar/Compositions',
+  title: 'components/Templarios/Chart Bar/Compositions',
   argTypes: {
     value: {
       control: { type: 'range', min: 0, max: 100, step: 1 },
-      description: `Define o valor do preenchimento do componente.`,
+      description: 'Define o valor da barra de progresso.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -24,8 +27,8 @@ const meta: Meta<TpChartBar> = {
       },
     },
     width: {
-      control: { type: 'number', min: 1 },
-      description: `Define a largura do componente.`,
+      control: { type: 'number' },
+      description: 'Define a largura do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -37,7 +40,7 @@ const meta: Meta<TpChartBar> = {
     },
     height: {
       control: { type: 'number', min: 1 },
-      description: `Define a altura do componente.`,
+      description: 'Define a altura do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',

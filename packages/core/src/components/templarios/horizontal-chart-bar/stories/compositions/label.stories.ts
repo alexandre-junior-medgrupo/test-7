@@ -1,16 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpHorizontalChartBar } from '../horizontal-chart-bar';
-import { TP_HORIZONTAL_CHART_BAR } from '../horizontal-chart-bar.constant';
+import { TpHorizontalChartBar } from '../../horizontal-chart-bar';
+import { TP_HORIZONTAL_CHART_BAR } from '../../utils/horizontal-chart-bar.constant';
 
-// antigo med-chart-bar-horizontal
+//
+// !IMPORTANT! med-chart-bar-horizontal
+//
 
 const meta: Meta<TpHorizontalChartBar> = {
   title: 'components/Templarios/Horizontal-Chart-bar/Compositions',
   argTypes: {
     value: {
       control: { type: 'range', min: 0, max: 150, step: 1 },
-      description: `Define o valor representado pelo componente. Representa uma porcentagem por padrão. Representa uma contagem se isCount tem valor true e maxCount recebe um valor.`,
+      description: 'Define o valor da barra de progresso.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -22,7 +24,7 @@ const meta: Meta<TpHorizontalChartBar> = {
     },
     maxCount: {
       control: { type: 'number', min: 1, max: 150 },
-      description: `Define a contagem máxima se o componente representa uma contagem.`,
+      description: 'Define o valor máximo da barra de progresso.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -33,7 +35,7 @@ const meta: Meta<TpHorizontalChartBar> = {
       },
     },
     size: {
-      control: { type: 'select' },
+      control: { type: 'check' },
       options: [...TP_HORIZONTAL_CHART_BAR['sizes']],
       description: 'Define o tamanho do componente.',
       table: {

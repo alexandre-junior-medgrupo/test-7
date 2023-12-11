@@ -1,5 +1,5 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
-import * as chartBarStories from './chart-bar.stories';
+import * as chartBarStories from '../stories/chart-bar.stories';
 import * as chartBarLabelStories from './compositions/label.stories';
 
 <Meta of={chartBarStories} />
@@ -15,11 +15,9 @@ import { TpChartBar } from '..';
 ## Atributos
 
 <Canvas of={chartBarStories.Default} />
-
 <Controls of={chartBarStories.Default} />
 
 ## Compositions
 
 <Canvas of={chartBarLabelStories.Label} />
-
 <Controls of={chartBarLabelStories.Label} />

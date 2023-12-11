@@ -2,18 +2,21 @@ import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/com
 import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpComparisonChartBar } from '../comparison-chart-bar';
+import { TpComparisonChartBar } from '../../comparison-chart-bar';
 
-// antigo tp-chart-bar
 defineCustomElementLabel();
 defineCustomElementSkeletonText();
 
+//
+// !IMPORTANT! Antigo tp-chart-bar
+//
+
 const meta: Meta<TpComparisonChartBar> = {
-  title: 'components/Templarios/Comparison-Chart-bar/Compositions',
+  title: 'components/Templarios/Comparison Chart Bar/Compositions',
   argTypes: {
     containerHeight: {
       control: { type: 'number', min: 1 },
-      description: `Define a altura máxima da coluna.`,
+      description: 'Define a altura do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -25,7 +28,7 @@ const meta: Meta<TpComparisonChartBar> = {
     },
     barValue: {
       control: { type: 'range', min: 0, max: 100, step: 1 },
-      description: `Define o preenchimento da coluna em porcentagem.`,
+      description: 'Define o valor da barra de progresso.',
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -37,7 +40,7 @@ const meta: Meta<TpComparisonChartBar> = {
     },
     hasMarker: {
       control: 'boolean',
-      description: 'Define se o componente terá um marcador.',
+      description: "Se 'true' o componente vai renderizar o marker.",
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -49,7 +52,7 @@ const meta: Meta<TpComparisonChartBar> = {
     },
     markerValue: {
       control: { type: 'range', min: 0, max: 100, step: 1 },
-      description: `Define a posição, em porcentagem, do marcador na coluna.`,
+      description: 'Define a posição do marker na coluna.',
       table: {
         defaultValue: {
           summary: 'undefined',

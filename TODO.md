@@ -9,11 +9,19 @@
 
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
-- Trazer breakpoints do antigo
+- Trazer breakpoints do antigo (mixin)
+
   - toast
   - tabs
 
-## Componente que não são mais usados no MEDSoft
+- Verificar
+
+## Alan
+
+- Refatorar alert;
+- Verificar `defineCustomElement` das estorias;
+
+## Componentes que não são mais usados no MEDSoft
 
 - Button cluster (med-agrupador)
 - Nav container (med-nav-item)

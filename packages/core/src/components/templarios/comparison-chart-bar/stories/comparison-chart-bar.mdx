@@ -1,5 +1,5 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
-import * as comparisonChartBarStories from './comparison-chart-bar.stories';
+import * as comparisonChartBarStories from '../stories/comparison-chart-bar.stories';
 import * as comparisonChartBarLabelStories from './compositions/label.stories';
 
 <Meta of={comparisonChartBarStories} />
@@ -12,20 +12,18 @@ import * as comparisonChartBarLabelStories from './compositions/label.stories';
 import { TpComparisonChartBar } from '..';
 ```
 
-## CSS custom properties
+## CSS Custom Properties
 
-```css
---tp-marker-color: Define a cor do marcador;
+```
+--tp-marker-color: Define a cor do marcador.
 ```
 
 ## Atributos
 
 <Canvas of={comparisonChartBarStories.Default} />
-
 <Controls of={comparisonChartBarStories.Default} />
 
 ## Compositions
 
 <Canvas of={comparisonChartBarLabelStories.Label} />
-
 <Controls of={comparisonChartBarLabelStories.Label} />

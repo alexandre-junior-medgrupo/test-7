@@ -1,7 +1,7 @@
 import { Component, Host, Prop, h } from '@stencil/core';
 import { createColorClasses } from '../../../utils/functions/color.function';
 import type { TpColor } from '../../../utils/types/color.type';
-import { TpHorizontalChartBarSize } from './horizontal-chart-bar.enum';
+import { TpHorizontalChartBarSize } from './utils/horizontal-chart-bar.enum';
 
 @Component({
   tag: 'tp-horizontal-chart-bar',
@@ -21,17 +21,17 @@ export class TpHorizontalChartBar {
   @Prop({ reflect: true }) size?: TpHorizontalChartBarSize;
 
   /**
-   * Define o valor representado pelo componente.
+   * Define o valor da barra de progresso.
    */
   @Prop({ reflect: true }) value = 0;
 
   /**
-   * Define o valor que value deve atingir para apresentar 100% de progresso.
+   * Define o valor máximo da barra de progresso.
    */
   @Prop({ reflect: true }) maxCount = 100;
 
   /**
-   * Define se um slot será disponibilizado para receber um rótulo.
+   * Define se um slot será disponibilizado para receber o label do chart.
    */
   @Prop({ reflect: true }) noLabel = false;
 

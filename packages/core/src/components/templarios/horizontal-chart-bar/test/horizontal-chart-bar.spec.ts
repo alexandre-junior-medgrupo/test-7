@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { TpHorizontalChartBar } from './horizontal-chart-bar';
+import { TpHorizontalChartBar } from '../horizontal-chart-bar';
 
 describe('tp-horizontal-chart-bar', () => {
   it('renders', async () => {
