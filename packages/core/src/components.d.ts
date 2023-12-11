@@ -7,9 +7,11 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
 import { TpAlertType } from "./components/templarios/alert/alert.type";
+import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
 import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
 export { TpAlertType } from "./components/templarios/alert/alert.type";
+export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
 export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export namespace Components {
     interface TpAlert {
@@ -94,6 +96,32 @@ export namespace Components {
          */
         "noLabel": boolean;
     }
+    interface TpHorizontalChartBar {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
+          * Define o valor que value deve atingir para apresentar 100% de progresso.
+         */
+        "maxCount": number;
+        /**
+          * Define se um slot será disponibilizado para receber um rótulo.
+         */
+        "noLabel": boolean;
+        /**
+          * Define a variação de tamanho do componente.
+         */
+        "size"?: TpHorizontalChartBarSize;
+        /**
+          * Define o valor representado pelo componente.
+         */
+        "value": number;
+    }
     interface TpInputContainer {
         /**
           * Define a variação de estado do componente.
@@ -134,6 +162,12 @@ declare global {
         prototype: HTMLTpComparisonChartBarElement;
         new (): HTMLTpComparisonChartBarElement;
     };
+    interface HTMLTpHorizontalChartBarElement extends Components.TpHorizontalChartBar, HTMLStencilElement {
+    }
+    var HTMLTpHorizontalChartBarElement: {
+        prototype: HTMLTpHorizontalChartBarElement;
+        new (): HTMLTpHorizontalChartBarElement;
+    };
     interface HTMLTpInputContainerElement extends Components.TpInputContainer, HTMLStencilElement {
     }
     var HTMLTpInputContainerElement: {
@@ -161,6 +195,7 @@ declare global {
         "tp-alert": HTMLTpAlertElement;
         "tp-chart-bar": HTMLTpChartBarElement;
         "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
+        "tp-horizontal-chart-bar": HTMLTpHorizontalChartBarElement;
         "tp-input-container": HTMLTpInputContainerElement;
         "tp-rate-like": HTMLTpRateLikeElement;
     }
@@ -248,6 +283,32 @@ declare namespace LocalJSX {
          */
         "noLabel"?: boolean;
     }
+    interface TpHorizontalChartBar {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
+          * Define o valor que value deve atingir para apresentar 100% de progresso.
+         */
+        "maxCount"?: number;
+        /**
+          * Define se um slot será disponibilizado para receber um rótulo.
+         */
+        "noLabel"?: boolean;
+        /**
+          * Define a variação de tamanho do componente.
+         */
+        "size"?: TpHorizontalChartBarSize;
+        /**
+          * Define o valor representado pelo componente.
+         */
+        "value"?: number;
+    }
     interface TpInputContainer {
         /**
           * Define a variação de estado do componente.
@@ -272,6 +333,7 @@ declare namespace LocalJSX {
         "tp-alert": TpAlert;
         "tp-chart-bar": TpChartBar;
         "tp-comparison-chart-bar": TpComparisonChartBar;
+        "tp-horizontal-chart-bar": TpHorizontalChartBar;
         "tp-input-container": TpInputContainer;
         "tp-rate-like": TpRateLike;
     }
@@ -283,6 +345,7 @@ declare module "@stencil/core" {
             "tp-alert": LocalJSX.TpAlert & JSXBase.HTMLAttributes<HTMLTpAlertElement>;
             "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
             "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
+            "tp-horizontal-chart-bar": LocalJSX.TpHorizontalChartBar & JSXBase.HTMLAttributes<HTMLTpHorizontalChartBarElement>;
             "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
         }
