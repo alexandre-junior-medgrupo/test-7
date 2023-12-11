@@ -13,4 +13,5 @@
 
 ## Componente que não são mais usados no MEDSoft
 
+- Button cluster (med-agrupador)
 - Nav container (med-nav-item)
