@@ -47,7 +47,7 @@
 }
 
 //
-// state
+// collapsed
 //
 :host(.tp-button-cluster--collapsed) {
   ::slotted([slot="expand-text"]) {
@@ -61,6 +61,13 @@
   .tp-button-cluster__icon {
     transform: rotate(0deg);
   }
+}
+
+//
+// loading
+//
+:host(.tp-button-cluster--loading) {
+  pointer-events: none;
 }
 
 //

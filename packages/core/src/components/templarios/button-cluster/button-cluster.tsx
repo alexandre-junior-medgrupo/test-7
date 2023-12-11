@@ -71,6 +71,7 @@ export class TpButtonCluster {
     return <Host class={createColorClasses(color, {
       'tp-button-cluster': true,
       'tp-button-cluster--collapsed': collapsed,
+      'tp-button-cluster--loading': loading,
     })}>
       {content}
     </Host>;
