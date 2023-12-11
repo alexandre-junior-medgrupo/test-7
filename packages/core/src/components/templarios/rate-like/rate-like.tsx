@@ -7,8 +7,8 @@ import {
   h,
   getAssetPath,
 } from '@stencil/core';
-import { TpRateLikeStatus } from './rate-like.enum';
-import { TpRateLikeType } from './rate-like.type';
+import { TpRateLikeStatus } from './utils/rate-like.enum';
+import { TpRateLikeType } from './utils/rate-like.type';
 
 @Component({
   tag: 'tp-rate-like',
@@ -67,9 +67,7 @@ export class TpRateLike {
         <div class="tp-rate-like__container">
           <button
             class={`tp-rate-like__button
-          ${
-            status === TpRateLikeStatus.LIKE ? 'tp-rate-like__button--like' : ''
-          }
+          ${status === TpRateLikeStatus.LIKE ? 'tp-rate-like__button--like' : ''}
           ${status ? 'tp-rate-like__button--disabled' : ''}
         `}
             onClick={() => this.onClick(TpRateLikeStatus.LIKE)}
