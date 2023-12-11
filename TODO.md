@@ -10,6 +10,8 @@
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
 - Trazer breakpoints do antigo
+  - toast
+  - tabs
 
 ## Componente que não são mais usados no MEDSoft
 

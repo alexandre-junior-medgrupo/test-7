@@ -6,7 +6,7 @@ import {
 import { defineCustomElement as defineCustomElementToast } from '@ionic/core/components/ion-toast';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonToast } from './toast.type';
+import { TpIonToast } from '../utils/toast.type';
 
 defineCustomElementToast();
 defineCustomElementButton();
@@ -16,10 +16,7 @@ const meta: Meta<Components.IonToast & TpIonToast & IonButton> = {
   argTypes: {
     warning: {
       control: 'boolean',
-      description: `Define o estado warning do componente.
-
-      **OBS**: Atributo criado para atender a necessidade do DS**.
-      `,
+      description: `Define o estado warning do componente.`,
       table: {
         defaultValue: {
           summary: 'undefined',
@@ -55,7 +52,7 @@ const meta: Meta<Components.IonToast & TpIonToast & IonButton> = {
     },
     duration: {
       control: 'number',
-      description: 'Define o tempo (milisegundos) de exibição do componente.',
+      description: 'Define o tempo em milisegundos de exibição do componente.',
       table: {
         defaultValue: {
           summary: '3000',

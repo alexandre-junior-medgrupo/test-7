@@ -2466,6 +2466,23 @@ ion-label {
   line-height: 20px;
 }
 
+ion-list.list-lines-full ion-item {
+  --border-color: var(--tp-color-neutral-2);
+}
+ion-list.list-lines-full ion-item:last-child {
+  --border-width: 0;
+}
+ion-list.list-lines-full ion-item[lines=full]:last-child {
+  --border-width: 0 0 1px 0;
+}
+
+ion-list.list-lines-full ion-item.ion-color {
+  --border-color: var(--ion-color-contrast);
+}
+ion-list.list-lines-full ion-item.ion-color::part(native) {
+  border-color: var(--border-color);
+}
+
 ion-progress-bar {
   --background: var(--tp-color-brand-1);
   --progress-background: var(--tp-color-brand-4);

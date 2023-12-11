@@ -1,13 +1,13 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement } from '@ionic/core/components/ion-toggle';
+import { defineCustomElement } from '@ionic/core/components/ion-textarea';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonToggle } from './toggle.type';
+import { TpIonTextarea } from '../utils/textarea.type';
 
 defineCustomElement();
 
-const meta: Meta<Components.IonToggle & TpIonToggle> = {
-  title: 'components/Ionic/Toggle',
+const meta: Meta<Components.IonTextarea & TpIonTextarea> = {
+  title: 'components/Ionic/Textarea',
   argTypes: {
     disabled: {
       control: 'boolean',
@@ -26,18 +26,19 @@ const meta: Meta<Components.IonToggle & TpIonToggle> = {
 
 export default meta;
 
-type Story = StoryObj<Components.IonToggle & TpIonToggle>;
+type Story = StoryObj<Components.IonTextarea & TpIonTextarea>;
 
 export const Default: Story = {
   render: ({ ...args }) => html`
-    <ion-toggle
-      mode="ios"
+    <ion-textarea
       color="${args.color}"
       ?disabled="${args.disabled}"
-    ></ion-toggle>
+      placeholder="Lorem ipsum, dolor sit amet consectetur."
+      mode="md"
+    ></ion-textarea>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/ion-toggle/gi)).toBeTruthy();
+    expect(canvas.getByText(/ion-textarea/gi)).toBeTruthy();
   }, */
 };

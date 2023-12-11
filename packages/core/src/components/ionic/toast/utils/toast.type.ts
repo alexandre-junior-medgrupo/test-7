@@ -1,4 +1,4 @@
-import type { TpColor } from '../../../utils/types/color.type';
+import type { TpColor } from '../../../../utils/types/color.type';
 import { TpIonToastWarning } from './toast.enum';
 
 export type TpIonToast = {

@@ -1,5 +1,5 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
-import * as textStories from './text.stories';
+import * as textStories from '../stories/text.stories';
 
 <Meta of={textStories} />
 
@@ -26,5 +26,4 @@ import { TpType } from '..';
 ## Atributos
 
 <Canvas of={textStories.Default} />
-
-<Controls />
+<Controls of={textStories.Default} />
