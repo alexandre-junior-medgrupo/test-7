@@ -18,16 +18,16 @@ const meta = {
     title: 'components/Ionic/Back Button',
     component: 'ion-back-button',
     argTypes: {
-        size: {
+        ['tp-size']: {
             control: { type: 'select' },
-            options: [...TP_ION_BACK_BUTTON.size],
+            options: [...TP_ION_BACK_BUTTON['tp-size']],
             description: 'Define o tamanho do componente.',
             table: {
                 defaultValue: {
                     summary: 'undefined',
                 },
                 type: {
-                    summary: TP_ION_BACK_BUTTON.size.join('|'),
+                    summary: TP_ION_BACK_BUTTON['tp-size'].join('|'),
                 },
             },
         },
@@ -51,7 +51,7 @@ export const Default = {
         var args = __rest(_a, []);
         return html `
     <ion-back-button
-      size="${args.size}"
+      tp-size="${args['tp-size']}"
       color="${args.color}"
       ?disabled="${args.disabled}"
       icon="./icons/tp-chevron-left.svg"

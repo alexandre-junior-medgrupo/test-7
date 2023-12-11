@@ -36,42 +36,42 @@ const meta = {
                 },
             },
         },
-        gap: {
+        ['tp-gap']: {
             control: { type: 'select' },
-            options: [...TP_ION_ITEM.gap],
+            options: [...TP_ION_ITEM['tp-gap']],
             description: 'Define qual o espaçamento entre o icone e o texto do componente.',
             table: {
                 defaultValue: {
                     summary: 'undefined',
                 },
                 type: {
-                    summary: TP_ION_ITEM.gap.join('|'),
+                    summary: TP_ION_ITEM['tp-gap'].join('|'),
                 },
             },
         },
-        spacingX: {
+        ['tp-spacingx']: {
             control: { type: 'select' },
-            options: [...TP_ION_ITEM.spacingX],
+            options: [...TP_ION_ITEM['tp-spacingx']],
             description: 'Define qual o espaçamento das bordas horizontais para o conteudo do componente.',
             table: {
                 defaultValue: {
                     summary: 'undefined',
                 },
                 type: {
-                    summary: TP_ION_ITEM.spacingX.join('|'),
+                    summary: TP_ION_ITEM['tp-spacingx'].join('|'),
                 },
             },
         },
-        spacingY: {
+        ['tp-spacingy']: {
             control: { type: 'select' },
-            options: [...TP_ION_ITEM.spacingY],
+            options: [...TP_ION_ITEM['tp-spacingy']],
             description: 'Define qual o espaçamento das bordas verticais para o conteudo do componente.',
             table: {
                 defaultValue: {
                     summary: 'undefined',
                 },
                 type: {
-                    summary: TP_ION_ITEM.spacingY.join('|'),
+                    summary: TP_ION_ITEM['tp-spacingy'].join('|'),
                 },
             },
         },
@@ -106,33 +106,41 @@ export const Radio = {
     render: (_a) => {
         var args = __rest(_a, []);
         return html `
-    <ion-radio-group>
-      <ion-item
-        .color="${args.color}"
-        lines="${args.lines}"
-        gap="${args.gap}"
-        spacingX="${args.spacingX}"
-        spacingY="${args.spacingY}"
-        ?button="${args.button}"
-        ?disabled="${args.disabled}"
-      >
-        <ion-radio slot="start" aria-label></ion-radio>
-        <ion-label>Basic Item</ion-label>
-      </ion-item>
+    <ion-list>
+      <ion-radio-group>
+        <ion-item
+          .color="${args.color}"
+          lines="${args.lines}"
+          tp-gap="${args['tp-gap']}"
+          tp-spacingX="${args['tp-spacingx']}"
+          tp-spacingY="${args['tp-spacingy']}"
+          ?button="${args.button}"
+          ?disabled="${args.disabled}"
+        >
+        <ion-radio label-placement="start" justify="space-between">
+        <ion-text>
+          Lorem ipsum, dolor sit amet consectetur.
+        </ion-text>
+      </ion-radio>
+        </ion-item>
 
-      <ion-item
-        .color="${args.color}"
-        lines="${args.lines}"
-        gap="${args.gap}"
-        spacingX="${args.spacingX}"
-        spacingY="${args.spacingY}"
-        ?button="${args.button}"
-        ?disabled="${args.disabled}"
-      >
-        <ion-label>Basic Item</ion-label>
-        <ion-radio slot="end" aria-label></ion-radio>
-      </ion-item>
-    </ion-radio-group>
+        <ion-item
+          .color="${args.color}"
+          lines="${args.lines}"
+          tp-gap="${args['tp-gap']}"
+          tp-spacingX="${args['tp-spacingx']}"
+          tp-spacingY="${args['tp-spacingy']}"
+          ?button="${args.button}"
+          ?disabled="${args.disabled}"
+        >
+          <ion-radio label-placement="end" justify="space-between">
+            <ion-text>
+              Lorem ipsum, dolor sit amet consectetur.
+            </ion-text>
+          </ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
   `;
     },
     /* play: async ({ canvasElement }) => {
