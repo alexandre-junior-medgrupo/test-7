@@ -2068,6 +2068,7 @@ ion-input.sc-ion-input-md-h {
   --padding-top: 8px;
   --placeholder-color: var(--tp-color-neutral-4);
   --placeholder-opacity: initial;
+  --tp-fill-clear-icon: var(--tp-color-neutral-6);
 }
 
 ion-input.sc-ion-input-md-h {
@@ -2089,7 +2090,7 @@ ion-input.sc-ion-input-md-h .input-clear-icon {
 ion-input.sc-ion-input-md-h .input-clear-icon ion-icon.sc-ion-input-md {
   width: 24px;
   height: 24px;
-  fill: var(--tp-color-neutral-6);
+  fill: var(--tp-fill-clear-icon);
 }
 
 ion-input.sc-ion-input-md-h.input-disabled {

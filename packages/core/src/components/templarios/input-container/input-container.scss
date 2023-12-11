@@ -96,4 +96,9 @@
     --color: var(--tp-color-contrast) !important;
     --placeholder-color: var(--tp-color-contrast) !important;
   }
+
+  // clear-icon
+  ::slotted(ion-input[clear-input]) {
+    --tp-fill-clear-icon: var(--tp-color-contrast) !important;
+  }
 }
