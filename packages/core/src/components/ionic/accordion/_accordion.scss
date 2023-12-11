@@ -67,19 +67,6 @@ ion-accordion {
   }
 }
 
-
-//
-// expanded
-//
-ion-accordion {
-  &.accordion-expanding,
-  &.accordion-expanded {
-    [slot='header'] {
-      --padding-bottom: 0;
-    }
-  }
-}
-
 //
 // color
 //
