@@ -5,15 +5,19 @@ export declare class TemplariosModule {
   static ɵmod: i0.ɵɵNgModuleDeclaration<
     TemplariosModule,
     [
+      typeof i1.TpAlert,
       typeof i1.TpChartBar,
       typeof i1.TpComparisonChartBar,
+      typeof i1.TpHorizontalChartBar,
       typeof i1.TpInputContainer,
       typeof i1.TpRateLike,
     ],
     never,
     [
+      typeof i1.TpAlert,
       typeof i1.TpChartBar,
       typeof i1.TpComparisonChartBar,
+      typeof i1.TpHorizontalChartBar,
       typeof i1.TpInputContainer,
       typeof i1.TpRateLike,
     ]

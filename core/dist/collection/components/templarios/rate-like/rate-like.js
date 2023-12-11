@@ -1,5 +1,5 @@
 import { Host, h, getAssetPath, } from "@stencil/core";
-import { TpRateLikeStatus } from "./rate-like.enum";
+import { TpRateLikeStatus } from "./utils/rate-like.enum";
 export class TpRateLike {
     constructor() {
         this.thumbsUpIcon = getAssetPath('./assets/tp-thumbs-up.svg');
@@ -57,8 +57,8 @@ export class TpRateLike {
                     "references": {
                         "TpRateLikeType": {
                             "location": "import",
-                            "path": "./rate-like.type",
-                            "id": "src/components/templarios/rate-like/rate-like.type.ts::TpRateLikeType"
+                            "path": "./utils/rate-like.type",
+                            "id": "src/components/templarios/rate-like/utils/rate-like.type.ts::TpRateLikeType"
                         }
                     }
                 },
@@ -107,8 +107,8 @@ export class TpRateLike {
                     "references": {
                         "TpRateLikeType": {
                             "location": "import",
-                            "path": "./rate-like.type",
-                            "id": "src/components/templarios/rate-like/rate-like.type.ts::TpRateLikeType"
+                            "path": "./utils/rate-like.type",
+                            "id": "src/components/templarios/rate-like/utils/rate-like.type.ts::TpRateLikeType"
                         }
                     }
                 }
