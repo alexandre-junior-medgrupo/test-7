@@ -26,4 +26,5 @@ export * from './components/ionic/searchbar/utils/searchbar.type';
 export * from './components/ionic/segment/utils/segment.type';
 export * from './components/ionic/text/utils/text.type';
 export * from './components/ionic/textarea/utils/textarea.type';
+export * from './components/ionic/toast/utils/toast.type';
 export * from './components/ionic/toggle/utils/toggle.type';

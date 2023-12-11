@@ -2816,15 +2816,13 @@ ion-textarea.ion-color.has-focus .textarea-wrapper {
 ion-toast {
   --background: var(--tp-color-neutral-2);
   --color: var(--tp-color-neutral-10);
-  --width: 400px;
+  --width: 382px;
   --border-radius: 8px;
   --start: initial;
   --end: 20px;
 }
 ion-toast::part(container) {
-  padding-inline: 8px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 56px;
 }
 ion-toast::part(icon) {
   --stroke: var(--tp-color-neutral-10);
@@ -2834,6 +2832,23 @@ ion-toast::part(message) {
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
+}
+
+ion-toast[tp-size=md] {
+  --width: 400px;
+}
+ion-toast[tp-size=md]::part(container) {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-inline: 8px;
+}
+
+ion-toast[tp-reverse]::part(container) {
+  flex-direction: row-reverse;
+}
+ion-toast[tp-reverse]::part(icon) {
+  margin-inline-start: 0;
+  margin-inline-end: 16px;
 }
 
 ion-toast.ion-color {
