@@ -10,12 +10,16 @@
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
 - Trazer breakpoints do antigo (mixin)
+
   - toast
   - tabs
 
+- Verificar
+
 ## Alan
 
-- Verificar `defineCustomElement` das estorias
+- Refatorar alert;
+- Verificar `defineCustomElement` das estorias;
 
 ## Componentes que não são mais usados no MEDSoft
 
