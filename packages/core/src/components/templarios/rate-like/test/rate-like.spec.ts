@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { TpRateLike } from './rate-like';
+import { TpRateLike } from '../rate-like';
 
 describe('tp-rate-like', () => {
   it('renders', async () => {

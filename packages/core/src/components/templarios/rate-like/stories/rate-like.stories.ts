@@ -2,8 +2,8 @@ import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/c
 import { withActions } from '@storybook/addon-actions/decorator';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpRateLike } from './rate-like';
-import { TP_RATE_LIKE } from './rate-like.constant';
+import { TpRateLike } from '../rate-like';
+import { TP_RATE_LIKE } from '../utils/rate-like.constant';
 
 defineCustomElementSkeletonText();
 
