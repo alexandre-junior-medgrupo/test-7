@@ -1120,6 +1120,90 @@ html.ios {
   --ion-default-font: "fsemeric", "Open Sans", sans-serif;
 }
 
+[tp-spacingx=s00],
+[tp-spacingy=s00],
+[tp-gap=s00] * {
+  --tp-spacing: 0;
+}
+
+[tp-spacingx=s02],
+[tp-spacingy=s02],
+[tp-gap=s02] * {
+  --tp-spacing: 2px;
+}
+
+[tp-spacingx=s04],
+[tp-spacingy=s04],
+[tp-gap=s04] * {
+  --tp-spacing: 4px;
+}
+
+[tp-spacingx=s08],
+[tp-spacingy=s08],
+[tp-gap=s08] * {
+  --tp-spacing: 8px;
+}
+
+[tp-spacingx=s12],
+[tp-spacingy=s12],
+[tp-gap=s12] * {
+  --tp-spacing: 12px;
+}
+
+[tp-spacingx=s16],
+[tp-spacingy=s16],
+[tp-gap=s16] * {
+  --tp-spacing: 16px;
+}
+
+[tp-spacingx=s20],
+[tp-spacingy=s20],
+[tp-gap=s20] * {
+  --tp-spacing: 20px;
+}
+
+[tp-spacingx=s24],
+[tp-spacingy=s24],
+[tp-gap=s24] * {
+  --tp-spacing: 24px;
+}
+
+[tp-spacingx=s32],
+[tp-spacingy=s32],
+[tp-gap=s32] * {
+  --tp-spacing: 32px;
+}
+
+[tp-spacingx=s40],
+[tp-spacingy=s40],
+[tp-gap=s40] * {
+  --tp-spacing: 40px;
+}
+
+[tp-spacingx=s48],
+[tp-spacingy=s48],
+[tp-gap=s48] * {
+  --tp-spacing: 48px;
+}
+
+[tp-spacingx=s64],
+[tp-spacingy=s64],
+[tp-gap=s64] * {
+  --tp-spacing: 64px;
+}
+
+[tp-spacingx=s80],
+[tp-spacingy=s80],
+[tp-gap=s80] * {
+  --tp-spacing: 80px;
+}
+
+[tp-spacingx=s96],
+[tp-spacingy=s96],
+[tp-gap=s96] * {
+  --tp-spacing: 96px;
+}
+
 [tp-type=h64],
 [tp-type=h64] * {
   font-size: 64px !important;
@@ -1338,6 +1422,10 @@ ion-accordion [slot=header] {
   --background: transparent;
   --color: var(--tp-color-neutral-10);
   --ripple-color: transparent;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
 }
 ion-accordion [slot=header]:hover {
   --background-hover: transparent;
@@ -1346,7 +1434,10 @@ ion-accordion .ion-accordion-toggle-icon {
   --stroke: var(--tp-color-neutral-9);
 }
 ion-accordion [slot=content] {
-  padding: 0 16px 16px;
+  padding-top: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
   background: transparent;
 }
 ion-accordion [slot=content] * {
@@ -1354,6 +1445,22 @@ ion-accordion [slot=content] * {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+ion-accordion[tp-spacingx] [slot=header] {
+  --padding-start: var(--spacing);
+  --padding-end: var(--spacing);
+}
+ion-accordion[tp-spacingx] [slot=content] {
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+}
+ion-accordion[tp-spacingy] [slot=header] {
+  --padding-top: var(--spacing);
+  --padding-bottom: var(--spacing);
+}
+ion-accordion[tp-spacingy] [slot=content] {
+  padding-bottom: var(--spacing);
 }
 
 ion-accordion.accordion-expanding [slot=header], ion-accordion.accordion-expanded [slot=header] {
@@ -1589,7 +1696,7 @@ ion-button {
   --padding-start: 32px;
   --padding-end: 32px;
   --font-size: 16px;
-  --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.5);
+  --ripple-color: rgba(var(--tp-color-neutral-10-rgb), 0.1);
   height: 48px;
   min-height: 48px;
   margin: 0;
@@ -1621,7 +1728,7 @@ ion-button.ion-color {
   --background-hover: var(--ion-color-shade);
   --background-focused: var(--ion-color-tint);
   --background-activated: var(--ion-color-shade);
-  --ripple-color: rgba(var(--ion-color-contrast-rgb), 0.5);
+  --ripple-color: rgba(var(--ion-color-contrast-rgb), 0.1);
 }
 ion-button.ion-color ion-icon {
   --stroke: var(--color);
@@ -2048,6 +2155,11 @@ ion-item {
   --inner-padding-end: 0;
   --min-height: initial;
 }
+ion-item ion-label.sc-ion-label-md-h.sc-ion-label-md-s {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
 ion-item ion-icon {
   margin-top: 0;
   margin-bottom: 0;
@@ -2363,7 +2475,7 @@ ion-progress-bar[value="0"] {
   --background: var(--tp-color-neutral-8) !important;
 }
 ion-progress-bar[value="0"]::part(track) {
-  background: var(--background) !important;
+  background-color: var(--background) !important;
 }
 
 ion-progress-bar.ion-color {
@@ -2371,7 +2483,7 @@ ion-progress-bar.ion-color {
   --progress-background: var(--ion-color-base);
 }
 ion-progress-bar.ion-color::part(track) {
-  background: var(--background);
+  background-color: var(--background);
 }
 
 ion-radio {
@@ -2430,6 +2542,11 @@ ion-range[ticks]::part(tick-active) {
 ion-range[ticks]::part(tick) {
   background-color: var(--tp-ticks-background);
   border-radius: 50%;
+}
+
+ion-range ion-icon[slot=start] {
+  width: 16px;
+  height: 16px;
 }
 
 ion-searchbar.sc-ion-searchbar-md-h {

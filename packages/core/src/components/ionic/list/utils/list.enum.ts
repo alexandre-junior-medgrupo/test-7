@@ -1,3 +1,3 @@
-export enum TpIonItemLines {
+export enum TpIonListLines {
   Full = 'full',
 }

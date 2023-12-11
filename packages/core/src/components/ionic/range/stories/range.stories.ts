@@ -9,7 +9,7 @@ defineCustomElement();
 const meta: Meta<Components.IonRange & TpIonRange> = {
   title: 'components/Ionic/Range',
   argTypes: {
-    secondary: {
+    ['tp-secondary']: {
       control: { type: 'boolean' },
       description: 'Define a variação do componente.',
       table: {
@@ -87,7 +87,7 @@ export const Default: Story = {
   render: ({ ...args }) => html`
     <ion-range
       color="${args.color}"
-      ?secondary="${args.secondary}"
+      ?tp-secondary="${args['tp-secondary']}"
       aria-label="volume"
     ></ion-range>
   `,
@@ -101,7 +101,7 @@ export const Ticks: Story = {
   render: ({ ...args }) => html`
     <ion-range
       color="${args.color}"
-      ?secondary="${args.secondary}"
+      ?tp-secondary="${args['tp-secondary']}"
       aria-label="volume"
       ?ticks="${args.ticks}"
       ?snaps="${args.snaps}"

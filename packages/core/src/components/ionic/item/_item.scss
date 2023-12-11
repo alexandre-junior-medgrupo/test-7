@@ -31,6 +31,12 @@ ion-item {
   --inner-padding-end: 0;
   --min-height: initial;
 
+  ion-label.sc-ion-label-md-h.sc-ion-label-md-s {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
   ion-icon {
     margin-top: 0;
     margin-bottom: 0;
