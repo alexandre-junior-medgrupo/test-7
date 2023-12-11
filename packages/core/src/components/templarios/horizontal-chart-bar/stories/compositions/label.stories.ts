@@ -3,7 +3,9 @@ import { html } from 'lit';
 import { TpHorizontalChartBar } from '../../horizontal-chart-bar';
 import { TP_HORIZONTAL_CHART_BAR } from '../../utils/horizontal-chart-bar.constant';
 
-// antigo med-chart-bar-horizontal
+//
+// !IMPORTANT! med-chart-bar-horizontal
+//
 
 const meta: Meta<TpHorizontalChartBar> = {
   title: 'components/Templarios/Horizontal-Chart-bar/Compositions',
