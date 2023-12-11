@@ -14,7 +14,7 @@ const meta: Meta = {
     state: {
       control: { type: 'select' },
       options: [...TP_INPUT_CONTAINER.state],
-      description: 'Define o espaçamento entre os slots do componente.',
+      description: 'Define o estado do componente.',
       table: {
         defaultValue: {
           summary: 'undefined',

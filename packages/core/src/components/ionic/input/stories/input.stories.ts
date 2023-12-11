@@ -2,11 +2,12 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-input';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
+import { TpInputContainer } from 'src/components/templarios/input-container/input-container';
 import { TpIonInput } from '../utils/input.type';
 
 defineCustomElement();
 
-const meta: Meta<Components.IonInput & TpIonInput> = {
+const meta: Meta<Components.IonInput & TpIonInput & TpInputContainer> = {
   title: 'components/Ionic/Input',
   argTypes: {
     clearInput: {
@@ -39,7 +40,7 @@ const meta: Meta<Components.IonInput & TpIonInput> = {
 
 export default meta;
 
-type Story = StoryObj<Components.IonInput & TpIonInput>;
+type Story = StoryObj<Components.IonInput & TpIonInput & TpInputContainer>;
 
 export const Default: Story = {
   render: ({ ...args }) => {

@@ -1,12 +1,14 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement } from '@ionic/core/components/ion-input';
+import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
+import { TpInputContainer } from '../../../templarios/input-container/utils/input-container.type';
+import { TP_INPUT_CONTAINER } from '../../../templarios/input-container/utils/input-container.constants';
 import { TpIonInput } from '../utils/input.type';
 
-defineCustomElement();
+defineCustomElementInput();
 
-const meta: Meta<Components.IonInput & TpIonInput & any> = {
+const meta: Meta<Components.IonInput & TpIonInput & TpInputContainer> = {
   title: 'components/Ionic/Input',
   argTypes: {
     clearInput: {
@@ -36,14 +38,17 @@ const meta: Meta<Components.IonInput & TpIonInput & any> = {
     },
     state: {
       control: { type: 'select' },
-      options: ['error', 'success'],
-      description: 'Define o espaçamento entre os slots do componente.',
+      options: [...TP_INPUT_CONTAINER.state],
+      description:`Define o estado do componente **'tp-input-container'**.
+
+**OBS**: Atributo referente ao componente **'tp-input-container'**.
+`,
       table: {
         defaultValue: {
           summary: 'undefined',
         },
         type: {
-          summary: ['error', '|', 'success'],
+          summary: TP_INPUT_CONTAINER.state.join('|'),
         },
       },
     },
@@ -52,16 +57,16 @@ const meta: Meta<Components.IonInput & TpIonInput & any> = {
 
 export default meta;
 
-type Story = StoryObj<Components.IonInput & TpIonInput & any>;
+type Story = StoryObj<Components.IonInput & TpIonInput & TpInputContainer>;
 
 export const States: Story = {
   render: ({ ...args }) => {
     return html`
-    <tp-input-container state="${args.state}">
+    <tp-input-container color="${args.color}" state="${args.state}">
+      <ion-label slot="label" tp-type="p14">Descrição Input</ion-label>
       <ion-input
         mode="md"
         placeholder="Digite aqui"
-        color="${args.color}"
         ?disabled="${args.disabled}"
         ?clear-input="${args.clearInput}"
       ></ion-input>
