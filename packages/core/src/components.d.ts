@@ -6,10 +6,34 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
+import { TpAlertType } from "./components/templarios/alert/alert.type";
 import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
+export { TpAlertType } from "./components/templarios/alert/alert.type";
 export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export namespace Components {
+    interface TpAlert {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o icon a ser exibido no componente.
+         */
+        "icon": string;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
+          * Define a string a ser exibida no componente.
+         */
+        "message": string;
+        /**
+          * Define a variação de estado do componente.
+         */
+        "state"?: TpAlertType['state'];
+    }
     interface TpChartBar {
         /**
           * Define a variação de cor do componente.
@@ -92,6 +116,12 @@ export interface TpRateLikeCustomEvent<T> extends CustomEvent<T> {
     target: HTMLTpRateLikeElement;
 }
 declare global {
+    interface HTMLTpAlertElement extends Components.TpAlert, HTMLStencilElement {
+    }
+    var HTMLTpAlertElement: {
+        prototype: HTMLTpAlertElement;
+        new (): HTMLTpAlertElement;
+    };
     interface HTMLTpChartBarElement extends Components.TpChartBar, HTMLStencilElement {
     }
     var HTMLTpChartBarElement: {
@@ -128,6 +158,7 @@ declare global {
         new (): HTMLTpRateLikeElement;
     };
     interface HTMLElementTagNameMap {
+        "tp-alert": HTMLTpAlertElement;
         "tp-chart-bar": HTMLTpChartBarElement;
         "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
         "tp-input-container": HTMLTpInputContainerElement;
@@ -135,6 +166,28 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface TpAlert {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o icon a ser exibido no componente.
+         */
+        "icon"?: string;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        /**
+          * Define a string a ser exibida no componente.
+         */
+        "message"?: string;
+        /**
+          * Define a variação de estado do componente.
+         */
+        "state"?: TpAlertType['state'];
+    }
     interface TpChartBar {
         /**
           * Define a variação de cor do componente.
@@ -216,6 +269,7 @@ declare namespace LocalJSX {
         "status"?: TpRateLikeType['status'];
     }
     interface IntrinsicElements {
+        "tp-alert": TpAlert;
         "tp-chart-bar": TpChartBar;
         "tp-comparison-chart-bar": TpComparisonChartBar;
         "tp-input-container": TpInputContainer;
@@ -226,6 +280,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "tp-alert": LocalJSX.TpAlert & JSXBase.HTMLAttributes<HTMLTpAlertElement>;
             "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
             "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
             "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;

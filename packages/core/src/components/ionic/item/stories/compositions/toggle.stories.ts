@@ -27,9 +27,9 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
         },
       },
     },
-    gap: {
+    ['tp-gap']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.gap],
+      options: [...TP_ION_ITEM['tp-gap']],
       description:
         'Define qual o espaçamento entre o icone e o texto do componente.',
       table: {
@@ -37,13 +37,13 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.gap.join('|'),
+          summary: TP_ION_ITEM['tp-gap'].join('|'),
         },
       },
     },
-    spacingX: {
+    ['tp-spacingx']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.spacingX],
+      options: [...TP_ION_ITEM['tp-spacingx']],
       description:
         'Define qual o espaçamento das bordas horizontais para o conteudo do componente.',
       table: {
@@ -51,13 +51,13 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.spacingX.join('|'),
+          summary: TP_ION_ITEM['tp-spacingx'].join('|'),
         },
       },
     },
-    spacingY: {
+    ['tp-spacingy']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.spacingY],
+      options: [...TP_ION_ITEM['tp-spacingy']],
       description:
         'Define qual o espaçamento das bordas verticais para o conteudo do componente.',
       table: {
@@ -65,7 +65,7 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.spacingY.join('|'),
+          summary: TP_ION_ITEM['tp-spacingy'].join('|'),
         },
       },
     },
@@ -102,31 +102,39 @@ type Story = StoryObj<Components.IonItem & TpIonItem>;
 
 export const Toggle: Story = {
   render: ({ ...args }) => html`
-    <ion-item
-      .color="${args.color}"
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-toggle mode="ios" slot="start" aria-label></ion-toggle>
-      <ion-label>Basic Item</ion-label>
-    </ion-item>
+    <ion-list>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-toggle label-placement="start" justify="space-between">
+          <ion-text>
+            Lorem ipsum, dolor sit amet consectetur.
+          </ion-text
+        </ion-toggle>
+      </ion-item>
 
-    <ion-item
-      .color="${args.color}"
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-label>Basic Item</ion-label>
-      <ion-toggle slot="end" aria-label></ion-toggle>
-    </ion-item>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <ion-toggle label-placement="end" justify="space-between">
+          <ion-text>
+            Lorem ipsum, dolor sit amet consectetur.
+          </ion-text
+        </ion-toggle>
+      </ion-item>
+    </ion-list>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

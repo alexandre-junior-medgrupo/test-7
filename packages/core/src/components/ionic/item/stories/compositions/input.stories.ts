@@ -31,9 +31,9 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
         },
       },
     },
-    gap: {
+    ['tp-gap']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.gap],
+      options: [...TP_ION_ITEM['tp-gap']],
       description:
         'Define qual o espaçamento entre o icone e o texto do componente.',
       table: {
@@ -41,13 +41,13 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.gap.join('|'),
+          summary: TP_ION_ITEM['tp-gap'].join('|'),
         },
       },
     },
-    spacingX: {
+    ['tp-spacingx']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.spacingX],
+      options: [...TP_ION_ITEM['tp-spacingx']],
       description:
         'Define qual o espaçamento das bordas horizontais para o conteudo do componente.',
       table: {
@@ -55,13 +55,13 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.spacingX.join('|'),
+          summary: TP_ION_ITEM['tp-spacingx'].join('|'),
         },
       },
     },
-    spacingY: {
+    ['tp-spacingy']: {
       control: { type: 'select' },
-      options: [...TP_ION_ITEM.spacingY],
+      options: [...TP_ION_ITEM['tp-spacingy']],
       description:
         'Define qual o espaçamento das bordas verticais para o conteudo do componente.',
       table: {
@@ -69,7 +69,7 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
           summary: 'undefined',
         },
         type: {
-          summary: TP_ION_ITEM.spacingY.join('|'),
+          summary: TP_ION_ITEM['tp-spacingy'].join('|'),
         },
       },
     },
@@ -106,74 +106,76 @@ type Story = StoryObj<Components.IonItem & TpIonItem>;
 
 export const Input: Story = {
   render: ({ ...args }) => html`
-    <ion-item
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <ion-input
-        mode="md"
-        placeholder="Digite aqui"
-        clear-input="true"
-      ></ion-input>
-    </ion-item>
-
-    <ion-item
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <tp-input-container>
-        <ion-label slot="label" tp-type="p14">Input</ion-label>
+    <ion-list>
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
         <ion-input
           mode="md"
           placeholder="Digite aqui"
           clear-input="true"
         ></ion-input>
-      </tp-input-container>
-    </ion-item>
+      </ion-item>
 
-    <ion-item
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <tp-input-container>
-        <ion-label slot="label" tp-type="p14">Searchbar</ion-label>
-        <ion-searchbar
-          mode="md"
-          search-icon="./../../../../icons/tp-search.svg"
-          clear-icon="./../../../../icons/tp-x.svg"
-          placeholder="Lorem ipsum dolor"
-        ></ion-searchbar>
-      </tp-input-container>
-    </ion-item>
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Input</ion-label>
+          <ion-input
+            mode="md"
+            placeholder="Digite aqui"
+            clear-input="true"
+          ></ion-input>
+        </tp-input-container>
+      </ion-item>
 
-    <ion-item
-      lines="${args.lines}"
-      gap="${args.gap}"
-      spacingX="${args.spacingX}"
-      spacingY="${args.spacingY}"
-      ?button="${args.button}"
-      ?disabled="${args.disabled}"
-    >
-      <tp-input-container>
-        <ion-label slot="label" tp-type="p14">Textarea</ion-label>
-        <ion-textarea
-          placeholder="Lorem ipsum, dolor sit amet consectetur."
-          mode="md"
-        ></ion-textarea>
-      </tp-input-container>
-    </ion-item>
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Searchbar</ion-label>
+          <ion-searchbar
+            mode="md"
+            search-icon="./../../../../icons/tp-search.svg"
+            clear-icon="./../../../../icons/tp-x.svg"
+            placeholder="Lorem ipsum dolor"
+          ></ion-searchbar>
+        </tp-input-container>
+      </ion-item>
+
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Textarea</ion-label>
+          <ion-textarea
+            placeholder="Lorem ipsum, dolor sit amet consectetur."
+            mode="md"
+          ></ion-textarea>
+        </tp-input-container>
+      </ion-item>
+    </ion-list>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
