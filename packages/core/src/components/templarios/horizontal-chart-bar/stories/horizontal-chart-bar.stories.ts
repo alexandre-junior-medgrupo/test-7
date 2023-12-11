@@ -1,9 +1,11 @@
+import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpHorizontalChartBar } from '../horizontal-chart-bar';
 import { TP_HORIZONTAL_CHART_BAR } from '../utils/horizontal-chart-bar.constant';
 
 // antigo med-chart-bar-horizontal
+defineCustomElementSkeletonText();
 
 const meta: Meta<TpHorizontalChartBar> = {
   title: 'components/Templarios/Horizontal Chart Bar',
