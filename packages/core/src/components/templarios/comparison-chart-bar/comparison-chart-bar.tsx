@@ -15,22 +15,22 @@ export class TpComparisonChartBar {
   @Prop({ reflect: true }) color?: TpColor;
 
   /**
-   * Define a altura máxima da coluna.
+   * Define a altura máxima do componente.
    */
   @Prop({ reflect: true }) containerHeight = 200;
 
   /**
-   * Define o preenchimento da coluna em porcentagem.
+   * Define o valor da barra de progresso.
    */
   @Prop({ reflect: true }) barValue = 0;
 
   /**
-   * Define se o componente terá um marcador.
+   * Se 'true' o componente vai renderizar o marker.
    */
   @Prop({ reflect: true }) hasMarker = false;
 
   /**
-   * Define a posição, em porcentagem, do marcador na coluna.
+   * Define a posição do marker na coluna.
    */
   @Prop({ reflect: true }) markerValue = 0;
 
@@ -40,7 +40,7 @@ export class TpComparisonChartBar {
   @Prop({ reflect: true }) disabled = false;
 
   /**
-   * Define se o componente não terá rótulo.
+   * Define se um slot será disponibilizado para receber o label do chart.
    */
   @Prop({ reflect: true }) noLabel = false;
 

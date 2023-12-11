@@ -2,11 +2,14 @@ import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/com
 import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpComparisonChartBar } from './comparison-chart-bar';
+import { TpComparisonChartBar } from '../comparison-chart-bar';
 
-// antigo tp-chart-bar
 defineCustomElementLabel();
 defineCustomElementSkeletonText();
+
+//
+// !IMPORTANT! Antigo tp-chart-bar
+//
 
 const meta: Meta<TpComparisonChartBar> = {
   title: 'components/Templarios/Comparison-Chart-bar',

@@ -64,7 +64,7 @@ export namespace Components {
     }
     interface TpComparisonChartBar {
         /**
-          * Define o preenchimento da coluna em porcentagem.
+          * Define o valor da barra de progresso.
          */
         "barValue": number;
         /**
@@ -72,7 +72,7 @@ export namespace Components {
          */
         "color"?: TpColor;
         /**
-          * Define a altura máxima da coluna.
+          * Define a altura máxima do componente.
          */
         "containerHeight": number;
         /**
@@ -80,7 +80,7 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * Define se o componente terá um marcador.
+          * Se 'true' o componente vai renderizar o marker.
          */
         "hasMarker": boolean;
         /**
@@ -88,11 +88,11 @@ export namespace Components {
          */
         "loading"?: boolean;
         /**
-          * Define a posição, em porcentagem, do marcador na coluna.
+          * Define a posição do marker na coluna.
          */
         "markerValue": number;
         /**
-          * Define se o componente não terá rótulo.
+          * Define se um slot será disponibilizado para receber o label do chart.
          */
         "noLabel": boolean;
     }
@@ -251,7 +251,7 @@ declare namespace LocalJSX {
     }
     interface TpComparisonChartBar {
         /**
-          * Define o preenchimento da coluna em porcentagem.
+          * Define o valor da barra de progresso.
          */
         "barValue"?: number;
         /**
@@ -259,7 +259,7 @@ declare namespace LocalJSX {
          */
         "color"?: TpColor;
         /**
-          * Define a altura máxima da coluna.
+          * Define a altura máxima do componente.
          */
         "containerHeight"?: number;
         /**
@@ -267,7 +267,7 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * Define se o componente terá um marcador.
+          * Se 'true' o componente vai renderizar o marker.
          */
         "hasMarker"?: boolean;
         /**
@@ -275,11 +275,11 @@ declare namespace LocalJSX {
          */
         "loading"?: boolean;
         /**
-          * Define a posição, em porcentagem, do marcador na coluna.
+          * Define a posição do marker na coluna.
          */
         "markerValue"?: number;
         /**
-          * Define se o componente não terá rótulo.
+          * Define se um slot será disponibilizado para receber o label do chart.
          */
         "noLabel"?: boolean;
     }
