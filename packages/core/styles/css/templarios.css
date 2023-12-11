@@ -2506,15 +2506,16 @@ ion-range ion-icon[slot=start] {
 }
 
 ion-searchbar.sc-ion-searchbar-md-h {
-  --background: var(--tp-color-neutral-2);
+  --background: transparent;
   --border-radius: 8px;
   --box-shadow: none;
   --color: var(--tp-color-contrast-fixed);
   --placeholder-color: var(--tp-color-neutral-4);
   --placeholder-opacity: 1;
+  --tp-stroke-icon: var(--tp-color-neutral-6);
 }
 ion-searchbar ion-icon {
-  --stroke: var(--tp-color-neutral-6);
+  --stroke: var(--tp-stroke-icon);
 }
 
 ion-searchbar.sc-ion-searchbar-md-h {
@@ -2544,15 +2545,6 @@ ion-searchbar.ion-invalid .searchbar-input {
 }
 ion-searchbar.ion-valid .searchbar-input {
   border: 1px solid var(--tp-color-success);
-}
-
-ion-searchbar.ion-color {
-  --background: var(--ion-color-base);
-  --placeholder-color: var(--ion-color-contrast);
-  --placeholder-opacity: 0.6;
-}
-ion-searchbar.ion-color ion-icon {
-  --stroke: var(--ion-color-contrast);
 }
 
 ion-skeleton-text {
@@ -2685,7 +2677,7 @@ ion-text.ion-color a {
 }
 
 ion-textarea.sc-ion-textarea-md-h {
-  --background: var(--tp-color-neutral-2);
+  --background: transparent;
   --color: var(--tp-color-neutral-10);
   --border-radius: 8px;
   --padding-top: 12px;
@@ -2701,55 +2693,11 @@ ion-textarea.sc-ion-textarea-md-h {
 ion-textarea {
   height: 80px;
 }
-ion-textarea .textarea-wrapper {
-  border: 1px solid transparent;
-}
 ion-textarea .native-textarea::-webkit-scrollbar {
   display: none;
 }
 ion-textarea .textarea-highlight.sc-ion-textarea-md {
   background: transparent;
-}
-ion-textarea.ion-invalid .textarea-wrapper {
-  border: 1px solid var(--tp-color-warning);
-}
-ion-textarea.ion-invalid .textarea-bottom {
-  --border-width: initial;
-  --border-color: transparent;
-  --border-style: initial;
-}
-ion-textarea.ion-invalid .textarea-bottom .error-text {
-  --highlight-color-invalid: var(--tp-color-warning);
-}
-ion-textarea.ion-valid .textarea-wrapper {
-  border: 1px solid var(--tp-color-success);
-}
-ion-textarea.ion-valid .textarea-bottom {
-  --border-width: initial;
-  --border-color: transparent;
-  --border-style: initial;
-}
-
-ion-textarea:hover:not([disabled]) {
-  --background: var(--tp-color-neutral-3);
-}
-
-ion-textarea.has-focus .textarea-wrapper {
-  border: 1px solid var(--tp-color-neutral-3);
-}
-
-ion-textarea.ion-color {
-  --background: var(--ion-color-base);
-  --color: var(--ion-color-contrast);
-  --highlight-color: var(--ion-color-contrast);
-  --placeholder-color: var(--ion-color-contrast);
-  --placeholder-opacity: 0.6;
-}
-ion-textarea.ion-color:hover:not([disabled]) {
-  --background: var(--ion-color-tint);
-}
-ion-textarea.ion-color.has-focus .textarea-wrapper {
-  border: 1px solid var(--ion-color-tint);
 }
 
 ion-toast {

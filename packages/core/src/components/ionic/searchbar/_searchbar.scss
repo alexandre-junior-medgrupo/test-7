@@ -1,15 +1,16 @@
 ion-searchbar {
   &.sc-ion-searchbar-md-h {
-    --background: var(--tp-color-neutral-2);
+    --background: transparent;
     --border-radius: 8px;
     --box-shadow: none;
     --color: var(--tp-color-contrast-fixed);
     --placeholder-color: var(--tp-color-neutral-4);
     --placeholder-opacity: 1;
+    --tp-stroke-icon: var(--tp-color-neutral-6);
   }
 
   ion-icon {
-    --stroke: var(--tp-color-neutral-6);
+    --stroke: var(--tp-stroke-icon);
   }
 }
 
@@ -49,18 +50,5 @@ ion-searchbar {
     .searchbar-input {
       border: 1px solid var(--tp-color-success);
     }
-  }
-}
-
-//
-// color
-//
-ion-searchbar.ion-color {
-  --background: var(--ion-color-base);
-  --placeholder-color: var(--ion-color-contrast);
-  --placeholder-opacity: 0.6;
-
-  ion-icon {
-    --stroke: var(--ion-color-contrast);
   }
 }

@@ -92,13 +92,27 @@
     }
   }
 
+  // input
   ::slotted(ion-input.sc-ion-input-md-h) {
     --color: var(--tp-color-contrast) !important;
     --placeholder-color: var(--tp-color-contrast) !important;
   }
 
-  // clear-icon
+  // clear-icon input
   ::slotted(ion-input[clear-input]) {
     --tp-fill-clear-icon: var(--tp-color-contrast) !important;
+  }
+
+  // searchbar
+  ::slotted(ion-searchbar.sc-ion-searchbar-md-h) {
+    --color: var(--tp-color-contrast) !important;
+    --placeholder-color: var(--tp-color-contrast) !important;
+    --tp-stroke-icon: var(--tp-color-contrast) !important;
+  }
+
+  // textarea
+  ::slotted(ion-textarea.sc-ion-textarea-md-h) {
+    --color: var(--tp-color-contrast) !important;
+    --placeholder-color: var(--tp-color-contrast) !important;
   }
 }
