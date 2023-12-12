@@ -1,9 +1,10 @@
 @use 'sass:map';
 @use "sass:string";
 
+
 @function breakpoint-next(
   $name,
-  $breakpoints: $tp-grid-breakpoints,
+  $breakpoints: $grid-breakpoints,
   $breakpoint-names: map.keys($breakpoints)
 ) {
   $n: string.index($breakpoint-names, $name);
@@ -17,16 +18,16 @@
   );
 }
 
-@function breakpoint-min($name, $breakpoints: $tp-grid-breakpoints) {
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
   $min: map.get($breakpoints, $name);
   @return if($min != 0, $min, null);
 }
 
-@function breakpoint-max($name, $breakpoints: $tp-grid-breakpoints) {
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
   $max: map.get($breakpoints, $name);
   @return if($max and $max > 0, $max - 0.02, null);
 }
 
-@function breakpoint-infix($name, $breakpoints: $tp-grid-breakpoints) {
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
   @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 }

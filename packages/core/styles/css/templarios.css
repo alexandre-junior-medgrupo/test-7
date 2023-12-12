@@ -2376,6 +2376,10 @@ ion-item.ion-color ion-toggle {
   --track-background-checked: var(--ion-color-contrast);
 }
 
+ion-item.ion-color ion-text {
+  color: var(--ion-color-contrast);
+}
+
 ion-item {
   --highlight-color-focused: transparent;
 }

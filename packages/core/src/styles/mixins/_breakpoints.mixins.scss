@@ -1,5 +1,5 @@
-@mixin breakpoint-up($name, $breakpoints: $tp-grid-breakpoints) {
-  $min: breakpoint-min($name, $breakpoints);
+@mixin breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+$min: breakpoint-min($name, $breakpoints);
   @if $min {
     @media (min-width: $min) {
       @content;
@@ -9,7 +9,7 @@
   }
 }
 
-@mixin breakpoint-down($name, $breakpoints: $tp-grid-breakpoints) {
+@mixin breakpoint-down($name, $breakpoints: $grid-breakpoints) {
   $max: breakpoint-max($name, $breakpoints);
   @if $max {
     @media (max-width: $max) {
@@ -20,7 +20,7 @@
   }
 }
 
-@mixin breakpoint-between($lower, $upper, $breakpoints: $tp-grid-breakpoints) {
+@mixin breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints) {
   $min: breakpoint-min($lower, $breakpoints);
   $max: breakpoint-max($upper, $breakpoints);
 
@@ -35,7 +35,7 @@
   }
 }
 
-@mixin breakpoint-only($name, $breakpoints: $tp-grid-breakpoints) {
+@mixin breakpoint-only($name, $breakpoints: $grid-breakpoints) {
   $min: breakpoint-min($name, $breakpoints);
   $next: breakpoint-next($name, $breakpoints);
   $max: breakpoint-max($next);

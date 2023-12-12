@@ -4,7 +4,11 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'templarios',
-  plugins: [sass()],
+  plugins: [sass({
+    injectGlobalPaths: [
+      './src/styles/_templarios.abstracts.scss',
+    ]
+  })],
   outputTargets: [
     {
       type: 'dist',
