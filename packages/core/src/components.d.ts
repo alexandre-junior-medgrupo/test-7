@@ -7,10 +7,14 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
 import { TpAlertType } from "./components/templarios/alert/alert.type";
+import { TpChartRadialSize } from "./components/templarios/chart-radial/chart-radial.enum";
+import { TpChartRadialItem } from "./components/templarios/chart-radial/chart-radial.type";
 import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
 import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
 export { TpAlertType } from "./components/templarios/alert/alert.type";
+export { TpChartRadialSize } from "./components/templarios/chart-radial/chart-radial.enum";
+export { TpChartRadialItem } from "./components/templarios/chart-radial/chart-radial.type";
 export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
 export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
 export namespace Components {
@@ -61,6 +65,20 @@ export namespace Components {
           * Define a largura do componente.
          */
         "width": number;
+    }
+    interface TpChartRadial {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o valor representado pelo componente.
+         */
+        "items": TpChartRadialItem[];
+        /**
+          * Define a variação de tamanho do componente.
+         */
+        "size"?: TpChartRadialSize;
     }
     interface TpComparisonChartBar {
         /**
@@ -156,6 +174,12 @@ declare global {
         prototype: HTMLTpChartBarElement;
         new (): HTMLTpChartBarElement;
     };
+    interface HTMLTpChartRadialElement extends Components.TpChartRadial, HTMLStencilElement {
+    }
+    var HTMLTpChartRadialElement: {
+        prototype: HTMLTpChartRadialElement;
+        new (): HTMLTpChartRadialElement;
+    };
     interface HTMLTpComparisonChartBarElement extends Components.TpComparisonChartBar, HTMLStencilElement {
     }
     var HTMLTpComparisonChartBarElement: {
@@ -194,6 +218,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "tp-alert": HTMLTpAlertElement;
         "tp-chart-bar": HTMLTpChartBarElement;
+        "tp-chart-radial": HTMLTpChartRadialElement;
         "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
         "tp-horizontal-chart-bar": HTMLTpHorizontalChartBarElement;
         "tp-input-container": HTMLTpInputContainerElement;
@@ -248,6 +273,20 @@ declare namespace LocalJSX {
           * Define a largura do componente.
          */
         "width"?: number;
+    }
+    interface TpChartRadial {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o valor representado pelo componente.
+         */
+        "items"?: TpChartRadialItem[];
+        /**
+          * Define a variação de tamanho do componente.
+         */
+        "size"?: TpChartRadialSize;
     }
     interface TpComparisonChartBar {
         /**
@@ -332,6 +371,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "tp-alert": TpAlert;
         "tp-chart-bar": TpChartBar;
+        "tp-chart-radial": TpChartRadial;
         "tp-comparison-chart-bar": TpComparisonChartBar;
         "tp-horizontal-chart-bar": TpHorizontalChartBar;
         "tp-input-container": TpInputContainer;
@@ -344,6 +384,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "tp-alert": LocalJSX.TpAlert & JSXBase.HTMLAttributes<HTMLTpAlertElement>;
             "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
+            "tp-chart-radial": LocalJSX.TpChartRadial & JSXBase.HTMLAttributes<HTMLTpChartRadialElement>;
             "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
             "tp-horizontal-chart-bar": LocalJSX.TpHorizontalChartBar & JSXBase.HTMLAttributes<HTMLTpHorizontalChartBarElement>;
             "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;
