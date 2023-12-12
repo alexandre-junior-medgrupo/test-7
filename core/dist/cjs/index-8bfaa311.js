@@ -554,6 +554,9 @@ const createElm = (oldParentVNode, newParentVNode, childIndex, parentElm) => {
             }
         }
     }
+    // This needs to always happen so we can hide nodes that are projected
+    // to another component but don't end up in a slot
+    elm['s-hn'] = hostTagName;
     return elm;
 };
 /**
@@ -1692,4 +1695,4 @@ exports.promiseResolve = promiseResolve;
 exports.registerInstance = registerInstance;
 exports.setNonce = setNonce;
 
-//# sourceMappingURL=index-1580f908.js.map
+//# sourceMappingURL=index-8bfaa311.js.map

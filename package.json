@@ -11,7 +11,7 @@
     "lint:prettier": "prettier . --write --cache --cache-location .prettiercache",
     "lint:stylelint": "stylelint **/*.scss --fix --cache --formatter verbose",
     "lint": "npm-run-all lint:prettier --parallel lint:stylelint",
-    "build:core": "lerna run tp:build --scope=core",
+    "build:core": "lerna run tp:build --scope=tp-core",
     "clean:core": "shx rm -rf core/*",
     "move:core": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles core",
     "build:angular:lib": "lerna run tp:build --scope=angular-lib",
