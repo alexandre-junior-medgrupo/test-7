@@ -1,0 +1,25 @@
+/* stylelint-disable selector-max-compound-selectors */
+
+ion-datetime {
+  --background: var(--tp-color-neutral-2);
+  --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
+  min-width: 414px;
+  border-radius: 16px 16px 0 0;
+
+  &::part(wheel-item) {
+    color: var(--tp-color-neutral-10);
+    opacity: .3;
+  }
+
+  &::part(active) {
+    opacity: initial;
+  }
+
+  ion-buttons {
+    justify-content: space-between;
+
+    ion-button:last-child ion-label {
+      color: var(--tp-color-brand-4);
+    }
+  }
+}

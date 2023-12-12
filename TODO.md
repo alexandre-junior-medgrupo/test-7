@@ -10,6 +10,7 @@
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
 - Trazer breakpoints do antigo (mixin)
+- Fazer atributo no-padding para o button tertiary
 
   - toast
   - tabs

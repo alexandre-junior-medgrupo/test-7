@@ -2022,6 +2022,27 @@ ion-chip.ion-color:not(.chip-outline):hover {
   border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
 }
 
+/* stylelint-disable selector-max-compound-selectors */
+ion-datetime {
+  --background: var(--tp-color-neutral-2);
+  --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
+  min-width: 414px;
+  border-radius: 16px 16px 0 0;
+}
+ion-datetime::part(wheel-item) {
+  color: var(--tp-color-neutral-10);
+  opacity: 0.3;
+}
+ion-datetime::part(active) {
+  opacity: initial;
+}
+ion-datetime ion-buttons {
+  justify-content: space-between;
+}
+ion-datetime ion-buttons ion-button:last-child ion-label {
+  color: var(--tp-color-brand-4);
+}
+
 ion-fab-button {
   --background: var(--tp-color-brand);
   width: 48px;
@@ -2418,6 +2439,10 @@ ion-item.ion-color ion-toggle {
   --handle-background-checked: var(--ion-color-base);
   --track-background: var(--tp-color-neutral-4);
   --track-background-checked: var(--ion-color-contrast);
+}
+
+ion-item.ion-color ion-text {
+  color: var(--ion-color-contrast);
 }
 
 ion-item {
