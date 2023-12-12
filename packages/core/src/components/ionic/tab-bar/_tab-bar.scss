@@ -1,20 +1,39 @@
+@import '../../../styles/templarios.abstracts';
+
 ion-tab-bar {
   padding: 8px 0;
+  --background: var(--tp-color-neutral-1);
+
+  @include breakpoint-down('sm') {
+    align-items: baseline;
+    height: 64px;
+  }
 }
 
 ion-tab-button {
   --color-selected: transparent;
+  display: flex;
+  flex-direction: row;
   max-width: initial;
+
+  @include breakpoint-down('lg') {
+    flex-direction: column;
+  }
 
   ion-label {
     color: var(--tp-color-neutral-5);
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+
+    @include breakpoint-down('sm') {
+      white-space: initial;
+    }
   }
 
   ion-icon {
     --stroke: var(--tp-color-neutral-5);
+    margin: 4px;
     font-size: 24px;
   }
 }
