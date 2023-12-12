@@ -8,6 +8,12 @@ ion-datetime {
   left: calc(50% - 207px);
   min-width: 414px;
   border-radius: 16px 16px 0 0;
+  visibility: hidden;
+  opacity: 1;
+
+  &.ion-color-primary {
+    --ion-color-base: var(--tp-color-neutral-2) !important;
+  }
 
   &::part(wheel-item) {
     color: var(--tp-color-neutral-10);

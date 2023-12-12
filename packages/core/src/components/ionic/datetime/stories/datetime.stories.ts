@@ -1,39 +1,58 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementDatetime } from '@ionic/core/components/ion-datetime';
-import { defineCustomElement as defineCustomElementButton } from '@ionic/core/components/ion-button';
+import { defineCustomElement as defineCustomElementDatetimeButton, IonDatetimeButton } from '@ionic/core/components/ion-datetime-button';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
+import { TpInputContainer } from 'src/components/templarios/input-container/input-container';
 import { TpIonDatetime } from '../utils/datetime.type';
 
 defineCustomElementDatetime();
-defineCustomElementButton();
+defineCustomElementDatetimeButton();
 
-const meta: Meta<Components.IonDatetime & TpIonDatetime> = {
+
+const meta: Meta<Components.IonDatetime & IonDatetimeButton & TpIonDatetime & TpInputContainer> = {
   title: 'components/Ionic/Datetime',
   argTypes: {},
 };
 
 export default meta;
 
-type Story = StoryObj<Components.IonDatetime & TpIonDatetime>;
+type Story = StoryObj<Components.IonDatetime & IonDatetimeButton & TpIonDatetime & TpInputContainer>;
+
+const openDatetime = () => {
+  const datetime = document.getElementById('datetime')
+  datetime.style.opacity = '1';
+  datetime.style.visibility = 'visible';
+}
+
+const closeDatetime = () => {
+  const datetime = document.getElementById('datetime')
+  datetime.style.opacity = '0';
+  datetime.style.visibility = 'hidden';
+}
+
 
 export const Default: Story = {
-  render: ({ ...args }) =>
-    html`
+  render: ({ ...args }) => {
+    return html`
+      <tp-input-container color="${args.color}" @click=${openDatetime}>
+        <ion-label slot="label" tp-type="p14">Descrição Datetime date</ion-label>
+        <ion-datetime-button datetime="datetime"></ion-datetime-button>
+        <ion-icon src="./icons/tp-calendar.svg"></ion-icon>
+      </tp-input-container>
 
-
-
-    <ion-datetime color="${args.color}" id="datetime" presentation="date" prefer-wheel="true">
-      <div slot="title">
-        <ion-button fill="clear" size="xxs">
-          <ion-label tp-type="p12b">CANCELAR</ion-label>
-        </ion-button>
-        <ion-button fill="clear" size="xxs">
-          <ion-label tp-type="p12b">SELECIONAR</ion-label>
-        </ion-button>
-      </div>
-    </ion-datetime>
-    >`,
+      <ion-datetime id="datetime" presentation="date" prefer-wheel="true">
+        <div slot="title">
+          <ion-button fill="clear" size="xxs">
+            <ion-label tp-type="p12b" @click=${closeDatetime}>CANCELAR</ion-label>
+          </ion-button>
+          <ion-button fill="clear" size="xxs">
+            <ion-label tp-type="p12b" @click=${closeDatetime}>SELECIONAR</ion-label>
+          </ion-button>
+        </div>
+      </ion-datetime>
+    `
+  },
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/ion-datetime/gi)).toBeTruthy();
@@ -43,16 +62,22 @@ export const Default: Story = {
 export const Time: Story = {
   render: ({ ...args }) =>
     html`
-    <ion-datetime color="${args.color}" id="datetime" presentation="time" prefer-wheel="true">
-      <ion-buttons slot="title">
-        <ion-button fill="clear" size="xxs">
-          <ion-label tp-type="p12b">CANCELAR</ion-label>
-        </ion-button>
-        <ion-button fill="clear" size="xxs">
-          <ion-label tp-type="p12b">SELECIONAR</ion-label>
-        </ion-button>
-      </ion-buttons>
-    </ion-datetime>
+      <tp-input-container color="${args.color}" @click=${openDatetime}>
+        <ion-label slot="label" tp-type="p14">Descrição Datetime time</ion-label>
+        <ion-datetime-button datetime="datetime"></ion-datetime-button>
+        <ion-icon src="./icons/tp-calendar.svg"></ion-icon>
+      </tp-input-container>
+
+      <ion-datetime id="datetime" presentation="time" prefer-wheel="true">
+        <div slot="title">
+          <ion-button fill="clear" size="xxs">
+            <ion-label tp-type="p12b" @click=${closeDatetime}>CANCELAR</ion-label>
+          </ion-button>
+          <ion-button fill="clear" size="xxs">
+            <ion-label tp-type="p12b" @click=${closeDatetime}>SELECIONAR</ion-label>
+          </ion-button>
+        </div>
+      </ion-datetime>
     >`,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
