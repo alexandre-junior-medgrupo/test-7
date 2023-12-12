@@ -2032,7 +2032,7 @@ ion-datetime {
   min-width: 414px;
   border-radius: 16px 16px 0 0;
   visibility: hidden;
-  opacity: 1;
+  opacity: 0;
 }
 ion-datetime.ion-color-primary {
   --ion-color-base: var(--tp-color-neutral-2) !important;

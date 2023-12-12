@@ -31,13 +31,12 @@ const closeDatetime = () => {
   datetime.style.visibility = 'hidden';
 }
 
-
 export const Default: Story = {
   render: ({ ...args }) => {
     return html`
       <tp-input-container color="${args.color}" @click=${openDatetime}>
         <ion-label slot="label" tp-type="p14">Descrição Datetime date</ion-label>
-        <ion-datetime-button datetime="datetime"></ion-datetime-button>
+        <ion-datetime-button mode="ios" datetime="datetime"></ion-datetime-button>
         <ion-icon src="./icons/tp-calendar.svg"></ion-icon>
       </tp-input-container>
 
