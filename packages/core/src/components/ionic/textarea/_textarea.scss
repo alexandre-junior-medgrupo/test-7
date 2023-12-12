@@ -1,5 +1,5 @@
 ion-textarea.sc-ion-textarea-md-h {
-  --background: var(--tp-color-neutral-2);
+  --background: transparent;
   --color: var(--tp-color-neutral-10);
   --border-radius: 8px;
   --padding-top: 12px;
@@ -15,76 +15,11 @@ ion-textarea.sc-ion-textarea-md-h {
 ion-textarea {
   height: 80px;
 
-  .textarea-wrapper {
-    border: 1px solid transparent;
-  }
-
   .native-textarea::-webkit-scrollbar {
     display: none;
   }
 
   .textarea-highlight.sc-ion-textarea-md {
     background: transparent;
-  }
-
-  &.ion-invalid {
-    .textarea-wrapper {
-      border: 1px solid var(--tp-color-warning);
-    }
-
-    .textarea-bottom {
-      --border-width: initial;
-      --border-color: transparent;
-      --border-style: initial;
-
-      .error-text {
-        --highlight-color-invalid: var(--tp-color-warning);
-      }
-    }
-  }
-
-  &.ion-valid {
-    .textarea-wrapper {
-      border: 1px solid var(--tp-color-success);
-    }
-
-    .textarea-bottom {
-      --border-width: initial;
-      --border-color: transparent;
-      --border-style: initial;
-    }
-  }
-}
-
-//
-// hover
-//
-ion-textarea:hover:not([disabled]) {
-  --background: var(--tp-color-neutral-3);
-}
-
-//
-// focus
-//
-ion-textarea.has-focus .textarea-wrapper {
-  border: 1px solid var(--tp-color-neutral-3);
-}
-
-//
-// color
-//
-ion-textarea.ion-color {
-  --background: var(--ion-color-base);
-  --color: var(--ion-color-contrast);
-  --highlight-color: var(--ion-color-contrast);
-  --placeholder-color: var(--ion-color-contrast);
-  --placeholder-opacity: 0.6;
-
-  &:hover:not([disabled]) {
-    --background: var(--ion-color-tint);
-  }
-
-  &.has-focus .textarea-wrapper {
-    border: 1px solid var(--ion-color-tint);
   }
 }
