@@ -75,6 +75,81 @@ function ProxyCmp(opts) {
   return decorator;
 }
 
+let TpAlert = class TpAlert {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: TpAlert,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: TpAlert,
+      selector: 'tp-alert',
+      inputs: {
+        color: 'color',
+        icon: 'icon',
+        loading: 'loading',
+        message: 'message',
+        state: 'state',
+      },
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+TpAlert = __decorate(
+  [
+    ProxyCmp({
+      inputs: ['color', 'icon', 'loading', 'message', 'state'],
+    }),
+  ],
+  TpAlert,
+);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: TpAlert,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'tp-alert',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: ['color', 'icon', 'loading', 'message', 'state'],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
 let TpChartBar = class TpChartBar {
   constructor(c, r, z) {
     this.z = z;
@@ -247,6 +322,82 @@ i0.ɵɵngDeclareClassMetadata({
     ];
   },
 });
+let TpHorizontalChartBar = class TpHorizontalChartBar {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: TpHorizontalChartBar,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: TpHorizontalChartBar,
+      selector: 'tp-horizontal-chart-bar',
+      inputs: {
+        color: 'color',
+        loading: 'loading',
+        maxCount: 'maxCount',
+        noLabel: 'noLabel',
+        size: 'size',
+        value: 'value',
+      },
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+TpHorizontalChartBar = __decorate(
+  [
+    ProxyCmp({
+      inputs: ['color', 'loading', 'maxCount', 'noLabel', 'size', 'value'],
+    }),
+  ],
+  TpHorizontalChartBar,
+);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: TpHorizontalChartBar,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'tp-horizontal-chart-bar',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: ['color', 'loading', 'maxCount', 'noLabel', 'size', 'value'],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
 let TpInputContainer = class TpInputContainer {
   constructor(c, r, z) {
     this.z = z;
@@ -388,8 +539,10 @@ i0.ɵɵngDeclareClassMetadata({
 });
 
 const DIRECTIVES = [
+  TpAlert,
   TpChartBar,
   TpComparisonChartBar,
+  TpHorizontalChartBar,
   TpInputContainer,
   TpRateLike,
 ];
@@ -412,12 +565,21 @@ class TemplariosModule {
       ngImport: i0,
       type: TemplariosModule,
       declarations: [
+        TpAlert,
         TpChartBar,
         TpComparisonChartBar,
+        TpHorizontalChartBar,
         TpInputContainer,
         TpRateLike,
       ],
-      exports: [TpChartBar, TpComparisonChartBar, TpInputContainer, TpRateLike],
+      exports: [
+        TpAlert,
+        TpChartBar,
+        TpComparisonChartBar,
+        TpHorizontalChartBar,
+        TpInputContainer,
+        TpRateLike,
+      ],
     });
   }
   static {
@@ -469,8 +631,10 @@ i0.ɵɵngDeclareClassMetadata({
 export {
   DIRECTIVES,
   TemplariosModule,
+  TpAlert,
   TpChartBar,
   TpComparisonChartBar,
+  TpHorizontalChartBar,
   TpInputContainer,
   TpRateLike,
 };

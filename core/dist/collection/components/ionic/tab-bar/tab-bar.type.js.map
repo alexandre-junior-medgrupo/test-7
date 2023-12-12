@@ -1,1 +1,0 @@
-{"version":3,"file":"tab-bar.type.js","sourceRoot":"","sources":["../../../../src/components/ionic/tab-bar/tab-bar.type.ts"],"names":[],"mappings":"","sourcesContent":["import type { TpColor } from '../../../utils/types/color.type';\n\nexport type TpIonTabBar = {\n  color: `${TpColor}`;\n};\n"]}

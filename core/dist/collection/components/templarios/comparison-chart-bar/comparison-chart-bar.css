@@ -4,9 +4,6 @@
   * @prop --tp-bar-value: Propriedade definida dinamicamente no tsx. Define o preenchimento da coluna em porcentagem.
   * @prop --tp-marker-value: Propriedade definida dinamicamente no tsx. Define a posição, em porcentagem, do marcador na coluna.
   * @prop --tp-marker-color: Define a cor do marcador.
-  * @prop --tp-skeleton-height: Define a altura do skeleton do componente.
-  * @prop --tp-skeleton-width: Define a largura do skeleton do componente.
-  * @prop --tp-skeleton-background-rgb: Define o background rgb do skeleton do componente.
 */
 :host {
   --tp-skeleton-height: var(--tp-container-height);

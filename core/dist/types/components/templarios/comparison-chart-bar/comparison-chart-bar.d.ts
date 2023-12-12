@@ -5,19 +5,19 @@ export declare class TpComparisonChartBar {
      */
     color?: TpColor;
     /**
-     * Define a altura máxima da coluna.
+     * Define a altura do componente.
      */
     containerHeight: number;
     /**
-     * Define o preenchimento da coluna em porcentagem.
+     * Define o valor da barra de progresso.
      */
     barValue: number;
     /**
-     * Define se o componente terá um marcador.
+     * Se 'true' o componente vai renderizar o marker.
      */
     hasMarker: boolean;
     /**
-     * Define a posição, em porcentagem, do marcador na coluna.
+     * Define a posição do marker na coluna.
      */
     markerValue: number;
     /**
@@ -25,7 +25,7 @@ export declare class TpComparisonChartBar {
      */
     disabled: boolean;
     /**
-     * Define se o componente não terá rótulo.
+     * Define se um slot será disponibilizado para receber o label do chart.
      */
     noLabel: boolean;
     /**

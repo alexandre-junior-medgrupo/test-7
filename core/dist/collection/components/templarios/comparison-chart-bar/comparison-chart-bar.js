@@ -81,7 +81,7 @@ export class TpComparisonChartBar {
                 "optional": false,
                 "docs": {
                     "tags": [],
-                    "text": "Define a altura m\u00E1xima da coluna."
+                    "text": "Define a altura do componente."
                 },
                 "attribute": "container-height",
                 "reflect": true,
@@ -99,7 +99,7 @@ export class TpComparisonChartBar {
                 "optional": false,
                 "docs": {
                     "tags": [],
-                    "text": "Define o preenchimento da coluna em porcentagem."
+                    "text": "Define o valor da barra de progresso."
                 },
                 "attribute": "bar-value",
                 "reflect": true,
@@ -117,7 +117,7 @@ export class TpComparisonChartBar {
                 "optional": false,
                 "docs": {
                     "tags": [],
-                    "text": "Define se o componente ter\u00E1 um marcador."
+                    "text": "Se 'true' o componente vai renderizar o marker."
                 },
                 "attribute": "has-marker",
                 "reflect": true,
@@ -135,7 +135,7 @@ export class TpComparisonChartBar {
                 "optional": false,
                 "docs": {
                     "tags": [],
-                    "text": "Define a posi\u00E7\u00E3o, em porcentagem, do marcador na coluna."
+                    "text": "Define a posi\u00E7\u00E3o do marker na coluna."
                 },
                 "attribute": "marker-value",
                 "reflect": true,
@@ -171,7 +171,7 @@ export class TpComparisonChartBar {
                 "optional": false,
                 "docs": {
                     "tags": [],
-                    "text": "Define se o componente n\u00E3o ter\u00E1 r\u00F3tulo."
+                    "text": "Define se um slot ser\u00E1 disponibilizado para receber o label do chart."
                 },
                 "attribute": "no-label",
                 "reflect": true,
