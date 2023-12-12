@@ -12,7 +12,24 @@ defineCustomElementDatetimeButton();
 
 const meta: Meta<Components.IonDatetime & IonDatetimeButton & TpIonDatetime & TpInputContainer> = {
   title: 'components/Ionic/Datetime',
-  argTypes: {},
+  argTypes: {
+    presentation: {
+      control: 'select',
+      options: ['time'],
+      description: 'Define o mode de apresentação do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'Time',
+        },
+      },
+    }
+  },
+  args: {
+    presentation: 'date',
+  }
 };
 
 export default meta;
@@ -35,12 +52,12 @@ export const Default: Story = {
   render: ({ ...args }) => {
     return html`
       <tp-input-container color="${args.color}" @click=${openDatetime}>
-        <ion-label slot="label" tp-type="p14">Descrição Datetime date</ion-label>
+        <ion-label slot="label" tp-type="p14">Descrição Datetime</ion-label>
         <ion-datetime-button mode="ios" datetime="datetime"></ion-datetime-button>
         <ion-icon src="./icons/tp-calendar.svg"></ion-icon>
       </tp-input-container>
 
-      <ion-datetime id="datetime" presentation="date" prefer-wheel="true">
+      <ion-datetime id="datetime" presentation=${args.presentation} prefer-wheel="true">
         <div slot="title">
           <ion-button fill="clear" size="xxs">
             <ion-label tp-type="p12b" @click=${closeDatetime}>CANCELAR</ion-label>
@@ -52,32 +69,6 @@ export const Default: Story = {
       </ion-datetime>
     `
   },
-  /* play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/ion-datetime/gi)).toBeTruthy();
-  }, */
-};
-
-export const Time: Story = {
-  render: ({ ...args }) =>
-    html`
-      <tp-input-container color="${args.color}" @click=${openDatetime}>
-        <ion-label slot="label" tp-type="p14">Descrição Datetime time</ion-label>
-        <ion-datetime-button datetime="datetime"></ion-datetime-button>
-        <ion-icon src="./icons/tp-calendar.svg"></ion-icon>
-      </tp-input-container>
-
-      <ion-datetime id="datetime" presentation="time" prefer-wheel="true">
-        <div slot="title">
-          <ion-button fill="clear" size="xxs">
-            <ion-label tp-type="p12b" @click=${closeDatetime}>CANCELAR</ion-label>
-          </ion-button>
-          <ion-button fill="clear" size="xxs">
-            <ion-label tp-type="p12b" @click=${closeDatetime}>SELECIONAR</ion-label>
-          </ion-button>
-        </div>
-      </ion-datetime>
-    >`,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/ion-datetime/gi)).toBeTruthy();
