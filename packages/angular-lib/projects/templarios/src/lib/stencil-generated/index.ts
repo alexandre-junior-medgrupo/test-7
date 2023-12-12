@@ -1,3 +1,4 @@
+
 import * as d from './components';
 
 export const DIRECTIVES = [
@@ -6,5 +7,5 @@ export const DIRECTIVES = [
   d.TpComparisonChartBar,
   d.TpHorizontalChartBar,
   d.TpInputContainer,
-  d.TpRateLike,
+  d.TpRateLike
 ];
