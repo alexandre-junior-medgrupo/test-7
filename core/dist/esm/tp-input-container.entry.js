@@ -1,4 +1,4 @@
-import { r as registerInstance, g as getAssetPath, h, H as Host } from './index-2c7b414a.js';
+import { r as registerInstance, g as getAssetPath, h, H as Host } from './index-9cfc084e.js';
 import { c as createColorClasses } from './color.function-a9b13d36.js';
 
 const inputContainerCss = ":host{display:block}.tp-input-container__wrapper{display:flex}";
