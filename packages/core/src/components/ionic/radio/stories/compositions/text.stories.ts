@@ -8,7 +8,7 @@ import { defineCustomElement as defineCustomElementText } from '@ionic/core/comp
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TP_TYPE } from '../../../../../utils/constants/type.constant';
-import { TpIonText } from '../../../text/text.type';
+import { TpIonText } from '../../../text/utils/text.type';
 
 defineCustomElementRadio();
 defineCustomElementRadioGroup();

@@ -1,1 +1,0 @@
-{"version":3,"file":"accordion.type.js","sourceRoot":"","sources":["../../../../src/components/ionic/accordion/accordion.type.ts"],"names":[],"mappings":"","sourcesContent":["import type { TpColor } from '../../../utils/types/color.type';\n\nexport type TpIonAccordion = {\n  color: `${TpColor}`;\n};\n"]}

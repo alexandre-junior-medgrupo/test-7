@@ -9,14 +9,14 @@ import { TpColor } from "./utils/types/color.type";
 import { TpAlertType } from "./components/templarios/alert/alert.type";
 import { TpChartRadialSize } from "./components/templarios/chart-radial/chart-radial.enum";
 import { TpChartRadialItem } from "./components/templarios/chart-radial/chart-radial.type";
-import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
-import { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
+import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
+import { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
 export { TpAlertType } from "./components/templarios/alert/alert.type";
 export { TpChartRadialSize } from "./components/templarios/chart-radial/chart-radial.enum";
 export { TpChartRadialItem } from "./components/templarios/chart-radial/chart-radial.type";
-export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/horizontal-chart-bar.enum";
-export { TpRateLikeType } from "./components/templarios/rate-like/rate-like.type";
+export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
+export { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export namespace Components {
     interface TpAlert {
         /**
@@ -82,7 +82,7 @@ export namespace Components {
     }
     interface TpComparisonChartBar {
         /**
-          * Define o preenchimento da coluna em porcentagem.
+          * Define o valor da barra de progresso.
          */
         "barValue": number;
         /**
@@ -90,7 +90,7 @@ export namespace Components {
          */
         "color"?: TpColor;
         /**
-          * Define a altura máxima da coluna.
+          * Define a altura do componente.
          */
         "containerHeight": number;
         /**
@@ -98,7 +98,7 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * Define se o componente terá um marcador.
+          * Se 'true' o componente vai renderizar o marker.
          */
         "hasMarker": boolean;
         /**
@@ -106,11 +106,11 @@ export namespace Components {
          */
         "loading"?: boolean;
         /**
-          * Define a posição, em porcentagem, do marcador na coluna.
+          * Define a posição do marker na coluna.
          */
         "markerValue": number;
         /**
-          * Define se o componente não terá rótulo.
+          * Define se um slot será disponibilizado para receber o label do chart.
          */
         "noLabel": boolean;
     }
@@ -124,11 +124,11 @@ export namespace Components {
          */
         "loading"?: boolean;
         /**
-          * Define o valor que value deve atingir para apresentar 100% de progresso.
+          * Define o valor máximo da barra de progresso.
          */
         "maxCount": number;
         /**
-          * Define se um slot será disponibilizado para receber um rótulo.
+          * Define se um slot será disponibilizado para receber o label do chart.
          */
         "noLabel": boolean;
         /**
@@ -136,7 +136,7 @@ export namespace Components {
          */
         "size"?: TpHorizontalChartBarSize;
         /**
-          * Define o valor representado pelo componente.
+          * Define o valor da barra de progresso.
          */
         "value": number;
     }
@@ -290,7 +290,7 @@ declare namespace LocalJSX {
     }
     interface TpComparisonChartBar {
         /**
-          * Define o preenchimento da coluna em porcentagem.
+          * Define o valor da barra de progresso.
          */
         "barValue"?: number;
         /**
@@ -298,7 +298,7 @@ declare namespace LocalJSX {
          */
         "color"?: TpColor;
         /**
-          * Define a altura máxima da coluna.
+          * Define a altura do componente.
          */
         "containerHeight"?: number;
         /**
@@ -306,7 +306,7 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * Define se o componente terá um marcador.
+          * Se 'true' o componente vai renderizar o marker.
          */
         "hasMarker"?: boolean;
         /**
@@ -314,11 +314,11 @@ declare namespace LocalJSX {
          */
         "loading"?: boolean;
         /**
-          * Define a posição, em porcentagem, do marcador na coluna.
+          * Define a posição do marker na coluna.
          */
         "markerValue"?: number;
         /**
-          * Define se o componente não terá rótulo.
+          * Define se um slot será disponibilizado para receber o label do chart.
          */
         "noLabel"?: boolean;
     }
@@ -332,11 +332,11 @@ declare namespace LocalJSX {
          */
         "loading"?: boolean;
         /**
-          * Define o valor que value deve atingir para apresentar 100% de progresso.
+          * Define o valor máximo da barra de progresso.
          */
         "maxCount"?: number;
         /**
-          * Define se um slot será disponibilizado para receber um rótulo.
+          * Define se um slot será disponibilizado para receber o label do chart.
          */
         "noLabel"?: boolean;
         /**
@@ -344,7 +344,7 @@ declare namespace LocalJSX {
          */
         "size"?: TpHorizontalChartBarSize;
         /**
-          * Define o valor representado pelo componente.
+          * Define o valor da barra de progresso.
          */
         "value"?: number;
     }

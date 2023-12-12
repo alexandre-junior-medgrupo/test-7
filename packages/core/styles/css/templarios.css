@@ -1435,9 +1435,9 @@ ion-accordion .ion-accordion-toggle-icon {
 }
 ion-accordion [slot=content] {
   padding-top: 0;
-  padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
+  padding-left: 16px;
   background: transparent;
 }
 ion-accordion [slot=content] * {
@@ -1452,8 +1452,8 @@ ion-accordion[tp-spacingx] [slot=header] {
   --padding-end: var(--spacing);
 }
 ion-accordion[tp-spacingx] [slot=content] {
-  padding-left: var(--spacing);
   padding-right: var(--spacing);
+  padding-left: var(--spacing);
 }
 ion-accordion[tp-spacingy] [slot=header] {
   --padding-top: var(--spacing);
@@ -1461,10 +1461,6 @@ ion-accordion[tp-spacingy] [slot=header] {
 }
 ion-accordion[tp-spacingy] [slot=content] {
   padding-bottom: var(--spacing);
-}
-
-ion-accordion.accordion-expanding [slot=header], ion-accordion.accordion-expanded [slot=header] {
-  --padding-bottom: 0;
 }
 
 ion-accordion[tp-color] [slot=header] {
@@ -2154,11 +2150,12 @@ ion-item {
   --padding-bottom: 8px;
   --inner-padding-end: 0;
   --min-height: initial;
+  --ripple-color: var(--tp-color-neutral-5);
 }
 ion-item ion-label.sc-ion-label-md-h.sc-ion-label-md-s {
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
 }
 ion-item ion-icon {
   margin-top: 0;
@@ -2464,6 +2461,23 @@ ion-label {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+ion-list.list-lines-full ion-item {
+  --border-color: var(--tp-color-neutral-2);
+}
+ion-list.list-lines-full ion-item:last-child {
+  --border-width: 0;
+}
+ion-list.list-lines-full ion-item[lines=full]:last-child {
+  --border-width: 0 0 1px 0;
+}
+
+ion-list.list-lines-full ion-item.ion-color {
+  --border-color: var(--ion-color-contrast);
+}
+ion-list.list-lines-full ion-item.ion-color::part(native) {
+  border-color: var(--border-color);
 }
 
 ion-progress-bar {
