@@ -2026,6 +2026,9 @@ ion-chip.ion-color:not(.chip-outline):hover {
 ion-datetime {
   --background: var(--tp-color-neutral-2);
   --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 207px);
   min-width: 414px;
   border-radius: 16px 16px 0 0;
 }
@@ -2036,10 +2039,11 @@ ion-datetime::part(wheel-item) {
 ion-datetime::part(active) {
   opacity: initial;
 }
-ion-datetime ion-buttons {
+ion-datetime div {
+  display: flex;
   justify-content: space-between;
 }
-ion-datetime ion-buttons ion-button:last-child ion-label {
+ion-datetime div ion-button:last-child ion-label {
   color: var(--tp-color-brand-4);
 }
 
