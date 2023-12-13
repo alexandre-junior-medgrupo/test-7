@@ -1,29 +1,31 @@
 import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
+import { TP_ICONS_STORYBOOK } from '../../../../utils/constants/icon.constant';
+import { TpIonIcon } from '../../../ionic/icon/utils/icon.type';
 import { TpAlert } from '../alert';
-import { TP_ALERT } from '../alert.constants';
-import { TpAlertState } from '../alert.enum';
+import { TpAlertType } from '../alert.type';
 
 // antigo med-alert-fixed
 defineCustomElementSkeletonText();
 
-const meta: Meta<TpAlert> = {
+const meta: Meta<TpAlert & TpAlertType & TpIonIcon> = {
   title: 'components/Templarios/Alert',
   argTypes: {
-    state: {
-      control: { type: 'radio' },
-      options: [...TP_ALERT.state],
-      description: `Define a variação de estado do componente.
-
-**OBS**: O **state="${TpAlertState.ATUALIZAR}"** está disponível apenas no theme **MedSoft**.`,
-      // TODO  OU USAR HASH PARA COR???
+    icon: {
+      control: { type: 'select' },
+      options: [...TP_ICONS_STORYBOOK],
+      description: 'Define o path e nome do icone.',
+    },
+    text: {
+      control: 'text',
+      description: 'Define a string a ser exibida no componente.',
       table: {
         defaultValue: {
           summary: 'undefined',
         },
         type: {
-          summary: [...TP_ALERT.state].join('|'),
+          summary: 'text',
         },
       },
     },
@@ -41,26 +43,30 @@ const meta: Meta<TpAlert> = {
     },
   },
   args: {
-    state: TpAlertState.OFFLINE,
+    color: 'provas-4',
+    icon: `${TP_ICONS_STORYBOOK[1]}`,
+    text: 'Versão desatualizada',
   },
 };
 
 export default meta;
 
-type Story = StoryObj;
+type Story = StoryObj<TpAlert & TpAlertType & TpIonIcon>;
 
-export const Default: Story = {
+export const Desatualizado: Story = {
   render: ({ ...args }) => {
+    const iconUrl = `./icons/${args.icon}`;
+
     return html`<tp-alert
-      state="${args.state}"
+      color="${args.color}"
       ?loading="${args.loading}"
-    ></tp-alert>`;
+    >
+      <ion-icon class="tp-alert__icon" slot="icon" tp-size="sm" src="${iconUrl}"></ion-icon>
+      <ion-text class="tp-alert__text" slot="text" tp-type="p12x">${args.text}</ion-text>
+    </tp-alert>`;
   },
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/tp-alert/gi)).toBeTruthy();
   }, */
-};
-Default.argTypes = {
-  color: { table: { disable: true } },
 };
