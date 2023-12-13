@@ -36,14 +36,16 @@ export const Default = {
     render: (_a) => {
         var args = __rest(_a, []);
         return html `
+  <tp-input-container color="${args.color}">
+    <ion-label slot="label" tp-type="p14">Descrição Searchbar</ion-label>
     <ion-searchbar
-      color="${args.color}"
       ?disabled="${args.disabled}"
       mode="md"
       search-icon="./../../../../icons/tp-search.svg"
       clear-icon="./../../../../icons/tp-x.svg"
       placeholder="Lorem ipsum dolor"
     ></ion-searchbar>
+  </tp-input-container>
   `;
     },
     /* play: async ({ canvasElement }) => {

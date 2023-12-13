@@ -13,6 +13,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 import { defineCustomElement as defineCustomElementInput } from "@ionic/core/components/ion-input";
 import { defineCustomElement as defineCustomElementLabel } from "@ionic/core/components/ion-label";
 import { html } from "lit";
+import { TP_INPUT_CONTAINER } from "../utils/input-container.constants";
 defineCustomElementInput();
 defineCustomElementLabel();
 const meta = {
@@ -20,14 +21,14 @@ const meta = {
     argTypes: {
         state: {
             control: { type: 'select' },
-            options: ['error', 'success'],
-            description: 'Define o espaçamento entre os slots do componente.',
+            options: [...TP_INPUT_CONTAINER.state],
+            description: 'Define o estado do componente.',
             table: {
                 defaultValue: {
                     summary: 'undefined',
                 },
                 type: {
-                    summary: ['error', '|', 'success'],
+                    summary: TP_INPUT_CONTAINER.state.join('|'),
                 },
             },
         },
@@ -38,8 +39,8 @@ export const Input = {
     render: (_a) => {
         var args = __rest(_a, []);
         return html `
-    <tp-input-container state="${args.state}">
-      <ion-label slot="label" tp-type="p14">Lorem ipsum dolor sit.</ion-label>
+    <tp-input-container color="${args.color}" state="${args.state}">
+      <ion-label slot="label" tp-type="p14">Descrição Input</ion-label>
       <ion-input
         type="email"
         mode="md"
@@ -47,10 +48,10 @@ export const Input = {
         placeholder="Digite um e-mail valido"
       ></ion-input>
       <ion-label slot="feedback-error" tp-type="p14"
-        >Lorem ipsum dolor sit.</ion-label
+        >*Caracteres invalidos.</ion-label
       >
       <ion-label slot="feedback-success" tp-type="p14"
-        >Lorem ipsum dolor sit.</ion-label
+        >*Caracteres validos</ion-label
       >
     </tp-input-container>
   `;
@@ -60,15 +61,12 @@ export const Input = {
       expect(canvas.getByText(/tp-test/gi)).toBeTruthy();
     }, */
 };
-Input.argTypes = {
-    color: { table: { disable: true } },
-};
 export const Select = {
     render: (_a) => {
         var args = __rest(_a, []);
         return html `
     <tp-input-container state="${args.state}">
-      <ion-label slot="label" tp-type="p14">Lorem ipsum dolor sit.</ion-label>
+      <ion-label slot="label" tp-type="p14">Descrição Select</ion-label>
       <ion-input
         type="email"
         mode="md"
@@ -76,10 +74,10 @@ export const Select = {
         placeholder="Digite um e-mail valido"
       ></ion-input>
       <ion-label slot="feedback-error" tp-type="p14"
-        >Lorem ipsum dolor sit.</ion-label
+        >*Caracteres invalidos</ion-label
       >
       <ion-label slot="feedback-success" tp-type="p14"
-        >Lorem ipsum dolor sit.</ion-label
+        >*Caracteres validos</ion-label
       >
     </tp-input-container>
   `;
