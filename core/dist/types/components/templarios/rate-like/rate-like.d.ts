@@ -1,5 +1,5 @@
 import { EventEmitter } from '../../../stencil-public-runtime';
-import { TpRateLikeType } from './rate-like.type';
+import { TpRateLikeType } from './utils/rate-like.type';
 export declare class TpRateLike {
     private thumbsUpIcon;
     private thumbsDownIcon;
