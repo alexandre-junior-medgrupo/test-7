@@ -10,6 +10,9 @@
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
 - Ver depois sobre a especificidade das classes que mesmo estando maior que a default nao consegue sobreescrever o estilo
+- Fazer atributo no-padding para o button tertiary
+  - toast
+  - tabs
 - Verificar sobre spacings no accordion
 
 ## Alan

@@ -2022,6 +2022,53 @@ ion-chip.ion-color:not(.chip-outline):hover {
   border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
 }
 
+/* stylelint-disable selector-max-compound-selectors */
+ion-datetime {
+  --background: var(--tp-color-neutral-2);
+  --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 207px);
+  min-width: 414px;
+  border-radius: 16px 16px 0 0;
+  visibility: hidden;
+  opacity: 0;
+}
+ion-datetime.ion-color-primary {
+  --ion-color-base: var(--tp-color-neutral-2) !important;
+}
+ion-datetime::part(wheel-item) {
+  color: var(--tp-color-neutral-10);
+  opacity: 0.3;
+}
+ion-datetime::part(active) {
+  opacity: initial;
+}
+ion-datetime div {
+  display: flex;
+  justify-content: space-between;
+}
+ion-datetime div ion-button:last-child ion-label {
+  color: var(--tp-color-brand-4);
+}
+
+ion-datetime-button {
+  --tp-color: var(--tp-color-neutral-10);
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+ion-datetime-button::part(native) {
+  width: 100%;
+  padding: 12px 16px;
+  color: var(--tp-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: start;
+  background-color: transparent;
+}
+
 ion-fab-button {
   --background: var(--tp-color-brand);
   width: 48px;
