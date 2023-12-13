@@ -1,5 +1,5 @@
 ion-input.sc-ion-input-md-h {
-  --background: var(--tp-color-neutral-2);
+  --background: transparent;
   --border-radius: 8px;
   --color: var(--tp-color-neutral-10);
   --highlight-color-focused: var(--tp-color-neutral-10);
@@ -9,6 +9,7 @@ ion-input.sc-ion-input-md-h {
   --padding-top: 8px;
   --placeholder-color: var(--tp-color-neutral-4);
   --placeholder-opacity: initial;
+  --tp-fill-clear-icon: var(--tp-color-neutral-6);
 }
 
 ion-input.sc-ion-input-md-h {
@@ -33,23 +34,9 @@ ion-input.sc-ion-input-md-h {
     ion-icon.sc-ion-input-md {
       width: 24px;
       height: 24px;
-      fill: var(--tp-color-neutral-6);
+      fill: var(--tp-fill-clear-icon);
     }
   }
-}
-
-//
-// hover
-//
-ion-input:hover:not([disabled]) {
-  --background: var(--tp-color-neutral-3);
-}
-
-//
-// focus
-//
-ion-input.has-focus .input-wrapper {
-  border: 1px solid var(--tp-color-neutral-3);
 }
 
 //
@@ -57,69 +44,4 @@ ion-input.has-focus .input-wrapper {
 //
 ion-input.sc-ion-input-md-h.input-disabled {
   opacity: 0.5;
-}
-
-//
-// color
-//
-ion-input.ion-color {
-  --background: var(--ion-color-base);
-  --color: var(--ion-color-contrast);
-  --highlight-color-focused: var(--ion-color-contrast) !important;
-  --placeholder-color: var(--ion-color-contrast);
-
-  // clear-icon
-  .input-clear-icon {
-    ion-icon.sc-ion-input-md {
-      fill: var(--ion-color-contrast);
-    }
-  }
-
-  //
-  // hover
-  //
-  &:hover:not([disabled]) {
-    --background: var(--ion-color-tint);
-  }
-
-  //
-  // focus
-  //
-  &.has-focus .input-wrapper {
-    border: 1px solid var(--ion-color-tint);
-  }
-}
-
-//
-// states
-//
-
-// invalid
-ion-input.ion-invalid {
-  .input-wrapper {
-    border: 1px solid var(--tp-color-warning);
-  }
-
-  .input-bottom {
-    --border-width: initial;
-    --border-color: transparent;
-    --border-style: initial;
-
-    .error-text {
-      --highlight-color-invalid: var(--tp-color-warning);
-    }
-  }
-}
-
-// valid
-ion-input.ion-valid {
-  .input-wrapper {
-    border: 1px solid var(--tp-color-success);
-  }
-
-  .input-bottom {
-    --border-width: initial;
-    --border-color: transparent;
-    --border-style: initial;
-  }
 }
