@@ -1,16 +1,28 @@
-@import '../../../styles/';
+@import '../../../styles/templarios.abstracts';
 
 .tp-dialog {
-  --background: var(--tp-color-neutral-2) !important;
+  --background: var(--tp-color-neutral-2);
   --backdrop-opacity: var(--ion-backdrop-opacity, 0.8);
-  --border-radius: 16px !important;
-  --height: auto !important;
-  --min-height: 50px !important;
-  --width: 100% !important;
-  --max-width: 640px !important;
+  --border-radius: 16px;
+  --height: auto;
+  --min-height: 50px;
+  --width: 100%;
+  --max-width: 640px;
 
   .ion-delegate-host {
     padding: 24px;
+  }
+
+  @include breakpoint-down('lg') {
+    --max-width: 440px;
+  }
+
+  @include breakpoint-down('sm') {
+    --max-width: calc(100% - 48px);
+  }
+
+  @include breakpoint-down('xxs') {
+    --max-width: calc(100% - 32px);
   }
 }
 

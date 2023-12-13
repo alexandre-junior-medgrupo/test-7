@@ -10,8 +10,7 @@ defineCustomElementButton();
 
 const meta: Meta<Components.IonModal & IonButton & TpIonDialog> = {
   title: 'components/Ionic/Dialog',
-  argTypes: {
-  },
+  argTypes: {},
 };
 
 export default meta;
@@ -20,7 +19,7 @@ type Story = StoryObj<Components.IonModal & IonButton & TpIonDialog>;
 
 // const createModal = async () => {
 //   modalController.create({
-//     component: 'tp-alert',
+//     component: '',
 //     cssClass: 'tp-dialog',
 //   })
 // };
@@ -30,7 +29,7 @@ export const Default: Story = {
     return html`
       <ion-button id="open-modal">Abrir Dialog</ion-button>
 
-      <ion-modal class="tp-dialog" trigger="open-modal" backdropDismiss="true">
+      <ion-modal class="tp-dialog" trigger="open-modal">
         <ion-header class="tp-dialog__header">
           <ion-button fill="clear" size="sm">
             <ion-icon slot="icon-only" src="./icons/tp-x.svg"></ion-icon>
@@ -58,4 +57,7 @@ export const Default: Story = {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/ion-modal/gi)).toBeTruthy();
   }, */
+};
+Default.argTypes = {
+  'color': { table: { disable: true } },
 };
