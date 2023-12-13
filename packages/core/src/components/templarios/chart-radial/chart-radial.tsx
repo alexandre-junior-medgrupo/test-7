@@ -1,8 +1,8 @@
 import { Component, Element, Host, Prop, h } from '@stencil/core';
 import { createColorClasses } from '../../../utils/functions/color.function';
 import type { TpColor } from '../../../utils/types/color.type';
-import { TpChartRadialSize } from './chart-radial.enum';
-import { TpChartRadialItem } from './chart-radial.type';
+import { TpChartRadialSize } from './utils/chart-radial.enum';
+import { TpChartRadialItem } from './utils/chart-radial.type';
 
 @Component({
   tag: 'tp-chart-radial',
@@ -66,9 +66,7 @@ export class TpChartRadial {
           <circle class="tp-chart-radial__track" cx="18" cy="18" r="16" />
           {reversedItems.map((item: TpChartRadialItem, index: number) => {
             const originalIndex = items.length - index - 1;
-            const progressPercentage =
-              (progressesData.singles[originalIndex] / progressesData.total) *
-              100;
+            const progressPercentage = (progressesData.singles[originalIndex] / progressesData.total) * 100;
 
             if (!item.ignore && item.quantity) {
               return (

@@ -1,9 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpChartRadial } from './chart-radial';
-import { TP_CHART_RADIAL } from './chart-radial.constant';
-
-// antigo med-chart-radial
+import { TpChartRadial } from '../chart-radial';
+import { TP_CHART_RADIAL } from '../utils/chart-radial.constant';
 
 const meta: Meta<TpChartRadial> = {
   title: 'components/Templarios/Chart radial',
