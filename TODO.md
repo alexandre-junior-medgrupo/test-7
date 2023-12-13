@@ -21,6 +21,7 @@
 
 - Refatorar alert;
 - Verificar `defineCustomElement` das estorias;
+- vericar arg dinamico no componente loader
 
 ## Componentes que não são mais utilizados
 
