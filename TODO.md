@@ -16,8 +16,16 @@
 
 - Refatorar alert;
 - Verificar `defineCustomElement` das estorias;
+- vericar arg dinamico no componente loader
 
-## Componentes que não são mais usados no MEDSoft
+## Componentes que não são mais utilizados
 
 - Button cluster (med-agrupador)
 - Nav container (med-nav-item)
+
+# Sites que utilizam DS
+
+- External pages
+- MEdsoft
+- Inscrições cardapio
+- Medeletro

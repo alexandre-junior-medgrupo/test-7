@@ -119,7 +119,10 @@ export declare class TpInputContainer {
     TpInputContainer,
     'tp-input-container',
     never,
-    { state: { alias: 'state'; required: false } },
+    {
+      color: { alias: 'color'; required: false };
+      state: { alias: 'state'; required: false };
+    },
     {},
     never,
     ['*'],
