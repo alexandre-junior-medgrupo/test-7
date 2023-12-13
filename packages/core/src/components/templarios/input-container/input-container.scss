@@ -40,6 +40,11 @@
   color: var(--tp-color-success) !important;
 }
 
+::slotted(ion-icon) {
+  margin-right: 16px;
+  --stroke: var(--tp-color-neutral-6) !important;
+}
+
 //
 // states
 //
@@ -114,5 +119,15 @@
   ::slotted(ion-textarea.sc-ion-textarea-md-h) {
     --color: var(--tp-color-contrast) !important;
     --placeholder-color: var(--tp-color-contrast) !important;
+  }
+
+  // datetime
+  ::slotted(ion-datetime-button) {
+    --tp-color: var(--tp-color-contrast) !important;
+  }
+
+  // icon
+  ::slotted(ion-icon) {
+    --stroke: var(--tp-color-contrast) !important;
   }
 }
