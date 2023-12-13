@@ -8,12 +8,12 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
 import { TpAlertType } from "./components/templarios/alert/alert.type";
 import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
-import { TpLoaderType } from "./components/templarios/!loader/utils/loader.type";
+import { TpLoaderType } from "./components/templarios/loader/utils/loader.type";
 import { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
 export { TpAlertType } from "./components/templarios/alert/alert.type";
 export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
-export { TpLoaderType } from "./components/templarios/!loader/utils/loader.type";
+export { TpLoaderType } from "./components/templarios/loader/utils/loader.type";
 export { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export namespace Components {
     interface TpAlert {
