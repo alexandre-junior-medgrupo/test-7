@@ -1,0 +1,19 @@
+ion-datetime {
+  &::part(month-year-button) {
+    color: var(--tp-color-neutral-10);
+
+    &:hover {
+      --color: var(--tp-color-neutral-10);
+    }
+
+    &:focus {
+      --color: var(--tp-color-neutral-10);
+    }
+  }
+
+  &::part(calendar-day) {
+    color: var(--tp-color-neutral-10);
+  }
+}
+
+

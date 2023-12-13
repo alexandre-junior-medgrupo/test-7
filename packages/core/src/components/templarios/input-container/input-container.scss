@@ -1,9 +1,12 @@
+/* stylelint-disable order/properties-order */
 :host {
   --border-color: transparent;
   --background: var(--tp-color-neutral-2);
+  --border-radius: 8px;
 }
 
 :host {
+  position: relative;
   display: block;
 }
 
@@ -14,7 +17,7 @@
     margin: 8px 0;
     background: var(--background);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 
     &:hover {
       --background: var(--tp-color-neutral-3);
@@ -43,6 +46,16 @@
 ::slotted(ion-icon) {
   margin-right: 16px;
   --stroke: var(--tp-color-neutral-6) !important;
+}
+
+::slotted(ion-datetime) {
+  --background: var(--tp-color-neutral-4) !important;
+  --wheel-fade-background-rgb: var(--tp-color-neutral-4-rgb) !important;
+  top: 68px !important;
+  right: 0 !important;
+  bottom: initial !important;
+  left: initial !important;
+  border-radius: 0 0 16px 16px !important;
 }
 
 //
