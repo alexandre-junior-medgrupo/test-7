@@ -22,7 +22,7 @@
 - Refatorar alert;
 - Verificar `defineCustomElement` das estorias;
 
-## Componentes que não são mais usados no MEDSoft
+## Componentes que não são mais utilizados
 
 - Button cluster (med-agrupador)
 - Nav container (med-nav-item)
