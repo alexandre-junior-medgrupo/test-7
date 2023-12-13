@@ -6,8 +6,8 @@ import {
 } from '@stencil/core';
 import { createColorClasses } from '../../../utils/functions/color.function';
 import type { TpColor } from '../../../utils/types/color.type';
-import { TpLoaderType } from './utils/loader.type';
 import { TpLoaderName } from './utils/loader.enum';
+import { TpLoaderType } from './utils/loader.type';
 
 @Component({
   tag: 'tp-loader',
@@ -26,35 +26,32 @@ export class TpLoader {
   @Prop({ reflect: true }) fixed = false;
 
   /**
-   * Define a posição do componente.
+   * Define a variação do componente.
    */
   @Prop({ reflect: true }) tpName?: TpLoaderType['tp-name'];
 
   render() {
     const { color, fixed, tpName } = this;
 
-    return tpName === TpLoaderName.SECONDARY ? (
-      <Host class={createColorClasses(color, {
-        'tp-loader': true,
-        "tp-loader--secondary": tpName === TpLoaderName.SECONDARY,
-      })}>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </Host>
-    ) : (
-      <Host class={createColorClasses(color, {
-        'tp-loader': true,
-        "tp-loader--fixed": fixed,
-      })}>
+    let content;
+
+    if (tpName === TpLoaderName.SECONDARY) {
+      content = (
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      )
+    } else {
+      content = (
         <div class="loader-container">
           <svg
-            tp-loader-svg
             viewBox="0 0 100 100"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -78,9 +75,19 @@ export class TpLoader {
             <rect tp-loader-rect x="42" y="52" width="6" height="6" />
             <rect tp-loader-rect x="51" y="43" width="6" height="6" />
             <rect tp-loader-rect x="51" y="52" width="6" height="6" />
-          </svg>
-        </div>
+        </svg>
+      </div>
+      )
+    }
+
+    return (
+      <Host class={createColorClasses(color, {
+        'tp-loader': true,
+        "tp-loader--fixed": tpName !== TpLoaderName.SECONDARY && fixed,
+        "tp-loader--secondary": tpName === TpLoaderName.SECONDARY,
+      })}>
+        {content}
       </Host>
-    );
+    )
   }
 }

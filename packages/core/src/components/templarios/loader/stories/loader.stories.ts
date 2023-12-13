@@ -1,13 +1,26 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpLoader } from '../loader';
-import { TpLoaderType } from '../utils/loader.type';
 import { TP_LOADER } from '../utils/loader.constants';
 import { TpLoaderName } from '../utils/loader.enum';
+import { TpLoaderType } from '../utils/loader.type';
 
 const meta: Meta<TpLoader & TpLoaderType> = {
   title: 'components/Templarios/Loader',
   argTypes: {
+    ['tp-name']: {
+      control: { type: 'select' },
+      options: [...TP_LOADER['tp-name']],
+      description: 'Define a variação do componente.',
+      table: {
+        defaultValue: {
+          summary: 'undefined',
+        },
+        type: {
+          summary: 'secondary',
+        },
+      },
+    },
     fixed: {
       control: 'boolean',
       description: `Define a posição do componente.
@@ -19,19 +32,6 @@ const meta: Meta<TpLoader & TpLoaderType> = {
         },
         type: {
           summary: 'boolean',
-        },
-      },
-    },
-    ['tp-name']: {
-      control: { type: 'select' },
-      options: [...TP_LOADER['tp-name']],
-      description: 'Define a variação do componente.',
-      table: {
-        defaultValue: {
-          summary: 'undefined',
-        },
-        type: {
-          summary: 'secondary',
         },
       },
     },
