@@ -73,18 +73,6 @@ const meta = {
                 },
             },
         },
-        button: {
-            control: 'boolean',
-            description: 'Define a estilização do estado button do componente.',
-            table: {
-                defaultValue: {
-                    summary: 'undefined',
-                },
-                type: {
-                    summary: 'boolean',
-                },
-            },
-        },
         disabled: {
             control: 'boolean',
             description: 'Define a estilização do estado disabled do componente.',
@@ -111,7 +99,7 @@ export const Toggle = {
         tp-gap="${args['tp-gap']}"
         tp-spacingX="${args['tp-spacingx']}"
         tp-spacingY="${args['tp-spacingy']}"
-        ?button="${args.button}"
+        button
         ?disabled="${args.disabled}"
       >
         <ion-toggle label-placement="start" justify="space-between">
@@ -127,7 +115,7 @@ export const Toggle = {
         tp-gap="${args['tp-gap']}"
         tp-spacingX="${args['tp-spacingx']}"
         tp-spacingY="${args['tp-spacingy']}"
-        ?button="${args.button}"
+        button
         ?disabled="${args.disabled}"
       >
         <ion-toggle label-placement="end" justify="space-between">

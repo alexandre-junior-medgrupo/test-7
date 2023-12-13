@@ -1,10 +1,10 @@
 {
   "entries": [
+    "components/templarios/input-container/input-container.js",
     "components/templarios/alert/alert.js",
     "components/templarios/chart-bar/chart-bar.js",
     "components/templarios/comparison-chart-bar/comparison-chart-bar.js",
     "components/templarios/horizontal-chart-bar/horizontal-chart-bar.js",
-    "components/templarios/input-container/input-container.js",
     "components/templarios/rate-like/rate-like.js"
   ],
   "compiler": {
