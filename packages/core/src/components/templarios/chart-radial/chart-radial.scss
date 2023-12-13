@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 /**
   * @prop --tp-progress-percentage: Propriedade definida dinamicamente no tsx. Define o progresso de um barra circular.
   * @prop --tp-size: Define o tamanho do componente.
@@ -6,8 +8,6 @@
   * @prop --tp-subtitle-font-size: Define o font-size do subtítulo do componente.
   * @prop --tp-subtitle-line-height: Define o line-height do subtítulo do componente.
 */
-
-@use 'sass:map';
 
 $tp-chart-radial-sizes: (
   xs: (

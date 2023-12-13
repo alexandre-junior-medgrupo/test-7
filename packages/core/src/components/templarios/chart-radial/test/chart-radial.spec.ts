@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { TpChartRadial } from './chart-radial';
+import { TpChartRadial } from '../chart-radial';
 
 describe('tp-chart-radial', () => {
   it('renders', async () => {

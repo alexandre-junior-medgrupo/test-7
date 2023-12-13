@@ -1,5 +1,5 @@
-import type { TpColor } from '../../../utils/types/color.type';
-import { TpChartRadialSize } from './chart-radial.enum';
+import type { TpColor } from '../../../../utils/types/color.type';
+import { TpChartRadialSize } from '../utils/chart-radial.enum';
 
 export type TpChartRadial = {
   color?: `${TpColor}`;
