@@ -46,7 +46,6 @@ export const Default = {
         <ion-tab-button
           tab="tab1"
           ?disabled="${args.disabled}"
-          layout="icon-start"
           selected
         >
           <ion-icon src="./icons/tp-check-square.svg"></ion-icon>
@@ -56,7 +55,6 @@ export const Default = {
         <ion-tab-button
           tab="tab2"
           ?disabled="${args.disabled}"
-          layout="icon-start"
         >
           <ion-icon src="./icons/tp-chat-2.svg"></ion-icon>
           <ion-label>Gabarito Comentado</ion-label>
@@ -65,7 +63,6 @@ export const Default = {
         <ion-tab-button
           tab="tab3"
           ?disabled="${args.disabled}"
-          layout="icon-start"
         >
           <ion-icon src="./icons/tp-grid.svg"></ion-icon>
           <ion-label>Cartão Resposta</ion-label>
@@ -74,7 +71,6 @@ export const Default = {
         <ion-tab-button
           tab="tab4"
           ?disabled="${args.disabled}"
-          layout="icon-start"
         >
           <ion-icon src="./icons/tp-help-circle.svg"></ion-icon>
           <ion-label>Dúvidas</ion-label>
@@ -83,7 +79,6 @@ export const Default = {
         <ion-tab-button
           tab="tab5"
           ?disabled="${args.disabled}"
-          layout="icon-start"
         >
           <ion-icon src="./icons/tp-hourglass.svg"></ion-icon>
           <ion-label>Recursos</ion-label>

@@ -1,4 +1,4 @@
-import { r as registerInstance, g as getAssetPath, h, H as Host } from './index-9cfc084e.js';
+import { r as registerInstance, g as getAssetPath, h, H as Host } from './index-45bfd9ed.js';
 import { c as createColorClasses } from './color.function-a9b13d36.js';
 
 var TpAlertState;

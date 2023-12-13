@@ -1,3 +1,3 @@
-export declare enum TpIonToastWarning {
-    Warning = "true"
+export declare enum TpIonToastSize {
+    Md = "md"
 }

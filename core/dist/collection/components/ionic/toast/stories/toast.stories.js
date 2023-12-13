@@ -10,17 +10,31 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-import { defineCustomElement as defineCustomElementButton, } from "@ionic/core/components/ion-button";
+import { defineCustomElement as defineCustomElementButton } from "@ionic/core/components/ion-button";
 import { defineCustomElement as defineCustomElementToast } from "@ionic/core/components/ion-toast";
 import { html } from "lit";
+import { TP_ION_TOAST } from "../utils/toast.constants";
 defineCustomElementToast();
 defineCustomElementButton();
 const meta = {
     title: 'components/Ionic/Toast',
     argTypes: {
-        warning: {
-            control: 'boolean',
+        'tp-size': {
+            control: 'check',
+            options: [...TP_ION_TOAST['tp-size']],
             description: `Define o estado warning do componente.`,
+            table: {
+                defaultValue: {
+                    summary: 'undefined',
+                },
+                type: {
+                    summary: TP_ION_TOAST['tp-size'].join('|'),
+                },
+            },
+        },
+        'tp-reverse': {
+            control: 'boolean',
+            description: `Define a posição do icon do componente`,
             table: {
                 defaultValue: {
                     summary: 'undefined',
@@ -68,7 +82,7 @@ const meta = {
         },
     },
     args: {
-        duration: 3000,
+        duration: 300000,
         message: 'Este toast desaparecerá em 3 segundos',
         icon: './icons/tp-star.svg',
     },
@@ -85,13 +99,14 @@ export const Default = {
       message="${args.message}"
       color="${args.color}"
       duration="${args.duration}"
-      ?warning="${args.warning}"
+      tp-size="${args['tp-size']}"
+      ?tp-reverse="${args['tp-reverse']}"
     ></ion-toast>
   `;
     },
     /* play: async ({ canvasElement }) => {
       const canvas = within(canvasElement);
-      expect(canvas.getByText(/ion-badge/gi)).toBeTruthy();
+      expect(canvas.getByText(/ion-toast/gi)).toBeTruthy();
     }, */
 };
 //# sourceMappingURL=toast.stories.js.map

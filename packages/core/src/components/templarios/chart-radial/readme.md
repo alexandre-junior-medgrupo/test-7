@@ -2,27 +2,28 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
-| Property          | Attribute          | Description                                              | Type                                                                                                                                                | Default     |
-| ----------------- | ------------------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `barValue`        | `bar-value`        | Define o preenchimento da coluna em porcentagem.         | `number`                                                                                                                                            | `0`         |
-| `color`           | `color`            | Define a variação de cor do componente.                  | `"orange" \| "orange-1" \| "orange-2" \| "orange-3" \| "orange-4" \| "orange-5" \| TpColors \| TpColorsMedgrupo \| (string & Record<never, never>)` | `undefined` |
-| `containerHeight` | `container-height` | Define a altura máxima da coluna.                        | `number`                                                                                                                                            | `200`       |
-| `disabled`        | `disabled`         | Define a estilização do estado disabled do componente.   | `boolean`                                                                                                                                           | `false`     |
-| `hasMarker`       | `has-marker`       | Define se o componente terá um marcador.                 | `boolean`                                                                                                                                           | `false`     |
-| `markerValue`     | `marker-value`     | Define a posição, em porcentagem, do marcador na coluna. | `number`                                                                                                                                            | `0`         |
-| `noLabel`         | `no-label`         | Define se o componente não terá rótulo.                  | `boolean`                                                                                                                                           | `false`     |
+| Property | Attribute | Description                                  | Type                                                                                                                                                | Default     |
+| -------- | --------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `color`  | `color`   | Define a variação de cor do componente.      | `"orange" \| "orange-1" \| "orange-2" \| "orange-3" \| "orange-4" \| "orange-5" \| TpColors \| TpColorsMedgrupo \| (string & Record<never, never>)` | `undefined` |
+| `items`  | --        | Define o valor representado pelo componente. | `TpChartRadialItem[]`                                                                                                                               | `[]`        |
+| `size`   | `size`    | Define a variação de tamanho do componente.  | `TpChartRadialSize.LG \| TpChartRadialSize.MD \| TpChartRadialSize.SM \| TpChartRadialSize.XS`                                                      | `undefined` |
+
 
 ## CSS Custom Properties
 
-| Name                    | Description                                                                                         |
-| ----------------------- | --------------------------------------------------------------------------------------------------- |
-| `--tp-bar-value`        | Propriedade definida dinamicamente no tsx. Define o preenchimento da coluna em porcentagem.         |
-| `--tp-container-height` | Propriedade definida dinamicamente no tsx. Define a altura máxima da coluna.                        |
-| `--tp-marker-color`     | Define a cor do marcador.                                                                           |
-| `--tp-marker-value`     | Propriedade definida dinamicamente no tsx. Define a posição, em porcentagem, do marcador na coluna. |
+| Name                        | Description                                                                         |
+| --------------------------- | ----------------------------------------------------------------------------------- |
+| `--tp-progress-percentage`  | Propriedade definida dinamicamente no tsx. Define o progresso de um barra circular. |
+| `--tp-size`                 | Define o tamanho do componente.                                                     |
+| `--tp-subtitle-font-size`   | Define o font-size do subtítulo do componente.                                      |
+| `--tp-subtitle-line-height` | Define o line-height do subtítulo do componente.                                    |
+| `--tp-title-font-size`      | Define o font-size do título do componente.                                         |
+| `--tp-title-line-height`    | Define o line-height do título do componente.                                       |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

@@ -1,4 +1,4 @@
-import { TpIonToastWarning } from './toast.enum';
+import { TpIonToastSize } from './toast.enum';
 export declare const TP_ION_TOAST: {
-    warning: TpIonToastWarning.Warning[];
+    'tp-size': TpIonToastSize.Md[];
 };

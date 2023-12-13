@@ -7,11 +7,17 @@
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
 import { TpColor } from "./utils/types/color.type";
 import { TpAlertType } from "./components/templarios/alert/alert.type";
+import { TpChartRadialSize } from "./components/templarios/chart-radial/utils/chart-radial.enum";
+import { TpChartRadialItem } from "./components/templarios/chart-radial/utils/chart-radial.type";
 import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
+import { TpLoaderType } from "./components/templarios/loader/utils/loader.type";
 import { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
 export { TpAlertType } from "./components/templarios/alert/alert.type";
+export { TpChartRadialSize } from "./components/templarios/chart-radial/utils/chart-radial.enum";
+export { TpChartRadialItem } from "./components/templarios/chart-radial/utils/chart-radial.type";
 export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
+export { TpLoaderType } from "./components/templarios/loader/utils/loader.type";
 export { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export namespace Components {
     interface TpAlert {
@@ -35,6 +41,21 @@ export namespace Components {
           * Define a variação de estado do componente.
          */
         "state"?: TpAlertType['state'];
+    }
+    interface TpButtonCluster {
+        /**
+          * Define a variação de estado do componente.
+         */
+        "collapsed": boolean;
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+        "toggle": (event?: Event) => Promise<void>;
     }
     interface TpChartBar {
         /**
@@ -61,6 +82,20 @@ export namespace Components {
           * Define a largura do componente.
          */
         "width": number;
+    }
+    interface TpChartRadial {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o valor representado pelo componente.
+         */
+        "items": TpChartRadialItem[];
+        /**
+          * Define a variação de tamanho do componente.
+         */
+        "size"?: TpChartRadialSize;
     }
     interface TpComparisonChartBar {
         /**
@@ -132,6 +167,20 @@ export namespace Components {
          */
         "state"?: 'error' | 'success';
     }
+    interface TpLoader {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define a posição do componente.
+         */
+        "fixed": boolean;
+        /**
+          * Define a variação do componente.
+         */
+        "tpName"?: TpLoaderType['tp-name'];
+    }
     interface TpRateLike {
         /**
           * Define o estado de carregamento do componente.
@@ -154,11 +203,23 @@ declare global {
         prototype: HTMLTpAlertElement;
         new (): HTMLTpAlertElement;
     };
+    interface HTMLTpButtonClusterElement extends Components.TpButtonCluster, HTMLStencilElement {
+    }
+    var HTMLTpButtonClusterElement: {
+        prototype: HTMLTpButtonClusterElement;
+        new (): HTMLTpButtonClusterElement;
+    };
     interface HTMLTpChartBarElement extends Components.TpChartBar, HTMLStencilElement {
     }
     var HTMLTpChartBarElement: {
         prototype: HTMLTpChartBarElement;
         new (): HTMLTpChartBarElement;
+    };
+    interface HTMLTpChartRadialElement extends Components.TpChartRadial, HTMLStencilElement {
+    }
+    var HTMLTpChartRadialElement: {
+        prototype: HTMLTpChartRadialElement;
+        new (): HTMLTpChartRadialElement;
     };
     interface HTMLTpComparisonChartBarElement extends Components.TpComparisonChartBar, HTMLStencilElement {
     }
@@ -177,6 +238,12 @@ declare global {
     var HTMLTpInputContainerElement: {
         prototype: HTMLTpInputContainerElement;
         new (): HTMLTpInputContainerElement;
+    };
+    interface HTMLTpLoaderElement extends Components.TpLoader, HTMLStencilElement {
+    }
+    var HTMLTpLoaderElement: {
+        prototype: HTMLTpLoaderElement;
+        new (): HTMLTpLoaderElement;
     };
     interface HTMLTpRateLikeElementEventMap {
         "tpChange": TpRateLikeType['status'];
@@ -197,10 +264,13 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "tp-alert": HTMLTpAlertElement;
+        "tp-button-cluster": HTMLTpButtonClusterElement;
         "tp-chart-bar": HTMLTpChartBarElement;
+        "tp-chart-radial": HTMLTpChartRadialElement;
         "tp-comparison-chart-bar": HTMLTpComparisonChartBarElement;
         "tp-horizontal-chart-bar": HTMLTpHorizontalChartBarElement;
         "tp-input-container": HTMLTpInputContainerElement;
+        "tp-loader": HTMLTpLoaderElement;
         "tp-rate-like": HTMLTpRateLikeElement;
     }
 }
@@ -227,6 +297,20 @@ declare namespace LocalJSX {
          */
         "state"?: TpAlertType['state'];
     }
+    interface TpButtonCluster {
+        /**
+          * Define a variação de estado do componente.
+         */
+        "collapsed"?: boolean;
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o estado de carregamento do componente.
+         */
+        "loading"?: boolean;
+    }
     interface TpChartBar {
         /**
           * Define a variação de cor do componente.
@@ -252,6 +336,20 @@ declare namespace LocalJSX {
           * Define a largura do componente.
          */
         "width"?: number;
+    }
+    interface TpChartRadial {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define o valor representado pelo componente.
+         */
+        "items"?: TpChartRadialItem[];
+        /**
+          * Define a variação de tamanho do componente.
+         */
+        "size"?: TpChartRadialSize;
     }
     interface TpComparisonChartBar {
         /**
@@ -323,6 +421,20 @@ declare namespace LocalJSX {
          */
         "state"?: 'error' | 'success';
     }
+    interface TpLoader {
+        /**
+          * Define a variação de cor do componente.
+         */
+        "color"?: TpColor;
+        /**
+          * Define a posição do componente.
+         */
+        "fixed"?: boolean;
+        /**
+          * Define a variação do componente.
+         */
+        "tpName"?: TpLoaderType['tp-name'];
+    }
     interface TpRateLike {
         /**
           * Define o estado de carregamento do componente.
@@ -339,10 +451,13 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "tp-alert": TpAlert;
+        "tp-button-cluster": TpButtonCluster;
         "tp-chart-bar": TpChartBar;
+        "tp-chart-radial": TpChartRadial;
         "tp-comparison-chart-bar": TpComparisonChartBar;
         "tp-horizontal-chart-bar": TpHorizontalChartBar;
         "tp-input-container": TpInputContainer;
+        "tp-loader": TpLoader;
         "tp-rate-like": TpRateLike;
     }
 }
@@ -351,10 +466,13 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "tp-alert": LocalJSX.TpAlert & JSXBase.HTMLAttributes<HTMLTpAlertElement>;
+            "tp-button-cluster": LocalJSX.TpButtonCluster & JSXBase.HTMLAttributes<HTMLTpButtonClusterElement>;
             "tp-chart-bar": LocalJSX.TpChartBar & JSXBase.HTMLAttributes<HTMLTpChartBarElement>;
+            "tp-chart-radial": LocalJSX.TpChartRadial & JSXBase.HTMLAttributes<HTMLTpChartRadialElement>;
             "tp-comparison-chart-bar": LocalJSX.TpComparisonChartBar & JSXBase.HTMLAttributes<HTMLTpComparisonChartBarElement>;
             "tp-horizontal-chart-bar": LocalJSX.TpHorizontalChartBar & JSXBase.HTMLAttributes<HTMLTpHorizontalChartBarElement>;
             "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;
+            "tp-loader": LocalJSX.TpLoader & JSXBase.HTMLAttributes<HTMLTpLoaderElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
         }
     }
