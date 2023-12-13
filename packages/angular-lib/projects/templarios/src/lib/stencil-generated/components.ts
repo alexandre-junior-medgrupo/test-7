@@ -14,6 +14,30 @@ import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 import { Components } from 'tp-core';
 
 @ProxyCmp({
+  inputs: ['color', 'icon', 'loading', 'message', 'state'],
+})
+@Component({
+  selector: 'tp-alert',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['color', 'icon', 'loading', 'message', 'state'],
+})
+export class TpAlert {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpAlert extends Components.TpAlert {}
+
+@ProxyCmp({
   inputs: ['color', 'height', 'loading', 'noLabel', 'value', 'width'],
 })
 @Component({
@@ -81,14 +105,39 @@ export declare interface TpComparisonChartBar
   extends Components.TpComparisonChartBar {}
 
 @ProxyCmp({
-  inputs: ['state'],
+  inputs: ['color', 'loading', 'maxCount', 'noLabel', 'size', 'value'],
+})
+@Component({
+  selector: 'tp-horizontal-chart-bar',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['color', 'loading', 'maxCount', 'noLabel', 'size', 'value'],
+})
+export class TpHorizontalChartBar {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpHorizontalChartBar
+  extends Components.TpHorizontalChartBar {}
+
+@ProxyCmp({
+  inputs: ['color', 'state'],
 })
 @Component({
   selector: 'tp-input-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['state'],
+  inputs: ['color', 'state'],
 })
 export class TpInputContainer {
   protected el: HTMLElement;

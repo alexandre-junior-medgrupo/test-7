@@ -25,9 +25,9 @@ ion-accordion {
 
   [slot='content'] {
     padding-top: 0;
-    padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 16px;
+    padding-left: 16px;
     background: transparent;
 
     * {
@@ -50,8 +50,8 @@ ion-accordion {
     }
 
     [slot='content'] {
-      padding-left: var(--spacing);
       padding-right: var(--spacing);
+      padding-left: var(--spacing);
     }
   }
 
@@ -63,19 +63,6 @@ ion-accordion {
 
     [slot='content'] {
       padding-bottom: var(--spacing);
-    }
-  }
-}
-
-
-//
-// expanded
-//
-ion-accordion {
-  &.accordion-expanding,
-  &.accordion-expanded {
-    [slot='header'] {
-      --padding-bottom: 0;
     }
   }
 }

@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-1580f908.js');
+const index = require('./index-8bfaa311.js');
 
 var TpRateLikeStatus;
 (function (TpRateLikeStatus) {
@@ -10,7 +10,7 @@ var TpRateLikeStatus;
     TpRateLikeStatus["DISLIKE"] = "dislike";
 })(TpRateLikeStatus || (TpRateLikeStatus = {}));
 
-const rateLikeCss = ":host{--tp-skeleton-height:24px;--tp-skeleton-width:24px;--tp-skeleton-background-rgb:var(--tp-color-neutral-10-rgb)}.tp-rate-like__container{display:flex;align-items:center}.tp-rate-like__button{width:24px;height:24px;background:transparent;border:0}.tp-rate-like__button:first-child{margin-right:16px}.tp-rate-like__button--disabled{pointer-events:none}.tp-rate-like__button--disabled .tp-rate-like__icon{--stroke:var(--tp-color-neutral-4)}.tp-rate-like__button--like .tp-rate-like__icon{--stroke:var(--tp-color-success)}.tp-rate-like__button--dislike .tp-rate-like__icon{--stroke:var(--tp-color-warning)}.tp-rate-like__icon{width:24px;height:24px}.tp-rate-like__skeleton{--background-rgb:var(--tp-skeleton-background-rgb);--border-radius:0;width:var(--tp-skeleton-width);height:var(--tp-skeleton-height);margin:0}.tp-rate-like__skeleton:not(:last-child){margin-right:16px}";
+const rateLikeCss = ".tp-rate-like__container{display:flex;align-items:center}.tp-rate-like__button{width:24px;height:24px;background:transparent;border:0;cursor:pointer}.tp-rate-like__button:first-child{margin-right:16px}.tp-rate-like__button--disabled{pointer-events:none}.tp-rate-like__button--disabled .tp-rate-like__icon{--stroke:var(--tp-color-neutral-4)}.tp-rate-like__button--like .tp-rate-like__icon{--stroke:var(--tp-color-success)}.tp-rate-like__button--dislike .tp-rate-like__icon{--stroke:var(--tp-color-warning)}.tp-rate-like__icon{width:24px;height:24px}.tp-rate-like__skeleton{--background-rgb:var(--tp-color-neutral-10-rgb);--border-radius:0;width:24px;height:24px;margin:0}.tp-rate-like__skeleton:not(:last-child){margin-right:16px}";
 
 const TpRateLike = class {
     constructor(hostRef) {

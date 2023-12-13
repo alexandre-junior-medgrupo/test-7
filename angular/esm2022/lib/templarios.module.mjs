@@ -21,14 +21,18 @@ export class TemplariosModule {
       ngImport: i0,
       type: TemplariosModule,
       declarations: [
+        i1.TpAlert,
         i1.TpChartBar,
         i1.TpComparisonChartBar,
+        i1.TpHorizontalChartBar,
         i1.TpInputContainer,
         i1.TpRateLike,
       ],
       exports: [
+        i1.TpAlert,
         i1.TpChartBar,
         i1.TpComparisonChartBar,
+        i1.TpHorizontalChartBar,
         i1.TpInputContainer,
         i1.TpRateLike,
       ],

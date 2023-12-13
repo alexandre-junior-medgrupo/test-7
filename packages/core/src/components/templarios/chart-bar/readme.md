@@ -17,14 +17,11 @@
 
 ## CSS Custom Properties
 
-| Name                           | Description                                                                        |
-| ------------------------------ | ---------------------------------------------------------------------------------- |
-| `--height`                     | Propriedade definida dinamicamente. Define a altura do componente.                 |
-| `--tp-skeleton-background-rgb` | Define o background rgb do skeleton do componente.                                 |
-| `--tp-skeleton-height`         | Define a altura do skeleton do componente.                                         |
-| `--tp-skeleton-width`          | Define a largura do skeleton do componente.                                        |
-| `--value`                      | Propriedade definida dinamicamente. Define o valor do preenchimento do componente. |
-| `--width`                      | Propriedade definida dinamicamente. Define a largura do componente.                |
+| Name       | Description                                                                        |
+| ---------- | ---------------------------------------------------------------------------------- |
+| `--height` | Propriedade definida dinamicamente. Define a altura do componente.                 |
+| `--value`  | Propriedade definida dinamicamente. Define o valor do preenchimento do componente. |
+| `--width`  | Propriedade definida dinamicamente. Define a largura do componente.                |
 
 
 ----------------------------------------------

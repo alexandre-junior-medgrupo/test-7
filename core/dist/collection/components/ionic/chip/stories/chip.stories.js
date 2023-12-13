@@ -19,22 +19,22 @@ defineCustomElementLabel();
 const meta = {
     title: 'components/Ionic/Chip',
     argTypes: {
-        size: {
+        ['tp-size']: {
             control: { type: 'check' },
-            options: [...TP_ION_CHIP.size],
+            options: [...TP_ION_CHIP['tp-size']],
             description: 'Define o tamanho do componente.',
             table: {
                 defaultValue: {
                     summary: 'undefined',
                 },
                 type: {
-                    summary: TP_ION_CHIP.size.join('|'),
+                    summary: TP_ION_CHIP['tp-size'].join('|'),
                 },
             },
         },
-        disabled: {
+        ['tp-active']: {
             control: 'boolean',
-            description: 'Define a estilização do estado disabled do componente.',
+            description: 'Define a estilização do estado ativo do componente.',
             table: {
                 defaultValue: {
                     summary: 'undefined',
@@ -44,9 +44,9 @@ const meta = {
                 },
             },
         },
-        active: {
+        disabled: {
             control: 'boolean',
-            description: 'Define a estilização do estado ativo do componente.',
+            description: 'Define a estilização do estado disabled do componente.',
             table: {
                 defaultValue: {
                     summary: 'undefined',
@@ -64,8 +64,8 @@ export const Default = {
         var args = __rest(_a, []);
         return html `
     <ion-chip
-      ?outline="${args.active}"
-      size="${args.size}"
+      ?outline="${args['tp-active']}"
+      size="${args['tp-size']}"
       color="${args.color}"
       ?disabled="${args.disabled}"
     >
@@ -73,8 +73,8 @@ export const Default = {
     </ion-chip>
 
     <ion-chip
-      ?outline="${args.active}"
-      size="${args.size}"
+      ?outline="${args['tp-active']}"
+      size="${args['tp-size']}"
       color="${args.color}"
       ?disabled="${args.disabled}"
     >
@@ -83,8 +83,8 @@ export const Default = {
     </ion-chip>
 
     <ion-chip
-      ?outline="${args.active}"
-      size="${args.size}"
+      ?outline="${args['tp-active']}"
+      size="${args['tp-size']}"
       color="${args.color}"
       ?disabled="${args.disabled}"
     >
@@ -93,8 +93,8 @@ export const Default = {
     </ion-chip>
 
     <ion-chip
-      ?outline="${args.active}"
-      size="${args.size}"
+      ?outline="${args['tp-active']}"
+      size="${args['tp-size']}"
       color="${args.color}"
       ?disabled="${args.disabled}"
     >

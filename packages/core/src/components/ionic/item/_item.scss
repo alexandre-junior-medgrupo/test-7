@@ -30,11 +30,12 @@ ion-item {
   --padding-bottom: 8px;
   --inner-padding-end: 0;
   --min-height: initial;
+  --ripple-color: var(--tp-color-neutral-5);
 
   ion-label.sc-ion-label-md-h.sc-ion-label-md-s {
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 400;
   }
 
   ion-icon {
@@ -170,6 +171,15 @@ ion-item.ion-color {
     --handle-background-checked: var(--ion-color-base);
     --track-background: var(--tp-color-neutral-4);
     --track-background-checked: var(--ion-color-contrast);
+  }
+}
+
+//
+// color text
+//
+ion-item.ion-color {
+  ion-text {
+    color: var(--ion-color-contrast);
   }
 }
 
