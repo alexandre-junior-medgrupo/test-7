@@ -175,6 +175,15 @@ ion-item.ion-color {
 }
 
 //
+// color text
+//
+ion-item.ion-color {
+  ion-text {
+    color: var(--ion-color-contrast);
+  }
+}
+
+//
 // inputs
 //
 ion-item {

@@ -130,14 +130,14 @@ export declare interface TpHorizontalChartBar
   extends Components.TpHorizontalChartBar {}
 
 @ProxyCmp({
-  inputs: ['state'],
+  inputs: ['color', 'state'],
 })
 @Component({
   selector: 'tp-input-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['state'],
+  inputs: ['color', 'state'],
 })
 export class TpInputContainer {
   protected el: HTMLElement;

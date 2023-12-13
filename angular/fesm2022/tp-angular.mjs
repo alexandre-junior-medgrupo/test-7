@@ -424,7 +424,7 @@ let TpInputContainer = class TpInputContainer {
       version: '16.2.12',
       type: TpInputContainer,
       selector: 'tp-input-container',
-      inputs: { state: 'state' },
+      inputs: { color: 'color', state: 'state' },
       ngImport: i0,
       template: '<ng-content></ng-content>',
       isInline: true,
@@ -435,7 +435,7 @@ let TpInputContainer = class TpInputContainer {
 TpInputContainer = __decorate(
   [
     ProxyCmp({
-      inputs: ['state'],
+      inputs: ['color', 'state'],
     }),
   ],
   TpInputContainer,
@@ -454,7 +454,7 @@ i0.ɵɵngDeclareClassMetadata({
           changeDetection: ChangeDetectionStrategy.OnPush,
           template: '<ng-content></ng-content>',
           // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-          inputs: ['state'],
+          inputs: ['color', 'state'],
         },
       ],
     },

@@ -47,13 +47,15 @@ export const Default = {
     render: (_a) => {
         var args = __rest(_a, []);
         return html `
+    <tp-input-container color="${args.color}">
+      <ion-label slot="label" tp-type="p14">Descrição Input</ion-label>
       <ion-input
         mode="md"
         placeholder="Digite aqui"
-        color="${args.color}"
         ?disabled="${args.disabled}"
         ?clear-input="${args.clearInput}"
       ></ion-input>
+    </tp-input-container>
     `;
     },
     /* play: async ({ canvasElement }) => {
