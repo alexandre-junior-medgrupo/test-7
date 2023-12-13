@@ -1,47 +1,12 @@
+@import '../../../styles/templarios.abstracts';
+
 ion-tab-bar {
   padding: 8px 0;
-}
+  --background: var(--tp-color-neutral-1);
 
-ion-tab-button {
-  --color-selected: transparent;
-  max-width: initial;
-
-  ion-label {
-    color: var(--tp-color-neutral-5);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-  }
-
-  ion-icon {
-    --stroke: var(--tp-color-neutral-5);
-    font-size: 24px;
-  }
-}
-
-//
-// hover
-//
-ion-tab-button:hover {
-  ion-label {
-    color: var(--tp-color-neutral-6);
-  }
-
-  ion-icon {
-    --stroke: var(--tp-color-neutral-6);
-  }
-}
-
-//
-// activated
-//
-ion-tab-button[selected] {
-  ion-label {
-    color: var(--tp-color-brand-4);
-  }
-
-  ion-icon {
-    --stroke: var(--tp-color-brand-4);
+  @include breakpoint-down('sm') {
+    align-items: baseline;
+    height: 64px;
   }
 }
 

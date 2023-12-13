@@ -1,3 +1,5 @@
+@import '../../../styles/templarios.abstracts';
+
 ion-toast {
   --background: var(--tp-color-neutral-2);
   --color: var(--tp-color-neutral-10);
@@ -5,6 +7,11 @@ ion-toast {
   --border-radius: 8px;
   --start: initial;
   --end: 20px;
+
+  @include breakpoint-down('sm') {
+    --width: 100%;
+    --end: 0;
+  }
 
   &::part(container) {
     padding-inline: 8px;

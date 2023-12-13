@@ -9,12 +9,7 @@
 
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
-- Trazer breakpoints do antigo (mixin)
 - Ver depois sobre a especificidade das classes que mesmo estando maior que a default nao consegue sobreescrever o estilo
-
-  - toast
-  - tabs
-
 - Verificar sobre spacings no accordion
 
 ## Alan
