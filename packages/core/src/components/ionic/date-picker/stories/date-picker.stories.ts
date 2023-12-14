@@ -8,7 +8,7 @@ defineCustomElementDatetime();
 defineCustomElementDatetimeButton();
 
 const meta: Meta<Components.IonDatetime & IonDatetimeButton> = {
-  title: 'components/Ionic/date-picker',
+  title: 'components/Ionic/Date-picker',
   argTypes: {},
 };
 
@@ -19,11 +19,6 @@ type Story = StoryObj<Components.IonDatetime & IonDatetimeButton>;
 const openDatetime = () => {
   const datetime = document.getElementById('input-container')
   datetime.classList.add('tp-datetime-visible')
-}
-
-const closeDatetime = () => {
-   const datetime = document.getElementById('input-container')
-   datetime.classList.remove('tp-datetime-visible')
 }
 
 export const Default: Story = {
@@ -37,10 +32,10 @@ export const Default: Story = {
         <ion-datetime mode="md" id="datetime" presentation="date">
           <div slot="buttons">
             <ion-button fill="clear" size="xxs">
-              <ion-label tp-type="p12b" @click=${closeDatetime}>Cancelar</ion-label>
+              <ion-label tp-type="p12b">Cancelar</ion-label>
             </ion-button>
             <ion-button fill="clear" size="xxs">
-              <ion-label tp-type="p12b" @click=${closeDatetime}>Ok</ion-label>
+              <ion-label tp-type="p12b">Ok</ion-label>
             </ion-button>
             </div>
         </ion-datetime>

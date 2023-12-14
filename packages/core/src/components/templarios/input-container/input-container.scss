@@ -50,23 +50,7 @@
   --stroke: var(--tp-color-neutral-6) !important;
 }
 
-::slotted(ion-datetime) {
-  --background: var(--tp-color-neutral-4) !important;
-  --wheel-fade-background-rgb: var(--tp-color-neutral-4-rgb) !important;
-  --wheel-highlight-background: var(--tp-color-neutral-4) !important;
-  --tp-color-button-label: var(--tp-color-neutral-10) !important;
-  top: 68px !important;
-  right: 0 !important;
-  bottom: initial !important;
-  left: initial !important;
-  border-radius: 0 0 16px 16px !important;
-
-  @include breakpoint-down('sm') {
-    min-width: initial !important;
-    max-width: initial !important;
-  }
-}
-
+// TODO - Revisar abertura e fechamento do date picker
 :host(.tp-datetime-visible) {
   .tp-input-container__wrapper {
     --border-radius: 8px 8px 0 8px !important;
