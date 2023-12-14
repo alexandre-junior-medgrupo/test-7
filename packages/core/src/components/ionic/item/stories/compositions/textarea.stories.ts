@@ -104,7 +104,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonItem & TpIonItem>;
 
-export const Input: Story = {
+export const Textarea: Story = {
   render: ({ ...args }) => html`
     <ion-list>
       <ion-item
@@ -116,12 +116,11 @@ export const Input: Story = {
         ?disabled="${args.disabled}"
       >
         <tp-input-container>
-          <ion-label slot="label" tp-type="p14">Input</ion-label>
-          <ion-input
+          <ion-label slot="label" tp-type="p14">Textarea</ion-label>
+          <ion-textarea
+            placeholder="Lorem ipsum, dolor sit amet consectetur."
             mode="md"
-            placeholder="Digite aqui"
-            clear-input="true"
-          ></ion-input>
+          ></ion-textarea>
         </tp-input-container>
       </ion-item>
     </ion-list>
@@ -131,6 +130,6 @@ export const Input: Story = {
     expect(canvas.getByText(/ion-item/gi)).toBeTruthy();
   }, */
 };
-Input.argTypes = {
+Textarea.argTypes = {
   color: { table: { disable: true } },
 };

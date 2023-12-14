@@ -104,7 +104,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonItem & TpIonItem>;
 
-export const Input: Story = {
+export const Searchbar: Story = {
   render: ({ ...args }) => html`
     <ion-list>
       <ion-item
@@ -116,12 +116,13 @@ export const Input: Story = {
         ?disabled="${args.disabled}"
       >
         <tp-input-container>
-          <ion-label slot="label" tp-type="p14">Input</ion-label>
-          <ion-input
+          <ion-label slot="label" tp-type="p14">Searchbar</ion-label>
+          <ion-searchbar
             mode="md"
-            placeholder="Digite aqui"
-            clear-input="true"
-          ></ion-input>
+            search-icon="./../../../../icons/tp-search.svg"
+            clear-icon="./../../../../icons/tp-x.svg"
+            placeholder="Lorem ipsum dolor"
+          ></ion-searchbar>
         </tp-input-container>
       </ion-item>
     </ion-list>
@@ -131,6 +132,6 @@ export const Input: Story = {
     expect(canvas.getByText(/ion-item/gi)).toBeTruthy();
   }, */
 };
-Input.argTypes = {
+Searchbar.argTypes = {
   color: { table: { disable: true } },
 };
