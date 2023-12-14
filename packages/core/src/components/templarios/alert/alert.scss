@@ -38,7 +38,6 @@
 //
 // color
 //
-// TODO cor provas-4 só aparece no theme medsoft
 :host(.tp-color) {
   background: var(--tp-color-base);
 
@@ -51,7 +50,6 @@
   }
 }
 
-// TODO a cor contraste do warning e provas-4 não é neutral-10
 :host(.tp-color-warning),
 :host(.tp-color-provas-4) {
   ::slotted([slot='icon']) {
