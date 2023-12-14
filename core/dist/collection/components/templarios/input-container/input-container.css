@@ -35,6 +35,11 @@
   color: var(--tp-color-success) !important;
 }
 
+::slotted(ion-icon) {
+  margin-right: 16px;
+  --stroke: var(--tp-color-neutral-6) !important;
+}
+
 :host(.tp-comparison-chart-bar--error) .tp-input-container__wrapper {
   --border-color: var(--tp-color-warning);
 }
@@ -79,4 +84,10 @@
 :host(.tp-color) ::slotted(ion-textarea.sc-ion-textarea-md-h) {
   --color: var(--tp-color-contrast) !important;
   --placeholder-color: var(--tp-color-contrast) !important;
+}
+:host(.tp-color) ::slotted(ion-datetime-button) {
+  --tp-color: var(--tp-color-contrast) !important;
+}
+:host(.tp-color) ::slotted(ion-icon) {
+  --stroke: var(--tp-color-contrast) !important;
 }

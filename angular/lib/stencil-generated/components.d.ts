@@ -31,6 +31,28 @@ export declare class TpAlert {
   >;
 }
 export declare interface TpAlert extends Components.TpAlert {}
+export declare class TpButtonCluster {
+  protected z: NgZone;
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+  static ɵfac: i0.ɵɵFactoryDeclaration<TpButtonCluster, never>;
+  static ɵcmp: i0.ɵɵComponentDeclaration<
+    TpButtonCluster,
+    'tp-button-cluster',
+    never,
+    {
+      collapsed: { alias: 'collapsed'; required: false };
+      color: { alias: 'color'; required: false };
+      loading: { alias: 'loading'; required: false };
+    },
+    {},
+    never,
+    ['*'],
+    false,
+    never
+  >;
+}
+export declare interface TpButtonCluster extends Components.TpButtonCluster {}
 export declare class TpChartBar {
   protected z: NgZone;
   protected el: HTMLElement;
@@ -56,6 +78,28 @@ export declare class TpChartBar {
   >;
 }
 export declare interface TpChartBar extends Components.TpChartBar {}
+export declare class TpChartRadial {
+  protected z: NgZone;
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+  static ɵfac: i0.ɵɵFactoryDeclaration<TpChartRadial, never>;
+  static ɵcmp: i0.ɵɵComponentDeclaration<
+    TpChartRadial,
+    'tp-chart-radial',
+    never,
+    {
+      color: { alias: 'color'; required: false };
+      items: { alias: 'items'; required: false };
+      size: { alias: 'size'; required: false };
+    },
+    {},
+    never,
+    ['*'],
+    false,
+    never
+  >;
+}
+export declare interface TpChartRadial extends Components.TpChartRadial {}
 export declare class TpComparisonChartBar {
   protected z: NgZone;
   protected el: HTMLElement;
@@ -131,6 +175,28 @@ export declare class TpInputContainer {
   >;
 }
 export declare interface TpInputContainer extends Components.TpInputContainer {}
+export declare class TpLoader {
+  protected z: NgZone;
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+  static ɵfac: i0.ɵɵFactoryDeclaration<TpLoader, never>;
+  static ɵcmp: i0.ɵɵComponentDeclaration<
+    TpLoader,
+    'tp-loader',
+    never,
+    {
+      color: { alias: 'color'; required: false };
+      fixed: { alias: 'fixed'; required: false };
+      tpName: { alias: 'tpName'; required: false };
+    },
+    {},
+    never,
+    ['*'],
+    false,
+    never
+  >;
+}
+export declare interface TpLoader extends Components.TpLoader {}
 export declare class TpRateLike {
   protected z: NgZone;
   protected el: HTMLElement;

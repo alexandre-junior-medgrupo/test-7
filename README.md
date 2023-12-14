@@ -24,7 +24,7 @@ npm run build
 ### # Installation
 
 ```bash
-npm i @ionic/angular@latest ionicons@latest templarios@github:MEDGRUPOGIT/med-components#677684c3c1a573764675e039e4e1875b3e66feb4
+npm i @ionic/angular@latest ionicons@latest templarios@github:MEDGRUPOGIT/templarios.git#1.0.0
 ```
 
 ### # Configuration
@@ -45,7 +45,7 @@ npm i @ionic/angular@latest ionicons@latest templarios@github:MEDGRUPOGIT/med-co
 @import '@ionic/angular/css/flex-utils.css';
 
 /* templarios */
-@import 'templarios/tp-angular/styles/css/templarios.css';
+@import 'templarios/angular/styles/css/templarios.css';
 ```
 
 ```ts
@@ -105,7 +105,7 @@ export class AppModule {}
 ### # Installation
 
 ```bash
-npm i templarios@github:MEDGRUPOGIT/med-components#308956e4143252f69ab19e21c2ba91e632330f0f
+npm i templarios@github:MEDGRUPOGIT/templarios.git#1.0.0
 ```
 
 ### # Configuration
@@ -120,7 +120,8 @@ defineCustomElements();
 ```scss
 // src/global.scss
 
-@import 'templarios/core/styles/css/templarios.css';
+/* templarios */
+@import 'templarios/angular/styles/css/templarios.css';
 ```
 
 ```ts
@@ -132,6 +133,16 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
+```
+
+```json
+// tsconfig.tsjson
+
+{
+  "compilerOptions": {
+    "types": ["./node_modules/templarios/core/dist/types/interfaces.d.ts"]
+  }
+}
 ```
 
 ```json

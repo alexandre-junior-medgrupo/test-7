@@ -1,5 +1,5 @@
-export var TpIonToastWarning;
-(function (TpIonToastWarning) {
-    TpIonToastWarning["Warning"] = "true";
-})(TpIonToastWarning || (TpIonToastWarning = {}));
+export var TpIonToastSize;
+(function (TpIonToastSize) {
+    TpIonToastSize["Md"] = "md";
+})(TpIonToastSize || (TpIonToastSize = {}));
 //# sourceMappingURL=toast.enum.js.map

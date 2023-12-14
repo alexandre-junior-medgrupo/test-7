@@ -150,6 +150,76 @@ i0.ɵɵngDeclareClassMetadata({
     ];
   },
 });
+let TpButtonCluster = class TpButtonCluster {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: TpButtonCluster,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: TpButtonCluster,
+      selector: 'tp-button-cluster',
+      inputs: { collapsed: 'collapsed', color: 'color', loading: 'loading' },
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+TpButtonCluster = __decorate(
+  [
+    ProxyCmp({
+      inputs: ['collapsed', 'color', 'loading'],
+      methods: ['toggle'],
+    }),
+  ],
+  TpButtonCluster,
+);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: TpButtonCluster,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'tp-button-cluster',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: ['collapsed', 'color', 'loading'],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
 let TpChartBar = class TpChartBar {
   constructor(c, r, z) {
     this.z = z;
@@ -214,6 +284,75 @@ i0.ɵɵngDeclareClassMetadata({
           template: '<ng-content></ng-content>',
           // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
           inputs: ['color', 'height', 'loading', 'noLabel', 'value', 'width'],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
+let TpChartRadial = class TpChartRadial {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: TpChartRadial,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: TpChartRadial,
+      selector: 'tp-chart-radial',
+      inputs: { color: 'color', items: 'items', size: 'size' },
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+TpChartRadial = __decorate(
+  [
+    ProxyCmp({
+      inputs: ['color', 'items', 'size'],
+    }),
+  ],
+  TpChartRadial,
+);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: TpChartRadial,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'tp-chart-radial',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: ['color', 'items', 'size'],
         },
       ],
     },
@@ -467,6 +606,75 @@ i0.ɵɵngDeclareClassMetadata({
     ];
   },
 });
+let TpLoader = class TpLoader {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: TpLoader,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: TpLoader,
+      selector: 'tp-loader',
+      inputs: { color: 'color', fixed: 'fixed', tpName: 'tpName' },
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+TpLoader = __decorate(
+  [
+    ProxyCmp({
+      inputs: ['color', 'fixed', 'tpName'],
+    }),
+  ],
+  TpLoader,
+);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: TpLoader,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'tp-loader',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: ['color', 'fixed', 'tpName'],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
 let TpRateLike = class TpRateLike {
   constructor(c, r, z) {
     this.z = z;
@@ -540,10 +748,13 @@ i0.ɵɵngDeclareClassMetadata({
 
 const DIRECTIVES = [
   TpAlert,
+  TpButtonCluster,
   TpChartBar,
+  TpChartRadial,
   TpComparisonChartBar,
   TpHorizontalChartBar,
   TpInputContainer,
+  TpLoader,
   TpRateLike,
 ];
 
@@ -566,18 +777,24 @@ class TemplariosModule {
       type: TemplariosModule,
       declarations: [
         TpAlert,
+        TpButtonCluster,
         TpChartBar,
+        TpChartRadial,
         TpComparisonChartBar,
         TpHorizontalChartBar,
         TpInputContainer,
+        TpLoader,
         TpRateLike,
       ],
       exports: [
         TpAlert,
+        TpButtonCluster,
         TpChartBar,
+        TpChartRadial,
         TpComparisonChartBar,
         TpHorizontalChartBar,
         TpInputContainer,
+        TpLoader,
         TpRateLike,
       ],
     });
@@ -632,10 +849,13 @@ export {
   DIRECTIVES,
   TemplariosModule,
   TpAlert,
+  TpButtonCluster,
   TpChartBar,
+  TpChartRadial,
   TpComparisonChartBar,
   TpHorizontalChartBar,
   TpInputContainer,
+  TpLoader,
   TpRateLike,
 };
 //# sourceMappingURL=tp-angular.mjs.map

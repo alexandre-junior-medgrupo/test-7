@@ -18,7 +18,6 @@
 
 ## Alan
 
-- Refatorar alert;
 - Verificar `defineCustomElement` das estorias;
 - vericar arg dinamico no componente loader
 
