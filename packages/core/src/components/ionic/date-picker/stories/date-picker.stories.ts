@@ -17,26 +17,24 @@ export default meta;
 type Story = StoryObj<Components.IonDatetime & IonDatetimeButton>;
 
 const openDatetime = () => {
-  const datetime = document.getElementById('datetime')
-  datetime.style.opacity = '1';
-  datetime.style.visibility = 'visible';
+  const datetime = document.getElementById('input-container')
+  datetime.classList.add('tp-datetime-visible')
 }
 
 const closeDatetime = () => {
-  const datetime = document.getElementById('datetime')
-  datetime.style.opacity = '0';
-  datetime.style.visibility = 'hidden';
+   const datetime = document.getElementById('input-container')
+   datetime.classList.remove('tp-datetime-visible')
 }
 
 export const Default: Story = {
   render: () => {
     return html`
-      <tp-input-container @click=${openDatetime}>
+      <tp-input-container id="input-container" @click=${openDatetime}>
         <ion-label slot="label" tp-type="p14">Descrição Datetime</ion-label>
         <ion-datetime-button mode="ios" datetime="datetime"></ion-datetime-button>
         <ion-icon src="./icons/tp-calendar.svg"></ion-icon>
 
-        <ion-datetime id="datetime" presentation="date">
+        <ion-datetime mode="md" id="datetime" presentation="date">
           <div slot="buttons">
             <ion-button fill="clear" size="xxs">
               <ion-label tp-type="p12b" @click=${closeDatetime}>Cancelar</ion-label>

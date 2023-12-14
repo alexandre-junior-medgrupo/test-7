@@ -1,4 +1,6 @@
 /* stylelint-disable order/properties-order */
+@import '../../../styles/templarios.abstracts';
+
 :host {
   --border-color: transparent;
   --background: var(--tp-color-neutral-2);
@@ -51,11 +53,33 @@
 ::slotted(ion-datetime) {
   --background: var(--tp-color-neutral-4) !important;
   --wheel-fade-background-rgb: var(--tp-color-neutral-4-rgb) !important;
+  --wheel-highlight-background: var(--tp-color-neutral-4) !important;
+  --tp-color-button-label: var(--tp-color-neutral-10) !important;
   top: 68px !important;
   right: 0 !important;
   bottom: initial !important;
   left: initial !important;
   border-radius: 0 0 16px 16px !important;
+
+  @include breakpoint-down('sm') {
+    min-width: initial !important;
+    max-width: initial !important;
+  }
+}
+
+:host(.tp-datetime-visible) {
+  .tp-input-container__wrapper {
+    --border-radius: 8px 8px 0 8px !important;
+
+    @include breakpoint-down('sm') {
+      --border-radius: 8px 8px 0 0 !important;
+    }
+  }
+
+  ::slotted(ion-datetime) {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
 }
 
 //

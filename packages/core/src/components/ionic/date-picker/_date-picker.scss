@@ -14,4 +14,12 @@ ion-datetime {
   &::part(calendar-day) {
     color: var(--tp-color-neutral-10);
   }
+
+  &::part(active) {
+    --ion-color-base: var(--tp-color-brand-2);
+  }
+
+  &::part(today) {
+    --ion-color-base: var(--tp-color-brand-2);
+  }
 }
