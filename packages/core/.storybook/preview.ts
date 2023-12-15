@@ -64,12 +64,12 @@ const preview: Preview = {
     },
     themes: {
       target: 'root',
-      default: 'default',
+      default: 'MedSoft',
       onChange: () => {},
       list: [
         {
           name: 'MedSoft',
-          class: [`${TpThemeCSSClasses.MedSoft}`],
+          class: [`${TpThemeCSSClasses.MedSoft}`, 'templarios-ionic-6'],
           color: '#14A2B8',
         },
         {

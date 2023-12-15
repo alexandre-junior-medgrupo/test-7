@@ -1905,17 +1905,16 @@ ion-button.button-has-icon-only.button-lg ion-icon {
   height: 48px;
 }
 
-ion-checkbox {
+.templarios-ionic-6 ion-checkbox {
   --background-checked: var(--tp-color-brand-4);
 }
-ion-checkbox:hover {
+.templarios-ionic-6 ion-checkbox:hover {
   --background-checked: var(--tp-color-brand-5);
 }
-
-ion-checkbox.ion-color {
+.templarios-ionic-6 ion-checkbox.ion-color {
   --background-checked: var(--ion-color-base);
 }
-ion-checkbox.ion-color:hover {
+.templarios-ionic-6 ion-checkbox.ion-color:hover {
   --border-color-checked: var(--ion-color-tint);
   --background-checked: var(--ion-color-tint);
 }
@@ -2171,13 +2170,9 @@ ion-item ion-toggle.in-item {
 }
 
 ion-item.ion-color ion-checkbox {
-  --background: var(--ion-color-contrast);
-  --background-checked: var(--ion-color-base);
-  --checkmark-color: var(--ion-color-contrast);
-}
-ion-item.ion-color ion-checkbox:hover {
-  --border-color-checked: var(--ion-color-tint);
-  --background-checked: var(--ion-color-tint);
+  --background: var(--ion-color-base);
+  --background-checked: var(--ion-color-contrast);
+  --checkmark-color: var(--ion-color-base);
 }
 ion-item.ion-color ion-toggle {
   --background: var(--tp-color-neutral-4);
