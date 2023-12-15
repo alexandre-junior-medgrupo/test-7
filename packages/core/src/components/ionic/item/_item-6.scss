@@ -1,11 +1,37 @@
 // /* stylelint-disable selector-max-compound-selectors */
 // @use 'sass:map';
 
+// important necessario pois ainda nao temos a classe do ionic 6
+ion-item {
+  ion-checkbox.in-item {
+    margin: 0;
+  }
+}
+
+ion-item {
+  ion-toggle.in-item {
+    padding-inline: 0;
+    padding: 6px 0;
+  }
+}
+
 ion-item.ion-color {
-  // toggle
-  ion-toggle {
+  // checkbox
+  ion-checkbox {
     --background: var(--ion-color-contrast);
     --background-checked: var(--ion-color-base);
+    --checkmark-color: var(--ion-color-contrast);
+
+      &:hover {
+      --border-color-checked: var(--ion-color-tint);
+      --background-checked: var(--ion-color-tint);
+    }
+  }
+
+  // toggle
+  ion-toggle {
+    --background: var(--tp-color-neutral-4);
+    --background-checked: var(--ion-color-contrast);
   }
 }
 

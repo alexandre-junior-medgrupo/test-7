@@ -1,55 +1,38 @@
 ion-checkbox {
-  --background-checked: var(--tp-color-brand-4);
+  --border-color: var(--tp-color-neutral-35);
+  --border-color-checked: var(--tp-color-brand-4);
+  --border-radius: 4px;
+  --checkbox-background: transparent;
+  --checkbox-background-checked: var(--tp-color-brand-4);
+  --checkmark-color: var(--tp-color-neutral-2);
+  --size: 20px;
+
+  color: var(--tp-color-neutral-10);
 
   &:hover {
-    --background-checked: var(--tp-color-brand-5);
+    --border-color-checked: var(--tp-color-brand-5);
+    --checkbox-background-checked: var(--tp-color-brand-5);
+  }
+
+  &::part(label) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
+//
+// color
+//
 ion-checkbox.ion-color {
-  --background-checked: var(--ion-color-base);
+  --border-color: var(--ion-color-base);
+  --border-color-checked: var(--ion-color-base);
+  --checkbox-background-checked: var(--ion-color-base);
+  --checkmark-color: var(--ion-color-contrast);
 
-    &:hover {
+  color: var(--ion-color-base);
+
+  &:hover {
     --border-color-checked: var(--ion-color-tint);
-    --background-checked: var(--ion-color-tint);
+    --checkbox-background-checked: var(--ion-color-tint);
   }
 }
-
-// ion-checkbox {
-//   --border-color: var(--tp-color-neutral-35);
-//   --border-color-checked: var(--tp-color-brand-4);
-//   --border-radius: 4px;
-//   --checkbox-background: transparent;
-//   --checkbox-background-checked: var(--tp-color-brand-4);
-//   --checkmark-color: var(--tp-color-neutral-2);
-//   --size: 20px;
-
-//   color: var(--tp-color-neutral-10);
-
-//   &:hover {
-//     --border-color-checked: var(--tp-color-brand-5);
-//     --checkbox-background-checked: var(--tp-color-brand-5);
-//   }
-
-//   &::part(label) {
-//     margin-top: 0;
-//     margin-bottom: 0;
-//   }
-// }
-
-// //
-// // color
-// //
-// ion-checkbox.ion-color {
-//   --border-color: var(--ion-color-base);
-//   --border-color-checked: var(--ion-color-base);
-//   --checkbox-background-checked: var(--ion-color-base);
-//   --checkmark-color: var(--ion-color-contrast);
-
-//   color: var(--ion-color-base);
-
-//   &:hover {
-//     --border-color-checked: var(--ion-color-tint);
-//     --checkbox-background-checked: var(--ion-color-tint);
-//   }
-// }
