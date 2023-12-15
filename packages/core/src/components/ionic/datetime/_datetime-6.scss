@@ -1,36 +1,38 @@
 /* stylelint-disable selector-max-compound-selectors */
 
-ion-datetime {
-  --background: var(--tp-color-neutral-2);
-  --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - 207px);
-  min-width: 414px;
-  border-radius: 16px 16px 0 0;
-  visibility: hidden;
-  opacity: 0;
 
-  &.ion-color-primary {
-    --ion-color-base: var(--tp-color-neutral-2) !important;
-    --ion-color-base-rgb: initial !important;
-  }
 
-  &::part(wheel-item) {
-    color: var(--tp-color-neutral-10);
-    opacity: .3;
-  }
+// ion-datetime {
+//   --background: var(--tp-color-neutral-2);
+//   --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
+//   position: absolute;
+//   bottom: 0;
+//   left: calc(50% - 207px);
+//   min-width: 414px;
+//   border-radius: 16px 16px 0 0;
+//   visibility: hidden;
+//   opacity: 0;
 
-  &::part(active) {
-    opacity: initial;
-  }
+//   &.ion-color-primary {
+//     --ion-color-base: var(--tp-color-neutral-2) !important;
+//     --ion-color-base-rgb: initial !important;
+//   }
 
-  div {
-    display: flex;
-    justify-content: space-between;
+//   &::part(wheel-item) {
+//     color: var(--tp-color-neutral-10);
+//     opacity: .3;
+//   }
 
-    ion-button:last-child ion-label {
-      color: var(--tp-color-brand-4);
-    }
-  }
-}
+//   &::part(active) {
+//     opacity: initial;
+//   }
+
+//   div {
+//     display: flex;
+//     justify-content: space-between;
+
+//     ion-button:last-child ion-label {
+//       color: var(--tp-color-brand-4);
+//     }
+//   }
+// }
