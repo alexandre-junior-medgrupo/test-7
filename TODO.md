@@ -11,9 +11,10 @@
 - verificar hover do scroll (mixin)
 - Ver depois sobre a especificidade das classes que mesmo estando maior que a default nao consegue sobreescrever o estilo
 - Fazer atributo no-padding para o button tertiary
-  - toast
-  - tabs
+- toast
+- tabs
 - Verificar sobre spacings no accordion
+- Rever logica dos click no datetime
 
 ## Alan
 
