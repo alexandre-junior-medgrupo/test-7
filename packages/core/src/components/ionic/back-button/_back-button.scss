@@ -98,7 +98,7 @@ ion-back-button {
 //
 ion-back-button {
   @each $size-name, $size-value in $tp-back-button-sizes {
-    &[size='#{$size-name}'] {
+    &[tp-size='#{$size-name}'] {
       $properties-map: map.get($size-value, properties);
       $rules-map: map.get($size-value, rules);
 

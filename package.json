@@ -4,23 +4,31 @@
     "packages/*"
   ],
   "files": [
-    "core",
-    "angular"
+    "release-6",
+    "release-7"
   ],
   "scripts": {
     "lint:prettier": "prettier . --write --cache --cache-location .prettiercache",
     "lint:stylelint": "stylelint **/*.scss --fix --cache --formatter verbose",
     "lint": "npm-run-all lint:prettier --parallel lint:stylelint",
     "build:core": "lerna run tp:build --scope=tp-core",
-    "clean:core": "shx rm -rf core/*",
-    "move:core": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles core",
+    "clean:core:6": "shx rm -rf release-6/core/*",
+    "clean:core:7": "shx rm -rf release-7/core/*",
+    "move:core:6": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles packages/core/package.json release-6/core",
+    "move:core:7": "shx cp -r packages/core/dist packages/core/loader packages/core/icons packages/core/styles packages/core/package.json release-7/core",
     "build:angular:lib": "lerna run tp:build --scope=angular-lib",
-    "clean:angular:lib": "shx rm -rf angular/*",
-    "move:angular:lib": "shx cp -r packages/angular-lib/dist/templarios/* core/styles angular",
-    "clean": "npm-run-all --parallel clean:core clean:angular:lib",
-    "move": "npm-run-all move:core move:angular:lib",
+    "clean:angular:lib:6": "shx rm -rf release-6/angular/*",
+    "clean:angular:lib:7": "shx rm -rf release-7/angular/*",
+    "move:angular:lib:6": "shx cp -r packages/angular-lib/dist/templarios/* packages/core/styles release-6/angular",
+    "move:angular:lib:7": "shx cp -r packages/angular-lib/dist/templarios/* packages/core/styles release-7/angular",
+    "clean:6": "npm-run-all --parallel clean:core:6 clean:angular:lib:6",
+    "clean:7": "npm-run-all --parallel clean:core:7 clean:angular:lib:7",
+    "move:6": "npm-run-all move:core:6 move:angular:lib:6",
+    "move:7": "npm-run-all move:core:7 move:angular:lib:7",
+    "replace": "node scripts/replace.js",
     "start": "cd packages/core && npm run tp:start",
-    "build": "npm-run-all build:core build:angular:lib lint clean move"
+    "build:6": "npm-run-all build:core build:angular:lib lint clean:6 move:6 replace",
+    "build:7": "npm-run-all build:core build:angular:lib lint clean:7 move:7 replace"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",
@@ -28,6 +36,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
+    "replace-in-file": "^7.0.2",
     "shx": "^0.3.4",
     "stylelint": "^15.10.3",
     "stylelint-config-rational-order": "^0.1.2",
