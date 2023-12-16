@@ -4,7 +4,7 @@ import {
   EventEmitter,
   NgZone,
 } from '@angular/core';
-import { Components } from 'tp-core';
+import { Components } from '../../../core/dist/index';
 import * as i0 from '@angular/core';
 export declare class TpAlert {
   protected z: NgZone;

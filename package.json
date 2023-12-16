@@ -25,9 +25,10 @@
     "clean:7": "npm-run-all --parallel clean:core:7 clean:angular:lib:7",
     "move:6": "npm-run-all move:core:6 move:angular:lib:6",
     "move:7": "npm-run-all move:core:7 move:angular:lib:7",
+    "replace": "node scripts/replace.js",
     "start": "cd packages/core && npm run tp:start",
-    "build:6": "npm-run-all build:core build:angular:lib lint clean:6 move:6",
-    "build:7": "npm-run-all build:core build:angular:lib lint clean:7 move:7"
+    "build:6": "npm-run-all build:core build:angular:lib lint clean:6 move:6 replace",
+    "build:7": "npm-run-all build:core build:angular:lib lint clean:7 move:7 replace"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",
@@ -35,6 +36,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
+    "replace-in-file": "^7.0.2",
     "shx": "^0.3.4",
     "stylelint": "^15.10.3",
     "stylelint-config-rational-order": "^0.1.2",

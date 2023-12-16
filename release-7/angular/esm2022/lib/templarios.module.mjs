@@ -1,5 +1,5 @@
 import { APP_INITIALIZER, NgModule } from '@angular/core';
-import { defineCustomElements } from 'tp-core/loader';
+import { defineCustomElements } from '../../../core/loader';
 import { DIRECTIVES } from './stencil-generated';
 import * as i0 from '@angular/core';
 import * as i1 from './stencil-generated/components';

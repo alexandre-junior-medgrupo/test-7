@@ -7,7 +7,7 @@ import {
   NgModule,
 } from '@angular/core';
 import { fromEvent } from 'rxjs';
-import { defineCustomElements } from 'tp-core/loader';
+import { defineCustomElements } from '../../core/loader';
 
 /* eslint-disable */
 /* tslint:disable */
