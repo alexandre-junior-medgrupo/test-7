@@ -1,7 +1,6 @@
 @use 'sass:map';
 @use "sass:string";
 
-
 @function breakpoint-next(
   $name,
   $breakpoints: $grid-breakpoints,

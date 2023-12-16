@@ -176,6 +176,7 @@ export namespace Components {
           * Define a posição do componente.
          */
         "fixed": boolean;
+        "toggle": (event?: Event) => Promise<void>;
         /**
           * Define a variação do componente.
          */
