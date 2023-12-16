@@ -52,41 +52,41 @@ export const Default: Story = {
         color="${args.color}"
         ?disabled="${args.disabled}"
         ?scrollable="${args.scrollable}"
-        value="Tabs1"
+        value="segment-1"
       >
-        <ion-segment-button value="Tabs1">
+        <ion-segment-button value="segment-1">
           <ion-label>Tabs 1</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="Tabs2">
+        <ion-segment-button value="segment-2">
           <ion-label>Tabs 2</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="Tabs3">
+        <ion-segment-button value="segment-3">
           <ion-label>Tabs 3</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="Tabs4">
+        <ion-segment-button value="segment-4">
           <ion-label>Tabs 4</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="Tabs5">
+        <ion-segment-button value="segment-5">
           <ion-label>Tabs 5</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="Tabs6">
+        <ion-segment-button value="segment-6">
           <ion-label>Tabs 6</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="Tabs7">
+        <ion-segment-button value="segment-7">
           <ion-label>Tabs 7</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="Tabs8">
+        <ion-segment-button value="segment-8">
           <ion-label>Tabs 8</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="Tabs9">
+        <ion-segment-button value="segment-9">
           <ion-label>Tabs 9</ion-label>
         </ion-segment-button>
       </ion-segment>

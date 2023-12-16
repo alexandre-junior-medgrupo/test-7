@@ -249,11 +249,33 @@ export class TpRateLike {
   }
 }
 
-import type { TpRateLikeType as ITpRateLikeTpRateLikeType } from 'tp-core';
-
 export declare interface TpRateLike extends Components.TpRateLike {
   /**
    * Emitido quando a propriedade status é alterada.
    */
-  tpChange: EventEmitter<CustomEvent<ITpRateLikeTpRateLikeType['status']>>;
+  tpChange: EventEmitter<CustomEvent<'like' | 'dislike'>>;
 }
+
+@ProxyCmp({
+  inputs: ['color', 'icon'],
+})
+@Component({
+  selector: 'tp-test',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['color', 'icon'],
+})
+export class TpTest {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpTest extends Components.TpTest {}

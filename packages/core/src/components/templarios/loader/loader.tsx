@@ -2,8 +2,7 @@ import {
   Component,
   Host,
   Prop,
-  h,
-  Method
+  h
 } from '@stencil/core';
 import { createColorClasses } from '../../../utils/functions/color.function';
 import type { TpColor } from '../../../utils/types/color.type';
@@ -30,11 +29,6 @@ export class TpLoader {
    * Define a variação do componente.
    */
   @Prop({ reflect: true }) tpName?: TpLoaderType['tp-name'];
-
-  @Method()
-  async toggle(event?: Event) {
-
-  }
 
   render() {
     const { color, fixed, tpName } = this;

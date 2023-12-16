@@ -11,14 +11,12 @@ import { TpChartRadialSize } from "./components/templarios/chart-radial/utils/ch
 import { TpChartRadialItem } from "./components/templarios/chart-radial/utils/chart-radial.type";
 import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
 import { TpLoaderType } from "./components/templarios/loader/utils/loader.type";
-import { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export { TpColor } from "./utils/types/color.type";
 export { TpAlertType } from "./components/templarios/alert/alert.type";
 export { TpChartRadialSize } from "./components/templarios/chart-radial/utils/chart-radial.enum";
 export { TpChartRadialItem } from "./components/templarios/chart-radial/utils/chart-radial.type";
 export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
 export { TpLoaderType } from "./components/templarios/loader/utils/loader.type";
-export { TpRateLikeType } from "./components/templarios/rate-like/utils/rate-like.type";
 export namespace Components {
     interface TpAlert {
         /**
@@ -176,7 +174,6 @@ export namespace Components {
           * Define a posição do componente.
          */
         "fixed": boolean;
-        "toggle": (event?: Event) => Promise<void>;
         /**
           * Define a variação do componente.
          */
@@ -190,7 +187,11 @@ export namespace Components {
         /**
           * Define o status do componente.
          */
-        "status"?: TpRateLikeType['status'];
+        "status"?: "like" | "dislike";
+    }
+    interface TpTest {
+        "color"?: TpColor;
+        "icon"?: string;
     }
 }
 export interface TpRateLikeCustomEvent<T> extends CustomEvent<T> {
@@ -247,7 +248,7 @@ declare global {
         new (): HTMLTpLoaderElement;
     };
     interface HTMLTpRateLikeElementEventMap {
-        "tpChange": TpRateLikeType['status'];
+        "tpChange": "like" | "dislike";
     }
     interface HTMLTpRateLikeElement extends Components.TpRateLike, HTMLStencilElement {
         addEventListener<K extends keyof HTMLTpRateLikeElementEventMap>(type: K, listener: (this: HTMLTpRateLikeElement, ev: TpRateLikeCustomEvent<HTMLTpRateLikeElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -263,6 +264,12 @@ declare global {
         prototype: HTMLTpRateLikeElement;
         new (): HTMLTpRateLikeElement;
     };
+    interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
+    }
+    var HTMLTpTestElement: {
+        prototype: HTMLTpTestElement;
+        new (): HTMLTpTestElement;
+    };
     interface HTMLElementTagNameMap {
         "tp-alert": HTMLTpAlertElement;
         "tp-button-cluster": HTMLTpButtonClusterElement;
@@ -273,6 +280,7 @@ declare global {
         "tp-input-container": HTMLTpInputContainerElement;
         "tp-loader": HTMLTpLoaderElement;
         "tp-rate-like": HTMLTpRateLikeElement;
+        "tp-test": HTMLTpTestElement;
     }
 }
 declare namespace LocalJSX {
@@ -444,11 +452,15 @@ declare namespace LocalJSX {
         /**
           * Emitido quando a propriedade status é alterada.
          */
-        "onTpChange"?: (event: TpRateLikeCustomEvent<TpRateLikeType['status']>) => void;
+        "onTpChange"?: (event: TpRateLikeCustomEvent<"like" | "dislike">) => void;
         /**
           * Define o status do componente.
          */
-        "status"?: TpRateLikeType['status'];
+        "status"?: "like" | "dislike";
+    }
+    interface TpTest {
+        "color"?: TpColor;
+        "icon"?: string;
     }
     interface IntrinsicElements {
         "tp-alert": TpAlert;
@@ -460,6 +472,7 @@ declare namespace LocalJSX {
         "tp-input-container": TpInputContainer;
         "tp-loader": TpLoader;
         "tp-rate-like": TpRateLike;
+        "tp-test": TpTest;
     }
 }
 export { LocalJSX as JSX };
@@ -475,6 +488,7 @@ declare module "@stencil/core" {
             "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;
             "tp-loader": LocalJSX.TpLoader & JSXBase.HTMLAttributes<HTMLTpLoaderElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
+            "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
         }
     }
 }

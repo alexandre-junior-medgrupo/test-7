@@ -10,4 +10,5 @@ export const DIRECTIVES = [
   d.TpInputContainer,
   d.TpLoader,
   d.TpRateLike,
+  d.TpTest,
 ];
