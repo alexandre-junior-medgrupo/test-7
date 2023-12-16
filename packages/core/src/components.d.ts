@@ -6,13 +6,11 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { TpColor } from "./utils/types/color.type";
-import { TpAlertType } from "./components/templarios/alert/alert.type";
 import { TpChartRadialSize } from "./components/templarios/chart-radial/utils/chart-radial.enum";
 import { TpChartRadialItem } from "./components/templarios/chart-radial/utils/chart-radial.type";
 import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
 import { TpLoaderType } from "./components/templarios/loader/utils/loader.type";
 export { TpColor } from "./utils/types/color.type";
-export { TpAlertType } from "./components/templarios/alert/alert.type";
 export { TpChartRadialSize } from "./components/templarios/chart-radial/utils/chart-radial.enum";
 export { TpChartRadialItem } from "./components/templarios/chart-radial/utils/chart-radial.type";
 export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
@@ -24,21 +22,9 @@ export namespace Components {
          */
         "color"?: TpColor;
         /**
-          * Define o icon a ser exibido no componente.
-         */
-        "icon": string;
-        /**
           * Define o estado de carregamento do componente.
          */
         "loading"?: boolean;
-        /**
-          * Define a string a ser exibida no componente.
-         */
-        "message": string;
-        /**
-          * Define a variação de estado do componente.
-         */
-        "state"?: TpAlertType['state'];
     }
     interface TpButtonCluster {
         /**
@@ -290,21 +276,9 @@ declare namespace LocalJSX {
          */
         "color"?: TpColor;
         /**
-          * Define o icon a ser exibido no componente.
-         */
-        "icon"?: string;
-        /**
           * Define o estado de carregamento do componente.
          */
         "loading"?: boolean;
-        /**
-          * Define a string a ser exibida no componente.
-         */
-        "message"?: string;
-        /**
-          * Define a variação de estado do componente.
-         */
-        "state"?: TpAlertType['state'];
     }
     interface TpButtonCluster {
         /**

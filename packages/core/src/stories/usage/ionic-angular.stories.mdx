@@ -1,0 +1,110 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Templarios/Usage/Ionic Angular" />
+
+# Ionic Angular
+
+## **Installation**
+
+```bash
+npm i templarios@github:MEDGRUPOGIT/templarios.git#1.0.0
+```
+
+### **Release 7**
+
+```bash
+npm uninstall @ionic/core @ionic/angular
+```
+
+```bash
+npm install @ionic/core@latest @ionic/angular@latest
+```
+
+### **Release 6**
+
+```bash
+npm uninstall @ionic/core @ionic/angular
+```
+
+```bash
+npm install @ionic/core@v6-lts @ionic/angular@v6-lts
+```
+
+## **Configuration**
+
+> `src/main.ts`
+
+```ts
+import { defineCustomElements } from 'templarios/release-{7,6}/core/loader';
+defineCustomElements();
+```
+
+> `src/global.scss`
+
+```scss
+/* templarios */
+@import 'templarios/release-{7,6}/angular/styles/css/templarios.css';
+```
+
+> `src/app/app.module.ts`
+
+```ts
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { TemplariosModule } from 'templarios/release-{7,6}/angular';
+
+@NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [TemplariosModule],
+})
+export class AppModule {}
+```
+
+> `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "types": [
+      "./node_modules/templarios/release-{7,6}/core/dist/types/interfaces.d.ts"
+    ]
+  }
+}
+```
+
+> `angular.json`
+
+```json
+{
+  "projects": {
+    "app-angular": {
+      "architect": {
+        "build": {
+          "options": {
+            "assets": [
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/templarios/release-{7,6}/core/icons",
+                "output": "./assets"
+              }
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules"]
+            }
+          }
+        },
+        "test": {
+          "options": {
+            "assets": [
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/templarios/release-{7,6}/core/icons",
+                "output": "./assets"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+```

@@ -35,6 +35,11 @@ html {
   min-width: 160px !important;
 }
 
+/* mdx */
+.sbdocs.sbdocs-wrapper .css-12u9f4 {
+  margin: 8px 0 !important;
+}
+
 /* tp-type override */
 /* h64 */
 .css-lfk5jr:nth-of-type(1) .css-1d0tddh {
