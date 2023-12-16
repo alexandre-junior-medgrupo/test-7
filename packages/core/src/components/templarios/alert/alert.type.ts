@@ -1,5 +1,5 @@
-import { TpAlertState } from "./alert.enum";
-
 export type TpAlertType = {
-  state: `${TpAlertState}`;
+  // TODO type do icon é string mesmo??
+  icon: string,
+  text: string,
 }

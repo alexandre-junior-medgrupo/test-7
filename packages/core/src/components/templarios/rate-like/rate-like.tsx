@@ -8,7 +8,6 @@ import {
   getAssetPath,
 } from '@stencil/core';
 import { TpRateLikeStatus } from './utils/rate-like.enum';
-import { TpRateLikeType } from './utils/rate-like.type';
 
 @Component({
   tag: 'tp-rate-like',
@@ -23,7 +22,7 @@ export class TpRateLike {
   /**
    * Define o status do componente.
    */
-  @Prop({ reflect: true, mutable: true }) status?: TpRateLikeType['status'];
+  @Prop({ reflect: true, mutable: true }) status?: "like" | "dislike"
 
   /**
    * Define o estado de carregamento do componente.
@@ -33,9 +32,9 @@ export class TpRateLike {
   /**
    * Emitido quando a propriedade status é alterada.
    */
-  @Event() tpChange!: EventEmitter<TpRateLikeType['status']>;
+  @Event() tpChange!: EventEmitter<"like" | "dislike">;
 
-  private onClick = (status: TpRateLikeType['status']) => {
+  private onClick = (status: "like" | "dislike") => {
     if (this.status === undefined) {
       return;
     }

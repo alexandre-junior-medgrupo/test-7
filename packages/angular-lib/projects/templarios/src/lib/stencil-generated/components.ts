@@ -38,6 +38,31 @@ export class TpAlert {
 export declare interface TpAlert extends Components.TpAlert {}
 
 @ProxyCmp({
+  inputs: ['collapsed', 'color', 'loading'],
+  methods: ['toggle'],
+})
+@Component({
+  selector: 'tp-button-cluster',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['collapsed', 'color', 'loading'],
+})
+export class TpButtonCluster {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpButtonCluster extends Components.TpButtonCluster {}
+
+@ProxyCmp({
   inputs: ['color', 'height', 'loading', 'noLabel', 'value', 'width'],
 })
 @Component({
@@ -60,6 +85,30 @@ export class TpChartBar {
 }
 
 export declare interface TpChartBar extends Components.TpChartBar {}
+
+@ProxyCmp({
+  inputs: ['color', 'items', 'size'],
+})
+@Component({
+  selector: 'tp-chart-radial',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['color', 'items', 'size'],
+})
+export class TpChartRadial {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpChartRadial extends Components.TpChartRadial {}
 
 @ProxyCmp({
   inputs: [
@@ -154,6 +203,30 @@ export class TpInputContainer {
 export declare interface TpInputContainer extends Components.TpInputContainer {}
 
 @ProxyCmp({
+  inputs: ['color', 'fixed', 'tpName'],
+})
+@Component({
+  selector: 'tp-loader',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['color', 'fixed', 'tpName'],
+})
+export class TpLoader {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpLoader extends Components.TpLoader {}
+
+@ProxyCmp({
   inputs: ['loading', 'status'],
 })
 @Component({
@@ -176,11 +249,33 @@ export class TpRateLike {
   }
 }
 
-import type { TpRateLikeType as ITpRateLikeTpRateLikeType } from 'tp-core';
-
 export declare interface TpRateLike extends Components.TpRateLike {
   /**
    * Emitido quando a propriedade status é alterada.
    */
-  tpChange: EventEmitter<CustomEvent<ITpRateLikeTpRateLikeType['status']>>;
+  tpChange: EventEmitter<CustomEvent<'like' | 'dislike'>>;
 }
+
+@ProxyCmp({
+  inputs: ['color', 'icon'],
+})
+@Component({
+  selector: 'tp-test',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['color', 'icon'],
+})
+export class TpTest {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpTest extends Components.TpTest {}

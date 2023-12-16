@@ -1,16 +1,6 @@
 @import './../../../styles/definitions/type';
 
-/**
-  * @prop --tp-skeleton-height: Define a altura do skeleton do componente.
-  * @prop --tp-skeleton-width: Define a largura do skeleton do componente.
-  * @prop --tp-skeleton-background-rgb: Define o background rgb do skeleton do componente.
-*/
-
 :host  {
-  --tp-skeleton-height: calc(var(--height) * 1px);
-  --tp-skeleton-width: calc(var(--width) * 1px);
-  --tp-skeleton-background-rgb: var(--tp-color-neutral-10-rgb);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,23 +16,23 @@
     padding: 12px;
   }
 
-  &__icon {
-    min-width: 16px;
-    margin-right: 16px;
-  }
-
-  &__text {
-    color: var(--tp-color-neutral-10);
-    text-align: center;
-  }
-
   &__skeleton {
-    --background-rgb: var(--tp-skeleton-background-rgb);
+    --background-rgb: var(--tp-color-neutral-10-rgb);
     --border-radius: 0;
     width: 100%;
     height: 40px;
     margin: 0;
   }
+}
+
+::slotted([slot='icon']) {
+  min-width: 16px;
+  margin-right: 16px;
+}
+
+::slotted([slot='text']) {
+  color: var(--tp-color-neutral-10);
+  text-align: center;
 }
 
 //
@@ -51,45 +41,23 @@
 :host(.tp-color) {
   background: var(--tp-color-base);
 
-  .tp-alert {
-    &__icon {
-      --stroke: var(--tp-color-contrast);
-    }
+  ::slotted([slot='icon']) {
+    --stroke: var(--tp-color-contrast);
+  }
 
-    &__text {
-      color: var(--tp-color-contrast);
-    }
+  ::slotted([slot='text']) {
+    color: var(--tp-color-contrast) !important;
   }
 }
 
-//
-// state
-//
-:host(.tp-alert--offline) {
-  background: var(--tp-color-warning);
-
-  .tp-alert {
-    &__icon {
-      --stroke: var(--tp-color-neutral-10);
-    }
-
-    &__text {
-      color: var(--tp-color-neutral-10);
-    }
+:host(.tp-color-warning),
+:host(.tp-color-provas-4) {
+  ::slotted([slot='icon']) {
+    --stroke: var(--tp-color-neutral-10);
   }
-}
 
-:host(.tp-alert--atualizar) {
-  background: var(--tp-color-provas-4);
-
-  .tp-alert {
-    &__icon {
-      --stroke: var(--tp-color-neutral-10);
-    }
-
-    &__text {
-      color: var(--tp-color-neutral-10);
-    }
+  ::slotted([slot='text']) {
+    color: var(--tp-color-neutral-10) !important;
   }
 }
 

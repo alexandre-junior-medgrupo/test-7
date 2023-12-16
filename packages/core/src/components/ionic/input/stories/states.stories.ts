@@ -70,12 +70,8 @@ export const States: Story = {
         ?disabled="${args.disabled}"
         ?clear-input="${args.clearInput}"
       ></ion-input>
-      <ion-label slot="feedback-error" tp-type="p14"
-      >*Caracteres invalidos</ion-label
-    >
-    <ion-label slot="feedback-success" tp-type="p14"
-      >*Caracteres validos</ion-label
-    >
+      <ion-label slot="feedback-error" tp-type="p14">*Caracteres invalidos</ion-label>
+      <ion-label slot="feedback-success" tp-type="p14">*Caracteres validos</ion-label>
     </tp-input-container>
     `;
   },

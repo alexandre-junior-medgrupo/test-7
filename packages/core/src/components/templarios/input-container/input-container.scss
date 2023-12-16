@@ -1,9 +1,14 @@
+/* stylelint-disable order/properties-order */
+@import '../../../styles/templarios.abstracts';
+
 :host {
   --border-color: transparent;
   --background: var(--tp-color-neutral-2);
+  --border-radius: 8px;
 }
 
 :host {
+  position: relative;
   display: block;
 }
 
@@ -14,7 +19,7 @@
     margin: 8px 0;
     background: var(--background);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 
     &:hover {
       --background: var(--tp-color-neutral-3);
@@ -43,6 +48,22 @@
 ::slotted(ion-icon) {
   margin-right: 16px;
   --stroke: var(--tp-color-neutral-6) !important;
+}
+
+// TODO - Revisar abertura e fechamento do date picker
+:host(.tp-datetime-visible) {
+  .tp-input-container__wrapper {
+    --border-radius: 8px 8px 0 8px !important;
+
+    @include breakpoint-down('sm') {
+      --border-radius: 8px 8px 0 0 !important;
+    }
+  }
+
+  ::slotted(ion-datetime) {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
 }
 
 //

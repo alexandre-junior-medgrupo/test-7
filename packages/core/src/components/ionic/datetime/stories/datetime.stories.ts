@@ -57,7 +57,7 @@ export const Default: Story = {
         <ion-icon src="./icons/tp-calendar.svg"></ion-icon>
       </tp-input-container>
 
-      <ion-datetime id="datetime" presentation=${args.presentation} prefer-wheel="true">
+      <ion-datetime mode="md" id="datetime" presentation=${args.presentation} prefer-wheel="true">
         <div slot="title">
           <ion-button fill="clear" size="xxs">
             <ion-label tp-type="p12b" @click=${closeDatetime}>CANCELAR</ion-label>

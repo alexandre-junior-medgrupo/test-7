@@ -64,7 +64,7 @@ const preview: Preview = {
     },
     themes: {
       target: 'root',
-      default: 'default',
+      default: 'MedSoft',
       onChange: () => {},
       list: [
         {
