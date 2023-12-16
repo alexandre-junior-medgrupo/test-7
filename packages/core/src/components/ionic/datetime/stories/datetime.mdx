@@ -1,5 +1,6 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
 import * as datetimeStories from '../stories/datetime.stories';
+import * as statesStories from '../stories/states.stories';
 
 <Meta of={datetimeStories} />
 
@@ -24,5 +25,12 @@ import { TpIonDatetime } from '..';
 
 ## Atributos
 
+### Default
+
 <Canvas of={datetimeStories.Default} />
 <Controls of={datetimeStories.Default} />
+
+### States
+
+<Canvas of={statesStories.States} />
+<Controls of={statesStories.States} />

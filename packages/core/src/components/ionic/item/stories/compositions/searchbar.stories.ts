@@ -1,6 +1,8 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
+import { defineCustomElement as defineCustomElementSearchbar } from '@ionic/core/components/ion-searchbar';
+import { defineCustomElement as defineCustomElementTextarea } from '@ionic/core/components/ion-textarea';
 import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
@@ -10,6 +12,8 @@ import { TpIonItem } from '../../utils/item.type';
 defineCustomElementItem();
 defineCustomElementLabel();
 defineCustomElementInput();
+defineCustomElementSearchbar();
+defineCustomElementTextarea();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
   title: 'components/Ionic/Item/Compositions',
@@ -100,7 +104,7 @@ export default meta;
 
 type Story = StoryObj<Components.IonItem & TpIonItem>;
 
-export const Input: Story = {
+export const Searchbar: Story = {
   render: ({ ...args }) => html`
     <ion-list>
       <ion-item
@@ -112,12 +116,13 @@ export const Input: Story = {
         ?disabled="${args.disabled}"
       >
         <tp-input-container>
-          <ion-label slot="label" tp-type="p14">Input</ion-label>
-          <ion-input
+          <ion-label slot="label" tp-type="p14">Searchbar</ion-label>
+          <ion-searchbar
             mode="md"
-            placeholder="Digite aqui"
-            clear-input="true"
-          ></ion-input>
+            search-icon="./../../../../icons/tp-search.svg"
+            clear-icon="./../../../../icons/tp-x.svg"
+            placeholder="Lorem ipsum dolor"
+          ></ion-searchbar>
         </tp-input-container>
       </ion-item>
     </ion-list>
@@ -127,6 +132,6 @@ export const Input: Story = {
     expect(canvas.getByText(/ion-item/gi)).toBeTruthy();
   }, */
 };
-Input.argTypes = {
+Searchbar.argTypes = {
   color: { table: { disable: true } },
 };
