@@ -1,27 +1,23 @@
 import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpAlert } from '../../alert';
+import { TP_ICONS_STORYBOOK } from '../../../../utils/constants/icon.constant';
+import { TpIonIcon } from '../../../ionic/icon/utils/icon.type';
+import { TpAlert } from '../alert';
+import { TpAlertType } from '../alert.type';
 
 // antigo med-alert-fixed
 defineCustomElementSkeletonText();
 
-const meta: Meta<TpAlert> = {
-  title: 'components/Templarios/Alert/Compositions',
+const meta: Meta<TpAlert & TpAlertType & TpIonIcon> = {
+  title: 'components/Templarios/Alert',
   argTypes: {
     icon: {
-      control: 'text',
-      description: 'Define o icon a ser exibido no componente.',
-      table: {
-        defaultValue: {
-          summary: 'undefined',
-        },
-        type: {
-          summary: 'text',
-        },
-      },
+      control: { type: 'select' },
+      options: [...TP_ICONS_STORYBOOK],
+      description: 'Define o path e nome do icone.',
     },
-    message: {
+    text: {
       control: 'text',
       description: 'Define a string a ser exibida no componente.',
       table: {
@@ -47,23 +43,27 @@ const meta: Meta<TpAlert> = {
     },
   },
   args: {
-    icon: 'tp-activity',
-    message: 'Essa é uma mensagem a ser apresentada.',
+    color: 'warning',
+    icon: `${TP_ICONS_STORYBOOK[133]}`,
+    text: 'Você está offline. Conecte-se para acessar o conteúdo.',
   },
 };
 
 export default meta;
 
-type Story = StoryObj;
+type Story = StoryObj<TpAlert & TpAlertType & TpIonIcon>;
 
-export const Custom: Story = {
+export const Offline: Story = {
   render: ({ ...args }) => {
+    const iconUrl = `./icons/${args.icon}`;
+
     return html`<tp-alert
       color="${args.color}"
-      icon="${args.icon}"
-      message="${args.message}"
       ?loading="${args.loading}"
-    ></tp-alert>`;
+    >
+      <ion-icon class="tp-alert__icon" slot="icon" tp-size="sm" src="${iconUrl}"></ion-icon>
+      <ion-text class="tp-alert__text" slot="text" tp-type="p12x">${args.text}</ion-text>
+    </tp-alert>`;
   },
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

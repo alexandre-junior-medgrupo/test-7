@@ -1,8 +1,8 @@
 import { Canvas, Controls, Meta } from '@storybook/blocks';
-import * as alertStories from './alert.stories';
-import * as alertCustomStories from './compositions/custom.stories';
+import * as alertOfflineStories from './alert-offline.stories';
+import * as alertDesatualizadoStories from './alert-desatualizado.stories';
 
-<Meta of={alertStories} />
+<Meta of={alertOfflineStories} />
 
 # tp-alert
 
@@ -12,18 +12,12 @@ import * as alertCustomStories from './compositions/custom.stories';
 import { TpAlertType } from '..';
 ```
 
-## Enums
+## Offline
 
-```ts
-import { TpAlertState } from '..';
-```
+<Canvas of={alertOfflineStories.Offline} />
+<Controls of={alertOfflineStories.Offline} />
 
-## Atributos
+## Desatualizado
 
-<Canvas of={alertStories.Default} />
-<Controls of={alertStories.Default} />
-
-## Compositions
-
-<Canvas of={alertCustomStories.Custom} />
-<Controls of={alertCustomStories.Custom} />
+<Canvas of={alertDesatualizadoStories.Desatualizado} />
+<Controls of={alertDesatualizadoStories.Desatualizado} />
