@@ -1,0 +1,53 @@
+@import '../../../styles/templarios.abstracts';
+
+.tp-dialog {
+  --background: var(--tp-color-neutral-2);
+  --backdrop-opacity: var(--ion-backdrop-opacity, 0.8);
+  --border-radius: 16px;
+  --height: auto;
+  --min-height: 50px;
+  --width: 100%;
+  --max-width: 640px;
+
+  .ion-delegate-host {
+    padding: 24px;
+  }
+
+  @include breakpoint-down('lg') {
+    --max-width: 440px;
+  }
+
+  @include breakpoint-down('sm') {
+    --max-width: calc(100% - 48px);
+  }
+
+  @include breakpoint-down('xxs') {
+    --max-width: calc(100% - 32px);
+  }
+}
+
+// estilo dos componentes internos, verificar se vamos manter
+.tp-dialog {
+  &__header {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 24px;
+    box-shadow: none;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    box-shadow: none;
+  }
+
+  &__button {
+    flex: 1;
+
+    &:last-child {
+      margin-left: 16px;
+    }
+  }
+}
