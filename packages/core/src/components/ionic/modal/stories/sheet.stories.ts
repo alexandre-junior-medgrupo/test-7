@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { BreakPointPixelEnum } from '../../../../utils/enums/breakpoint.enum';
 import { BreakpointUtils } from '../../../../utils/functions/breakpoint.function';
-import { sheetEnterAnimationDesktop, sheetEnterAnimationMobile, sheetLeaveAnimationDesktop } from '../utils/modal.fuctions';
+import { sheetEnterAnimationDesktop, sheetEnterAnimationMobile, sheetLeaveAnimationDesktop } from '../utils/modal.functions';
 
 defineCustomElementModal();
 defineCustomElementButton();

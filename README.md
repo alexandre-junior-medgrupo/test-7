@@ -2,6 +2,22 @@
 
 **[Lerna](https://lerna.js.org/) monorepo** contendo as releases do **Templarios Design System**.
 
+## # Release Ionic 7
+
+- **[`Storybook Link`](http://desenv.ordomederi.com/templarios/release-7)**
+
+> Aplicações onde **Templarios 7** está sendo utilizado:
+
+- **[`Aplicação X (link do repo)`]()**
+
+## # Release Ionic 6
+
+- **[`Storybook Link`](http://desenv.ordomederi.com/templarios/release-6)**
+
+> Aplicações onde **Templarios 6** está sendo utilizado:
+
+- **[`Aplicação Y (link do repo)`]()**
+
 <details>
 <summary><h2 style="display:inline-block; width: calc(100% - 15px)">Monorepo</h2></summary>
 

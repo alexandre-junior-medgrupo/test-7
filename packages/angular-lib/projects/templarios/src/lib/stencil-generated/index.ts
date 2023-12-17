@@ -1,4 +1,3 @@
-
 import * as d from './components';
 
 export const DIRECTIVES = [
@@ -11,5 +10,5 @@ export const DIRECTIVES = [
   d.TpInputContainer,
   d.TpLoader,
   d.TpRateLike,
-  d.TpSegmentContainer
+  d.TpSegmentContainer,
 ];

@@ -16,7 +16,7 @@
     "styles/"
   ],
   "scripts": {
-    "build": "stencil build --docs",
+    "build": "stencil build --config stencil.config.prod.ts --docs",
     "start": "stencil build --dev --watch",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",

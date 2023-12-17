@@ -17,7 +17,6 @@
   },
   "include": ["src"],
   "exclude": [
-    "node_modules",
-    "./src/components/ionic/modal"
+    "node_modules"
   ]
 }

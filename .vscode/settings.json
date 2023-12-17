@@ -11,6 +11,8 @@
   "material-icon-theme.files.associations": {
     ".prettiercache": "prettier",
     "extensions.json": "vscode",
-    "settings.json": "vscode"
+    "settings.json": "vscode",
+    "tsconfig.prod.json": "tsconfig",
+    "stencil.config.prod.ts": "stencil"
   }
 }

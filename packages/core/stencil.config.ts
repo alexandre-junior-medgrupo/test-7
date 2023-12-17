@@ -5,6 +5,7 @@ import { sass } from '@stencil/sass';
 export const config: Config = {
   namespace: 'templarios',
   plugins: [sass()],
+  tsconfig: 'tsconfig.json',
   outputTargets: [
     {
       type: 'dist',
