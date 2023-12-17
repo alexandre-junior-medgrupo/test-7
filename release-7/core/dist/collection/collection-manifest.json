@@ -1,15 +1,15 @@
 {
   "entries": [
-    "components/templarios/input-container/input-container.js",
     "components/templarios/alert/alert.js",
     "components/templarios/button-cluster/button-cluster.js",
     "components/templarios/chart-bar/chart-bar.js",
     "components/templarios/chart-radial/chart-radial.js",
     "components/templarios/comparison-chart-bar/comparison-chart-bar.js",
     "components/templarios/horizontal-chart-bar/horizontal-chart-bar.js",
+    "components/templarios/input-container/input-container.js",
     "components/templarios/loader/loader.js",
     "components/templarios/rate-like/rate-like.js",
-    "components/templarios/test/test.js"
+    "components/templarios/segment-container/segment-container.js"
   ],
   "compiler": {
     "name": "@stencil/core",

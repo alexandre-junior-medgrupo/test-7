@@ -1,4 +1,4 @@
-import { Host, h, getAssetPath, } from "@stencil/core";
+import { Host, getAssetPath, h, } from "@stencil/core";
 import { TpRateLikeStatus } from "./utils/rate-like.enum";
 export class TpRateLike {
     constructor() {

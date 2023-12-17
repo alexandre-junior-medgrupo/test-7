@@ -4,7 +4,7 @@ import {
   EventEmitter,
   NgZone,
 } from '@angular/core';
-import { Components } from '../../../core/dist/index';
+import { Components } from '../../../core/dist/types';
 import * as i0 from '@angular/core';
 export declare class TpAlert {
   protected z: NgZone;
@@ -17,10 +17,7 @@ export declare class TpAlert {
     never,
     {
       color: { alias: 'color'; required: false };
-      icon: { alias: 'icon'; required: false };
       loading: { alias: 'loading'; required: false };
-      message: { alias: 'message'; required: false };
-      state: { alias: 'state'; required: false };
     },
     {},
     never,
@@ -222,19 +219,16 @@ export declare interface TpRateLike extends Components.TpRateLike {
    */
   tpChange: EventEmitter<CustomEvent<'like' | 'dislike'>>;
 }
-export declare class TpTest {
+export declare class TpSegmentContainer {
   protected z: NgZone;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
-  static ɵfac: i0.ɵɵFactoryDeclaration<TpTest, never>;
+  static ɵfac: i0.ɵɵFactoryDeclaration<TpSegmentContainer, never>;
   static ɵcmp: i0.ɵɵComponentDeclaration<
-    TpTest,
-    'tp-test',
+    TpSegmentContainer,
+    'tp-segment-container',
     never,
-    {
-      color: { alias: 'color'; required: false };
-      icon: { alias: 'icon'; required: false };
-    },
+    {},
     {},
     never,
     ['*'],
@@ -242,4 +236,5 @@ export declare class TpTest {
     never
   >;
 }
-export declare interface TpTest extends Components.TpTest {}
+export declare interface TpSegmentContainer
+  extends Components.TpSegmentContainer {}

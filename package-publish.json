@@ -1,0 +1,5 @@
+{
+  "name": "templarios",
+  "workspaces": ["packages/*"],
+  "files": ["release-6", "release-7"]
+}

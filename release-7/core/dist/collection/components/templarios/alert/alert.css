@@ -206,15 +206,7 @@
   margin: 0;
 }
 
-/**
-  * @prop --tp-skeleton-height: Define a altura do skeleton do componente.
-  * @prop --tp-skeleton-width: Define a largura do skeleton do componente.
-  * @prop --tp-skeleton-background-rgb: Define o background rgb do skeleton do componente.
-*/
 :host {
-  --tp-skeleton-height: calc(var(--height) * 1px);
-  --tp-skeleton-width: calc(var(--width) * 1px);
-  --tp-skeleton-background-rgb: var(--tp-color-neutral-10-rgb);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,50 +220,41 @@
   justify-content: center;
   padding: 12px;
 }
-.tp-alert__icon {
-  min-width: 16px;
-  margin-right: 16px;
-}
-.tp-alert__text {
-  color: var(--tp-color-neutral-10);
-  text-align: center;
-}
 .tp-alert__skeleton {
-  --background-rgb: var(--tp-skeleton-background-rgb);
+  --background-rgb: var(--tp-color-neutral-10-rgb);
   --border-radius: 0;
   width: 100%;
   height: 40px;
   margin: 0;
 }
 
+::slotted([slot=icon]) {
+  min-width: 16px;
+  margin-right: 16px;
+}
+
+::slotted([slot=text]) {
+  color: var(--tp-color-neutral-10);
+  text-align: center;
+}
+
 :host(.tp-color) {
   background: var(--tp-color-base);
 }
-:host(.tp-color) .tp-alert__icon {
+:host(.tp-color) ::slotted([slot=icon]) {
   --stroke: var(--tp-color-contrast);
 }
-:host(.tp-color) .tp-alert__text {
-  color: var(--tp-color-contrast);
+:host(.tp-color) ::slotted([slot=text]) {
+  color: var(--tp-color-contrast) !important;
 }
 
-:host(.tp-alert--offline) {
-  background: var(--tp-color-warning);
-}
-:host(.tp-alert--offline) .tp-alert__icon {
+:host(.tp-color-warning) ::slotted([slot=icon]),
+:host(.tp-color-provas-4) ::slotted([slot=icon]) {
   --stroke: var(--tp-color-neutral-10);
 }
-:host(.tp-alert--offline) .tp-alert__text {
-  color: var(--tp-color-neutral-10);
-}
-
-:host(.tp-alert--atualizar) {
-  background: var(--tp-color-provas-4);
-}
-:host(.tp-alert--atualizar) .tp-alert__icon {
-  --stroke: var(--tp-color-neutral-10);
-}
-:host(.tp-alert--atualizar) .tp-alert__text {
-  color: var(--tp-color-neutral-10);
+:host(.tp-color-warning) ::slotted([slot=text]),
+:host(.tp-color-provas-4) ::slotted([slot=text]) {
+  color: var(--tp-color-neutral-10) !important;
 }
 
 :host(.tp-alert--loading) {

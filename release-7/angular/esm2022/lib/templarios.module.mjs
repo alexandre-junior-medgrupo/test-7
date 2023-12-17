@@ -30,7 +30,7 @@ export class TemplariosModule {
         i1.TpInputContainer,
         i1.TpLoader,
         i1.TpRateLike,
-        i1.TpTest,
+        i1.TpSegmentContainer,
       ],
       exports: [
         i1.TpAlert,
@@ -42,7 +42,7 @@ export class TemplariosModule {
         i1.TpInputContainer,
         i1.TpLoader,
         i1.TpRateLike,
-        i1.TpTest,
+        i1.TpSegmentContainer,
       ],
     });
   }

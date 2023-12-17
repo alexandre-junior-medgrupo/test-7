@@ -1,9 +1,12 @@
+/* stylelint-disable order/properties-order */
 :host {
   --border-color: transparent;
   --background: var(--tp-color-neutral-2);
+  --border-radius: 8px;
 }
 
 :host {
+  position: relative;
   display: block;
 }
 
@@ -13,7 +16,7 @@
   margin: 8px 0;
   background: var(--background);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 .tp-input-container__wrapper:hover {
   --background: var(--tp-color-neutral-3);
@@ -38,6 +41,19 @@
 ::slotted(ion-icon) {
   margin-right: 16px;
   --stroke: var(--tp-color-neutral-6) !important;
+}
+
+:host(.tp-datetime-visible) .tp-input-container__wrapper {
+  --border-radius: 8px 8px 0 8px !important;
+}
+@media (max-width: 575.98px) {
+  :host(.tp-datetime-visible) .tp-input-container__wrapper {
+    --border-radius: 8px 8px 0 0 !important;
+  }
+}
+:host(.tp-datetime-visible) ::slotted(ion-datetime) {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 :host(.tp-comparison-chart-bar--error) .tp-input-container__wrapper {

@@ -101,13 +101,7 @@ let TpAlert = class TpAlert {
       version: '16.2.12',
       type: TpAlert,
       selector: 'tp-alert',
-      inputs: {
-        color: 'color',
-        icon: 'icon',
-        loading: 'loading',
-        message: 'message',
-        state: 'state',
-      },
+      inputs: { color: 'color', loading: 'loading' },
       ngImport: i0,
       template: '<ng-content></ng-content>',
       isInline: true,
@@ -118,7 +112,7 @@ let TpAlert = class TpAlert {
 TpAlert = __decorate(
   [
     ProxyCmp({
-      inputs: ['color', 'icon', 'loading', 'message', 'state'],
+      inputs: ['color', 'loading'],
     }),
   ],
   TpAlert,
@@ -137,7 +131,7 @@ i0.ɵɵngDeclareClassMetadata({
           changeDetection: ChangeDetectionStrategy.OnPush,
           template: '<ng-content></ng-content>',
           // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-          inputs: ['color', 'icon', 'loading', 'message', 'state'],
+          inputs: ['color', 'loading'],
         },
       ],
     },
@@ -745,7 +739,7 @@ i0.ɵɵngDeclareClassMetadata({
     ];
   },
 });
-let TpTest = class TpTest {
+let TpSegmentContainer = class TpSegmentContainer {
   constructor(c, r, z) {
     this.z = z;
     c.detach();
@@ -756,7 +750,7 @@ let TpTest = class TpTest {
       minVersion: '12.0.0',
       version: '16.2.12',
       ngImport: i0,
-      type: TpTest,
+      type: TpSegmentContainer,
       deps: [
         { token: i0.ChangeDetectorRef },
         { token: i0.ElementRef },
@@ -769,9 +763,8 @@ let TpTest = class TpTest {
     this.ɵcmp = i0.ɵɵngDeclareComponent({
       minVersion: '14.0.0',
       version: '16.2.12',
-      type: TpTest,
-      selector: 'tp-test',
-      inputs: { color: 'color', icon: 'icon' },
+      type: TpSegmentContainer,
+      selector: 'tp-segment-container',
       ngImport: i0,
       template: '<ng-content></ng-content>',
       isInline: true,
@@ -779,29 +772,22 @@ let TpTest = class TpTest {
     });
   }
 };
-TpTest = __decorate(
-  [
-    ProxyCmp({
-      inputs: ['color', 'icon'],
-    }),
-  ],
-  TpTest,
-);
+TpSegmentContainer = __decorate([ProxyCmp({})], TpSegmentContainer);
 i0.ɵɵngDeclareClassMetadata({
   minVersion: '12.0.0',
   version: '16.2.12',
   ngImport: i0,
-  type: TpTest,
+  type: TpSegmentContainer,
   decorators: [
     {
       type: Component,
       args: [
         {
-          selector: 'tp-test',
+          selector: 'tp-segment-container',
           changeDetection: ChangeDetectionStrategy.OnPush,
           template: '<ng-content></ng-content>',
           // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-          inputs: ['color', 'icon'],
+          inputs: [],
         },
       ],
     },
@@ -825,7 +811,7 @@ const DIRECTIVES = [
   TpInputContainer,
   TpLoader,
   TpRateLike,
-  TpTest,
+  TpSegmentContainer,
 ];
 
 class TemplariosModule {
@@ -855,7 +841,7 @@ class TemplariosModule {
         TpInputContainer,
         TpLoader,
         TpRateLike,
-        TpTest,
+        TpSegmentContainer,
       ],
       exports: [
         TpAlert,
@@ -867,7 +853,7 @@ class TemplariosModule {
         TpInputContainer,
         TpLoader,
         TpRateLike,
-        TpTest,
+        TpSegmentContainer,
       ],
     });
   }
@@ -929,6 +915,6 @@ export {
   TpInputContainer,
   TpLoader,
   TpRateLike,
-  TpTest,
+  TpSegmentContainer,
 };
 //# sourceMappingURL=tp-angular.mjs.map

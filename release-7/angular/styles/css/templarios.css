@@ -2021,10 +2021,52 @@ ion-chip.ion-color:not(.chip-outline):hover {
   border-color: rgba(var(--ion-color-base-rgb, 0, 0, 0), 0.92);
 }
 
+ion-datetime.datetime-presentation-date.datetime-grid {
+  --background: var(--tp-color-neutral-4);
+  --wheel-fade-background-rgb: var(--tp-color-neutral-4-rgb);
+  --wheel-highlight-background: var(--tp-color-neutral-4);
+  --ion-color-step-500: var(--tp-color-neutral-8);
+  --ion-color-step-650: var(--tp-color-neutral-8);
+  --tp-color-button-label: var(--tp-color-neutral-10);
+  top: 68px;
+  right: 0;
+  bottom: initial;
+  left: initial;
+  border-radius: 0 0 16px 16px;
+}
+@media (max-width: 575.98px) {
+  ion-datetime.datetime-presentation-date.datetime-grid {
+    min-width: initial;
+    max-width: initial;
+  }
+}
+ion-datetime.datetime-presentation-date.datetime-grid::part(month-year-button) {
+  color: var(--tp-color-neutral-10);
+}
+ion-datetime.datetime-presentation-date.datetime-grid::part(month-year-button):hover {
+  --color: var(--tp-color-neutral-10);
+}
+ion-datetime.datetime-presentation-date.datetime-grid::part(month-year-button):focus {
+  --color: var(--tp-color-neutral-10);
+}
+ion-datetime.datetime-presentation-date.datetime-grid::part(calendar-day) {
+  color: var(--tp-color-neutral-10);
+}
+ion-datetime.datetime-presentation-date.datetime-grid::part(active) {
+  --ion-color-base: var(--tp-color-brand-2);
+}
+ion-datetime.datetime-presentation-date.datetime-grid::part(today) {
+  --ion-color-base: var(--tp-color-brand-2);
+}
+
 /* stylelint-disable selector-max-compound-selectors */
-ion-datetime {
+ion-datetime.datetime-presentation-date,
+ion-datetime.datetime-presentation-time,
+ion-datetime.datetime-prefer-wheel {
   --background: var(--tp-color-neutral-2);
   --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
+  --wheel-highlight-background: var(--tp-color-neutral-2);
+  --tp-color-button-label: var(--tp-color-brand-4);
   position: absolute;
   bottom: 0;
   left: calc(50% - 207px);
@@ -2033,23 +2075,33 @@ ion-datetime {
   visibility: hidden;
   opacity: 0;
 }
-ion-datetime.ion-color-primary {
+ion-datetime.datetime-presentation-date.ion-color-primary,
+ion-datetime.datetime-presentation-time.ion-color-primary,
+ion-datetime.datetime-prefer-wheel.ion-color-primary {
   --ion-color-base: var(--tp-color-neutral-2) !important;
   --ion-color-base-rgb: initial !important;
 }
-ion-datetime::part(wheel-item) {
+ion-datetime.datetime-presentation-date::part(wheel-item),
+ion-datetime.datetime-presentation-time::part(wheel-item),
+ion-datetime.datetime-prefer-wheel::part(wheel-item) {
   color: var(--tp-color-neutral-10);
   opacity: 0.3;
 }
-ion-datetime::part(active) {
+ion-datetime.datetime-presentation-date::part(active),
+ion-datetime.datetime-presentation-time::part(active),
+ion-datetime.datetime-prefer-wheel::part(active) {
   opacity: initial;
 }
-ion-datetime div {
+ion-datetime.datetime-presentation-date div,
+ion-datetime.datetime-presentation-time div,
+ion-datetime.datetime-prefer-wheel div {
   display: flex;
   justify-content: space-between;
 }
-ion-datetime div ion-button:last-child ion-label {
-  color: var(--tp-color-brand-4);
+ion-datetime.datetime-presentation-date div ion-button:last-child ion-label,
+ion-datetime.datetime-presentation-time div ion-button:last-child ion-label,
+ion-datetime.datetime-prefer-wheel div ion-button:last-child ion-label {
+  color: var(--tp-color-button-label);
 }
 
 ion-datetime-button {
@@ -2487,6 +2539,113 @@ ion-list.list-lines-full ion-item.ion-color::part(native) {
   border-color: var(--border-color);
 }
 
+.tp-dialog {
+  --background: var(--tp-color-neutral-2);
+  --backdrop-opacity: var(--ion-backdrop-opacity, 0.8);
+  --border-radius: 16px;
+  --height: auto;
+  --min-height: 50px;
+  --width: 100%;
+  --max-width: 640px;
+}
+.tp-dialog .ion-delegate-host {
+  padding: 24px;
+}
+@media (max-width: 991.98px) {
+  .tp-dialog {
+    --max-width: 440px;
+  }
+}
+@media (max-width: 575.98px) {
+  .tp-dialog {
+    --max-width: calc(100% - 48px);
+  }
+}
+@media (max-width: 339.98px) {
+  .tp-dialog {
+    --max-width: calc(100% - 32px);
+  }
+}
+
+.tp-dialog__header {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 24px;
+  box-shadow: none;
+}
+.tp-dialog__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  box-shadow: none;
+}
+.tp-dialog__button {
+  flex: 1;
+}
+.tp-dialog__button:last-child {
+  margin-left: 16px;
+}
+
+.tp-modal {
+  background-color: #f00;
+}
+
+.tp-sheet {
+  --background: var(--tp-color-neutral-2);
+  --border-radius: 15px 15px 0 0;
+  --height: auto;
+  --width: 100%;
+  padding-bottom: var(--ion-safe-area-bottom);
+}
+.tp-sheet::part(content) {
+  position: absolute;
+  bottom: 0;
+  max-height: 90vh;
+  padding: 24px;
+  overflow: auto;
+  opacity: 1;
+}
+.tp-sheet ion-backdrop {
+  --ion-backdrop-color: hsl(var(--med-color-neutral-1));
+  opacity: 0.8;
+}
+
+.tp-sheet__header {
+  padding-bottom: 24px;
+  text-align: right;
+}
+.tp-sheet__content {
+  flex: 1;
+  height: 100vh;
+  overflow: auto;
+  --background: hsl(var(--med-color-neutral-2));
+}
+.tp-sheet__footer {
+  padding-top: 24px;
+}
+
+.tp-sheet--ion-content {
+  overflow: none;
+}
+.tp-sheet--ion-content .modal-wrapper {
+  height: 100%;
+}
+.tp-sheet--ion-content ion-content {
+  height: 70vh;
+}
+
+@media (min-width: 992px) {
+  .tp-sheet {
+    --width: 420px;
+    --border-radius: 15px 0 0 15px;
+  }
+  .tp-sheet .modal-wrapper {
+    right: 0;
+    height: 100vh;
+    max-height: 100vh;
+  }
+}
 ion-progress-bar {
   --background: var(--tp-color-brand-1);
   --progress-background: var(--tp-color-brand-4);
@@ -2612,30 +2771,6 @@ ion-searchbar.ion-valid .searchbar-input {
   border: 1px solid var(--tp-color-success);
 }
 
-ion-skeleton-text {
-  --background-rgb: var(--tp-color-neutral-10-rgb);
-  --border-radius: 4px;
-}
-
-ion-skeleton-text {
-  display: block;
-  width: 100%;
-  height: 20px;
-  margin: 0;
-}
-
-.teste {
-  position: relative;
-}
-.teste::before {
-  position: fixed;
-  right: 0;
-  width: 32px;
-  height: 48px;
-  background: linear-gradient(to right, transparent, var(--tp-color-neutral-8));
-  content: "";
-}
-
 ion-segment[scrollable]::-webkit-scrollbar {
   height: 4px;
 }
@@ -2676,6 +2811,18 @@ ion-segment-button ion-label {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+ion-skeleton-text {
+  --background-rgb: var(--tp-color-neutral-10-rgb);
+  --border-radius: 4px;
+}
+
+ion-skeleton-text {
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin: 0;
 }
 
 ion-tab-bar {

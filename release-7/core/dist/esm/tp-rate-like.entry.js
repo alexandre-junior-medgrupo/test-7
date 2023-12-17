@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, g as getAssetPath, h, H as Host } from './index-36f08f0f.js';
+import { r as registerInstance, c as createEvent, g as getAssetPath, h, H as Host } from './index-45bfd9ed.js';
 
 var TpRateLikeStatus;
 (function (TpRateLikeStatus) {

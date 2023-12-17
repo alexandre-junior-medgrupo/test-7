@@ -6,13 +6,11 @@
  */
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
 import { TpColor } from "./utils/types/color.type";
-import { TpAlertType } from "./components/templarios/alert/alert.type";
 import { TpChartRadialSize } from "./components/templarios/chart-radial/utils/chart-radial.enum";
 import { TpChartRadialItem } from "./components/templarios/chart-radial/utils/chart-radial.type";
 import { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
 import { TpLoaderType } from "./components/templarios/loader/utils/loader.type";
 export { TpColor } from "./utils/types/color.type";
-export { TpAlertType } from "./components/templarios/alert/alert.type";
 export { TpChartRadialSize } from "./components/templarios/chart-radial/utils/chart-radial.enum";
 export { TpChartRadialItem } from "./components/templarios/chart-radial/utils/chart-radial.type";
 export { TpHorizontalChartBarSize } from "./components/templarios/horizontal-chart-bar/utils/horizontal-chart-bar.enum";
@@ -24,21 +22,9 @@ export namespace Components {
          */
         "color"?: TpColor;
         /**
-          * Define o icon a ser exibido no componente.
-         */
-        "icon": string;
-        /**
           * Define o estado de carregamento do componente.
          */
         "loading"?: boolean;
-        /**
-          * Define a string a ser exibida no componente.
-         */
-        "message": string;
-        /**
-          * Define a variação de estado do componente.
-         */
-        "state"?: TpAlertType['state'];
     }
     interface TpButtonCluster {
         /**
@@ -189,9 +175,7 @@ export namespace Components {
          */
         "status"?: "like" | "dislike";
     }
-    interface TpTest {
-        "color"?: TpColor;
-        "icon"?: string;
+    interface TpSegmentContainer {
     }
 }
 export interface TpRateLikeCustomEvent<T> extends CustomEvent<T> {
@@ -264,11 +248,11 @@ declare global {
         prototype: HTMLTpRateLikeElement;
         new (): HTMLTpRateLikeElement;
     };
-    interface HTMLTpTestElement extends Components.TpTest, HTMLStencilElement {
+    interface HTMLTpSegmentContainerElement extends Components.TpSegmentContainer, HTMLStencilElement {
     }
-    var HTMLTpTestElement: {
-        prototype: HTMLTpTestElement;
-        new (): HTMLTpTestElement;
+    var HTMLTpSegmentContainerElement: {
+        prototype: HTMLTpSegmentContainerElement;
+        new (): HTMLTpSegmentContainerElement;
     };
     interface HTMLElementTagNameMap {
         "tp-alert": HTMLTpAlertElement;
@@ -280,7 +264,7 @@ declare global {
         "tp-input-container": HTMLTpInputContainerElement;
         "tp-loader": HTMLTpLoaderElement;
         "tp-rate-like": HTMLTpRateLikeElement;
-        "tp-test": HTMLTpTestElement;
+        "tp-segment-container": HTMLTpSegmentContainerElement;
     }
 }
 declare namespace LocalJSX {
@@ -290,21 +274,9 @@ declare namespace LocalJSX {
          */
         "color"?: TpColor;
         /**
-          * Define o icon a ser exibido no componente.
-         */
-        "icon"?: string;
-        /**
           * Define o estado de carregamento do componente.
          */
         "loading"?: boolean;
-        /**
-          * Define a string a ser exibida no componente.
-         */
-        "message"?: string;
-        /**
-          * Define a variação de estado do componente.
-         */
-        "state"?: TpAlertType['state'];
     }
     interface TpButtonCluster {
         /**
@@ -458,9 +430,7 @@ declare namespace LocalJSX {
          */
         "status"?: "like" | "dislike";
     }
-    interface TpTest {
-        "color"?: TpColor;
-        "icon"?: string;
+    interface TpSegmentContainer {
     }
     interface IntrinsicElements {
         "tp-alert": TpAlert;
@@ -472,7 +442,7 @@ declare namespace LocalJSX {
         "tp-input-container": TpInputContainer;
         "tp-loader": TpLoader;
         "tp-rate-like": TpRateLike;
-        "tp-test": TpTest;
+        "tp-segment-container": TpSegmentContainer;
     }
 }
 export { LocalJSX as JSX };
@@ -488,7 +458,7 @@ declare module "@stencil/core" {
             "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;
             "tp-loader": LocalJSX.TpLoader & JSXBase.HTMLAttributes<HTMLTpLoaderElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
-            "tp-test": LocalJSX.TpTest & JSXBase.HTMLAttributes<HTMLTpTestElement>;
+            "tp-segment-container": LocalJSX.TpSegmentContainer & JSXBase.HTMLAttributes<HTMLTpSegmentContainerElement>;
         }
     }
 }

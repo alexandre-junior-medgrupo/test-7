@@ -14,7 +14,7 @@ export declare class TemplariosModule {
       typeof i1.TpInputContainer,
       typeof i1.TpLoader,
       typeof i1.TpRateLike,
-      typeof i1.TpTest,
+      typeof i1.TpSegmentContainer,
     ],
     never,
     [
@@ -27,7 +27,7 @@ export declare class TemplariosModule {
       typeof i1.TpInputContainer,
       typeof i1.TpLoader,
       typeof i1.TpRateLike,
-      typeof i1.TpTest,
+      typeof i1.TpSegmentContainer,
     ]
   >;
   static ɵinj: i0.ɵɵInjectorDeclaration<TemplariosModule>;

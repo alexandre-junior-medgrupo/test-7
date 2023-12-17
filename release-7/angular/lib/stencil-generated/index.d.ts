@@ -9,5 +9,5 @@ export declare const DIRECTIVES: (
   | typeof d.TpInputContainer
   | typeof d.TpLoader
   | typeof d.TpRateLike
-  | typeof d.TpTest
+  | typeof d.TpSegmentContainer
 )[];

@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-36f08f0f.js';
+import { r as registerInstance, h, H as Host } from './index-45bfd9ed.js';
 import { c as createColorClasses } from './color.function-a9b13d36.js';
 
 var TpLoaderName;
