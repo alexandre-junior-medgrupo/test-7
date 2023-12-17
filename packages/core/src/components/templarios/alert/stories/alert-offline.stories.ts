@@ -4,7 +4,7 @@ import { html } from 'lit';
 import { TP_ICONS_STORYBOOK } from '../../../../utils/constants/icon.constant';
 import { TpIonIcon } from '../../../ionic/icon/utils/icon.type';
 import { TpAlert } from '../alert';
-import { TpAlertType } from '../alert.type';
+import { TpAlertType } from '../utils/alert.type';
 
 //
 // !IMPORTANT! Antigo med-alert-fixed

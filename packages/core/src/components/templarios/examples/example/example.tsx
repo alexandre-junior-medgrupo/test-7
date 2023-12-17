@@ -1,14 +1,14 @@
 import { Component, Host, Prop, State, getAssetPath, h } from '@stencil/core';
-import { createColorClasses } from '../../../utils/functions/color.function';
-import type { TpColor } from '../../../utils/types/color.type';
+import { createColorClasses } from '../../../../utils/functions/color.function';
+import type { TpColor } from '../../../../utils/types/color.type';
 
 @Component({
-  tag: 'tp-test',
-  styleUrl: 'test.scss',
+  tag: 'tp-example',
+  styleUrl: 'example.scss',
   assetsDirs: ['assets'],
   scoped: true,
 })
-export class TpTest {
+export class TpExample {
   /**
    *
    */
@@ -28,14 +28,14 @@ export class TpTest {
       <Host
         tabindex="0"
         class={createColorClasses(color, {
-          'tp-test': true,
+          'tp-example': true,
         })}
       >
-        <div class="tp-test__container">
+        <div class="tp-example__container">
           <span>Lorem ipsum, dolor sit amet consectetur.</span>
           <ion-button>ion button</ion-button>
           <ion-icon
-            class="tp-test__icon"
+            class="tp-example__icon"
             src={icon ?? defaultIcon}
             aria-hidden="true"
           ></ion-icon>
@@ -58,7 +58,6 @@ export class TpTest {
             </ion-text>
           </ion-radio>
         </ion-radio-group>
-
       </Host>
     );
   }
