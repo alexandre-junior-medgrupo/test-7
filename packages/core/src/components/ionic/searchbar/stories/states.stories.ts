@@ -2,8 +2,8 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-searchbar';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpInputContainer } from '../../../templarios/input-container/utils/input-container.type';
 import { TP_INPUT_CONTAINER } from '../../../templarios/input-container/utils/input-container.constants';
+import { TpInputContainer } from '../../../templarios/input-container/utils/input-container.type';
 import { TpIonSearchbar } from '../utils/searchbar.type';
 
 defineCustomElement();

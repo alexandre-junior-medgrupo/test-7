@@ -1,6 +1,6 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement as defineCustomElementModal } from '@ionic/core/components/ion-modal';
 import { defineCustomElement as defineCustomElementButton, IonButton } from '@ionic/core/components/ion-button';
+import { defineCustomElement as defineCustomElementModal } from '@ionic/core/components/ion-modal';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpIonDialog } from '../utils/dialog.type';

@@ -1,5 +1,5 @@
-import { TpSpacings } from '../../../../utils/types/spacing.type';
 import type { TpColor } from '../../../../utils/types/color.type';
+import { TpSpacings } from '../../../../utils/types/spacing.type';
 
 export type TpIonAccordion = {
   'tp-color': `${TpColor}`;

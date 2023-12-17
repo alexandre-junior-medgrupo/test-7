@@ -5,13 +5,13 @@ import { defineCustomElement as defineCustomElementItem } from '@ionic/core/comp
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_TYPE } from '../../../../utils/constants/type.constant';
-import { TpIonAccordion } from '../utils/accordion.type';
 import {
   TP_COLORS,
   TP_COLORS_MEDSOFT,
   TP_COLORS_RECURSOS,
 } from '../../../../utils/constants/color.constant';
+import { TP_SPACING } from '../../../../utils/constants/spacing.constants';
+import { TP_TYPE } from '../../../../utils/constants/type.constant';
 import {
   TpColorAula,
   TpColorMaterial,
@@ -22,7 +22,7 @@ import {
 } from '../../../../utils/enums/color.enum';
 import { TpIonItem } from '../../item/utils/item.type';
 import { TpIonLabel } from '../../label/utils/label.type';
-import { TP_SPACING } from '../../../../utils/constants/spacing.constants';
+import { TpIonAccordion } from '../utils/accordion.type';
 
 defineCustomElementAccordionGroup();
 defineCustomElementAccordion();

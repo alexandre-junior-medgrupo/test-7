@@ -7,10 +7,6 @@ import { TpChartBar } from '../../chart-bar';
 defineCustomElementLabel();
 defineCustomElementSkeletonText();
 
-//
-// !IMPORTANT! Antigo med-chart-bar
-//
-
 const meta: Meta<TpChartBar> = {
   title: 'components/Templarios/Chart Bar/Compositions',
   argTypes: {

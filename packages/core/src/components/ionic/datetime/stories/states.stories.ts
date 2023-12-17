@@ -10,7 +10,6 @@ import { TpIonDatetime } from '../utils/datetime.type';
 defineCustomElementDatetime();
 defineCustomElementDatetimeButton();
 
-
 const meta: Meta<Components.IonDatetime & IonDatetimeButton & TpIonDatetime & TpInputContainer> = {
   title: 'components/Ionic/Datetime',
   argTypes: {

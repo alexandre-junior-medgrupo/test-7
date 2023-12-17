@@ -1,15 +1,13 @@
 import { Components } from '@ionic/core';
+import { IonDatetime, defineCustomElement as defineCustomElementDatetime } from '@ionic/core/components/ion-datetime';
+import { IonDatetimeButton, defineCustomElement as defineCustomElementDatetimeButton } from '@ionic/core/components/ion-datetime-button';
+import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import { defineCustomElement as defineCustomElementList } from '@ionic/core/components/ion-list';
-import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
-import { defineCustomElement as defineCustomElementDatetime } from '@ionic/core/components/ion-datetime';
-import { defineCustomElement as defineCustomElementDatetimeButton } from '@ionic/core/components/ion-datetime-button';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TP_ION_ITEM } from '../../utils/item.constant';
 import { TpIonItem } from '../../utils/item.type';
-import { IonDatetime } from '@ionic/core/components/ion-datetime';
-import { IonDatetimeButton } from '@ionic/core/components/ion-datetime-button';
 
 defineCustomElementList();
 defineCustomElementItem();

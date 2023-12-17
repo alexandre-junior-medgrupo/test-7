@@ -1,9 +1,9 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
+import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import { defineCustomElement as defineCustomElementSearchbar } from '@ionic/core/components/ion-searchbar';
 import { defineCustomElement as defineCustomElementTextarea } from '@ionic/core/components/ion-textarea';
-import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TP_ION_ITEM } from '../../utils/item.constant';

@@ -4,8 +4,8 @@ import {
   EventEmitter,
   Host,
   Prop,
-  h,
   getAssetPath,
+  h,
 } from '@stencil/core';
 import { TpRateLikeStatus } from './utils/rate-like.enum';
 

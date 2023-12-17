@@ -1,7 +1,7 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
-import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
+import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TP_ION_ITEM } from '../../utils/item.constant';

@@ -6,7 +6,10 @@ import { TpIonIcon } from '../../../ionic/icon/utils/icon.type';
 import { TpAlert } from '../alert';
 import { TpAlertType } from '../alert.type';
 
-// antigo med-alert-fixed
+//
+// !IMPORTANT! Antigo med-alert-fixed
+//
+
 defineCustomElementSkeletonText();
 
 const meta: Meta<TpAlert & TpAlertType & TpIonIcon> = {
