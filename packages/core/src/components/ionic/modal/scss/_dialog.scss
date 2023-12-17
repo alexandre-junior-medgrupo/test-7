@@ -30,7 +30,7 @@
 .tp-dialog {
   &__header {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-bottom: 24px;
     box-shadow: none;
   }
