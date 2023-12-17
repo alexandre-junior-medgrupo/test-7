@@ -20,3 +20,27 @@ import { TpIonDialog } from 'templarios/release-{7,6}/core/dist/types/interfaces
 
 <Canvas of={dialogStories.Default} />
 <Controls of={dialogStories.Default} />
+
+## Usage
+
+```ts
+// dialog.example.ts
+
+async function openModal() {
+  const modal = await modalController.create({
+    component: 'dialog-example',
+    cssClass: 'tp-dialog'
+  });
+
+  await modal.present();
+}
+
+async function closeModal() {
+  await modal.dismiss();
+}
+```
+
+```html
+<!-- dialog.example.html -->
+
+```

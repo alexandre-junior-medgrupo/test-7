@@ -185,6 +185,8 @@ export namespace Components {
          */
         "status"?: "like" | "dislike";
     }
+    interface TpSegmentContainer {
+    }
 }
 export interface TpRateLikeCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -280,6 +282,12 @@ declare global {
         prototype: HTMLTpRateLikeElement;
         new (): HTMLTpRateLikeElement;
     };
+    interface HTMLTpSegmentContainerElement extends Components.TpSegmentContainer, HTMLStencilElement {
+    }
+    var HTMLTpSegmentContainerElement: {
+        prototype: HTMLTpSegmentContainerElement;
+        new (): HTMLTpSegmentContainerElement;
+    };
     interface HTMLElementTagNameMap {
         "dialog-example": HTMLDialogExampleElement;
         "modal-example": HTMLModalExampleElement;
@@ -294,6 +302,7 @@ declare global {
         "tp-input-container": HTMLTpInputContainerElement;
         "tp-loader": HTMLTpLoaderElement;
         "tp-rate-like": HTMLTpRateLikeElement;
+        "tp-segment-container": HTMLTpSegmentContainerElement;
     }
 }
 declare namespace LocalJSX {
@@ -469,6 +478,8 @@ declare namespace LocalJSX {
          */
         "status"?: "like" | "dislike";
     }
+    interface TpSegmentContainer {
+    }
     interface IntrinsicElements {
         "dialog-example": DialogExample;
         "modal-example": ModalExample;
@@ -483,6 +494,7 @@ declare namespace LocalJSX {
         "tp-input-container": TpInputContainer;
         "tp-loader": TpLoader;
         "tp-rate-like": TpRateLike;
+        "tp-segment-container": TpSegmentContainer;
     }
 }
 export { LocalJSX as JSX };
@@ -502,6 +514,7 @@ declare module "@stencil/core" {
             "tp-input-container": LocalJSX.TpInputContainer & JSXBase.HTMLAttributes<HTMLTpInputContainerElement>;
             "tp-loader": LocalJSX.TpLoader & JSXBase.HTMLAttributes<HTMLTpLoaderElement>;
             "tp-rate-like": LocalJSX.TpRateLike & JSXBase.HTMLAttributes<HTMLTpRateLikeElement>;
+            "tp-segment-container": LocalJSX.TpSegmentContainer & JSXBase.HTMLAttributes<HTMLTpSegmentContainerElement>;
         }
     }
 }

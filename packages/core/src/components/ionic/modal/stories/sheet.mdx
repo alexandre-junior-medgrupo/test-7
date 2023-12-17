@@ -14,3 +14,37 @@ import * as sheetStories from '../stories/sheet.stories';
 
 <Canvas of={sheetStories.Default} />
 <Controls of={sheetStories.Default} />
+
+## Usage
+
+### Desktop
+
+```ts
+// sheet-example.ts
+import { BreakpointUtils } from '???';
+import { sheetEnterAnimationDesktop, sheetEnterAnimationMobile, sheetLeaveAnimationDesktop } from '???';
+
+async function openModal() {
+  const modal = await modalController.create({
+    component: 'sheet-example',
+    cssClass: 'tp-sheet',
+    enterAnimation: BreakpointUtils.mediaQueryDown(BreakPointPixelEnum.LG)
+        ? sheetEnterAnimationMobile
+        : sheetEnterAnimationDesktop,
+      leaveAnimation: BreakpointUtils.mediaQueryDown(BreakPointPixelEnum.LG)
+        ? sheetEnterAnimationMobile
+        : sheetLeaveAnimationDesktop
+  });
+
+  await modal.present();
+}
+
+async function closeModal() {
+  await modal.dismiss();
+}
+```
+
+```html
+<!-- sheet-example.html -->
+
+```

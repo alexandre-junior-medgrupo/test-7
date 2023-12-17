@@ -1,22 +1,3 @@
-// componente wrapper
-.teste {
-  position: relative;
-
-  &::before {
-    position: fixed;
-    right: 0;
-    width: 32px;
-    height: 48px;
-    background: linear-gradient(
-      to right,
-      transparent,
-      var(--tp-color-neutral-8)
-    );
-    content: '';
-  }
-}
-
-// componente ion-segment
 ion-segment[scrollable] {
   @include generate-scroll-style(remove);
 }

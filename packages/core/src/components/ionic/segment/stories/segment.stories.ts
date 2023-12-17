@@ -46,7 +46,7 @@ type Story = StoryObj<Components.IonSegment & TpIonSegment>;
 
 export const Default: Story = {
   render: ({ ...args }) => html`
-    <div class="teste">
+    <tp-segment-container>
       <ion-segment
         mode="md"
         color="${args.color}"
@@ -90,7 +90,7 @@ export const Default: Story = {
           <ion-label>Tabs 9</ion-label>
         </ion-segment-button>
       </ion-segment>
-    </div>
+    </tp-segment-container>
   `,
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

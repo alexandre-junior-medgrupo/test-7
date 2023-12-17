@@ -6,7 +6,7 @@ import { TP_ION_ICON } from '../utils/icon.constant';
 import { TpIonIcon } from '../utils/icon.type';
 
 const meta: Meta<Components.IonIcon & TpIonIcon> = {
-  title: 'components/Icons',
+  title: 'components/Ionic/Icon',
   argTypes: {
     src: {
       control: { type: 'select' },

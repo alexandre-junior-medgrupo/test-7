@@ -2771,18 +2771,6 @@ ion-searchbar.ion-valid .searchbar-input {
   border: 1px solid var(--tp-color-success);
 }
 
-.teste {
-  position: relative;
-}
-.teste::before {
-  position: fixed;
-  right: 0;
-  width: 32px;
-  height: 48px;
-  background: linear-gradient(to right, transparent, var(--tp-color-neutral-8));
-  content: "";
-}
-
 ion-segment[scrollable]::-webkit-scrollbar {
   height: 4px;
 }

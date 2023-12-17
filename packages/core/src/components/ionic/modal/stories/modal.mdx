@@ -3,7 +3,7 @@ import * as modalStories from '../stories/modal.stories';
 
 <Meta of={modalStories} />
 
-# ion-modal (dialog)
+# ion-modal (modal)
 
 **Documentação Adicional:**
 
@@ -14,3 +14,27 @@ import * as modalStories from '../stories/modal.stories';
 
 <Canvas of={modalStories.Default} />
 <Controls of={modalStories.Default} />
+
+## Usage
+
+```ts
+// modal-example.ts
+
+async function openModal() {
+  const modal = await modalController.create({
+    component: 'modal-example',
+    cssClass: 'tp-modal'
+  });
+
+  await modal.present();
+}
+
+async function closeModal() {
+  await modal.dismiss();
+}
+```
+
+```html
+<!-- modal-example.html -->
+
+```

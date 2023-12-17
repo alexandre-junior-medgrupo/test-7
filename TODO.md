@@ -2,14 +2,16 @@
 
 ## Bleggi
 
-1. criar wrapper para o componente `segment` para o gradient
-   2.tempo de instalação templarios
-2. verificar problema do lit nos atributo.
+2. tempo de instalação templarios
+3. verificar error de event() e method()
+4. verificar problema do lit nos atributos
+5. verificar types nos componentes templarios/ionic (button size)
 
 ## Junior
 
-1. Revisar estilo Dialog
-2. Revisar estilo Sheet
+1. Revisar estilo Modal
+2. Revisar estilo Dialog
+3. Revisar estilo Sheet
 
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
@@ -22,8 +24,9 @@
 
 ## Alan
 
-1. Verificar `defineCustomElement` das estorias;
-2. vericar arg dinamico no componente loader
+1. Lógica `tp-segment-container` para o gradient
+2. Verificar `defineCustomElement` das estorias;
+3. vericar arg dinamico no componente loader
 
 ## Componentes que não são mais utilizados
 
