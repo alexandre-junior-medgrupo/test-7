@@ -3,14 +3,14 @@ import { defineCustomElement as defineCustomElementButton } from '@ionic/core/co
 import { defineCustomElement as defineCustomElementToast } from '@ionic/core/components/ion-toast';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_TOAST } from '../utils/toast.constants';
-import { TpIonToast } from '../utils/toast.type';
+import { TP_ION_TOAST } from '../../utils/toast.constants';
+import { TpIonToast } from '../../utils/toast.type';
 
 defineCustomElementToast();
 defineCustomElementButton();
 
 const meta: Meta<Components.IonToast & TpIonToast> = {
-  title: 'components/Ionic/Toast',
+  title: 'components/Ionic/Toast/Ionic-6',
   argTypes: {
     'tp-size': {
       control: 'check',

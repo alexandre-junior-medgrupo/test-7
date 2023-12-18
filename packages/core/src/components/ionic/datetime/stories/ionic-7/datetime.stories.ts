@@ -4,14 +4,14 @@ import { defineCustomElement as defineCustomElementDatetimeButton, IonDatetimeBu
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpInputContainer } from 'src/components/templarios/input-container/input-container';
-import { TpIonDatetime } from '../utils/datetime.type';
+import { TpIonDatetime } from '../../utils/datetime.type';
 
 defineCustomElementDatetime();
 defineCustomElementDatetimeButton();
 
 
 const meta: Meta<Components.IonDatetime & IonDatetimeButton & TpIonDatetime & TpInputContainer> = {
-  title: 'components/Ionic/Datetime',
+  title: 'components/Ionic/Datetime/Ionic-7',
   argTypes: {
     presentation: {
       control: 'select',

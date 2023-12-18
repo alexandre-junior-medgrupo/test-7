@@ -11,7 +11,7 @@ defineCustomElementRadio();
 defineCustomElementRadioGroup();
 
 const meta: Meta<Components.IonRadio & IonRadioGroup> = {
-  title: 'components/Ionic/Radio',
+  title: 'components/Ionic/Radio/Ionic-7',
   argTypes: {
     disabled: {
       control: 'boolean',

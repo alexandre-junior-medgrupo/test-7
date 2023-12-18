@@ -2037,7 +2037,6 @@ ion-chip.ion-color:not(.chip-outline):hover {
 }
 
 /* stylelint-disable selector-max-compound-selectors */
-/* stylelint-disable selector-max-compound-selectors */
 ion-datetime {
   --background: var(--tp-color-neutral-2);
   --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
@@ -2158,25 +2157,6 @@ ion-input.sc-ion-input-md-h .input-clear-icon ion-icon.sc-ion-input-md {
 
 ion-input.sc-ion-input-md-h.input-disabled {
   opacity: 0.5;
-}
-
-ion-item ion-checkbox.in-item {
-  margin: 0;
-}
-
-ion-item ion-toggle.in-item {
-  padding-inline: 0;
-  padding: 6px 0;
-}
-
-ion-item.ion-color ion-checkbox {
-  --background: var(--ion-color-base);
-  --background-checked: var(--ion-color-contrast);
-  --checkmark-color: var(--ion-color-base);
-}
-ion-item.ion-color ion-toggle {
-  --background: var(--tp-color-neutral-4);
-  --background-checked: var(--ion-color-contrast);
 }
 
 /* stylelint-disable selector-max-compound-selectors */
@@ -2546,29 +2526,28 @@ ion-progress-bar.ion-color::part(track) {
   background-color: var(--background);
 }
 
-ion-radio {
+.templarios-ionic-6 ion-radio {
   --color: var(--tp-color-neutral-35);
   --color-checked: var(--tp-color-brand-4);
 }
-ion-radio:hover {
+.templarios-ionic-6 ion-radio:hover {
   --color: var(--tp-color-neutral-95);
 }
-ion-radio.radio-checked {
+.templarios-ionic-6 ion-radio.radio-checked {
   --color: var(--tp-color-neutral-4);
 }
-ion-radio::part(label) {
+.templarios-ionic-6 ion-radio::part(label) {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-ion-radio.ion-color {
+.templarios-ionic-6 ion-radio.ion-color {
   --color: var(--ion-color-base);
   --color-checked: var(--ion-color-base);
 }
-ion-radio.ion-color:hover {
+.templarios-ionic-6 ion-radio.ion-color:hover {
   --color: var(--ion-color-tint);
 }
-ion-radio.ion-color.radio-checked {
+.templarios-ionic-6 ion-radio.ion-color.radio-checked {
   --color: var(--ion-color-base);
 }
 
