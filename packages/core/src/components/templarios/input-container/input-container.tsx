@@ -11,16 +11,12 @@ import type { TpColor } from '../../../utils/types/color.type';
 export class TpInputContainer {
   private alertTriangleIcon = getAssetPath('./assets/tp-alert-triangle.svg');
   private CheckIcon = getAssetPath('./assets/tp-check.svg');
+  private selectIcon = getAssetPath('./assets/tp-chevron-down.svg');
 
   /**
    * Quando usado em conjunto com 'select', representa a largura do 'select' definida dinamicamente.
    */
   private hostWidth: number | undefined;
-
-  /**
-   * Ascrescimo ao hostWidth necessário para contabilizar as bordas.
-   */
-  readonly selectAndPopoverDiffWidth: number = 2;
 
   /**
    * Referência ao componente no DOM.
@@ -87,7 +83,7 @@ export class TpInputContainer {
 
     const popoverElement = document.querySelector('.select-popover') as HTMLElement;
 
-    popoverElement?.style.setProperty('--width', `${this.host.clientWidth + this.selectAndPopoverDiffWidth}px`);
+    popoverElement?.style.setProperty('--width', `${this.host.clientWidth}px`);
   }
 
   @Listen('ionPopoverWillPresent', { target: 'body' })
@@ -95,7 +91,7 @@ export class TpInputContainer {
     if (!this.host.contains(this.clickTarget)) return;
 
     this.selectWithPopoverClicked = true;
-    this.hostWidth = this.host.clientWidth + this.selectAndPopoverDiffWidth;
+    this.hostWidth = this.host.clientWidth;
 
     const popoverElement = document.querySelector('.select-popover') as HTMLElement;
     popoverElement?.style.setProperty('--width', `${this.hostWidth}px`);
@@ -107,11 +103,11 @@ export class TpInputContainer {
     const { top, bottom, left } = this.host.getBoundingClientRect();
     if (this.inverted) {
       popoverElement.classList.add('tp-popover--inverted');
-      popoverElement?.style.setProperty('--left', `${left}px`);
-      popoverElement?.style.setProperty('--bottom',`${window.innerHeight - top}px`);
+      popoverElement?.style.setProperty('--offset-x', `${left}px`);
+      popoverElement?.style.setProperty('--offset-y',`${window.innerHeight - top}px`);
     } else {
-      popoverElement?.style.setProperty('--left', `${left + 1}px`);
-      popoverElement?.style.setProperty('--top', `${bottom}px`);
+      popoverElement?.style.setProperty('--offset-x', `${left + 1}px`);
+      popoverElement?.style.setProperty('--offset-y', `${bottom}px`);
     }
   }
 
@@ -134,6 +130,7 @@ export class TpInputContainer {
     const ionSelect = this.host.querySelector('ION-SELECT') as HTMLIonSelectElement;
 
     if (ionSelect) {
+      // TODO rever nomeclatura
       this.pointerOnSelect = true;
 
       if (!ionSelect.hasAttribute('interface')) {
@@ -144,10 +141,21 @@ export class TpInputContainer {
 
 
   render() {
-    const { color, state, disabled, alertTriangleIcon, CheckIcon, pointerOnSelect, selectWithPopoverClicked } = this;
+    const { color, state, disabled, alertTriangleIcon, CheckIcon, pointerOnSelect, selectIcon, selectWithPopoverClicked } = this;
     let content;
+    let selectIconContainer;
 
     const icon = state === 'error' ? alertTriangleIcon : CheckIcon;
+
+    if (this.pointerOnSelect) {
+      selectIconContainer = <div class="tp-input-container__select-container">
+        <ion-icon
+          class="tp-input-container__select-icon"
+          src={selectIcon}
+          aria-hidden="true"
+        ></ion-icon>
+      </div>
+    }
 
     if (state) {
       content = (
@@ -160,6 +168,8 @@ export class TpInputContainer {
         </div>
       );
     }
+
+
 
     return (
       <Host
@@ -175,6 +185,7 @@ export class TpInputContainer {
         <slot name="label"></slot>
         <div class="tp-input-container__wrapper">
           <slot></slot>
+          {selectIconContainer}
           {content}
         </div>
         <slot name="feedback-success"></slot>
