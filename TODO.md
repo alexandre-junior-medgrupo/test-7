@@ -8,7 +8,7 @@
 
 ## Junior
 
-1. Revisar estilo Dialog
+1. Revisar estilo Dialog - OK
 2. Revisar estilo Sheet
 3. Estilizar Select
 4. Fazer atributo no-padding para o button tertiary

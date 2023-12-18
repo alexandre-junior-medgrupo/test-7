@@ -10,6 +10,7 @@
 
   &::part(content) {
     position: absolute;
+    right: 0;
     bottom: 0;
     max-height: 90vh;
     padding: 24px;
@@ -67,3 +68,30 @@
     }
   }
 }
+
+// estilo dos componentes internos, verificar se vamos manter
+.tp-sheet {
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    box-shadow: none;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    box-shadow: none;
+  }
+
+  &__button {
+    flex: 1;
+
+    &:last-child {
+      margin-left: 16px;
+    }
+  }
+}
+
