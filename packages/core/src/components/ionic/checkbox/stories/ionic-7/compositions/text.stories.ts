@@ -3,15 +3,15 @@ import { defineCustomElement as defineCustomElementCheckbox } from '@ionic/core/
 import { defineCustomElement as defineCustomElementText } from '@ionic/core/components/ion-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_TYPE } from '../../../../../utils/constants/type.constant';
-import { TpIonText } from '../../../text/utils/text.type';
-import { TpIonCheckbox } from '../../utils/checkbox.type';
+import { TP_TYPE } from '../../../../../../utils/constants/type.constant';
+import { TpIonText } from '../../../../text/utils/text.type';
+import { TpIonCheckbox } from '../../../utils/checkbox.type';
 
 defineCustomElementCheckbox();
 defineCustomElementText();
 
 const meta: Meta<Components.IonCheckbox & TpIonCheckbox & TpIonText> = {
-  title: 'components/Ionic/Checkbox/Compositions',
+  title: 'components/Ionic/Checkbox/Ionic-7/Compositions',
   argTypes: {
     checked: {
       control: 'boolean',

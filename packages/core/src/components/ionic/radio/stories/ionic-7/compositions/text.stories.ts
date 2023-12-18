@@ -7,15 +7,15 @@ import {
 import { defineCustomElement as defineCustomElementText } from '@ionic/core/components/ion-text';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_TYPE } from '../../../../../utils/constants/type.constant';
-import { TpIonText } from '../../../text/utils/text.type';
+import { TP_TYPE } from '../../../../../../utils/constants/type.constant';
+import { TpIonText } from '../../../../text/utils/text.type';
 
 defineCustomElementRadio();
 defineCustomElementRadioGroup();
 defineCustomElementText();
 
 const meta: Meta<Components.IonRadio & IonRadioGroup & TpIonText> = {
-  title: 'components/Ionic/Radio/Compositions',
+  title: 'components/Ionic/Radio/Ionic-7/Compositions',
   argTypes: {
     disabled: {
       control: 'boolean',

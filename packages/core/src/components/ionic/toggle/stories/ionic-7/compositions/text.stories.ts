@@ -2,14 +2,14 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-toggle';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_TYPE } from '../../../../../utils/constants/type.constant';
-import { TpIonText } from '../../../text/utils/text.type';
-import { TpIonToggle } from '../../utils/toggle.type';
+import { TP_TYPE } from '../../../../../../utils/constants/type.constant';
+import { TpIonText } from '../../../../text/utils/text.type';
+import { TpIonToggle } from '../../../utils/toggle.type';
 
 defineCustomElement();
 
 const meta: Meta<Components.IonToggle & TpIonToggle & TpIonText> = {
-  title: 'components/Ionic/Toggle/Compositions',
+  title: 'components/Ionic/Toggle/Ionic-7/Compositions',
   argTypes: {
     disabled: {
       control: 'boolean',
