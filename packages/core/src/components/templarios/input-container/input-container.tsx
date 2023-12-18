@@ -11,6 +11,7 @@ import type { TpColor } from '../../../utils/types/color.type';
 export class TpInputContainer {
   private alertTriangleIcon = getAssetPath('./assets/tp-alert-triangle.svg');
   private CheckIcon = getAssetPath('./assets/tp-check.svg');
+  private selectIcon = getAssetPath('./assets/tp-chevron-down.svg');
 
   /**
    * Quando usado em conjunto com 'select', representa a largura do 'select' definida dinamicamente.
@@ -134,6 +135,7 @@ export class TpInputContainer {
     const ionSelect = this.host.querySelector('ION-SELECT') as HTMLIonSelectElement;
 
     if (ionSelect) {
+      // TODO rever nomeclatura
       this.pointerOnSelect = true;
 
       if (!ionSelect.hasAttribute('interface')) {
@@ -144,10 +146,21 @@ export class TpInputContainer {
 
 
   render() {
-    const { color, state, disabled, alertTriangleIcon, CheckIcon, pointerOnSelect, selectWithPopoverClicked } = this;
+    const { color, state, disabled, alertTriangleIcon, CheckIcon, pointerOnSelect, selectIcon, selectWithPopoverClicked } = this;
     let content;
+    let selectIconContainer;
 
     const icon = state === 'error' ? alertTriangleIcon : CheckIcon;
+
+    if (this.pointerOnSelect) {
+      selectIconContainer = <div class="tp-input-container__select-container">
+        <ion-icon
+          class="tp-input-container__select-icon"
+          src={selectIcon}
+          aria-hidden="true"
+        ></ion-icon>
+      </div>
+    }
 
     if (state) {
       content = (
@@ -160,6 +173,8 @@ export class TpInputContainer {
         </div>
       );
     }
+
+
 
     return (
       <Host
@@ -175,6 +190,7 @@ export class TpInputContainer {
         <slot name="label"></slot>
         <div class="tp-input-container__wrapper">
           <slot></slot>
+          {selectIconContainer}
           {content}
         </div>
         <slot name="feedback-success"></slot>

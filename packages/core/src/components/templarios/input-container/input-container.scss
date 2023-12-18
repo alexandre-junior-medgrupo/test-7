@@ -33,6 +33,15 @@
   &__state-container {
     margin-right: 16px;
   }
+
+  &__select-container {
+    display: flex;
+  }
+
+  &__select-icon {
+    --stroke: var(--tp-color-neutral-6);
+    margin-right: 8px;
+  }
 }
 
 ::slotted(*[slot='feedback-error']) {
@@ -46,8 +55,8 @@
 }
 
 ::slotted(ion-icon) {
-  margin-right: 16px;
   --stroke: var(--tp-color-neutral-6) !important;
+  margin-right: 16px;
 }
 
 //

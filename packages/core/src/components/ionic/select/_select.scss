@@ -1,1 +1,19 @@
 @import './scss/popover';
+
+.tp-input-container {
+  ion-select {
+    --placeholder-color: var(--tp-color-neutral-10);
+    --placeholder-opacity: 1;
+    padding: 0 8px 0 16px;
+
+    &::part(placeholder) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &::part(icon) {
+      display: none;
+    }
+  }
+}
