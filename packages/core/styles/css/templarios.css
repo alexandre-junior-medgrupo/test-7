@@ -2159,21 +2159,19 @@ ion-input.sc-ion-input-md-h.input-disabled {
   opacity: 0.5;
 }
 
-ion-item ion-checkbox.in-item {
+.templarios-ionic-6 ion-item ion-checkbox.in-item {
   margin: 0;
 }
-
-ion-item ion-toggle.in-item {
+.templarios-ionic-6 ion-item ion-toggle.in-item {
   padding-inline: 0;
   padding: 6px 0;
 }
-
-ion-item.ion-color ion-checkbox {
+.templarios-ionic-6 ion-item.ion-color ion-checkbox {
   --background: var(--ion-color-base);
   --background-checked: var(--ion-color-contrast);
   --checkmark-color: var(--ion-color-base);
 }
-ion-item.ion-color ion-toggle {
+.templarios-ionic-6 ion-item.ion-color ion-toggle {
   --background: var(--tp-color-neutral-4);
   --background-checked: var(--ion-color-contrast);
 }
@@ -2846,62 +2844,6 @@ ion-textarea .native-textarea::-webkit-scrollbar {
 }
 ion-textarea .textarea-highlight.sc-ion-textarea-md {
   background: transparent;
-}
-
-ion-toast {
-  --background: var(--tp-color-neutral-2);
-  --color: var(--tp-color-neutral-10);
-  --width: 382px;
-  --border-radius: 8px;
-  --start: initial;
-  --end: 20px;
-}
-@media (max-width: 575.98px) {
-  ion-toast {
-    --width: 100%;
-    --end: 0;
-  }
-}
-ion-toast::part(container) {
-  height: 56px;
-}
-ion-toast::part(icon) {
-  --stroke: var(--tp-color-neutral-10);
-  font-size: 24px;
-}
-ion-toast::part(message) {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-ion-toast[tp-size=md] {
-  --width: 400px;
-}
-ion-toast[tp-size=md]::part(container) {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-inline: 8px;
-}
-
-ion-toast[tp-reverse]::part(container) {
-  flex-direction: row-reverse;
-}
-ion-toast[tp-reverse]::part(icon) {
-  margin-inline-start: 0;
-  margin-inline-end: 16px;
-}
-
-ion-toast.ion-color {
-  --color: var(--ion-color-contrast);
-}
-ion-toast.ion-color::part(icon) {
-  --stroke: var(--ion-color-contrast);
-  font-size: 24px;
-}
-
-ion-toast[warning] {
-  --background: var(--tp-color-warning);
 }
 
 ion-toast {
