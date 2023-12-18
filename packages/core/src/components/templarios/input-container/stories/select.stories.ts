@@ -92,7 +92,7 @@ export const Select: Story = {
         </ion-label>
       </tp-input-container>
 
-      <tp-input-container color="${args.color}" state="${args.state}" ?disabled="${args.disabled}" ?inverted="${args.inverted}" style="width: 25%;">
+      <tp-input-container color="${args.color}" state="${args.state}" ?disabled="${args.disabled}" ?inverted="${args.inverted}" style="width: 25%; margin-top: 75%;">
         <ion-select interface="popover" .interfaceOptions=${interfaceOpts} id="tp-select-03" aria-label="option-1" placeholder="Lorem ipsum dolor">
           <ion-select-option value="option-1"> Option 1 </ion-select-option>
           <ion-select-option value="option-2"> Option 2 </ion-select-option>

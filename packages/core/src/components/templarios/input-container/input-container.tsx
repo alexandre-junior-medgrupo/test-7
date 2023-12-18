@@ -19,11 +19,6 @@ export class TpInputContainer {
   private hostWidth: number | undefined;
 
   /**
-   * Ascrescimo ao hostWidth necessário para contabilizar as bordas.
-   */
-  readonly selectAndPopoverDiffWidth: number = 2;
-
-  /**
    * Referência ao componente no DOM.
    */
   @Element() host!: HTMLElement;
@@ -88,7 +83,7 @@ export class TpInputContainer {
 
     const popoverElement = document.querySelector('.select-popover') as HTMLElement;
 
-    popoverElement?.style.setProperty('--width', `${this.host.clientWidth + this.selectAndPopoverDiffWidth}px`);
+    popoverElement?.style.setProperty('--width', `${this.host.clientWidth}px`);
   }
 
   @Listen('ionPopoverWillPresent', { target: 'body' })
@@ -96,7 +91,7 @@ export class TpInputContainer {
     if (!this.host.contains(this.clickTarget)) return;
 
     this.selectWithPopoverClicked = true;
-    this.hostWidth = this.host.clientWidth + this.selectAndPopoverDiffWidth;
+    this.hostWidth = this.host.clientWidth;
 
     const popoverElement = document.querySelector('.select-popover') as HTMLElement;
     popoverElement?.style.setProperty('--width', `${this.hostWidth}px`);
@@ -108,11 +103,11 @@ export class TpInputContainer {
     const { top, bottom, left } = this.host.getBoundingClientRect();
     if (this.inverted) {
       popoverElement.classList.add('tp-popover--inverted');
-      popoverElement?.style.setProperty('--left', `${left}px`);
-      popoverElement?.style.setProperty('--bottom',`${window.innerHeight - top}px`);
+      popoverElement?.style.setProperty('--offset-x', `${left}px`);
+      popoverElement?.style.setProperty('--offset-y',`${window.innerHeight - top}px`);
     } else {
-      popoverElement?.style.setProperty('--left', `${left + 1}px`);
-      popoverElement?.style.setProperty('--top', `${bottom}px`);
+      popoverElement?.style.setProperty('--offset-x', `${left + 1}px`);
+      popoverElement?.style.setProperty('--offset-y', `${bottom}px`);
     }
   }
 
