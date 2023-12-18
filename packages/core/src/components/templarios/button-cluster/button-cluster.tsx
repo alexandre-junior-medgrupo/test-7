@@ -1,5 +1,7 @@
 import {
   Component,
+  Event,
+  EventEmitter,
   Host,
   Method,
   Prop,
@@ -33,10 +35,21 @@ export class TpButtonCluster {
    */
   @Prop({ reflect: true, mutable: true }) loading?: boolean;
 
-  @Method()
-  async toggle(event?: Event) {
+  /**
+   * Emitido quando a propriedade collapsed é alterada.
+   */
+  @Event() tpButtonClusterCollapsed!: EventEmitter<boolean>;
+
+  toggleInternal(event?: Event) {
     event?.stopPropagation();
     this.collapsed = !this.collapsed;
+    this.tpButtonClusterCollapsed.emit(this.collapsed);
+  }
+
+  @Method()
+  async toggleExternal() {
+    this.collapsed = !this.collapsed;
+    this.tpButtonClusterCollapsed.emit(this.collapsed);
   }
 
   render() {
@@ -57,7 +70,7 @@ export class TpButtonCluster {
       </div>;
     } else {
       content = <div class="tp-button-cluster__container"
-        onClick={(event: any) => { this.toggle(event) }}>
+        onClick={(event: any) => { this.toggleInternal(event) }}>
         <slot name="expand-text"></slot>
         <ion-icon
           class="tp-button-cluster__icon"

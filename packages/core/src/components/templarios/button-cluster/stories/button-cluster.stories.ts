@@ -1,5 +1,6 @@
 import { defineCustomElement as defineCustomElementSkeletonText } from '@ionic/core/components/ion-skeleton-text';
 import { defineCustomElement as defineCustomElementText } from '@ionic/core/components/ion-text';
+import { withActions } from '@storybook/addon-actions/decorator';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpButtonCluster } from '../button-cluster';
@@ -8,7 +9,14 @@ defineCustomElementSkeletonText();
 defineCustomElementText();
 
 const meta: Meta<TpButtonCluster> = {
+  component: 'TpButtonCluster',
   title: 'components/Templarios/Button cluster',
+  decorators: [withActions as any],
+  parameters: {
+    actions: {
+      handles: ['tpButtonClusterCollapsed'],
+    },
+  },
   argTypes: {
     collapsed: {
       control: 'boolean',
