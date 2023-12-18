@@ -6,23 +6,19 @@
 3. verificar error de event() e method()
 4. verificar problema do lit nos atributos
 5. verificar types nos componentes templarios/ionic (button size)
+6. Rever logica do click para o datetime
 
 ## Junior
 
-1. Revisar estilo Modal
-2. Estilizar Select
-
-3. Revisar estilo Dialog
-4. Revisar estilo Sheet
+1. Revisar estilo Dialog
+2. Revisar estilo Sheet
+3. Estilizar Select
+4. Fazer atributo no-padding para o button tertiary
+5. Refazer spacings do item na estoria
 
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
 - Ver depois sobre a especificidade das classes que mesmo estando maior que a default nao consegue sobreescrever o estilo
-- Fazer atributo no-padding para o button tertiary
-- toast
-- tabs
-- Verificar sobre spacings no accordion
-- Rever logica dos click no datetime
 
 ## Alan
 
