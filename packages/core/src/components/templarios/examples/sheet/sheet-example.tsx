@@ -21,11 +21,11 @@ export class SheetExample {
           </ion-button>
         </ion-header>
 
-        <ion-content class="tp-sheet__content">
+        <div class="tp-sheet__content">
           <ion-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam, at inventore laborum nesciunt adipisci? Voluptas illum omnis recusandae quasi, labore soluta voluptate eaque placeat?</ion-text>
           <ion-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam, at inventore laborum nesciunt adipisci? Voluptas illum omnis recusandae quasi, labore soluta voluptate eaque placeat?</ion-text>
           <ion-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam, at inventore laborum nesciunt adipisci? Voluptas illum omnis recusandae quasi, labore soluta voluptate eaque placeat?</ion-text>
-        </ion-content>
+        </div>
 
         <ion-footer class="tp-sheet__footer">
           <ion-button class="tp-dialog__button" expand="block">Salvar</ion-button>

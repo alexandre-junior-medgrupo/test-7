@@ -2582,9 +2582,11 @@ ion-list.list-lines-full ion-item.ion-color::part(native) {
   --min-height: 50px;
   --width: 100%;
   --max-width: 640px;
+  --tp-padding: 24px;
 }
-.tp-dialog .ion-delegate-host {
-  padding: 24px;
+.tp-dialog::part(content) {
+  box-sizing: border-box;
+  padding: var(--tp-padding);
 }
 @media (max-width: 991.98px) {
   .tp-dialog {
@@ -2686,6 +2688,7 @@ ion-list.list-lines-full ion-item.ion-color::part(native) {
 }
 .tp-sheet::part(content) {
   position: absolute;
+  right: 0;
   bottom: 0;
   max-height: 90vh;
   padding: 24px;
@@ -2732,6 +2735,26 @@ ion-list.list-lines-full ion-item.ion-color::part(native) {
     max-height: 100vh;
   }
 }
+.tp-sheet__header {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 24px;
+  box-shadow: none;
+}
+.tp-sheet__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  box-shadow: none;
+}
+.tp-sheet__button {
+  flex: 1;
+}
+.tp-sheet__button:last-child {
+  margin-left: 16px;
+}
+
 ion-progress-bar {
   --background: var(--tp-color-brand-1);
   --progress-background: var(--tp-color-brand-4);
