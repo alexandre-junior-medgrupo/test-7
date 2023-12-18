@@ -2159,6 +2159,25 @@ ion-input.sc-ion-input-md-h.input-disabled {
   opacity: 0.5;
 }
 
+ion-item ion-checkbox.in-item {
+  margin: 0;
+}
+
+ion-item ion-toggle.in-item {
+  padding-inline: 0;
+  padding: 6px 0;
+}
+
+ion-item.ion-color ion-checkbox {
+  --background: var(--ion-color-base);
+  --background-checked: var(--ion-color-contrast);
+  --checkmark-color: var(--ion-color-base);
+}
+ion-item.ion-color ion-toggle {
+  --background: var(--tp-color-neutral-4);
+  --background-checked: var(--ion-color-contrast);
+}
+
 /* stylelint-disable selector-max-compound-selectors */
 ion-item {
   --color: var(--tp-color-neutral-10);
