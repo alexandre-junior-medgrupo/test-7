@@ -1,4 +1,3 @@
-
 import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
 import type { Meta, StoryObj } from '@storybook/web-components';
@@ -37,14 +36,15 @@ const meta: Meta = {
       },
     },
     inverted: {
-      control: { type: "boolean" },
-      description: "Define a direção de abertura do popover (acima ou abaixo do select).",
+      control: { type: 'boolean' },
+      description:
+        'Define a direção de abertura do popover (acima ou abaixo do select).',
       table: {
         defaultValue: {
-          summary: false
+          summary: false,
         },
         type: {
-          summary: "boolean"
+          summary: 'boolean',
         },
       },
     },
@@ -57,12 +57,24 @@ type Story = StoryObj;
 
 export const Select: Story = {
   render: ({ ...args }) => {
-    const interfaceOpts = { cssClass: "tp-select" };
+    const interfaceOpts = { cssClass: 'tp-select' };
 
     return html`
-      <tp-input-container color="${args.color}" state="${args.state}" ?disabled="${args.disabled}" ?inverted="${args.inverted}" style="width: 75%;">
+      <tp-input-container
+        color="${args.color}"
+        state="${args.state}"
+        ?disabled="${args.disabled}"
+        ?inverted="${args.inverted}"
+        style="width: 75%; margin-left: 5%;"
+      >
         <ion-label slot="label" tp-type="p14">Descrição Select</ion-label>
-        <ion-select interface="popover" .interfaceOptions=${interfaceOpts} id="tp-select-01" aria-label="option-1" placeholder="Lorem ipsum dolor">
+        <ion-select
+          interface="popover"
+          .interfaceOptions=${interfaceOpts}
+          id="tp-select-01"
+          aria-label="option-1"
+          placeholder="Lorem ipsum dolor"
+        >
           <ion-select-option value="option-1"> Option 1 </ion-select-option>
           <ion-select-option value="option-2"> Option 2 </ion-select-option>
           <ion-select-option value="option-3"> Option 3 </ion-select-option>
@@ -78,8 +90,20 @@ export const Select: Story = {
         </ion-label>
       </tp-input-container>
 
-      <tp-input-container color="${args.color}" state="${args.state}" ?disabled="${args.disabled}" ?inverted="${args.inverted}" style="width: 50%;">
-        <ion-select interface="popover" .interfaceOptions=${interfaceOpts} id="tp-select-02" aria-label="option-1" placeholder="Lorem ipsum dolor">
+      <tp-input-container
+        color="${args.color}"
+        state="${args.state}"
+        ?disabled="${args.disabled}"
+        ?inverted="${args.inverted}"
+        style="width: 50%; margin-left: 5%;"
+      >
+        <ion-select
+          interface="popover"
+          .interfaceOptions=${interfaceOpts}
+          id="tp-select-02"
+          aria-label="option-1"
+          placeholder="Lorem ipsum dolor"
+        >
           <ion-select-option value="option-1"> Option 1 </ion-select-option>
           <ion-select-option value="option-2"> Option 2 </ion-select-option>
           <ion-select-option value="option-3"> Option 3 </ion-select-option>
@@ -92,8 +116,20 @@ export const Select: Story = {
         </ion-label>
       </tp-input-container>
 
-      <tp-input-container color="${args.color}" state="${args.state}" ?disabled="${args.disabled}" ?inverted="${args.inverted}" style="width: 25%; margin-top: 75%;">
-        <ion-select interface="popover" .interfaceOptions=${interfaceOpts} id="tp-select-03" aria-label="option-1" placeholder="Lorem ipsum dolor">
+      <tp-input-container
+        color="${args.color}"
+        state="${args.state}"
+        ?disabled="${args.disabled}"
+        ?inverted="${args.inverted}"
+        style="width: 25%; margin-left: 5%;"
+      >
+        <ion-select
+          interface="popover"
+          .interfaceOptions=${interfaceOpts}
+          id="tp-select-03"
+          aria-label="option-1"
+          placeholder="Lorem ipsum dolor"
+        >
           <ion-select-option value="option-1"> Option 1 </ion-select-option>
           <ion-select-option value="option-2"> Option 2 </ion-select-option>
           <ion-select-option value="option-3"> Option 3 </ion-select-option>
@@ -105,7 +141,7 @@ export const Select: Story = {
           *Caracteres validos
         </ion-label>
       </tp-input-container>
-    `
+    `;
   },
   /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

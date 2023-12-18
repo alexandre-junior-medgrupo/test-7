@@ -1,4 +1,13 @@
-import { Component, Element, Host, Listen, Prop, State, getAssetPath, h } from '@stencil/core';
+import {
+  Component,
+  Element,
+  Host,
+  Listen,
+  Prop,
+  State,
+  getAssetPath,
+  h,
+} from '@stencil/core';
 import { createColorClasses } from '../../../utils/functions/color.function';
 import type { TpColor } from '../../../utils/types/color.type';
 
@@ -31,12 +40,12 @@ export class TpInputContainer {
   /**
    * Monitoria se o 'select' foi clicado e está ativo. A propriedade é usada para aplicar estilização e evitar processamentos desnecessários em alguns métodos.
    */
-  @State() selectWithPopoverClicked: boolean = false;
+  @State() selectOpen: boolean = false;
 
   /**
    * ???
    */
-  @State() pointerOnSelect: boolean = false;
+  @State() hasSelect: boolean = false;
 
   /**
    * Define a variação de cor do componente.
@@ -44,8 +53,8 @@ export class TpInputContainer {
   @Prop({ reflect: true }) color?: TpColor;
 
   /**
-    * Define a variação de estado do componente.
-    */
+   * Define a variação de estado do componente.
+   */
   @Prop({ reflect: true }) state?: 'error' | 'success';
 
   /**
@@ -68,9 +77,15 @@ export class TpInputContainer {
   @Listen('click')
   catchSelectIconClick(e: MouseEvent) {
     const target = e.target as Node;
-    const ionSelect = this.host.querySelector('ion-select') as HTMLIonSelectElement;
+    const ionSelect = this.host.querySelector(
+      'ion-select',
+    ) as HTMLIonSelectElement;
 
-    const shouldOpenOverlay = this.host.contains(target) && ionSelect.hasAttribute('interface') && (target.nodeName === 'ION-ICON' || target.nodeName === 'TP-INPUT-CONTAINER');
+    const shouldOpenOverlay =
+      this.host.contains(target) &&
+      ionSelect.hasAttribute('interface') &&
+      (target.nodeName === 'ION-ICON' ||
+        target.nodeName === 'TP-INPUT-CONTAINER');
 
     if (shouldOpenOverlay) {
       ionSelect.open(e);
@@ -79,59 +94,48 @@ export class TpInputContainer {
 
   @Listen('resize', { target: 'window' })
   setPopoverWidthOnResize() {
-    if (!this.selectWithPopoverClicked) return;
+    if (!this.selectOpen) return;
 
-    const popoverElement = document.querySelector('.select-popover') as HTMLElement;
+    const popoverElement = document.querySelector(
+      '.select-popover',
+    ) as HTMLElement;
 
     popoverElement?.style.setProperty('--width', `${this.host.clientWidth}px`);
+
+    this.setPopoverPosition();
   }
 
   @Listen('ionPopoverWillPresent', { target: 'body' })
   setPopoverCharacteristics() {
     if (!this.host.contains(this.clickTarget)) return;
 
-    this.selectWithPopoverClicked = true;
+    this.selectOpen = true;
     this.hostWidth = this.host.clientWidth;
 
-    const popoverElement = document.querySelector('.select-popover') as HTMLElement;
+    const popoverElement = document.querySelector(
+      '.select-popover',
+    ) as HTMLElement;
     popoverElement?.style.setProperty('--width', `${this.hostWidth}px`);
 
     if (popoverElement.classList.contains('popover-bottom')) {
       this.inverted = true;
     }
 
-    const { top, bottom, left } = this.host.getBoundingClientRect();
-    if (this.inverted) {
-      popoverElement.classList.add('tp-popover--inverted');
-      popoverElement?.style.setProperty('--offset-x', `${left}px`);
-      popoverElement?.style.setProperty('--offset-y',`${window.innerHeight - top}px`);
-    } else {
-      popoverElement?.style.setProperty('--offset-x', `${left + 1}px`);
-      popoverElement?.style.setProperty('--offset-y', `${bottom}px`);
-    }
-  }
-
-  // fix para conflito com popover API do chrome: pode remover depois de migração pro ionic 7
-  @Listen('ionPopoverDidPresent', { target: 'body' })
-  fixPopover() {
-    const popover = document.querySelector('ion-select-popover');
-
-    if (popover?.hasAttribute('popover')) {
-      popover.removeAttribute('popover');
-    }
+    this.setPopoverPosition();
   }
 
   @Listen('ionPopoverWillDismiss', { target: 'body' })
   unsetClikedState() {
-    this.selectWithPopoverClicked = false;
+    this.selectOpen = false;
   }
 
   componentDidLoad() {
-    const ionSelect = this.host.querySelector('ION-SELECT') as HTMLIonSelectElement;
+    const ionSelect = this.host.querySelector(
+      'ION-SELECT',
+    ) as HTMLIonSelectElement;
 
     if (ionSelect) {
-      // TODO rever nomeclatura
-      this.pointerOnSelect = true;
+      this.hasSelect = true;
 
       if (!ionSelect.hasAttribute('interface')) {
         ionSelect.interfaceOptions = { cssClass: 'tp-hide' };
@@ -139,22 +143,55 @@ export class TpInputContainer {
     }
   }
 
+  setPopoverPosition() {
+    const popoverElement = document.querySelector(
+      '.select-popover',
+    ) as HTMLElement;
+
+    const { top, bottom, left } = this.host.getBoundingClientRect();
+
+    if (this.inverted) {
+      popoverElement.classList.add('tp-popover--inverted');
+      popoverElement?.style.setProperty('--offset-x', `${left}px`);
+      popoverElement?.style.setProperty(
+        '--offset-y',
+        `${window.innerHeight - top}px`,
+      );
+    } else {
+      popoverElement?.style.setProperty('--offset-x', `${left}px`);
+      popoverElement?.style.setProperty('--offset-y', `${bottom}px`);
+    }
+  }
 
   render() {
-    const { color, state, disabled, alertTriangleIcon, CheckIcon, pointerOnSelect, selectIcon, selectWithPopoverClicked } = this;
+    const {
+      color,
+      state,
+      disabled,
+      alertTriangleIcon,
+      CheckIcon,
+      hasSelect,
+      selectIcon,
+      selectOpen,
+    } = this;
     let content;
     let selectIconContainer;
 
     const icon = state === 'error' ? alertTriangleIcon : CheckIcon;
 
-    if (this.pointerOnSelect) {
-      selectIconContainer = <div class="tp-input-container__select-container">
-        <ion-icon
-          class="tp-input-container__select-icon"
-          src={selectIcon}
-          aria-hidden="true"
-        ></ion-icon>
-      </div>
+    if (this.hasSelect) {
+      selectIconContainer = (
+        <div class="tp-input-container__select-container">
+          <ion-icon
+            class={{
+              'tp-input-container__select-icon': true,
+              'tp-input-container__select-icon--open': selectOpen,
+            }}
+            src={selectIcon}
+            aria-hidden="true"
+          ></ion-icon>
+        </div>
+      );
     }
 
     if (state) {
@@ -169,8 +206,6 @@ export class TpInputContainer {
       );
     }
 
-
-
     return (
       <Host
         class={createColorClasses(color, {
@@ -178,8 +213,8 @@ export class TpInputContainer {
           'tp-input-container--error': state === 'error',
           'tp-input-container--success': state === 'success',
           'tp-input-container--disabled': disabled,
-          'tp-input-container--with-select': pointerOnSelect,
-          'tp-input-container--select-popover-clicked': selectWithPopoverClicked,
+          'tp-input-container--with-select': hasSelect,
+          'tp-input-container--select-open': selectOpen,
         })}
       >
         <slot name="label"></slot>

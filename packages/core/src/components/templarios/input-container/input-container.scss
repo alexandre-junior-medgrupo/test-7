@@ -2,12 +2,6 @@
 @import '../../../styles/templarios.abstracts';
 
 :host {
-  --border-color: transparent;
-  --background: var(--tp-color-neutral-2);
-  --border-radius: 8px;
-}
-
-:host {
   position: relative;
   display: block;
 }
@@ -17,16 +11,16 @@
     display: flex;
     align-items: center;
     margin: 8px 0;
-    background: var(--background);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
+    background: var(--tp-color-neutral-2);
+    border: 1px solid transparent;
+    border-radius: 8px;
 
     &:hover {
-      --background: var(--tp-color-neutral-3);
+      background: var(--tp-color-neutral-3);
     }
 
     &:focus-within {
-      --border-color: var(--tp-color-neutral-3);
+      border-color: var(--tp-color-neutral-3);
     }
   }
 
@@ -41,6 +35,11 @@
   &__select-icon {
     --stroke: var(--tp-color-neutral-6);
     margin-right: 8px;
+    transition: transform ease-in-out 300ms;
+
+    &--open {
+      transform: rotate(-180deg);
+    }
   }
 }
 
@@ -66,10 +65,10 @@
 // invalid
 :host(.tp-input-container--error) {
   .tp-input-container__wrapper {
-    --border-color: var(--tp-color-warning);
+    border-color: var(--tp-color-warning);
   }
 
-  ::slotted(*[slot="feedback-error"]) {
+  ::slotted(*[slot='feedback-error']) {
     display: block;
   }
 
@@ -81,10 +80,10 @@
 // valid
 :host(.tp-input-container--success) {
   .tp-input-container__wrapper {
-    --border-color: var(--tp-color-success);
+    border-color: var(--tp-color-success);
   }
 
-  ::slotted(*[slot="feedback-success"]) {
+  ::slotted(*[slot='feedback-success']) {
     display: block;
   }
 
@@ -100,10 +99,10 @@
 // TODO - Revisar abertura e fechamento do date picker
 :host(.tp-datetime-visible) {
   .tp-input-container__wrapper {
-    --border-radius: 8px 8px 0 8px !important;
+    border-radius: 8px 8px 0 !important;
 
     @include breakpoint-down('sm') {
-      --border-radius: 8px 8px 0 0 !important;
+      border-radius: 8px 8px 0 0 !important;
     }
   }
 
@@ -118,7 +117,8 @@
 //
 
 // clicked
-:host(.tp-input-container.tp-input-container--select-popover-clicked):not(.tp-input-container--disabled) {
+:host(.tp-input-container.tp-input-container--select-open)
+  .tp-input-container__wrapper {
   border-radius: 8px 8px 0 0 !important;
   transition: border-radius 400ms ease-in-out;
   pointer-events: none;
@@ -129,7 +129,9 @@
   transform: rotate(-180deg);
 }
 
-:host(.tp-input-container.tp-input-container--inverted.tp-input-container--select-popover-clicked) {
+:host(
+    .tp-input-container.tp-input-container--inverted.tp-input-container--select-open
+  ) {
   &:not(.tp-input-container--disabled) {
     border-radius: 0 0 8px 8px !important;
   }
@@ -146,13 +148,17 @@
   }
 }
 
-:host(.tp-input-container.tp-input-container--with-select.tp-input-container--select-popover-clicked) {
+:host(
+    .tp-input-container.tp-input-container--with-select.tp-input-container--select-open
+  ) {
   &:not(.tp-input-container--disabled)::slotted(ion-icon) {
     transform: rotate(-180deg);
   }
 }
 
-:host(.tp-input-container.tp-input-container--with-select.tp-input-container--select-popover-clicked.tp-input-container--inverted) {
+:host(
+    .tp-input-container.tp-input-container--with-select.tp-input-container--select-open.tp-input-container--inverted
+  ) {
   &:not(.tp-input-container--disabled)::slotted(ion-icon) {
     transform: rotate(0deg);
   }
@@ -163,14 +169,14 @@
 //
 :host(.tp-color) {
   .tp-input-container__wrapper {
-    --background: var(--tp-color-base);
+    background: var(--tp-color-base);
 
     &:hover {
-      --background: var(--tp-color-shade);
+      background: var(--tp-color-shade);
     }
 
     &:focus-within {
-      --border-color: var(--tp-color-tint);
+      border-color: var(--tp-color-tint);
     }
   }
 
