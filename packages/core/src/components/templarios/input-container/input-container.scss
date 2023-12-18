@@ -50,6 +50,44 @@
   --stroke: var(--tp-color-neutral-6) !important;
 }
 
+//
+// states
+//
+
+// invalid
+:host(.tp-input-container--error) {
+  .tp-input-container__wrapper {
+    --border-color: var(--tp-color-warning);
+  }
+
+  ::slotted(*[slot="feedback-error"]) {
+    display: block;
+  }
+
+  .tp-input-container__icon {
+    --stroke: var(--tp-color-warning);
+  }
+}
+
+// valid
+:host(.tp-input-container--success) {
+  .tp-input-container__wrapper {
+    --border-color: var(--tp-color-success);
+  }
+
+  ::slotted(*[slot="feedback-success"]) {
+    display: block;
+  }
+
+  .tp-input-container__icon {
+    --stroke: var(--tp-color-success);
+  }
+}
+
+//
+// datetime
+//
+
 // TODO - Revisar abertura e fechamento do date picker
 :host(.tp-datetime-visible) {
   .tp-input-container__wrapper {
@@ -67,38 +105,49 @@
 }
 
 //
-// states
+// select
 //
 
-//invalid
-//slloted
-:host(.tp-comparison-chart-bar--error) {
-  .tp-input-container__wrapper {
-    --border-color: var(--tp-color-warning);
-  }
+// clicked
+:host(.tp-input-container.tp-input-container--select-popover-clicked):not(.tp-input-container--disabled) {
+  border-radius: 8px 8px 0 0 !important;
+  transition: border-radius 400ms ease-in-out;
+  pointer-events: none;
+}
 
-  ::slotted(*[slot="feedback-error"]) {
-    display: block;
-  }
+// inverted
+:host(.tp-input-container.tp-input-container--inverted)::slotted(ion-icon) {
+  transform: rotate(-180deg);
+}
 
-  .tp-input-container__icon {
-    --stroke: var(--tp-color-warning);
+:host(.tp-input-container.tp-input-container--inverted.tp-input-container--select-popover-clicked) {
+  &:not(.tp-input-container--disabled) {
+    border-radius: 0 0 8px 8px !important;
   }
 }
 
-//valid
-//slloted
-:host(.tp-comparison-chart-bar--success) {
-  .tp-input-container__wrapper {
-    --border-color: var(--tp-color-success);
-  }
+// with select
+:host(.tp-input-container.tp-input-container--with-select) {
+  cursor: not-allowed;
 
-  ::slotted(*[slot="feedback-success"]) {
-    display: block;
-  }
+  &:not(.tp-input-container--disabled) {
+    cursor: pointer;
 
-  .tp-input-container__icon {
-    --stroke: var(--tp-color-success);
+    &::slotted(ion-icon) {
+      transition: transform 400ms linear;
+    }
+  }
+}
+
+:host(.tp-input-container.tp-input-container--with-select.tp-input-container--select-popover-clicked) {
+  &:not(.tp-input-container--disabled)::slotted(ion-icon) {
+    transform: rotate(-180deg);
+  }
+}
+
+:host(.tp-input-container.tp-input-container--with-select.tp-input-container--select-popover-clicked.tp-input-container--inverted) {
+  &:not(.tp-input-container--disabled)::slotted(ion-icon) {
+    transform: rotate(0deg);
   }
 }
 
@@ -124,7 +173,7 @@
     --placeholder-color: var(--tp-color-contrast) !important;
   }
 
-  // clear-icon input
+  // input clear-icon
   ::slotted(ion-input[clear-input]) {
     --tp-fill-clear-icon: var(--tp-color-contrast) !important;
   }

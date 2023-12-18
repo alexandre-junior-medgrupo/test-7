@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-eea4cb84.js');
+const index = require('./index-bda9544c.js');
 
 var TpRateLikeStatus;
 (function (TpRateLikeStatus) {

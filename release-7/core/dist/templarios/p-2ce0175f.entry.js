@@ -1,0 +1,2 @@
+import{r as t,h as e,H as n}from"./p-09e25b63.js";const r=':host{display:block}.tp-segment-container{position:relative}.tp-segment-container::before{position:fixed;right:0;width:32px;height:48px;background:linear-gradient(to right, transparent, var(--tp-color-neutral-8));content:""}';const o=class{constructor(e){t(this,e)}render(){return e(n,{class:"tp-segment-container"},e("slot",null))}};o.style=r;export{o as tp_segment_container};
+//# sourceMappingURL=p-2ce0175f.entry.js.map

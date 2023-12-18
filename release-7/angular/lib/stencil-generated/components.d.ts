@@ -6,6 +6,60 @@ import {
 } from '@angular/core';
 import { Components } from '../../../core/dist/types';
 import * as i0 from '@angular/core';
+export declare class DialogExample {
+  protected z: NgZone;
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+  static ɵfac: i0.ɵɵFactoryDeclaration<DialogExample, never>;
+  static ɵcmp: i0.ɵɵComponentDeclaration<
+    DialogExample,
+    'dialog-example',
+    never,
+    {},
+    {},
+    never,
+    ['*'],
+    false,
+    never
+  >;
+}
+export declare interface DialogExample extends Components.DialogExample {}
+export declare class ModalExample {
+  protected z: NgZone;
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+  static ɵfac: i0.ɵɵFactoryDeclaration<ModalExample, never>;
+  static ɵcmp: i0.ɵɵComponentDeclaration<
+    ModalExample,
+    'modal-example',
+    never,
+    {},
+    {},
+    never,
+    ['*'],
+    false,
+    never
+  >;
+}
+export declare interface ModalExample extends Components.ModalExample {}
+export declare class SheetExample {
+  protected z: NgZone;
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+  static ɵfac: i0.ɵɵFactoryDeclaration<SheetExample, never>;
+  static ɵcmp: i0.ɵɵComponentDeclaration<
+    SheetExample,
+    'sheet-example',
+    never,
+    {},
+    {},
+    never,
+    ['*'],
+    false,
+    never
+  >;
+}
+export declare interface SheetExample extends Components.SheetExample {}
 export declare class TpAlert {
   protected z: NgZone;
   protected el: HTMLElement;
@@ -124,6 +178,27 @@ export declare class TpComparisonChartBar {
 }
 export declare interface TpComparisonChartBar
   extends Components.TpComparisonChartBar {}
+export declare class TpExample {
+  protected z: NgZone;
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+  static ɵfac: i0.ɵɵFactoryDeclaration<TpExample, never>;
+  static ɵcmp: i0.ɵɵComponentDeclaration<
+    TpExample,
+    'tp-example',
+    never,
+    {
+      color: { alias: 'color'; required: false };
+      icon: { alias: 'icon'; required: false };
+    },
+    {},
+    never,
+    ['*'],
+    false,
+    never
+  >;
+}
+export declare interface TpExample extends Components.TpExample {}
 export declare class TpHorizontalChartBar {
   protected z: NgZone;
   protected el: HTMLElement;

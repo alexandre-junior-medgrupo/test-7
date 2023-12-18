@@ -13,6 +13,72 @@ import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
 import { Components } from 'tp-core';
 
+@ProxyCmp({})
+@Component({
+  selector: 'dialog-example',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: [],
+})
+export class DialogExample {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface DialogExample extends Components.DialogExample {}
+
+@ProxyCmp({})
+@Component({
+  selector: 'modal-example',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: [],
+})
+export class ModalExample {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface ModalExample extends Components.ModalExample {}
+
+@ProxyCmp({})
+@Component({
+  selector: 'sheet-example',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: [],
+})
+export class SheetExample {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface SheetExample extends Components.SheetExample {}
+
 @ProxyCmp({
   inputs: ['color', 'loading'],
 })
@@ -152,6 +218,30 @@ export class TpComparisonChartBar {
 
 export declare interface TpComparisonChartBar
   extends Components.TpComparisonChartBar {}
+
+@ProxyCmp({
+  inputs: ['color', 'icon'],
+})
+@Component({
+  selector: 'tp-example',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['color', 'icon'],
+})
+export class TpExample {
+  protected el: HTMLElement;
+  constructor(
+    c: ChangeDetectorRef,
+    r: ElementRef,
+    protected z: NgZone,
+  ) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+export declare interface TpExample extends Components.TpExample {}
 
 @ProxyCmp({
   inputs: ['color', 'loading', 'maxCount', 'noLabel', 'size', 'value'],

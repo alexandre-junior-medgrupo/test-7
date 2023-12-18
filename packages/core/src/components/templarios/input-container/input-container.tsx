@@ -1,5 +1,5 @@
+import { Component, Element, Host, Listen, Prop, State, getAssetPath, h } from '@stencil/core';
 import { createColorClasses } from '../../../utils/functions/color.function';
-import { Component, Host, Prop, getAssetPath, h } from '@stencil/core';
 import type { TpColor } from '../../../utils/types/color.type';
 
 @Component({
@@ -13,17 +13,138 @@ export class TpInputContainer {
   private CheckIcon = getAssetPath('./assets/tp-check.svg');
 
   /**
-  * Define a variação de cor do componente.
-  */
+   * Quando usado em conjunto com 'select', representa a largura do 'select' definida dinamicamente.
+   */
+  private hostWidth: number | undefined;
+
+  /**
+   * Ascrescimo ao hostWidth necessário para contabilizar as bordas.
+   */
+  readonly selectAndPopoverDiffWidth: number = 2;
+
+  /**
+   * Referência ao componente no DOM.
+   */
+  @Element() host!: HTMLElement;
+
+  /**
+   * Alvo do evento de click. Evita bugs nos casos em que há mais de um 'select na mesma página.
+   */
+  @State() clickTarget!: Node;
+
+  /**
+   * Monitoria se o 'select' foi clicado e está ativo. A propriedade é usada para aplicar estilização e evitar processamentos desnecessários em alguns métodos.
+   */
+  @State() selectWithPopoverClicked: boolean = false;
+
+  /**
+   * ???
+   */
+  @State() pointerOnSelect: boolean = false;
+
+  /**
+   * Define a variação de cor do componente.
+   */
   @Prop({ reflect: true }) color?: TpColor;
 
   /**
-   * Define a variação de estado do componente.
-   */
+    * Define a variação de estado do componente.
+    */
   @Prop({ reflect: true }) state?: 'error' | 'success';
 
+  /**
+   * Define a estilização do estado disabled do componente.
+   */
+  @Prop({ reflect: true }) disabled = false;
+
+  /**
+   * ???
+   */
+  @Prop({ reflect: true }) inverted = false;
+
+  @Listen('click', { target: 'body' })
+  setClickTarget(e: MouseEvent) {
+    if (this.disabled) return;
+
+    this.clickTarget = e.target as Node;
+  }
+
+  @Listen('click')
+  catchSelectIconClick(e: MouseEvent) {
+    const target = e.target as Node;
+    const ionSelect = this.host.querySelector('ion-select') as HTMLIonSelectElement;
+
+    const shouldOpenOverlay = this.host.contains(target) && ionSelect.hasAttribute('interface') && (target.nodeName === 'ION-ICON' || target.nodeName === 'TP-INPUT-CONTAINER');
+
+    if (shouldOpenOverlay) {
+      ionSelect.open(e);
+    }
+  }
+
+  @Listen('resize', { target: 'window' })
+  setPopoverWidthOnResize() {
+    if (!this.selectWithPopoverClicked) return;
+
+    const popoverElement = document.querySelector('.select-popover') as HTMLElement;
+
+    popoverElement?.style.setProperty('--width', `${this.host.clientWidth + this.selectAndPopoverDiffWidth}px`);
+  }
+
+  @Listen('ionPopoverWillPresent', { target: 'body' })
+  setPopoverCharacteristics() {
+    if (!this.host.contains(this.clickTarget)) return;
+
+    this.selectWithPopoverClicked = true;
+    this.hostWidth = this.host.clientWidth + this.selectAndPopoverDiffWidth;
+
+    const popoverElement = document.querySelector('.select-popover') as HTMLElement;
+    popoverElement?.style.setProperty('--width', `${this.hostWidth}px`);
+
+    if (popoverElement.classList.contains('popover-bottom')) {
+      this.inverted = true;
+    }
+
+    const { top, bottom, left } = this.host.getBoundingClientRect();
+    if (this.inverted) {
+      popoverElement.classList.add('tp-popover--inverted');
+      popoverElement?.style.setProperty('--left', `${left}px`);
+      popoverElement?.style.setProperty('--bottom',`${window.innerHeight - top}px`);
+    } else {
+      popoverElement?.style.setProperty('--left', `${left + 1}px`);
+      popoverElement?.style.setProperty('--top', `${bottom}px`);
+    }
+  }
+
+  // fix para conflito com popover API do chrome: pode remover depois de migração pro ionic 7
+  @Listen('ionPopoverDidPresent', { target: 'body' })
+  fixPopover() {
+    const popover = document.querySelector('ion-select-popover');
+
+    if (popover?.hasAttribute('popover')) {
+      popover.removeAttribute('popover');
+    }
+  }
+
+  @Listen('ionPopoverWillDismiss', { target: 'body' })
+  unsetClikedState() {
+    this.selectWithPopoverClicked = false;
+  }
+
+  componentDidLoad() {
+    const ionSelect = this.host.querySelector('ION-SELECT') as HTMLIonSelectElement;
+
+    if (ionSelect) {
+      this.pointerOnSelect = true;
+
+      if (!ionSelect.hasAttribute('interface')) {
+        ionSelect.interfaceOptions = { cssClass: 'tp-hide' };
+      }
+    }
+  }
+
+
   render() {
-    const { color, state, alertTriangleIcon, CheckIcon } = this;
+    const { color, state, disabled, alertTriangleIcon, CheckIcon, pointerOnSelect, selectWithPopoverClicked } = this;
     let content;
 
     const icon = state === 'error' ? alertTriangleIcon : CheckIcon;
@@ -44,8 +165,11 @@ export class TpInputContainer {
       <Host
         class={createColorClasses(color, {
           'tp-input-container': true,
-          'tp-comparison-chart-bar--error': state === 'error',
-          'tp-comparison-chart-bar--success': state === 'success',
+          'tp-input-container--error': state === 'error',
+          'tp-input-container--success': state === 'success',
+          'tp-input-container--disabled': disabled,
+          'tp-input-container--with-select': pointerOnSelect,
+          'tp-input-container--select-popover-clicked': selectWithPopoverClicked,
         })}
       >
         <slot name="label"></slot>

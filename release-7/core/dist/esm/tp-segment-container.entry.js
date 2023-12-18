@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-45bfd9ed.js';
+import { r as registerInstance, h, H as Host } from './index-36f08f0f.js';
 
 const segmentContainerCss = ":host{display:block}.tp-segment-container{position:relative}.tp-segment-container::before{position:fixed;right:0;width:32px;height:48px;background:linear-gradient(to right, transparent, var(--tp-color-neutral-8));content:\"\"}";
 

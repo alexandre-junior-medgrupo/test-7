@@ -157,6 +157,14 @@ export namespace Components {
          */
         "color"?: TpColor;
         /**
+          * Define a estilização do estado disabled do componente.
+         */
+        "disabled": boolean;
+        /**
+          * ???
+         */
+        "inverted": boolean;
+        /**
           * Define a variação de estado do componente.
          */
         "state"?: 'error' | 'success';
@@ -445,6 +453,14 @@ declare namespace LocalJSX {
           * Define a variação de cor do componente.
          */
         "color"?: TpColor;
+        /**
+          * Define a estilização do estado disabled do componente.
+         */
+        "disabled"?: boolean;
+        /**
+          * ???
+         */
+        "inverted"?: boolean;
         /**
           * Define a variação de estado do componente.
          */

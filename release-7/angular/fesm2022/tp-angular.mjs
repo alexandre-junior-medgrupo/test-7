@@ -75,6 +75,189 @@ function ProxyCmp(opts) {
   return decorator;
 }
 
+let DialogExample = class DialogExample {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: DialogExample,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: DialogExample,
+      selector: 'dialog-example',
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+DialogExample = __decorate([ProxyCmp({})], DialogExample);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: DialogExample,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'dialog-example',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: [],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
+let ModalExample = class ModalExample {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: ModalExample,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: ModalExample,
+      selector: 'modal-example',
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+ModalExample = __decorate([ProxyCmp({})], ModalExample);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: ModalExample,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'modal-example',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: [],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
+let SheetExample = class SheetExample {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: SheetExample,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: SheetExample,
+      selector: 'sheet-example',
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+SheetExample = __decorate([ProxyCmp({})], SheetExample);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: SheetExample,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'sheet-example',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: [],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
 let TpAlert = class TpAlert {
   constructor(c, r, z) {
     this.z = z;
@@ -455,6 +638,75 @@ i0.ɵɵngDeclareClassMetadata({
     ];
   },
 });
+let TpExample = class TpExample {
+  constructor(c, r, z) {
+    this.z = z;
+    c.detach();
+    this.el = r.nativeElement;
+  }
+  static {
+    this.ɵfac = i0.ɵɵngDeclareFactory({
+      minVersion: '12.0.0',
+      version: '16.2.12',
+      ngImport: i0,
+      type: TpExample,
+      deps: [
+        { token: i0.ChangeDetectorRef },
+        { token: i0.ElementRef },
+        { token: i0.NgZone },
+      ],
+      target: i0.ɵɵFactoryTarget.Component,
+    });
+  }
+  static {
+    this.ɵcmp = i0.ɵɵngDeclareComponent({
+      minVersion: '14.0.0',
+      version: '16.2.12',
+      type: TpExample,
+      selector: 'tp-example',
+      inputs: { color: 'color', icon: 'icon' },
+      ngImport: i0,
+      template: '<ng-content></ng-content>',
+      isInline: true,
+      changeDetection: i0.ChangeDetectionStrategy.OnPush,
+    });
+  }
+};
+TpExample = __decorate(
+  [
+    ProxyCmp({
+      inputs: ['color', 'icon'],
+    }),
+  ],
+  TpExample,
+);
+i0.ɵɵngDeclareClassMetadata({
+  minVersion: '12.0.0',
+  version: '16.2.12',
+  ngImport: i0,
+  type: TpExample,
+  decorators: [
+    {
+      type: Component,
+      args: [
+        {
+          selector: 'tp-example',
+          changeDetection: ChangeDetectionStrategy.OnPush,
+          template: '<ng-content></ng-content>',
+          // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+          inputs: ['color', 'icon'],
+        },
+      ],
+    },
+  ],
+  ctorParameters: function () {
+    return [
+      { type: i0.ChangeDetectorRef },
+      { type: i0.ElementRef },
+      { type: i0.NgZone },
+    ];
+  },
+});
 let TpHorizontalChartBar = class TpHorizontalChartBar {
   constructor(c, r, z) {
     this.z = z;
@@ -802,11 +1054,15 @@ i0.ɵɵngDeclareClassMetadata({
 });
 
 const DIRECTIVES = [
+  DialogExample,
+  ModalExample,
+  SheetExample,
   TpAlert,
   TpButtonCluster,
   TpChartBar,
   TpChartRadial,
   TpComparisonChartBar,
+  TpExample,
   TpHorizontalChartBar,
   TpInputContainer,
   TpLoader,
@@ -832,11 +1088,15 @@ class TemplariosModule {
       ngImport: i0,
       type: TemplariosModule,
       declarations: [
+        DialogExample,
+        ModalExample,
+        SheetExample,
         TpAlert,
         TpButtonCluster,
         TpChartBar,
         TpChartRadial,
         TpComparisonChartBar,
+        TpExample,
         TpHorizontalChartBar,
         TpInputContainer,
         TpLoader,
@@ -844,11 +1104,15 @@ class TemplariosModule {
         TpSegmentContainer,
       ],
       exports: [
+        DialogExample,
+        ModalExample,
+        SheetExample,
         TpAlert,
         TpButtonCluster,
         TpChartBar,
         TpChartRadial,
         TpComparisonChartBar,
+        TpExample,
         TpHorizontalChartBar,
         TpInputContainer,
         TpLoader,
@@ -905,12 +1169,16 @@ i0.ɵɵngDeclareClassMetadata({
 
 export {
   DIRECTIVES,
+  DialogExample,
+  ModalExample,
+  SheetExample,
   TemplariosModule,
   TpAlert,
   TpButtonCluster,
   TpChartBar,
   TpChartRadial,
   TpComparisonChartBar,
+  TpExample,
   TpHorizontalChartBar,
   TpInputContainer,
   TpLoader,

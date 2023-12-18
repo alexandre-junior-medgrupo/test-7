@@ -10,8 +10,10 @@
 ## Junior
 
 1. Revisar estilo Modal
-2. Revisar estilo Dialog
-3. Revisar estilo Sheet
+2. Estilizar Select
+
+3. Revisar estilo Dialog
+4. Revisar estilo Sheet
 
 - trazer icons do DS antigo (os que nao ja nao foram passados pro novo)
 - verificar hover do scroll (mixin)
