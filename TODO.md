@@ -2,8 +2,6 @@
 
 ## Bleggi
 
-2. tempo de instalação templarios
-3. verificar error de event() e method()
 4. verificar problema do lit nos atributos
 5. verificar types nos componentes templarios/ionic (button size)
 6. Rever logica do click para o datetime
