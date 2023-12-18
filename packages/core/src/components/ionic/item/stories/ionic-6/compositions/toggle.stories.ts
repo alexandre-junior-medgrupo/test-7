@@ -4,15 +4,15 @@ import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/com
 import { defineCustomElement as defineCustomElementToggle } from '@ionic/core/components/ion-toggle';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_ITEM } from '../../utils/item.constant';
-import { TpIonItem } from '../../utils/item.type';
+import { TP_ION_ITEM } from '../../../utils/item.constant';
+import { TpIonItem } from '../../../utils/item.type';
 
 defineCustomElementItem();
 defineCustomElementLabel();
 defineCustomElementToggle();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
-  title: 'components/Ionic/Item/Compositions',
+  title: 'components/Ionic/Item/Ionic-6/Compositions',
   argTypes: {
     lines: {
       control: { type: 'select' },

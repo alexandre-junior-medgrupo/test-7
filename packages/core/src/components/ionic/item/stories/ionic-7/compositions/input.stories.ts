@@ -1,21 +1,25 @@
 import { Components } from '@ionic/core';
-import { defineCustomElement as defineCustomElementCheckbox } from '@ionic/core/components/ion-checkbox';
-import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
+import { defineCustomElement as defineCustomElementInput } from '@ionic/core/components/ion-input';
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
+import { defineCustomElement as defineCustomElementSearchbar } from '@ionic/core/components/ion-searchbar';
+import { defineCustomElement as defineCustomElementTextarea } from '@ionic/core/components/ion-textarea';
+import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_ITEM } from '../../utils/item.constant';
-import { TpIonItem } from '../../utils/item.type';
+import { TP_ION_ITEM } from '../../../utils/item.constant';
+import { TpIonItem } from '../../../utils/item.type';
 
 defineCustomElementItem();
 defineCustomElementLabel();
-defineCustomElementCheckbox();
+defineCustomElementInput();
+defineCustomElementSearchbar();
+defineCustomElementTextarea();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
-  title: 'components/Ionic/Item/Compositions',
+  title: 'components/Ionic/Item/Ionic-7/Compositions',
   argTypes: {
     lines: {
-      control: { type: 'check' },
+      control: { type: 'select' },
       options: [...TP_ION_ITEM.lines],
       description: 'Define se o componente terá um border bottom.',
       table: {
@@ -100,11 +104,10 @@ export default meta;
 
 type Story = StoryObj<Components.IonItem & TpIonItem>;
 
-export const Checkbox: Story = {
+export const Input: Story = {
   render: ({ ...args }) => html`
     <ion-list>
       <ion-item
-        .color="${args.color}"
         lines="${args.lines}"
         tp-gap="${args['tp-gap']}"
         tp-spacingX="${args['tp-spacingx']}"
@@ -112,15 +115,14 @@ export const Checkbox: Story = {
         ?button="${args.button}"
         ?disabled="${args.disabled}"
       >
-        <ion-checkbox label-placement="start" justify="space-between">
-          <ion-text>
-            Lorem ipsum, dolor sit amet consectetur.
-          </ion-text>
-        </ion-checkbox>
+        <ion-input
+          mode="md"
+          placeholder="Digite aqui"
+          clear-input="true"
+        ></ion-input>
       </ion-item>
 
       <ion-item
-        .color="${args.color}"
         lines="${args.lines}"
         tp-gap="${args['tp-gap']}"
         tp-spacingX="${args['tp-spacingx']}"
@@ -128,11 +130,50 @@ export const Checkbox: Story = {
         ?button="${args.button}"
         ?disabled="${args.disabled}"
       >
-        <ion-checkbox label-placement="end" justify="space-between">
-          <ion-text>
-            Lorem ipsum, dolor sit amet consectetur.
-          </ion-text>
-        </ion-checkbox>
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Input</ion-label>
+          <ion-input
+            mode="md"
+            placeholder="Digite aqui"
+            clear-input="true"
+          ></ion-input>
+        </tp-input-container>
+      </ion-item>
+
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Searchbar</ion-label>
+          <ion-searchbar
+            mode="md"
+            search-icon="./../../../../icons/tp-search.svg"
+            clear-icon="./../../../../icons/tp-x.svg"
+            placeholder="Lorem ipsum dolor"
+          ></ion-searchbar>
+        </tp-input-container>
+      </ion-item>
+
+      <ion-item
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        ?button="${args.button}"
+        ?disabled="${args.disabled}"
+      >
+        <tp-input-container>
+          <ion-label slot="label" tp-type="p14">Textarea</ion-label>
+          <ion-textarea
+            placeholder="Lorem ipsum, dolor sit amet consectetur."
+            mode="md"
+          ></ion-textarea>
+        </tp-input-container>
       </ion-item>
     </ion-list>
   `,
@@ -140,4 +181,7 @@ export const Checkbox: Story = {
     const canvas = within(canvasElement);
     expect(canvas.getByText(/ion-item/gi)).toBeTruthy();
   }, */
+};
+Input.argTypes = {
+  color: { table: { disable: true } },
 };

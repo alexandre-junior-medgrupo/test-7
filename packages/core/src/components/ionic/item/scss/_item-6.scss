@@ -1,15 +1,12 @@
-// /* stylelint-disable selector-max-compound-selectors */
-// @use 'sass:map';
-
-// important necessario pois ainda nao temos a classe do ionic 6
-
 .templarios-ionic-6 {
+  // checkbox
   ion-item {
     ion-checkbox.in-item {
       margin: 0;
     }
   }
 
+  // toggle
   ion-item {
     ion-toggle.in-item {
       padding-inline: 0;
@@ -17,6 +14,9 @@
     }
   }
 
+  //
+  // color
+  //
   ion-item.ion-color {
     // checkbox
     ion-checkbox {
@@ -32,4 +32,3 @@
     }
   }
 }
-

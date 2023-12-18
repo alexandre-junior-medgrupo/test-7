@@ -1,20 +1,18 @@
 import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementItem } from '@ionic/core/components/ion-item';
 import { defineCustomElement as defineCustomElementLabel } from '@ionic/core/components/ion-label';
-import { defineCustomElement as defineCustomElementRadio } from '@ionic/core/components/ion-radio';
-import { defineCustomElement as defineCustomElementRadioGroup } from '@ionic/core/components/ion-radio-group';
+import { defineCustomElement as defineCustomElementToggle } from '@ionic/core/components/ion-toggle';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TP_ION_ITEM } from '../../utils/item.constant';
-import { TpIonItem } from '../../utils/item.type';
+import { TP_ION_ITEM } from '../../../utils/item.constant';
+import { TpIonItem } from '../../../utils/item.type';
 
 defineCustomElementItem();
 defineCustomElementLabel();
-defineCustomElementRadio();
-defineCustomElementRadioGroup();
+defineCustomElementToggle();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
-  title: 'components/Ionic/Item/Compositions',
+  title: 'components/Ionic/Item/Ionic-7/Compositions',
   argTypes: {
     lines: {
       control: { type: 'select' },
@@ -71,18 +69,6 @@ const meta: Meta<Components.IonItem & TpIonItem> = {
         },
       },
     },
-    button: {
-      control: 'boolean',
-      description: 'Define a estilização do estado button do componente.',
-      table: {
-        defaultValue: {
-          summary: 'undefined',
-        },
-        type: {
-          summary: 'boolean',
-        },
-      },
-    },
     disabled: {
       control: 'boolean',
       description: 'Define a estilização do estado disabled do componente.',
@@ -102,42 +88,40 @@ export default meta;
 
 type Story = StoryObj<Components.IonItem & TpIonItem>;
 
-export const Radio: Story = {
+export const Toggle: Story = {
   render: ({ ...args }) => html`
     <ion-list>
-      <ion-radio-group>
-        <ion-item
-          .color="${args.color}"
-          lines="${args.lines}"
-          tp-gap="${args['tp-gap']}"
-          tp-spacingX="${args['tp-spacingx']}"
-          tp-spacingY="${args['tp-spacingy']}"
-          ?button="${args.button}"
-          ?disabled="${args.disabled}"
-        >
-        <ion-radio label-placement="start" justify="space-between">
-        <ion-text>
-          Lorem ipsum, dolor sit amet consectetur.
-        </ion-text>
-      </ion-radio>
-        </ion-item>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        button
+        ?disabled="${args.disabled}"
+      >
+        <ion-toggle label-placement="start" justify="space-between">
+          <ion-text>
+            Lorem ipsum, dolor sit amet consectetur.
+          </ion-text
+        </ion-toggle>
+      </ion-item>
 
-        <ion-item
-          .color="${args.color}"
-          lines="${args.lines}"
-          tp-gap="${args['tp-gap']}"
-          tp-spacingX="${args['tp-spacingx']}"
-          tp-spacingY="${args['tp-spacingy']}"
-          ?button="${args.button}"
-          ?disabled="${args.disabled}"
-        >
-          <ion-radio label-placement="end" justify="space-between">
-            <ion-text>
-              Lorem ipsum, dolor sit amet consectetur.
-            </ion-text>
-          </ion-radio>
-        </ion-item>
-      </ion-radio-group>
+      <ion-item
+        .color="${args.color}"
+        lines="${args.lines}"
+        tp-gap="${args['tp-gap']}"
+        tp-spacingX="${args['tp-spacingx']}"
+        tp-spacingY="${args['tp-spacingy']}"
+        button
+        ?disabled="${args.disabled}"
+      >
+        <ion-toggle label-placement="end" justify="space-between">
+          <ion-text>
+            Lorem ipsum, dolor sit amet consectetur.
+          </ion-text
+        </ion-toggle>
+      </ion-item>
     </ion-list>
   `,
   /* play: async ({ canvasElement }) => {
