@@ -12,6 +12,7 @@
     ".prettiercache": "prettier",
     "extensions.json": "vscode",
     "settings.json": "vscode",
+    "package-publish.json": "nodejs",
     "tsconfig.prod.json": "tsconfig",
     "stencil.config.prod.ts": "stencil"
   }

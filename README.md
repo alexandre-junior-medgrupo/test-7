@@ -27,9 +27,11 @@
 npm start
 ```
 
-## # Production
+## # Publish
 
 ### # Release 7
+
+#### # Step 1
 
 ```bash
 # packages/core
@@ -49,7 +51,13 @@ npm i @ionic/core@latest -D
 npm run build:7
 ```
 
+#### # Step 2
+
+- Publicar storybook
+
 ### # Release 6
+
+#### # Step 1
 
 ```bash
 # packages/core
@@ -63,11 +71,42 @@ npm uninstall @ionic/core
 npm i @ionic/core@v6-lts -D
 ```
 
+#### # Step 2
+
+```ts
+// packages/core/.storybook/preview.ts
+
+const preview: Preview = {
+  parameters: {
+    themes: {
+      list: [...list6],
+    },
+  },
+};
+```
+
+#### # Step 3
+
 ```bash
 # root
 
 npm run build:6
 ```
+
+#### # Step 4
+
+- Renomear o arquivo `package-publish.json` para `package.json`.
+- Renomear o arquivo `package.json` para `bkp.json`.
+
+#### # Step 5
+
+- Gerar tag
+
+#### # Step 6
+
+- Reverter files `package.json` e `package-publish.json`.
+- Reverter files `packages/core/.storybook/preview.ts`.
+- Reverter files `ionic 7`.
 
 </details>
 
