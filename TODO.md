@@ -2,9 +2,9 @@
 
 ## Bleggi
 
-4. verificar problema do lit nos atributos
-5. verificar types nos componentes templarios/ionic (button size)
-6. Rever logica do click para o datetime
+1. verificar problema do lit nos atributos
+2. verificar types nos componentes templarios/ionic (button size)
+3. rever logica do click para o datetime
 
 ## Junior
 
