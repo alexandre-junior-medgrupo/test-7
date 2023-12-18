@@ -137,8 +137,6 @@
 
 // with select
 :host(.tp-input-container.tp-input-container--with-select) {
-  cursor: not-allowed;
-
   &:not(.tp-input-container--disabled) {
     cursor: pointer;
 
