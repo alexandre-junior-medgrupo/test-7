@@ -2036,6 +2036,7 @@ ion-chip.ion-color:not(.chip-outline):hover {
 }
 
 /* stylelint-disable selector-max-compound-selectors */
+<<<<<<< HEAD
 ion-datetime.datetime-presentation-date.datetime-grid {
   --background: var(--tp-color-neutral-4);
   --wheel-fade-background-rgb: var(--tp-color-neutral-4-rgb);
@@ -2078,6 +2079,9 @@ ion-datetime.datetime-presentation-date.datetime-grid::part(today) {
 ion-datetime.datetime-presentation-date,
 ion-datetime.datetime-presentation-time,
 ion-datetime.datetime-prefer-wheel {
+=======
+ion-datetime {
+>>>>>>> ionic-6
   --background: var(--tp-color-neutral-2);
   --wheel-fade-background-rgb: var(--tp-color-neutral-2-rgb);
   --wheel-highlight-background: var(--tp-color-neutral-2);
@@ -2167,7 +2171,7 @@ ion-fab-list ion-icon {
   height: 24px;
 }
 
-ion-input.sc-ion-input-md-h .input-clear-icon.sc-ion-input-md {
+.templarios-ionic-6 ion-input.sc-ion-input-md-h .input-clear-icon.sc-ion-input-md {
   align-items: center;
 }
 
@@ -2211,21 +2215,19 @@ ion-input.sc-ion-input-md-h.input-disabled {
   opacity: 0.5;
 }
 
-ion-item ion-checkbox.in-item {
+.templarios-ionic-6 ion-item ion-checkbox.in-item {
   margin: 0;
 }
-
-ion-item ion-toggle.in-item {
+.templarios-ionic-6 ion-item ion-toggle.in-item {
   padding-inline: 0;
   padding: 6px 0;
 }
-
-ion-item.ion-color ion-checkbox {
+.templarios-ionic-6 ion-item.ion-color ion-checkbox {
   --background: var(--ion-color-base);
   --background-checked: var(--ion-color-contrast);
   --checkmark-color: var(--ion-color-base);
 }
-ion-item.ion-color ion-toggle {
+.templarios-ionic-6 ion-item.ion-color ion-toggle {
   --background: var(--tp-color-neutral-4);
   --background-checked: var(--ion-color-contrast);
 }
@@ -2704,29 +2706,28 @@ ion-progress-bar.ion-color::part(track) {
   background-color: var(--background);
 }
 
-ion-radio {
+.templarios-ionic-6 ion-radio {
   --color: var(--tp-color-neutral-35);
   --color-checked: var(--tp-color-brand-4);
 }
-ion-radio:hover {
+.templarios-ionic-6 ion-radio:hover {
   --color: var(--tp-color-neutral-95);
 }
-ion-radio.radio-checked {
+.templarios-ionic-6 ion-radio.radio-checked {
   --color: var(--tp-color-neutral-4);
 }
-ion-radio::part(label) {
+.templarios-ionic-6 ion-radio::part(label) {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-ion-radio.ion-color {
+.templarios-ionic-6 ion-radio.ion-color {
   --color: var(--ion-color-base);
   --color-checked: var(--ion-color-base);
 }
-ion-radio.ion-color:hover {
+.templarios-ionic-6 ion-radio.ion-color:hover {
   --color: var(--ion-color-tint);
 }
-ion-radio.ion-color.radio-checked {
+.templarios-ionic-6 ion-radio.ion-color.radio-checked {
   --color: var(--ion-color-base);
 }
 
@@ -3052,63 +3053,7 @@ ion-toast[warning] {
   --background: var(--tp-color-warning);
 }
 
-ion-toast {
-  --background: var(--tp-color-neutral-2);
-  --color: var(--tp-color-neutral-10);
-  --width: 382px;
-  --border-radius: 8px;
-  --start: initial;
-  --end: 20px;
-}
-@media (max-width: 575.98px) {
-  ion-toast {
-    --width: 100%;
-    --end: 0;
-  }
-}
-ion-toast::part(container) {
-  height: 56px;
-}
-ion-toast::part(icon) {
-  --stroke: var(--tp-color-neutral-10);
-  font-size: 24px;
-}
-ion-toast::part(message) {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-ion-toast[tp-size=md] {
-  --width: 400px;
-}
-ion-toast[tp-size=md]::part(container) {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-inline: 8px;
-}
-
-ion-toast[tp-reverse]::part(container) {
-  flex-direction: row-reverse;
-}
-ion-toast[tp-reverse]::part(icon) {
-  margin-inline-start: 0;
-  margin-inline-end: 16px;
-}
-
-ion-toast.ion-color {
-  --color: var(--ion-color-contrast);
-}
-ion-toast.ion-color::part(icon) {
-  --stroke: var(--ion-color-contrast);
-  font-size: 24px;
-}
-
-ion-toast[warning] {
-  --background: var(--tp-color-warning);
-}
-
-ion-toggle {
+.templarios-ionic-6 ion-toggle {
   --background: var(--tp-color-neutral-4);
   --background-checked: var(--tp-color-brand-3);
 }

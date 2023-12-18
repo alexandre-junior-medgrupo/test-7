@@ -1,0 +1,34 @@
+.templarios-ionic-6 {
+  // checkbox
+  ion-item {
+    ion-checkbox.in-item {
+      margin: 0;
+    }
+  }
+
+  // toggle
+  ion-item {
+    ion-toggle.in-item {
+      padding-inline: 0;
+      padding: 6px 0;
+    }
+  }
+
+  //
+  // color
+  //
+  ion-item.ion-color {
+    // checkbox
+    ion-checkbox {
+      --background: var(--ion-color-base);
+      --background-checked: var(--ion-color-contrast);
+      --checkmark-color: var(--ion-color-base);
+    }
+
+    // toggle
+    ion-toggle {
+      --background: var(--tp-color-neutral-4);
+      --background-checked: var(--ion-color-contrast);
+    }
+  }
+}
