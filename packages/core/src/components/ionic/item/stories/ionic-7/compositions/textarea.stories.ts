@@ -16,7 +16,7 @@ defineCustomElementSearchbar();
 defineCustomElementTextarea();
 
 const meta: Meta<Components.IonItem & TpIonItem> = {
-  title: 'components/Ionic/Item/Compositions',
+  title: 'components/Ionic/Item/Ionic-7/Compositions',
   argTypes: {
     lines: {
       control: { type: 'select' },

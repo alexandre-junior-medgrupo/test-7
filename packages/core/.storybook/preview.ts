@@ -31,8 +31,7 @@ import {
 } from '../src/utils/constants/color.constant';
 import { TpColorAula, TpColorMaterial, TpColorOrange, TpColorProvas, TpColorQuestoes, TpColorRevalida } from '../src/utils/enums/color.enum';
 
-import '../styles/css/templarios-7.css';
-import '../styles/css/templarios-6.css';
+import '../styles/css/templarios.css';
 import '../styles/css/templarios.themes.css';
 
 import '../www/build/templarios.esm';
