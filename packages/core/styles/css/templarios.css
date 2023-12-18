@@ -2582,9 +2582,11 @@ ion-list.list-lines-full ion-item.ion-color::part(native) {
   --min-height: 50px;
   --width: 100%;
   --max-width: 640px;
+  --tp-padding: 24px;
 }
-.tp-dialog .ion-delegate-host {
-  padding: 24px;
+.tp-dialog::part(content) {
+  box-sizing: border-box;
+  padding: var(--tp-padding);
 }
 @media (max-width: 991.98px) {
   .tp-dialog {

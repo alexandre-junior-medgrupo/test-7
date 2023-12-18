@@ -8,9 +8,11 @@
   --min-height: 50px;
   --width: 100%;
   --max-width: 640px;
+  --tp-padding: 24px;
 
-  .ion-delegate-host {
-    padding: 24px;
+  &::part(content) {
+    box-sizing: border-box;
+    padding: var(--tp-padding);
   }
 
   @include breakpoint-down('lg') {
