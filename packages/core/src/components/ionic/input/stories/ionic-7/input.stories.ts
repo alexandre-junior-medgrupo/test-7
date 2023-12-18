@@ -3,12 +3,12 @@ import { defineCustomElement } from '@ionic/core/components/ion-input';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 import { TpInputContainer } from 'src/components/templarios/input-container/input-container';
-import { TpIonInput } from '../utils/input.type';
+import { TpIonInput } from '../../utils/input.type';
 
 defineCustomElement();
 
 const meta: Meta<Components.IonInput & TpIonInput & TpInputContainer> = {
-  title: 'components/Ionic/Input',
+  title: 'components/Ionic/Input/Ionic-7',
   argTypes: {
     clearInput: {
       control: 'boolean',

@@ -2,12 +2,12 @@ import { Components } from '@ionic/core';
 import { defineCustomElement } from '@ionic/core/components/ion-toggle';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonToggle } from '../utils/toggle.type';
+import { TpIonToggle } from '../../utils/toggle.type';
 
 defineCustomElement();
 
 const meta: Meta<Components.IonToggle & TpIonToggle> = {
-  title: 'components/Ionic/Toggle',
+  title: 'components/Ionic/Toggle/Ionic-6',
   argTypes: {
     disabled: {
       control: 'boolean',

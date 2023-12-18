@@ -2,12 +2,12 @@ import { Components } from '@ionic/core';
 import { defineCustomElement as defineCustomElementCheckbox } from '@ionic/core/components/ion-checkbox';
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import { TpIonCheckbox } from '../utils/checkbox.type';
+import { TpIonCheckbox } from '../../utils/checkbox.type';
 
 defineCustomElementCheckbox();
 
 const meta: Meta<Components.IonCheckbox & TpIonCheckbox> = {
-  title: 'components/Ionic/Checkbox',
+  title: 'components/Ionic/Checkbox/Ionic-7',
   argTypes: {
     checked: {
       control: 'boolean',

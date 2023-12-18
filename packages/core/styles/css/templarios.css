@@ -2116,7 +2116,7 @@ ion-fab-list ion-icon {
   height: 24px;
 }
 
-ion-input.sc-ion-input-md-h .input-clear-icon.sc-ion-input-md {
+.templarios-ionic-6 ion-input.sc-ion-input-md-h .input-clear-icon.sc-ion-input-md {
   align-items: center;
 }
 
@@ -2962,7 +2962,7 @@ ion-toast[warning] {
   --background: var(--tp-color-warning);
 }
 
-ion-toggle {
+.templarios-ionic-6 ion-toggle {
   --background: var(--tp-color-neutral-4);
   --background-checked: var(--tp-color-brand-3);
 }
